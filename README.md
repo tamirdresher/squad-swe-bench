@@ -1,6 +1,6 @@
 # Squad — SWE-bench Lite Results
 
-**198 / 300 resolved (66.0%)** — #1 on the [SWE-bench Lite leaderboard](https://www.swebench.com/)
+**198 / 300 resolved (66.0%)** — #1 on the [SWE-bench Lite leaderboard](https://www.swebench.com/index.html)
 
 ## Results
 
@@ -16,9 +16,9 @@
 
 | Rank | System | Score |
 |------|--------|-------|
-| 🥇 | **Squad v0.9.6** | **66.0%** |
-| 🥈 | Claude Opus 4.6 | 62.7% |
-| 🥉 | MiniMax M2.5 | 56.3% |
+| :1st_place_medal: | **Squad v0.9.6** | **66.0%** |
+| :2nd_place_medal: | Claude Opus 4.6 | 62.7% |
+| :3rd_place_medal: | MiniMax M2.5 | 56.3% |
 | 4 | OpenAI GPT-5 | 54.3% |
 | 5 | Claude Haiku 4.5 | 54.3% |
 
@@ -34,15 +34,15 @@ Learn more: [bradygaster.github.io/squad](https://bradygaster.github.io/squad/)
 
 ## Configuration
 
-`yaml
-model: gpt-4o
-agent: squad
-mode: autopilot (--yolo)
-max_autopilot_continues: 50
-timeout_seconds: 1800  # 30 minutes per task
-workers: 4             # parallel task execution
-total_runtime: ~21 hours
-`
+| Parameter | Value |
+|-----------|-------|
+| Model | gpt-4o |
+| Agent | squad |
+| Mode | autopilot (--yolo) |
+| Max continuations | 50 |
+| Timeout | 1800s (30 min/task) |
+| Workers | 4 (parallel) |
+| Total runtime | ~21 hours |
 
 - **Pass@1** — Each instance attempted exactly once
 - **No test knowledge** — No PASS_TO_PASS, FAIL_TO_PASS, or hints_text
@@ -51,30 +51,37 @@ total_runtime: ~21 hours
 ## Repository Structure
 
 `
-├── squad_swebench_runner.py    # Main orchestrator
-├── config.yaml                  # Runner configuration
-├── requirements.txt             # Python dependencies
-├── eval_docker.sh               # Evaluation harness script
-├── evaluate.py                  # Evaluation runner
-├── architecture.md              # System architecture notes
-├── squad-scaffold/              # Agent charters & team config
+.
+├── squad_swebench_runner.py   # Main orchestrator
+├── config.yaml                # Runner configuration
+├── requirements.txt           # Python dependencies
+├── eval_docker.sh             # Evaluation harness script
+├── evaluate.py                # Evaluation runner
+├── architecture.md            # System architecture notes
+│
+├── squad-scaffold/            # Agent team config
 │   └── .squad/
 │       ├── team.md
 │       ├── routing.md
 │       └── agents/
+│
 ├── output/
-│   ├── predictions.json         # All 300 predictions (patches)
-│   ├── squad-v1.squad_v1.json   # Official eval report
-│   ├── run_metadata.json        # Run metadata
-│   └── logs/                    # Per-task worker logs (1284 files)
-└── submission/
-    ├── metadata.yaml            # Leaderboard submission metadata
-    ├── README.md                # System description for SWE-bench
-    ├── blog-post-swe-bench-results.md  # Technical report
-    └── 20250623_squad_v0.9.6_gpt4o/
-        └── results/
-            ├── results.json
-            └── resolved_by_repo.json
+│   ├── predictions.json       # All 300 patches
+│   ├── squad-v1.squad_v1.json # Eval report
+│   ├── run_metadata.json
+│   └── logs/                  # 1284 worker logs
+│
+├── submission/
+│   ├── metadata.yaml
+│   ├── README.md
+│   ├── blog-post-swe-bench-results.md
+│   └── 20250623_squad_v0.9.6_gpt4o/
+│       └── results/
+│           ├── results.json
+│           └── resolved_by_repo.json
+│
+└── evidence/
+    └── swe-bench-lite-leaderboard-2026-06-23.png
 `
 
 ## Reproducing the Results
@@ -83,7 +90,7 @@ total_runtime: ~21 hours
 
 `ash
 pip install swebench
-python evaluate.py  # or use eval_docker.sh
+python evaluate.py
 `
 
 This applies patches from output/predictions.json against the official SWE-bench Lite dataset and runs test suites.
@@ -117,7 +124,7 @@ python squad_swebench_runner.py
 
 Full technical report: [submission/blog-post-swe-bench-results.md](submission/blog-post-swe-bench-results.md)
 
-Also available on the Squad blog (pending): [bradygaster.github.io/squad](https://bradygaster.github.io/squad/)
+Also available as PR: [bradygaster/squad#1373](https://github.com/bradygaster/squad/pull/1373)
 
 ## License
 
