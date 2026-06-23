@@ -1,0 +1,39 @@
+diff --git a/django/forms/models.py b/django/forms/models.py
+index 422bc5d178..a88c384841 100644
+--- a/django/forms/models.py
++++ b/django/forms/models.py
+@@ -1284,7 +1284,11 @@ class ModelChoiceField(ChoiceField):
+                 value = getattr(value, key)
+             value = self.queryset.get(**{key: value})
+         except (ValueError, TypeError, self.queryset.model.DoesNotExist):
+-            raise ValidationError(self.error_messages['invalid_choice'], code='invalid_choice')
++            raise ValidationError(
++                self.error_messages['invalid_choice'],
++                code='invalid_choice',
++                params={'value': value},
++            )
+         return value
+ 
+     def validate(self, value):
+diff --git a/tests/model_forms/test_modelchoicefield.py b/tests/model_forms/test_modelchoicefield.py
+index 8f41ce9c40..ae8dbda404 100644
+--- a/tests/model_forms/test_modelchoicefield.py
++++ b/tests/model_forms/test_modelchoicefield.py
+@@ -63,6 +63,17 @@ class ModelChoiceFieldTests(TestCase):
+         with self.assertRaisesMessage(ValidationError, msg):
+             f.clean(Book.objects.create())
+ 
++    def test_modelchoicefield_value_placeholder(self):
++        f = forms.ModelChoiceField(
++            queryset=Category.objects.all(),
++            error_messages={
++                'invalid_choice': '"%(value)s" is not one of the available choices.',
++            },
++        )
++        msg = "['\"invalid\" is not one of the available choices.']"
++        with self.assertRaisesMessage(ValidationError, msg):
++            f.clean('invalid')
++
+     def test_clean_to_field_name(self):
+         f = forms.ModelChoiceField(Category.objects.all(), to_field_name='slug')
+         self.assertEqual(f.clean(self.c1.slug), self.c1)

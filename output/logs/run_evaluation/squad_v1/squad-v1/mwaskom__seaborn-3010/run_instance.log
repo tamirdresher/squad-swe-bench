@@ -1,0 +1,76 @@
+2026-06-23 06:14:02,850 - INFO - Creating container for mwaskom__seaborn-3010...
+2026-06-23 06:14:03,645 - INFO - Container for mwaskom__seaborn-3010 created: b59f26a004848156526886f68db1654612fbf1ba6a9dd0ce0116c0f7584ec690
+2026-06-23 06:14:04,149 - INFO - Container for mwaskom__seaborn-3010 started: b59f26a004848156526886f68db1654612fbf1ba6a9dd0ce0116c0f7584ec690
+2026-06-23 06:14:04,163 - INFO - Intermediate patch for mwaskom__seaborn-3010 written to logs/run_evaluation/squad_v1/squad-v1/mwaskom__seaborn-3010/patch.diff, now applying to container...
+2026-06-23 06:14:04,445 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:14:04,540 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:14:04,659 - INFO - >>>>> Applied Patch:
+patching file seaborn/_stats/regression.py
+patching file tests/_stats/test_regression.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 35 with fuzz 1.
+
+2026-06-23 06:14:04,834 - INFO - Git diff before:
+diff --git a/seaborn/_stats/regression.py b/seaborn/_stats/regression.py
+index 7b7ddc8d..7359b027 100644
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -21,6 +21,7 @@ class PolyFit(Stat):
+ 
+     def _fit_predict(self, data):
+ 
++        data = data.dropna(subset=["x", "y"])
+         x = data["x"]
+         y = data["y"]
+         if x.nunique() <= self.order:
+diff --git a/tests/_stats/test_regression.py b/tests/_stats/test_regression.py
+index 7facf75d..22c2aaf4 100644
+--- a/tests/_stats/test_regression.py
++++ b/tests/_stats/test_regression.py
+@@ -35,6 +35,21 @@ class TestPolyFit:
+             res["y"].diff().diff().dropna(), np.zeros(grid.size - 2)
+         )
+ 
++    def test_missing_data(self, df):
++
++        # Inject NaN values into x and y; PolyFit must not raise and must
++        # produce a fully-finite result (LinAlgError regression check).
++        df = df.copy()
++        df.loc[df.index[:10], "x"] = np.nan
++        df.loc[df.index[10:20], "y"] = np.nan
++
++        groupby = GroupBy(["group"])
++        res = PolyFit(order=1, gridsize=100)(df[["x", "y"]], groupby, "x", {})
++
++        assert_array_equal(res.columns, ["x", "y"])
++        assert np.isfinite(res["x"]).all()
++        assert np.isfinite(res["y"]).all()
++
+     def test_one_grouper(self, df):
+ 
+         groupby = GroupBy(["group"])
+2026-06-23 06:14:04,840 - INFO - Eval script for mwaskom__seaborn-3010 written to logs/run_evaluation/squad_v1/squad-v1/mwaskom__seaborn-3010/eval.sh; copying to container...
+2026-06-23 06:14:11,139 - INFO - Test runtime: 6.14 seconds
+2026-06-23 06:14:11,144 - INFO - Test output for mwaskom__seaborn-3010 written to logs/run_evaluation/squad_v1/squad-v1/mwaskom__seaborn-3010/test_output.txt
+2026-06-23 06:14:11,233 - INFO - Git diff after:
+diff --git a/seaborn/_stats/regression.py b/seaborn/_stats/regression.py
+index 7b7ddc8d..7359b027 100644
+--- a/seaborn/_stats/regression.py
++++ b/seaborn/_stats/regression.py
+@@ -21,6 +21,7 @@ class PolyFit(Stat):
+ 
+     def _fit_predict(self, data):
+ 
++        data = data.dropna(subset=["x", "y"])
+         x = data["x"]
+         y = data["y"]
+         if x.nunique() <= self.order:
+2026-06-23 06:14:11,234 - INFO - Git diff changed after running eval script
+2026-06-23 06:14:11,234 - INFO - Grading answer for mwaskom__seaborn-3010...
+2026-06-23 06:14:11,239 - INFO - report: {'mwaskom__seaborn-3010': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/_stats/test_regression.py::TestPolyFit::test_missing_data'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/_stats/test_regression.py::TestPolyFit::test_no_grouper', 'tests/_stats/test_regression.py::TestPolyFit::test_one_grouper'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for mwaskom__seaborn-3010: resolved: True
+2026-06-23 06:14:11,243 - INFO - Attempting to stop container sweb.eval.mwaskom__seaborn-3010.squad_v1...
+2026-06-23 06:14:27,121 - INFO - Attempting to remove container sweb.eval.mwaskom__seaborn-3010.squad_v1...
+2026-06-23 06:14:27,242 - INFO - Container sweb.eval.mwaskom__seaborn-3010.squad_v1 removed.
+2026-06-23 06:14:27,242 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.mwaskom_1776_seaborn-3010:latest...
+2026-06-23 06:14:27,441 - INFO - Image swebench/sweb.eval.x86_64.mwaskom_1776_seaborn-3010:latest removed.

@@ -1,0 +1,95 @@
+2026-06-23 07:12:21,340 - INFO - Creating container for sympy__sympy-13437...
+2026-06-23 07:12:35,934 - INFO - Container for sympy__sympy-13437 created: 5caa9d2e7e975dc4d67cce3f7fb89e4e1796b880d91e09a810c38c1f1d1469db
+2026-06-23 07:12:36,570 - INFO - Container for sympy__sympy-13437 started: 5caa9d2e7e975dc4d67cce3f7fb89e4e1796b880d91e09a810c38c1f1d1469db
+2026-06-23 07:12:36,578 - INFO - Intermediate patch for sympy__sympy-13437 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13437/patch.diff, now applying to container...
+2026-06-23 07:12:36,819 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:12:36,901 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:12:36,998 - INFO - >>>>> Applied Patch:
+patching file sympy/functions/combinatorial/numbers.py
+patching file sympy/functions/combinatorial/tests/test_comb_numbers.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 115 with fuzz 1.
+
+2026-06-23 07:12:37,469 - INFO - Git diff before:
+diff --git a/sympy/functions/combinatorial/numbers.py b/sympy/functions/combinatorial/numbers.py
+index 896729ac87..9e2800dfbd 100644
+--- a/sympy/functions/combinatorial/numbers.py
++++ b/sympy/functions/combinatorial/numbers.py
+@@ -434,6 +434,15 @@ def _bell_incomplete_poly(n, k, symbols):
+ 
+     @classmethod
+     def eval(cls, n, k_sym=None, symbols=None):
++        if n is S.Infinity:
++            if k_sym is None:
++                return S.Infinity
++            else:
++                raise ValueError("Bell polynomial is not defined")
++
++        if n.is_negative or n.is_integer is False:
++            raise ValueError("a non-negative integer expected")
++
+         if n.is_Integer and n.is_nonnegative:
+             if k_sym is None:
+                 return Integer(cls._bell(int(n)))
+diff --git a/sympy/functions/combinatorial/tests/test_comb_numbers.py b/sympy/functions/combinatorial/tests/test_comb_numbers.py
+index ad0fd4fe85..54e0836e02 100644
+--- a/sympy/functions/combinatorial/tests/test_comb_numbers.py
++++ b/sympy/functions/combinatorial/tests/test_comb_numbers.py
+@@ -84,6 +84,11 @@ def test_bell():
+     assert bell(1, x) == x
+     assert bell(2, x) == x**2 + x
+     assert bell(5, x) == x**5 + 10*x**4 + 25*x**3 + 15*x**2 + x
++    assert bell(oo) == S.Infinity
++    raises(ValueError, lambda: bell(oo, x))
++
++    raises(ValueError, lambda: bell(-1))
++    raises(ValueError, lambda: bell(S.Half))
+ 
+     X = symbols('x:6')
+     # X = (x0, x1, .. x5)
+@@ -110,9 +115,9 @@ def test_bell():
+     for i in [0, 2, 3, 7, 13, 42, 55]:
+         assert bell(i).evalf() == bell(n).rewrite(Sum).evalf(subs={n: i})
+ 
+-    # For negative numbers, the formula does not hold
+-    m = Symbol('m', integer=True)
+-    assert bell(-1).evalf() == bell(m).rewrite(Sum).evalf(subs={m: -1})
++    # issue 9184
++    n = Dummy('n')
++    assert bell(n).limit(n, S.Infinity) == S.Infinity
+ 
+ 
+ def test_harmonic():
+2026-06-23 07:12:37,474 - INFO - Eval script for sympy__sympy-13437 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13437/eval.sh; copying to container...
+2026-06-23 07:20:43,988 - INFO - Test runtime: 486.39 seconds
+2026-06-23 07:20:43,992 - INFO - Test output for sympy__sympy-13437 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13437/test_output.txt
+2026-06-23 07:20:44,104 - INFO - Git diff after:
+diff --git a/sympy/functions/combinatorial/numbers.py b/sympy/functions/combinatorial/numbers.py
+index 896729ac87..9e2800dfbd 100644
+--- a/sympy/functions/combinatorial/numbers.py
++++ b/sympy/functions/combinatorial/numbers.py
+@@ -434,6 +434,15 @@ def _bell_incomplete_poly(n, k, symbols):
+ 
+     @classmethod
+     def eval(cls, n, k_sym=None, symbols=None):
++        if n is S.Infinity:
++            if k_sym is None:
++                return S.Infinity
++            else:
++                raise ValueError("Bell polynomial is not defined")
++
++        if n.is_negative or n.is_integer is False:
++            raise ValueError("a non-negative integer expected")
++
+         if n.is_Integer and n.is_nonnegative:
+             if k_sym is None:
+                 return Integer(cls._bell(int(n)))
+2026-06-23 07:20:44,105 - INFO - Git diff changed after running eval script
+2026-06-23 07:20:44,105 - INFO - Grading answer for sympy__sympy-13437...
+2026-06-23 07:20:44,111 - INFO - report: {'sympy__sympy-13437': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_bell'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_bernoulli', 'test_fibonacci', 'test_harmonic', 'test_harmonic_rational', 'test_harmonic_evalf', 'test_harmonic_rewrite_polygamma', 'test_harmonic_rewrite_sum', 'test_euler', 'test_euler_odd', 'test_euler_polynomials', 'test_euler_polynomial_rewrite', 'test_catalan', 'test_genocchi', 'test_nC_nP_nT', 'test_issue_8496'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-13437: resolved: True
+2026-06-23 07:20:44,116 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13437.squad_v1...
+2026-06-23 07:21:00,334 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13437.squad_v1...
+2026-06-23 07:21:00,527 - INFO - Container sweb.eval.sympy__sympy-13437.squad_v1 removed.
+2026-06-23 07:21:00,528 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13437:latest...
+2026-06-23 07:21:00,899 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13437:latest removed.

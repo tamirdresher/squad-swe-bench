@@ -1,0 +1,3377 @@
+2026-06-23 06:39:39,163 - INFO - Creating container for pytest-dev__pytest-7220...
+2026-06-23 06:39:53,215 - INFO - Container for pytest-dev__pytest-7220 created: 4b821564bf75cc527e0003c6d34300f76471c9715aa9c14e1760a7eec09f91d8
+2026-06-23 06:39:53,705 - INFO - Container for pytest-dev__pytest-7220 started: 4b821564bf75cc527e0003c6d34300f76471c9715aa9c14e1760a7eec09f91d8
+2026-06-23 06:39:53,714 - INFO - Intermediate patch for pytest-dev__pytest-7220 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/patch.diff, now applying to container...
+2026-06-23 06:39:54,038 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:39:54,167 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:39:54,290 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 06:39:54,290 - INFO - >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+2026-06-23 06:39:54,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:39:54,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,334 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,336 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,338 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,391 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,392 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,393 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,394 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,394 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,395 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,395 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,396 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,396 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,397 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,397 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,398 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,399 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,399 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,401 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,402 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,403 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,403 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,405 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,406 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,406 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,407 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,408 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,408 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,409 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,410 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,411 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,412 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,412 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,413 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,414 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,416 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,422 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,424 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,424 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,425 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,428 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,430 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,430 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,431 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,432 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,432 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,434 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,436 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,436 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,440 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:39:54,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,485 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,517 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,526 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,526 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,527 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,532 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,532 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,539 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,539 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,540 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,541 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,541 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,544 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,544 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,546 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,547 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,547 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pytest-dev__pytest-7220: >>>>> Patch Apply Failed:
+patching file src/_pytest/nodes.py
+patching file testing/test_nodes.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 63:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7220/run_instance.log) for more information.
+
+2026-06-23 06:39:54,550 - INFO - Attempting to stop container sweb.eval.pytest-dev__pytest-7220.squad_v1...
+2026-06-23 06:40:22,577 - INFO - Attempting to remove container sweb.eval.pytest-dev__pytest-7220.squad_v1...
+2026-06-23 06:40:22,910 - INFO - Container sweb.eval.pytest-dev__pytest-7220.squad_v1 removed.
+2026-06-23 06:40:22,910 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7220:latest...
+2026-06-23 06:40:23,183 - INFO - Image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7220:latest removed.

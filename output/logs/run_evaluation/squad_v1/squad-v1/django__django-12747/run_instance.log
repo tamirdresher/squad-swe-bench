@@ -1,0 +1,120 @@
+2026-06-23 04:48:47,958 - INFO - Creating container for django__django-12747...
+2026-06-23 04:48:58,825 - INFO - Container for django__django-12747 created: d5724bf8ae8b228d03ed7e192b4dac99dc21112a60e6e6de8dd61e3196392a00
+2026-06-23 04:48:59,382 - INFO - Container for django__django-12747 started: d5724bf8ae8b228d03ed7e192b4dac99dc21112a60e6e6de8dd61e3196392a00
+2026-06-23 04:48:59,395 - INFO - Intermediate patch for django__django-12747 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12747/patch.diff, now applying to container...
+2026-06-23 04:48:59,799 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:48:59,970 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:49:00,159 - INFO - >>>>> Applied Patch:
+patching file django/db/models/deletion.py
+patching file tests/delete/tests.py
+patch unexpectedly ends in middle of line
+Hunk #4 succeeded at 700 with fuzz 1.
+
+2026-06-23 04:49:02,003 - INFO - Git diff before:
+diff --git a/django/db/models/deletion.py b/django/db/models/deletion.py
+index 16dff6a1cd..90623437f5 100644
+--- a/django/db/models/deletion.py
++++ b/django/db/models/deletion.py
+@@ -408,7 +408,8 @@ class Collector:
+             # fast deletes
+             for qs in self.fast_deletes:
+                 count = qs._raw_delete(using=self.using)
+-                deleted_counter[qs.model._meta.label] += count
++                if count:
++                    deleted_counter[qs.model._meta.label] += count
+ 
+             # update fields
+             for model, instances_for_fieldvalues in self.field_updates.items():
+@@ -426,7 +427,8 @@ class Collector:
+                 query = sql.DeleteQuery(model)
+                 pk_list = [obj.pk for obj in instances]
+                 count = query.delete_batch(pk_list, self.using)
+-                deleted_counter[model._meta.label] += count
++                if count:
++                    deleted_counter[model._meta.label] += count
+ 
+                 if not model._meta.auto_created:
+                     for obj in instances:
+diff --git a/tests/delete/tests.py b/tests/delete/tests.py
+index d8424670c9..1ed622050f 100644
+--- a/tests/delete/tests.py
++++ b/tests/delete/tests.py
+@@ -522,8 +522,6 @@ class DeletionTests(TestCase):
+         existed_objs = {
+             R._meta.label: R.objects.count(),
+             HiddenUser._meta.label: HiddenUser.objects.count(),
+-            A._meta.label: A.objects.count(),
+-            MR._meta.label: MR.objects.count(),
+             HiddenUserProfile._meta.label: HiddenUserProfile.objects.count(),
+         }
+         deleted, deleted_objs = R.objects.all().delete()
+@@ -550,7 +548,6 @@ class DeletionTests(TestCase):
+         existed_objs = {
+             R._meta.label: R.objects.count(),
+             HiddenUser._meta.label: HiddenUser.objects.count(),
+-            A._meta.label: A.objects.count(),
+             MR._meta.label: MR.objects.count(),
+             HiddenUserProfile._meta.label: HiddenUserProfile.objects.count(),
+             M.m2m.through._meta.label: M.m2m.through.objects.count(),
+@@ -604,6 +601,15 @@ class DeletionTests(TestCase):
+                 )
+                 signal.disconnect(receiver, sender=Referrer)
+ 
++    def test_delete_with_no_match_returns_empty_dict(self):
++        """
++        QuerySet.delete() returns a consistent empty dict for the per-model
++        counts when no objects are deleted, regardless of whether the model
++        has related objects (#30191).
++        """
++        self.assertEqual(A.objects.filter(pk=0).delete(), (0, {}))
++        self.assertEqual(Avatar.objects.filter(pk=0).delete(), (0, {}))
++
+ 
+ class FastDeleteTests(TestCase):
+ 
+@@ -694,7 +700,7 @@ class FastDeleteTests(TestCase):
+         with self.assertNumQueries(1):
+             self.assertEqual(
+                 User.objects.filter(avatar__desc='missing').delete(),
+-                (0, {'delete.User': 0})
++                (0, {})
+             )
+ 
+     def test_fast_delete_combined_relationships(self):
+2026-06-23 04:49:02,017 - INFO - Eval script for django__django-12747 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12747/eval.sh; copying to container...
+2026-06-23 04:49:16,719 - INFO - Test runtime: 14.41 seconds
+2026-06-23 04:49:16,725 - INFO - Test output for django__django-12747 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12747/test_output.txt
+2026-06-23 04:49:16,844 - INFO - Git diff after:
+diff --git a/django/db/models/deletion.py b/django/db/models/deletion.py
+index 16dff6a1cd..90623437f5 100644
+--- a/django/db/models/deletion.py
++++ b/django/db/models/deletion.py
+@@ -408,7 +408,8 @@ class Collector:
+             # fast deletes
+             for qs in self.fast_deletes:
+                 count = qs._raw_delete(using=self.using)
+-                deleted_counter[qs.model._meta.label] += count
++                if count:
++                    deleted_counter[qs.model._meta.label] += count
+ 
+             # update fields
+             for model, instances_for_fieldvalues in self.field_updates.items():
+@@ -426,7 +427,8 @@ class Collector:
+                 query = sql.DeleteQuery(model)
+                 pk_list = [obj.pk for obj in instances]
+                 count = query.delete_batch(pk_list, self.using)
+-                deleted_counter[model._meta.label] += count
++                if count:
++                    deleted_counter[model._meta.label] += count
+ 
+                 if not model._meta.auto_created:
+                     for obj in instances:
+2026-06-23 04:49:16,845 - INFO - Git diff changed after running eval script
+2026-06-23 04:49:16,846 - INFO - Grading answer for django__django-12747...
+2026-06-23 04:49:16,854 - INFO - report: {'django__django-12747': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_fast_delete_empty_no_update_can_self_select (delete.tests.FastDeleteTests)', 'test_model_delete_returns_num_rows (delete.tests.DeletionTests)', 'test_queryset_delete_returns_num_rows (delete.tests.DeletionTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_fast_delete_combined_relationships (delete.tests.FastDeleteTests)', 'test_fast_delete_fk (delete.tests.FastDeleteTests)', 'test_fast_delete_inheritance (delete.tests.FastDeleteTests)', 'test_fast_delete_instance_set_pk_none (delete.tests.FastDeleteTests)', 'test_fast_delete_joined_qs (delete.tests.FastDeleteTests)', 'test_fast_delete_large_batch (delete.tests.FastDeleteTests)', 'test_fast_delete_m2m (delete.tests.FastDeleteTests)', 'test_fast_delete_qs (delete.tests.FastDeleteTests)', 'test_fast_delete_revm2m (delete.tests.FastDeleteTests)', 'test_auto (delete.tests.OnDeleteTests)', 'test_auto_nullable (delete.tests.OnDeleteTests)', 'test_cascade (delete.tests.OnDeleteTests)', 'test_cascade_from_child (delete.tests.OnDeleteTests)', 'test_cascade_from_parent (delete.tests.OnDeleteTests)', 'test_cascade_nullable (delete.tests.OnDeleteTests)', 'test_do_nothing (delete.tests.OnDeleteTests)', 'test_do_nothing_qscount (delete.tests.OnDeleteTests)', 'test_inheritance_cascade_down (delete.tests.OnDeleteTests)', 'test_inheritance_cascade_up (delete.tests.OnDeleteTests)', 'test_non_callable (delete.tests.OnDeleteTests)', 'test_o2o_setnull (delete.tests.OnDeleteTests)', 'test_protect (delete.tests.OnDeleteTests)', 'test_protect_multiple (delete.tests.OnDeleteTests)', 'test_protect_path (delete.tests.OnDeleteTests)', 'test_restrict (delete.tests.OnDeleteTests)', 'test_restrict_gfk_no_fast_delete (delete.tests.OnDeleteTests)', 'test_restrict_multiple (delete.tests.OnDeleteTests)', 'test_restrict_path_cascade_direct (delete.tests.OnDeleteTests)', 'test_restrict_path_cascade_indirect (delete.tests.OnDeleteTests)', 'test_restrict_path_cascade_indirect_diamond (delete.tests.OnDeleteTests)', 'test_setdefault (delete.tests.OnDeleteTests)', 'test_setdefault_none (delete.tests.OnDeleteTests)', 'test_setnull (delete.tests.OnDeleteTests)', 'test_setnull_from_child (delete.tests.OnDeleteTests)', 'test_setnull_from_parent (delete.tests.OnDeleteTests)', 'test_setvalue (delete.tests.OnDeleteTests)', 'test_bulk (delete.tests.DeletionTests)', 'test_can_defer_constraint_checks (delete.tests.DeletionTests)', 'test_delete_with_keeping_parents (delete.tests.DeletionTests)', 'test_delete_with_keeping_parents_relationships (delete.tests.DeletionTests)', 'test_deletion_order (delete.tests.DeletionTests)', 'test_hidden_related (delete.tests.DeletionTests)', 'test_instance_update (delete.tests.DeletionTests)', 'test_large_delete (delete.tests.DeletionTests)', 'test_large_delete_related (delete.tests.DeletionTests)', 'test_m2m (delete.tests.DeletionTests)', 'test_only_referenced_fields_selected (delete.tests.DeletionTests)', 'test_proxied_model_duplicate_queries (delete.tests.DeletionTests)', 'test_relational_post_delete_signals_happen_before_parent_object (delete.tests.DeletionTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-12747: resolved: True
+2026-06-23 04:49:16,860 - INFO - Attempting to stop container sweb.eval.django__django-12747.squad_v1...
+2026-06-23 04:49:49,803 - INFO - Attempting to remove container sweb.eval.django__django-12747.squad_v1...
+2026-06-23 04:49:50,099 - INFO - Container sweb.eval.django__django-12747.squad_v1 removed.
+2026-06-23 04:49:50,103 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12747:latest...
+2026-06-23 04:49:53,068 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12747:latest removed.

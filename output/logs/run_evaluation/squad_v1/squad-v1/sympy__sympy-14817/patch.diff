@@ -1,0 +1,33 @@
+diff --git a/sympy/printing/pretty/pretty.py b/sympy/printing/pretty/pretty.py
+index 0545797d5f..db6bcec656 100644
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -825,7 +825,8 @@ def _print_MatAdd(self, expr):
+             if s is None:
+                 s = pform     # First element
+             else:
+-                if S(item.args[0]).is_negative:
++                coeff = item.as_coeff_mmul()[0]
++                if _coeff_isneg(S(coeff)):
+                     s = prettyForm(*stringPict.next(s, ' '))
+                     pform = self._print(item)
+                 else:
+diff --git a/sympy/printing/pretty/tests/test_pretty.py b/sympy/printing/pretty/tests/test_pretty.py
+index 9e8bfc5790..d119729eb9 100644
+--- a/sympy/printing/pretty/tests/test_pretty.py
++++ b/sympy/printing/pretty/tests/test_pretty.py
+@@ -6121,6 +6121,14 @@ def test_MatrixSymbol_printing():
+     assert pretty(A - B) == "-B + A"
+     assert pretty(A*B*C - A*B - B*C) == "-A*B -B*C + A*B*C"
+ 
++    # issue #14814 - _print_MatAdd must not sympify a MatrixSymbol's name
++    # (names such as 'y*' are not parseable) to decide a term's sign
++    x = MatrixSymbol('x', n, n)
++    y = MatrixSymbol('y*', n, n)
++    assert pretty(x + y) == "x + y*"
++    assert pretty(x - y) == "-y* + x"
++    assert pretty(x - 2*y) == "-2*y* + x"
++
+ 
+ def test_degree_printing():
+     expr1 = 90*degree

@@ -1,0 +1,129 @@
+2026-06-23 04:46:41,969 - INFO - Creating container for django__django-12470...
+2026-06-23 04:46:49,204 - INFO - Container for django__django-12470 created: 6c619d19979c6dfdc4835cd24ebefb7046d9352275afbedc124ee02a8eec45e3
+2026-06-23 04:46:50,930 - INFO - Container for django__django-12470 started: 6c619d19979c6dfdc4835cd24ebefb7046d9352275afbedc124ee02a8eec45e3
+2026-06-23 04:46:50,938 - INFO - Intermediate patch for django__django-12470 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12470/patch.diff, now applying to container...
+2026-06-23 04:46:51,294 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:46:51,415 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:46:51,613 - INFO - >>>>> Applied Patch:
+patching file django/db/models/sql/compiler.py
+patching file tests/model_inheritance/models.py
+patching file tests/model_inheritance/tests.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 98 with fuzz 1.
+
+2026-06-23 04:46:53,675 - INFO - Git diff before:
+diff --git a/django/db/models/sql/compiler.py b/django/db/models/sql/compiler.py
+index 92213a4e67..09869cb65d 100644
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -709,9 +709,14 @@ class SQLCompiler:
+         field, targets, alias, joins, path, opts, transform_function = self._setup_joins(pieces, opts, alias)
+ 
+         # If we get to this point and the field is a relation to another model,
+-        # append the default ordering for that model unless the attribute name
+-        # of the field is specified.
+-        if field.is_relation and opts.ordering and getattr(field, 'attname', None) != name:
++        # append the default ordering for that model unless it is the pk
++        # shortcut or the attribute name of the field that is specified.
++        if (
++            field.is_relation and
++            opts.ordering and
++            getattr(field, 'attname', None) != name and
++            name != 'pk'
++        ):
+             # Firstly, avoid infinite loops.
+             already_seen = already_seen or set()
+             join_tuple = tuple(getattr(self.query.alias_map[j], 'join_cols', None) for j in joins)
+diff --git a/tests/model_inheritance/models.py b/tests/model_inheritance/models.py
+index a4f9cfe696..cf6dbf5a04 100644
+--- a/tests/model_inheritance/models.py
++++ b/tests/model_inheritance/models.py
+@@ -194,3 +194,14 @@ class Child(Parent):
+ 
+ class GrandChild(Child):
+     pass
++
++
++class CommonAncestor(models.Model):
++    name = models.CharField(max_length=10)
++
++    class Meta:
++        ordering = ['-pk']
++
++
++class CommonChild(CommonAncestor):
++    pass
+diff --git a/tests/model_inheritance/tests.py b/tests/model_inheritance/tests.py
+index 4252f3a301..c35037417b 100644
+--- a/tests/model_inheritance/tests.py
++++ b/tests/model_inheritance/tests.py
+@@ -6,9 +6,9 @@ from django.test import SimpleTestCase, TestCase
+ from django.test.utils import CaptureQueriesContext, isolate_apps
+ 
+ from .models import (
+-    Base, Chef, CommonInfo, GrandChild, GrandParent, ItalianRestaurant,
+-    MixinModel, ParkingLot, Place, Post, Restaurant, Student, SubBase,
+-    Supplier, Title, Worker,
++    Base, Chef, CommonChild, CommonInfo, GrandChild, GrandParent,
++    ItalianRestaurant, MixinModel, ParkingLot, Place, Post, Restaurant,
++    Student, SubBase, Supplier, Title, Worker,
+ )
+ 
+ 
+@@ -98,6 +98,21 @@ class ModelInheritanceTests(TestCase):
+         )
+         self.assertEqual(Restaurant._meta.ordering, ["-rating"])
+ 
++    def test_inherited_ordering_pk_desc(self):
++        # Ordering by '-pk' in a parent model's Meta.ordering must be honored
++        # (descending) by inherited models. Regression test for the bug where
++        # the '-pk' shortcut followed the related model's Meta.ordering and the
++        # double negation flipped the direction back to ascending.
++        p1 = CommonChild.objects.create(name='a')
++        p2 = CommonChild.objects.create(name='b')
++        qs = CommonChild.objects.all()
++        sql = str(qs.query)
++        self.assertIn('ORDER BY', sql)
++        self.assertRegex(sql, r'ORDER BY .*\bDESC\b')
++        self.assertNotIn('ASC', sql)
++        # p2 has the larger pk, so descending ordering returns it first.
++        self.assertSequenceEqual(qs, [p2, p1])
++
+     def test_custompk_m2m(self):
+         b = Base.objects.create()
+         b.titles.add(Title.objects.create(title="foof"))
+2026-06-23 04:46:53,685 - INFO - Eval script for django__django-12470 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12470/eval.sh; copying to container...
+2026-06-23 04:47:10,535 - INFO - Test runtime: 16.54 seconds
+2026-06-23 04:47:10,542 - INFO - Test output for django__django-12470 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12470/test_output.txt
+2026-06-23 04:47:10,706 - INFO - Git diff after:
+diff --git a/django/db/models/sql/compiler.py b/django/db/models/sql/compiler.py
+index 92213a4e67..09869cb65d 100644
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -709,9 +709,14 @@ class SQLCompiler:
+         field, targets, alias, joins, path, opts, transform_function = self._setup_joins(pieces, opts, alias)
+ 
+         # If we get to this point and the field is a relation to another model,
+-        # append the default ordering for that model unless the attribute name
+-        # of the field is specified.
+-        if field.is_relation and opts.ordering and getattr(field, 'attname', None) != name:
++        # append the default ordering for that model unless it is the pk
++        # shortcut or the attribute name of the field that is specified.
++        if (
++            field.is_relation and
++            opts.ordering and
++            getattr(field, 'attname', None) != name and
++            name != 'pk'
++        ):
+             # Firstly, avoid infinite loops.
+             already_seen = already_seen or set()
+             join_tuple = tuple(getattr(self.query.alias_map[j], 'join_cols', None) for j in joins)
+2026-06-23 04:47:10,708 - INFO - Git diff changed after running eval script
+2026-06-23 04:47:10,708 - INFO - Grading answer for django__django-12470...
+2026-06-23 04:47:10,716 - INFO - report: {'django__django-12470': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_inherited_ordering_pk_desc (model_inheritance.tests.ModelInheritanceTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_abstract_fk_related_name (model_inheritance.tests.InheritanceSameModelNameTests)', 'test_unique (model_inheritance.tests.InheritanceUniqueTests)', 'test_unique_together (model_inheritance.tests.InheritanceUniqueTests)', 'test_abstract (model_inheritance.tests.ModelInheritanceTests)', 'test_abstract_parent_link (model_inheritance.tests.ModelInheritanceTests)', 'Creating a child with non-abstract parents only issues INSERTs.', 'test_custompk_m2m (model_inheritance.tests.ModelInheritanceTests)', 'test_eq (model_inheritance.tests.ModelInheritanceTests)', 'test_init_subclass (model_inheritance.tests.ModelInheritanceTests)', 'test_meta_fields_and_ordering (model_inheritance.tests.ModelInheritanceTests)', 'test_mixin_init (model_inheritance.tests.ModelInheritanceTests)', 'test_model_with_distinct_accessors (model_inheritance.tests.ModelInheritanceTests)', 'test_model_with_distinct_related_query_name (model_inheritance.tests.ModelInheritanceTests)', 'test_reverse_relation_for_different_hierarchy_tree (model_inheritance.tests.ModelInheritanceTests)', 'test_set_name (model_inheritance.tests.ModelInheritanceTests)', 'test_update_parent_filtering (model_inheritance.tests.ModelInheritanceTests)', 'test_exclude_inherited_on_null (model_inheritance.tests.ModelInheritanceDataTests)', 'test_filter_inherited_model (model_inheritance.tests.ModelInheritanceDataTests)', 'test_filter_inherited_on_null (model_inheritance.tests.ModelInheritanceDataTests)', 'test_filter_on_parent_returns_object_of_parent_type (model_inheritance.tests.ModelInheritanceDataTests)', 'test_inherited_does_not_exist_exception (model_inheritance.tests.ModelInheritanceDataTests)', 'test_inherited_multiple_objects_returned_exception (model_inheritance.tests.ModelInheritanceDataTests)', 'test_parent_cache_reuse (model_inheritance.tests.ModelInheritanceDataTests)', 'test_parent_child_one_to_one_link (model_inheritance.tests.ModelInheritanceDataTests)', 'test_parent_child_one_to_one_link_on_nonrelated_objects (model_inheritance.tests.ModelInheritanceDataTests)', 'test_parent_fields_available_for_filtering_in_child_model (model_inheritance.tests.ModelInheritanceDataTests)', 'test_related_objects_for_inherited_models (model_inheritance.tests.ModelInheritanceDataTests)', 'test_select_related_defer (model_inheritance.tests.ModelInheritanceDataTests)', 'test_select_related_works_on_parent_model_fields (model_inheritance.tests.ModelInheritanceDataTests)', 'test_update_inherited_model (model_inheritance.tests.ModelInheritanceDataTests)', 'test_update_query_counts (model_inheritance.tests.ModelInheritanceDataTests)', 'test_update_works_on_parent_and_child_models_at_once (model_inheritance.tests.ModelInheritanceDataTests)', 'test_values_works_on_parent_model_fields (model_inheritance.tests.ModelInheritanceDataTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-12470: resolved: True
+2026-06-23 04:47:10,722 - INFO - Attempting to stop container sweb.eval.django__django-12470.squad_v1...
+2026-06-23 04:47:27,370 - INFO - Attempting to remove container sweb.eval.django__django-12470.squad_v1...
+2026-06-23 04:47:27,592 - INFO - Container sweb.eval.django__django-12470.squad_v1 removed.
+2026-06-23 04:47:27,592 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12470:latest...
+2026-06-23 04:47:28,714 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12470:latest removed.

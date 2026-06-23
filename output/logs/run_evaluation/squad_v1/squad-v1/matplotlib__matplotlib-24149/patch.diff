@@ -1,0 +1,43 @@
+diff --git a/lib/matplotlib/cbook/__init__.py b/lib/matplotlib/cbook/__init__.py
+index 34c6ddb861..94f901f31f 100644
+--- a/lib/matplotlib/cbook/__init__.py
++++ b/lib/matplotlib/cbook/__init__.py
+@@ -1746,7 +1746,11 @@ def _safe_first_finite(obj, *, skip_nonfinite=True):
+         raise RuntimeError("matplotlib does not "
+                            "support generators as input")
+     else:
+-        return next(val for val in obj if safe_isfinite(val))
++        for val in obj:
++            if safe_isfinite(val):
++                return val
++        else:
++            return safe_first_element(obj)
+ 
+ 
+ def sanitize_sequence(data):
+diff --git a/lib/matplotlib/tests/test_axes.py b/lib/matplotlib/tests/test_axes.py
+index 9fb95cbd68..4d7e5ce3bb 100644
+--- a/lib/matplotlib/tests/test_axes.py
++++ b/lib/matplotlib/tests/test_axes.py
+@@ -1717,6 +1717,21 @@ def test_nan_bar_values():
+     ax.bar([0, 1], [np.nan, 4])
+ 
+ 
++def test_bar_all_nan():
++    # Regression test for an all-nan input to ax.bar raising StopIteration
++    # (via cbook._safe_first_finite) instead of producing a degenerate bar.
++    fig, ax = plt.subplots()
++    container = ax.bar([np.nan], [np.nan])
++    assert len(container) == 1
++    rect = container[0]
++    assert np.isnan(rect.get_x())
++    assert np.isnan(rect.get_height())
++    # A nan x position with a finite height must also not raise.
++    container2 = ax.bar([np.nan], [0])
++    assert len(container2) == 1
++    assert np.isnan(container2[0].get_x())
++
++
+ def test_bar_ticklabel_fail():
+     fig, ax = plt.subplots()
+     ax.bar([], [])

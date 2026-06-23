@@ -1,0 +1,48 @@
+diff --git a/django/contrib/admin/sites.py b/django/contrib/admin/sites.py
+index 72aafe9882..dc9452b55d 100644
+--- a/django/contrib/admin/sites.py
++++ b/django/contrib/admin/sites.py
+@@ -440,6 +440,7 @@ class AdminSite:
+ 
+             info = (app_label, model._meta.model_name)
+             model_dict = {
++                'model': model,
+                 'name': capfirst(model._meta.verbose_name_plural),
+                 'object_name': model._meta.object_name,
+                 'perms': perms,
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index 3e2b4dfb90..e1efde76d6 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -2922,6 +2922,7 @@ Templates can override or extend base admin templates as described in
+ 
+       Each model is a dict with the following keys:
+ 
++      * ``model``: the model class
+       * ``object_name``: class name of the model
+       * ``name``: plural name of the model
+       * ``perms``: a ``dict`` tracking ``add``, ``change``, ``delete``, and
+@@ -2929,6 +2930,10 @@ Templates can override or extend base admin templates as described in
+       * ``admin_url``: admin changelist URL for the model
+       * ``add_url``: admin URL to add a new model instance
+ 
++    .. versionchanged:: 3.2
++
++        The ``model`` variable for each model was added.
++
+ .. method:: AdminSite.has_permission(request)
+ 
+     Returns ``True`` if the user for the given ``HttpRequest`` has permission
+diff --git a/docs/releases/3.2.txt b/docs/releases/3.2.txt
+index 23b687f593..b02b23710f 100644
+--- a/docs/releases/3.2.txt
++++ b/docs/releases/3.2.txt
+@@ -62,6 +62,9 @@ Minor features
+ * :attr:`.ModelAdmin.search_fields` now allows searching against quoted phrases
+   with spaces.
+ 
++* The new context variable ``model`` which contains the model class for each
++  model is added to the :meth:`.AdminSite.each_context` method.
++
+ :mod:`django.contrib.admindocs`
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

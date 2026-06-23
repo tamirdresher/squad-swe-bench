@@ -1,0 +1,191 @@
+diff --git a/django/contrib/auth/migrations/0011_update_proxy_permissions.py b/django/contrib/auth/migrations/0011_update_proxy_permissions.py
+index 0e66649695..c3f617f438 100644
+--- a/django/contrib/auth/migrations/0011_update_proxy_permissions.py
++++ b/django/contrib/auth/migrations/0011_update_proxy_permissions.py
+@@ -1,5 +1,18 @@
+-from django.db import migrations
++import sys
++
++from django.core.management.color import color_style
++from django.db import migrations, transaction
+ from django.db.models import Q
++from django.db.utils import IntegrityError
++
++WARNING = """
++    A problem arose migrating proxy model permissions for {old} to {new}.
++
++      Permission(s) for {new} already existed.
++      Codenames Q: {query}
++
++    Ensure to audit ALL permissions for {old} and {new}.
++"""
+ 
+ 
+ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+@@ -7,6 +20,7 @@ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+     Update the content_type of proxy model permissions to use the ContentType
+     of the proxy model.
+     """
++    style = color_style()
+     Permission = apps.get_model('auth', 'Permission')
+     ContentType = apps.get_model('contenttypes', 'ContentType')
+     for Model in apps.get_models():
+@@ -24,10 +38,16 @@ def update_proxy_model_permissions(apps, schema_editor, reverse=False):
+         proxy_content_type = ContentType.objects.get_for_model(Model, for_concrete_model=False)
+         old_content_type = proxy_content_type if reverse else concrete_content_type
+         new_content_type = concrete_content_type if reverse else proxy_content_type
+-        Permission.objects.filter(
+-            permissions_query,
+-            content_type=old_content_type,
+-        ).update(content_type=new_content_type)
++        try:
++            with transaction.atomic():
++                Permission.objects.filter(
++                    permissions_query,
++                    content_type=old_content_type,
++                ).update(content_type=new_content_type)
++        except IntegrityError:
++            old = '{}_{}'.format(old_content_type.app_label, old_content_type.model)
++            new = '{}_{}'.format(new_content_type.app_label, new_content_type.model)
++            sys.stdout.write(style.WARNING(WARNING.format(old=old, new=new, query=permissions_query)))
+ 
+ 
+ def revert_proxy_model_permissions(apps, schema_editor):
+diff --git a/django/views/debug.py b/django/views/debug.py
+index cb3e8c7ec1..86da47ee20 100644
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -5,10 +5,10 @@ import types
+ from pathlib import Path
+ 
+ from django.conf import settings
+-from django.http import HttpResponse, HttpResponseNotFound
++from django.http import Http404, HttpResponse, HttpResponseNotFound
+ from django.template import Context, Engine, TemplateDoesNotExist
+ from django.template.defaultfilters import pprint
+-from django.urls import Resolver404, resolve
++from django.urls import resolve
+ from django.utils import timezone
+ from django.utils.datastructures import MultiValueDict
+ from django.utils.encoding import force_str
+@@ -483,7 +483,7 @@ def technical_404_response(request, exception):
+     caller = ''
+     try:
+         resolver_match = resolve(request.path)
+-    except Resolver404:
++    except Http404:
+         pass
+     else:
+         obj = resolver_match.func
+diff --git a/tests/auth_tests/test_migrations.py b/tests/auth_tests/test_migrations.py
+index 5ff2f6b4b3..c59dd2968e 100644
+--- a/tests/auth_tests/test_migrations.py
++++ b/tests/auth_tests/test_migrations.py
+@@ -4,6 +4,7 @@ from django.apps import apps
+ from django.contrib.auth.models import Permission, User
+ from django.contrib.contenttypes.models import ContentType
+ from django.test import TestCase
++from django.test.utils import captured_stdout
+ 
+ from .models import Proxy, UserProxy
+ 
+@@ -83,6 +84,29 @@ class ProxyModelWithDifferentAppLabelTests(TestCase):
+             self.assertTrue(user.has_perm('auth.' + permission.codename))
+             self.assertFalse(user.has_perm('auth_tests.' + permission.codename))
+ 
++    def test_migrate_with_existing_target_permission(self):
++        """
++        Permissions may already exist:
++
++         - Old workaround that was documented
++         - Model managed twice
++         - Subclass of a managed model
++        """
++        proxy_model_content_type = ContentType.objects.get_for_model(UserProxy, for_concrete_model=False)
++        Permission.objects.create(
++            content_type=proxy_model_content_type,
++            codename='add_userproxy',
++            name='Can add userproxy',
++        )
++        Permission.objects.create(
++            content_type=proxy_model_content_type,
++            codename='use_different_app_label',
++            name='May use a different app label',
++        )
++        with captured_stdout() as stdout:
++            update_proxy_permissions.update_proxy_model_permissions(apps, None)
++        self.assertIn('A problem arose migrating proxy model permissions', stdout.getvalue())
++
+ 
+ class ProxyModelWithSameAppLabelTests(TestCase):
+     available_apps = [
+@@ -152,3 +176,26 @@ class ProxyModelWithSameAppLabelTests(TestCase):
+         user = User._default_manager.get(pk=user.pk)
+         for permission in [self.default_permission, self.custom_permission]:
+             self.assertTrue(user.has_perm('auth_tests.' + permission.codename))
++
++    def test_migrate_with_existing_target_permission(self):
++        """
++        Permissions may already exist:
++
++         - Old workaround that was documented
++         - Model managed twice
++         - Subclass of a managed model
++        """
++        proxy_model_content_type = ContentType.objects.get_for_model(Proxy, for_concrete_model=False)
++        Permission.objects.create(
++            content_type=proxy_model_content_type,
++            codename='add_proxy',
++            name='Can add proxy',
++        )
++        Permission.objects.create(
++            content_type=proxy_model_content_type,
++            codename='display_proxys',
++            name='May display proxys information',
++        )
++        with captured_stdout() as stdout:
++            update_proxy_permissions.update_proxy_model_permissions(apps, None)
++        self.assertIn('A problem arose migrating proxy model permissions', stdout.getvalue())
+diff --git a/tests/view_tests/tests/test_debug.py b/tests/view_tests/tests/test_debug.py
+index abe41dc375..a8779efa6b 100644
+--- a/tests/view_tests/tests/test_debug.py
++++ b/tests/view_tests/tests/test_debug.py
+@@ -12,11 +12,12 @@ from unittest import mock
+ from django.core import mail
+ from django.core.files.uploadedfile import SimpleUploadedFile
+ from django.db import DatabaseError, connection
++from django.http import Http404
+ from django.shortcuts import render
+ from django.template import TemplateDoesNotExist
+ from django.test import RequestFactory, SimpleTestCase, override_settings
+ from django.test.utils import LoggingCaptureMixin
+-from django.urls import path, reverse
++from django.urls import path, register_converter, reverse
+ from django.utils.functional import SimpleLazyObject
+ from django.utils.safestring import mark_safe
+ from django.views.debug import (
+@@ -42,6 +43,24 @@ class WithoutEmptyPathUrls:
+     urlpatterns = [path('url/', index_page, name='url')]
+ 
+ 
++class Http404RaisingConverter:
++    """A path converter whose to_python() raises Http404."""
++    regex = '[0-9]+'
++
++    def to_python(self, value):
++        raise Http404('Converter raised an Http404.')
++
++    def to_url(self, value):
++        return str(value)
++
++
++register_converter(Http404RaisingConverter, 'http404')
++
++
++class Http404ConverterUrls:
++    urlpatterns = [path('path/<http404:value>/', index_page, name='http404')]
++
++
+ class CallableSettingWrapperTests(SimpleTestCase):
+     """ Unittests for CallableSettingWrapper
+     """

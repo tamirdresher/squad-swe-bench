@@ -1,0 +1,127 @@
+2026-06-23 04:59:44,572 - INFO - Creating container for django__django-13447...
+2026-06-23 05:00:24,467 - INFO - Container for django__django-13447 created: ec8ce84e659961aacdb1f8305cb0d55ebf463ff472669fb269aad06964a401a8
+2026-06-23 05:00:25,806 - INFO - Container for django__django-13447 started: ec8ce84e659961aacdb1f8305cb0d55ebf463ff472669fb269aad06964a401a8
+2026-06-23 05:00:25,819 - INFO - Intermediate patch for django__django-13447 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13447/patch.diff, now applying to container...
+2026-06-23 05:00:26,148 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:00:26,259 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:00:26,439 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/sites.py
+Hunk #1 succeeded at 461 (offset 21 lines).
+patching file docs/ref/contrib/admin/index.txt
+Hunk #1 succeeded at 3025 (offset 103 lines).
+Hunk #2 succeeded at 3033 (offset 103 lines).
+patching file docs/releases/3.2.txt
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 62 with fuzz 3.
+
+2026-06-23 05:00:27,807 - INFO - Git diff before:
+diff --git a/django/contrib/admin/sites.py b/django/contrib/admin/sites.py
+index 837dabfea8..59a4a0364d 100644
+--- a/django/contrib/admin/sites.py
++++ b/django/contrib/admin/sites.py
+@@ -461,6 +461,7 @@ class AdminSite:
+ 
+             info = (app_label, model._meta.model_name)
+             model_dict = {
++                'model': model,
+                 'name': capfirst(model._meta.verbose_name_plural),
+                 'object_name': model._meta.object_name,
+                 'perms': perms,
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index 8da7a72f10..96348a4ab4 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -3025,6 +3025,7 @@ Templates can override or extend base admin templates as described in
+ 
+       Each model is a dict with the following keys:
+ 
++      * ``model``: the model class
+       * ``object_name``: class name of the model
+       * ``name``: plural name of the model
+       * ``perms``: a ``dict`` tracking ``add``, ``change``, ``delete``, and
+@@ -3032,6 +3033,10 @@ Templates can override or extend base admin templates as described in
+       * ``admin_url``: admin changelist URL for the model
+       * ``add_url``: admin URL to add a new model instance
+ 
++    .. versionchanged:: 3.2
++
++        The ``model`` variable for each model was added.
++
+ .. method:: AdminSite.has_permission(request)
+ 
+     Returns ``True`` if the user for the given ``HttpRequest`` has permission
+diff --git a/docs/releases/3.2.txt b/docs/releases/3.2.txt
+index 828add0fea..a3c90edc54 100644
+--- a/docs/releases/3.2.txt
++++ b/docs/releases/3.2.txt
+@@ -62,6 +62,9 @@ primary key is added. The type of this implicit primary key can now be
+ controlled via the :setting:`DEFAULT_AUTO_FIELD` setting and
+ :attr:`AppConfig.default_auto_field <django.apps.AppConfig.default_auto_field>`
+ attribute. No more needing to override primary keys in all models.
++* The new context variable ``model`` which contains the model class for each
++  model is added to the :meth:`.AdminSite.each_context` method.
++
+ 
+ Maintaining the historical behavior, the default value for
+ :setting:`DEFAULT_AUTO_FIELD` is :class:`~django.db.models.AutoField`. Starting
+2026-06-23 05:00:27,813 - INFO - Eval script for django__django-13447 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13447/eval.sh; copying to container...
+2026-06-23 05:00:38,841 - INFO - Test runtime: 10.86 seconds
+2026-06-23 05:00:38,847 - INFO - Test output for django__django-13447 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13447/test_output.txt
+2026-06-23 05:00:38,962 - INFO - Git diff after:
+diff --git a/django/contrib/admin/sites.py b/django/contrib/admin/sites.py
+index 837dabfea8..59a4a0364d 100644
+--- a/django/contrib/admin/sites.py
++++ b/django/contrib/admin/sites.py
+@@ -461,6 +461,7 @@ class AdminSite:
+ 
+             info = (app_label, model._meta.model_name)
+             model_dict = {
++                'model': model,
+                 'name': capfirst(model._meta.verbose_name_plural),
+                 'object_name': model._meta.object_name,
+                 'perms': perms,
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index 8da7a72f10..96348a4ab4 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -3025,6 +3025,7 @@ Templates can override or extend base admin templates as described in
+ 
+       Each model is a dict with the following keys:
+ 
++      * ``model``: the model class
+       * ``object_name``: class name of the model
+       * ``name``: plural name of the model
+       * ``perms``: a ``dict`` tracking ``add``, ``change``, ``delete``, and
+@@ -3032,6 +3033,10 @@ Templates can override or extend base admin templates as described in
+       * ``admin_url``: admin changelist URL for the model
+       * ``add_url``: admin URL to add a new model instance
+ 
++    .. versionchanged:: 3.2
++
++        The ``model`` variable for each model was added.
++
+ .. method:: AdminSite.has_permission(request)
+ 
+     Returns ``True`` if the user for the given ``HttpRequest`` has permission
+diff --git a/docs/releases/3.2.txt b/docs/releases/3.2.txt
+index 828add0fea..a3c90edc54 100644
+--- a/docs/releases/3.2.txt
++++ b/docs/releases/3.2.txt
+@@ -62,6 +62,9 @@ primary key is added. The type of this implicit primary key can now be
+ controlled via the :setting:`DEFAULT_AUTO_FIELD` setting and
+ :attr:`AppConfig.default_auto_field <django.apps.AppConfig.default_auto_field>`
+ attribute. No more needing to override primary keys in all models.
++* The new context variable ``model`` which contains the model class for each
++  model is added to the :meth:`.AdminSite.each_context` method.
++
+ 
+ Maintaining the historical behavior, the default value for
+ :setting:`DEFAULT_AUTO_FIELD` is :class:`~django.db.models.AutoField`. Starting
+2026-06-23 05:00:38,963 - INFO - Grading answer for django__django-13447...
+2026-06-23 05:00:38,971 - INFO - report: {'django__django-13447': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_available_apps (admin_views.test_adminsite.SiteEachContextTest)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_add_action (admin_views.test_adminsite.SiteActionsTests)', 'test_disable_action (admin_views.test_adminsite.SiteActionsTests)', "AdminSite.get_action() returns an action even if it's disabled.", 'test_each_context (admin_views.test_adminsite.SiteEachContextTest)', 'test_each_context_site_url_with_script_name (admin_views.test_adminsite.SiteEachContextTest)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13447: resolved: True
+2026-06-23 05:00:38,976 - INFO - Attempting to stop container sweb.eval.django__django-13447.squad_v1...
+2026-06-23 05:00:54,918 - INFO - Attempting to remove container sweb.eval.django__django-13447.squad_v1...
+2026-06-23 05:00:55,107 - INFO - Container sweb.eval.django__django-13447.squad_v1 removed.
+2026-06-23 05:00:55,108 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13447:latest...
+2026-06-23 05:00:58,431 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13447:latest removed.

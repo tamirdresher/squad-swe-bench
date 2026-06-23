@@ -1,0 +1,346 @@
+2026-06-23 04:37:04,468 - INFO - Creating container for django__django-11620...
+2026-06-23 04:37:06,807 - INFO - Container for django__django-11620 created: 830ab11c778e7ee66c30dcff6f726370d2b3fba2ca5ccb3af169c22dc9a5eed7
+2026-06-23 04:37:07,209 - INFO - Container for django__django-11620 started: 830ab11c778e7ee66c30dcff6f726370d2b3fba2ca5ccb3af169c22dc9a5eed7
+2026-06-23 04:37:07,227 - INFO - Intermediate patch for django__django-11620 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11620/patch.diff, now applying to container...
+2026-06-23 04:37:07,475 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:37:07,586 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:37:07,686 - INFO - >>>>> Applied Patch:
+patching file django/db/migrations/serializer.py
+patching file django/views/debug.py
+patching file docs/releases/3.0.txt
+patching file docs/topics/http/urls.txt
+patching file tests/migrations/test_writer.py
+patching file tests/view_tests/tests/test_debug.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 137 with fuzz 1.
+
+2026-06-23 04:37:08,793 - INFO - Git diff before:
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 1f1b3f4f20..b4b92fb04d 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -115,9 +115,10 @@ class EnumSerializer(BaseSerializer):
+     def serialize(self):
+         enum_class = self.value.__class__
+         module = enum_class.__module__
+-        v_string, v_imports = serializer_factory(self.value.value).serialize()
+-        imports = {'import %s' % module, *v_imports}
+-        return "%s.%s(%s)" % (module, enum_class.__name__, v_string), imports
++        return (
++            '%s.%s[%r]' % (module, enum_class.__name__, self.value.name),
++            {'import %s' % module},
++        )
+ 
+ 
+ class FloatSerializer(BaseSimpleSerializer):
+diff --git a/django/views/debug.py b/django/views/debug.py
+index cb3e8c7ec1..86da47ee20 100644
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -5,10 +5,10 @@ import types
+ from pathlib import Path
+ 
+ from django.conf import settings
+-from django.http import HttpResponse, HttpResponseNotFound
++from django.http import Http404, HttpResponse, HttpResponseNotFound
+ from django.template import Context, Engine, TemplateDoesNotExist
+ from django.template.defaultfilters import pprint
+-from django.urls import Resolver404, resolve
++from django.urls import resolve
+ from django.utils import timezone
+ from django.utils.datastructures import MultiValueDict
+ from django.utils.encoding import force_str
+@@ -483,7 +483,7 @@ def technical_404_response(request, exception):
+     caller = ''
+     try:
+         resolver_match = resolve(request.path)
+-    except Resolver404:
++    except Http404:
+         pass
+     else:
+         obj = resolver_match.func
+diff --git a/docs/releases/3.0.txt b/docs/releases/3.0.txt
+index ad303ede3e..1bca160fca 100644
+--- a/docs/releases/3.0.txt
++++ b/docs/releases/3.0.txt
+@@ -354,7 +354,11 @@ Tests
+ URLs
+ ~~~~
+ 
+-* ...
++* A path converter's ``to_python()`` method may now raise
++  :exc:`~django.http.Http404` to emit a 404 error, e.g. to implement a
++  converter that uses :func:`~django.shortcuts.get_object_or_404`. Previously,
++  raising ``Http404`` resulted in a server error when :setting:`DEBUG` was
++  ``True``.
+ 
+ Validators
+ ~~~~~~~~~~
+diff --git a/docs/topics/http/urls.txt b/docs/topics/http/urls.txt
+index ed7257d847..dce5ac2c1f 100644
+--- a/docs/topics/http/urls.txt
++++ b/docs/topics/http/urls.txt
+@@ -148,7 +148,7 @@ A converter is a class that includes the following:
+   string into the type that should be passed to the view function. It should
+   raise ``ValueError`` if it can't convert the given value. A ``ValueError`` is
+   interpreted as no match and as a consequence a 404 response is sent to the
+-  user.
++  user unless another URL pattern matches.
+ 
+ * A ``to_url(self, value)`` method, which handles converting the Python type
+   into a string to be used in the URL.
+diff --git a/tests/migrations/test_writer.py b/tests/migrations/test_writer.py
+index 790d6a3efa..f9e6c68c3d 100644
+--- a/tests/migrations/test_writer.py
++++ b/tests/migrations/test_writer.py
+@@ -267,15 +267,15 @@ class WriterTests(SimpleTestCase):
+ 
+         self.assertSerializedResultEqual(
+             TextEnum.A,
+-            ("migrations.test_writer.TextEnum('a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.TextEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             BinaryEnum.A,
+-            ("migrations.test_writer.BinaryEnum(b'a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.BinaryEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             IntEnum.B,
+-            ("migrations.test_writer.IntEnum(2)", {'import migrations.test_writer'})
++            ("migrations.test_writer.IntEnum['B']", {'import migrations.test_writer'})
+         )
+ 
+         field = models.CharField(default=TextEnum.B, choices=[(m.value, m) for m in TextEnum])
+@@ -283,27 +283,27 @@ class WriterTests(SimpleTestCase):
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "('a-value', migrations.test_writer.TextEnum('a-value')), "
+-            "('value-b', migrations.test_writer.TextEnum('value-b'))], "
+-            "default=migrations.test_writer.TextEnum('value-b'))"
++            "('a-value', migrations.test_writer.TextEnum['A']), "
++            "('value-b', migrations.test_writer.TextEnum['B'])], "
++            "default=migrations.test_writer.TextEnum['B'])"
+         )
+         field = models.CharField(default=BinaryEnum.B, choices=[(m.value, m) for m in BinaryEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "(b'a-value', migrations.test_writer.BinaryEnum(b'a-value')), "
+-            "(b'value-b', migrations.test_writer.BinaryEnum(b'value-b'))], "
+-            "default=migrations.test_writer.BinaryEnum(b'value-b'))"
++            "(b'a-value', migrations.test_writer.BinaryEnum['A']), "
++            "(b'value-b', migrations.test_writer.BinaryEnum['B'])], "
++            "default=migrations.test_writer.BinaryEnum['B'])"
+         )
+         field = models.IntegerField(default=IntEnum.A, choices=[(m.value, m) for m in IntEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.IntegerField(choices=["
+-            "(1, migrations.test_writer.IntEnum(1)), "
+-            "(2, migrations.test_writer.IntEnum(2))], "
+-            "default=migrations.test_writer.IntEnum(1))"
++            "(1, migrations.test_writer.IntEnum['A']), "
++            "(2, migrations.test_writer.IntEnum['B'])], "
++            "default=migrations.test_writer.IntEnum['A'])"
+         )
+ 
+     def test_serialize_uuid(self):
+@@ -412,7 +412,7 @@ class WriterTests(SimpleTestCase):
+         # Test a string regex with flag
+         validator = RegexValidator(r'^[0-9]+$', flags=re.S)
+         string = MigrationWriter.serialize(validator)[0]
+-        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag(16))")
++        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag['DOTALL'])")
+         self.serialize_round_trip(validator)
+ 
+         # Test message and code
+diff --git a/tests/view_tests/tests/test_debug.py b/tests/view_tests/tests/test_debug.py
+index 46589c82ba..1624c1720b 100644
+--- a/tests/view_tests/tests/test_debug.py
++++ b/tests/view_tests/tests/test_debug.py
+@@ -12,11 +12,13 @@ from unittest import mock
+ from django.core import mail
+ from django.core.files.uploadedfile import SimpleUploadedFile
+ from django.db import DatabaseError, connection
++from django.http import Http404
+ from django.shortcuts import render
+ from django.template import TemplateDoesNotExist
+ from django.test import RequestFactory, SimpleTestCase, override_settings
+ from django.test.utils import LoggingCaptureMixin
+ from django.urls import path, reverse
++from django.urls.converters import IntConverter
+ from django.utils.functional import SimpleLazyObject
+ from django.utils.safestring import mark_safe
+ from django.views.debug import (
+@@ -135,6 +137,11 @@ class DebugViewTests(SimpleTestCase):
+         self.assertContains(response, "Raised by:", status_code=404)
+         self.assertContains(response, "view_tests.views.Http404View", status_code=404)
+ 
++    def test_technical_404_converter_raise_404(self):
++        with mock.patch.object(IntConverter, 'to_python', side_effect=Http404):
++            response = self.client.get('/path-post/1/')
++            self.assertContains(response, 'Page not found', status_code=404)
++
+     def test_non_l10ned_numeric_ids(self):
+         """
+         Numeric IDs and fancy traceback context blocks line numbers shouldn't be localized.
+2026-06-23 04:37:08,802 - INFO - Eval script for django__django-11620 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11620/eval.sh; copying to container...
+2026-06-23 04:37:21,091 - INFO - Test runtime: 12.07 seconds
+2026-06-23 04:37:21,096 - INFO - Test output for django__django-11620 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11620/test_output.txt
+2026-06-23 04:37:21,187 - INFO - Git diff after:
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 1f1b3f4f20..b4b92fb04d 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -115,9 +115,10 @@ class EnumSerializer(BaseSerializer):
+     def serialize(self):
+         enum_class = self.value.__class__
+         module = enum_class.__module__
+-        v_string, v_imports = serializer_factory(self.value.value).serialize()
+-        imports = {'import %s' % module, *v_imports}
+-        return "%s.%s(%s)" % (module, enum_class.__name__, v_string), imports
++        return (
++            '%s.%s[%r]' % (module, enum_class.__name__, self.value.name),
++            {'import %s' % module},
++        )
+ 
+ 
+ class FloatSerializer(BaseSimpleSerializer):
+diff --git a/django/views/debug.py b/django/views/debug.py
+index cb3e8c7ec1..86da47ee20 100644
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -5,10 +5,10 @@ import types
+ from pathlib import Path
+ 
+ from django.conf import settings
+-from django.http import HttpResponse, HttpResponseNotFound
++from django.http import Http404, HttpResponse, HttpResponseNotFound
+ from django.template import Context, Engine, TemplateDoesNotExist
+ from django.template.defaultfilters import pprint
+-from django.urls import Resolver404, resolve
++from django.urls import resolve
+ from django.utils import timezone
+ from django.utils.datastructures import MultiValueDict
+ from django.utils.encoding import force_str
+@@ -483,7 +483,7 @@ def technical_404_response(request, exception):
+     caller = ''
+     try:
+         resolver_match = resolve(request.path)
+-    except Resolver404:
++    except Http404:
+         pass
+     else:
+         obj = resolver_match.func
+diff --git a/docs/releases/3.0.txt b/docs/releases/3.0.txt
+index ad303ede3e..1bca160fca 100644
+--- a/docs/releases/3.0.txt
++++ b/docs/releases/3.0.txt
+@@ -354,7 +354,11 @@ Tests
+ URLs
+ ~~~~
+ 
+-* ...
++* A path converter's ``to_python()`` method may now raise
++  :exc:`~django.http.Http404` to emit a 404 error, e.g. to implement a
++  converter that uses :func:`~django.shortcuts.get_object_or_404`. Previously,
++  raising ``Http404`` resulted in a server error when :setting:`DEBUG` was
++  ``True``.
+ 
+ Validators
+ ~~~~~~~~~~
+diff --git a/docs/topics/http/urls.txt b/docs/topics/http/urls.txt
+index ed7257d847..dce5ac2c1f 100644
+--- a/docs/topics/http/urls.txt
++++ b/docs/topics/http/urls.txt
+@@ -148,7 +148,7 @@ A converter is a class that includes the following:
+   string into the type that should be passed to the view function. It should
+   raise ``ValueError`` if it can't convert the given value. A ``ValueError`` is
+   interpreted as no match and as a consequence a 404 response is sent to the
+-  user.
++  user unless another URL pattern matches.
+ 
+ * A ``to_url(self, value)`` method, which handles converting the Python type
+   into a string to be used in the URL.
+diff --git a/tests/migrations/test_writer.py b/tests/migrations/test_writer.py
+index 790d6a3efa..f9e6c68c3d 100644
+--- a/tests/migrations/test_writer.py
++++ b/tests/migrations/test_writer.py
+@@ -267,15 +267,15 @@ class WriterTests(SimpleTestCase):
+ 
+         self.assertSerializedResultEqual(
+             TextEnum.A,
+-            ("migrations.test_writer.TextEnum('a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.TextEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             BinaryEnum.A,
+-            ("migrations.test_writer.BinaryEnum(b'a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.BinaryEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             IntEnum.B,
+-            ("migrations.test_writer.IntEnum(2)", {'import migrations.test_writer'})
++            ("migrations.test_writer.IntEnum['B']", {'import migrations.test_writer'})
+         )
+ 
+         field = models.CharField(default=TextEnum.B, choices=[(m.value, m) for m in TextEnum])
+@@ -283,27 +283,27 @@ class WriterTests(SimpleTestCase):
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "('a-value', migrations.test_writer.TextEnum('a-value')), "
+-            "('value-b', migrations.test_writer.TextEnum('value-b'))], "
+-            "default=migrations.test_writer.TextEnum('value-b'))"
++            "('a-value', migrations.test_writer.TextEnum['A']), "
++            "('value-b', migrations.test_writer.TextEnum['B'])], "
++            "default=migrations.test_writer.TextEnum['B'])"
+         )
+         field = models.CharField(default=BinaryEnum.B, choices=[(m.value, m) for m in BinaryEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "(b'a-value', migrations.test_writer.BinaryEnum(b'a-value')), "
+-            "(b'value-b', migrations.test_writer.BinaryEnum(b'value-b'))], "
+-            "default=migrations.test_writer.BinaryEnum(b'value-b'))"
++            "(b'a-value', migrations.test_writer.BinaryEnum['A']), "
++            "(b'value-b', migrations.test_writer.BinaryEnum['B'])], "
++            "default=migrations.test_writer.BinaryEnum['B'])"
+         )
+         field = models.IntegerField(default=IntEnum.A, choices=[(m.value, m) for m in IntEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.IntegerField(choices=["
+-            "(1, migrations.test_writer.IntEnum(1)), "
+-            "(2, migrations.test_writer.IntEnum(2))], "
+-            "default=migrations.test_writer.IntEnum(1))"
++            "(1, migrations.test_writer.IntEnum['A']), "
++            "(2, migrations.test_writer.IntEnum['B'])], "
++            "default=migrations.test_writer.IntEnum['A'])"
+         )
+ 
+     def test_serialize_uuid(self):
+@@ -412,7 +412,7 @@ class WriterTests(SimpleTestCase):
+         # Test a string regex with flag
+         validator = RegexValidator(r'^[0-9]+$', flags=re.S)
+         string = MigrationWriter.serialize(validator)[0]
+-        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag(16))")
++        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag['DOTALL'])")
+         self.serialize_round_trip(validator)
+ 
+         # Test message and code
+2026-06-23 04:37:21,188 - INFO - Git diff changed after running eval script
+2026-06-23 04:37:21,189 - INFO - Grading answer for django__django-11620...
+2026-06-23 04:37:21,195 - INFO - report: {'django__django-11620': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_technical_404_converter_raise_404 (view_tests.tests.test_debug.DebugViewTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests)', 'test_cleanse_setting_basic (view_tests.tests.test_debug.HelperFunctionTests)', 'test_cleanse_setting_ignore_case (view_tests.tests.test_debug.HelperFunctionTests)', 'test_cleanse_setting_recurses_in_dictionary (view_tests.tests.test_debug.HelperFunctionTests)', 'test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests)', 'test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests)', 'An exception report can be generated even for a disallowed host.', 'test_message_only (view_tests.tests.test_debug.PlainTextReportTests)', 'An exception report can be generated for just a request', 'An exception report can be generated without request', 'A simple exception report can be generated', 'A message can be provided in addition to a request', 'test_request_with_items_key (view_tests.tests.test_debug.PlainTextReportTests)', 'test_template_exception (view_tests.tests.test_debug.PlainTextReportTests)', 'test_ajax_response_encoding (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_custom_exception_reporter_filter (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_non_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_paranoid_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter)', 'test_400 (view_tests.tests.test_debug.DebugViewTests)', 'test_403 (view_tests.tests.test_debug.DebugViewTests)', 'test_403_template (view_tests.tests.test_debug.DebugViewTests)', 'test_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_404_empty_path_not_in_urls (view_tests.tests.test_debug.DebugViewTests)', 'test_404_not_in_urls (view_tests.tests.test_debug.DebugViewTests)', 'test_classbased_technical_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_default_urlconf_template (view_tests.tests.test_debug.DebugViewTests)', 'test_files (view_tests.tests.test_debug.DebugViewTests)', 'test_no_template_source_loaders (view_tests.tests.test_debug.DebugViewTests)', 'test_non_l10ned_numeric_ids (view_tests.tests.test_debug.DebugViewTests)', 'test_regression_21530 (view_tests.tests.test_debug.DebugViewTests)', 'test_technical_404 (view_tests.tests.test_debug.DebugViewTests)', 'test_template_encoding (view_tests.tests.test_debug.DebugViewTests)', 'test_template_exceptions (view_tests.tests.test_debug.DebugViewTests)', 'Tests for not existing file', 'test_encoding_error (view_tests.tests.test_debug.ExceptionReporterTests)', 'The ExceptionReporter supports Unix, Windows and Macintosh EOL markers', 'test_exception_fetching_user (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_ignore_traceback_evaluation_exceptions (view_tests.tests.test_debug.ExceptionReporterTests)', 'Safe strings in local variables are escaped.', 'test_message_only (view_tests.tests.test_debug.ExceptionReporterTests)', 'Non-UTF-8 exceptions/values should not make the output generation choke.', 'test_reporting_frames_for_cyclic_reference (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_reporting_frames_without_source (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_reporting_of_nested_exceptions (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_request_with_items_key (view_tests.tests.test_debug.ExceptionReporterTests)', 'test_template_encoding (view_tests.tests.test_debug.ExceptionReporterTests)', 'Large values should not create a large HTML.', 'test_unfrozen_importlib (view_tests.tests.test_debug.ExceptionReporterTests)', 'Unprintable values should not make the output generation choke.', 'test_callable_settings (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_callable_settings_forbidding_to_set_attributes (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_custom_exception_reporter_filter (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_dict_setting_with_non_str_key (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_multivalue_dict_key_error (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_non_sensitive_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_paranoid_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_function_arguments (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_function_keyword_arguments (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_method (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_request (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_sensitive_settings (view_tests.tests.test_debug.ExceptionReporterFilterTests)', 'test_settings_with_sensitive_keys (view_tests.tests.test_debug.ExceptionReporterFilterTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11620: resolved: True
+2026-06-23 04:37:21,200 - INFO - Attempting to stop container sweb.eval.django__django-11620.squad_v1...
+2026-06-23 04:37:37,096 - INFO - Attempting to remove container sweb.eval.django__django-11620.squad_v1...
+2026-06-23 04:37:41,686 - INFO - Container sweb.eval.django__django-11620.squad_v1 removed.
+2026-06-23 04:37:41,687 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11620:latest...
+2026-06-23 04:37:43,321 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11620:latest removed.

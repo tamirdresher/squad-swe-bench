@@ -1,0 +1,50 @@
+diff --git a/sympy/combinatorics/tests/test_permutations.py b/sympy/combinatorics/tests/test_permutations.py
+index 1685475cba..24c562ea3b 100644
+--- a/sympy/combinatorics/tests/test_permutations.py
++++ b/sympy/combinatorics/tests/test_permutations.py
+@@ -396,6 +396,11 @@ def test_args():
+     raises(ValueError, lambda: Permutation([[1, 2], 0]))
+            # enclosing brackets needed on 0
+     raises(ValueError, lambda: Permutation([1, 1, 0]))
++    # non-disjoint cycles are allowed and composed left-to-right
++    assert Permutation([[0, 1], [0, 1]]).array_form == [0, 1]  # identity
++    assert Permutation([[0, 1], [1, 0]]).array_form == [0, 1]  # identity
++    assert Permutation([[0, 1, 2], [1, 2]]).array_form == [2, 1, 0]
++    assert Permutation([[1], [1, 2]]).array_form == [0, 2, 1]  # singleton + transposition
+     raises(ValueError, lambda: Permutation([4, 5], size=10))  # where are 0-3?
+     # but this is ok because cycles imply that only those listed moved
+     assert Permutation(4, 5) == Permutation([0, 1, 2, 3, 5, 4])
+diff --git a/sympy/core/mod.py b/sympy/core/mod.py
+index 11c800704b..64b8337b56 100644
+--- a/sympy/core/mod.py
++++ b/sympy/core/mod.py
+@@ -39,7 +39,8 @@ def doit(p, q):
+             if p.is_infinite or q.is_infinite or p is nan or q is nan:
+                 return nan
+             if (p == q or p == -q or
+-                    p.is_Pow and p.exp.is_Integer and p.base == q or
++                    p.is_Pow and p.exp.is_integer and p.base == q and
++                    q.is_integer and p.exp.is_positive or
+                     p.is_integer and q == 1):
+                 return S.Zero
+ 
+diff --git a/sympy/core/tests/test_arit.py b/sympy/core/tests/test_arit.py
+index 06d65203fb..c888286495 100644
+--- a/sympy/core/tests/test_arit.py
++++ b/sympy/core/tests/test_arit.py
+@@ -1607,6 +1607,15 @@ def test_Mod():
+     # issue 10963
+     assert (x**6000%400).args[1] == 400
+ 
++    # issue 8024 / Mod(x**2, x): only zero when base is a known integer
++    # and the exponent is positive
++    n = Symbol('n', integer=True)
++    assert Mod(n**2, n) == 0
++    assert Mod(x**2, x) != 0
++    assert Mod(x**2, x).subs(x, S(1.5)) == Float(0.75)
++    # negative exponents must not collapse to zero
++    assert Mod(x**-1, x) != 0
++
+ 
+ def test_Mod_is_integer():
+     p = Symbol('p', integer=True)

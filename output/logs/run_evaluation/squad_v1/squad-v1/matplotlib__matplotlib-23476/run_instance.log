@@ -1,0 +1,3377 @@
+2026-06-23 05:44:14,067 - INFO - Creating container for matplotlib__matplotlib-23476...
+2026-06-23 05:44:17,910 - INFO - Container for matplotlib__matplotlib-23476 created: 65f76ece6171fbb40f0204e6fb1689f7726082cb6c5fe118828dab4db93827bc
+2026-06-23 05:44:18,496 - INFO - Container for matplotlib__matplotlib-23476 started: 65f76ece6171fbb40f0204e6fb1689f7726082cb6c5fe118828dab4db93827bc
+2026-06-23 05:44:18,514 - INFO - Intermediate patch for matplotlib__matplotlib-23476 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/patch.diff, now applying to container...
+2026-06-23 05:44:18,852 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:44:18,995 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:44:19,114 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 05:44:19,115 - INFO - >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+2026-06-23 05:44:19,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 05:44:19,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,161 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,164 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,183 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,184 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,185 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,190 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,192 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,193 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,194 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,197 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,202 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,202 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,206 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,206 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,207 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,210 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,212 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,214 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,215 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,215 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,216 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,217 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,217 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,218 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,218 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,219 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,219 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,220 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,220 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,223 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,224 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,224 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,225 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,226 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,226 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,226 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,227 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,227 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,228 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,228 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,229 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,229 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,230 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,230 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,231 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,231 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,232 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,233 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,233 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,234 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,234 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,235 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,235 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,236 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,238 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,239 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,240 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,241 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,241 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,242 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,242 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,245 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,245 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,246 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,247 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,249 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,250 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,250 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,251 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,252 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,291 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 05:44:19,292 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,294 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,296 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,296 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,297 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,300 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,301 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,301 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,302 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,302 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,303 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,305 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,306 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,307 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,307 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,309 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,310 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,311 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,311 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,312 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,312 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,313 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,313 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,314 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,314 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,315 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,315 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,316 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,316 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,317 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,317 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,319 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,319 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,320 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,321 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,323 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,324 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,324 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,327 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,327 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,329 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,330 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,391 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-23476: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/figure.py
+patch: **** malformed patch at line 37:  
+
+patching file lib/matplotlib/tests/test_figure.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-23476/run_instance.log) for more information.
+
+2026-06-23 05:44:19,391 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-23476.squad_v1...
+2026-06-23 05:44:38,055 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-23476.squad_v1...
+2026-06-23 05:44:38,174 - INFO - Container sweb.eval.matplotlib__matplotlib-23476.squad_v1 removed.
+2026-06-23 05:44:38,174 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23476:latest...
+2026-06-23 05:44:42,631 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-23476:latest removed.

@@ -1,0 +1,115 @@
+2026-06-23 04:39:25,509 - INFO - Creating container for django__django-11797...
+2026-06-23 04:40:02,165 - INFO - Container for django__django-11797 created: 09002d4a9899377a64878809537399e4be39a310d5035250bacfd67637a4cd8c
+2026-06-23 04:40:02,754 - INFO - Container for django__django-11797 started: 09002d4a9899377a64878809537399e4be39a310d5035250bacfd67637a4cd8c
+2026-06-23 04:40:02,767 - INFO - Intermediate patch for django__django-11797 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11797/patch.diff, now applying to container...
+2026-06-23 04:40:03,035 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:40:03,127 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:40:03,268 - INFO - >>>>> Applied Patch:
+patching file django/db/models/lookups.py
+patching file tests/aggregation/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 1139 with fuzz 1.
+
+2026-06-23 04:40:04,477 - INFO - Git diff before:
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 105dc93251..2683d8971a 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -262,9 +262,9 @@ class Exact(FieldGetDbPrepValueMixin, BuiltinLookup):
+         from django.db.models.sql.query import Query
+         if isinstance(self.rhs, Query):
+             if self.rhs.has_limit_one():
+-                # The subquery must select only the pk.
+-                self.rhs.clear_select_clause()
+-                self.rhs.add_fields(['pk'])
++                if not self.rhs.has_select_fields:
++                    self.rhs.clear_select_clause()
++                    self.rhs.add_fields(['pk'])
+             else:
+                 raise ValueError(
+                     'The QuerySet value for an exact lookup must be limited to '
+diff --git a/tests/aggregation/tests.py b/tests/aggregation/tests.py
+index 0f799c4bc3..283fbbb6a1 100644
+--- a/tests/aggregation/tests.py
++++ b/tests/aggregation/tests.py
+@@ -1139,6 +1139,23 @@ class AggregateTestCase(TestCase):
+             list(publisher_qs)
+         self.assertEqual(ctx[0]['sql'].count('SELECT'), 2)
+ 
++    def test_aggregation_exact_lookup_subquery_group_by(self):
++        # Regression test for #31150: an exact lookup whose RHS is a sliced
++        # values().annotate().values() queryset must not override the
++        # subquery's SELECT/GROUP BY clause.
++        inner = Author.objects.values('age').annotate(
++            max_id=Max('id'),
++        ).values('max_id')
++        outer = Author.objects.filter(id=inner[:1])
++        sql = str(outer.query)
++        # The subquery must keep grouping by age only; the pk used by the
++        # exact lookup must not be appended to the GROUP BY clause.
++        group_by = sql[sql.rindex('GROUP BY'):]
++        group_by = group_by[:group_by.index('LIMIT')]
++        self.assertEqual(group_by.count(','), 0)
++        # The query must execute without error.
++        list(outer)
++
+     @skipUnlessDBFeature('supports_subqueries_in_group_by')
+     def test_group_by_subquery_annotation(self):
+         """
+2026-06-23 04:40:04,483 - INFO - Eval script for django__django-11797 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11797/eval.sh; copying to container...
+2026-06-23 04:40:19,528 - INFO - Test runtime: 14.87 seconds
+2026-06-23 04:40:19,533 - INFO - Test output for django__django-11797 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11797/test_output.txt
+2026-06-23 04:40:19,658 - INFO - Git diff after:
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 105dc93251..2683d8971a 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -262,9 +262,9 @@ class Exact(FieldGetDbPrepValueMixin, BuiltinLookup):
+         from django.db.models.sql.query import Query
+         if isinstance(self.rhs, Query):
+             if self.rhs.has_limit_one():
+-                # The subquery must select only the pk.
+-                self.rhs.clear_select_clause()
+-                self.rhs.add_fields(['pk'])
++                if not self.rhs.has_select_fields:
++                    self.rhs.clear_select_clause()
++                    self.rhs.add_fields(['pk'])
+             else:
+                 raise ValueError(
+                     'The QuerySet value for an exact lookup must be limited to '
+diff --git a/tests/aggregation/tests.py b/tests/aggregation/tests.py
+index 0f799c4bc3..283fbbb6a1 100644
+--- a/tests/aggregation/tests.py
++++ b/tests/aggregation/tests.py
+@@ -1139,6 +1139,23 @@ class AggregateTestCase(TestCase):
+             list(publisher_qs)
+         self.assertEqual(ctx[0]['sql'].count('SELECT'), 2)
+ 
++    def test_aggregation_exact_lookup_subquery_group_by(self):
++        # Regression test for #31150: an exact lookup whose RHS is a sliced
++        # values().annotate().values() queryset must not override the
++        # subquery's SELECT/GROUP BY clause.
++        inner = Author.objects.values('age').annotate(
++            max_id=Max('id'),
++        ).values('max_id')
++        outer = Author.objects.filter(id=inner[:1])
++        sql = str(outer.query)
++        # The subquery must keep grouping by age only; the pk used by the
++        # exact lookup must not be appended to the GROUP BY clause.
++        group_by = sql[sql.rindex('GROUP BY'):]
++        group_by = group_by[:group_by.index('LIMIT')]
++        self.assertEqual(group_by.count(','), 0)
++        # The query must execute without error.
++        list(outer)
++
+     @skipUnlessDBFeature('supports_subqueries_in_group_by')
+     def test_group_by_subquery_annotation(self):
+         """
+2026-06-23 04:40:19,659 - INFO - Grading answer for django__django-11797...
+2026-06-23 04:40:19,666 - INFO - report: {'django__django-11797': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_exact_query_rhs_with_selected_columns (lookup.tests.LookupTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_chain_date_time_lookups (lookup.tests.LookupTests)', 'test_count (lookup.tests.LookupTests)', 'test_custom_field_none_rhs (lookup.tests.LookupTests)', 'Lookup.can_use_none_as_rhs=True allows None as a lookup value.', 'test_error_messages (lookup.tests.LookupTests)', 'test_escaping (lookup.tests.LookupTests)', 'test_exact_exists (lookup.tests.LookupTests)', 'Transforms are used for __exact=None.', 'test_exact_sliced_queryset_limit_one (lookup.tests.LookupTests)', 'test_exact_sliced_queryset_limit_one_offset (lookup.tests.LookupTests)', 'test_exact_sliced_queryset_not_limited_to_one (lookup.tests.LookupTests)', 'test_exclude (lookup.tests.LookupTests)', 'test_exists (lookup.tests.LookupTests)', 'test_get_next_previous_by (lookup.tests.LookupTests)', 'test_in (lookup.tests.LookupTests)', 'test_in_bulk (lookup.tests.LookupTests)', 'test_in_bulk_lots_of_ids (lookup.tests.LookupTests)', 'test_in_bulk_non_unique_field (lookup.tests.LookupTests)', 'test_in_bulk_with_field (lookup.tests.LookupTests)', 'test_in_different_database (lookup.tests.LookupTests)', 'test_in_keeps_value_ordering (lookup.tests.LookupTests)', 'test_iterator (lookup.tests.LookupTests)', 'test_lookup_collision (lookup.tests.LookupTests)', 'test_lookup_date_as_str (lookup.tests.LookupTests)', 'test_lookup_int_as_str (lookup.tests.LookupTests)', 'test_nested_outerref_lhs (lookup.tests.LookupTests)', 'test_none (lookup.tests.LookupTests)', 'test_nonfield_lookups (lookup.tests.LookupTests)', 'test_pattern_lookups_with_substr (lookup.tests.LookupTests)', 'test_regex (lookup.tests.LookupTests)', 'test_regex_backreferencing (lookup.tests.LookupTests)', 'test_regex_non_ascii (lookup.tests.LookupTests)', 'test_regex_non_string (lookup.tests.LookupTests)', 'test_regex_null (lookup.tests.LookupTests)', 'test_relation_nested_lookup_error (lookup.tests.LookupTests)', 'test_unsupported_lookups (lookup.tests.LookupTests)', 'test_values (lookup.tests.LookupTests)', 'test_values_list (lookup.tests.LookupTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11797: resolved: True
+2026-06-23 04:40:19,672 - INFO - Attempting to stop container sweb.eval.django__django-11797.squad_v1...
+2026-06-23 04:40:35,511 - INFO - Attempting to remove container sweb.eval.django__django-11797.squad_v1...
+2026-06-23 04:40:44,281 - INFO - Container sweb.eval.django__django-11797.squad_v1 removed.
+2026-06-23 04:40:44,282 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11797:latest...
+2026-06-23 04:40:45,797 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11797:latest removed.

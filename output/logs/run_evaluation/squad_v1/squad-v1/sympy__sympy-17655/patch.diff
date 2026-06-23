@@ -1,0 +1,111 @@
+diff --git a/sympy/geometry/point.py b/sympy/geometry/point.py
+index c3d3da39c9..5517f2baf2 100644
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -32,6 +32,7 @@
+ from sympy.core.numbers import Float
+ from sympy.core.parameters import global_parameters
+ from sympy.core.add import Add
++from sympy.core.mul import Mul
+ from sympy.utilities.iterables import uniq
+ from sympy.utilities.misc import filldedent, func_name, Undecidable
+ 
+@@ -121,9 +122,20 @@ def __new__(cls, *args, **kwargs):
+                 return coords
+ 
+         if not is_sequence(coords):
+-            raise TypeError(filldedent('''
+-                Expecting sequence of coordinates, not `{}`'''
+-                                       .format(func_name(coords))))
++            # Handle a scalar * Point expression, e.g. sympify(2.0)*Point(1, 1).
++            # SymPy's core may build this as an unevaluated Mul instead of
++            # dispatching through Point.__rmul__, leaving a non-sequence Mul
++            # object here. Treat it as the point scaled by the other factors.
++            point_factors = ([a for a in coords.args if isinstance(a, Point)]
++                             if isinstance(coords, Mul) else [])
++            if len(point_factors) == 1:
++                pt = point_factors[0]
++                scalar = Mul(*[a for a in coords.args if not isinstance(a, Point)])
++                coords = [scalar*c for c in pt.args]
++            else:
++                raise TypeError(filldedent('''
++                    Expecting sequence of coordinates, not `{}`'''
++                                           .format(func_name(coords))))
+         # A point where only `dim` is specified is initialized
+         # to zeros.
+         if len(coords) == 0 and kwargs.get('dim', None):
+@@ -290,7 +302,10 @@ def __neg__(self):
+     def __sub__(self, other):
+         """Subtract two points, or subtract a factor from this point's
+         coordinates."""
+-        return self + [-x for x in other]
++        try:
++            return self + [-x for x in other]
++        except TypeError:
++            return self + (-sympify(other))
+ 
+     @classmethod
+     def _normalize_dimension(cls, *points, **kwargs):
+diff --git a/sympy/geometry/tests/test_point.py b/sympy/geometry/tests/test_point.py
+index cf16e11d23..c97b95ecc7 100644
+--- a/sympy/geometry/tests/test_point.py
++++ b/sympy/geometry/tests/test_point.py
+@@ -260,6 +260,27 @@ def test_point3D():
+         assert p - p_4d3d == Point(1, 1, 0, 0)
+ 
+ 
++def test_point_add_scalar_multiple():
++    # Regression test for issue: point + scalar*point should work regardless
++    # of multiplication order. `sympify(2.0)*point` builds an unevaluated Mul
++    # (Float.__mul__ wins over Point.__rmul__) while `point*sympify(2.0)` goes
++    # through Point.__mul__; both must give the same result.
++    from sympy import sympify
++    p_zero = Point(0, 0)
++    p_orig = Point(1, 1)
++    assert p_zero + p_orig*sympify(2.0) == p_zero + sympify(2.0)*p_orig
++    assert p_zero + sympify(2.0)*p_orig == Point(2, 2)
++    # subtraction with a scalar multiple of a Point
++    assert p_zero - sympify(2.0)*p_orig == Point(-2, -2)
++    # symbolic scalar
++    t = Symbol('t')
++    assert p_zero + t*p_orig == Point(t, t)
++    # 3D
++    p3d_zero = Point3D(0, 0, 0)
++    p3d_one = Point3D(1, 1, 1)
++    assert p3d_zero + sympify(2.0)*p3d_one == Point3D(2, 2, 2)
++
++
+ def test_Point2D():
+ 
+     # Test Distance
+diff --git a/sympy/ntheory/residue_ntheory.py b/sympy/ntheory/residue_ntheory.py
+index 9a3052d4c3..3f5dd86840 100644
+--- a/sympy/ntheory/residue_ntheory.py
++++ b/sympy/ntheory/residue_ntheory.py
+@@ -776,6 +776,10 @@ def nthroot_mod(a, n, p, all_roots=False):
+     if not isprime(p):
+         raise NotImplementedError("Not implemented for composite p")
+ 
++    if a % p == 0:
++        # x**n = 0 mod p has the single root x = 0 (p is prime)
++        return [0] if all_roots else 0
++
+     if (p - 1) % n == 0:
+         return _nthroot_mod1(a, n, p, all_roots)
+     # The roots of ``x**n - a = 0 (mod p)`` are roots of
+diff --git a/sympy/ntheory/tests/test_residue.py b/sympy/ntheory/tests/test_residue.py
+index d4854547be..2c2133f6ed 100644
+--- a/sympy/ntheory/tests/test_residue.py
++++ b/sympy/ntheory/tests/test_residue.py
+@@ -172,6 +172,11 @@ def test_residue():
+     assert nthroot_mod(11, 3, 109) is None
+     raises(NotImplementedError, lambda: nthroot_mod(16, 5, 36))
+     raises(NotImplementedError, lambda: nthroot_mod(9, 16, 36))
++    # issue 18874: x = 0 mod p is a root when a % p == 0
++    assert nthroot_mod(17*17, 5, 17) == 0
++    assert nthroot_mod(17*17, 5, 17, True) == [0]
++    assert nthroot_mod(0, 5, 17) == 0
++    assert nthroot_mod(0, 5, 17, True) == [0]
+ 
+     for p in primerange(5, 100):
+         qv = range(3, p, 4)

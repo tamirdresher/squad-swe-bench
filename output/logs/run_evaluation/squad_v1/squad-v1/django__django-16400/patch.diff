@@ -1,0 +1,85 @@
+diff --git a/django/contrib/admin/checks.py b/django/contrib/admin/checks.py
+index dbbeb7fe9c..f363621a88 100644
+--- a/django/contrib/admin/checks.py
++++ b/django/contrib/admin/checks.py
+@@ -917,10 +917,13 @@ class ModelAdminChecks(BaseModelAdminChecks):
+                         id="admin.E108",
+                     )
+                 ]
+-        if isinstance(field, models.ManyToManyField):
++        if isinstance(field, models.ManyToManyField) or (
++            getattr(field, "rel", None) and field.rel.field.many_to_one
++        ):
+             return [
+                 checks.Error(
+-                    "The value of '%s' must not be a ManyToManyField." % label,
++                    f"The value of '{label}' must not be a many-to-many field or a "
++                    f"reverse foreign key.",
+                     obj=obj.__class__,
+                     id="admin.E109",
+                 )
+diff --git a/django/contrib/auth/management/__init__.py b/django/contrib/auth/management/__init__.py
+index 0b5a982617..c63a83ccf1 100644
+--- a/django/contrib/auth/management/__init__.py
++++ b/django/contrib/auth/management/__init__.py
+@@ -95,11 +95,15 @@ def create_permissions(
+         .values_list("content_type", "codename")
+     )
+ 
+-    perms = [
+-        Permission(codename=codename, name=name, content_type=ct)
+-        for ct, (codename, name) in searched_perms
+-        if (ct.pk, codename) not in all_perms
+-    ]
++    perms = []
++    for ct, (codename, name) in searched_perms:
++        if (ct.pk, codename) not in all_perms:
++            permission = Permission()
++            permission._state.db = using
++            permission.codename = codename
++            permission.name = name
++            permission.content_type = ct
++            perms.append(permission)
+     Permission.objects.using(using).bulk_create(perms)
+     if verbosity >= 2:
+         for perm in perms:
+diff --git a/docs/ref/checks.txt b/docs/ref/checks.txt
+index f85c90059d..810aee6f3b 100644
+--- a/docs/ref/checks.txt
++++ b/docs/ref/checks.txt
+@@ -698,8 +698,8 @@ with the admin site:
+ * **admin.E108**: The value of ``list_display[n]`` refers to ``<label>``,
+   which is not a callable, an attribute of ``<ModelAdmin class>``, or an
+   attribute or method on ``<model>``.
+-* **admin.E109**: The value of ``list_display[n]`` must not be a
+-  ``ManyToManyField`` field.
++* **admin.E109**: The value of ``list_display[n]`` must not be a many-to-many
++  field or a reverse foreign key.
+ * **admin.E110**: The value of ``list_display_links`` must be a list, a tuple,
+   or ``None``.
+ * **admin.E111**: The value of ``list_display_links[n]`` refers to ``<label>``,
+diff --git a/tests/modeladmin/test_checks.py b/tests/modeladmin/test_checks.py
+index e4ad0636a6..85f2eda69e 100644
+--- a/tests/modeladmin/test_checks.py
++++ b/tests/modeladmin/test_checks.py
+@@ -537,7 +537,20 @@ class ListDisplayTests(CheckTestCase):
+         self.assertIsInvalid(
+             TestModelAdmin,
+             ValidationTestModel,
+-            "The value of 'list_display[0]' must not be a ManyToManyField.",
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
++            "admin.E109",
++        )
++
++    def test_invalid_reverse_related_field(self):
++        class TestModelAdmin(ModelAdmin):
++            list_display = ["song_set"]
++
++        self.assertIsInvalid(
++            TestModelAdmin,
++            Band,
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
+             "admin.E109",
+         )

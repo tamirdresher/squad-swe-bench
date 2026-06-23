@@ -1,0 +1,54 @@
+2026-06-23 05:11:12,884 - INFO - Creating container for django__django-15061...
+2026-06-23 05:11:33,773 - INFO - Container for django__django-15061 created: 44eeb532218e803d401304307d6793cca71a0237a057aa9652e8a34919328d47
+2026-06-23 05:11:34,204 - INFO - Container for django__django-15061 started: 44eeb532218e803d401304307d6793cca71a0237a057aa9652e8a34919328d47
+2026-06-23 05:11:34,216 - INFO - Intermediate patch for django__django-15061 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15061/patch.diff, now applying to container...
+2026-06-23 05:11:34,446 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:11:34,531 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:11:34,649 - INFO - >>>>> Applied Patch:
+patching file django/forms/widgets.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 849 with fuzz 1.
+
+2026-06-23 05:11:35,632 - INFO - Git diff before:
+diff --git a/django/forms/widgets.py b/django/forms/widgets.py
+index 00c19e2c55..386b0e7c3f 100644
+--- a/django/forms/widgets.py
++++ b/django/forms/widgets.py
+@@ -849,9 +849,7 @@ class MultiWidget(Widget):
+         return context
+ 
+     def id_for_label(self, id_):
+-        if id_:
+-            id_ += '_0'
+-        return id_
++        return ''
+ 
+     def value_from_datadict(self, data, files, name):
+         return [
+2026-06-23 05:11:35,638 - INFO - Eval script for django__django-15061 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15061/eval.sh; copying to container...
+2026-06-23 05:11:44,448 - INFO - Test runtime: 8.67 seconds
+2026-06-23 05:11:44,453 - INFO - Test output for django__django-15061 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15061/test_output.txt
+2026-06-23 05:11:44,564 - INFO - Git diff after:
+diff --git a/django/forms/widgets.py b/django/forms/widgets.py
+index 00c19e2c55..386b0e7c3f 100644
+--- a/django/forms/widgets.py
++++ b/django/forms/widgets.py
+@@ -849,9 +849,7 @@ class MultiWidget(Widget):
+         return context
+ 
+     def id_for_label(self, id_):
+-        if id_:
+-            id_ += '_0'
+-        return id_
++        return ''
+ 
+     def value_from_datadict(self, data, files, name):
+         return [
+2026-06-23 05:11:44,564 - INFO - Grading answer for django__django-15061...
+2026-06-23 05:11:44,571 - INFO - report: {'django__django-15061': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_form_as_table (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_form_as_table_data (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_form_as_table (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_bad_choice (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_clean (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_clean_disabled_multivalue (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_disabled_has_changed (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_form_cleaned_data (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', "Test when the first widget's data has changed.", "Test when the last widget's data has changed. This ensures that it is", 'test_has_changed_no_initial (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_has_changed_same (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'If insufficient data is provided, None is substituted.', 'test_render_required_attributes (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest)', 'test_splitdatetimefield_1 (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest)', 'test_splitdatetimefield_2 (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest)', 'test_splitdatetimefield_changed (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15061: resolved: True
+2026-06-23 05:11:44,580 - INFO - Attempting to stop container sweb.eval.django__django-15061.squad_v1...
+2026-06-23 05:12:08,061 - INFO - Attempting to remove container sweb.eval.django__django-15061.squad_v1...
+2026-06-23 05:12:08,398 - INFO - Container sweb.eval.django__django-15061.squad_v1 removed.
+2026-06-23 05:12:08,399 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15061:latest...
+2026-06-23 05:12:19,461 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15061:latest removed.

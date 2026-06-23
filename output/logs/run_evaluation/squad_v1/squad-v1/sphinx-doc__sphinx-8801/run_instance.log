@@ -1,0 +1,369 @@
+2026-06-23 07:07:14,534 - INFO - Creating container for sphinx-doc__sphinx-8801...
+2026-06-23 07:07:27,322 - INFO - Container for sphinx-doc__sphinx-8801 created: 201aa8bdc9a3043c6157200b930fa9044145c4a700a29bccf81ea6408db5bbae
+2026-06-23 07:07:27,965 - INFO - Container for sphinx-doc__sphinx-8801 started: 201aa8bdc9a3043c6157200b930fa9044145c4a700a29bccf81ea6408db5bbae
+2026-06-23 07:07:27,981 - INFO - Intermediate patch for sphinx-doc__sphinx-8801 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8801/patch.diff, now applying to container...
+2026-06-23 07:07:28,227 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:07:28,350 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:07:28,454 - INFO - >>>>> Applied Patch:
+patching file CHANGES
+patching file sphinx/ext/autodoc/importer.py
+patching file tests/roots/test-ext-autodoc/target/inheritance.py
+patching file tests/test_ext_autodoc.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 625 with fuzz 1.
+
+2026-06-23 07:07:28,739 - INFO - Git diff before:
+diff --git a/CHANGES b/CHANGES
+index ebdd331ed..3fd4a72b6 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * #8727: apidoc: namespace module file is not generated if no submodules there
+ * #741: autodoc: inherited-members doesn't work for instance attributes on super
+   class
++* #8932: autodoc: An annotation only member documented in a super class is
++  treated as undocumented on the inheriting class
+ * #8592: autodoc: ``:meta public:`` does not effect to variables
+ * #8594: autodoc: empty __all__ attribute is ignored
+ * #8315: autodoc: Failed to resolve struct.Struct type annotation
+diff --git a/setup.py b/setup.py
+index dfc80578f..b5e4452f4 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,22 +15,22 @@ if sys.version_info < (3, 5):
+     sys.exit(1)
+ 
+ install_requires = [
+-    'sphinxcontrib-applehelp',
+-    'sphinxcontrib-devhelp',
++    'sphinxcontrib-applehelp<=1.0.7',
++    'sphinxcontrib-devhelp<=1.0.5',
+     'sphinxcontrib-jsmath',
+-    'sphinxcontrib-htmlhelp',
+-    'sphinxcontrib-serializinghtml',
+-    'sphinxcontrib-qthelp',
+-    'Jinja2>=2.3',
++    'sphinxcontrib-htmlhelp<=2.0.4',
++    'sphinxcontrib-serializinghtml<=1.1.9',
++    'sphinxcontrib-qthelp<=1.0.6',
++    'Jinja2<3.0',
+     'Pygments>=2.0',
+     'docutils>=0.12',
+     'snowballstemmer>=1.1',
+     'babel>=1.3',
+-    'alabaster>=0.7,<0.8',
++    'alabaster>=0.7,<0.7.12',
+     'imagesize',
+     'requests>=2.5.0',
+     'setuptools',
+-    'packaging',
++    'packaging', 'markupsafe<=2.0.1',
+ ]
+ 
+ extras_require = {
+diff --git a/sphinx/ext/autodoc/importer.py b/sphinx/ext/autodoc/importer.py
+index 477aae247..b792b1a5f 100644
+--- a/sphinx/ext/autodoc/importer.py
++++ b/sphinx/ext/autodoc/importer.py
+@@ -294,24 +294,35 @@ def get_class_members(subject: Any, objpath: List[str], attrgetter: Callable
+ 
+     try:
+         for cls in getmro(subject):
++            try:
++                modname = safe_getattr(cls, '__module__')
++                qualname = safe_getattr(cls, '__qualname__')
++                analyzer = ModuleAnalyzer.for_module(modname)
++                analyzer.analyze()
++            except AttributeError:
++                qualname = None
++                analyzer = None
++            except PycodeError:
++                analyzer = None
++
+             # annotation only member (ex. attr: int)
+             for name in getannotations(cls):
+                 name = unmangle(cls, name)
+                 if name and name not in members:
+-                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls)
++                    if analyzer and (qualname, name) in analyzer.attr_docs:
++                        docstring = '\n'.join(analyzer.attr_docs[qualname, name])
++                    else:
++                        docstring = None
++
++                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
++                                                 docstring=docstring)
+ 
+             # append instance attributes (cf. self.attr1) if analyzer knows
+-            try:
+-                modname = safe_getattr(cls, '__module__')
+-                qualname = safe_getattr(cls, '__qualname__')
+-                analyzer = ModuleAnalyzer.for_module(modname)
+-                analyzer.analyze()
++            if analyzer:
+                 for (ns, name), docstring in analyzer.attr_docs.items():
+                     if ns == qualname and name not in members:
+                         members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
+                                                      docstring='\n'.join(docstring))
+-            except (AttributeError, PycodeError):
+-                pass
+     except AttributeError:
+         pass
+ 
+diff --git a/tests/roots/test-ext-autodoc/target/inheritance.py b/tests/roots/test-ext-autodoc/target/inheritance.py
+index ffac84bb6..c270506b0 100644
+--- a/tests/roots/test-ext-autodoc/target/inheritance.py
++++ b/tests/roots/test-ext-autodoc/target/inheritance.py
+@@ -15,3 +15,15 @@ class Derived(Base):
+     def inheritedmeth(self):
+         # no docstring here
+         pass
++
++
++class Bird:
++    """docstring of Bird."""
++
++    legs: int  #: docstring of legs
++
++
++class Penguin(Bird):
++    """docstring of Penguin."""
++
++    wings: int  #: docstring of wings
+diff --git a/tests/test_ext_autodoc.py b/tests/test_ext_autodoc.py
+index d555359cf..072b6349b 100644
+--- a/tests/test_ext_autodoc.py
++++ b/tests/test_ext_autodoc.py
+@@ -625,6 +625,37 @@ def test_autodoc_inherited_members(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_autodoc_inherited_members_annotation(app):
++    # an annotation only member documented in a superclass should be picked up
++    # via :inherited-members: without requiring :undoc-members: (refs: #8932)
++    options = {"members": None,
++               "inherited-members": None}
++    actual = do_autodoc(app, 'class', 'target.inheritance.Penguin', options)
++    assert list(actual) == [
++        '',
++        '.. py:class:: Penguin()',
++        '   :module: target.inheritance',
++        '',
++        '   docstring of Penguin.',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.legs',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of legs',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.wings',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of wings',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc')
+ def test_autodoc_inherited_members_Base(app):
+     options = {"members": None,
+diff --git a/tox.ini b/tox.ini
+index 21a0faec3..be1a9127e 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all,ignore::ImportWarning:importlib._bootstrap_external,ignore::DeprecationWarning:site,ignore::DeprecationWarning:distutils,ignore::DeprecationWarning:pip._vendor.packaging.version
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:flake8]
+ basepython = python3
+2026-06-23 07:07:28,745 - INFO - Eval script for sphinx-doc__sphinx-8801 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8801/eval.sh; copying to container...
+2026-06-23 07:07:33,588 - INFO - Test runtime: 4.68 seconds
+2026-06-23 07:07:33,593 - INFO - Test output for sphinx-doc__sphinx-8801 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8801/test_output.txt
+2026-06-23 07:07:33,682 - INFO - Git diff after:
+diff --git a/CHANGES b/CHANGES
+index ebdd331ed..3fd4a72b6 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * #8727: apidoc: namespace module file is not generated if no submodules there
+ * #741: autodoc: inherited-members doesn't work for instance attributes on super
+   class
++* #8932: autodoc: An annotation only member documented in a super class is
++  treated as undocumented on the inheriting class
+ * #8592: autodoc: ``:meta public:`` does not effect to variables
+ * #8594: autodoc: empty __all__ attribute is ignored
+ * #8315: autodoc: Failed to resolve struct.Struct type annotation
+diff --git a/setup.py b/setup.py
+index dfc80578f..b5e4452f4 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,22 +15,22 @@ if sys.version_info < (3, 5):
+     sys.exit(1)
+ 
+ install_requires = [
+-    'sphinxcontrib-applehelp',
+-    'sphinxcontrib-devhelp',
++    'sphinxcontrib-applehelp<=1.0.7',
++    'sphinxcontrib-devhelp<=1.0.5',
+     'sphinxcontrib-jsmath',
+-    'sphinxcontrib-htmlhelp',
+-    'sphinxcontrib-serializinghtml',
+-    'sphinxcontrib-qthelp',
+-    'Jinja2>=2.3',
++    'sphinxcontrib-htmlhelp<=2.0.4',
++    'sphinxcontrib-serializinghtml<=1.1.9',
++    'sphinxcontrib-qthelp<=1.0.6',
++    'Jinja2<3.0',
+     'Pygments>=2.0',
+     'docutils>=0.12',
+     'snowballstemmer>=1.1',
+     'babel>=1.3',
+-    'alabaster>=0.7,<0.8',
++    'alabaster>=0.7,<0.7.12',
+     'imagesize',
+     'requests>=2.5.0',
+     'setuptools',
+-    'packaging',
++    'packaging', 'markupsafe<=2.0.1',
+ ]
+ 
+ extras_require = {
+diff --git a/sphinx/ext/autodoc/importer.py b/sphinx/ext/autodoc/importer.py
+index 477aae247..b792b1a5f 100644
+--- a/sphinx/ext/autodoc/importer.py
++++ b/sphinx/ext/autodoc/importer.py
+@@ -294,24 +294,35 @@ def get_class_members(subject: Any, objpath: List[str], attrgetter: Callable
+ 
+     try:
+         for cls in getmro(subject):
++            try:
++                modname = safe_getattr(cls, '__module__')
++                qualname = safe_getattr(cls, '__qualname__')
++                analyzer = ModuleAnalyzer.for_module(modname)
++                analyzer.analyze()
++            except AttributeError:
++                qualname = None
++                analyzer = None
++            except PycodeError:
++                analyzer = None
++
+             # annotation only member (ex. attr: int)
+             for name in getannotations(cls):
+                 name = unmangle(cls, name)
+                 if name and name not in members:
+-                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls)
++                    if analyzer and (qualname, name) in analyzer.attr_docs:
++                        docstring = '\n'.join(analyzer.attr_docs[qualname, name])
++                    else:
++                        docstring = None
++
++                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
++                                                 docstring=docstring)
+ 
+             # append instance attributes (cf. self.attr1) if analyzer knows
+-            try:
+-                modname = safe_getattr(cls, '__module__')
+-                qualname = safe_getattr(cls, '__qualname__')
+-                analyzer = ModuleAnalyzer.for_module(modname)
+-                analyzer.analyze()
++            if analyzer:
+                 for (ns, name), docstring in analyzer.attr_docs.items():
+                     if ns == qualname and name not in members:
+                         members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
+                                                      docstring='\n'.join(docstring))
+-            except (AttributeError, PycodeError):
+-                pass
+     except AttributeError:
+         pass
+ 
+diff --git a/tests/roots/test-ext-autodoc/target/inheritance.py b/tests/roots/test-ext-autodoc/target/inheritance.py
+index ffac84bb6..c270506b0 100644
+--- a/tests/roots/test-ext-autodoc/target/inheritance.py
++++ b/tests/roots/test-ext-autodoc/target/inheritance.py
+@@ -15,3 +15,15 @@ class Derived(Base):
+     def inheritedmeth(self):
+         # no docstring here
+         pass
++
++
++class Bird:
++    """docstring of Bird."""
++
++    legs: int  #: docstring of legs
++
++
++class Penguin(Bird):
++    """docstring of Penguin."""
++
++    wings: int  #: docstring of wings
+diff --git a/tests/test_ext_autodoc.py b/tests/test_ext_autodoc.py
+index d555359cf..072b6349b 100644
+--- a/tests/test_ext_autodoc.py
++++ b/tests/test_ext_autodoc.py
+@@ -625,6 +625,37 @@ def test_autodoc_inherited_members(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_autodoc_inherited_members_annotation(app):
++    # an annotation only member documented in a superclass should be picked up
++    # via :inherited-members: without requiring :undoc-members: (refs: #8932)
++    options = {"members": None,
++               "inherited-members": None}
++    actual = do_autodoc(app, 'class', 'target.inheritance.Penguin', options)
++    assert list(actual) == [
++        '',
++        '.. py:class:: Penguin()',
++        '   :module: target.inheritance',
++        '',
++        '   docstring of Penguin.',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.legs',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of legs',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.wings',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of wings',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc')
+ def test_autodoc_inherited_members_Base(app):
+     options = {"members": None,
+diff --git a/tox.ini b/tox.ini
+index 21a0faec3..be1a9127e 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all,ignore::ImportWarning:importlib._bootstrap_external,ignore::DeprecationWarning:site,ignore::DeprecationWarning:distutils,ignore::DeprecationWarning:pip._vendor.packaging.version
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:flake8]
+ basepython = python3
+2026-06-23 07:07:33,683 - INFO - Grading answer for sphinx-doc__sphinx-8801...
+2026-06-23 07:07:33,689 - INFO - report: {'sphinx-doc__sphinx-8801': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_ext_autodoc_autoclass.py::test_uninitialized_attributes'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/test_ext_autodoc_autoclass.py::test_classes', 'tests/test_ext_autodoc_autoclass.py::test_instance_variable', 'tests/test_ext_autodoc_autoclass.py::test_inherited_instance_variable', 'tests/test_ext_autodoc_autoclass.py::test_undocumented_uninitialized_attributes', 'tests/test_ext_autodoc_autoclass.py::test_decorators', 'tests/test_ext_autodoc_autoclass.py::test_slots_attribute', 'tests/test_ext_autodoc_autoclass.py::test_show_inheritance_for_subclass_of_generic_type', 'tests/test_ext_autodoc_autoclass.py::test_class_alias'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-8801: resolved: True
+2026-06-23 07:07:33,694 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-8801.squad_v1...
+2026-06-23 07:07:49,462 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-8801.squad_v1...
+2026-06-23 07:07:49,632 - INFO - Container sweb.eval.sphinx-doc__sphinx-8801.squad_v1 removed.
+2026-06-23 07:07:49,633 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8801:latest...
+2026-06-23 07:07:51,505 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8801:latest removed.

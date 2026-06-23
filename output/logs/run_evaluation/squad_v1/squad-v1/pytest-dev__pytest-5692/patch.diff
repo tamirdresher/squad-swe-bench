@@ -1,0 +1,146 @@
+diff --git a/src/_pytest/junitxml.py b/src/_pytest/junitxml.py
+index 15c630b1d..ba0f48ed3 100644
+--- a/src/_pytest/junitxml.py
++++ b/src/_pytest/junitxml.py
+@@ -10,9 +10,11 @@ src/main/resources/org/jenkinsci/plugins/xunit/types/model/xsd/junit-10.xsd
+ """
+ import functools
+ import os
++import platform
+ import re
+ import sys
+ import time
++from datetime import datetime
+ 
+ import py
+ 
+@@ -666,6 +668,8 @@ class LogXML:
+             skipped=self.stats["skipped"],
+             tests=numtests,
+             time="%.3f" % suite_time_delta,
++            timestamp=datetime.fromtimestamp(self.suite_start_time).isoformat(),
++            hostname=platform.node(),
+         )
+         logfile.write(Junit.testsuites([suite_node]).unicode(indent=0))
+         logfile.close()
+diff --git a/src/_pytest/mark/evaluate.py b/src/_pytest/mark/evaluate.py
+index 898278e30..e7da6e505 100644
+--- a/src/_pytest/mark/evaluate.py
++++ b/src/_pytest/mark/evaluate.py
+@@ -7,19 +7,6 @@ from ..outcomes import fail
+ from ..outcomes import TEST_OUTCOME
+ 
+ 
+-def cached_eval(config, expr, d):
+-    if not hasattr(config, "_evalcache"):
+-        config._evalcache = {}
+-    try:
+-        return config._evalcache[expr]
+-    except KeyError:
+-        import _pytest._code
+-
+-        exprcode = _pytest._code.compile(expr, mode="eval")
+-        config._evalcache[expr] = x = eval(exprcode, d)
+-        return x
+-
+-
+ class MarkEvaluator:
+     def __init__(self, item, name):
+         self.item = item
+@@ -86,7 +73,10 @@ class MarkEvaluator:
+                     self.expr = expr
+                     if isinstance(expr, str):
+                         d = self._getglobals()
+-                        result = cached_eval(self.item.config, expr, d)
++                        import _pytest._code
++
++                        exprcode = _pytest._code.compile(expr, mode="eval")
++                        result = eval(exprcode, d)
+                     else:
+                         if "reason" not in mark.kwargs:
+                             # XXX better be checked at collection time
+diff --git a/testing/test_junitxml.py b/testing/test_junitxml.py
+index 3196f0ebd..9b20843ae 100644
+--- a/testing/test_junitxml.py
++++ b/testing/test_junitxml.py
+@@ -1,4 +1,6 @@
+ import os
++import platform
++from datetime import datetime
+ from xml.dom import minidom
+ 
+ import py
+@@ -157,6 +159,30 @@ class TestPython:
+         val = tnode["time"]
+         assert round(float(val), 2) >= 0.03
+ 
++    def test_hostname_in_xml(self, testdir):
++        testdir.makepyfile(
++            """
++            def test_pass():
++                pass
++        """
++        )
++        result, dom = runandparse(testdir)
++        node = dom.find_first_by_tag("testsuite")
++        node.assert_attr(hostname=platform.node())
++
++    def test_timestamp_in_xml(self, testdir):
++        testdir.makepyfile(
++            """
++            def test_pass():
++                pass
++        """
++        )
++        start_time = datetime.now()
++        result, dom = runandparse(testdir)
++        node = dom.find_first_by_tag("testsuite")
++        timestamp = datetime.strptime(node["timestamp"], "%Y-%m-%dT%H:%M:%S.%f")
++        assert start_time <= timestamp < datetime.now()
++
+     @pytest.mark.parametrize("duration_report", ["call", "total"])
+     def test_junit_duration_report(self, testdir, monkeypatch, duration_report):
+ 
+diff --git a/testing/test_skipping.py b/testing/test_skipping.py
+index 8bba479f1..0cb920e0b 100644
+--- a/testing/test_skipping.py
++++ b/testing/test_skipping.py
+@@ -908,6 +908,38 @@ def test_xfail_skipif_with_globals(testdir):
+     result.stdout.fnmatch_lines(["*SKIP*x == 3*", "*XFAIL*test_boolean*", "*x == 3*"])
+ 
+ 
++@pytest.mark.parametrize(
++    ("mark", "outcomes"),
++    [
++        ("skipif", {"skipped": 1, "passed": 1}),
++        ("xfail", {"xfailed": 1, "passed": 1}),
++    ],
++)
++def test_mark_condition_string_uses_globals_from_each_module(testdir, mark, outcomes):
++    testdir.makepyfile(
++        test_module_1="""
++        import pytest
++        skip = True
++        @pytest.mark.{mark}("skip", reason="condition")
++        def test_condition_true():
++            assert False
++    """.format(
++            mark=mark
++        ),
++        test_module_2="""
++        import pytest
++        skip = False
++        @pytest.mark.{mark}("skip", reason="condition")
++        def test_condition_false():
++            pass
++    """.format(
++            mark=mark
++        ),
++    )
++    result = testdir.runpytest("--assert=plain")
++    result.assert_outcomes(**outcomes)
++
++
+ def test_direct_gives_error(testdir):
+     testdir.makepyfile(
+         """

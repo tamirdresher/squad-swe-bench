@@ -1,0 +1,3377 @@
+2026-06-23 05:18:22,590 - INFO - Creating container for django__django-15498...
+2026-06-23 05:18:35,297 - INFO - Container for django__django-15498 created: ded685642a30393b7a2186a1fb1ad237fa0d147150efe7a86dd80071a5ae8df1
+2026-06-23 05:18:35,896 - INFO - Container for django__django-15498 started: ded685642a30393b7a2186a1fb1ad237fa0d147150efe7a86dd80071a5ae8df1
+2026-06-23 05:18:35,904 - INFO - Intermediate patch for django__django-15498 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15498/patch.diff, now applying to container...
+2026-06-23 05:18:36,242 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:18:36,367 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:18:36,489 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 05:18:36,491 - INFO - >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+2026-06-23 05:18:36,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 05:18:36,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,559 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,571 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,573 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,573 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,575 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,575 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,576 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,576 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,577 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,577 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,582 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,585 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,585 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,586 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,587 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,588 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,589 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,590 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,592 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,594 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,595 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,595 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,596 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,599 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,599 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,603 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,603 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,605 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,607 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,607 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,610 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,610 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,611 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,611 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,612 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,617 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,617 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,621 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,623 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,625 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,655 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,655 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,656 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,659 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,660 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,660 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,661 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,662 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,703 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 05:18:36,704 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,705 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,705 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,706 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,706 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,707 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,708 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,708 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,710 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,711 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,712 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,735 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,744 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,744 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,745 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,746 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,746 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,747 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,747 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,748 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,749 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,749 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,750 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,750 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,751 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,752 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,752 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,753 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,754 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,755 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,755 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,756 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,756 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,757 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,757 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,758 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,758 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,759 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,759 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,760 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,761 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,761 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,762 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,762 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,763 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,763 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,764 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,764 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,765 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,765 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,766 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,766 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,767 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,768 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,769 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,769 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,770 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,771 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,771 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,772 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,772 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,773 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,773 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,774 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,774 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,775 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,775 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,776 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,776 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,777 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,777 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,778 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,778 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,779 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,779 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,780 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,780 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,781 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,781 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,782 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,782 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,783 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,784 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,784 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,785 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,785 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,786 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,787 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,787 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,788 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,788 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,789 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,789 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,790 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,790 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,791 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,792 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,792 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,793 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,793 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,794 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,794 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,795 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,795 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,796 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,797 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,798 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,799 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,800 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,801 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,801 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,802 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,802 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,803 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,803 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,804 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,805 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,805 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,806 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,807 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,807 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,808 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,808 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,809 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,811 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,812 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,812 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,814 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,816 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,818 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,820 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,821 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,822 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,824 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,825 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,826 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,827 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,828 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,829 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-15498: >>>>> Patch Apply Failed:
+patching file django/views/static.py
+patching file tests/view_tests/tests/test_static.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 23:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-15498/run_instance.log) for more information.
+
+2026-06-23 05:18:36,830 - INFO - Attempting to stop container sweb.eval.django__django-15498.squad_v1...
+2026-06-23 05:18:52,635 - INFO - Attempting to remove container sweb.eval.django__django-15498.squad_v1...
+2026-06-23 05:18:52,780 - INFO - Container sweb.eval.django__django-15498.squad_v1 removed.
+2026-06-23 05:18:52,782 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15498:latest...
+2026-06-23 05:18:55,509 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15498:latest removed.

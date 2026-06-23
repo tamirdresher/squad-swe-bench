@@ -1,0 +1,49 @@
+diff --git a/django/core/checks/translation.py b/django/core/checks/translation.py
+index 138ed07ff8..8457a6b89d 100644
+--- a/django/core/checks/translation.py
++++ b/django/core/checks/translation.py
+@@ -1,4 +1,5 @@
+ from django.conf import settings
++from django.utils.translation import get_supported_language_variant
+ from django.utils.translation.trans_real import language_code_re
+ 
+ from . import Error, Tags, register
+@@ -55,7 +56,9 @@ def check_setting_languages_bidi(app_configs, **kwargs):
+ @register(Tags.translation)
+ def check_language_settings_consistent(app_configs, **kwargs):
+     """Error if language settings are not consistent with each other."""
+-    available_tags = {i for i, _ in settings.LANGUAGES} | {'en-us'}
+-    if settings.LANGUAGE_CODE not in available_tags:
++    try:
++        get_supported_language_variant(settings.LANGUAGE_CODE)
++    except LookupError:
+         return [E004]
+-    return []
++    else:
++        return []
+diff --git a/tests/check_framework/test_translation.py b/tests/check_framework/test_translation.py
+index 4cd79d803f..260839e773 100644
+--- a/tests/check_framework/test_translation.py
++++ b/tests/check_framework/test_translation.py
+@@ -84,3 +84,21 @@ class TranslationCheckTests(SimpleTestCase):
+             self.assertEqual(check_language_settings_consistent(None), [
+                 Error(msg, id='translation.E004'),
+             ])
++
++    def test_valid_variant_consistent_language_settings(self):
++        tests = [
++            # language + region.
++            ('fr-CA', [('fr-CA', 'French Canadian')]),
++            # The DEFAULT_LANGUAGE_CODE is also valid.
++            ('en-US', [('en-US', 'English')]),
++            ('de-at', [('de', 'German'), ('de-at', 'Austrian German')]),
++            # The base language is used when the regional one is not available.
++            ('de-at', [('de', 'German')]),
++            ('es-ar', [('es', 'Spanish')]),
++        ]
++        for language_code, languages in tests:
++            with self.subTest(language_code=language_code), self.settings(
++                LANGUAGE_CODE=language_code,
++                LANGUAGES=languages,
++            ):
++                self.assertEqual(check_language_settings_consistent(None), [])

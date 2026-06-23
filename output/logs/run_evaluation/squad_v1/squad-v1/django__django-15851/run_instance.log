@@ -1,0 +1,69 @@
+2026-06-23 05:21:31,330 - INFO - Creating container for django__django-15851...
+2026-06-23 05:21:31,845 - INFO - Container for django__django-15851 created: f9c0e73a89df47b566f0e3db8375881e8cb5c6fadbc5c2a741899412dd889f71
+2026-06-23 05:21:32,307 - INFO - Container for django__django-15851 started: f9c0e73a89df47b566f0e3db8375881e8cb5c6fadbc5c2a741899412dd889f71
+2026-06-23 05:21:32,325 - INFO - Intermediate patch for django__django-15851 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15851/patch.diff, now applying to container...
+2026-06-23 05:21:32,754 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:21:32,951 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:21:33,115 - INFO - >>>>> Applied Patch:
+patching file django/db/backends/postgresql/client.py
+patching file tests/dbshell/test_postgresql.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 154 with fuzz 1.
+
+2026-06-23 05:21:34,630 - INFO - Git diff before:
+diff --git a/django/db/backends/postgresql/client.py b/django/db/backends/postgresql/client.py
+index 4c9bd63546..3b5ddafaca 100644
+--- a/django/db/backends/postgresql/client.py
++++ b/django/db/backends/postgresql/client.py
+@@ -32,9 +32,9 @@ class DatabaseClient(BaseDatabaseClient):
+             args += ["-h", host]
+         if port:
+             args += ["-p", str(port)]
++        args.extend(parameters)
+         if dbname:
+             args += [dbname]
+-        args.extend(parameters)
+ 
+         env = {}
+         if passwd:
+diff --git a/tests/dbshell/test_postgresql.py b/tests/dbshell/test_postgresql.py
+index 02924d0bcc..53dedaca01 100644
+--- a/tests/dbshell/test_postgresql.py
++++ b/tests/dbshell/test_postgresql.py
+@@ -154,7 +154,7 @@ class PostgreSqlDbshellCommandTestCase(SimpleTestCase):
+     def test_parameters(self):
+         self.assertEqual(
+             self.settings_to_cmd_args_env({"NAME": "dbname"}, ["--help"]),
+-            (["psql", "dbname", "--help"], None),
++            (["psql", "--help", "dbname"], None),
+         )
+ 
+     @skipUnless(connection.vendor == "postgresql", "Requires a PostgreSQL connection")
+2026-06-23 05:21:35,316 - INFO - Eval script for django__django-15851 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15851/eval.sh; copying to container...
+2026-06-23 05:21:49,294 - INFO - Test runtime: 13.78 seconds
+2026-06-23 05:21:49,300 - INFO - Test output for django__django-15851 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15851/test_output.txt
+2026-06-23 05:21:49,462 - INFO - Git diff after:
+diff --git a/django/db/backends/postgresql/client.py b/django/db/backends/postgresql/client.py
+index 4c9bd63546..3b5ddafaca 100644
+--- a/django/db/backends/postgresql/client.py
++++ b/django/db/backends/postgresql/client.py
+@@ -32,9 +32,9 @@ class DatabaseClient(BaseDatabaseClient):
+             args += ["-h", host]
+         if port:
+             args += ["-p", str(port)]
++        args.extend(parameters)
+         if dbname:
+             args += [dbname]
+-        args.extend(parameters)
+ 
+         env = {}
+         if passwd:
+2026-06-23 05:21:49,463 - INFO - Git diff changed after running eval script
+2026-06-23 05:21:49,464 - INFO - Grading answer for django__django-15851...
+2026-06-23 05:21:49,476 - INFO - report: {'django__django-15851': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_parameters (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_accent (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_basic (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_column (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_crash_password_does_not_leak (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_nopass (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_passfile (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_service (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)', 'test_ssl_certificate (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15851: resolved: True
+2026-06-23 05:21:49,484 - INFO - Attempting to stop container sweb.eval.django__django-15851.squad_v1...
+2026-06-23 05:22:05,076 - INFO - Attempting to remove container sweb.eval.django__django-15851.squad_v1...
+2026-06-23 05:22:05,199 - INFO - Container sweb.eval.django__django-15851.squad_v1 removed.
+2026-06-23 05:22:05,200 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15851:latest...
+2026-06-23 05:22:05,620 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15851:latest removed.

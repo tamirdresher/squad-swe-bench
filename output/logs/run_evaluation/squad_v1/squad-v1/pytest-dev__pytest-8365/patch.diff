@@ -1,0 +1,45 @@
+diff --git a/src/_pytest/tmpdir.py b/src/_pytest/tmpdir.py
+index 29c7e19d7..4a4047f48 100644
+--- a/src/_pytest/tmpdir.py
++++ b/src/_pytest/tmpdir.py
+@@ -154,9 +154,15 @@ def get_user() -> Optional[str]:
+     import getpass
+ 
+     try:
+-        return getpass.getuser()
++        username = getpass.getuser()
+     except (ImportError, KeyError):
+         return None
++    # The username may contain characters that are illegal in a directory
++    # name, e.g. a domain-qualified name such as ``contoso\john_doe`` that
++    # getpass.getuser() can return on Windows. Replace every character that
++    # is not allowed in a single path component with an underscore so the
++    # resulting ``pytest-of-<user>`` directory can be created (see #8317).
++    return re.sub(r"[^\w.]", "_", username)
+ 
+ 
+ def pytest_configure(config: Config) -> None:
+diff --git a/testing/test_tmpdir.py b/testing/test_tmpdir.py
+index d123287aa..03e068fd7 100644
+--- a/testing/test_tmpdir.py
++++ b/testing/test_tmpdir.py
+@@ -246,6 +246,20 @@ def test_get_user(monkeypatch):
+     assert get_user() is None
+ 
+ 
++def test_get_user_win_special_chars(monkeypatch):
++    """get_user() should sanitize characters that are illegal in directory
++    names from the username, e.g. a domain-qualified name such as
++    ``contoso\\john_doe`` as returned on Windows when logged in via SSH (#8317).
++    """
++    monkeypatch.setattr("getpass.getuser", lambda: 'contoso\\john_doe:*?"<>| ')
++    user = get_user()
++    assert user is not None
++    # None of the characters that are illegal in a Windows directory name
++    # (which include the path separators) must remain in the sanitized result.
++    for illegal in '\\/:*?"<>|':
++        assert illegal not in user
++
++
+ class TestNumberedDir:
+     PREFIX = "fun-"

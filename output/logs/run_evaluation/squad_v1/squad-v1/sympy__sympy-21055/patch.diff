@@ -1,0 +1,73 @@
+diff --git a/sympy/assumptions/refine.py b/sympy/assumptions/refine.py
+index e1f97190c0..2e20252950 100644
+--- a/sympy/assumptions/refine.py
++++ b/sympy/assumptions/refine.py
+@@ -350,6 +350,41 @@ def refine_sign(expr, assumptions):
+     return expr
+ 
+ 
++def refine_arg(expr, assumptions):
++    """
++    Handler for complex argument.
++
++    Examples
++    ========
++
++    >>> from sympy.assumptions.refine import refine_arg
++    >>> from sympy import Q, arg, Symbol, im
++    >>> from sympy.abc import x
++    >>> refine_arg(arg(x), Q.positive(x))
++    0
++    >>> refine_arg(arg(x), Q.negative(x))
++    pi
++    >>> y = Symbol('y', imaginary=True)
++    >>> refine_arg(arg(y), Q.positive(im(y)))
++    pi/2
++    >>> refine_arg(arg(y), Q.negative(im(y)))
++    -pi/2
++
++    """
++    z = expr.args[0]
++    if ask(Q.positive(z), assumptions):
++        return S.Zero
++    if ask(Q.negative(z), assumptions):
++        return S.Pi
++    if ask(Q.imaginary(z), assumptions):
++        z_re, z_im = z.as_real_imag()
++        if ask(Q.positive(z_im), assumptions):
++            return S.Pi/2
++        if ask(Q.negative(z_im), assumptions):
++            return -S.Pi/2
++    return None
++
++
+ def refine_matrixelement(expr, assumptions):
+     """
+     Handler for symmetric part.
+@@ -380,5 +415,6 @@ def refine_matrixelement(expr, assumptions):
+     're': refine_re,
+     'im': refine_im,
+     'sign': refine_sign,
++    'arg': refine_arg,
+     'MatrixElement': refine_matrixelement
+ }  # type: Dict[str, Callable[[Expr, Boolean], Expr]]
+diff --git a/sympy/assumptions/tests/test_refine.py b/sympy/assumptions/tests/test_refine.py
+index 505cd609e8..a031ff5114 100644
+--- a/sympy/assumptions/tests/test_refine.py
++++ b/sympy/assumptions/tests/test_refine.py
+@@ -200,6 +200,15 @@ def test_refine_issue_12724():
+     assert expr3 == x * y1**2 * Abs(z)
+ 
+ 
++def test_arg():
++    from sympy import arg
++    assert refine(arg(x), Q.positive(x)) == 0
++    assert refine(arg(x), Q.negative(x)) == pi
++    y = Symbol('y', imaginary=True)
++    assert refine(arg(y), Q.positive(im(y))) == pi/2
++    assert refine(arg(y), Q.negative(im(y))) == -pi/2
++
++
+ def test_matrixelement():
+     x = MatrixSymbol('x', 3, 3)
+     i = Symbol('i', positive = True)

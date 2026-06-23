@@ -1,0 +1,95 @@
+2026-06-23 07:35:10,978 - INFO - Creating container for sympy__sympy-24152...
+2026-06-23 07:35:31,297 - INFO - Container for sympy__sympy-24152 created: cd0bfc2eb020daf50c2d18588ea0072fa3d5e1c17b5c5e4925b6294ea45d4a26
+2026-06-23 07:35:31,807 - INFO - Container for sympy__sympy-24152 started: cd0bfc2eb020daf50c2d18588ea0072fa3d5e1c17b5c5e4925b6294ea45d4a26
+2026-06-23 07:35:31,815 - INFO - Intermediate patch for sympy__sympy-24152 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-24152/patch.diff, now applying to container...
+2026-06-23 07:35:32,051 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:35:32,154 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:35:32,316 - INFO - >>>>> Applied Patch:
+patching file sympy/physics/quantum/tensorproduct.py
+patching file sympy/physics/quantum/tests/test_tensorproduct.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 46 with fuzz 1.
+
+2026-06-23 07:35:33,000 - INFO - Git diff before:
+diff --git a/sympy/physics/quantum/tensorproduct.py b/sympy/physics/quantum/tensorproduct.py
+index 78accaf295..437e39d706 100644
+--- a/sympy/physics/quantum/tensorproduct.py
++++ b/sympy/physics/quantum/tensorproduct.py
+@@ -246,9 +246,11 @@ def _eval_expand_tensorproduct(self, **hints):
+             if isinstance(args[i], Add):
+                 for aa in args[i].args:
+                     tp = TensorProduct(*args[:i] + (aa,) + args[i + 1:])
+-                    if isinstance(tp, TensorProduct):
+-                        tp = tp._eval_expand_tensorproduct()
+-                    add_args.append(tp)
++                    c_part, nc_part = tp.args_cnc()
++                    # Check for TensorProduct object: is the only case with len(nc_part)==1
++                    if len(nc_part) == 1 and isinstance(nc_part[0], TensorProduct):
++                        nc_part = (nc_part[0]._eval_expand_tensorproduct(), )
++                    add_args.append(Mul(*c_part)*Mul(*nc_part))
+                 break
+ 
+         if add_args:
+diff --git a/sympy/physics/quantum/tests/test_tensorproduct.py b/sympy/physics/quantum/tests/test_tensorproduct.py
+index f1765640ea..5a3abe9eb3 100644
+--- a/sympy/physics/quantum/tests/test_tensorproduct.py
++++ b/sympy/physics/quantum/tests/test_tensorproduct.py
+@@ -9,7 +9,7 @@
+ from sympy.physics.quantum.tensorproduct import tensor_product_simp
+ from sympy.physics.quantum.dagger import Dagger
+ from sympy.physics.quantum.qubit import Qubit, QubitBra
+-from sympy.physics.quantum.operator import OuterProduct
++from sympy.physics.quantum.operator import OuterProduct, Operator
+ from sympy.physics.quantum.density import Density
+ from sympy.physics.quantum.trace import Tr
+ 
+@@ -46,6 +46,17 @@ def test_tensor_product_expand():
+         TP(A, B) + TP(A, C) + TP(B, B) + TP(B, C)
+ 
+ 
++def test_tensor_product_expand_with_scalar_factors():
++    U = Operator('U')
++    V = Operator('V')
++    expanded = TP(2*U - V, U + V).expand(tensorproduct=True)
++    expected = 2*TP(U, U) + 2*TP(U, V) - TP(V, U) - TP(V, V)
++
++    assert expanded == expected
++    assert expanded.expand(tensorproduct=True) == expanded
++    assert TP(U - U, U + V).expand(tensorproduct=True) == 0
++
++
+ def test_tensor_product_commutator():
+     assert TP(Comm(A, B), C).doit().expand(tensorproduct=True) == \
+         TP(A*B, C) - TP(B*A, C)
+2026-06-23 07:35:33,005 - INFO - Eval script for sympy__sympy-24152 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-24152/eval.sh; copying to container...
+2026-06-23 07:35:39,505 - INFO - Test runtime: 6.36 seconds
+2026-06-23 07:35:39,510 - INFO - Test output for sympy__sympy-24152 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-24152/test_output.txt
+2026-06-23 07:35:39,605 - INFO - Git diff after:
+diff --git a/sympy/physics/quantum/tensorproduct.py b/sympy/physics/quantum/tensorproduct.py
+index 78accaf295..437e39d706 100644
+--- a/sympy/physics/quantum/tensorproduct.py
++++ b/sympy/physics/quantum/tensorproduct.py
+@@ -246,9 +246,11 @@ def _eval_expand_tensorproduct(self, **hints):
+             if isinstance(args[i], Add):
+                 for aa in args[i].args:
+                     tp = TensorProduct(*args[:i] + (aa,) + args[i + 1:])
+-                    if isinstance(tp, TensorProduct):
+-                        tp = tp._eval_expand_tensorproduct()
+-                    add_args.append(tp)
++                    c_part, nc_part = tp.args_cnc()
++                    # Check for TensorProduct object: is the only case with len(nc_part)==1
++                    if len(nc_part) == 1 and isinstance(nc_part[0], TensorProduct):
++                        nc_part = (nc_part[0]._eval_expand_tensorproduct(), )
++                    add_args.append(Mul(*c_part)*Mul(*nc_part))
+                 break
+ 
+         if add_args:
+2026-06-23 07:35:39,606 - INFO - Git diff changed after running eval script
+2026-06-23 07:35:39,606 - INFO - Grading answer for sympy__sympy-24152...
+2026-06-23 07:35:39,611 - INFO - report: {'sympy__sympy-24152': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_tensor_product_expand'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_sparse_matrices', 'test_tensor_product_dagger', 'test_tensor_product_abstract', 'test_tensor_product_commutator', 'test_tensor_product_simp', 'test_issue_5923'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-24152: resolved: True
+2026-06-23 07:35:39,615 - INFO - Attempting to stop container sweb.eval.sympy__sympy-24152.squad_v1...
+2026-06-23 07:35:55,215 - INFO - Attempting to remove container sweb.eval.sympy__sympy-24152.squad_v1...
+2026-06-23 07:35:55,348 - INFO - Container sweb.eval.sympy__sympy-24152.squad_v1 removed.
+2026-06-23 07:35:55,349 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-24152:latest...
+2026-06-23 07:35:57,514 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-24152:latest removed.

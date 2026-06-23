@@ -1,0 +1,112 @@
+2026-06-23 05:30:23,855 - INFO - Creating container for django__django-16873...
+2026-06-23 05:30:34,335 - INFO - Container for django__django-16873 created: 104f3c81fe94d90eca17bd4b6690e7d5da77ad98788743f7477b18629be0230f
+2026-06-23 05:30:35,115 - INFO - Container for django__django-16873 started: 104f3c81fe94d90eca17bd4b6690e7d5da77ad98788743f7477b18629be0230f
+2026-06-23 05:30:35,128 - INFO - Intermediate patch for django__django-16873 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16873/patch.diff, now applying to container...
+2026-06-23 05:30:37,512 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:30:37,614 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:30:37,774 - INFO - >>>>> Applied Patch:
+patching file django/template/defaultfilters.py
+patching file docs/releases/5.0.txt
+patching file tests/template_tests/filter_tests/test_join.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 76 with fuzz 1.
+
+2026-06-23 05:30:38,740 - INFO - Git diff before:
+diff --git a/django/template/defaultfilters.py b/django/template/defaultfilters.py
+index 03676533b7..6235bdb7a4 100644
+--- a/django/template/defaultfilters.py
++++ b/django/template/defaultfilters.py
+@@ -587,7 +587,9 @@ def join(value, arg, autoescape=True):
+     try:
+         if autoescape:
+             value = [conditional_escape(v) for v in value]
+-        data = conditional_escape(arg).join(value)
++            data = conditional_escape(arg).join(value)
++        else:
++            data = arg.join(value)
+     except TypeError:  # Fail silently if arg isn't iterable.
+         return value
+     return mark_safe(data)
+diff --git a/docs/releases/5.0.txt b/docs/releases/5.0.txt
+index 0c093720b9..a100297e51 100644
+--- a/docs/releases/5.0.txt
++++ b/docs/releases/5.0.txt
+@@ -341,7 +341,8 @@ Signals
+ Templates
+ ~~~~~~~~~
+ 
+-* ...
++* The :tfilter:`join` template filter no longer escapes the joining string when
++  its ``autoescape`` argument is ``False``.
+ 
+ Tests
+ ~~~~~
+diff --git a/tests/template_tests/filter_tests/test_join.py b/tests/template_tests/filter_tests/test_join.py
+index 08f68537ee..1be4908eac 100644
+--- a/tests/template_tests/filter_tests/test_join.py
++++ b/tests/template_tests/filter_tests/test_join.py
+@@ -55,6 +55,13 @@ class JoinTests(SimpleTestCase):
+         )
+         self.assertEqual(output, "alpha & beta &amp; me")
+ 
++    @setup({"join09": "{% autoescape off %}{{ a|join:var }}{% endautoescape %}"})
++    def test_join09(self):
++        output = self.engine.render_to_string(
++            "join09", {"a": ["alpha", "beta & me"], "var": " & "}
++        )
++        self.assertEqual(output, "alpha & beta & me")
++
+ 
+ class FunctionTests(SimpleTestCase):
+     def test_list(self):
+@@ -69,7 +76,7 @@ class FunctionTests(SimpleTestCase):
+     def test_autoescape_off(self):
+         self.assertEqual(
+             join(["<a>", "<img>", "</a>"], "<br>", autoescape=False),
+-            "<a>&lt;br&gt;<img>&lt;br&gt;</a>",
++            "<a><br><img><br></a>",
+         )
+ 
+     def test_noniterable_arg(self):
+2026-06-23 05:30:38,747 - INFO - Eval script for django__django-16873 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16873/eval.sh; copying to container...
+2026-06-23 05:30:49,296 - INFO - Test runtime: 10.39 seconds
+2026-06-23 05:30:49,302 - INFO - Test output for django__django-16873 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16873/test_output.txt
+2026-06-23 05:30:49,430 - INFO - Git diff after:
+diff --git a/django/template/defaultfilters.py b/django/template/defaultfilters.py
+index 03676533b7..6235bdb7a4 100644
+--- a/django/template/defaultfilters.py
++++ b/django/template/defaultfilters.py
+@@ -587,7 +587,9 @@ def join(value, arg, autoescape=True):
+     try:
+         if autoescape:
+             value = [conditional_escape(v) for v in value]
+-        data = conditional_escape(arg).join(value)
++            data = conditional_escape(arg).join(value)
++        else:
++            data = arg.join(value)
+     except TypeError:  # Fail silently if arg isn't iterable.
+         return value
+     return mark_safe(data)
+diff --git a/docs/releases/5.0.txt b/docs/releases/5.0.txt
+index 0c093720b9..a100297e51 100644
+--- a/docs/releases/5.0.txt
++++ b/docs/releases/5.0.txt
+@@ -341,7 +341,8 @@ Signals
+ Templates
+ ~~~~~~~~~
+ 
+-* ...
++* The :tfilter:`join` template filter no longer escapes the joining string when
++  its ``autoescape`` argument is ``False``.
+ 
+ Tests
+ ~~~~~
+2026-06-23 05:30:49,433 - INFO - Git diff changed after running eval script
+2026-06-23 05:30:49,433 - INFO - Grading answer for django__django-16873...
+2026-06-23 05:30:49,440 - INFO - report: {'django__django-16873': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_autoescape_off (template_tests.filter_tests.test_join.FunctionTests.test_autoescape_off)', 'test_join_autoescape_off (template_tests.filter_tests.test_join.JoinTests.test_join_autoescape_off)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_autoescape (template_tests.filter_tests.test_join.FunctionTests.test_autoescape)', 'test_list (template_tests.filter_tests.test_join.FunctionTests.test_list)', 'test_noniterable_arg (template_tests.filter_tests.test_join.FunctionTests.test_noniterable_arg)', 'test_noniterable_arg_autoescape_off (template_tests.filter_tests.test_join.FunctionTests.test_noniterable_arg_autoescape_off)', 'test_join01 (template_tests.filter_tests.test_join.JoinTests.test_join01)', 'test_join02 (template_tests.filter_tests.test_join.JoinTests.test_join02)', 'test_join03 (template_tests.filter_tests.test_join.JoinTests.test_join03)', 'test_join04 (template_tests.filter_tests.test_join.JoinTests.test_join04)', 'test_join05 (template_tests.filter_tests.test_join.JoinTests.test_join05)', 'test_join06 (template_tests.filter_tests.test_join.JoinTests.test_join06)', 'test_join07 (template_tests.filter_tests.test_join.JoinTests.test_join07)', 'test_join08 (template_tests.filter_tests.test_join.JoinTests.test_join08)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16873: resolved: True
+2026-06-23 05:30:49,448 - INFO - Attempting to stop container sweb.eval.django__django-16873.squad_v1...
+2026-06-23 05:31:09,539 - INFO - Attempting to remove container sweb.eval.django__django-16873.squad_v1...
+2026-06-23 05:31:09,926 - INFO - Container sweb.eval.django__django-16873.squad_v1 removed.
+2026-06-23 05:31:09,927 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16873:latest...
+2026-06-23 05:31:10,737 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16873:latest removed.

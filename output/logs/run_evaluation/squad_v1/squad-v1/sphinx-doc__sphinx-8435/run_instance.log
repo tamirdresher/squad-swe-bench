@@ -1,0 +1,472 @@
+2026-06-23 07:02:23,275 - INFO - Creating container for sphinx-doc__sphinx-8435...
+2026-06-23 07:02:24,691 - INFO - Container for sphinx-doc__sphinx-8435 created: 06312e81ce4966918bd405327764898dff3c94417625e1eb435fac63f511528d
+2026-06-23 07:02:25,110 - INFO - Container for sphinx-doc__sphinx-8435 started: 06312e81ce4966918bd405327764898dff3c94417625e1eb435fac63f511528d
+2026-06-23 07:02:25,118 - INFO - Intermediate patch for sphinx-doc__sphinx-8435 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8435/patch.diff, now applying to container...
+2026-06-23 07:02:25,352 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:02:25,437 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:02:25,584 - INFO - >>>>> Applied Patch:
+patching file CHANGES
+patching file sphinx/ext/autodoc/__init__.py
+patching file sphinx/util/typing.py
+patching file tests/roots/test-ext-autodoc/target/annotations.py
+patching file tests/test_ext_autodoc_configs.py
+patch unexpectedly ends in middle of line
+Hunk #4 succeeded at 781 with fuzz 3.
+
+2026-06-23 07:02:25,971 - INFO - Git diff before:
+diff --git a/CHANGES b/CHANGES
+index a55a43687..ff4a11c62 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -60,6 +60,9 @@ Features added
+ Bugs fixed
+ ----------
+ 
++* #8415: autodoc: ``autodoc_type_aliases`` does not effect to variables and
++  attributes
++
+ Testing
+ --------
+ 
+diff --git a/setup.py b/setup.py
+index ca08a6d4a..21cb67b8f 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,22 +15,22 @@ if sys.version_info < (3, 5):
+     sys.exit(1)
+ 
+ install_requires = [
+-    'sphinxcontrib-applehelp',
+-    'sphinxcontrib-devhelp',
++    'sphinxcontrib-applehelp<=1.0.7',
++    'sphinxcontrib-devhelp<=1.0.5',
+     'sphinxcontrib-jsmath',
+-    'sphinxcontrib-htmlhelp',
+-    'sphinxcontrib-serializinghtml',
+-    'sphinxcontrib-qthelp',
+-    'Jinja2>=2.3',
++    'sphinxcontrib-htmlhelp<=2.0.4',
++    'sphinxcontrib-serializinghtml<=1.1.9',
++    'sphinxcontrib-qthelp<=1.0.6',
++    'Jinja2<3.0',
+     'Pygments>=2.0',
+     'docutils>=0.12',
+     'snowballstemmer>=1.1',
+     'babel>=1.3',
+-    'alabaster>=0.7,<0.8',
++    'alabaster>=0.7,<0.7.12',
+     'imagesize',
+     'requests>=2.5.0',
+     'setuptools',
+-    'packaging',
++    'packaging', 'markupsafe<=2.0.1',
+ ]
+ 
+ extras_require = {
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index 171a3e7b0..6d8831afa 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -16,7 +16,7 @@ import warnings
+ from inspect import Parameter, Signature
+ from types import ModuleType
+ from typing import (Any, Callable, Dict, Iterator, List, Optional, Sequence, Set, Tuple, Type,
+-                    TypeVar, Union, get_type_hints)
++                    TypeVar, Union)
+ 
+ from docutils.statemachine import StringList
+ 
+@@ -33,7 +33,7 @@ from sphinx.util import inspect, logging
+ from sphinx.util.docstrings import extract_metadata, prepare_docstring
+ from sphinx.util.inspect import (evaluate_signature, getdoc, object_description, safe_getattr,
+                                  stringify_signature)
+-from sphinx.util.typing import restify
++from sphinx.util.typing import get_type_hints, restify
+ from sphinx.util.typing import stringify as stringify_typehint
+ 
+ if False:
+@@ -1701,20 +1701,8 @@ class DataDocumenter(ModuleLevelDocumenter):
+         sourcename = self.get_sourcename()
+         if not self.options.annotation:
+             # obtain annotation for this data
+-            try:
+-                annotations = get_type_hints(self.parent)
+-            except NameError:
+-                # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
+-                annotations = safe_getattr(self.parent, '__annotations__', {})
+-            except TypeError:
+-                annotations = {}
+-            except KeyError:
+-                # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
+-                annotations = {}
+-            except AttributeError:
+-                # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
+-                annotations = {}
+-
++            annotations = get_type_hints(self.parent, None,
++                                         self.config.autodoc_type_aliases)
+             if self.objpath[-1] in annotations:
+                 objrepr = stringify_typehint(annotations.get(self.objpath[-1]))
+                 self.add_line('   :type: ' + objrepr, sourcename)
+@@ -2092,20 +2080,8 @@ class AttributeDocumenter(DocstringStripSignatureMixin, ClassLevelDocumenter):
+         sourcename = self.get_sourcename()
+         if not self.options.annotation:
+             # obtain type annotation for this attribute
+-            try:
+-                annotations = get_type_hints(self.parent)
+-            except NameError:
+-                # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
+-                annotations = safe_getattr(self.parent, '__annotations__', {})
+-            except TypeError:
+-                annotations = {}
+-            except KeyError:
+-                # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
+-                annotations = {}
+-            except AttributeError:
+-                # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
+-                annotations = {}
+-
++            annotations = get_type_hints(self.parent, None,
++                                         self.config.autodoc_type_aliases)
+             if self.objpath[-1] in annotations:
+                 objrepr = stringify_typehint(annotations.get(self.objpath[-1]))
+                 self.add_line('   :type: ' + objrepr, sourcename)
+diff --git a/sphinx/util/typing.py b/sphinx/util/typing.py
+index 28f9c5e38..ed7c199c7 100644
+--- a/sphinx/util/typing.py
++++ b/sphinx/util/typing.py
+@@ -63,6 +63,29 @@ def is_system_TypeVar(typ: Any) -> bool:
+     return modname == 'typing' and isinstance(typ, TypeVar)
+ 
+ 
++def get_type_hints(obj: Any, globalns: Dict = None, localns: Dict = None) -> Dict[str, Any]:
++    """Return a dictionary containing type hints for a function, method, module or class.
++
++    This is a simple wrapper of `typing.get_type_hints()` that does not raise an error on
++    runtime.
++    """
++    from sphinx.util.inspect import safe_getattr  # lazy loading
++
++    try:
++        return typing.get_type_hints(obj, None, localns)
++    except NameError:
++        # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
++        return safe_getattr(obj, '__annotations__', {})
++    except TypeError:
++        return {}
++    except KeyError:
++        # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
++        return {}
++    except AttributeError:
++        # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
++        return {}
++
++
+ def restify(cls: Optional["Type"]) -> str:
+     """Convert python class to a reST reference."""
+     if cls is None or cls is NoneType:
+diff --git a/tests/roots/test-ext-autodoc/target/annotations.py b/tests/roots/test-ext-autodoc/target/annotations.py
+index 691176b08..4d5dd11f7 100644
+--- a/tests/roots/test-ext-autodoc/target/annotations.py
++++ b/tests/roots/test-ext-autodoc/target/annotations.py
+@@ -5,6 +5,10 @@ from typing import overload
+ myint = int
+ 
+ 
++#: docstring
++variable: myint
++
++
+ def sum(x: myint, y: myint) -> myint:
+     """docstring"""
+     return x + y
+@@ -23,3 +27,13 @@ def mult(x: float, y: float) -> float:
+ def mult(x, y):
+     """docstring"""
+     return x, y
++
++
++class Foo:
++    """docstring"""
++
++    #: docstring
++    attr1: myint
++
++    def __init__(self):
++        self.attr2: myint  #: docstring
+diff --git a/tests/test_ext_autodoc_configs.py b/tests/test_ext_autodoc_configs.py
+index 3d1005ac0..f68a831fb 100644
+--- a/tests/test_ext_autodoc_configs.py
++++ b/tests/test_ext_autodoc_configs.py
+@@ -700,6 +700,26 @@ def test_autodoc_type_aliases(app):
+         '.. py:module:: target.annotations',
+         '',
+         '',
++        '.. py:class:: Foo()',
++        '   :module: target.annotations',
++        '',
++        '   docstring',
++        '',
++        '',
++        '   .. py:attribute:: Foo.attr1',
++        '      :module: target.annotations',
++        '      :type: int',
++        '',
++        '      docstring',
++        '',
++        '',
++        '   .. py:attribute:: Foo.attr2',
++        '      :module: target.annotations',
++        '      :type: myint',
++        '',
++        '      docstring',
++        '',
++        '',
+         '.. py:function:: mult(x: int, y: int) -> int',
+         '                 mult(x: float, y: float) -> float',
+         '   :module: target.annotations',
+@@ -712,6 +732,13 @@ def test_autodoc_type_aliases(app):
+         '',
+         '   docstring',
+         '',
++        '',
++        '.. py:data:: variable',
++        '   :module: target.annotations',
++        '   :type: int',
++        '',
++        '   docstring',
++        '',
+     ]
+ 
+     # define aliases
+@@ -722,6 +749,26 @@ def test_autodoc_type_aliases(app):
+         '.. py:module:: target.annotations',
+         '',
+         '',
++        '.. py:class:: Foo()',
++        '   :module: target.annotations',
++        '',
++        '   docstring',
++        '',
++        '',
++        '   .. py:attribute:: Foo.attr1',
++        '      :module: target.annotations',
++        '      :type: myint',
++        '',
++        '      docstring',
++        '',
++        '',
++        '   .. py:attribute:: Foo.attr2',
++        '      :module: target.annotations',
++        '      :type: myint',
++        '',
++        '      docstring',
++        '',
++        '',
+         '.. py:function:: mult(x: myint, y: myint) -> myint',
+         '                 mult(x: float, y: float) -> float',
+         '   :module: target.annotations',
+@@ -734,6 +781,13 @@ def test_autodoc_type_aliases(app):
+         '',
+         '   docstring',
+         '',
++        '',
++        '.. py:data:: variable',
++        '   :module: target.annotations',
++        '   :type: myint',
++        '',
++        '   docstring',
++        '',
+     ]
+ 
+ 
+diff --git a/tox.ini b/tox.ini
+index dbb705a3a..9f4fc3a32 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all,ignore::ImportWarning:importlib._bootstrap_external,ignore::DeprecationWarning:site,ignore::DeprecationWarning:distutils
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:flake8]
+ basepython = python3
+2026-06-23 07:02:25,977 - INFO - Eval script for sphinx-doc__sphinx-8435 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8435/eval.sh; copying to container...
+2026-06-23 07:02:31,428 - INFO - Test runtime: 5.32 seconds
+2026-06-23 07:02:31,433 - INFO - Test output for sphinx-doc__sphinx-8435 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8435/test_output.txt
+2026-06-23 07:02:31,549 - INFO - Git diff after:
+diff --git a/CHANGES b/CHANGES
+index a55a43687..ff4a11c62 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -60,6 +60,9 @@ Features added
+ Bugs fixed
+ ----------
+ 
++* #8415: autodoc: ``autodoc_type_aliases`` does not effect to variables and
++  attributes
++
+ Testing
+ --------
+ 
+diff --git a/setup.py b/setup.py
+index ca08a6d4a..21cb67b8f 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,22 +15,22 @@ if sys.version_info < (3, 5):
+     sys.exit(1)
+ 
+ install_requires = [
+-    'sphinxcontrib-applehelp',
+-    'sphinxcontrib-devhelp',
++    'sphinxcontrib-applehelp<=1.0.7',
++    'sphinxcontrib-devhelp<=1.0.5',
+     'sphinxcontrib-jsmath',
+-    'sphinxcontrib-htmlhelp',
+-    'sphinxcontrib-serializinghtml',
+-    'sphinxcontrib-qthelp',
+-    'Jinja2>=2.3',
++    'sphinxcontrib-htmlhelp<=2.0.4',
++    'sphinxcontrib-serializinghtml<=1.1.9',
++    'sphinxcontrib-qthelp<=1.0.6',
++    'Jinja2<3.0',
+     'Pygments>=2.0',
+     'docutils>=0.12',
+     'snowballstemmer>=1.1',
+     'babel>=1.3',
+-    'alabaster>=0.7,<0.8',
++    'alabaster>=0.7,<0.7.12',
+     'imagesize',
+     'requests>=2.5.0',
+     'setuptools',
+-    'packaging',
++    'packaging', 'markupsafe<=2.0.1',
+ ]
+ 
+ extras_require = {
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index 171a3e7b0..6d8831afa 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -16,7 +16,7 @@ import warnings
+ from inspect import Parameter, Signature
+ from types import ModuleType
+ from typing import (Any, Callable, Dict, Iterator, List, Optional, Sequence, Set, Tuple, Type,
+-                    TypeVar, Union, get_type_hints)
++                    TypeVar, Union)
+ 
+ from docutils.statemachine import StringList
+ 
+@@ -33,7 +33,7 @@ from sphinx.util import inspect, logging
+ from sphinx.util.docstrings import extract_metadata, prepare_docstring
+ from sphinx.util.inspect import (evaluate_signature, getdoc, object_description, safe_getattr,
+                                  stringify_signature)
+-from sphinx.util.typing import restify
++from sphinx.util.typing import get_type_hints, restify
+ from sphinx.util.typing import stringify as stringify_typehint
+ 
+ if False:
+@@ -1701,20 +1701,8 @@ class DataDocumenter(ModuleLevelDocumenter):
+         sourcename = self.get_sourcename()
+         if not self.options.annotation:
+             # obtain annotation for this data
+-            try:
+-                annotations = get_type_hints(self.parent)
+-            except NameError:
+-                # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
+-                annotations = safe_getattr(self.parent, '__annotations__', {})
+-            except TypeError:
+-                annotations = {}
+-            except KeyError:
+-                # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
+-                annotations = {}
+-            except AttributeError:
+-                # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
+-                annotations = {}
+-
++            annotations = get_type_hints(self.parent, None,
++                                         self.config.autodoc_type_aliases)
+             if self.objpath[-1] in annotations:
+                 objrepr = stringify_typehint(annotations.get(self.objpath[-1]))
+                 self.add_line('   :type: ' + objrepr, sourcename)
+@@ -2092,20 +2080,8 @@ class AttributeDocumenter(DocstringStripSignatureMixin, ClassLevelDocumenter):
+         sourcename = self.get_sourcename()
+         if not self.options.annotation:
+             # obtain type annotation for this attribute
+-            try:
+-                annotations = get_type_hints(self.parent)
+-            except NameError:
+-                # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
+-                annotations = safe_getattr(self.parent, '__annotations__', {})
+-            except TypeError:
+-                annotations = {}
+-            except KeyError:
+-                # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
+-                annotations = {}
+-            except AttributeError:
+-                # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
+-                annotations = {}
+-
++            annotations = get_type_hints(self.parent, None,
++                                         self.config.autodoc_type_aliases)
+             if self.objpath[-1] in annotations:
+                 objrepr = stringify_typehint(annotations.get(self.objpath[-1]))
+                 self.add_line('   :type: ' + objrepr, sourcename)
+diff --git a/sphinx/util/typing.py b/sphinx/util/typing.py
+index 28f9c5e38..ed7c199c7 100644
+--- a/sphinx/util/typing.py
++++ b/sphinx/util/typing.py
+@@ -63,6 +63,29 @@ def is_system_TypeVar(typ: Any) -> bool:
+     return modname == 'typing' and isinstance(typ, TypeVar)
+ 
+ 
++def get_type_hints(obj: Any, globalns: Dict = None, localns: Dict = None) -> Dict[str, Any]:
++    """Return a dictionary containing type hints for a function, method, module or class.
++
++    This is a simple wrapper of `typing.get_type_hints()` that does not raise an error on
++    runtime.
++    """
++    from sphinx.util.inspect import safe_getattr  # lazy loading
++
++    try:
++        return typing.get_type_hints(obj, None, localns)
++    except NameError:
++        # Failed to evaluate ForwardRef (maybe TYPE_CHECKING)
++        return safe_getattr(obj, '__annotations__', {})
++    except TypeError:
++        return {}
++    except KeyError:
++        # a broken class found (refs: https://github.com/sphinx-doc/sphinx/issues/8084)
++        return {}
++    except AttributeError:
++        # AttributeError is raised on 3.5.2 (fixed by 3.5.3)
++        return {}
++
++
+ def restify(cls: Optional["Type"]) -> str:
+     """Convert python class to a reST reference."""
+     if cls is None or cls is NoneType:
+diff --git a/tox.ini b/tox.ini
+index dbb705a3a..9f4fc3a32 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all,ignore::ImportWarning:importlib._bootstrap_external,ignore::DeprecationWarning:site,ignore::DeprecationWarning:distutils
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:flake8]
+ basepython = python3
+2026-06-23 07:02:31,550 - INFO - Git diff changed after running eval script
+2026-06-23 07:02:31,550 - INFO - Grading answer for sphinx-doc__sphinx-8435...
+2026-06-23 07:02:31,559 - INFO - report: {'sphinx-doc__sphinx-8435': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_ext_autodoc_configs.py::test_autodoc_type_aliases'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/test_ext_autodoc_configs.py::test_autoclass_content_class', 'tests/test_ext_autodoc_configs.py::test_autoclass_content_init', 'tests/test_ext_autodoc_configs.py::test_autoclass_content_both', 'tests/test_ext_autodoc_configs.py::test_autodoc_inherit_docstrings', 'tests/test_ext_autodoc_configs.py::test_autodoc_docstring_signature', 'tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_class', 'tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_init', 'tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_both', 'tests/test_ext_autodoc_configs.py::test_mocked_module_imports', 'tests/test_ext_autodoc_configs.py::test_autodoc_typehints_signature', 'tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none', 'tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none_for_overload', 'tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description', 'tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description_for_invalid_node', 'tests/test_ext_autodoc_configs.py::test_autodoc_default_options', 'tests/test_ext_autodoc_configs.py::test_autodoc_default_options_with_values'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-8435: resolved: True
+2026-06-23 07:02:31,563 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-8435.squad_v1...
+2026-06-23 07:02:47,702 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-8435.squad_v1...
+2026-06-23 07:02:48,672 - INFO - Container sweb.eval.sphinx-doc__sphinx-8435.squad_v1 removed.
+2026-06-23 07:02:48,673 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8435:latest...
+2026-06-23 07:02:49,470 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8435:latest removed.

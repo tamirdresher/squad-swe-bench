@@ -1,0 +1,50 @@
+diff --git a/django/forms/boundfield.py b/django/forms/boundfield.py
+index 2ff8b0ee26..a061f15f87 100644
+--- a/django/forms/boundfield.py
++++ b/django/forms/boundfield.py
+@@ -277,7 +277,7 @@ class BoundWidget:
+ 
+     @property
+     def id_for_label(self):
+-        return 'id_%s_%s' % (self.data['name'], self.data['index'])
++        return self.data['attrs'].get('id')
+ 
+     @property
+     def choice_label(self):
+diff --git a/tests/forms_tests/tests/test_forms.py b/tests/forms_tests/tests/test_forms.py
+index f3ee64ceda..8148c58ce6 100644
+--- a/tests/forms_tests/tests/test_forms.py
++++ b/tests/forms_tests/tests/test_forms.py
+@@ -720,7 +720,7 @@ Java</label></li>
+         fields = list(BeatleForm(auto_id=False)['name'])
+         self.assertEqual(len(fields), 4)
+ 
+-        self.assertEqual(fields[0].id_for_label, 'id_name_0')
++        self.assertIsNone(fields[0].id_for_label)
+         self.assertEqual(fields[0].choice_label, 'John')
+         self.assertHTMLEqual(fields[0].tag(), '<option value="john">John</option>')
+         self.assertHTMLEqual(str(fields[0]), '<option value="john">John</option>')
+@@ -3202,6 +3202,23 @@ Good luck picking a username that doesn&#x27;t already exist.</p>
+         self.assertEqual(form['field'].id_for_label, 'myCustomID')
+         self.assertEqual(form['field_none'].id_for_label, 'id_field_none')
+ 
++    def test_boundwidget_id_for_label_respects_auto_id(self):
++        """
++        BoundWidget.id_for_label uses the id from the subwidget's attrs so
++        that a custom auto_id format is reflected correctly.
++        """
++        class SomeForm(Form):
++            field = MultipleChoiceField(
++                choices=[('a', 'A'), ('b', 'B'), ('c', 'C')],
++                widget=CheckboxSelectMultiple,
++            )
++
++        form = SomeForm(auto_id='custom_%s')
++        subwidgets = list(form['field'])
++        self.assertEqual(subwidgets[0].id_for_label, 'custom_field_0')
++        self.assertEqual(subwidgets[1].id_for_label, 'custom_field_1')
++        self.assertEqual(subwidgets[2].id_for_label, 'custom_field_2')
++
+     def test_boundfield_widget_type(self):
+         class SomeForm(Form):
+             first_name = CharField()

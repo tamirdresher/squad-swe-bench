@@ -1,0 +1,252 @@
+2026-06-23 06:33:29,169 - INFO - Creating container for pylint-dev__pylint-6506...
+2026-06-23 06:33:35,879 - INFO - Container for pylint-dev__pylint-6506 created: 6e0607ce0cd44126081df03a6e973405a5b50f51850158475cdd65d75cd30b52
+2026-06-23 06:33:36,315 - INFO - Container for pylint-dev__pylint-6506 started: 6e0607ce0cd44126081df03a6e973405a5b50f51850158475cdd65d75cd30b52
+2026-06-23 06:33:36,449 - INFO - Intermediate patch for pylint-dev__pylint-6506 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-6506/patch.diff, now applying to container...
+2026-06-23 06:33:36,899 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:33:37,047 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:33:37,364 - INFO - >>>>> Applied Patch:
+patching file ChangeLog
+patching file doc/whatsnew/2.14.rst
+patching file pylint/lint/run.py
+patching file tests/config/test_config.py
+patching file tests/test_self.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 221 with fuzz 1.
+
+2026-06-23 06:33:37,917 - INFO - Git diff before:
+diff --git a/ChangeLog b/ChangeLog
+index 98d71e962..fd2ab288d 100644
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -287,6 +287,11 @@ Release date: TBA
+ 
+   Relates to #6493
+ 
++* Fixed an issue where an unrecognized option (e.g. ``pylint -Q``) would print the
++  ``unrecognized-option`` message but then also crash with an unhandled
++  ``_UnrecognizedOptionError`` traceback. Pylint now reports the unrecognized option
++  and exits cleanly with exit code 32.
++
+ ..
+   Insert your changelog randomly, it will reduce merge conflicts
+   (Ie. not necessarily at the end)
+diff --git a/doc/whatsnew/2.14.rst b/doc/whatsnew/2.14.rst
+index 064832ea2..1e8a928a9 100644
+--- a/doc/whatsnew/2.14.rst
++++ b/doc/whatsnew/2.14.rst
+@@ -287,3 +287,8 @@ Other Changes
+   option.
+ 
+   Relates to #6493
++
++* Fixed an issue where an unrecognized option (e.g. ``pylint -Q``) would print the
++  ``unrecognized-option`` message but then also crash with an unhandled
++  ``_UnrecognizedOptionError`` traceback. Pylint now reports the unrecognized option
++  and exits cleanly with exit code 32.
+\ No newline at end of file
+diff --git a/pylint/lint/run.py b/pylint/lint/run.py
+index 778e64441..925ba8d28 100644
+--- a/pylint/lint/run.py
++++ b/pylint/lint/run.py
+@@ -13,7 +13,10 @@ from typing import Any
+ 
+ from pylint import config
+ from pylint.config.config_initialization import _config_initialization
+-from pylint.config.exceptions import ArgumentPreprocessingError
++from pylint.config.exceptions import (
++    ArgumentPreprocessingError,
++    _UnrecognizedOptionError,
++)
+ from pylint.config.utils import _preprocess_options
+ from pylint.constants import full_version
+ from pylint.lint.base_options import _make_run_options
+@@ -132,9 +135,16 @@ group are mutually exclusive.",
+         linter.disable("I")
+         linter.enable("c-extension-no-member")
+ 
+-        args = _config_initialization(
+-            linter, args, reporter, config_file=self._rcfile, verbose_mode=self.verbose
+-        )
++        try:
++            args = _config_initialization(
++                linter, args, reporter, config_file=self._rcfile, verbose_mode=self.verbose
++            )
++        except _UnrecognizedOptionError:
++            # The user supplied an unrecognized option; the corresponding
++            # 'unrecognized-option' message has already been emitted by
++            # _config_initialization, so we just exit cleanly here instead of
++            # letting the exception propagate as an ugly traceback.
++            sys.exit(32)
+ 
+         if linter.config.jobs < 0:
+             print(
+diff --git a/tests/config/test_config.py b/tests/config/test_config.py
+index fefdb220d..679e0dc14 100644
+--- a/tests/config/test_config.py
++++ b/tests/config/test_config.py
+@@ -10,7 +10,6 @@ from pathlib import Path
+ import pytest
+ from pytest import CaptureFixture
+ 
+-from pylint.config.exceptions import _UnrecognizedOptionError
+ from pylint.lint import Run as LintRun
+ from pylint.testutils._run import _Run as Run
+ from pylint.testutils.configuration_test import run_using_a_configuration_file
+@@ -65,16 +64,18 @@ def test_unknown_message_id(capsys: CaptureFixture) -> None:
+ 
+ def test_unknown_option_name(capsys: CaptureFixture) -> None:
+     """Check that we correctly raise a message on an unknown option."""
+-    with pytest.raises(_UnrecognizedOptionError):
++    with pytest.raises(SystemExit) as exc_info:
+         Run([str(EMPTY_MODULE), "--unknown-option=yes"], exit=False)
++    assert exc_info.value.code == 32
+     output = capsys.readouterr()
+     assert "E0015: Unrecognized option found: unknown-option=yes" in output.out
+ 
+ 
+ def test_unknown_short_option_name(capsys: CaptureFixture) -> None:
+     """Check that we correctly raise a message on an unknown short option."""
+-    with pytest.raises(_UnrecognizedOptionError):
++    with pytest.raises(SystemExit) as exc_info:
+         Run([str(EMPTY_MODULE), "-Q"], exit=False)
++    assert exc_info.value.code == 32
+     output = capsys.readouterr()
+     assert "E0015: Unrecognized option found: Q" in output.out
+ 
+diff --git a/tests/test_self.py b/tests/test_self.py
+index a186174f1..9cd23635b 100644
+--- a/tests/test_self.py
++++ b/tests/test_self.py
+@@ -221,6 +221,24 @@ class TestRunTC:
+     def test_error_missing_arguments(self) -> None:
+         self._runtest([], code=32)
+ 
++    def test_no_crash_with_unrecognized_option(self) -> None:
++        """An unrecognized option should be reported and exit cleanly (code 32).
++
++        Regression test: ``pylint -Q`` used to print the ``unrecognized-option``
++        message but then crash with an unhandled ``_UnrecognizedOptionError``
++        traceback instead of exiting cleanly.
++        """
++        reporter = TextReporter(StringIO())
++        self._runtest(
++            [join(HERE, "regrtest_data", "empty.py"), "-Q"],
++            reporter=reporter,
++            code=32,
++        )
++        assert (
++            "E0015: Unrecognized option found: Q (unrecognized-option)"
++            in reporter.out.getvalue()
++        )
++
+     def test_no_out_encoding(self) -> None:
+         """Test redirection of stdout with non ascii characters."""
+         # This test reproduces bug #48066 ; it happens when stdout is redirected
+2026-06-23 06:33:37,925 - INFO - Eval script for pylint-dev__pylint-6506 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-6506/eval.sh; copying to container...
+2026-06-23 06:33:47,092 - INFO - Test runtime: 8.96 seconds
+2026-06-23 06:33:47,097 - INFO - Test output for pylint-dev__pylint-6506 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-6506/test_output.txt
+2026-06-23 06:33:47,226 - INFO - Git diff after:
+diff --git a/ChangeLog b/ChangeLog
+index 98d71e962..fd2ab288d 100644
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -287,6 +287,11 @@ Release date: TBA
+ 
+   Relates to #6493
+ 
++* Fixed an issue where an unrecognized option (e.g. ``pylint -Q``) would print the
++  ``unrecognized-option`` message but then also crash with an unhandled
++  ``_UnrecognizedOptionError`` traceback. Pylint now reports the unrecognized option
++  and exits cleanly with exit code 32.
++
+ ..
+   Insert your changelog randomly, it will reduce merge conflicts
+   (Ie. not necessarily at the end)
+diff --git a/doc/whatsnew/2.14.rst b/doc/whatsnew/2.14.rst
+index 064832ea2..1e8a928a9 100644
+--- a/doc/whatsnew/2.14.rst
++++ b/doc/whatsnew/2.14.rst
+@@ -287,3 +287,8 @@ Other Changes
+   option.
+ 
+   Relates to #6493
++
++* Fixed an issue where an unrecognized option (e.g. ``pylint -Q``) would print the
++  ``unrecognized-option`` message but then also crash with an unhandled
++  ``_UnrecognizedOptionError`` traceback. Pylint now reports the unrecognized option
++  and exits cleanly with exit code 32.
+\ No newline at end of file
+diff --git a/pylint/lint/run.py b/pylint/lint/run.py
+index 778e64441..925ba8d28 100644
+--- a/pylint/lint/run.py
++++ b/pylint/lint/run.py
+@@ -13,7 +13,10 @@ from typing import Any
+ 
+ from pylint import config
+ from pylint.config.config_initialization import _config_initialization
+-from pylint.config.exceptions import ArgumentPreprocessingError
++from pylint.config.exceptions import (
++    ArgumentPreprocessingError,
++    _UnrecognizedOptionError,
++)
+ from pylint.config.utils import _preprocess_options
+ from pylint.constants import full_version
+ from pylint.lint.base_options import _make_run_options
+@@ -132,9 +135,16 @@ group are mutually exclusive.",
+         linter.disable("I")
+         linter.enable("c-extension-no-member")
+ 
+-        args = _config_initialization(
+-            linter, args, reporter, config_file=self._rcfile, verbose_mode=self.verbose
+-        )
++        try:
++            args = _config_initialization(
++                linter, args, reporter, config_file=self._rcfile, verbose_mode=self.verbose
++            )
++        except _UnrecognizedOptionError:
++            # The user supplied an unrecognized option; the corresponding
++            # 'unrecognized-option' message has already been emitted by
++            # _config_initialization, so we just exit cleanly here instead of
++            # letting the exception propagate as an ugly traceback.
++            sys.exit(32)
+ 
+         if linter.config.jobs < 0:
+             print(
+diff --git a/tests/test_self.py b/tests/test_self.py
+index a186174f1..9cd23635b 100644
+--- a/tests/test_self.py
++++ b/tests/test_self.py
+@@ -221,6 +221,24 @@ class TestRunTC:
+     def test_error_missing_arguments(self) -> None:
+         self._runtest([], code=32)
+ 
++    def test_no_crash_with_unrecognized_option(self) -> None:
++        """An unrecognized option should be reported and exit cleanly (code 32).
++
++        Regression test: ``pylint -Q`` used to print the ``unrecognized-option``
++        message but then crash with an unhandled ``_UnrecognizedOptionError``
++        traceback instead of exiting cleanly.
++        """
++        reporter = TextReporter(StringIO())
++        self._runtest(
++            [join(HERE, "regrtest_data", "empty.py"), "-Q"],
++            reporter=reporter,
++            code=32,
++        )
++        assert (
++            "E0015: Unrecognized option found: Q (unrecognized-option)"
++            in reporter.out.getvalue()
++        )
++
+     def test_no_out_encoding(self) -> None:
+         """Test redirection of stdout with non ascii characters."""
+         # This test reproduces bug #48066 ; it happens when stdout is redirected
+2026-06-23 06:33:47,227 - INFO - Git diff changed after running eval script
+2026-06-23 06:33:47,228 - INFO - Grading answer for pylint-dev__pylint-6506...
+2026-06-23 06:33:47,235 - INFO - report: {'pylint-dev__pylint-6506': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/config/test_config.py::test_unknown_option_name', 'tests/config/test_config.py::test_unknown_short_option_name']}, 'PASS_TO_PASS': {'success': ['tests/config/test_config.py::test_can_read_toml_env_variable', 'tests/config/test_config.py::test_unknown_message_id', 'tests/config/test_config.py::test_unknown_confidence', 'tests/config/test_config.py::test_unknown_yes_no', 'tests/config/test_config.py::test_unknown_py_version', 'tests/config/test_config.py::test_short_verbose'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pylint-dev__pylint-6506: resolved: False
+2026-06-23 06:33:47,241 - INFO - Attempting to stop container sweb.eval.pylint-dev__pylint-6506.squad_v1...
+2026-06-23 06:34:31,123 - INFO - Attempting to remove container sweb.eval.pylint-dev__pylint-6506.squad_v1...
+2026-06-23 06:34:31,441 - INFO - Container sweb.eval.pylint-dev__pylint-6506.squad_v1 removed.
+2026-06-23 06:34:31,442 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-6506:latest...
+2026-06-23 06:34:32,392 - INFO - Image swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-6506:latest removed.

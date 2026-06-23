@@ -1,0 +1,76 @@
+diff --git a/django/db/models/fields/__init__.py b/django/db/models/fields/__init__.py
+index 0c64748ccd..4d7eb11151 100644
+--- a/django/db/models/fields/__init__.py
++++ b/django/db/models/fields/__init__.py
+@@ -1709,7 +1709,7 @@ class FilePathField(Field):
+ 
+     def formfield(self, **kwargs):
+         return super().formfield(**{
+-            'path': self.path,
++            'path': self.path() if callable(self.path) else self.path,
+             'match': self.match,
+             'recursive': self.recursive,
+             'form_class': forms.FilePathField,
+diff --git a/docs/ref/models/fields.txt b/docs/ref/models/fields.txt
+index e352e8b007..fbcba2bd66 100644
+--- a/docs/ref/models/fields.txt
++++ b/docs/ref/models/fields.txt
+@@ -868,6 +868,23 @@ directory on the filesystem. Has three special arguments, of which the first is
+     Required. The absolute filesystem path to a directory from which this
+     :class:`FilePathField` should get its choices. Example: ``"/home/images"``.
+ 
++    ``path`` may also be a callable, such as a function to dynamically set the
++    path at runtime. Example::
++
++        import os
++        from django.conf import settings
++        from django.db import models
++
++        def images_path():
++            return os.path.join(settings.LOCAL_FILE_DIR, 'images')
++
++        class MyModel(models.Model):
++            file = models.FilePathField(path=images_path)
++
++    .. versionchanged:: 3.0
++
++        ``path`` can now be a callable.
++
+ .. attribute:: FilePathField.match
+ 
+     Optional. A regular expression, as a string, that :class:`FilePathField`
+diff --git a/docs/releases/3.0.txt b/docs/releases/3.0.txt
+index b78d4bd6ab..e59779519b 100644
+--- a/docs/releases/3.0.txt
++++ b/docs/releases/3.0.txt
+@@ -206,6 +206,9 @@ Models
+ 
+ * ``connection.queries`` now shows ``COPY â€¦ TO`` statements on PostgreSQL.
+ 
++* :attr:`FilePathField.path <django.db.models.FilePathField.path>` now accepts a
++  callable.
++
+ Requests and Responses
+ ~~~~~~~~~~~~~~~~~~~~~~
+ 
+diff --git a/tests/field_deconstruction/tests.py b/tests/field_deconstruction/tests.py
+index 2cf1f93e22..dfcf346185 100644
+--- a/tests/field_deconstruction/tests.py
++++ b/tests/field_deconstruction/tests.py
+@@ -186,6 +186,16 @@ class FieldDeconstructionTests(SimpleTestCase):
+         self.assertEqual(args, [])
+         self.assertEqual(kwargs, {"recursive": True, "allow_folders": True, "max_length": 123})
+ 
++    def test_file_path_field_callable_path(self):
++        def callable_path():
++            return '/some/path'
++
++        field = models.FilePathField(path=callable_path)
++        name, path, args, kwargs = field.deconstruct()
++        self.assertEqual(path, "django.db.models.FilePathField")
++        self.assertEqual(args, [])
++        self.assertEqual(kwargs, {"path": callable_path})
++
+     def test_float_field(self):
+         field = models.FloatField()
+         name, path, args, kwargs = field.deconstruct()

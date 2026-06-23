@@ -1,0 +1,69 @@
+diff --git a/sklearn/neighbors/base.py b/sklearn/neighbors/base.py
+index 3e5e729c27..d983c12467 100644
+--- a/sklearn/neighbors/base.py
++++ b/sklearn/neighbors/base.py
+@@ -258,6 +258,12 @@ class NeighborsBase(six.with_metaclass(ABCMeta, BaseEstimator)):
+                     "Expected n_neighbors > 0. Got %d" %
+                     self.n_neighbors
+                 )
++            else:
++                if not np.issubdtype(type(self.n_neighbors), np.integer):
++                    raise TypeError(
++                        "n_neighbors does not take %s value, "
++                        "enter integer value" %
++                        type(self.n_neighbors))
+ 
+         return self
+ 
+@@ -327,6 +333,17 @@ class KNeighborsMixin(object):
+ 
+         if n_neighbors is None:
+             n_neighbors = self.n_neighbors
++        elif n_neighbors <= 0:
++            raise ValueError(
++                "Expected n_neighbors > 0. Got %d" %
++                n_neighbors
++            )
++        else:
++            if not np.issubdtype(type(n_neighbors), np.integer):
++                raise TypeError(
++                    "n_neighbors does not take %s value, "
++                    "enter integer value" %
++                    type(n_neighbors))
+ 
+         if X is not None:
+             query_is_train = False
+diff --git a/sklearn/neighbors/tests/test_neighbors.py b/sklearn/neighbors/tests/test_neighbors.py
+index 0ecb3b6780..8750a23d22 100644
+--- a/sklearn/neighbors/tests/test_neighbors.py
++++ b/sklearn/neighbors/tests/test_neighbors.py
+@@ -951,6 +951,29 @@ def test_neighbors_badargs():
+     assert_raises(ValueError, nbrs.radius_neighbors_graph, X, mode='blah')
+ 
+ 
++def test_n_neighbors_datatype():
++    # Test that a float n_neighbors raises TypeError with a helpful message
++    X = rng.random_sample((10, 2))
++
++    # Float n_neighbors passed to constructor, error raised during fit
++    nbrs = neighbors.NearestNeighbors(n_neighbors=3.)
++    assert_raises(TypeError, nbrs.fit, X)
++
++    # Float n_neighbors passed directly to kneighbors
++    nbrs = neighbors.NearestNeighbors(n_neighbors=3)
++    nbrs.fit(X)
++    assert_raises(TypeError, nbrs.kneighbors, X, 3.)
++
++    # Negative n_neighbors passed to constructor raises ValueError at fit time
++    nbrs = neighbors.NearestNeighbors(n_neighbors=-1)
++    assert_raises(ValueError, nbrs.fit, X)
++
++    # Negative n_neighbors passed directly to kneighbors
++    nbrs = neighbors.NearestNeighbors(n_neighbors=3)
++    nbrs.fit(X)
++    assert_raises(ValueError, nbrs.kneighbors, X, -1)
++
++
+ def test_neighbors_metrics(n_samples=20, n_features=3,
+                            n_query_pts=2, n_neighbors=5):
+     # Test computing the neighbors for various metrics

@@ -1,0 +1,111 @@
+2026-06-23 05:03:38,183 - INFO - Creating container for django__django-13660...
+2026-06-23 05:03:54,307 - INFO - Container for django__django-13660 created: d61959ba1921e6706e1b58b7355f5cd4389564d5341c5ebacfedb5615bb5e705
+2026-06-23 05:03:54,865 - INFO - Container for django__django-13660 started: d61959ba1921e6706e1b58b7355f5cd4389564d5341c5ebacfedb5615bb5e705
+2026-06-23 05:03:54,877 - INFO - Intermediate patch for django__django-13660 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13660/patch.diff, now applying to container...
+2026-06-23 05:03:55,210 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:03:55,323 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:03:55,450 - INFO - >>>>> Applied Patch:
+patching file django/core/management/commands/shell.py
+patching file tests/shell/tests.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 43 with fuzz 1.
+
+2026-06-23 05:03:56,742 - INFO - Git diff before:
+diff --git a/django/core/management/commands/shell.py b/django/core/management/commands/shell.py
+index 2b306a579e..3e8a451e3e 100644
+--- a/django/core/management/commands/shell.py
++++ b/django/core/management/commands/shell.py
+@@ -84,13 +84,13 @@ class Command(BaseCommand):
+     def handle(self, **options):
+         # Execute the command and exit.
+         if options['command']:
+-            exec(options['command'])
++            exec(options['command'], globals())
+             return
+ 
+         # Execute stdin if it has anything to read and exit.
+         # Not supported on Windows due to select.select() limitations.
+         if sys.platform != 'win32' and not sys.stdin.isatty() and select.select([sys.stdin], [], [], 0)[0]:
+-            exec(sys.stdin.read())
++            exec(sys.stdin.read(), globals())
+             return
+ 
+         available_shells = [options['interface']] if options['interface'] else self.shells
+diff --git a/tests/shell/tests.py b/tests/shell/tests.py
+index f33a9ae701..f2f9364b4e 100644
+--- a/tests/shell/tests.py
++++ b/tests/shell/tests.py
+@@ -21,6 +21,19 @@ class ShellCommandTestCase(SimpleTestCase):
+             )
+         self.assertEqual(cm.records[0].getMessage(), __version__)
+ 
++    def test_command_option_globals(self):
++        with captured_stdout() as stdout:
++            call_command(
++                'shell',
++                command=(
++                    'import django\n'
++                    'def f():\n'
++                    '    print(django.__version__)\n'
++                    'f()'
++                ),
++            )
++        self.assertEqual(stdout.getvalue().strip(), __version__)
++
+     @unittest.skipIf(sys.platform == 'win32', "Windows select() doesn't support file descriptors.")
+     @mock.patch('django.core.management.commands.shell.select')
+     def test_stdin_read(self, select):
+@@ -30,6 +43,20 @@ class ShellCommandTestCase(SimpleTestCase):
+             call_command('shell')
+         self.assertEqual(stdout.getvalue().strip(), '100')
+ 
++    @unittest.skipIf(sys.platform == 'win32', "Windows select() doesn't support file descriptors.")
++    @mock.patch('django.core.management.commands.shell.select')
++    def test_stdin_read_globals(self, select):
++        with captured_stdin() as stdin, captured_stdout() as stdout:
++            stdin.write(
++                'import django\n'
++                'def f():\n'
++                '    print(django.__version__)\n'
++                'f()'
++            )
++            stdin.seek(0)
++            call_command('shell')
++        self.assertEqual(stdout.getvalue().strip(), __version__)
++
+     @mock.patch('django.core.management.commands.shell.select.select')  # [1]
+     @mock.patch.dict('sys.modules', {'IPython': None})
+     def test_shell_with_ipython_not_installed(self, select):
+2026-06-23 05:03:56,749 - INFO - Eval script for django__django-13660 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13660/eval.sh; copying to container...
+2026-06-23 05:04:08,993 - INFO - Test runtime: 12.07 seconds
+2026-06-23 05:04:08,998 - INFO - Test output for django__django-13660 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13660/test_output.txt
+2026-06-23 05:04:09,106 - INFO - Git diff after:
+diff --git a/django/core/management/commands/shell.py b/django/core/management/commands/shell.py
+index 2b306a579e..3e8a451e3e 100644
+--- a/django/core/management/commands/shell.py
++++ b/django/core/management/commands/shell.py
+@@ -84,13 +84,13 @@ class Command(BaseCommand):
+     def handle(self, **options):
+         # Execute the command and exit.
+         if options['command']:
+-            exec(options['command'])
++            exec(options['command'], globals())
+             return
+ 
+         # Execute stdin if it has anything to read and exit.
+         # Not supported on Windows due to select.select() limitations.
+         if sys.platform != 'win32' and not sys.stdin.isatty() and select.select([sys.stdin], [], [], 0)[0]:
+-            exec(sys.stdin.read())
++            exec(sys.stdin.read(), globals())
+             return
+ 
+         available_shells = [options['interface']] if options['interface'] else self.shells
+2026-06-23 05:04:09,106 - INFO - Git diff changed after running eval script
+2026-06-23 05:04:09,107 - INFO - Grading answer for django__django-13660...
+2026-06-23 05:04:09,112 - INFO - report: {'django__django-13660': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_command_option_inline_function_call (shell.tests.ShellCommandTestCase)', 'test_stdin_read_inline_function_call (shell.tests.ShellCommandTestCase)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_command_option (shell.tests.ShellCommandTestCase)', 'test_command_option_globals (shell.tests.ShellCommandTestCase)', 'test_shell_with_bpython_not_installed (shell.tests.ShellCommandTestCase)', 'test_shell_with_ipython_not_installed (shell.tests.ShellCommandTestCase)', 'test_stdin_read (shell.tests.ShellCommandTestCase)', 'test_stdin_read_globals (shell.tests.ShellCommandTestCase)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13660: resolved: True
+2026-06-23 05:04:09,117 - INFO - Attempting to stop container sweb.eval.django__django-13660.squad_v1...
+2026-06-23 05:04:24,872 - INFO - Attempting to remove container sweb.eval.django__django-13660.squad_v1...
+2026-06-23 05:04:25,095 - INFO - Container sweb.eval.django__django-13660.squad_v1 removed.
+2026-06-23 05:04:25,096 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13660:latest...
+2026-06-23 05:04:29,043 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13660:latest removed.

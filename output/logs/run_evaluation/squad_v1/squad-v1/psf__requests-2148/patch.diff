@@ -1,0 +1,52 @@
+diff --git a/requests/models.py b/requests/models.py
+index 0dc55568..8c16c548 100644
+--- a/requests/models.py
++++ b/requests/models.py
+@@ -19,10 +19,11 @@ from .cookies import cookiejar_from_dict, get_cookie_header
+ from .packages.urllib3.fields import RequestField
+ from .packages.urllib3.filepost import encode_multipart_formdata
+ from .packages.urllib3.util import parse_url
+-from .packages.urllib3.exceptions import DecodeError
++from .packages.urllib3.exceptions import (
++    DecodeError, ReadTimeoutError, ProtocolError)
+ from .exceptions import (
+     HTTPError, RequestException, MissingSchema, InvalidURL,
+-    ChunkedEncodingError, ContentDecodingError)
++    ChunkedEncodingError, ContentDecodingError, ConnectionError)
+ from .utils import (
+     guess_filename, get_auth_from_url, requote_uri,
+     stream_decode_response_unicode, to_key_val_list, parse_header_links,
+@@ -636,10 +637,12 @@ class Response(object):
+                 try:
+                     for chunk in self.raw.stream(chunk_size, decode_content=True):
+                         yield chunk
+-                except IncompleteRead as e:
++                except ProtocolError as e:
+                     raise ChunkedEncodingError(e)
+                 except DecodeError as e:
+                     raise ContentDecodingError(e)
++                except ReadTimeoutError as e:
++                    raise ConnectionError(e)
+             except AttributeError:
+                 # Standard file-like object.
+                 while True:
+diff --git a/requests/packages/urllib3/response.py b/requests/packages/urllib3/response.py
+index 7e0d47fa..4a4982a8 100644
+--- a/requests/packages/urllib3/response.py
++++ b/requests/packages/urllib3/response.py
+@@ -1,6 +1,7 @@
+ import zlib
+ import io
+ from socket import timeout as SocketTimeout
++from socket import error as SocketError
+ 
+ from ._collections import HTTPHeaderDict
+ from .exceptions import ProtocolError, DecodeError, ReadTimeoutError
+@@ -206,7 +207,7 @@ class HTTPResponse(io.IOBase):
+ 
+                 raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+ 
+-            except HTTPException as e:
++            except (HTTPException, SocketError) as e:
+                 # This includes IncompleteRead.
+                 raise ProtocolError('Connection broken: %r' % e, e)

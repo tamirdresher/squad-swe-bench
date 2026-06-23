@@ -1,0 +1,212 @@
+2026-06-23 06:13:55,991 - INFO - Creating container for matplotlib__matplotlib-26020...
+2026-06-23 06:14:01,765 - INFO - Container for matplotlib__matplotlib-26020 created: 2aa499a78c7cecda6ff426b119a65c2c5a21a7888e3e4e4213b968571e5eed04
+2026-06-23 06:14:02,368 - INFO - Container for matplotlib__matplotlib-26020 started: 2aa499a78c7cecda6ff426b119a65c2c5a21a7888e3e4e4213b968571e5eed04
+2026-06-23 06:14:02,385 - INFO - Intermediate patch for matplotlib__matplotlib-26020 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-26020/patch.diff, now applying to container...
+2026-06-23 06:14:02,684 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:14:02,793 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:14:02,954 - INFO - >>>>> Applied Patch:
+patching file lib/matplotlib/tests/test_widgets.py
+patching file lib/mpl_toolkits/axes_grid1/axes_grid.py
+patching file lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 592 with fuzz 1.
+
+2026-06-23 06:14:05,051 - INFO - Git diff before:
+diff --git a/lib/matplotlib/tests/test_widgets.py b/lib/matplotlib/tests/test_widgets.py
+index 2f6910f568..c70bc8f9fc 100644
+--- a/lib/matplotlib/tests/test_widgets.py
++++ b/lib/matplotlib/tests/test_widgets.py
+@@ -1328,6 +1328,42 @@ def test_range_slider(orientation):
+     assert_allclose(handle_positions(slider), (0.1, 0.34))
+ 
+ 
++@pytest.mark.parametrize("widget", ["Slider", "RangeSlider"])
++def test_slider_callback_clf_releases_grab(widget):
++    # Regression test for the bug where clearing the figure inside a Slider /
++    # RangeSlider ``on_changed`` callback (e.g. ``pyplot.clf()`` + redraw) left
++    # the canvas mouse grab pinned to the now-destroyed Axes, which blocked all
++    # further mouse input to every widget in the figure.  Removing the Axes
++    # must release the grab (see Figure.delaxes), unlike Button which already
++    # releases the grab before invoking its callback.
++    fig, ax = plt.subplots()
++
++    if widget == "Slider":
++        tool = widgets.Slider(ax, "", valmin=0.0, valmax=10.0, valinit=5.0)
++    else:
++        tool = widgets.RangeSlider(ax, "", valmin=0.0, valmax=10.0,
++                                   valinit=(1.0, 9.0))
++
++    def onchanged(val):
++        # Simulate the user callback that clears the figure and rebuilds it.
++        fig.clear()
++        fig.canvas.draw()
++
++    tool.on_changed(onchanged)
++
++    # Press on the slider axes at a value different from valinit: this grabs the
++    # mouse and fires ``on_changed`` via ``set_val``, whose callback clears the
++    # figure (removing ``ax``).
++    transform = ax.transData
++    MouseEvent(
++        "button_press_event", fig.canvas, *transform.transform((8, 0.5)), 1
++    )._process()
++
++    # The Axes that grabbed the mouse has been removed, so the grab must have
++    # been released -- otherwise no other widget could ever grab the mouse.
++    assert fig.canvas.mouse_grabber is None
++
++
+ @pytest.mark.parametrize("orientation", ["horizontal", "vertical"])
+ def test_range_slider_same_init_values(orientation):
+     if orientation == "vertical":
+diff --git a/lib/mpl_toolkits/axes_grid1/axes_grid.py b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+index 2b1b1d3200..8b947a5836 100644
+--- a/lib/mpl_toolkits/axes_grid1/axes_grid.py
++++ b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+@@ -1,5 +1,6 @@
+ from numbers import Number
+ import functools
++from types import MethodType
+ 
+ import numpy as np
+ 
+@@ -7,14 +8,20 @@ from matplotlib import _api, cbook
+ from matplotlib.gridspec import SubplotSpec
+ 
+ from .axes_divider import Size, SubplotDivider, Divider
+-from .mpl_axes import Axes
++from .mpl_axes import Axes, SimpleAxisArtist
+ 
+ 
+ def _tick_only(ax, bottom_on, left_on):
+     bottom_off = not bottom_on
+     left_off = not left_on
+-    ax.axis["bottom"].toggle(ticklabels=bottom_off, label=bottom_off)
+-    ax.axis["left"].toggle(ticklabels=left_off, label=left_off)
++    if isinstance(ax.axis, MethodType):
++        bottom = SimpleAxisArtist(ax.xaxis, 1, ax.spines["bottom"])
++        left = SimpleAxisArtist(ax.yaxis, 1, ax.spines["left"])
++    else:
++        bottom = ax.axis["bottom"]
++        left = ax.axis["left"]
++    bottom.toggle(ticklabels=bottom_off, label=bottom_off)
++    left.toggle(ticklabels=left_off, label=left_off)
+ 
+ 
+ class CbarAxesBase:
+diff --git a/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py b/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
+index d1554020cd..d808fa4429 100644
+--- a/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
++++ b/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
+@@ -592,6 +592,16 @@ def test_axes_class_tuple():
+     gr = AxesGrid(fig, 111, nrows_ncols=(1, 1), axes_class=axes_class)
+ 
+ 
++def test_grid_axes_class_non_subscriptable_axis():
++    # GitHub issue: AxesGrid with an axes class whose ``.axis`` is a method
++    # (e.g. cartopy GeoAxes, or a plain matplotlib Axes) used to raise
++    # "TypeError: 'method' object is not subscriptable" inside _tick_only.
++    fig = plt.figure()
++    axes_class = (mpl.axes.Axes, {})
++    # Should not raise; label_mode="L" exercises _tick_only.
++    AxesGrid(fig, 111, nrows_ncols=(1, 1), axes_class=axes_class)
++
++
+ def test_grid_axes_lists():
+     """Test Grid axes_all, axes_row and axes_column relationship."""
+     fig = plt.figure()
+2026-06-23 06:14:05,058 - INFO - Eval script for matplotlib__matplotlib-26020 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-26020/eval.sh; copying to container...
+2026-06-23 06:16:31,150 - INFO - Test runtime: 145.95 seconds
+2026-06-23 06:16:31,156 - INFO - Test output for matplotlib__matplotlib-26020 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-26020/test_output.txt
+2026-06-23 06:16:31,253 - INFO - Git diff after:
+diff --git a/lib/matplotlib/tests/test_widgets.py b/lib/matplotlib/tests/test_widgets.py
+index 2f6910f568..c70bc8f9fc 100644
+--- a/lib/matplotlib/tests/test_widgets.py
++++ b/lib/matplotlib/tests/test_widgets.py
+@@ -1328,6 +1328,42 @@ def test_range_slider(orientation):
+     assert_allclose(handle_positions(slider), (0.1, 0.34))
+ 
+ 
++@pytest.mark.parametrize("widget", ["Slider", "RangeSlider"])
++def test_slider_callback_clf_releases_grab(widget):
++    # Regression test for the bug where clearing the figure inside a Slider /
++    # RangeSlider ``on_changed`` callback (e.g. ``pyplot.clf()`` + redraw) left
++    # the canvas mouse grab pinned to the now-destroyed Axes, which blocked all
++    # further mouse input to every widget in the figure.  Removing the Axes
++    # must release the grab (see Figure.delaxes), unlike Button which already
++    # releases the grab before invoking its callback.
++    fig, ax = plt.subplots()
++
++    if widget == "Slider":
++        tool = widgets.Slider(ax, "", valmin=0.0, valmax=10.0, valinit=5.0)
++    else:
++        tool = widgets.RangeSlider(ax, "", valmin=0.0, valmax=10.0,
++                                   valinit=(1.0, 9.0))
++
++    def onchanged(val):
++        # Simulate the user callback that clears the figure and rebuilds it.
++        fig.clear()
++        fig.canvas.draw()
++
++    tool.on_changed(onchanged)
++
++    # Press on the slider axes at a value different from valinit: this grabs the
++    # mouse and fires ``on_changed`` via ``set_val``, whose callback clears the
++    # figure (removing ``ax``).
++    transform = ax.transData
++    MouseEvent(
++        "button_press_event", fig.canvas, *transform.transform((8, 0.5)), 1
++    )._process()
++
++    # The Axes that grabbed the mouse has been removed, so the grab must have
++    # been released -- otherwise no other widget could ever grab the mouse.
++    assert fig.canvas.mouse_grabber is None
++
++
+ @pytest.mark.parametrize("orientation", ["horizontal", "vertical"])
+ def test_range_slider_same_init_values(orientation):
+     if orientation == "vertical":
+diff --git a/lib/mpl_toolkits/axes_grid1/axes_grid.py b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+index 2b1b1d3200..8b947a5836 100644
+--- a/lib/mpl_toolkits/axes_grid1/axes_grid.py
++++ b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+@@ -1,5 +1,6 @@
+ from numbers import Number
+ import functools
++from types import MethodType
+ 
+ import numpy as np
+ 
+@@ -7,14 +8,20 @@ from matplotlib import _api, cbook
+ from matplotlib.gridspec import SubplotSpec
+ 
+ from .axes_divider import Size, SubplotDivider, Divider
+-from .mpl_axes import Axes
++from .mpl_axes import Axes, SimpleAxisArtist
+ 
+ 
+ def _tick_only(ax, bottom_on, left_on):
+     bottom_off = not bottom_on
+     left_off = not left_on
+-    ax.axis["bottom"].toggle(ticklabels=bottom_off, label=bottom_off)
+-    ax.axis["left"].toggle(ticklabels=left_off, label=left_off)
++    if isinstance(ax.axis, MethodType):
++        bottom = SimpleAxisArtist(ax.xaxis, 1, ax.spines["bottom"])
++        left = SimpleAxisArtist(ax.yaxis, 1, ax.spines["left"])
++    else:
++        bottom = ax.axis["bottom"]
++        left = ax.axis["left"]
++    bottom.toggle(ticklabels=bottom_off, label=bottom_off)
++    left.toggle(ticklabels=left_off, label=left_off)
+ 
+ 
+ class CbarAxesBase:
+2026-06-23 06:16:31,253 - INFO - Git diff changed after running eval script
+2026-06-23 06:16:31,254 - INFO - Grading answer for matplotlib__matplotlib-26020...
+2026-06-23 06:16:31,260 - INFO - report: {'matplotlib__matplotlib-26020': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_with_axes_class_not_overriding_axis'], 'failure': []}, 'PASS_TO_PASS': {'success': ['lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_divider_append_axes', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_twin_axes_empty_and_removed[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_axesgrid_colorbar_log_smoketest', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_inset_colorbar_tight_layout_smoketest', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_inset_locator[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_inset_axes[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_inset_axes_complete', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_fill_facecolor[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_zooming_with_inverted_axes[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_direction_arrows[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_direction_arrows_many_args[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_axes_locatable_position', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid_each_left_label_mode_all[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid_single_bottom[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid_label_mode_deprecation_warning', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_gettightbbox', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[gca-gca-big]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[gca-gca-small]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[host-host-big]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[host-host-small]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[host-parasite-big]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[host-parasite-small]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[parasite-host-big]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[parasite-host-small]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[parasite-parasite-big]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_picking_callbacks_overlap[parasite-parasite-small]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_artists[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_hbox_divider', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_vbox_divider', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_axes_class_tuple', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_axes_lists', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_axes_position[row]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_axes_position[column]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_errors[rect0-None-TypeError-Incorrect', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_errors[111--1-ValueError-ngrids', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_errors[111-7-ValueError-ngrids', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_divider_errors[None-TypeError-anchor', "lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_divider_errors[CC-ValueError-'CC'", 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_divider_errors[anchor2-TypeError-anchor', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_mark_inset_unstales_viewlim[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_auto_adjustable', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_rgb_axes[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_insetposition[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_imagegrid_cbar_mode_edge[png]', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_imagegrid', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_removal', 'lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_locator_base_call[png]'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for matplotlib__matplotlib-26020: resolved: True
+2026-06-23 06:16:31,265 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-26020.squad_v1...
+2026-06-23 06:16:47,010 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-26020.squad_v1...
+2026-06-23 06:16:47,138 - INFO - Container sweb.eval.matplotlib__matplotlib-26020.squad_v1 removed.
+2026-06-23 06:16:47,138 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-26020:latest...
+2026-06-23 06:16:55,238 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-26020:latest removed.

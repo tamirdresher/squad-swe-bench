@@ -1,0 +1,121 @@
+diff --git a/doc/whats-new.rst b/doc/whats-new.rst
+index e97e2d73..2135bbc6 100644
+--- a/doc/whats-new.rst
++++ b/doc/whats-new.rst
+@@ -82,6 +82,10 @@ Enhancements
+ 
+ Bug fixes
+ ~~~~~~~~~
++- :py:func:`~xarray.concat` now handles datasets with variables that are not
++  present in all datasets, filling in the missing variables instead of raising
++  an error, consistent with the behaviour of ``pandas.concat``
++  (:issue:`508`). By `Scott Chamberlain <https://github.com/sckott>`_.
+ - Reintroduce support for :mod:`weakref` (broken in v0.13.0). Support has been
+   reinstated for :class:`DataArray` and :class:`Dataset` objects only. Internal xarray
+   objects remain unaddressable by weakref in order to save memory
+@@ -97,6 +101,9 @@ Bug fixes
+   By `Deepak Cherian <https://github.com/dcherian>`_.
+ - Fix error in concatenating unlabeled dimensions (:pull:`3362`).
+   By `Deepak Cherian <https://github.com/dcherian/>`_.
++- Remove trailing spaces and trailing empty lines from the repr of
++  :py:class:`DataArrayGroupBy` and :py:class:`DatasetGroupBy` objects
++  (:issue:`5130`). By `Ghislain Picard <https://github.com/ghislainp>`_.
+ 
+ Documentation
+ ~~~~~~~~~~~~~
+diff --git a/xarray/core/concat.py b/xarray/core/concat.py
+index ecae2566..e98e8a72 100644
+--- a/xarray/core/concat.py
++++ b/xarray/core/concat.py
+@@ -312,15 +312,9 @@ def _dataset_concat(
+         to_merge = {var: [] for var in variables_to_merge}
+ 
+         for ds in datasets:
+-            absent_merge_vars = variables_to_merge - set(ds.variables)
+-            if absent_merge_vars:
+-                raise ValueError(
+-                    "variables %r are present in some datasets but not others. "
+-                    % absent_merge_vars
+-                )
+-
+             for var in variables_to_merge:
+-                to_merge[var].append(ds.variables[var])
++                if var in ds:
++                    to_merge[var].append(ds.variables[var])
+ 
+         for var in variables_to_merge:
+             result_vars[var] = unique_variable(
+diff --git a/xarray/core/groupby.py b/xarray/core/groupby.py
+index c52b0dc9..dda2b00c 100644
+--- a/xarray/core/groupby.py
++++ b/xarray/core/groupby.py
+@@ -417,7 +417,7 @@ class GroupBy(SupportsArithmetic):
+         return zip(self._unique_coord.values, self._iter_grouped())
+ 
+     def __repr__(self):
+-        return "%s, grouped over %r \n%r groups with labels %s." % (
++        return "%s, grouped over %r\n%r groups with labels %s." % (
+             self.__class__.__name__,
+             self._unique_coord.name,
+             self._unique_coord.size,
+diff --git a/xarray/tests/test_concat.py b/xarray/tests/test_concat.py
+index c7af0fc9..0661ebb7 100644
+--- a/xarray/tests/test_concat.py
++++ b/xarray/tests/test_concat.py
+@@ -68,6 +68,22 @@ class TestConcatDataset:
+         datasets = [g for _, g in data.groupby(dim, squeeze=False)]
+         assert_identical(data, concat(datasets, dim, coords=coords))
+ 
++    def test_concat_merge_variables_present_in_some_datasets(self, data):
++        # coordinates present in some datasets but not others
++        ds1 = Dataset(data_vars={"a": ("y", [0.1])}, coords={"x": 0.1})
++        ds2 = Dataset(data_vars={"a": ("y", [0.2])}, coords={"z": 0.2})
++        actual = concat([ds1, ds2], dim="y", coords="minimal")
++        expected = Dataset({"a": ("y", [0.1, 0.2])}, coords={"x": 0.1, "z": 0.2})
++        assert_identical(expected, actual)
++
++        # data variables present in some datasets but not others
++        split_data = [data.isel(dim1=slice(3)), data.isel(dim1=slice(3, None))]
++        data0, data1 = deepcopy(split_data)
++        data1["foo"] = ("bar", np.random.randn(10))
++        actual = concat([data0, data1], "dim1")
++        expected = data.copy().assign(foo=data1.foo)
++        assert_identical(expected, actual)
++
+     def test_concat_2(self, data):
+         dim = "dim2"
+         datasets = [g for _, g in data.groupby(dim, squeeze=True)]
+@@ -190,11 +206,6 @@ class TestConcatDataset:
+             concat([data0, data1], "dim1", compat="identical")
+         assert_identical(data, concat([data0, data1], "dim1", compat="equals"))
+ 
+-        with raises_regex(ValueError, "present in some datasets"):
+-            data0, data1 = deepcopy(split_data)
+-            data1["foo"] = ("bar", np.random.randn(10))
+-            concat([data0, data1], "dim1")
+-
+         with raises_regex(ValueError, "compat.* invalid"):
+             concat(split_data, "dim1", compat="foobar")
+ 
+diff --git a/xarray/tests/test_groupby.py b/xarray/tests/test_groupby.py
+index 957d4800..6956206a 100644
+--- a/xarray/tests/test_groupby.py
++++ b/xarray/tests/test_groupby.py
+@@ -232,7 +232,7 @@ repr_da = xr.DataArray(
+ def test_groupby_repr(obj, dim):
+     actual = repr(obj.groupby(dim))
+     expected = "%sGroupBy" % obj.__class__.__name__
+-    expected += ", grouped over %r " % dim
++    expected += ", grouped over %r" % dim
+     expected += "\n%r groups with labels " % (len(np.unique(obj[dim])))
+     if dim == "x":
+         expected += "1, 2, 3, 4, 5."
+@@ -249,7 +249,7 @@ def test_groupby_repr(obj, dim):
+ def test_groupby_repr_datetime(obj):
+     actual = repr(obj.groupby("t.month"))
+     expected = "%sGroupBy" % obj.__class__.__name__
+-    expected += ", grouped over 'month' "
++    expected += ", grouped over 'month'"
+     expected += "\n%r groups with labels " % (len(np.unique(obj.t.dt.month)))
+     expected += "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12."
+     assert actual == expected

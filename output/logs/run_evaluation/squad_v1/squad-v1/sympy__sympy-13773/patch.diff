@@ -1,0 +1,104 @@
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index 379a2917aa..1f867d506b 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1973,6 +1973,9 @@ def __div__(self, other):
+ 
+     @call_highest_priority('__rmatmul__')
+     def __matmul__(self, other):
++        other = _matrixify(other)
++        if not getattr(other, 'is_Matrix', False) and not getattr(other, 'is_MatrixLike', False):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
+         return self.__mul__(other)
+ 
+     @call_highest_priority('__rmul__')
+@@ -2068,6 +2071,9 @@ def __radd__(self, other):
+ 
+     @call_highest_priority('__matmul__')
+     def __rmatmul__(self, other):
++        other = _matrixify(other)
++        if not getattr(other, 'is_Matrix', False) and not getattr(other, 'is_MatrixLike', False):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
+         return self.__rmul__(other)
+ 
+     @call_highest_priority('__mul__')
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+index 92627132e9..3c09202c67 100644
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -112,6 +112,8 @@ def __mul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__rmul__')
+     def __matmul__(self, other):
++        if not isinstance(other, MatrixExpr):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
+         return MatMul(self, other).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+@@ -122,6 +124,8 @@ def __rmul__(self, other):
+     @_sympifyit('other', NotImplemented)
+     @call_highest_priority('__mul__')
+     def __rmatmul__(self, other):
++        if not isinstance(other, MatrixExpr):
++            raise ValueError("Scalar operands are not allowed, use '*' instead")
+         return MatMul(other, self).doit()
+ 
+     @_sympifyit('other', NotImplemented)
+diff --git a/sympy/matrices/tests/test_commonmatrix.py b/sympy/matrices/tests/test_commonmatrix.py
+index 27d9726464..88cb2eb00b 100644
+--- a/sympy/matrices/tests/test_commonmatrix.py
++++ b/sympy/matrices/tests/test_commonmatrix.py
+@@ -664,15 +664,21 @@ def test_multiplication():
+     assert c[1, 1] == 0
+ 
+     try:
+-        eval('c = 5 @ b')
++        eval('5 @ b')
+     except SyntaxError:
++        # Python 2 has no @ operator
++        pass
++    except ValueError:
++        # On Python 3, scalar @ matrix raises ValueError (NumPy-compatible)
+         pass
+     else:
+-        assert isinstance(c, ArithmeticOnlyMatrix)
+-        assert c[0, 0] == 5
+-        assert c[0, 1] == 2*5
+-        assert c[1, 0] == 3*5
+-        assert c[1, 1] == 0
++        raise AssertionError("scalar @ matrix should raise ValueError")
++
++def test_matmul():
++    a = Matrix([[1, 2], [3, 4]])
++    b = Matrix([[2, 3], [1, 2]])
++    raises(ValueError, lambda: a@2)
++    raises(ValueError, lambda: 2@a)
+ 
+ def test_power():
+     raises(NonSquareMatrixError, lambda: Matrix((1, 2))**2)
+diff --git a/sympy/matrices/tests/test_matrices.py b/sympy/matrices/tests/test_matrices.py
+index ed4924b733..1644806923 100644
+--- a/sympy/matrices/tests/test_matrices.py
++++ b/sympy/matrices/tests/test_matrices.py
+@@ -178,15 +178,15 @@ def test_multiplication():
+     assert c[1, 1] == 0
+ 
+     try:
+-        eval('c = 5 @ b')
++        eval('5 @ b')
+     except SyntaxError:
++        # Python 2 has no @ operator
++        pass
++    except ValueError:
++        # On Python 3, scalar @ matrix raises ValueError (NumPy-compatible)
+         pass
+     else:
+-        assert isinstance(c, Matrix)
+-        assert c[0, 0] == 5
+-        assert c[0, 1] == 2*5
+-        assert c[1, 0] == 3*5
+-        assert c[1, 1] == 0
++        raise AssertionError("scalar @ matrix should raise ValueError")
+ 
+ 
+ def test_power():

@@ -1,0 +1,204 @@
+2026-06-23 07:28:11,665 - INFO - Creating container for sympy__sympy-20212...
+2026-06-23 07:28:21,100 - INFO - Container for sympy__sympy-20212 created: 6c2aa110a393057b6423aaf097c99226728349cbe227456a2144b2bffc04ad66
+2026-06-23 07:28:21,686 - INFO - Container for sympy__sympy-20212 started: 6c2aa110a393057b6423aaf097c99226728349cbe227456a2144b2bffc04ad66
+2026-06-23 07:28:21,697 - INFO - Intermediate patch for sympy__sympy-20212 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-20212/patch.diff, now applying to container...
+2026-06-23 07:28:22,040 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:28:22,182 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:28:22,373 - INFO - >>>>> Applied Patch:
+patching file sympy/polys/factortools.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 123 with fuzz 2 (offset -1 lines).
+patching file sympy/polys/tests/test_factortools.py
+patch unexpectedly ends in middle of line
+Reversed (or previously applied) patch detected!  Assuming -R.
+Hunk #1 succeeded at 27 with fuzz 1.
+
+2026-06-23 07:28:23,215 - INFO - Git diff before:
+diff --git a/sympy/polys/factortools.py b/sympy/polys/factortools.py
+index 1fd107df10..2a50e8bf65 100644
+--- a/sympy/polys/factortools.py
++++ b/sympy/polys/factortools.py
+@@ -123,64 +123,12 @@ def dmp_trial_division(f, factors, u, K):
+ 
+ 
+ def dup_zz_mignotte_bound(f, K):
+-    """
+-    The Knuth-Cohen variant of Mignotte bound for
+-    univariate polynomials in `K[x]`.
+-
+-    Examples
+-    ========
+-
+-    >>> from sympy.polys import ring, ZZ
+-    >>> R, x = ring("x", ZZ)
+-
+-    >>> f = x**3 + 14*x**2 + 56*x + 64
+-    >>> R.dup_zz_mignotte_bound(f)
+-    152
+-
+-    By checking `factor(f)` we can see that max coeff is 8
+-
+-    Also consider a case that `f` is irreducible for example `f = 2*x**2 + 3*x + 4`
+-    To avoid a bug for these cases, we return the bound plus the max coefficient of `f`
+-
+-    >>> f = 2*x**2 + 3*x + 4
+-    >>> R.dup_zz_mignotte_bound(f)
+-    6
+-
+-    Lastly,To see the difference between the new and the old Mignotte bound
+-    consider the irreducible polynomial::
+-
+-    >>> f = 87*x**7 + 4*x**6 + 80*x**5 + 17*x**4 + 9*x**3 + 12*x**2 + 49*x + 26
+-    >>> R.dup_zz_mignotte_bound(f)
+-    744
+-
+-    The new Mignotte bound is 744 whereas the old one (SymPy 1.5.1) is 1937664.
+-
+-
+-    References
+-    ==========
+-
+-    ..[1] [Abbott2013]_
+-
+-    """
+-    from sympy import binomial
+-
+-    d = dup_degree(f)
+-    delta = _ceil(d / 2)
+-    delta2 = _ceil(delta / 2)
+-
+-    # euclidean-norm
+-    eucl_norm = K.sqrt( sum( [cf**2 for cf in f] ) )
+-
+-    # biggest values of binomial coefficients (p. 538 of reference)
+-    t1 = binomial(delta - 1, delta2)
+-    t2 = binomial(delta - 1, delta2 - 1)
+-
+-    lc = K.abs(dup_LC(f, K))   # leading coefficient
+-    bound = t1 * eucl_norm + t2 * lc   # (p. 538 of reference)
+-    bound += dup_max_norm(f, K) # add max coeff for irreducible polys
+-    bound = _ceil(bound / 2) * 2   # round up to even integer
++    """Mignotte bound for univariate polynomials in `K[x]`. """
++    a = dup_max_norm(f, K)
++    b = abs(dup_LC(f, K))
++    n = dup_degree(f)
+ 
+-    return bound
++    return K.sqrt(K(n + 1))*2**n*a*b
+ 
+ def dmp_zz_mignotte_bound(f, u, K):
+     """Mignotte bound for multivariate polynomials in `K[X]`. """
+diff --git a/sympy/polys/tests/test_factortools.py b/sympy/polys/tests/test_factortools.py
+index f8537b195c..bddf1fa7e2 100644
+--- a/sympy/polys/tests/test_factortools.py
++++ b/sympy/polys/tests/test_factortools.py
+@@ -27,8 +27,7 @@ def test_dmp_trial_division():
+ 
+ def test_dup_zz_mignotte_bound():
+     R, x = ring("x", ZZ)
+-    assert R.dup_zz_mignotte_bound(2*x**2 + 3*x + 4) == 6
+-    assert R.dup_zz_mignotte_bound(x**3 + 14*x**2 + 56*x + 64) == 152
++    assert R.dup_zz_mignotte_bound(2*x**2 + 3*x + 4) == 32
+ 
+ 
+ def test_dmp_zz_mignotte_bound():
+2026-06-23 07:28:23,224 - INFO - Eval script for sympy__sympy-20212 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-20212/eval.sh; copying to container...
+2026-06-23 07:29:04,155 - INFO - Test runtime: 40.70 seconds
+2026-06-23 07:29:04,159 - INFO - Test output for sympy__sympy-20212 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-20212/test_output.txt
+2026-06-23 07:29:04,249 - INFO - Git diff after:
+diff --git a/sympy/polys/factortools.py b/sympy/polys/factortools.py
+index 1fd107df10..2a50e8bf65 100644
+--- a/sympy/polys/factortools.py
++++ b/sympy/polys/factortools.py
+@@ -123,64 +123,12 @@ def dmp_trial_division(f, factors, u, K):
+ 
+ 
+ def dup_zz_mignotte_bound(f, K):
+-    """
+-    The Knuth-Cohen variant of Mignotte bound for
+-    univariate polynomials in `K[x]`.
+-
+-    Examples
+-    ========
+-
+-    >>> from sympy.polys import ring, ZZ
+-    >>> R, x = ring("x", ZZ)
+-
+-    >>> f = x**3 + 14*x**2 + 56*x + 64
+-    >>> R.dup_zz_mignotte_bound(f)
+-    152
+-
+-    By checking `factor(f)` we can see that max coeff is 8
+-
+-    Also consider a case that `f` is irreducible for example `f = 2*x**2 + 3*x + 4`
+-    To avoid a bug for these cases, we return the bound plus the max coefficient of `f`
+-
+-    >>> f = 2*x**2 + 3*x + 4
+-    >>> R.dup_zz_mignotte_bound(f)
+-    6
+-
+-    Lastly,To see the difference between the new and the old Mignotte bound
+-    consider the irreducible polynomial::
+-
+-    >>> f = 87*x**7 + 4*x**6 + 80*x**5 + 17*x**4 + 9*x**3 + 12*x**2 + 49*x + 26
+-    >>> R.dup_zz_mignotte_bound(f)
+-    744
+-
+-    The new Mignotte bound is 744 whereas the old one (SymPy 1.5.1) is 1937664.
+-
+-
+-    References
+-    ==========
+-
+-    ..[1] [Abbott2013]_
+-
+-    """
+-    from sympy import binomial
+-
+-    d = dup_degree(f)
+-    delta = _ceil(d / 2)
+-    delta2 = _ceil(delta / 2)
+-
+-    # euclidean-norm
+-    eucl_norm = K.sqrt( sum( [cf**2 for cf in f] ) )
+-
+-    # biggest values of binomial coefficients (p. 538 of reference)
+-    t1 = binomial(delta - 1, delta2)
+-    t2 = binomial(delta - 1, delta2 - 1)
+-
+-    lc = K.abs(dup_LC(f, K))   # leading coefficient
+-    bound = t1 * eucl_norm + t2 * lc   # (p. 538 of reference)
+-    bound += dup_max_norm(f, K) # add max coeff for irreducible polys
+-    bound = _ceil(bound / 2) * 2   # round up to even integer
++    """Mignotte bound for univariate polynomials in `K[x]`. """
++    a = dup_max_norm(f, K)
++    b = abs(dup_LC(f, K))
++    n = dup_degree(f)
+ 
+-    return bound
++    return K.sqrt(K(n + 1))*2**n*a*b
+ 
+ def dmp_zz_mignotte_bound(f, u, K):
+     """Mignotte bound for multivariate polynomials in `K[X]`. """
+diff --git a/sympy/polys/tests/test_factortools.py b/sympy/polys/tests/test_factortools.py
+index f8537b195c..bddf1fa7e2 100644
+--- a/sympy/polys/tests/test_factortools.py
++++ b/sympy/polys/tests/test_factortools.py
+@@ -27,8 +27,7 @@ def test_dmp_trial_division():
+ 
+ def test_dup_zz_mignotte_bound():
+     R, x = ring("x", ZZ)
+-    assert R.dup_zz_mignotte_bound(2*x**2 + 3*x + 4) == 6
+-    assert R.dup_zz_mignotte_bound(x**3 + 14*x**2 + 56*x + 64) == 152
++    assert R.dup_zz_mignotte_bound(2*x**2 + 3*x + 4) == 32
+ 
+ 
+ def test_dmp_zz_mignotte_bound():
+2026-06-23 07:29:04,250 - INFO - Grading answer for sympy__sympy-20212...
+2026-06-23 07:29:04,256 - INFO - report: {'sympy__sympy-20212': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_zero']}, 'PASS_TO_PASS': {'success': ['test_rational', 'test_large_rational', 'test_negative_real', 'test_expand', 'test_issue_3449', 'test_issue_3866', 'test_negative_one', 'test_issue_4362', 'test_Pow_Expr_args', 'test_Pow_signs', 'test_power_with_noncommutative_mul_as_base', 'test_power_rewrite_exp', 'test_pow_as_base_exp', 'test_nseries', 'test_issue_6100_12942_4473', 'test_issue_6208', 'test_issue_6990', 'test_issue_6068', 'test_issue_6782', 'test_issue_6653', 'test_issue_6429', 'test_issue_7638', 'test_issue_8582', 'test_issue_8650', 'test_issue_13914', 'test_better_sqrt', 'test_issue_2993', 'test_issue_17450', 'test_issue_18190', 'test_issue_14815', 'test_issue_18509', 'test_issue_18762'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-20212: resolved: False
+2026-06-23 07:29:04,260 - INFO - Attempting to stop container sweb.eval.sympy__sympy-20212.squad_v1...
+2026-06-23 07:29:19,902 - INFO - Attempting to remove container sweb.eval.sympy__sympy-20212.squad_v1...
+2026-06-23 07:29:20,039 - INFO - Container sweb.eval.sympy__sympy-20212.squad_v1 removed.
+2026-06-23 07:29:20,040 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-20212:latest...
+2026-06-23 07:29:20,242 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-20212:latest removed.

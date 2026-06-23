@@ -1,0 +1,42 @@
+diff --git a/django/utils/autoreload.py b/django/utils/autoreload.py
+index 7ca0d68fae..36d9634a1b 100644
+--- a/django/utils/autoreload.py
++++ b/django/utils/autoreload.py
+@@ -114,7 +114,17 @@ def iter_modules_and_files(modules, extra_files):
+         # During debugging (with PyDev) the 'typing.io' and 'typing.re' objects
+         # are added to sys.modules, however they are types not modules and so
+         # cause issues here.
+-        if not isinstance(module, ModuleType) or getattr(module, '__spec__', None) is None:
++        if not isinstance(module, ModuleType):
++            continue
++        if module.__name__ == '__main__':
++            # __main__ (usually manage.py) doesn't always have a __spec__ set.
++            # Handle this by falling back to using __file__, resolved below.
++            # See https://docs.python.org/reference/import.html#main-spec
++            # __file__ may not exists, e.g. when running ipdb debugger.
++            if hasattr(module, '__file__'):
++                sys_file_paths.append(module.__file__)
++            continue
++        if getattr(module, '__spec__', None) is None:
+             continue
+         spec = module.__spec__
+         # Modules could be loaded from places without a concrete location. If
+diff --git a/tests/utils_tests/test_autoreload.py b/tests/utils_tests/test_autoreload.py
+index 42bcd0a50b..48acbf5531 100644
+--- a/tests/utils_tests/test_autoreload.py
++++ b/tests/utils_tests/test_autoreload.py
+@@ -132,6 +132,14 @@ class TestIterModulesAndFiles(SimpleTestCase):
+         del module.__spec__
+         self.assertEqual(autoreload.iter_modules_and_files((module,), frozenset()), frozenset())
+ 
++    def test_main_module_is_resolved(self):
++        main_module = sys.modules['__main__']
++        self.assertFileFound(Path(main_module.__file__))
++
++    def test_main_module_without_file_is_not_resolved(self):
++        fake_main = types.ModuleType('__main__')
++        self.assertEqual(autoreload.iter_modules_and_files((fake_main,), frozenset()), frozenset())
++
+ 
+ class TestCommonRoots(SimpleTestCase):
+     def test_common_roots(self):

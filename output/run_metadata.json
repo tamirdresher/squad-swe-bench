@@ -1,0 +1,15 @@
+{
+  "run_id": "squad_lite_run_001",
+  "model_name": "squad-v1",
+  "llm_model": "gpt-4o",
+  "dataset": "princeton-nlp/SWE-bench_Lite",
+  "split": "test",
+  "total_tasks": 300,
+  "completed": 300,
+  "success": 259,
+  "timeout": 31,
+  "error": 10,
+  "skipped": 0,
+  "max_workers": 4,
+  "timeout_seconds": 1800
+}

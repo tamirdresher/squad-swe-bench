@@ -1,0 +1,123 @@
+2026-06-23 07:23:11,177 - INFO - Creating container for sympy__sympy-18057...
+2026-06-23 07:23:12,106 - INFO - Container for sympy__sympy-18057 created: 28fae17c3a79c5b931a20943d1c6049a93e38e4332882a2ee0414bb4941c3b32
+2026-06-23 07:23:12,460 - INFO - Container for sympy__sympy-18057 started: 28fae17c3a79c5b931a20943d1c6049a93e38e4332882a2ee0414bb4941c3b32
+2026-06-23 07:23:12,467 - INFO - Intermediate patch for sympy__sympy-18057 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18057/patch.diff, now applying to container...
+2026-06-23 07:23:12,664 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:23:12,742 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:23:12,856 - INFO - >>>>> Applied Patch:
+patching file sympy/core/basic.py
+Hunk #1 succeeded at 504 (offset 1 line).
+patching file sympy/core/tests/test_basic.py
+patching file sympy/matrices/common.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 1166 with fuzz 1 (offset -8 lines).
+
+2026-06-23 07:23:13,688 - INFO - Git diff before:
+diff --git a/sympy/core/basic.py b/sympy/core/basic.py
+index 79deff1978..e9a3543b52 100644
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -504,12 +504,10 @@ def atoms(self, *types):
+         if types:
+             types = tuple(
+                 [t if isinstance(t, type) else type(t) for t in types])
++            nodes = preorder_traversal(self)
++            result = {node for node in nodes if isinstance(node, types)}
+         else:
+-            types = (Atom,)
+-        result = set()
+-        for expr in preorder_traversal(self):
+-            if isinstance(expr, types):
+-                result.add(expr)
++            result = {node for node in preorder_traversal(self) if not node.args}
+         return result
+ 
+     @property
+diff --git a/sympy/core/tests/test_basic.py b/sympy/core/tests/test_basic.py
+index 5377cc9863..50c1fdfeac 100644
+--- a/sympy/core/tests/test_basic.py
++++ b/sympy/core/tests/test_basic.py
+@@ -137,7 +137,9 @@ def test_subs_with_unicode_symbols():
+ 
+ 
+ def test_atoms():
+-    assert b21.atoms() == set()
++    # b1 = Basic() has no .args, so it is a leaf node and is returned by atoms()
++    # b21 = Basic(b2, b1) contains b1 as a leaf
++    assert b21.atoms() == {b1}
+ 
+ 
+ def test_free_symbols_empty():
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index faf27e2cb6..a226b14b63 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1166,7 +1166,7 @@ def atoms(self, *types):
+ 
+         types = tuple(t if isinstance(t, type) else type(t) for t in types)
+         if not types:
+-            types = (Atom,)
++            return self._eval_atoms()
+         return self._eval_atoms(*types)
+ 
+     @property
+2026-06-23 07:23:13,695 - INFO - Eval script for sympy__sympy-18057 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18057/eval.sh; copying to container...
+2026-06-23 07:27:02,241 - INFO - Test runtime: 228.33 seconds
+2026-06-23 07:27:02,246 - INFO - Test output for sympy__sympy-18057 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18057/test_output.txt
+2026-06-23 07:27:02,344 - INFO - Git diff after:
+diff --git a/sympy/core/basic.py b/sympy/core/basic.py
+index 79deff1978..e9a3543b52 100644
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -504,12 +504,10 @@ def atoms(self, *types):
+         if types:
+             types = tuple(
+                 [t if isinstance(t, type) else type(t) for t in types])
++            nodes = preorder_traversal(self)
++            result = {node for node in nodes if isinstance(node, types)}
+         else:
+-            types = (Atom,)
+-        result = set()
+-        for expr in preorder_traversal(self):
+-            if isinstance(expr, types):
+-                result.add(expr)
++            result = {node for node in preorder_traversal(self) if not node.args}
+         return result
+ 
+     @property
+diff --git a/sympy/core/tests/test_basic.py b/sympy/core/tests/test_basic.py
+index 5377cc9863..50c1fdfeac 100644
+--- a/sympy/core/tests/test_basic.py
++++ b/sympy/core/tests/test_basic.py
+@@ -137,7 +137,9 @@ def test_subs_with_unicode_symbols():
+ 
+ 
+ def test_atoms():
+-    assert b21.atoms() == set()
++    # b1 = Basic() has no .args, so it is a leaf node and is returned by atoms()
++    # b21 = Basic(b2, b1) contains b1 as a leaf
++    assert b21.atoms() == {b1}
+ 
+ 
+ def test_free_symbols_empty():
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index faf27e2cb6..a226b14b63 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1166,7 +1166,7 @@ def atoms(self, *types):
+ 
+         types = tuple(t if isinstance(t, type) else type(t) for t in types)
+         if not types:
+-            types = (Atom,)
++            return self._eval_atoms()
+         return self._eval_atoms(*types)
+ 
+     @property
+2026-06-23 07:27:02,345 - INFO - Grading answer for sympy__sympy-18057...
+2026-06-23 07:27:02,352 - INFO - report: {'sympy__sympy-18057': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_var']}, 'PASS_TO_PASS': {'success': ['test_basic', 'test_ibasic', 'test_relational', 'test_relational_assumptions', 'test_basic_nostr', 'test_series_expansion_for_uniform_order', 'test_leadterm', 'test_as_leading_term', 'test_leadterm2', 'test_leadterm3', 'test_as_leading_term2', 'test_as_leading_term3', 'test_as_leading_term4', 'test_as_leading_term_stub', 'test_as_leading_term_deriv_integral', 'test_atoms', 'test_is_polynomial', 'test_is_rational_function', 'test_is_algebraic_expr', 'test_SAGE1', 'test_SAGE2', 'test_SAGE3', 'test_len', 'test_doit', 'test_attribute_error', 'test_args', 'test_noncommutative_expand_issue_3757', 'test_as_numer_denom', 'test_trunc', 'test_as_independent', 'test_replace', 'test_find', 'test_count', 'test_has_basics', 'test_has_multiple', 'test_has_piecewise', 'test_has_iterative', 'test_has_integrals', 'test_has_tuple', 'test_has_units', 'test_has_polys', 'test_has_physics', 'test_as_poly_as_expr', 'test_nonzero', 'test_is_number', 'test_as_coeff_add', 'test_as_coeff_mul', 'test_as_coeff_exponent', 'test_extractions', 'test_nan_extractions', 'test_coeff', 'test_coeff2', 'test_coeff2_0', 'test_coeff_expand', 'test_integrate', 'test_as_base_exp', 'test_issue_4963', 'test_action_verbs', 'test_as_powers_dict', 'test_as_coefficients_dict', 'test_args_cnc', 'test_new_rawargs', 'test_issue_5226', 'test_free_symbols', 'test_issue_5300', 'test_floordiv', 'test_as_coeff_Mul', 'test_as_coeff_Add', 'test_expr_sorting', 'test_as_ordered_factors', 'test_as_ordered_terms', 'test_sort_key_atomic_expr', 'test_eval_interval', 'test_eval_interval_zoo', 'test_primitive', 'test_issue_5843', 'test_is_constant', 'test_equals', 'test_random', 'test_round', 'test_held_expression_UnevaluatedExpr', 'test_round_exception_nostr', 'test_extract_branch_factor', 'test_identity_removal', 'test_float_0', 'test_issue_6325', 'test_issue_7426', 'test_issue_11122', 'test_issue_10651', 'test_issue_10161', 'test_issue_10755', 'test_issue_11877', 'test_normal', 'test_expr', 'test_ExprBuilder', 'test_var_return', 'test_var_accepts_comma', 'test_var_keywords'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-18057: resolved: False
+2026-06-23 07:27:02,357 - INFO - Attempting to stop container sweb.eval.sympy__sympy-18057.squad_v1...
+2026-06-23 07:27:18,091 - INFO - Attempting to remove container sweb.eval.sympy__sympy-18057.squad_v1...
+2026-06-23 07:27:18,284 - INFO - Container sweb.eval.sympy__sympy-18057.squad_v1 removed.
+2026-06-23 07:27:18,285 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-18057:latest...
+2026-06-23 07:27:18,536 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-18057:latest removed.

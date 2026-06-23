@@ -1,0 +1,124 @@
+2026-06-23 07:04:34,116 - INFO - Creating container for sphinx-doc__sphinx-8595...
+2026-06-23 07:04:34,635 - INFO - Container for sphinx-doc__sphinx-8595 created: 9b905848a1ce36ea1fd745c29d8b3ca33ef07d3d8af1dd05586f36112a5334ad
+2026-06-23 07:04:35,189 - INFO - Container for sphinx-doc__sphinx-8595 started: 9b905848a1ce36ea1fd745c29d8b3ca33ef07d3d8af1dd05586f36112a5334ad
+2026-06-23 07:04:35,200 - INFO - Intermediate patch for sphinx-doc__sphinx-8595 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8595/patch.diff, now applying to container...
+2026-06-23 07:04:35,534 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:04:35,670 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:04:35,811 - INFO - >>>>> Applied Patch:
+patching file CHANGES
+patching file sphinx/ext/autodoc/__init__.py
+patching file tests/test_ext_autodoc.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 738 with fuzz 1.
+
+2026-06-23 07:04:36,387 - INFO - Git diff before:
+diff --git a/CHANGES b/CHANGES
+index bdf3be3b8..62c4f7821 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -25,6 +25,7 @@ Bugs fixed
+ * #741: autodoc: inherited-members doesn't work for instance attributes on super
+   class
+ * #8592: autodoc: ``:meta public:`` does not effect to variables
++* #8619: autodoc: empty ``__all__`` attribute is ignored
+ 
+ Testing
+ --------
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index d85d79617..c9f90acca 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -1074,7 +1074,7 @@ class ModuleDocumenter(Documenter):
+     def get_object_members(self, want_all: bool) -> Tuple[bool, ObjectMembers]:
+         members = self.get_module_members()
+         if want_all:
+-            if not self.__all__:
++            if self.__all__ is None:
+                 # for implicit module members, check __module__ to avoid
+                 # documenting imported objects
+                 return True, list(members.values())
+diff --git a/tests/test_ext_autodoc.py b/tests/test_ext_autodoc.py
+index 39897eb7d..9aea4f54a 100644
+--- a/tests/test_ext_autodoc.py
++++ b/tests/test_ext_autodoc.py
+@@ -738,6 +738,19 @@ def test_autodoc_ignore_module_all(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_autodoc_empty_all(app):
++    options = {'members': None}
++    actual = do_autodoc(app, 'module', 'target.empty_all', options)
++    assert list(actual) == [
++        '',
++        '.. py:module:: target.empty_all',
++        '',
++        'docsting of empty_all module.',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc')
+ def test_autodoc_noindex(app):
+     options = {"noindex": True}
+2026-06-23 07:04:36,394 - INFO - Eval script for sphinx-doc__sphinx-8595 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8595/eval.sh; copying to container...
+2026-06-23 07:04:44,251 - INFO - Test runtime: 7.68 seconds
+2026-06-23 07:04:44,268 - INFO - Test output for sphinx-doc__sphinx-8595 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8595/test_output.txt
+2026-06-23 07:04:44,455 - INFO - Git diff after:
+diff --git a/CHANGES b/CHANGES
+index bdf3be3b8..62c4f7821 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -25,6 +25,7 @@ Bugs fixed
+ * #741: autodoc: inherited-members doesn't work for instance attributes on super
+   class
+ * #8592: autodoc: ``:meta public:`` does not effect to variables
++* #8619: autodoc: empty ``__all__`` attribute is ignored
+ 
+ Testing
+ --------
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index d85d79617..c9f90acca 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -1074,7 +1074,7 @@ class ModuleDocumenter(Documenter):
+     def get_object_members(self, want_all: bool) -> Tuple[bool, ObjectMembers]:
+         members = self.get_module_members()
+         if want_all:
+-            if not self.__all__:
++            if self.__all__ is None:
+                 # for implicit module members, check __module__ to avoid
+                 # documenting imported objects
+                 return True, list(members.values())
+diff --git a/tests/test_ext_autodoc.py b/tests/test_ext_autodoc.py
+index 39897eb7d..9aea4f54a 100644
+--- a/tests/test_ext_autodoc.py
++++ b/tests/test_ext_autodoc.py
+@@ -738,6 +738,19 @@ def test_autodoc_ignore_module_all(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_autodoc_empty_all(app):
++    options = {'members': None}
++    actual = do_autodoc(app, 'module', 'target.empty_all', options)
++    assert list(actual) == [
++        '',
++        '.. py:module:: target.empty_all',
++        '',
++        'docsting of empty_all module.',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc')
+ def test_autodoc_noindex(app):
+     options = {"noindex": True}
+2026-06-23 07:04:44,461 - INFO - Grading answer for sphinx-doc__sphinx-8595...
+2026-06-23 07:04:44,515 - INFO - report: {'sphinx-doc__sphinx-8595': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['tests/test_ext_autodoc_automodule.py::test_empty_all']}, 'PASS_TO_PASS': {'success': [], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-8595: resolved: False
+2026-06-23 07:04:44,551 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-8595.squad_v1...
+2026-06-23 07:05:00,201 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-8595.squad_v1...
+2026-06-23 07:05:00,403 - INFO - Container sweb.eval.sphinx-doc__sphinx-8595.squad_v1 removed.
+2026-06-23 07:05:00,403 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8595:latest...
+2026-06-23 07:05:00,932 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8595:latest removed.

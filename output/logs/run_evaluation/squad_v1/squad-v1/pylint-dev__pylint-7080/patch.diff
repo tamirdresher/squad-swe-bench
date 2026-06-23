@@ -1,0 +1,72 @@
+diff --git a/doc/whatsnew/2/2.15/index.rst b/doc/whatsnew/2/2.15/index.rst
+index e8ce18790..ab88af9b3 100644
+--- a/doc/whatsnew/2/2.15/index.rst
++++ b/doc/whatsnew/2/2.15/index.rst
+@@ -73,6 +73,9 @@ False negatives fixed
+ Other bug fixes
+ ===============
+ 
++* Fix ``--recursive=y`` to respect ``ignore``, ``ignore-paths`` and
++  ``ignore-patterns`` for discovered Python files.
++
+ 
+ Other Changes
+ =============
+diff --git a/pylint/lint/pylinter.py b/pylint/lint/pylinter.py
+index e2bbf061e..66d0a14ba 100644
+--- a/pylint/lint/pylinter.py
++++ b/pylint/lint/pylinter.py
+@@ -610,11 +610,15 @@ class PyLinter(
+                         skip_subtrees.append(root)
+                         yield root
+                     else:
+-                        yield from (
+-                            os.path.join(root, file)
+-                            for file in files
+-                            if file.endswith(".py")
+-                        )
++                        for file in files:
++                            path = os.path.join(root, file)
++                            if file.endswith(".py") and not _is_ignored_file(
++                                path,
++                                self.config.ignore,
++                                self.config.ignore_patterns,
++                                self.config.ignore_paths,
++                            ):
++                                yield path
+             else:
+                 yield something
+ 
+diff --git a/tests/test_self.py b/tests/test_self.py
+index c18a04aef..2028cfef0 100644
+--- a/tests/test_self.py
++++ b/tests/test_self.py
+@@ -1314,6 +1314,28 @@ class TestRunTC:
+             code=0,
+         )
+ 
++    @pytest.mark.parametrize(
++        "ignore_option",
++        [
++            "--ignore=failing.py",
++            "--ignore-patterns=failing.*",
++            "--ignore-paths=.*ignored_subdirectory/.*",
++        ],
++    )
++    def test_recursive_discovery_ignores_files(self, ignore_option):
++        """Tests recursive discovery ignores files matching ignore options."""
++        directory = join(HERE, "regrtest_data", "directory")
++        ignored_file = abspath(
++            join(directory, "ignored_subdirectory", "failing.py")
++        )
++
++        run = Run([directory, "--recursive=y", ignore_option], exit=False)
++        discovered_files = {
++            abspath(path) for path in run.linter._discover_files([directory])
++        }
++
++        assert ignored_file not in discovered_files
++
+     def test_recursive_current_dir(self):
+         with _test_sys_path():
+             # pytest is including directory HERE/regrtest_data to sys.path which causes

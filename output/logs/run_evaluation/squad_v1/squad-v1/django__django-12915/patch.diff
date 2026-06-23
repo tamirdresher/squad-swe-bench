@@ -1,0 +1,60 @@
+diff --git a/django/contrib/staticfiles/handlers.py b/django/contrib/staticfiles/handlers.py
+index 711d8864ad..2ee826e2de 100644
+--- a/django/contrib/staticfiles/handlers.py
++++ b/django/contrib/staticfiles/handlers.py
+@@ -1,6 +1,8 @@
+ from urllib.parse import urlparse
+ from urllib.request import url2pathname
+ 
++from asgiref.sync import sync_to_async
++
+ from django.conf import settings
+ from django.contrib.staticfiles import utils
+ from django.contrib.staticfiles.views import serve
+@@ -52,6 +54,12 @@ class StaticFilesHandlerMixin:
+         except Http404 as e:
+             return response_for_exception(request, e)
+ 
++    async def get_response_async(self, request):
++        try:
++            return await sync_to_async(self.serve)(request)
++        except Http404 as e:
++            return await sync_to_async(response_for_exception)(request, e)
++
+ 
+ class StaticFilesHandler(StaticFilesHandlerMixin, WSGIHandler):
+     """
+diff --git a/tests/queries/test_qs_combinators.py b/tests/queries/test_qs_combinators.py
+index 9c6fd474ca..1e33c0973c 100644
+--- a/tests/queries/test_qs_combinators.py
++++ b/tests/queries/test_qs_combinators.py
+@@ -99,6 +99,29 @@ class QuerySetSetOperationTests(TestCase):
+         self.assertEqual(len(qs2.union(qs2)), 0)
+         self.assertEqual(len(qs3.union(qs3)), 0)
+ 
++    def test_union_none(self):
++        qs1 = Number.objects.filter(num__lte=1)
++        qs2 = Number.objects.filter(num__gte=8)
++        qs3 = qs1.union(qs2)
++        self.assertSequenceEqual(qs3.none(), [])
++        self.assertNumbersEqual(qs3, [0, 1, 8, 9], ordered=False)
++
++    @skipUnlessDBFeature('supports_select_intersection')
++    def test_intersection_none(self):
++        qs1 = Number.objects.filter(num__lte=5)
++        qs2 = Number.objects.filter(num__gte=5)
++        qs3 = qs1.intersection(qs2)
++        self.assertSequenceEqual(qs3.none(), [])
++        self.assertNumbersEqual(qs3, [5], ordered=False)
++
++    @skipUnlessDBFeature('supports_select_difference')
++    def test_difference_none(self):
++        qs1 = Number.objects.filter(num__lte=5)
++        qs2 = Number.objects.filter(num__lte=4)
++        qs3 = qs1.difference(qs2)
++        self.assertSequenceEqual(qs3.none(), [])
++        self.assertNumbersEqual(qs3, [5], ordered=False)
++
+     def test_limits(self):
+         qs1 = Number.objects.all()
+         qs2 = Number.objects.all()

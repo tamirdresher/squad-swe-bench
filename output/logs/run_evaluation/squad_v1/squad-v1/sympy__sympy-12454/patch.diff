@@ -1,0 +1,61 @@
+diff --git a/sympy/matrices/matrices.py b/sympy/matrices/matrices.py
+index 90ea232faf..7e6d4395b8 100644
+--- a/sympy/matrices/matrices.py
++++ b/sympy/matrices/matrices.py
+@@ -641,7 +641,7 @@ def _eval_is_zero(self):
+     def _eval_is_upper_hessenberg(self):
+         return all(self[i, j].is_zero
+                    for i in range(2, self.rows)
+-                   for j in range(i - 1))
++                   for j in range(min(i - 1, self.cols)))
+ 
+     def _eval_values(self):
+         return [i for i in self if not i.is_zero]
+@@ -1112,7 +1112,7 @@ def is_upper(self):
+         """
+         return all(self[i, j].is_zero
+                    for i in range(1, self.rows)
+-                   for j in range(i))
++                   for j in range(min(i, self.cols)))
+ 
+     @property
+     def is_zero(self):
+diff --git a/sympy/matrices/tests/test_matrices.py b/sympy/matrices/tests/test_matrices.py
+index 03b1548fd9..c6993d7421 100644
+--- a/sympy/matrices/tests/test_matrices.py
++++ b/sympy/matrices/tests/test_matrices.py
+@@ -1225,6 +1225,10 @@ def test_is_upper():
+     assert a.is_upper is True
+     a = Matrix([[1], [2], [3]])
+     assert a.is_upper is False
++    # tall zero matrix (rows > cols) must not raise IndexError; a zero
++    # matrix is both upper and lower triangular regardless of shape
++    assert zeros(4, 2).is_upper is True
++    assert zeros(2, 4).is_upper is True
+ 
+ 
+ def test_is_lower():
+@@ -1232,6 +1236,9 @@ def test_is_lower():
+     assert a.is_lower is False
+     a = Matrix([[1], [2], [3]])
+     assert a.is_lower is True
++    # a zero matrix is both upper and lower triangular regardless of shape
++    assert zeros(4, 2).is_lower is True
++    assert zeros(2, 4).is_lower is True
+ 
+ 
+ def test_is_nilpotent():
+@@ -1880,6 +1887,13 @@ def test_hessenberg():
+     A = Matrix([[3, 4, 1], [2, 4, 5], [3, 1, 2]])
+     assert not A.is_upper_hessenberg
+ 
++    # tall/wide zero matrices must not raise IndexError; a zero matrix is
++    # both upper and lower Hessenberg regardless of shape
++    assert zeros(5, 2).is_upper_hessenberg is True
++    assert zeros(4, 2).is_upper_hessenberg is True
++    assert zeros(2, 4).is_lower_hessenberg is True
++    assert zeros(2, 5).is_lower_hessenberg is True
++
+ 
+ def test_cholesky():
+     raises(NonSquareMatrixError, lambda: Matrix((1, 2)).cholesky())

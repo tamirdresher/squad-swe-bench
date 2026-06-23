@@ -1,0 +1,58 @@
+diff --git a/seaborn/axisgrid.py b/seaborn/axisgrid.py
+index 75349099..26027334 100644
+--- a/seaborn/axisgrid.py
++++ b/seaborn/axisgrid.py
+@@ -1472,8 +1472,14 @@ class PairGrid(Grid):
+                 for ax in diag_axes[1:]:
+                     share_axis(diag_axes[0], ax, "y")
+ 
+-            self.diag_vars = np.array(diag_vars, np.object_)
+-            self.diag_axes = np.array(diag_axes, np.object_)
++            # Build 1-D object arrays whose elements are the original keys.
++            # Using np.array(..., object) would collapse tuple keys from a
++            # MultiIndex into a 2-D array, so assign into a pre-sized array to
++            # preserve each key (e.g. ("A", "1")) as a single element. See #3692.
++            self.diag_vars = np.empty(len(diag_vars), dtype=object)
++            self.diag_vars[:] = diag_vars
++            self.diag_axes = np.empty(len(diag_axes), dtype=object)
++            self.diag_axes[:] = diag_axes
+ 
+         if "hue" not in signature(func).parameters:
+             return self._map_diag_iter_hue(func, **kwargs)
+diff --git a/tests/test_axisgrid.py b/tests/test_axisgrid.py
+index ce8b0eaa..9f6ac59b 100644
+--- a/tests/test_axisgrid.py
++++ b/tests/test_axisgrid.py
+@@ -939,6 +939,32 @@ class TestPairGrid:
+             for ptch in ax.patches:
+                 assert not ptch.fill
+ 
++    def test_map_diag_multiindex_columns(self):
++
++        # GH3692: tuple keys from a MultiIndex must be preserved as single
++        # elements. np.array(list_of_tuples, object) collapses them into a 2-D
++        # array, so iterating diag_vars would yield arrays instead of tuples and
++        # self.data[var] would raise KeyError.
++        df = self.df[["x", "y", "z"]].copy()
++        df.columns = pd.MultiIndex.from_tuples(
++            [("A", "1"), ("A", "2"), ("B", "1")]
++        )
++
++        g = ag.PairGrid(df)
++        g.map_diag(plt.hist)
++
++        assert len(g.diag_axes) == 3
++        assert list(g.diag_vars) == [("A", "1"), ("A", "2"), ("B", "1")]
++
++        for var, ax in zip(g.diag_vars, g.diag_axes):
++            assert len(ax.patches) == 10
++            assert pytest.approx(ax.patches[0].get_x()) == df[var].min()
++
++        # The figure-level interface should also run without raising
++        g2 = ag.pairplot(df)
++        assert g2.axes.shape == (3, 3)
++        assert len(g2.diag_axes) == 3
++
+     def test_map_diag_rectangular(self):
+ 
+         x_vars = ["x", "y"]

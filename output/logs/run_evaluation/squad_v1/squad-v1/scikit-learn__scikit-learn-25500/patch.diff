@@ -1,0 +1,172 @@
+diff --git a/doc/whats_new/v1.3.rst b/doc/whats_new/v1.3.rst
+index e4e965aca0..55a4f4dada 100644
+--- a/doc/whats_new/v1.3.rst
++++ b/doc/whats_new/v1.3.rst
+@@ -143,6 +143,14 @@ Changelog
+ - |Enhancement| Added the parameter `fill_value` to :class:`impute.IterativeImputer`.
+   :pr:`25232` by :user:`Thijs van Weezel <ValueInvestorThijs>`.
+ 
++:mod:`sklearn.isotonic`
++.......................
++
++- |Fix| Fixes a bug in :class:`isotonic.IsotonicRegression` where
++  :meth:`isotonic.IsotonicRegression.predict` would return a pandas DataFrame
++  when the global configuration sets `transform_output="pandas"`.
++  :pr:`25500` by :user:`Guillaume Lemaitre <glemaitre>`.
++
+ :mod:`sklearn.metrics`
+ ......................
+ 
+diff --git a/sklearn/isotonic.py b/sklearn/isotonic.py
+index b05e595368..24d62dfe1c 100644
+--- a/sklearn/isotonic.py
++++ b/sklearn/isotonic.py
+@@ -360,23 +360,16 @@ class IsotonicRegression(RegressorMixin, TransformerMixin, BaseEstimator):
+         self._build_f(X, y)
+         return self
+ 
+-    def transform(self, T):
+-        """Transform new data by linear interpolation.
+-
+-        Parameters
+-        ----------
+-        T : array-like of shape (n_samples,) or (n_samples, 1)
+-            Data to transform.
++    def _transform(self, T):
++        """`_transform` is called by both `transform` and `predict` methods.
+ 
+-            .. versionchanged:: 0.24
+-               Also accepts 2d array with 1 feature.
++        Since `transform` is wrapped to output arrays of specific types (e.g.
++        NumPy arrays, pandas DataFrame), we cannot make `predict` call `transform`
++        directly.
+ 
+-        Returns
+-        -------
+-        y_pred : ndarray of shape (n_samples,)
+-            The transformed data.
++        The above behaviour could be changed in the future, if we decide to output
++        other type of arrays when calling `predict`.
+         """
+-
+         if hasattr(self, "X_thresholds_"):
+             dtype = self.X_thresholds_.dtype
+         else:
+@@ -397,6 +390,24 @@ class IsotonicRegression(RegressorMixin, TransformerMixin, BaseEstimator):
+ 
+         return res
+ 
++    def transform(self, T):
++        """Transform new data by linear interpolation.
++
++        Parameters
++        ----------
++        T : array-like of shape (n_samples,) or (n_samples, 1)
++            Data to transform.
++
++            .. versionchanged:: 0.24
++               Also accepts 2d array with 1 feature.
++
++        Returns
++        -------
++        y_pred : ndarray of shape (n_samples,)
++            The transformed data.
++        """
++        return self._transform(T)
++
+     def predict(self, T):
+         """Predict new data by linear interpolation.
+ 
+@@ -410,7 +421,7 @@ class IsotonicRegression(RegressorMixin, TransformerMixin, BaseEstimator):
+         y_pred : ndarray of shape (n_samples,)
+             Transformed data.
+         """
+-        return self.transform(T)
++        return self._transform(T)
+ 
+     # We implement get_feature_names_out here instead of using
+     # `ClassNamePrefixFeaturesOutMixin`` because `input_features` are ignored.
+diff --git a/sklearn/tests/test_calibration.py b/sklearn/tests/test_calibration.py
+index c10a9c8322..652eb5cbd3 100644
+--- a/sklearn/tests/test_calibration.py
++++ b/sklearn/tests/test_calibration.py
+@@ -6,6 +6,7 @@ import numpy as np
+ from numpy.testing import assert_allclose
+ from scipy import sparse
+ 
++from sklearn import config_context
+ from sklearn.base import BaseEstimator, clone
+ from sklearn.dummy import DummyClassifier
+ from sklearn.model_selection import LeaveOneOut, train_test_split
+@@ -25,7 +26,7 @@ from sklearn.ensemble import (
+     RandomForestClassifier,
+     VotingClassifier,
+ )
+-from sklearn.linear_model import LogisticRegression, LinearRegression
++from sklearn.linear_model import LogisticRegression, LinearRegression, SGDClassifier
+ from sklearn.tree import DecisionTreeClassifier
+ from sklearn.svm import LinearSVC
+ from sklearn.pipeline import Pipeline, make_pipeline
+@@ -1054,3 +1055,25 @@ def test_calibrated_classifier_deprecation_base_estimator(data):
+     warn_msg = "`base_estimator` was renamed to `estimator`"
+     with pytest.warns(FutureWarning, match=warn_msg):
+         calibrated_classifier.fit(*data)
++
++
++def test_calibrated_classifier_cv_works_with_set_config_transform_output_pandas(data):
++    """Check that `CalibratedClassifierCV` works when the global config sets
++    `transform_output="pandas"`.
++
++    In that case the isotonic calibrator's `predict` must return a NumPy array
++    (not a DataFrame), otherwise the assignment performed in
++    `_CalibratedClassifier.predict_proba` fails with a broadcasting error.
++
++    Non-regression test for:
++    https://github.com/scikit-learn/scikit-learn/issues/25499
++    """
++    pytest.importorskip("pandas")
++    X, y = data
++    model = CalibratedClassifierCV(SGDClassifier(random_state=42), method="isotonic")
++
++    with config_context(transform_output="pandas"):
++        # Neither fitting nor predicting should raise.
++        model.fit(X, y)
++        model.predict(X)
++        model.predict_proba(X)
+diff --git a/sklearn/tests/test_isotonic.py b/sklearn/tests/test_isotonic.py
+index 7c9dad8d1a..bcc26a294e 100644
+--- a/sklearn/tests/test_isotonic.py
++++ b/sklearn/tests/test_isotonic.py
+@@ -5,6 +5,7 @@ import copy
+ 
+ import pytest
+ 
++import sklearn
+ from sklearn.datasets import make_regression
+ from sklearn.isotonic import (
+     check_increasing,
+@@ -680,3 +681,24 @@ def test_get_feature_names_out(shape):
+     assert isinstance(names, np.ndarray)
+     assert names.dtype == object
+     assert_array_equal(["isotonicregression0"], names)
++
++
++def test_isotonic_regression_output_predict():
++    """Check that `predict` does return the expected output type.
++
++    We need to check that `transform` will output a DataFrame and a NumPy array
++    when we set `transform_output` to `pandas`.
++
++    Non-regression test for:
++    https://github.com/scikit-learn/scikit-learn/issues/25499
++    """
++    pd = pytest.importorskip("pandas")
++    X, y = make_regression(n_samples=10, n_features=1, random_state=42)
++    regressor = IsotonicRegression()
++    with sklearn.config_context(transform_output="pandas"):
++        regressor.fit(X, y)
++        X_trans = regressor.transform(X)
++        y_pred = regressor.predict(X)
++
++    assert isinstance(X_trans, pd.DataFrame)
++    assert isinstance(y_pred, np.ndarray)

@@ -1,0 +1,80 @@
+2026-06-23 06:34:47,035 - INFO - Creating container for pylint-dev__pylint-7993...
+2026-06-23 06:34:50,512 - INFO - Container for pylint-dev__pylint-7993 created: b6221af76a8d73301c534b524f811cc57a9c7fe387138a4645927bf4204b7b6b
+2026-06-23 06:34:51,233 - INFO - Container for pylint-dev__pylint-7993 started: b6221af76a8d73301c534b524f811cc57a9c7fe387138a4645927bf4204b7b6b
+2026-06-23 06:34:51,240 - INFO - Intermediate patch for pylint-dev__pylint-7993 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-7993/patch.diff, now applying to container...
+2026-06-23 06:34:51,484 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:34:51,567 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:34:51,671 - INFO - >>>>> Applied Patch:
+patching file pylint/reporters/text.py
+patching file tests/reporters/unittest_reporting.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 113 with fuzz 1.
+
+2026-06-23 06:34:51,977 - INFO - Git diff before:
+diff --git a/pylint/reporters/text.py b/pylint/reporters/text.py
+index 29bd46798..e8584e3b3 100644
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,7 @@ class TextReporter(BaseReporter):
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        arguments = re.findall(r"\{(\w+?)(:.*)?\}", template)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+diff --git a/tests/reporters/unittest_reporting.py b/tests/reporters/unittest_reporting.py
+index 37f3e5fd9..63581e5c8 100644
+--- a/tests/reporters/unittest_reporting.py
++++ b/tests/reporters/unittest_reporting.py
+@@ -113,6 +113,23 @@ def test_template_option_non_existing(linter) -> None:
+     assert out_lines[2] == "my_mod:2::()"
+ 
+ 
++def test_template_option_with_header(linter: PyLinter) -> None:
++    output = StringIO()
++    linter.reporter.out = output
++    linter.config.msg_template = '{{ "Category": "{category}" }}'
++    linter.open()
++    linter.set_current_module("my_mod")
++
++    linter.add_message("C0301", line=1, args=(1, 2))
++    linter.add_message(
++        "line-too-long", line=2, end_lineno=2, end_col_offset=4, args=(3, 4)
++    )
++
++    out_lines = output.getvalue().split("\n")
++    assert out_lines[1] == '{ "Category": "convention" }'
++    assert out_lines[2] == '{ "Category": "convention" }'
++
++
+ def test_deprecation_set_output(recwarn):
+     """TODO remove in 3.0."""
+     reporter = BaseReporter()
+2026-06-23 06:34:52,756 - INFO - Eval script for pylint-dev__pylint-7993 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-7993/eval.sh; copying to container...
+2026-06-23 06:35:03,057 - INFO - Test runtime: 10.15 seconds
+2026-06-23 06:35:03,063 - INFO - Test output for pylint-dev__pylint-7993 written to logs/run_evaluation/squad_v1/squad-v1/pylint-dev__pylint-7993/test_output.txt
+2026-06-23 06:35:03,148 - INFO - Git diff after:
+diff --git a/pylint/reporters/text.py b/pylint/reporters/text.py
+index 29bd46798..e8584e3b3 100644
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,7 @@ class TextReporter(BaseReporter):
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        arguments = re.findall(r"\{(\w+?)(:.*)?\}", template)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+2026-06-23 06:35:03,148 - INFO - Git diff changed after running eval script
+2026-06-23 06:35:03,149 - INFO - Grading answer for pylint-dev__pylint-7993...
+2026-06-23 06:35:03,155 - INFO - report: {'pylint-dev__pylint-7993': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/reporters/unittest_reporting.py::test_template_option_with_header'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/reporters/unittest_reporting.py::test_template_option', 'tests/reporters/unittest_reporting.py::test_template_option_default', 'tests/reporters/unittest_reporting.py::test_template_option_end_line', 'tests/reporters/unittest_reporting.py::test_template_option_non_existing', 'tests/reporters/unittest_reporting.py::test_deprecation_set_output', 'tests/reporters/unittest_reporting.py::test_parseable_output_deprecated', 'tests/reporters/unittest_reporting.py::test_parseable_output_regression', 'tests/reporters/unittest_reporting.py::test_multi_format_output', 'tests/reporters/unittest_reporting.py::test_multi_reporter_independant_messages', 'tests/reporters/unittest_reporting.py::test_display_results_is_renamed'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pylint-dev__pylint-7993: resolved: True
+2026-06-23 06:35:03,160 - INFO - Attempting to stop container sweb.eval.pylint-dev__pylint-7993.squad_v1...
+2026-06-23 06:35:19,240 - INFO - Attempting to remove container sweb.eval.pylint-dev__pylint-7993.squad_v1...
+2026-06-23 06:35:19,474 - INFO - Container sweb.eval.pylint-dev__pylint-7993.squad_v1 removed.
+2026-06-23 06:35:19,476 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-7993:latest...
+2026-06-23 06:35:21,299 - INFO - Image swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-7993:latest removed.

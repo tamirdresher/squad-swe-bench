@@ -1,0 +1,195 @@
+2026-06-23 05:40:00,048 - INFO - Creating container for matplotlib__matplotlib-22835...
+2026-06-23 05:40:37,532 - INFO - Container for matplotlib__matplotlib-22835 created: 38b95cdc641f13740b32e1df712bd836675035de90eff9b16cbbe28903d27eda
+2026-06-23 05:40:38,070 - INFO - Container for matplotlib__matplotlib-22835 started: 38b95cdc641f13740b32e1df712bd836675035de90eff9b16cbbe28903d27eda
+2026-06-23 05:40:38,081 - INFO - Intermediate patch for matplotlib__matplotlib-22835 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-22835/patch.diff, now applying to container...
+2026-06-23 05:40:38,382 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:40:38,510 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:40:38,668 - INFO - >>>>> Applied Patch:
+patching file lib/matplotlib/artist.py
+patching file lib/matplotlib/tests/test_image.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 354 with fuzz 1.
+
+2026-06-23 05:40:40,842 - INFO - Git diff before:
+diff --git a/lib/matplotlib/artist.py b/lib/matplotlib/artist.py
+index 1f33b9d3ec..7d33aba5a7 100644
+--- a/lib/matplotlib/artist.py
++++ b/lib/matplotlib/artist.py
+@@ -13,6 +13,7 @@ import numpy as np
+ import matplotlib as mpl
+ from . import _api, cbook
+ from .cm import ScalarMappable
++from .colors import BoundaryNorm
+ from .path import Path
+ from .transforms import (Bbox, IdentityTransform, Transform, TransformedBbox,
+                          TransformedPatchPath, TransformedPath)
+@@ -1303,10 +1304,20 @@ class Artist:
+                 return "[]"
+             normed = self.norm(data)
+             if np.isfinite(normed):
+-                # Midpoints of neighboring color intervals.
+-                neighbors = self.norm.inverse(
+-                    (int(self.norm(data) * n) + np.array([0, 1])) / n)
+-                delta = abs(neighbors - data).max()
++                if isinstance(self.norm, BoundaryNorm):
++                    # not an invertible normalization mapping
++                    cur_idx = np.argmin(np.abs(self.norm.boundaries - data))
++                    neigh_idx = max(0, cur_idx - 1)
++                    # use max diff to prevent delta == 0
++                    delta = np.diff(
++                        self.norm.boundaries[neigh_idx:cur_idx + 2]
++                    ).max()
++
++                else:
++                    # Midpoints of neighboring color intervals.
++                    neighbors = self.norm.inverse(
++                        (int(self.norm(data) * n) + np.array([0, 1])) / n)
++                    delta = abs(neighbors - data).max()
+                 g_sig_digits = cbook._g_sig_digits(data, delta)
+             else:
+                 g_sig_digits = 3  # Consistent with default below.
+diff --git a/lib/matplotlib/tests/test_image.py b/lib/matplotlib/tests/test_image.py
+index e8e90b7680..69a1a6d1c2 100644
+--- a/lib/matplotlib/tests/test_image.py
++++ b/lib/matplotlib/tests/test_image.py
+@@ -354,6 +354,43 @@ def test_format_cursor_data(data, text):
+     assert im.format_cursor_data(im.get_cursor_data(event)) == text
+ 
+ 
++def test_format_cursor_data_BoundaryNorm():
++    """Test that cursor data is correct when using a BoundaryNorm."""
++    X = np.empty((3, 3))
++    X[0, 0] = 0.9
++    X[0, 1] = 0.99
++    X[0, 2] = 0.999
++    X[1, 0] = -1
++    X[1, 1] = 0
++    X[1, 2] = 1
++    X[2, 0] = 0.09
++    X[2, 1] = 0.009
++    X[2, 2] = 0.0009
++
++    # map range -1..1 to 0..256 in 0.1 steps
++    fig, ax = plt.subplots()
++    fig.suptitle("-1..1 to 0..256 in 0.1")
++    norm = colors.BoundaryNorm(np.linspace(-1, 1, 20), 256)
++    img = ax.imshow(X, cmap='RdBu_r', norm=norm)
++
++    labels_list = [
++        "[0.9]",
++        "[1.]",
++        "[1.]",
++        "[-1.0]",
++        "[0.0]",
++        "[1.0]",
++        "[0.09]",
++        "[0.009]",
++        "[0.0009]",
++    ]
++    for v, text in zip(X.flat, labels_list):
++        # Take care to check the output before plt.close() destroys figure
++        assert img.format_cursor_data(v) == text
++
++    plt.close()
++
++
+ @image_comparison(['image_clip'], style='mpl20')
+ def test_image_clip():
+     d = [[1, 2], [3, 4]]
+2026-06-23 05:40:40,849 - INFO - Eval script for matplotlib__matplotlib-22835 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-22835/eval.sh; copying to container...
+2026-06-23 05:41:00,511 - INFO - Test runtime: 19.47 seconds
+2026-06-23 05:41:00,603 - INFO - Test output for matplotlib__matplotlib-22835 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-22835/test_output.txt
+2026-06-23 05:41:00,849 - INFO - Git diff after:
+diff --git a/lib/matplotlib/artist.py b/lib/matplotlib/artist.py
+index 1f33b9d3ec..7d33aba5a7 100644
+--- a/lib/matplotlib/artist.py
++++ b/lib/matplotlib/artist.py
+@@ -13,6 +13,7 @@ import numpy as np
+ import matplotlib as mpl
+ from . import _api, cbook
+ from .cm import ScalarMappable
++from .colors import BoundaryNorm
+ from .path import Path
+ from .transforms import (Bbox, IdentityTransform, Transform, TransformedBbox,
+                          TransformedPatchPath, TransformedPath)
+@@ -1303,10 +1304,20 @@ class Artist:
+                 return "[]"
+             normed = self.norm(data)
+             if np.isfinite(normed):
+-                # Midpoints of neighboring color intervals.
+-                neighbors = self.norm.inverse(
+-                    (int(self.norm(data) * n) + np.array([0, 1])) / n)
+-                delta = abs(neighbors - data).max()
++                if isinstance(self.norm, BoundaryNorm):
++                    # not an invertible normalization mapping
++                    cur_idx = np.argmin(np.abs(self.norm.boundaries - data))
++                    neigh_idx = max(0, cur_idx - 1)
++                    # use max diff to prevent delta == 0
++                    delta = np.diff(
++                        self.norm.boundaries[neigh_idx:cur_idx + 2]
++                    ).max()
++
++                else:
++                    # Midpoints of neighboring color intervals.
++                    neighbors = self.norm.inverse(
++                        (int(self.norm(data) * n) + np.array([0, 1])) / n)
++                    delta = abs(neighbors - data).max()
+                 g_sig_digits = cbook._g_sig_digits(data, delta)
+             else:
+                 g_sig_digits = 3  # Consistent with default below.
+diff --git a/lib/matplotlib/tests/test_image.py b/lib/matplotlib/tests/test_image.py
+index e8e90b7680..69a1a6d1c2 100644
+--- a/lib/matplotlib/tests/test_image.py
++++ b/lib/matplotlib/tests/test_image.py
+@@ -354,6 +354,43 @@ def test_format_cursor_data(data, text):
+     assert im.format_cursor_data(im.get_cursor_data(event)) == text
+ 
+ 
++def test_format_cursor_data_BoundaryNorm():
++    """Test that cursor data is correct when using a BoundaryNorm."""
++    X = np.empty((3, 3))
++    X[0, 0] = 0.9
++    X[0, 1] = 0.99
++    X[0, 2] = 0.999
++    X[1, 0] = -1
++    X[1, 1] = 0
++    X[1, 2] = 1
++    X[2, 0] = 0.09
++    X[2, 1] = 0.009
++    X[2, 2] = 0.0009
++
++    # map range -1..1 to 0..256 in 0.1 steps
++    fig, ax = plt.subplots()
++    fig.suptitle("-1..1 to 0..256 in 0.1")
++    norm = colors.BoundaryNorm(np.linspace(-1, 1, 20), 256)
++    img = ax.imshow(X, cmap='RdBu_r', norm=norm)
++
++    labels_list = [
++        "[0.9]",
++        "[1.]",
++        "[1.]",
++        "[-1.0]",
++        "[0.0]",
++        "[1.0]",
++        "[0.09]",
++        "[0.009]",
++        "[0.0009]",
++    ]
++    for v, text in zip(X.flat, labels_list):
++        # Take care to check the output before plt.close() destroys figure
++        assert img.format_cursor_data(v) == text
++
++    plt.close()
++
++
+ @image_comparison(['image_clip'], style='mpl20')
+ def test_image_clip():
+     d = [[1, 2], [3, 4]]
+2026-06-23 05:41:00,849 - INFO - Grading answer for matplotlib__matplotlib-22835...
+2026-06-23 05:41:00,856 - INFO - report: {'matplotlib__matplotlib-22835': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['lib/matplotlib/tests/test_artist.py::test_format_cursor_data_BoundaryNorm'], 'failure': []}, 'PASS_TO_PASS': {'success': ['lib/matplotlib/tests/test_artist.py::test_patch_transform_of_none', 'lib/matplotlib/tests/test_artist.py::test_collection_transform_of_none', 'lib/matplotlib/tests/test_artist.py::test_clipping[png]', 'lib/matplotlib/tests/test_artist.py::test_clipping[pdf]', 'lib/matplotlib/tests/test_artist.py::test_clipping_zoom[png]', 'lib/matplotlib/tests/test_artist.py::test_cull_markers', 'lib/matplotlib/tests/test_artist.py::test_hatching[png]', 'lib/matplotlib/tests/test_artist.py::test_hatching[pdf]', 'lib/matplotlib/tests/test_artist.py::test_remove', 'lib/matplotlib/tests/test_artist.py::test_default_edges[png]', 'lib/matplotlib/tests/test_artist.py::test_properties', 'lib/matplotlib/tests/test_artist.py::test_setp', 'lib/matplotlib/tests/test_artist.py::test_None_zorder', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_valid_values[-unknown]', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_valid_values[ACCEPTS:', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_valid_values[..', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_valid_values[arg', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_valid_values[*arg', 'lib/matplotlib/tests/test_artist.py::test_artist_inspector_get_aliases', 'lib/matplotlib/tests/test_artist.py::test_set_alpha', 'lib/matplotlib/tests/test_artist.py::test_set_alpha_for_array', 'lib/matplotlib/tests/test_artist.py::test_callbacks', 'lib/matplotlib/tests/test_artist.py::test_set_signature', 'lib/matplotlib/tests/test_artist.py::test_set_is_overwritten'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for matplotlib__matplotlib-22835: resolved: True
+2026-06-23 05:41:00,863 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-22835.squad_v1...
+2026-06-23 05:41:19,979 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-22835.squad_v1...
+2026-06-23 05:41:20,169 - INFO - Container sweb.eval.matplotlib__matplotlib-22835.squad_v1 removed.
+2026-06-23 05:41:20,170 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-22835:latest...
+2026-06-23 05:41:24,880 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-22835:latest removed.

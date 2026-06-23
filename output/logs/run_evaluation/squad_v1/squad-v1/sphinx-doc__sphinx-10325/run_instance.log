@@ -1,0 +1,291 @@
+2026-06-23 07:00:24,458 - INFO - Creating container for sphinx-doc__sphinx-10325...
+2026-06-23 07:01:08,038 - INFO - Container for sphinx-doc__sphinx-10325 created: ff6f625f8b8d2ec692fe9ebfe0988d2aa10ffc1090b3dac2605aecdee359090d
+2026-06-23 07:01:08,617 - INFO - Container for sphinx-doc__sphinx-10325 started: ff6f625f8b8d2ec692fe9ebfe0988d2aa10ffc1090b3dac2605aecdee359090d
+2026-06-23 07:01:08,628 - INFO - Intermediate patch for sphinx-doc__sphinx-10325 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-10325/patch.diff, now applying to container...
+2026-06-23 07:01:08,927 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:01:09,131 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:01:09,279 - INFO - >>>>> Applied Patch:
+patching file CHANGES
+patching file doc/usage/extensions/autodoc.rst
+patching file sphinx/ext/autodoc/__init__.py
+patching file tests/roots/test-ext-autodoc/target/inheritance.py
+patching file tests/test_ext_autodoc_automodule.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 113 with fuzz 1.
+
+2026-06-23 07:01:09,761 - INFO - Git diff before:
+diff --git a/CHANGES b/CHANGES
+index d0b6bc4f4..cda167878 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -58,6 +58,9 @@ Features added
+ * #9075: autodoc: The default value of :confval:`autodoc_typehints_format` is
+   changed to ``'smart'``.  It will suppress the leading module names of
+   typehints (ex. ``io.StringIO`` -> ``StringIO``).
++* #8417: autodoc: ``:inherited-members:`` option now takes multiple classes.  It
++  allows to suppress inherited members of several classes on the module at once
++  by specifying the option to :rst:dir:`automodule` directive
+ * #10028: Removed internal usages of JavaScript frameworks (jQuery and
+   underscore.js) and modernised ``doctools.js`` and ``searchtools.js`` to
+   EMCAScript 2018.
+diff --git a/doc/usage/extensions/autodoc.rst b/doc/usage/extensions/autodoc.rst
+index e3d551dd4..aa83f77d9 100644
+--- a/doc/usage/extensions/autodoc.rst
++++ b/doc/usage/extensions/autodoc.rst
+@@ -266,6 +266,10 @@ inserting them into the page source under a suitable :rst:dir:`py:module`,
+      ``__str__`` will be documented as in the past, but other special method
+      that are not implemented in your class ``Foo``.
+ 
++     Since v5.0, it can take a comma separated list of ancestor classes.  It
++     allows to suppress inherited members of several classes on the module at
++     once by specifying the option to :rst:dir:`automodule` directive.
++
+      Note: this will lead to markup errors if the inherited members come from a
+      module whose docstrings are not reST formatted.
+ 
+@@ -275,6 +279,10 @@ inserting them into the page source under a suitable :rst:dir:`py:module`,
+ 
+         It takes an ancestor class name as an argument.
+ 
++     .. versionchanged:: 5.0
++
++        It takes a comma separated list of ancestor class names.
++
+    * It's possible to override the signature for explicitly documented callable
+      objects (functions, methods, classes) with the regular syntax that will
+      override the signature gained from introspection::
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index 62631f7ff..a38e601ba 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -109,12 +109,14 @@ def exclude_members_option(arg: Any) -> Union[object, Set[str]]:
+     return {x.strip() for x in arg.split(',') if x.strip()}
+ 
+ 
+-def inherited_members_option(arg: Any) -> Union[object, Set[str]]:
++def inherited_members_option(arg: Any) -> Set[str]:
+     """Used to convert the :members: option to auto directives."""
+     if arg in (None, True):
+-        return 'object'
++        return {'object'}
++    elif arg:
++        return set(x.strip() for x in arg.split(','))
+     else:
+-        return arg
++        return set()
+ 
+ 
+ def member_order_option(arg: Any) -> Optional[str]:
+@@ -680,9 +682,11 @@ class Documenter:
+         ``autodoc-skip-member`` event.
+         """
+         def is_filtered_inherited_member(name: str, obj: Any) -> bool:
++            inherited_members = self.options.inherited_members or set()
++
+             if inspect.isclass(self.object):
+                 for cls in self.object.__mro__:
+-                    if cls.__name__ == self.options.inherited_members and cls != self.object:
++                    if cls.__name__ in inherited_members and cls != self.object:
+                         # given member is a member of specified *super class*
+                         return True
+                     elif name in cls.__dict__:
+diff --git a/tests/roots/test-ext-autodoc/target/inheritance.py b/tests/roots/test-ext-autodoc/target/inheritance.py
+index ffac84bb6..485a943c8 100644
+--- a/tests/roots/test-ext-autodoc/target/inheritance.py
++++ b/tests/roots/test-ext-autodoc/target/inheritance.py
+@@ -15,3 +15,8 @@ class Derived(Base):
+     def inheritedmeth(self):
+         # no docstring here
+         pass
++
++
++class MyList(list):
++    def meth(self):
++        """docstring"""
+diff --git a/tests/test_ext_autodoc_automodule.py b/tests/test_ext_autodoc_automodule.py
+index 06a4ab276..8208d86f6 100644
+--- a/tests/test_ext_autodoc_automodule.py
++++ b/tests/test_ext_autodoc_automodule.py
+@@ -113,6 +113,68 @@ def test_automodule_special_members(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_automodule_inherited_members(app):
++    if sys.version_info < (3, 7):
++        args = ''
++    else:
++        args = '(iterable=(), /)'
++
++    options = {'members': None,
++               'undoc-members': None,
++               'inherited-members': 'Base, list'}
++    actual = do_autodoc(app, 'module', 'target.inheritance', options)
++    assert list(actual) == [
++        '',
++        '.. py:module:: target.inheritance',
++        '',
++        '',
++        '.. py:class:: Base()',
++        '   :module: target.inheritance',
++        '',
++        '',
++        '   .. py:method:: Base.inheritedclassmeth()',
++        '      :module: target.inheritance',
++        '      :classmethod:',
++        '',
++        '      Inherited class method.',
++        '',
++        '',
++        '   .. py:method:: Base.inheritedmeth()',
++        '      :module: target.inheritance',
++        '',
++        '      Inherited function.',
++        '',
++        '',
++        '   .. py:method:: Base.inheritedstaticmeth(cls)',
++        '      :module: target.inheritance',
++        '      :staticmethod:',
++        '',
++        '      Inherited static method.',
++        '',
++        '',
++        '.. py:class:: Derived()',
++        '   :module: target.inheritance',
++        '',
++        '',
++        '   .. py:method:: Derived.inheritedmeth()',
++        '      :module: target.inheritance',
++        '',
++        '      Inherited function.',
++        '',
++        '',
++        '.. py:class:: MyList%s' % args,
++        '   :module: target.inheritance',
++        '',
++        '',
++        '   .. py:method:: MyList.meth()',
++        '      :module: target.inheritance',
++        '',
++        '      docstring',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc',
+                     confoverrides={'autodoc_mock_imports': ['missing_module',
+                                                             'missing_package1',
+diff --git a/tox.ini b/tox.ini
+index f0afd779b..30ca90275 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:du-latest]
+ commands =
+2026-06-23 07:01:09,767 - INFO - Eval script for sphinx-doc__sphinx-10325 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-10325/eval.sh; copying to container...
+2026-06-23 07:01:15,201 - INFO - Test runtime: 5.28 seconds
+2026-06-23 07:01:15,205 - INFO - Test output for sphinx-doc__sphinx-10325 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-10325/test_output.txt
+2026-06-23 07:01:15,297 - INFO - Git diff after:
+diff --git a/CHANGES b/CHANGES
+index d0b6bc4f4..cda167878 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -58,6 +58,9 @@ Features added
+ * #9075: autodoc: The default value of :confval:`autodoc_typehints_format` is
+   changed to ``'smart'``.  It will suppress the leading module names of
+   typehints (ex. ``io.StringIO`` -> ``StringIO``).
++* #8417: autodoc: ``:inherited-members:`` option now takes multiple classes.  It
++  allows to suppress inherited members of several classes on the module at once
++  by specifying the option to :rst:dir:`automodule` directive
+ * #10028: Removed internal usages of JavaScript frameworks (jQuery and
+   underscore.js) and modernised ``doctools.js`` and ``searchtools.js`` to
+   EMCAScript 2018.
+diff --git a/doc/usage/extensions/autodoc.rst b/doc/usage/extensions/autodoc.rst
+index e3d551dd4..aa83f77d9 100644
+--- a/doc/usage/extensions/autodoc.rst
++++ b/doc/usage/extensions/autodoc.rst
+@@ -266,6 +266,10 @@ inserting them into the page source under a suitable :rst:dir:`py:module`,
+      ``__str__`` will be documented as in the past, but other special method
+      that are not implemented in your class ``Foo``.
+ 
++     Since v5.0, it can take a comma separated list of ancestor classes.  It
++     allows to suppress inherited members of several classes on the module at
++     once by specifying the option to :rst:dir:`automodule` directive.
++
+      Note: this will lead to markup errors if the inherited members come from a
+      module whose docstrings are not reST formatted.
+ 
+@@ -275,6 +279,10 @@ inserting them into the page source under a suitable :rst:dir:`py:module`,
+ 
+         It takes an ancestor class name as an argument.
+ 
++     .. versionchanged:: 5.0
++
++        It takes a comma separated list of ancestor class names.
++
+    * It's possible to override the signature for explicitly documented callable
+      objects (functions, methods, classes) with the regular syntax that will
+      override the signature gained from introspection::
+diff --git a/sphinx/ext/autodoc/__init__.py b/sphinx/ext/autodoc/__init__.py
+index 62631f7ff..a38e601ba 100644
+--- a/sphinx/ext/autodoc/__init__.py
++++ b/sphinx/ext/autodoc/__init__.py
+@@ -109,12 +109,14 @@ def exclude_members_option(arg: Any) -> Union[object, Set[str]]:
+     return {x.strip() for x in arg.split(',') if x.strip()}
+ 
+ 
+-def inherited_members_option(arg: Any) -> Union[object, Set[str]]:
++def inherited_members_option(arg: Any) -> Set[str]:
+     """Used to convert the :members: option to auto directives."""
+     if arg in (None, True):
+-        return 'object'
++        return {'object'}
++    elif arg:
++        return set(x.strip() for x in arg.split(','))
+     else:
+-        return arg
++        return set()
+ 
+ 
+ def member_order_option(arg: Any) -> Optional[str]:
+@@ -680,9 +682,11 @@ class Documenter:
+         ``autodoc-skip-member`` event.
+         """
+         def is_filtered_inherited_member(name: str, obj: Any) -> bool:
++            inherited_members = self.options.inherited_members or set()
++
+             if inspect.isclass(self.object):
+                 for cls in self.object.__mro__:
+-                    if cls.__name__ == self.options.inherited_members and cls != self.object:
++                    if cls.__name__ in inherited_members and cls != self.object:
+                         # given member is a member of specified *super class*
+                         return True
+                     elif name in cls.__dict__:
+diff --git a/tox.ini b/tox.ini
+index f0afd779b..30ca90275 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -28,7 +28,7 @@ setenv =
+     PYTHONWARNINGS = all
+     PYTEST_ADDOPTS = {env:PYTEST_ADDOPTS:} --color yes
+ commands=
+-    python -X dev -m pytest --durations 25 {posargs}
++    python -X dev -m pytest -rA --durations 25 {posargs}
+ 
+ [testenv:du-latest]
+ commands =
+2026-06-23 07:01:15,298 - INFO - Git diff changed after running eval script
+2026-06-23 07:01:15,298 - INFO - Grading answer for sphinx-doc__sphinx-10325...
+2026-06-23 07:01:15,304 - INFO - report: {'sphinx-doc__sphinx-10325': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_ext_autodoc_automodule.py::test_automodule_inherited_members'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/test_ext_autodoc_automodule.py::test_empty_all', 'tests/test_ext_autodoc_automodule.py::test_automodule', 'tests/test_ext_autodoc_automodule.py::test_automodule_undoc_members', 'tests/test_ext_autodoc_automodule.py::test_automodule_special_members', 'tests/test_ext_autodoc_automodule.py::test_subclass_of_mocked_object'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-10325: resolved: True
+2026-06-23 07:01:15,309 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-10325.squad_v1...
+2026-06-23 07:01:31,544 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-10325.squad_v1...
+2026-06-23 07:01:31,737 - INFO - Container sweb.eval.sphinx-doc__sphinx-10325.squad_v1 removed.
+2026-06-23 07:01:31,738 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10325:latest...
+2026-06-23 07:01:36,015 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-10325:latest removed.

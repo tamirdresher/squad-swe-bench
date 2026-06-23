@@ -1,0 +1,46 @@
+diff --git a/doc/whats-new.rst b/doc/whats-new.rst
+index c1440ec1..eb4aeb83 100644
+--- a/doc/whats-new.rst
++++ b/doc/whats-new.rst
+@@ -116,6 +116,8 @@ New Features
+ 
+ Bug fixes
+ ~~~~~~~~~
++- Fix :py:meth:`DataArray.to_unstacked_dataset` for single-dimension variables. (:issue:`4049`)
++  By `Deepak Cherian <https://github.com/dcherian>`_
+ - Fix errors combining attrs in :py:func:`open_mfdataset` (:issue:`4009`, :pull:`4173`)
+   By `John Omotani <https://github.com/johnomotani>`_
+ - If groupby receives a ``DataArray`` with name=None, assign a default name (:issue:`158`)
+diff --git a/xarray/core/dataarray.py b/xarray/core/dataarray.py
+index b0df8749..3be9bb79 100644
+--- a/xarray/core/dataarray.py
++++ b/xarray/core/dataarray.py
+@@ -1961,7 +1961,7 @@ class DataArray(AbstractArray, DataWithCoords):
+         # pull variables out of datarray
+         data_dict = {}
+         for k in variables:
+-            data_dict[k] = self.sel({variable_dim: k}).squeeze(drop=True)
++            data_dict[k] = self.sel({variable_dim: k}, drop=True).squeeze(drop=True)
+ 
+         # unstacked dataset
+         return Dataset(data_dict)
+diff --git a/xarray/tests/test_dataset.py b/xarray/tests/test_dataset.py
+index 9c8d4072..c652e46a 100644
+--- a/xarray/tests/test_dataset.py
++++ b/xarray/tests/test_dataset.py
+@@ -3045,6 +3045,15 @@ class TestDataset:
+         d0 = D.isel(x=0)
+         assert_identical(d0, x0)
+ 
++    def test_to_stacked_array_to_unstacked_dataset_single_dim(self):
++        # test when single sample dimension and all variables share it
++        # https://github.com/pydata/xarray/issues/4049
++        arr = xr.DataArray(np.arange(3), coords=[("x", [0, 1, 2])])
++        data = xr.Dataset({"a": arr, "b": arr})
++        stacked = data.to_stacked_array("y", sample_dims=["x"])
++        unstacked = stacked.to_unstacked_dataset("y")
++        assert_identical(unstacked, data)
++
+     def test_to_stacked_array_to_unstacked_dataset_different_dimension(self):
+         # test when variables have different dimensionality
+         a, b = create_test_stacked_array()

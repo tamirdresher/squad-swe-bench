@@ -1,0 +1,61 @@
+diff --git a/sympy/core/mod.py b/sympy/core/mod.py
+index b4f3de2523..9b1c9f8b09 100644
+--- a/sympy/core/mod.py
++++ b/sympy/core/mod.py
+@@ -41,6 +41,7 @@ def eval(cls, p, q):
+         from sympy.core.singleton import S
+         from sympy.core.exprtools import gcd_terms
+         from sympy.polys.polytools import gcd
++        from sympy.polys.polyerrors import PolynomialError
+ 
+         def doit(p, q):
+             """Try to return p % q if both are numbers or +/-p is known
+@@ -166,10 +167,13 @@ def doit(p, q):
+         # XXX other possibilities?
+ 
+         # extract gcd; any further simplification should be done by the user
+-        G = gcd(p, q)
+-        if G != 1:
+-            p, q = [
+-                gcd_terms(i/G, clear=False, fraction=False) for i in (p, q)]
++        try:
++            G = gcd(p, q)
++            if G != 1:
++                p, q = [gcd_terms(i/G, clear=False, fraction=False)
++                        for i in (p, q)]
++        except PolynomialError:  # issue 21373
++            G = S.One
+         pwas, qwas = p, q
+ 
+         # simplify terms
+diff --git a/sympy/core/tests/test_arit.py b/sympy/core/tests/test_arit.py
+index 2dc6589f8c..8aea2f8796 100644
+--- a/sympy/core/tests/test_arit.py
++++ b/sympy/core/tests/test_arit.py
+@@ -1914,6 +1914,26 @@ def test_Mod():
+     assert ((x - Mod(x, y))/y).rewrite(floor) == floor(x/y)
+ 
+ 
++def test_Mod_Piecewise():
++    # issue 21373 / 21167 -- Mod must not raise PolynomialError when one of
++    # its arguments contains a Piecewise (a non-polynomial generator). This is
++    # reached, e.g., when subs rebuilds exp(arg) and resolving arg.is_zero asks
++    # for is_real of a hyperbolic function whose argument involves a Piecewise.
++    from sympy.core.cache import clear_cache
++    from sympy import Piecewise, sinh, cosh, tanh
++    x, y, z = symbols('x y z', real=True)
++    for fn in (sinh, cosh, tanh):
++        clear_cache()  # the original failure is cache-order dependent
++        expr = exp(fn(Piecewise((x, y > x), (y, True)) / z))
++        # must not raise PolynomialError
++        result = expr.subs({1: 1.0})
++        assert result.func is exp
++        assert result.args[0].func is fn
++    # Mod itself must be robust to a Piecewise dividend
++    p = Piecewise((2, x > 0), (3, True))
++    assert isinstance(Mod(p, 2), Mod)
++
++
+ def test_Mod_Pow():
+     # modular exponentiation
+     assert isinstance(Mod(Pow(2, 2, evaluate=False), 3), Integer)

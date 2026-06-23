@@ -1,0 +1,191 @@
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+index 2903b8995..3032130f3 100644
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -968,6 +968,8 @@ warn_explicit(
+         """
+         visit `ast.Call` nodes on Python3.5 and after
+         """
++        if isinstance(call.func, ast.Name) and call.func.id == "all":
++            return self._visit_all(call)
+         new_func, func_expl = self.visit(call.func)
+         arg_expls = []
+         new_args = []
+@@ -991,6 +993,27 @@ warn_explicit(
+         outer_expl = "%s\n{%s = %s\n}" % (res_expl, res_expl, expl)
+         return res, outer_expl
+ 
++    def _visit_all(self, call):
++        """Special rewrite for the builtin all function, see #5062"""
++        if not isinstance(call.args[0], (ast.GeneratorExp, ast.ListComp)):
++            return
++        gen_exp = call.args[0]
++        assertion_module = ast.Module(
++            body=[ast.Assert(test=gen_exp.elt, lineno=1, msg="", col_offset=1)]
++        )
++        AssertionRewriter(module_path=None, config=None).run(assertion_module)
++        for_loop = ast.For(
++            iter=gen_exp.generators[0].iter,
++            target=gen_exp.generators[0].target,
++            body=assertion_module.body,
++            orelse=[],
++        )
++        self.statements.append(for_loop)
++        return (
++            ast.Num(n=1),
++            "",
++        )  # Return an empty expression, all the asserts are in the for_loop
++
+     def visit_Starred(self, starred):
+         # From Python 3.5, a Starred node can appear in a function call
+         res, expl = self.visit(starred.value)
+@@ -1001,6 +1024,8 @@ warn_explicit(
+         """
+         visit `ast.Call nodes on 3.4 and below`
+         """
++        if isinstance(call.func, ast.Name) and call.func.id == "all":
++            return self._visit_all(call)
+         new_func, func_expl = self.visit(call.func)
+         arg_expls = []
+         new_args = []
+diff --git a/src/_pytest/assertion/util.py b/src/_pytest/assertion/util.py
+index b53646859..421c8b043 100644
+--- a/src/_pytest/assertion/util.py
++++ b/src/_pytest/assertion/util.py
+@@ -284,13 +284,38 @@ def _compare_eq_iterable(left, right, verbose=0):
+ 
+ 
+ def _compare_eq_sequence(left, right, verbose=0):
++    comparing_bytes = isinstance(left, bytes) and isinstance(right, bytes)
+     explanation = []
+     len_left = len(left)
+     len_right = len(right)
+     for i in range(min(len_left, len_right)):
+-        if left[i] != right[i]:
+-            explanation += [u"At index %s diff: %r != %r" % (i, left[i], right[i])]
++        left_value = left[i]
++        right_value = right[i]
++
++        if left_value != right_value:
++            if comparing_bytes:
++                # when comparing bytes, we want to see their ascii representation
++                # instead of their numeric values (#5260)
++                # using a slice gives us the ascii representation:
++                # >>> s = b'foo'
++                # >>> s[0]
++                # 102
++                # >>> s[0:1]
++                # b'f'
++                left_value = left[i : i + 1]
++                right_value = right[i : i + 1]
++
++            explanation += [
++                u"At index %s diff: %r != %r" % (i, left_value, right_value)
++            ]
+             break
++
++    if comparing_bytes:
++        # when comparing bytes, it doesn't help to show the "sides contain one or
++        # more items" longer explanation, so skip it
++
++        return explanation
++
+     len_diff = len_left - len_right
+ 
+     if len_diff:
+diff --git a/testing/test_assertion.py b/testing/test_assertion.py
+index e1aff3805..8fac09bfc 100644
+--- a/testing/test_assertion.py
++++ b/testing/test_assertion.py
+@@ -490,6 +490,27 @@ class TestAssert_reprcompare(object):
+             "+ (4,)",
+         ]
+ 
++    def test_bytes_diff_normal(self):
++        """Check special handling for bytes diff (#5260)"""
++        diff = callequal(b"spam", b"eggs")
++
++        assert diff == [
++            "b'spam' == b'eggs'",
++            "At index 0 diff: b's' != b'e'",
++            "Use -v to get the full diff",
++        ]
++
++    def test_bytes_diff_verbose(self):
++        """Check special handling for bytes diff (#5260)"""
++        diff = callequal(b"spam", b"eggs", verbose=True)
++        assert diff == [
++            "b'spam' == b'eggs'",
++            "At index 0 diff: b's' != b'e'",
++            "Full diff:",
++            "- b'spam'",
++            "+ b'eggs'",
++        ]
++
+     def test_set(self):
+         expl = callequal({0, 1}, {0, 2})
+         assert len(expl) > 1
+diff --git a/testing/test_assertrewrite.py b/testing/test_assertrewrite.py
+index 87dada213..a72bf308d 100644
+--- a/testing/test_assertrewrite.py
++++ b/testing/test_assertrewrite.py
+@@ -656,6 +656,59 @@ class TestAssertionRewrite(object):
+         else:
+             assert lines == ["assert 0 == 1\n +  where 1 = \\n{ \\n~ \\n}.a"]
+ 
++    def test_unroll_expression(self):
++        def f():
++            assert all(x == 1 for x in range(10))
++
++        assert "0 == 1" in getmsg(f)
++
++    def test_unroll_generator(self, testdir):
++        testdir.makepyfile(
++            """
++            def check_even(num):
++                if num % 2 == 0:
++                    return True
++                return False
++
++            def test_generator():
++                odd_list = list(range(1,9,2))
++                assert all(check_even(num) for num in odd_list)"""
++        )
++        result = testdir.runpytest()
++        result.stdout.fnmatch_lines(["*assert False*", "*where False = check_even(1)*"])
++
++    def test_unroll_list_comprehension(self, testdir):
++        testdir.makepyfile(
++            """
++            def check_even(num):
++                if num % 2 == 0:
++                    return True
++                return False
++
++            def test_list_comprehension():
++                odd_list = list(range(1,9,2))
++                assert all([check_even(num) for num in odd_list])"""
++        )
++        result = testdir.runpytest()
++        result.stdout.fnmatch_lines(["*assert False*", "*where False = check_even(1)*"])
++
++    def test_for_loop(self, testdir):
++        testdir.makepyfile(
++            """
++            def check_even(num):
++                if num % 2 == 0:
++                    return True
++                return False
++
++            def test_for_loop():
++                odd_list = list(range(1,9,2))
++                for num in odd_list:
++                    assert check_even(num)
++        """
++        )
++        result = testdir.runpytest()
++        result.stdout.fnmatch_lines(["*assert False*", "*where False = check_even(1)*"])
++
+     def test_custom_repr_non_ascii(self):
+         def f():
+             class A(object):

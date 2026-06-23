@@ -1,0 +1,3937 @@
+2026-06-23 04:32:47,713 - INFO - Creating container for django__django-11019...
+2026-06-23 04:32:48,106 - INFO - Container for django__django-11019 created: be38dfa1ba2f8f2d35c5c73c1dca932f076956c54880933914a2d80916e0f8ad
+2026-06-23 04:32:48,636 - INFO - Container for django__django-11019 started: be38dfa1ba2f8f2d35c5c73c1dca932f076956c54880933914a2d80916e0f8ad
+2026-06-23 04:32:48,646 - INFO - Intermediate patch for django__django-11019 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11019/patch.diff, now applying to container...
+2026-06-23 04:32:48,909 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:32:49,015 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:32:49,109 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 04:32:49,109 - INFO - >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+2026-06-23 04:32:49,132 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:32:49,133 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,138 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,139 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,139 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,141 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,141 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,143 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,144 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,144 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,145 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,145 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,146 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,147 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,147 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,148 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,148 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,149 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,149 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,150 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,150 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,151 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,151 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,152 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,152 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,153 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,153 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,154 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,154 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,161 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,164 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,183 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,183 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,184 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,184 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,185 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,185 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,190 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,192 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,192 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,193 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,193 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,194 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,197 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,197 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,201 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,201 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,202 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,206 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,207 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,207 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,210 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,212 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,212 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,214 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,234 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:32:49,234 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,235 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,235 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,236 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,236 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,238 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,239 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,239 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,240 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,240 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,241 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,241 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,242 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,242 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,243 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,243 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,245 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,245 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,246 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,246 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,247 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,247 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,248 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,248 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,249 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,249 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,250 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,250 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,251 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,251 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,252 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,252 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,253 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,253 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,254 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,254 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,255 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,255 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,256 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,256 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,257 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,257 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,258 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,258 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,259 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,259 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,260 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,260 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,261 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,261 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,262 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,263 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,263 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,264 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,264 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,265 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,265 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,266 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,266 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,267 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,267 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,268 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,268 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,269 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,270 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,270 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,271 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,271 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,271 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,272 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,273 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,273 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,274 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,274 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,275 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,275 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,276 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,276 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,277 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,277 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,278 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,278 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,279 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,279 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,280 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,280 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,281 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,281 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,282 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,282 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,283 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,283 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,284 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,284 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,285 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,285 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,286 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,287 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,287 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,288 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,288 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,289 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,290 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,290 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,291 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,291 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,292 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,292 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,293 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,293 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,294 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,294 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,296 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,297 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,297 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,298 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,298 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,300 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,300 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,301 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,301 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,302 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,302 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,303 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,303 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,303 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,305 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,305 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,306 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11019: >>>>> Patch Apply Failed:
+patching file django/forms/widgets.py
+patching file tests/admin_inlines/tests.py
+patching file tests/admin_widgets/test_autocomplete_widget.py
+patching file tests/forms_tests/tests/test_media.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 380:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11019/run_instance.log) for more information.
+
+2026-06-23 04:32:49,306 - INFO - Attempting to stop container sweb.eval.django__django-11019.squad_v1...
+2026-06-23 04:33:05,126 - INFO - Attempting to remove container sweb.eval.django__django-11019.squad_v1...
+2026-06-23 04:33:05,298 - INFO - Container sweb.eval.django__django-11019.squad_v1 removed.
+2026-06-23 04:33:05,299 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11019:latest...
+2026-06-23 04:33:06,294 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11019:latest removed.

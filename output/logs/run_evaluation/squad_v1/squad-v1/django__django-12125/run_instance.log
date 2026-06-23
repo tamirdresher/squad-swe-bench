@@ -1,0 +1,108 @@
+2026-06-23 04:42:39,426 - INFO - Creating container for django__django-12125...
+2026-06-23 04:42:47,153 - INFO - Container for django__django-12125 created: 2e70ed5c07969afc26751fcee766e959139a60c39a92b6ad765acdc7ffc49b43
+2026-06-23 04:42:47,733 - INFO - Container for django__django-12125 started: 2e70ed5c07969afc26751fcee766e959139a60c39a92b6ad765acdc7ffc49b43
+2026-06-23 04:42:47,746 - INFO - Intermediate patch for django__django-12125 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12125/patch.diff, now applying to container...
+2026-06-23 04:42:47,999 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:42:48,094 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:42:48,224 - INFO - >>>>> Applied Patch:
+patching file django/db/migrations/serializer.py
+patching file tests/migrations/test_writer.py
+patch unexpectedly ends in middle of line
+Hunk #4 succeeded at 747 with fuzz 2.
+
+2026-06-23 04:42:49,458 - INFO - Git diff before:
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 7d226955d5..ead81c398a 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -269,7 +269,7 @@ class TypeSerializer(BaseSerializer):
+             if module == builtins.__name__:
+                 return self.value.__name__, set()
+             else:
+-                return "%s.%s" % (module, self.value.__name__), {"import %s" % module}
++                return "%s.%s" % (module, self.value.__qualname__), {"import %s" % module}
+ 
+ 
+ class UUIDSerializer(BaseSerializer):
+diff --git a/tests/migrations/test_writer.py b/tests/migrations/test_writer.py
+index ca924f35ec..27e3e93325 100644
+--- a/tests/migrations/test_writer.py
++++ b/tests/migrations/test_writer.py
+@@ -180,6 +180,11 @@ class OperationWriterTests(SimpleTestCase):
+         )
+ 
+ 
++class DeconstructibleInstances:
++    def deconstruct(self):
++        return ('DeconstructibleInstances', [], {})
++
++
+ class WriterTests(SimpleTestCase):
+     """
+     Tests the migration writer (makes migration files from Migration instances)
+@@ -188,6 +193,10 @@ class WriterTests(SimpleTestCase):
+         A = 1
+         B = 2
+ 
++    class NestedChoices(models.TextChoices):
++        X = 'X', 'X value'
++        Y = 'Y', 'Y value'
++
+     def safe_exec(self, string, value=None):
+         d = {}
+         try:
+@@ -341,6 +350,18 @@ class WriterTests(SimpleTestCase):
+             "default=migrations.test_writer.IntEnum['A'])"
+         )
+ 
++    def test_serialize_nested_class(self):
++        for nested_cls in [self.NestedEnum, self.NestedChoices]:
++            cls_name = nested_cls.__name__
++            with self.subTest(cls_name):
++                self.assertSerializedResultEqual(
++                    nested_cls,
++                    (
++                        "migrations.test_writer.WriterTests.%s" % cls_name,
++                        {'import migrations.test_writer'},
++                    ),
++                )
++
+     def test_serialize_choices(self):
+         class TextChoices(models.TextChoices):
+             A = 'A', 'A value'
+@@ -726,10 +747,6 @@ class WriterTests(SimpleTestCase):
+         # Yes, it doesn't make sense to use a class as a default for a
+         # CharField. It does make sense for custom fields though, for example
+         # an enumfield that takes the enum class as an argument.
+-        class DeconstructibleInstances:
+-            def deconstruct(self):
+-                return ('DeconstructibleInstances', [], {})
+-
+         string = MigrationWriter.serialize(models.CharField(default=DeconstructibleInstances))[0]
+         self.assertEqual(string, "models.CharField(default=migrations.test_writer.DeconstructibleInstances)")
+2026-06-23 04:42:50,038 - INFO - Eval script for django__django-12125 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12125/eval.sh; copying to container...
+2026-06-23 04:43:06,422 - INFO - Test runtime: 16.09 seconds
+2026-06-23 04:43:06,428 - INFO - Test output for django__django-12125 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12125/test_output.txt
+2026-06-23 04:43:06,619 - INFO - Git diff after:
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 7d226955d5..ead81c398a 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -269,7 +269,7 @@ class TypeSerializer(BaseSerializer):
+             if module == builtins.__name__:
+                 return self.value.__name__, set()
+             else:
+-                return "%s.%s" % (module, self.value.__name__), {"import %s" % module}
++                return "%s.%s" % (module, self.value.__qualname__), {"import %s" % module}
+ 
+ 
+ class UUIDSerializer(BaseSerializer):
+2026-06-23 04:43:06,620 - INFO - Git diff changed after running eval script
+2026-06-23 04:43:06,621 - INFO - Grading answer for django__django-12125...
+2026-06-23 04:43:06,632 - INFO - report: {'django__django-12125': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_serialize_nested_class (migrations.test_writer.WriterTests)', 'test_serialize_numbers (migrations.test_writer.WriterTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_args_kwargs_signature (migrations.test_writer.OperationWriterTests)', 'test_args_signature (migrations.test_writer.OperationWriterTests)', 'test_empty_signature (migrations.test_writer.OperationWriterTests)', 'test_expand_args_signature (migrations.test_writer.OperationWriterTests)', 'test_kwargs_signature (migrations.test_writer.OperationWriterTests)', 'test_multiline_args_signature (migrations.test_writer.OperationWriterTests)', 'test_nested_args_signature (migrations.test_writer.OperationWriterTests)', 'test_nested_operation_expand_args_signature (migrations.test_writer.OperationWriterTests)', 'test_custom_operation (migrations.test_writer.WriterTests)', 'test_deconstruct_class_arguments (migrations.test_writer.WriterTests)', 'test_migration_file_header_comments (migrations.test_writer.WriterTests)', 'test_migration_path (migrations.test_writer.WriterTests)', 'test_models_import_omitted (migrations.test_writer.WriterTests)', 'test_register_non_serializer (migrations.test_writer.WriterTests)', 'test_register_serializer (migrations.test_writer.WriterTests)', 'test_serialize_builtin_types (migrations.test_writer.WriterTests)', 'test_serialize_builtins (migrations.test_writer.WriterTests)', 'test_serialize_choices (migrations.test_writer.WriterTests)', 'test_serialize_class_based_validators (migrations.test_writer.WriterTests)', 'test_serialize_collections (migrations.test_writer.WriterTests)', 'test_serialize_compiled_regex (migrations.test_writer.WriterTests)', 'test_serialize_constants (migrations.test_writer.WriterTests)', 'test_serialize_datetime (migrations.test_writer.WriterTests)', 'test_serialize_empty_nonempty_tuple (migrations.test_writer.WriterTests)', 'test_serialize_enums (migrations.test_writer.WriterTests)', 'test_serialize_fields (migrations.test_writer.WriterTests)', 'test_serialize_frozensets (migrations.test_writer.WriterTests)', 'test_serialize_functions (migrations.test_writer.WriterTests)', 'test_serialize_functools_partial (migrations.test_writer.WriterTests)', 'test_serialize_functools_partialmethod (migrations.test_writer.WriterTests)', 'test_serialize_iterators (migrations.test_writer.WriterTests)', 'test_serialize_lazy_objects (migrations.test_writer.WriterTests)', "A reference in a local scope can't be serialized.", 'test_serialize_managers (migrations.test_writer.WriterTests)', 'test_serialize_multiline_strings (migrations.test_writer.WriterTests)', 'test_serialize_range (migrations.test_writer.WriterTests)', 'test_serialize_set (migrations.test_writer.WriterTests)', 'test_serialize_settings (migrations.test_writer.WriterTests)', 'test_serialize_strings (migrations.test_writer.WriterTests)', 'test_serialize_timedelta (migrations.test_writer.WriterTests)', 'test_serialize_type_none (migrations.test_writer.WriterTests)', 'An unbound method used within a class body can be serialized.', 'test_serialize_uuid (migrations.test_writer.WriterTests)', 'test_simple_migration (migrations.test_writer.WriterTests)', 'test_sorted_imports (migrations.test_writer.WriterTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-12125: resolved: True
+2026-06-23 04:43:06,642 - INFO - Attempting to stop container sweb.eval.django__django-12125.squad_v1...
+2026-06-23 04:43:23,691 - INFO - Attempting to remove container sweb.eval.django__django-12125.squad_v1...
+2026-06-23 04:43:24,187 - INFO - Container sweb.eval.django__django-12125.squad_v1 removed.
+2026-06-23 04:43:24,189 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12125:latest...
+2026-06-23 04:43:35,902 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12125:latest removed.

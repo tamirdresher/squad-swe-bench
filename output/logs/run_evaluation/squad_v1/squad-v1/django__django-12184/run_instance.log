@@ -1,0 +1,89 @@
+2026-06-23 04:45:24,365 - INFO - Creating container for django__django-12184...
+2026-06-23 04:45:58,944 - INFO - Container for django__django-12184 created: dbd96505700a3d19d6a96790c4875e962035ea8ac44fe5368e883906d885e3b6
+2026-06-23 04:45:59,618 - INFO - Container for django__django-12184 started: dbd96505700a3d19d6a96790c4875e962035ea8ac44fe5368e883906d885e3b6
+2026-06-23 04:45:59,629 - INFO - Intermediate patch for django__django-12184 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12184/patch.diff, now applying to container...
+2026-06-23 04:45:59,858 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:45:59,974 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:46:00,085 - INFO - >>>>> Applied Patch:
+patching file django/urls/resolvers.py
+patching file tests/urlpatterns/path_urls.py
+patching file tests/urlpatterns/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 68 with fuzz 1.
+
+2026-06-23 04:46:00,960 - INFO - Git diff before:
+diff --git a/django/urls/resolvers.py b/django/urls/resolvers.py
+index 2d4610aac4..120e0396af 100644
+--- a/django/urls/resolvers.py
++++ b/django/urls/resolvers.py
+@@ -158,8 +158,9 @@ class RegexPattern(CheckURLMixin):
+             # If there are any named groups, use those as kwargs, ignoring
+             # non-named groups. Otherwise, pass all non-named arguments as
+             # positional arguments.
+-            kwargs = {k: v for k, v in match.groupdict().items() if v is not None}
++            kwargs = match.groupdict()
+             args = () if kwargs else match.groups()
++            kwargs = {k: v for k, v in kwargs.items() if v is not None}
+             return path[match.end():], args, kwargs
+         return None
+ 
+diff --git a/tests/urlpatterns/path_urls.py b/tests/urlpatterns/path_urls.py
+index b40801b39d..b69fb1d9a7 100644
+--- a/tests/urlpatterns/path_urls.py
++++ b/tests/urlpatterns/path_urls.py
+@@ -12,6 +12,7 @@ urlpatterns = [
+     path('included_urls/', include('urlpatterns.included_urls')),
+     re_path(r'^regex/(?P<pk>[0-9]+)/$', views.empty_view, name='regex'),
+     re_path(r'^regex_optional/(?P<arg1>\d+)/(?:(?P<arg2>\d+)/)?', views.empty_view, name='regex_optional'),
++    re_path(r'^regex_only_optional/(?:(?P<arg1>\d+)/)?', views.empty_view, name='regex_only_optional'),
+     path('', include('urlpatterns.more_urls')),
+     path('<lang>/<path:url>/', views.empty_view, name='lang-and-path'),
+ ]
+diff --git a/tests/urlpatterns/tests.py b/tests/urlpatterns/tests.py
+index 92c4e6399e..bd89e26add 100644
+--- a/tests/urlpatterns/tests.py
++++ b/tests/urlpatterns/tests.py
+@@ -68,6 +68,16 @@ class SimplifiedURLTests(SimpleTestCase):
+                     r'^regex_optional/(?P<arg1>\d+)/(?:(?P<arg2>\d+)/)?',
+                 )
+ 
++    def test_re_path_with_missing_optional_parameter(self):
++        match = resolve('/regex_only_optional/')
++        self.assertEqual(match.url_name, 'regex_only_optional')
++        self.assertEqual(match.args, ())
++        self.assertEqual(match.kwargs, {})
++        self.assertEqual(
++            match.route,
++            '^regex_only_optional/(?:(?P<arg1>\\d+)/)?',
++        )
++
+     def test_path_lookup_with_inclusion(self):
+         match = resolve('/included_urls/extra/something/')
+         self.assertEqual(match.url_name, 'inner-extra')
+2026-06-23 04:46:00,965 - INFO - Eval script for django__django-12184 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12184/eval.sh; copying to container...
+2026-06-23 04:46:08,631 - INFO - Test runtime: 7.53 seconds
+2026-06-23 04:46:11,998 - INFO - Test output for django__django-12184 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12184/test_output.txt
+2026-06-23 04:46:12,181 - INFO - Git diff after:
+diff --git a/django/urls/resolvers.py b/django/urls/resolvers.py
+index 2d4610aac4..120e0396af 100644
+--- a/django/urls/resolvers.py
++++ b/django/urls/resolvers.py
+@@ -158,8 +158,9 @@ class RegexPattern(CheckURLMixin):
+             # If there are any named groups, use those as kwargs, ignoring
+             # non-named groups. Otherwise, pass all non-named arguments as
+             # positional arguments.
+-            kwargs = {k: v for k, v in match.groupdict().items() if v is not None}
++            kwargs = match.groupdict()
+             args = () if kwargs else match.groups()
++            kwargs = {k: v for k, v in kwargs.items() if v is not None}
+             return path[match.end():], args, kwargs
+         return None
+2026-06-23 04:46:12,182 - INFO - Git diff changed after running eval script
+2026-06-23 04:46:12,183 - INFO - Grading answer for django__django-12184...
+2026-06-23 04:46:12,193 - INFO - report: {'django__django-12184': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_re_path_with_missing_optional_parameter (urlpatterns.tests.SimplifiedURLTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_allows_non_ascii_but_valid_identifiers (urlpatterns.tests.ParameterRestrictionTests)', 'test_non_identifier_parameter_name_causes_exception (urlpatterns.tests.ParameterRestrictionTests)', 'test_matching_urls (urlpatterns.tests.ConverterTests)', 'test_nonmatching_urls (urlpatterns.tests.ConverterTests)', 'test_resolve_type_error_propagates (urlpatterns.tests.ConversionExceptionTests)', 'test_resolve_value_error_means_no_match (urlpatterns.tests.ConversionExceptionTests)', 'test_reverse_value_error_propagates (urlpatterns.tests.ConversionExceptionTests)', 'test_converter_resolve (urlpatterns.tests.SimplifiedURLTests)', 'test_converter_reverse (urlpatterns.tests.SimplifiedURLTests)', 'test_converter_reverse_with_second_layer_instance_namespace (urlpatterns.tests.SimplifiedURLTests)', 'test_invalid_converter (urlpatterns.tests.SimplifiedURLTests)', 'test_path_inclusion_is_matchable (urlpatterns.tests.SimplifiedURLTests)', 'test_path_inclusion_is_reversible (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_with_double_inclusion (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_with_empty_string_inclusion (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_with_inclusion (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_with_multiple_parameters (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_with_typed_parameters (urlpatterns.tests.SimplifiedURLTests)', 'test_path_lookup_without_parameters (urlpatterns.tests.SimplifiedURLTests)', 'test_path_reverse_with_parameter (urlpatterns.tests.SimplifiedURLTests)', 'test_path_reverse_without_parameter (urlpatterns.tests.SimplifiedURLTests)', 'test_re_path (urlpatterns.tests.SimplifiedURLTests)', 'test_re_path_with_optional_parameter (urlpatterns.tests.SimplifiedURLTests)', 'test_space_in_route (urlpatterns.tests.SimplifiedURLTests)', 'test_two_variable_at_start_of_path_pattern (urlpatterns.tests.SimplifiedURLTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-12184: resolved: True
+2026-06-23 04:46:12,201 - INFO - Attempting to stop container sweb.eval.django__django-12184.squad_v1...
+2026-06-23 04:46:30,601 - INFO - Attempting to remove container sweb.eval.django__django-12184.squad_v1...
+2026-06-23 04:46:31,996 - INFO - Container sweb.eval.django__django-12184.squad_v1 removed.
+2026-06-23 04:46:31,997 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12184:latest...
+2026-06-23 04:46:34,505 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12184:latest removed.

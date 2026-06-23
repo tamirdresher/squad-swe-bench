@@ -1,0 +1,48 @@
+2026-06-23 07:22:17,995 - INFO - Creating container for sympy__sympy-17630...
+2026-06-23 07:22:33,402 - INFO - Container for sympy__sympy-17630 created: 3f93bd8ca407ef6a32f5eb75e9b1d66fb1d1915290779d7a019188e2660f79f1
+2026-06-23 07:22:33,919 - INFO - Container for sympy__sympy-17630 started: 3f93bd8ca407ef6a32f5eb75e9b1d66fb1d1915290779d7a019188e2660f79f1
+2026-06-23 07:22:33,927 - INFO - Intermediate patch for sympy__sympy-17630 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17630/patch.diff, now applying to container...
+2026-06-23 07:22:34,236 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:22:34,329 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:22:34,436 - INFO - >>>>> Applied Patch:
+patching file sympy/matrices/expressions/matexpr.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 627 with fuzz 2.
+
+2026-06-23 07:22:34,964 - INFO - Git diff before:
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+index fd1e6d970a..48e15cd491 100644
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -627,6 +627,8 @@ def _postprocessor(expr):
+                 # manipulate them like non-commutative scalars.
+                 return cls._from_args(nonmatrices + [mat_class(*matrices).doit(deep=False)])
+ 
++        if mat_class == MatAdd:
++            return mat_class(*matrices).doit(deep=False)
+         return mat_class(cls._from_args(nonmatrices), *matrices).doit(deep=False)
+     return _postprocessor
+2026-06-23 07:22:34,970 - INFO - Eval script for sympy__sympy-17630 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17630/eval.sh; copying to container...
+2026-06-23 07:22:39,844 - INFO - Test runtime: 4.74 seconds
+2026-06-23 07:22:39,849 - INFO - Test output for sympy__sympy-17630 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17630/test_output.txt
+2026-06-23 07:22:39,934 - INFO - Git diff after:
+diff --git a/sympy/matrices/expressions/matexpr.py b/sympy/matrices/expressions/matexpr.py
+index fd1e6d970a..48e15cd491 100644
+--- a/sympy/matrices/expressions/matexpr.py
++++ b/sympy/matrices/expressions/matexpr.py
+@@ -627,6 +627,8 @@ def _postprocessor(expr):
+                 # manipulate them like non-commutative scalars.
+                 return cls._from_args(nonmatrices + [mat_class(*matrices).doit(deep=False)])
+ 
++        if mat_class == MatAdd:
++            return mat_class(*matrices).doit(deep=False)
+         return mat_class(cls._from_args(nonmatrices), *matrices).doit(deep=False)
+     return _postprocessor
+2026-06-23 07:22:39,934 - INFO - Grading answer for sympy__sympy-17630...
+2026-06-23 07:22:39,940 - INFO - report: {'sympy__sympy-17630': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_issue_17624', 'test_zero_matrix_add'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_bc_matmul', 'test_bc_matadd', 'test_bc_transpose', 'test_bc_dist_diag', 'test_block_plus_ident', 'test_BlockMatrix', 'test_block_collapse_explicit_matrices', 'test_BlockMatrix_trace', 'test_BlockMatrix_Determinant', 'test_squareBlockMatrix', 'test_BlockDiagMatrix', 'test_blockcut', 'test_reblock_2x2', 'test_deblock', 'test_sort_key', 'test_matadd_sympify', 'test_matadd_of_matrices', 'test_doit_args', 'test_generic_identity'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-17630: resolved: True
+2026-06-23 07:22:39,944 - INFO - Attempting to stop container sweb.eval.sympy__sympy-17630.squad_v1...
+2026-06-23 07:22:55,681 - INFO - Attempting to remove container sweb.eval.sympy__sympy-17630.squad_v1...
+2026-06-23 07:22:55,797 - INFO - Container sweb.eval.sympy__sympy-17630.squad_v1 removed.
+2026-06-23 07:22:55,797 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-17630:latest...
+2026-06-23 07:22:55,994 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-17630:latest removed.

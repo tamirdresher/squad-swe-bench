@@ -1,0 +1,34 @@
+diff --git a/sympy/solvers/diophantine.py b/sympy/solvers/diophantine.py
+index 6092e35dab..b43f5c1dcf 100644
+--- a/sympy/solvers/diophantine.py
++++ b/sympy/solvers/diophantine.py
+@@ -182,7 +182,7 @@ def diophantine(eq, param=symbols("t", integer=True), syms=None,
+             if syms != var:
+                 dict_sym_index = dict(zip(syms, range(len(syms))))
+                 return {tuple([t[dict_sym_index[i]] for i in var])
+-                            for t in diophantine(eq, param)}
++                            for t in diophantine(eq, param, permute=permute)}
+         n, d = eq.as_numer_denom()
+         if n.is_number:
+             return set()
+diff --git a/sympy/solvers/tests/test_diophantine.py b/sympy/solvers/tests/test_diophantine.py
+index e4e8972ae0..8de5529ae5 100644
+--- a/sympy/solvers/tests/test_diophantine.py
++++ b/sympy/solvers/tests/test_diophantine.py
+@@ -910,6 +910,16 @@ def test_diophantine_permute_sign():
+     assert diophantine(10*x**2 + 12*x*y + 12*y**2 - 34, permute=True) == soln
+ 
+ 
++def test_issue_18114():
++    # permute=True must give the complete solution set regardless of the
++    # order in which the symbols are supplied via ``syms``.
++    from sympy.abc import m, n
++    eq = m**4 + n**4 - (2**4 + 3**4)
++    complete_soln = set(signed_permutations((2, 3)))
++    assert diophantine(eq, syms=(m, n), permute=True) == complete_soln
++    assert diophantine(eq, syms=(n, m), permute=True) == complete_soln
++
++
+ @XFAIL
+ def test_not_implemented():
+     eq = x**2 + y**4 - 1**2 - 3**4

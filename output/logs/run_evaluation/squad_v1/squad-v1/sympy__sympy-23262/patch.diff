@@ -1,0 +1,39 @@
+diff --git a/sympy/utilities/lambdify.py b/sympy/utilities/lambdify.py
+index da67263b19..521e27de00 100644
+--- a/sympy/utilities/lambdify.py
++++ b/sympy/utilities/lambdify.py
+@@ -961,7 +961,12 @@ def _recursive_to_string(doprint, arg):
+             left, right = "()"
+         else:
+             raise NotImplementedError("unhandled type: %s, %s" % (type(arg), arg))
+-        return left +', '.join(_recursive_to_string(doprint, e) for e in arg) + right
++        elements = [_recursive_to_string(doprint, e) for e in arg]
++        joined = ', '.join(elements)
++        if isinstance(arg, tuple) and len(elements) == 1:
++            # Single-element tuples need a trailing comma, e.g. (1,)
++            joined += ','
++        return left + joined + right
+     elif isinstance(arg, str):
+         return arg
+     else:
+diff --git a/sympy/utilities/tests/test_lambdify.py b/sympy/utilities/tests/test_lambdify.py
+index 023c2fb55a..2cde741c45 100644
+--- a/sympy/utilities/tests/test_lambdify.py
++++ b/sympy/utilities/tests/test_lambdify.py
+@@ -1182,6 +1182,17 @@ def test_lambdify_inspect():
+     assert 'x**2' in inspect.getsource(f)
+ 
+ 
++def test_issue_23536_lambdify_tuple():
++    # Single-element tuples must keep their trailing comma so that a tuple
++    # (not the bare element) is returned.
++    assert inspect.getsource(lambdify([], tuple([1]))) == \
++        'def _lambdifygenerated():\n    return (1,)\n'
++    assert inspect.getsource(lambdify([], tuple([1, 2]))) == \
++        'def _lambdifygenerated():\n    return (1, 2)\n'
++    assert lambdify([], (1,))() == (1,)
++    assert isinstance(lambdify([], (1,))(), tuple)
++
++
+ def test_issue_14941():
+     x, y = Dummy(), Dummy()

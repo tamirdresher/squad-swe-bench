@@ -1,0 +1,69 @@
+2026-06-23 05:14:17,810 - INFO - Creating container for django__django-15388...
+2026-06-23 05:14:46,927 - INFO - Container for django__django-15388 created: e0231b062d722683ac3b579bcb4634d15b5576d3039666dfdfea536571c733ef
+2026-06-23 05:14:47,392 - INFO - Container for django__django-15388 started: e0231b062d722683ac3b579bcb4634d15b5576d3039666dfdfea536571c733ef
+2026-06-23 05:14:47,400 - INFO - Intermediate patch for django__django-15388 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15388/patch.diff, now applying to container...
+2026-06-23 05:14:47,628 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:14:47,714 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:14:47,836 - INFO - >>>>> Applied Patch:
+patching file django/template/autoreload.py
+patching file tests/template_tests/test_autoreloader.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 34 with fuzz 1.
+
+2026-06-23 05:14:48,803 - INFO - Git diff before:
+diff --git a/django/template/autoreload.py b/django/template/autoreload.py
+index cf1b20ba95..7242d68f2d 100644
+--- a/django/template/autoreload.py
++++ b/django/template/autoreload.py
+@@ -48,6 +48,8 @@ def watch_for_template_changes(sender, **kwargs):
+ 
+ @receiver(file_changed, dispatch_uid='template_loaders_file_changed')
+ def template_changed(sender, file_path, **kwargs):
++    if file_path.suffix == '.py':
++        return
+     for template_dir in get_template_directories():
+         if template_dir in file_path.parents:
+             reset_loaders()
+diff --git a/tests/template_tests/test_autoreloader.py b/tests/template_tests/test_autoreloader.py
+index d6ece4cc6d..a5fdf1b282 100644
+--- a/tests/template_tests/test_autoreloader.py
++++ b/tests/template_tests/test_autoreloader.py
+@@ -34,6 +34,12 @@ class TemplateReloadTests(SimpleTestCase):
+         self.assertTrue(autoreload.template_changed(None, template_path))
+         mock_reset.assert_called_once()
+ 
++    @mock.patch('django.template.autoreload.reset_loaders')
++    def test_python_function_changed(self, mock_reset):
++        py_path = Path(__file__).parent / 'templates' / 'kwargs_context.py'
++        self.assertIsNone(autoreload.template_changed(None, py_path))
++        mock_reset.assert_not_called()
++
+     @mock.patch('django.template.autoreload.reset_loaders')
+     def test_non_template_changed(self, mock_reset):
+         self.assertIsNone(autoreload.template_changed(None, Path(__file__)))
+2026-06-23 05:14:48,809 - INFO - Eval script for django__django-15388 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15388/eval.sh; copying to container...
+2026-06-23 05:14:56,235 - INFO - Test runtime: 7.27 seconds
+2026-06-23 05:14:56,241 - INFO - Test output for django__django-15388 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15388/test_output.txt
+2026-06-23 05:14:56,355 - INFO - Git diff after:
+diff --git a/django/template/autoreload.py b/django/template/autoreload.py
+index cf1b20ba95..7242d68f2d 100644
+--- a/django/template/autoreload.py
++++ b/django/template/autoreload.py
+@@ -48,6 +48,8 @@ def watch_for_template_changes(sender, **kwargs):
+ 
+ @receiver(file_changed, dispatch_uid='template_loaders_file_changed')
+ def template_changed(sender, file_path, **kwargs):
++    if file_path.suffix == '.py':
++        return
+     for template_dir in get_template_directories():
+         if template_dir in file_path.parents:
+             reset_loaders()
+2026-06-23 05:14:56,356 - INFO - Git diff changed after running eval script
+2026-06-23 05:14:56,356 - INFO - Grading answer for django__django-15388...
+2026-06-23 05:14:56,365 - INFO - report: {'django__django-15388': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_non_template_changed_in_template_directory (template_tests.test_autoreloader.TemplateReloadTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_get_template_directories (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_reset_all_loaders (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_watch_for_template_changes (template_tests.test_autoreloader.Jinja2TemplateReloadTests)', 'test_get_template_directories (template_tests.test_autoreloader.TemplateReloadTests)', 'test_non_template_changed (template_tests.test_autoreloader.TemplateReloadTests)', 'test_reset_all_loaders (template_tests.test_autoreloader.TemplateReloadTests)', 'test_template_changed (template_tests.test_autoreloader.TemplateReloadTests)', 'test_template_dirs_normalized_to_paths (template_tests.test_autoreloader.TemplateReloadTests)', 'test_watch_for_template_changes (template_tests.test_autoreloader.TemplateReloadTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15388: resolved: True
+2026-06-23 05:14:56,371 - INFO - Attempting to stop container sweb.eval.django__django-15388.squad_v1...
+2026-06-23 05:15:12,642 - INFO - Attempting to remove container sweb.eval.django__django-15388.squad_v1...
+2026-06-23 05:15:14,011 - INFO - Container sweb.eval.django__django-15388.squad_v1 removed.
+2026-06-23 05:15:14,012 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15388:latest...
+2026-06-23 05:15:28,868 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15388:latest removed.

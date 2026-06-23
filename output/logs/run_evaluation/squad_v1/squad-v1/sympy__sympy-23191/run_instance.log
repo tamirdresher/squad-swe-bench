@@ -1,0 +1,54 @@
+2026-06-23 07:34:10,367 - INFO - Creating container for sympy__sympy-23191...
+2026-06-23 07:34:12,889 - INFO - Container for sympy__sympy-23191 created: 48350e08f3c186bcaf8a310d405bf59c7cc918bed08c88f1f01a53b301470090
+2026-06-23 07:34:13,434 - INFO - Container for sympy__sympy-23191 started: 48350e08f3c186bcaf8a310d405bf59c7cc918bed08c88f1f01a53b301470090
+2026-06-23 07:34:13,444 - INFO - Intermediate patch for sympy__sympy-23191 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-23191/patch.diff, now applying to container...
+2026-06-23 07:34:13,956 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:34:14,097 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:34:14,339 - INFO - >>>>> Applied Patch:
+patching file sympy/printing/pretty/pretty.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 1147 with fuzz 1.
+
+2026-06-23 07:34:15,459 - INFO - Git diff before:
+diff --git a/sympy/printing/pretty/pretty.py b/sympy/printing/pretty/pretty.py
+index 66461181d0..4017eed1b3 100644
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -1147,7 +1147,9 @@ def _print_BasisDependent(self, expr):
+                 if '\N{right parenthesis extension}' in tempstr:   # If scalar is a fraction
+                     for paren in range(len(tempstr)):
+                         flag[i] = 1
+-                        if tempstr[paren] == '\N{right parenthesis extension}':
++                        if tempstr[paren] == '\N{right parenthesis extension}' and tempstr[paren + 1] == '\n':
++                            # We want to place the vector string after all the right parentheses, because
++                            # otherwise, the vector will be in the middle of the string
+                             tempstr = tempstr[:paren] + '\N{right parenthesis extension}'\
+                                          + ' '  + vectstrs[i] + tempstr[paren + 1:]
+                             break
+2026-06-23 07:34:15,467 - INFO - Eval script for sympy__sympy-23191 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-23191/eval.sh; copying to container...
+2026-06-23 07:34:25,360 - INFO - Test runtime: 9.64 seconds
+2026-06-23 07:34:25,366 - INFO - Test output for sympy__sympy-23191 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-23191/test_output.txt
+2026-06-23 07:34:25,542 - INFO - Git diff after:
+diff --git a/sympy/printing/pretty/pretty.py b/sympy/printing/pretty/pretty.py
+index 66461181d0..4017eed1b3 100644
+--- a/sympy/printing/pretty/pretty.py
++++ b/sympy/printing/pretty/pretty.py
+@@ -1147,7 +1147,9 @@ def _print_BasisDependent(self, expr):
+                 if '\N{right parenthesis extension}' in tempstr:   # If scalar is a fraction
+                     for paren in range(len(tempstr)):
+                         flag[i] = 1
+-                        if tempstr[paren] == '\N{right parenthesis extension}':
++                        if tempstr[paren] == '\N{right parenthesis extension}' and tempstr[paren + 1] == '\n':
++                            # We want to place the vector string after all the right parentheses, because
++                            # otherwise, the vector will be in the middle of the string
+                             tempstr = tempstr[:paren] + '\N{right parenthesis extension}'\
+                                          + ' '  + vectstrs[i] + tempstr[paren + 1:]
+                             break
+2026-06-23 07:34:25,543 - INFO - Grading answer for sympy__sympy-23191...
+2026-06-23 07:34:25,550 - INFO - report: {'sympy__sympy-23191': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_issue_23058']}, 'PASS_TO_PASS': {'success': ['test_str_printing', 'test_pretty_print_unicode_v', 'test_latex_printing'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-23191: resolved: False
+2026-06-23 07:34:25,558 - INFO - Attempting to stop container sweb.eval.sympy__sympy-23191.squad_v1...
+2026-06-23 07:34:47,870 - INFO - Attempting to remove container sweb.eval.sympy__sympy-23191.squad_v1...
+2026-06-23 07:34:48,069 - INFO - Container sweb.eval.sympy__sympy-23191.squad_v1 removed.
+2026-06-23 07:34:48,070 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-23191:latest...
+2026-06-23 07:34:48,374 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-23191:latest removed.

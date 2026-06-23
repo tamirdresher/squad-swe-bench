@@ -1,0 +1,173 @@
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 1f1b3f4f20..b4b92fb04d 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -115,9 +115,10 @@ class EnumSerializer(BaseSerializer):
+     def serialize(self):
+         enum_class = self.value.__class__
+         module = enum_class.__module__
+-        v_string, v_imports = serializer_factory(self.value.value).serialize()
+-        imports = {'import %s' % module, *v_imports}
+-        return "%s.%s(%s)" % (module, enum_class.__name__, v_string), imports
++        return (
++            '%s.%s[%r]' % (module, enum_class.__name__, self.value.name),
++            {'import %s' % module},
++        )
+ 
+ 
+ class FloatSerializer(BaseSimpleSerializer):
+diff --git a/django/views/debug.py b/django/views/debug.py
+index cb3e8c7ec1..86da47ee20 100644
+--- a/django/views/debug.py
++++ b/django/views/debug.py
+@@ -5,10 +5,10 @@ import types
+ from pathlib import Path
+ 
+ from django.conf import settings
+-from django.http import HttpResponse, HttpResponseNotFound
++from django.http import Http404, HttpResponse, HttpResponseNotFound
+ from django.template import Context, Engine, TemplateDoesNotExist
+ from django.template.defaultfilters import pprint
+-from django.urls import Resolver404, resolve
++from django.urls import resolve
+ from django.utils import timezone
+ from django.utils.datastructures import MultiValueDict
+ from django.utils.encoding import force_str
+@@ -483,7 +483,7 @@ def technical_404_response(request, exception):
+     caller = ''
+     try:
+         resolver_match = resolve(request.path)
+-    except Resolver404:
++    except Http404:
+         pass
+     else:
+         obj = resolver_match.func
+diff --git a/docs/releases/3.0.txt b/docs/releases/3.0.txt
+index ad303ede3e..1bca160fca 100644
+--- a/docs/releases/3.0.txt
++++ b/docs/releases/3.0.txt
+@@ -354,7 +354,11 @@ Tests
+ URLs
+ ~~~~
+ 
+-* ...
++* A path converter's ``to_python()`` method may now raise
++  :exc:`~django.http.Http404` to emit a 404 error, e.g. to implement a
++  converter that uses :func:`~django.shortcuts.get_object_or_404`. Previously,
++  raising ``Http404`` resulted in a server error when :setting:`DEBUG` was
++  ``True``.
+ 
+ Validators
+ ~~~~~~~~~~
+diff --git a/docs/topics/http/urls.txt b/docs/topics/http/urls.txt
+index ed7257d847..dce5ac2c1f 100644
+--- a/docs/topics/http/urls.txt
++++ b/docs/topics/http/urls.txt
+@@ -148,7 +148,7 @@ A converter is a class that includes the following:
+   string into the type that should be passed to the view function. It should
+   raise ``ValueError`` if it can't convert the given value. A ``ValueError`` is
+   interpreted as no match and as a consequence a 404 response is sent to the
+-  user.
++  user unless another URL pattern matches.
+ 
+ * A ``to_url(self, value)`` method, which handles converting the Python type
+   into a string to be used in the URL.
+diff --git a/tests/migrations/test_writer.py b/tests/migrations/test_writer.py
+index 790d6a3efa..f9e6c68c3d 100644
+--- a/tests/migrations/test_writer.py
++++ b/tests/migrations/test_writer.py
+@@ -267,15 +267,15 @@ class WriterTests(SimpleTestCase):
+ 
+         self.assertSerializedResultEqual(
+             TextEnum.A,
+-            ("migrations.test_writer.TextEnum('a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.TextEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             BinaryEnum.A,
+-            ("migrations.test_writer.BinaryEnum(b'a-value')", {'import migrations.test_writer'})
++            ("migrations.test_writer.BinaryEnum['A']", {'import migrations.test_writer'})
+         )
+         self.assertSerializedResultEqual(
+             IntEnum.B,
+-            ("migrations.test_writer.IntEnum(2)", {'import migrations.test_writer'})
++            ("migrations.test_writer.IntEnum['B']", {'import migrations.test_writer'})
+         )
+ 
+         field = models.CharField(default=TextEnum.B, choices=[(m.value, m) for m in TextEnum])
+@@ -283,27 +283,27 @@ class WriterTests(SimpleTestCase):
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "('a-value', migrations.test_writer.TextEnum('a-value')), "
+-            "('value-b', migrations.test_writer.TextEnum('value-b'))], "
+-            "default=migrations.test_writer.TextEnum('value-b'))"
++            "('a-value', migrations.test_writer.TextEnum['A']), "
++            "('value-b', migrations.test_writer.TextEnum['B'])], "
++            "default=migrations.test_writer.TextEnum['B'])"
+         )
+         field = models.CharField(default=BinaryEnum.B, choices=[(m.value, m) for m in BinaryEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.CharField(choices=["
+-            "(b'a-value', migrations.test_writer.BinaryEnum(b'a-value')), "
+-            "(b'value-b', migrations.test_writer.BinaryEnum(b'value-b'))], "
+-            "default=migrations.test_writer.BinaryEnum(b'value-b'))"
++            "(b'a-value', migrations.test_writer.BinaryEnum['A']), "
++            "(b'value-b', migrations.test_writer.BinaryEnum['B'])], "
++            "default=migrations.test_writer.BinaryEnum['B'])"
+         )
+         field = models.IntegerField(default=IntEnum.A, choices=[(m.value, m) for m in IntEnum])
+         string = MigrationWriter.serialize(field)[0]
+         self.assertEqual(
+             string,
+             "models.IntegerField(choices=["
+-            "(1, migrations.test_writer.IntEnum(1)), "
+-            "(2, migrations.test_writer.IntEnum(2))], "
+-            "default=migrations.test_writer.IntEnum(1))"
++            "(1, migrations.test_writer.IntEnum['A']), "
++            "(2, migrations.test_writer.IntEnum['B'])], "
++            "default=migrations.test_writer.IntEnum['A'])"
+         )
+ 
+     def test_serialize_uuid(self):
+@@ -412,7 +412,7 @@ class WriterTests(SimpleTestCase):
+         # Test a string regex with flag
+         validator = RegexValidator(r'^[0-9]+$', flags=re.S)
+         string = MigrationWriter.serialize(validator)[0]
+-        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag(16))")
++        self.assertEqual(string, "django.core.validators.RegexValidator('^[0-9]+$', flags=re.RegexFlag['DOTALL'])")
+         self.serialize_round_trip(validator)
+ 
+         # Test message and code
+diff --git a/tests/view_tests/tests/test_debug.py b/tests/view_tests/tests/test_debug.py
+index 46589c82ba..1624c1720b 100644
+--- a/tests/view_tests/tests/test_debug.py
++++ b/tests/view_tests/tests/test_debug.py
+@@ -12,11 +12,13 @@ from unittest import mock
+ from django.core import mail
+ from django.core.files.uploadedfile import SimpleUploadedFile
+ from django.db import DatabaseError, connection
++from django.http import Http404
+ from django.shortcuts import render
+ from django.template import TemplateDoesNotExist
+ from django.test import RequestFactory, SimpleTestCase, override_settings
+ from django.test.utils import LoggingCaptureMixin
+ from django.urls import path, reverse
++from django.urls.converters import IntConverter
+ from django.utils.functional import SimpleLazyObject
+ from django.utils.safestring import mark_safe
+ from django.views.debug import (
+@@ -135,6 +137,11 @@ class DebugViewTests(SimpleTestCase):
+         self.assertContains(response, "Raised by:", status_code=404)
+         self.assertContains(response, "view_tests.views.Http404View", status_code=404)
+ 
++    def test_technical_404_converter_raise_404(self):
++        with mock.patch.object(IntConverter, 'to_python', side_effect=Http404):
++            response = self.client.get('/path-post/1/')
++            self.assertContains(response, 'Page not found', status_code=404)
++
+     def test_non_l10ned_numeric_ids(self):
+         """
+         Numeric IDs and fancy traceback context blocks line numbers shouldn't be localized.

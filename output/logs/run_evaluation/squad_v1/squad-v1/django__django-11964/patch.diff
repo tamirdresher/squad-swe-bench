@@ -1,0 +1,36 @@
+diff --git a/django/db/models/enums.py b/django/db/models/enums.py
+index bbe362a6ab..290935ac84 100644
+--- a/django/db/models/enums.py
++++ b/django/db/models/enums.py
+@@ -60,7 +60,13 @@ class ChoicesMeta(enum.EnumMeta):
+ 
+ class Choices(enum.Enum, metaclass=ChoicesMeta):
+     """Class for creating enumerated choices."""
+-    pass
++
++    def __str__(self):
++        """
++        Use value when cast to str, so that Choices set as model instance
++        attributes are rendered as expected.
++        """
++        return str(self.value)
+ 
+ 
+ class IntegerChoices(int, Choices):
+diff --git a/tests/model_enums/tests.py b/tests/model_enums/tests.py
+index 6b4bd6e7fd..ee92b93d0f 100644
+--- a/tests/model_enums/tests.py
++++ b/tests/model_enums/tests.py
+@@ -80,6 +80,12 @@ class ChoicesTests(SimpleTestCase):
+         self.assertIn(1, Suit)
+         self.assertNotIn(0, Suit)
+ 
++    def test_str(self):
++        for test in [Gender, Suit, YearInSchool, Vehicle]:
++            for member in test:
++                with self.subTest(member=member):
++                    self.assertEqual(str(test[member.name]), str(member.value))
++
+     def test_textchoices(self):
+         self.assertEqual(YearInSchool.choices, [
+             ('FR', 'Freshman'), ('SO', 'Sophomore'), ('JR', 'Junior'), ('SR', 'Senior'), ('GR', 'Graduate'),

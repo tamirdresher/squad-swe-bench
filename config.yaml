@@ -1,0 +1,120 @@
+# =============================================================================
+# SWE-bench Lite Runner Configuration
+# =============================================================================
+# All settings can be overridden via CLI flags: --key value
+# Environment variables: SWEBENCH_{KEY} (uppercase, underscores)
+
+# ---------------------------------------------------------------------------
+# Model & Agent
+# ---------------------------------------------------------------------------
+llm_model: gpt-4o                  # LLM model for Squad sessions
+model_name: squad-v1               # Identifier in predictions.json (appears on leaderboard)
+
+# ---------------------------------------------------------------------------
+# Dataset
+# ---------------------------------------------------------------------------
+dataset: princeton-nlp/SWE-bench_Lite
+split: test                        # "test" for official, "dev" for tuning
+
+# ---------------------------------------------------------------------------
+# Execution
+# ---------------------------------------------------------------------------
+max_workers: 4                     # Parallel task workers (separate worktrees)
+timeout_seconds: 1800              # 30 min safety net — sessions should finish naturally
+max_retries: 1                     # Retry once if copilot process exits non-zero
+
+# ---------------------------------------------------------------------------
+# Budget Controls
+# ---------------------------------------------------------------------------
+budget_cap_usd: 200.0              # Hard stop: abort remaining tasks if estimated
+                                   # cumulative cost exceeds this
+cost_per_task_estimate_usd: 0.35   # Used for budget projection (GPT-4o avg)
+warn_at_pct: 75                    # Log warning when budget hits this %
+max_consecutive_empty: 0           # Abort if N consecutive empty patches (0=disabled)
+
+# ---------------------------------------------------------------------------
+# Paths
+# ---------------------------------------------------------------------------
+repos_cache_dir: C:/tmp/swebench/repos
+worktrees_dir: C:/tmp/swebench/wt
+output_dir: ./output               # Output directory for predictions + logs
+predictions_file: ./output/predictions.json
+
+# ---------------------------------------------------------------------------
+# Git & Worktree Management
+# ---------------------------------------------------------------------------
+clone_depth: 0                     # 0 = full clone (needed for base_commit checkout)
+                                   # Set >0 only for testing with shallow clones
+worktree_prefix: worker            # Worktrees named: {worktrees_dir}/{repo}/worker-{N}
+clean_worktrees_after: true        # Remove worktrees after run completes
+
+# ---------------------------------------------------------------------------
+# Team Initialization
+# ---------------------------------------------------------------------------
+team_init_enabled: true            # Run squad init + team learning prompt per repo
+team_init_timeout_minutes: 5       # Timeout for the one-time team setup
+team_init_prompt_file: prompts/team_init.txt
+
+# ---------------------------------------------------------------------------
+# Task Execution
+# ---------------------------------------------------------------------------
+task_prompt_file: prompts/task.txt
+# The task prompt template supports these placeholders:
+#   {problem_statement} — Full issue text from SWE-bench
+#   {repo}              — e.g. "django/django"
+#   {instance_id}       — e.g. "django__django-11999"
+#   {base_commit}       — Git SHA to checkout before solving
+
+# ---------------------------------------------------------------------------
+# Patch Extraction & Sanitization
+# ---------------------------------------------------------------------------
+strip_test_changes: true           # Remove changes to test files from patch
+strip_markdown_fencing: true       # Clean ```diff ... ``` wrappers if present
+max_patch_size_kb: 100             # Discard patches larger than this (likely garbage)
+empty_patch_on_failure: true       # Write empty string (not null) on any failure
+
+# ---------------------------------------------------------------------------
+# Resume Support
+# ---------------------------------------------------------------------------
+resume: true                       # Skip instance_ids already in predictions output
+
+# ---------------------------------------------------------------------------
+# Evaluation
+# ---------------------------------------------------------------------------
+eval_backend: modal                # "docker" or "modal"
+eval_max_workers: 8                # Parallel evaluation containers
+eval_timeout_minutes: 30           # Total evaluation timeout
+
+# Modal-specific
+modal_parallelism: 10              # Modal concurrent containers
+
+# Docker-specific
+docker_disk_gb: 120                # Warn if less available
+
+# ---------------------------------------------------------------------------
+# Submission (sb-cli)
+# ---------------------------------------------------------------------------
+submit_enabled: false              # Set true only for official runs
+sb_cli_dataset: swe-bench_lite
+sb_cli_split: test
+run_id: squad_lite_run_001         # Override with --run-id on CLI
+
+# ---------------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------------
+log_level: INFO                    # DEBUG, INFO, WARNING, ERROR
+log_to_file: true                  # Write logs to runs/{run_id}/runner.log
+capture_squad_output: true         # Store full copilot stdout/stderr per task
+
+# ---------------------------------------------------------------------------
+# Dev Mode Overrides
+# ---------------------------------------------------------------------------
+# When --mode dev is passed, these override the above:
+dev_overrides:
+  split: dev
+  max_workers: 2
+  budget_cap_usd: 20.0
+  timeout_minutes: 5
+  submit_enabled: false
+  eval_backend: docker
+  eval_max_workers: 2

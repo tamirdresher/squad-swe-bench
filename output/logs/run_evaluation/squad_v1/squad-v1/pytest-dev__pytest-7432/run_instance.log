@@ -1,0 +1,160 @@
+2026-06-23 06:40:21,261 - INFO - Creating container for pytest-dev__pytest-7432...
+2026-06-23 06:40:24,108 - INFO - Container for pytest-dev__pytest-7432 created: 27027489d2afb74c5b5b3b572b1c87bb2a28c58fa5c64c4f557ee722533ce70c
+2026-06-23 06:40:24,788 - INFO - Container for pytest-dev__pytest-7432 started: 27027489d2afb74c5b5b3b572b1c87bb2a28c58fa5c64c4f557ee722533ce70c
+2026-06-23 06:40:24,798 - INFO - Intermediate patch for pytest-dev__pytest-7432 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7432/patch.diff, now applying to container...
+2026-06-23 06:40:25,056 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:40:25,139 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:40:25,262 - INFO - >>>>> Applied Patch:
+patching file src/_pytest/skipping.py
+patching file testing/code/test_source.py
+patching file testing/test_skipping.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 648 with fuzz 1.
+
+2026-06-23 06:40:25,468 - INFO - Git diff before:
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+index 7bd975e5a..591a65df9 100644
+--- a/src/_pytest/skipping.py
++++ b/src/_pytest/skipping.py
+@@ -291,7 +291,8 @@ def pytest_runtest_makereport(item: Item, call: CallInfo[None]):
+             else:
+                 rep.outcome = "passed"
+                 rep.wasxfail = xfailed.reason
+-    elif (
++
++    if (
+         item._store.get(skipped_by_mark_key, True)
+         and rep.skipped
+         and type(rep.longrepr) is tuple
+diff --git a/testing/code/test_source.py b/testing/code/test_source.py
+index 35728c334..dc9f293f4 100644
+--- a/testing/code/test_source.py
++++ b/testing/code/test_source.py
+@@ -254,6 +254,33 @@ class TestSourceParsingAndCompiling:
+         # assert source.getstatementrange(5) == (0, 7)
+         assert source.getstatementrange(6) == (6, 7)
+ 
++    def test_getstatementrange_with_decorator(self) -> None:
++        # See https://github.com/pytest-dev/pytest/issues/9255: a decorated
++        # function/class following a statement must not be considered part of
++        # that statement's range.  On Python 3.8+ the lineno of a decorated
++        # definition points at the ``def``/``class`` line instead of the first
++        # decorator, which previously caused the following ``@deco`` line to be
++        # appended to the preceding statement's displayed source.
++        source = Source(
++            """\
++            def foo():
++                x = 1
++
++                @deco
++                def bar():
++                    pass
++        """
++        )
++        # Sanity check the line layout the assertions below rely on.
++        assert source.lines[1].strip() == "x = 1"
++        assert source.lines[3].strip() == "@deco"
++        # The ``x = 1`` statement (line 1) must not extend into the decorator
++        # line (line 3); ``end`` is exclusive, so it must stop at or before it.
++        start, end = source.getstatementrange(1)
++        assert start == 1
++        assert end <= 3
++        assert "@deco" not in str(source.getstatement(1))
++
+     def test_getstatementrange_bug(self) -> None:
+         source = Source(
+             """\
+diff --git a/testing/test_skipping.py b/testing/test_skipping.py
+index 0b1c0b49b..7c62ba631 100644
+--- a/testing/test_skipping.py
++++ b/testing/test_skipping.py
+@@ -648,6 +648,24 @@ class TestSkip:
+         result = testdir.runpytest("-rs")
+         result.stdout.fnmatch_lines(["*unconditional skip*", "*1 skipped*"])
+ 
++    def test_runxfail_skip_location(self, testdir):
++        """--runxfail must not change the reported location of tests
++        skipped via @pytest.mark.skip (#7392)."""
++        testdir.makepyfile(
++            """
++            import pytest
++            @pytest.mark.skip
++            def test_skip_location() -> None:
++                assert 0
++            """
++        )
++        result = testdir.runpytest("-rs", "--runxfail")
++        result.stdout.fnmatch_lines(
++            ["*SKIPPED*test_runxfail_skip_location.py:2: unconditional skip*"]
++        )
++        result.stdout.no_fnmatch_line("*_pytest*skipping*")
++        assert "skipping.py" not in result.stdout.str()
++
+ 
+ class TestSkipif:
+     def test_skipif_conditional(self, testdir):
+2026-06-23 06:40:25,477 - INFO - Eval script for pytest-dev__pytest-7432 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7432/eval.sh; copying to container...
+2026-06-23 06:40:50,867 - INFO - Test runtime: 25.21 seconds
+2026-06-23 06:40:50,879 - INFO - Test output for pytest-dev__pytest-7432 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-7432/test_output.txt
+2026-06-23 06:40:51,071 - INFO - Git diff after:
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+index 7bd975e5a..591a65df9 100644
+--- a/src/_pytest/skipping.py
++++ b/src/_pytest/skipping.py
+@@ -291,7 +291,8 @@ def pytest_runtest_makereport(item: Item, call: CallInfo[None]):
+             else:
+                 rep.outcome = "passed"
+                 rep.wasxfail = xfailed.reason
+-    elif (
++
++    if (
+         item._store.get(skipped_by_mark_key, True)
+         and rep.skipped
+         and type(rep.longrepr) is tuple
+diff --git a/testing/code/test_source.py b/testing/code/test_source.py
+index 35728c334..dc9f293f4 100644
+--- a/testing/code/test_source.py
++++ b/testing/code/test_source.py
+@@ -254,6 +254,33 @@ class TestSourceParsingAndCompiling:
+         # assert source.getstatementrange(5) == (0, 7)
+         assert source.getstatementrange(6) == (6, 7)
+ 
++    def test_getstatementrange_with_decorator(self) -> None:
++        # See https://github.com/pytest-dev/pytest/issues/9255: a decorated
++        # function/class following a statement must not be considered part of
++        # that statement's range.  On Python 3.8+ the lineno of a decorated
++        # definition points at the ``def``/``class`` line instead of the first
++        # decorator, which previously caused the following ``@deco`` line to be
++        # appended to the preceding statement's displayed source.
++        source = Source(
++            """\
++            def foo():
++                x = 1
++
++                @deco
++                def bar():
++                    pass
++        """
++        )
++        # Sanity check the line layout the assertions below rely on.
++        assert source.lines[1].strip() == "x = 1"
++        assert source.lines[3].strip() == "@deco"
++        # The ``x = 1`` statement (line 1) must not extend into the decorator
++        # line (line 3); ``end`` is exclusive, so it must stop at or before it.
++        start, end = source.getstatementrange(1)
++        assert start == 1
++        assert end <= 3
++        assert "@deco" not in str(source.getstatement(1))
++
+     def test_getstatementrange_bug(self) -> None:
+         source = Source(
+             """\
+2026-06-23 06:40:51,072 - INFO - Git diff changed after running eval script
+2026-06-23 06:40:51,075 - INFO - Grading answer for pytest-dev__pytest-7432...
+2026-06-23 06:40:51,099 - INFO - report: {'pytest-dev__pytest-7432': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input1-expected1]'], 'failure': []}, 'PASS_TO_PASS': {'success': ['testing/test_skipping.py::test_importorskip', 'testing/test_skipping.py::TestEvaluation::test_no_marker', 'testing/test_skipping.py::TestEvaluation::test_marked_xfail_no_args', 'testing/test_skipping.py::TestEvaluation::test_marked_skipif_no_args', 'testing/test_skipping.py::TestEvaluation::test_marked_one_arg', 'testing/test_skipping.py::TestEvaluation::test_marked_one_arg_with_reason', 'testing/test_skipping.py::TestEvaluation::test_marked_one_arg_twice', 'testing/test_skipping.py::TestEvaluation::test_marked_one_arg_twice2', 'testing/test_skipping.py::TestEvaluation::test_marked_skipif_with_boolean_without_reason', 'testing/test_skipping.py::TestEvaluation::test_marked_skipif_with_invalid_boolean', 'testing/test_skipping.py::TestEvaluation::test_skipif_class', 'testing/test_skipping.py::TestXFail::test_xfail_simple[True]', 'testing/test_skipping.py::TestXFail::test_xfail_simple[False]', 'testing/test_skipping.py::TestXFail::test_xfail_xpassed', 'testing/test_skipping.py::TestXFail::test_xfail_using_platform', 'testing/test_skipping.py::TestXFail::test_xfail_xpassed_strict', 'testing/test_skipping.py::TestXFail::test_xfail_run_anyway', 'testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input0-expected0]', 'testing/test_skipping.py::TestXFail::test_xfail_evalfalse_but_fails', 'testing/test_skipping.py::TestXFail::test_xfail_not_report_default', 'testing/test_skipping.py::TestXFail::test_xfail_not_run_xfail_reporting', 'testing/test_skipping.py::TestXFail::test_xfail_not_run_no_setup_run', 'testing/test_skipping.py::TestXFail::test_xfail_xpass', 'testing/test_skipping.py::TestXFail::test_xfail_imperative', 'testing/test_skipping.py::TestXFail::test_xfail_imperative_in_setup_function', 'testing/test_skipping.py::TestXFail::test_dynamic_xfail_no_run', 'testing/test_skipping.py::TestXFail::test_dynamic_xfail_set_during_funcarg_setup', 'testing/test_skipping.py::TestXFail::test_xfail_raises[TypeError-TypeError-*1', 'testing/test_skipping.py::TestXFail::test_xfail_raises[(AttributeError,', 'testing/test_skipping.py::TestXFail::test_xfail_raises[TypeError-IndexError-*1', 'testing/test_skipping.py::TestXFail::test_strict_sanity', 'testing/test_skipping.py::TestXFail::test_strict_xfail[True]', 'testing/test_skipping.py::TestXFail::test_strict_xfail[False]', 'testing/test_skipping.py::TestXFail::test_strict_xfail_condition[True]', 'testing/test_skipping.py::TestXFail::test_strict_xfail_condition[False]', 'testing/test_skipping.py::TestXFail::test_xfail_condition_keyword[True]', 'testing/test_skipping.py::TestXFail::test_xfail_condition_keyword[False]', 'testing/test_skipping.py::TestXFail::test_strict_xfail_default_from_file[true]', 'testing/test_skipping.py::TestXFail::test_strict_xfail_default_from_file[false]', 'testing/test_skipping.py::TestXFailwithSetupTeardown::test_failing_setup_issue9', 'testing/test_skipping.py::TestXFailwithSetupTeardown::test_failing_teardown_issue9', 'testing/test_skipping.py::TestSkip::test_skip_class', 'testing/test_skipping.py::TestSkip::test_skips_on_false_string', 'testing/test_skipping.py::TestSkip::test_arg_as_reason', 'testing/test_skipping.py::TestSkip::test_skip_no_reason', 'testing/test_skipping.py::TestSkip::test_skip_with_reason', 'testing/test_skipping.py::TestSkip::test_only_skips_marked_test', 'testing/test_skipping.py::TestSkip::test_strict_and_skip', 'testing/test_skipping.py::TestSkipif::test_skipif_conditional', 'testing/test_skipping.py::TestSkipif::test_skipif_reporting["hasattr(sys,', 'testing/test_skipping.py::TestSkipif::test_skipif_reporting[True,', 'testing/test_skipping.py::TestSkipif::test_skipif_using_platform', 'testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[skipif-SKIP-skipped]', 'testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[xfail-XPASS-xpassed]', 'testing/test_skipping.py::test_skip_not_report_default', 'testing/test_skipping.py::test_skipif_class', 'testing/test_skipping.py::test_skipped_reasons_functional', 'testing/test_skipping.py::test_skipped_folding', 'testing/test_skipping.py::test_reportchars', 'testing/test_skipping.py::test_reportchars_error', 'testing/test_skipping.py::test_reportchars_all', 'testing/test_skipping.py::test_reportchars_all_error', 'testing/test_skipping.py::test_errors_in_xfail_skip_expressions', 'testing/test_skipping.py::test_xfail_skipif_with_globals', 'testing/test_skipping.py::test_default_markers', 'testing/test_skipping.py::test_xfail_test_setup_exception', 'testing/test_skipping.py::test_imperativeskip_on_xfail_test', 'testing/test_skipping.py::TestBooleanCondition::test_skipif', 'testing/test_skipping.py::TestBooleanCondition::test_skipif_noreason', 'testing/test_skipping.py::TestBooleanCondition::test_xfail', 'testing/test_skipping.py::test_xfail_item', 'testing/test_skipping.py::test_module_level_skip_error', 'testing/test_skipping.py::test_module_level_skip_with_allow_module_level', 'testing/test_skipping.py::test_invalid_skip_keyword_parameter', 'testing/test_skipping.py::test_mark_xfail_item', 'testing/test_skipping.py::test_summary_list_after_errors', 'testing/test_skipping.py::test_relpath_rootdir'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pytest-dev__pytest-7432: resolved: True
+2026-06-23 06:40:51,106 - INFO - Attempting to stop container sweb.eval.pytest-dev__pytest-7432.squad_v1...
+2026-06-23 06:41:17,495 - INFO - Attempting to remove container sweb.eval.pytest-dev__pytest-7432.squad_v1...
+2026-06-23 06:41:17,794 - INFO - Container sweb.eval.pytest-dev__pytest-7432.squad_v1 removed.
+2026-06-23 06:41:17,795 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7432:latest...
+2026-06-23 06:41:18,155 - INFO - Image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-7432:latest removed.

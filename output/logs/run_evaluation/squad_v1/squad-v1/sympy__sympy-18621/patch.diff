@@ -1,0 +1,71 @@
+diff --git a/sympy/core/exprtools.py b/sympy/core/exprtools.py
+index 57fad70407..05e31e43dc 100644
+--- a/sympy/core/exprtools.py
++++ b/sympy/core/exprtools.py
+@@ -448,14 +448,12 @@ def as_expr(self):  # Factors
+         args = []
+         for factor, exp in self.factors.items():
+             if exp != 1:
+-                b, e = factor.as_base_exp()
+-                if isinstance(exp, int):
+-                    e = _keep_coeff(Integer(exp), e)
+-                elif isinstance(exp, Rational):
++                if isinstance(exp, Integer):
++                    b, e = factor.as_base_exp()
+                     e = _keep_coeff(exp, e)
++                    args.append(b**e)
+                 else:
+-                    e *= exp
+-                args.append(b**e)
++                    args.append(factor**exp)
+             else:
+                 args.append(factor)
+         return Mul(*args)
+diff --git a/sympy/core/tests/test_exprtools.py b/sympy/core/tests/test_exprtools.py
+index d85ad06cf2..7fb6a800ca 100644
+--- a/sympy/core/tests/test_exprtools.py
++++ b/sympy/core/tests/test_exprtools.py
+@@ -25,6 +25,12 @@ def test_Factors():
+     assert Factors() == Factors({}) == Factors(S.One)
+     assert Factors().as_expr() is S.One
+     assert Factors({x: 2, y: 3, sin(x): 4}).as_expr() == x**2*y**3*sin(x)**4
++    # issue 18059: a rational (non-integer) exponent must not be multiplied
++    # into an inner even power, i.e. (sin(x)**2)**(1/2) must stay unevaluated.
++    assert Factors(sqrt(sin(x)**2)).as_expr() == sqrt(sin(x)**2)
++    assert Factors({sin(x)**2: S.Half}).as_expr() == sqrt(sin(x)**2)
++    # integer outer exponents may still be flattened as before
++    assert Factors({x**2: 3}).as_expr() == x**6
+     assert Factors(S.Infinity) == Factors({oo: 1})
+     assert Factors(S.NegativeInfinity) == Factors({oo: 1, -1: 1})
+ 
+diff --git a/sympy/simplify/tests/test_trigsimp.py b/sympy/simplify/tests/test_trigsimp.py
+index bf15ee07a9..a2c09738a9 100644
+--- a/sympy/simplify/tests/test_trigsimp.py
++++ b/sympy/simplify/tests/test_trigsimp.py
+@@ -1,7 +1,8 @@
+ from sympy import (
+     symbols, sin, simplify, cos, trigsimp, tan, exptrigsimp,sinh,
+     cosh, diff, cot, Subs, exp, tanh, S, integrate, I,Matrix,
+-    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational
++    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational,
++    Abs
+     )
+ 
+ from sympy.core.compatibility import long
+@@ -219,6 +220,16 @@ def test_trigsimp_issue_7761():
+     assert trigsimp(cosh(pi/4)) == cosh(pi/4)
+ 
+ 
++def test_issue_18059():
++    # cos(x) + sqrt(sin(x)**2) must not be simplified as cos(x) + sin(x) for
++    # general (complex) x, since sqrt(sin(x)**2) != sin(x) (it is Abs(sin(x))
++    # only for real x).
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) == cos(x) + sqrt(sin(x)**2)
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) != cos(x) + sin(x)
++    xr = Symbol('xr', real=True)
++    assert trigsimp(cos(xr) + sqrt(sin(xr)**2)) == cos(xr) + Abs(sin(xr))
++
++
+ def test_trigsimp_noncommutative():
+     x, y = symbols('x,y')
+     A, B = symbols('A,B', commutative=False)

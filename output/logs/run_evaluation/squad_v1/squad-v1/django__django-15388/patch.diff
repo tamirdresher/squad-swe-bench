@@ -1,0 +1,30 @@
+diff --git a/django/template/autoreload.py b/django/template/autoreload.py
+index cf1b20ba95..7242d68f2d 100644
+--- a/django/template/autoreload.py
++++ b/django/template/autoreload.py
+@@ -48,6 +48,8 @@ def watch_for_template_changes(sender, **kwargs):
+ 
+ @receiver(file_changed, dispatch_uid='template_loaders_file_changed')
+ def template_changed(sender, file_path, **kwargs):
++    if file_path.suffix == '.py':
++        return
+     for template_dir in get_template_directories():
+         if template_dir in file_path.parents:
+             reset_loaders()
+diff --git a/tests/template_tests/test_autoreloader.py b/tests/template_tests/test_autoreloader.py
+index d6ece4cc6d..a5fdf1b282 100644
+--- a/tests/template_tests/test_autoreloader.py
++++ b/tests/template_tests/test_autoreloader.py
+@@ -34,6 +34,12 @@ class TemplateReloadTests(SimpleTestCase):
+         self.assertTrue(autoreload.template_changed(None, template_path))
+         mock_reset.assert_called_once()
+ 
++    @mock.patch('django.template.autoreload.reset_loaders')
++    def test_python_function_changed(self, mock_reset):
++        py_path = Path(__file__).parent / 'templates' / 'kwargs_context.py'
++        self.assertIsNone(autoreload.template_changed(None, py_path))
++        mock_reset.assert_not_called()
++
+     @mock.patch('django.template.autoreload.reset_loaders')
+     def test_non_template_changed(self, mock_reset):
+         self.assertIsNone(autoreload.template_changed(None, Path(__file__)))

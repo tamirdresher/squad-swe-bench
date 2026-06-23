@@ -1,0 +1,56 @@
+diff --git a/django/template/defaultfilters.py b/django/template/defaultfilters.py
+index 03676533b7..6235bdb7a4 100644
+--- a/django/template/defaultfilters.py
++++ b/django/template/defaultfilters.py
+@@ -587,7 +587,9 @@ def join(value, arg, autoescape=True):
+     try:
+         if autoescape:
+             value = [conditional_escape(v) for v in value]
+-        data = conditional_escape(arg).join(value)
++            data = conditional_escape(arg).join(value)
++        else:
++            data = arg.join(value)
+     except TypeError:  # Fail silently if arg isn't iterable.
+         return value
+     return mark_safe(data)
+diff --git a/docs/releases/5.0.txt b/docs/releases/5.0.txt
+index 0c093720b9..a100297e51 100644
+--- a/docs/releases/5.0.txt
++++ b/docs/releases/5.0.txt
+@@ -341,7 +341,8 @@ Signals
+ Templates
+ ~~~~~~~~~
+ 
+-* ...
++* The :tfilter:`join` template filter no longer escapes the joining string when
++  its ``autoescape`` argument is ``False``.
+ 
+ Tests
+ ~~~~~
+diff --git a/tests/template_tests/filter_tests/test_join.py b/tests/template_tests/filter_tests/test_join.py
+index 08f68537ee..1be4908eac 100644
+--- a/tests/template_tests/filter_tests/test_join.py
++++ b/tests/template_tests/filter_tests/test_join.py
+@@ -55,6 +55,13 @@ class JoinTests(SimpleTestCase):
+         )
+         self.assertEqual(output, "alpha & beta &amp; me")
+ 
++    @setup({"join09": "{% autoescape off %}{{ a|join:var }}{% endautoescape %}"})
++    def test_join09(self):
++        output = self.engine.render_to_string(
++            "join09", {"a": ["alpha", "beta & me"], "var": " & "}
++        )
++        self.assertEqual(output, "alpha & beta & me")
++
+ 
+ class FunctionTests(SimpleTestCase):
+     def test_list(self):
+@@ -69,7 +76,7 @@ class FunctionTests(SimpleTestCase):
+     def test_autoescape_off(self):
+         self.assertEqual(
+             join(["<a>", "<img>", "</a>"], "<br>", autoescape=False),
+-            "<a>&lt;br&gt;<img>&lt;br&gt;</a>",
++            "<a><br><img><br></a>",
+         )
+ 
+     def test_noniterable_arg(self):

@@ -1,0 +1,82 @@
+2026-06-23 05:08:45,911 - INFO - Creating container for django__django-14787...
+2026-06-23 05:09:21,934 - INFO - Container for django__django-14787 created: a7f4162275f7b40a6be60fd00cb57abd890e4b3bc4eb26d21c571c2163176b7a
+2026-06-23 05:09:22,839 - INFO - Container for django__django-14787 started: a7f4162275f7b40a6be60fd00cb57abd890e4b3bc4eb26d21c571c2163176b7a
+2026-06-23 05:09:22,856 - INFO - Intermediate patch for django__django-14787 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14787/patch.diff, now applying to container...
+2026-06-23 05:09:23,110 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:09:23,194 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:09:23,381 - INFO - >>>>> Applied Patch:
+patching file django/utils/decorators.py
+patching file tests/decorators/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 286 with fuzz 1.
+
+2026-06-23 05:09:24,484 - INFO - Git diff before:
+diff --git a/django/utils/decorators.py b/django/utils/decorators.py
+index 5c9a5d01c7..8b9da17e31 100644
+--- a/django/utils/decorators.py
++++ b/django/utils/decorators.py
+@@ -38,6 +38,7 @@ def _multi_decorate(decorators, method):
+         # 'func'. Also, wrap method.__get__() in a function because new
+         # attributes can't be set on bound method objects, only on functions.
+         bound_method = partial(method.__get__(self, type(self)))
++        update_wrapper(bound_method, method)
+         for dec in decorators:
+             bound_method = dec(bound_method)
+         return bound_method(*args, **kwargs)
+diff --git a/tests/decorators/tests.py b/tests/decorators/tests.py
+index 46b01c1852..dc8ac9c4c0 100644
+--- a/tests/decorators/tests.py
++++ b/tests/decorators/tests.py
+@@ -286,6 +286,27 @@ class MethodDecoratorTests(SimpleTestCase):
+         self.assertEqual(obj.method.x, 1)
+         self.assertIs(obj.method(), True)
+ 
++    def test_wrapper_assignments(self):
++        """@method_decorator preserves wrapper assignments."""
++        func_data = {}
++
++        def decorator(func):
++            @wraps(func)
++            def inner(*args, **kwargs):
++                func_data['__name__'] = func.__name__
++                func_data['__module__'] = func.__module__
++                return func(*args, **kwargs)
++            return inner
++
++        class Test:
++            @method_decorator(decorator)
++            def method(self):
++                return 'tests'
++
++        Test().method()
++        self.assertEqual(func_data['__name__'], 'method')
++        self.assertIn('decorators', func_data['__module__'])
++
+     def test_bad_iterable(self):
+         decorators = {myattr_dec_m, myattr2_dec_m}
+         msg = "'set' object is not subscriptable"
+2026-06-23 05:09:24,490 - INFO - Eval script for django__django-14787 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14787/eval.sh; copying to container...
+2026-06-23 05:09:35,257 - INFO - Test runtime: 10.61 seconds
+2026-06-23 05:09:35,828 - INFO - Test output for django__django-14787 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14787/test_output.txt
+2026-06-23 05:09:35,968 - INFO - Git diff after:
+diff --git a/django/utils/decorators.py b/django/utils/decorators.py
+index 5c9a5d01c7..8b9da17e31 100644
+--- a/django/utils/decorators.py
++++ b/django/utils/decorators.py
+@@ -38,6 +38,7 @@ def _multi_decorate(decorators, method):
+         # 'func'. Also, wrap method.__get__() in a function because new
+         # attributes can't be set on bound method objects, only on functions.
+         bound_method = partial(method.__get__(self, type(self)))
++        update_wrapper(bound_method, method)
+         for dec in decorators:
+             bound_method = dec(bound_method)
+         return bound_method(*args, **kwargs)
+2026-06-23 05:09:35,969 - INFO - Git diff changed after running eval script
+2026-06-23 05:09:35,969 - INFO - Grading answer for django__django-14787...
+2026-06-23 05:09:35,976 - INFO - report: {'django__django-14787': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['@method_decorator preserves wrapper assignments.'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_cache_control_decorator_http_request (decorators.tests.CacheControlDecoratorTest)', 'Ensures @xframe_options_deny properly sets the X-Frame-Options header.', 'Ensures @xframe_options_exempt properly instructs the', 'Ensures @xframe_options_sameorigin properly sets the X-Frame-Options', 'Built-in decorators set certain attributes of the wrapped function.', 'test_cache_page (decorators.tests.DecoratorsTest)', 'Test for the require_safe decorator.', 'The user_passes_test decorator can be applied multiple times (#9474).', 'test_never_cache_decorator (decorators.tests.NeverCacheDecoratorTest)', 'test_never_cache_decorator_http_request (decorators.tests.NeverCacheDecoratorTest)', 'test_argumented (decorators.tests.MethodDecoratorTests)', 'test_bad_iterable (decorators.tests.MethodDecoratorTests)', '@method_decorator can be used to decorate a class and its methods.', 'test_descriptors (decorators.tests.MethodDecoratorTests)', '@method_decorator on a nonexistent method raises an error.', '@method_decorator on a non-callable attribute raises an error.', 'A decorator that sets a new attribute on the method.', 'test_preserve_attributes (decorators.tests.MethodDecoratorTests)', 'test_preserve_signature (decorators.tests.MethodDecoratorTests)', '@method_decorator can accept a tuple of decorators.'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-14787: resolved: True
+2026-06-23 05:09:35,982 - INFO - Attempting to stop container sweb.eval.django__django-14787.squad_v1...
+2026-06-23 05:10:04,295 - INFO - Attempting to remove container sweb.eval.django__django-14787.squad_v1...
+2026-06-23 05:10:04,734 - INFO - Container sweb.eval.django__django-14787.squad_v1 removed.
+2026-06-23 05:10:04,735 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-14787:latest...
+2026-06-23 05:10:09,597 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-14787:latest removed.

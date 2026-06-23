@@ -1,0 +1,69 @@
+diff --git a/sklearn/metrics/cluster/_supervised.py b/sklearn/metrics/cluster/_supervised.py
+index 4bddae35c9..146a7338b9 100644
+--- a/sklearn/metrics/cluster/_supervised.py
++++ b/sklearn/metrics/cluster/_supervised.py
+@@ -43,10 +43,10 @@ def check_clusterings(labels_true, labels_pred):
+         The predicted labels.
+     """
+     labels_true = check_array(
+-        labels_true, ensure_2d=False, ensure_min_samples=0
++        labels_true, ensure_2d=False, ensure_min_samples=0, dtype=None,
+     )
+     labels_pred = check_array(
+-        labels_pred, ensure_2d=False, ensure_min_samples=0
++        labels_pred, ensure_2d=False, ensure_min_samples=0, dtype=None,
+     )
+ 
+     # input checks
+diff --git a/sklearn/metrics/cluster/tests/test_supervised.py b/sklearn/metrics/cluster/tests/test_supervised.py
+index d2d2dd6faa..c176bc83a5 100644
+--- a/sklearn/metrics/cluster/tests/test_supervised.py
++++ b/sklearn/metrics/cluster/tests/test_supervised.py
+@@ -1,3 +1,5 @@
++import warnings
++
+ import numpy as np
+ import pytest
+ 
+@@ -15,6 +17,7 @@ from sklearn.metrics.cluster import normalized_mutual_info_score
+ from sklearn.metrics.cluster import v_measure_score
+ from sklearn.metrics.cluster._supervised import _generalized_average
+ 
++from sklearn.exceptions import DataConversionWarning
+ from sklearn.utils import assert_all_finite
+ from sklearn.utils._testing import (
+         assert_almost_equal, ignore_warnings)
+@@ -337,3 +340,33 @@ def test_fowlkes_mallows_score_properties():
+     # symmetric and permutation(both together)
+     score_both = fowlkes_mallows_score(labels_b, (labels_a + 2) % 3)
+     assert_almost_equal(score_both, expected)
++
++
++@pytest.mark.parametrize("dtype", [str, object])
++@pytest.mark.parametrize(
++    "metric",
++    [adjusted_rand_score, adjusted_mutual_info_score,
++     normalized_mutual_info_score, mutual_info_score, homogeneity_score,
++     completeness_score, v_measure_score, fowlkes_mallows_score])
++def test_clustering_metrics_with_categorical_labels(metric, dtype):
++    # Non-regression test for gh-15535: clustering labels are categorical
++    # identifiers and must be accepted as-is. They used to be coerced to
++    # numeric by ``check_clusterings``, which raised a ValueError for object
++    # dtype arrays and emitted a numeric-conversion FutureWarning for string
++    # (``<U``) arrays. Both must now work without error and without any
++    # numeric-conversion warning.
++    labels_int = np.array([0, 0, 1, 1, 2, 2, 0, 1])
++    labels = np.array(["a", "a", "b", "b", "c", "c", "a", "b"], dtype=dtype)
++
++    with warnings.catch_warnings(record=True) as caught:
++        warnings.simplefilter("always")
++        score = metric(labels, labels)
++
++    # the label validation must not attempt to convert the labels to numbers
++    assert not any(
++        issubclass(w.category, (FutureWarning, DataConversionWarning))
++        for w in caught
++    )
++    # categorical labels yield the same score as their integer encoding
++    assert score == pytest.approx(metric(labels_int, labels_int))
++

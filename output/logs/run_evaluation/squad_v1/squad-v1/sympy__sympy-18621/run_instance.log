@@ -1,0 +1,170 @@
+2026-06-23 07:25:18,516 - INFO - Creating container for sympy__sympy-18621...
+2026-06-23 07:25:19,790 - INFO - Container for sympy__sympy-18621 created: f44855e813f3c49545d89eac1385d1de7ef5ec505666ff8040843da2700b79aa
+2026-06-23 07:25:20,168 - INFO - Container for sympy__sympy-18621 started: f44855e813f3c49545d89eac1385d1de7ef5ec505666ff8040843da2700b79aa
+2026-06-23 07:25:20,182 - INFO - Intermediate patch for sympy__sympy-18621 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18621/patch.diff, now applying to container...
+2026-06-23 07:25:20,451 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:25:20,535 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:25:20,655 - INFO - >>>>> Applied Patch:
+patching file sympy/core/exprtools.py
+Reversed (or previously applied) patch detected!  Assuming -R.
+patching file sympy/core/tests/test_exprtools.py
+Hunk #1 succeeded at 25 with fuzz 1.
+patching file sympy/simplify/tests/test_trigsimp.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 220 with fuzz 1.
+
+2026-06-23 07:25:21,259 - INFO - Git diff before:
+diff --git a/sympy/core/exprtools.py b/sympy/core/exprtools.py
+index 843988b6a8..e67e443aa6 100644
+--- a/sympy/core/exprtools.py
++++ b/sympy/core/exprtools.py
+@@ -448,12 +448,14 @@ def as_expr(self):  # Factors
+         args = []
+         for factor, exp in self.factors.items():
+             if exp != 1:
+-                if isinstance(exp, Integer):
+-                    b, e = factor.as_base_exp()
++                b, e = factor.as_base_exp()
++                if isinstance(exp, int):
++                    e = _keep_coeff(Integer(exp), e)
++                elif isinstance(exp, Rational):
+                     e = _keep_coeff(exp, e)
+-                    args.append(b**e)
+                 else:
+-                    args.append(factor**exp)
++                    e *= exp
++                args.append(b**e)
+             else:
+                 args.append(factor)
+         return Mul(*args)
+diff --git a/sympy/core/tests/test_exprtools.py b/sympy/core/tests/test_exprtools.py
+index 31fe465eb0..c9da514a9d 100644
+--- a/sympy/core/tests/test_exprtools.py
++++ b/sympy/core/tests/test_exprtools.py
+@@ -25,6 +25,12 @@ def test_Factors():
+     assert Factors() == Factors({}) == Factors(S.One)
+     assert Factors().as_expr() is S.One
+     assert Factors({x: 2, y: 3, sin(x): 4}).as_expr() == x**2*y**3*sin(x)**4
++    # issue 18059: a rational (non-integer) exponent must not be multiplied
++    # into an inner even power, i.e. (sin(x)**2)**(1/2) must stay unevaluated.
++    assert Factors(sqrt(sin(x)**2)).as_expr() == sqrt(sin(x)**2)
++    assert Factors({sin(x)**2: S.Half}).as_expr() == sqrt(sin(x)**2)
++    # integer outer exponents may still be flattened as before
++    assert Factors({x**2: 3}).as_expr() == x**6
+     assert Factors(S.Infinity) == Factors({oo: 1})
+     assert Factors(S.NegativeInfinity) == Factors({oo: 1, -1: 1})
+     # issue #18059:
+diff --git a/sympy/simplify/tests/test_trigsimp.py b/sympy/simplify/tests/test_trigsimp.py
+index e688241cd5..b16933d866 100644
+--- a/sympy/simplify/tests/test_trigsimp.py
++++ b/sympy/simplify/tests/test_trigsimp.py
+@@ -1,7 +1,8 @@
+ from sympy import (
+     symbols, sin, simplify, cos, trigsimp, tan, exptrigsimp,sinh,
+     cosh, diff, cot, Subs, exp, tanh, S, integrate, I,Matrix,
+-    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational
++    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational,
++    Abs
+     )
+ 
+ from sympy.core.compatibility import long
+@@ -219,6 +220,16 @@ def test_trigsimp_issue_7761():
+     assert trigsimp(cosh(pi/4)) == cosh(pi/4)
+ 
+ 
++def test_issue_18059():
++    # cos(x) + sqrt(sin(x)**2) must not be simplified as cos(x) + sin(x) for
++    # general (complex) x, since sqrt(sin(x)**2) != sin(x) (it is Abs(sin(x))
++    # only for real x).
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) == cos(x) + sqrt(sin(x)**2)
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) != cos(x) + sin(x)
++    xr = Symbol('xr', real=True)
++    assert trigsimp(cos(xr) + sqrt(sin(xr)**2)) == cos(xr) + Abs(sin(xr))
++
++
+ def test_trigsimp_noncommutative():
+     x, y = symbols('x,y')
+     A, B = symbols('A,B', commutative=False)
+2026-06-23 07:25:21,266 - INFO - Eval script for sympy__sympy-18621 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18621/eval.sh; copying to container...
+2026-06-23 07:25:26,879 - INFO - Test runtime: 5.48 seconds
+2026-06-23 07:25:26,884 - INFO - Test output for sympy__sympy-18621 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-18621/test_output.txt
+2026-06-23 07:25:26,977 - INFO - Git diff after:
+diff --git a/sympy/core/exprtools.py b/sympy/core/exprtools.py
+index 843988b6a8..e67e443aa6 100644
+--- a/sympy/core/exprtools.py
++++ b/sympy/core/exprtools.py
+@@ -448,12 +448,14 @@ def as_expr(self):  # Factors
+         args = []
+         for factor, exp in self.factors.items():
+             if exp != 1:
+-                if isinstance(exp, Integer):
+-                    b, e = factor.as_base_exp()
++                b, e = factor.as_base_exp()
++                if isinstance(exp, int):
++                    e = _keep_coeff(Integer(exp), e)
++                elif isinstance(exp, Rational):
+                     e = _keep_coeff(exp, e)
+-                    args.append(b**e)
+                 else:
+-                    args.append(factor**exp)
++                    e *= exp
++                args.append(b**e)
+             else:
+                 args.append(factor)
+         return Mul(*args)
+diff --git a/sympy/core/tests/test_exprtools.py b/sympy/core/tests/test_exprtools.py
+index 31fe465eb0..c9da514a9d 100644
+--- a/sympy/core/tests/test_exprtools.py
++++ b/sympy/core/tests/test_exprtools.py
+@@ -25,6 +25,12 @@ def test_Factors():
+     assert Factors() == Factors({}) == Factors(S.One)
+     assert Factors().as_expr() is S.One
+     assert Factors({x: 2, y: 3, sin(x): 4}).as_expr() == x**2*y**3*sin(x)**4
++    # issue 18059: a rational (non-integer) exponent must not be multiplied
++    # into an inner even power, i.e. (sin(x)**2)**(1/2) must stay unevaluated.
++    assert Factors(sqrt(sin(x)**2)).as_expr() == sqrt(sin(x)**2)
++    assert Factors({sin(x)**2: S.Half}).as_expr() == sqrt(sin(x)**2)
++    # integer outer exponents may still be flattened as before
++    assert Factors({x**2: 3}).as_expr() == x**6
+     assert Factors(S.Infinity) == Factors({oo: 1})
+     assert Factors(S.NegativeInfinity) == Factors({oo: 1, -1: 1})
+     # issue #18059:
+diff --git a/sympy/simplify/tests/test_trigsimp.py b/sympy/simplify/tests/test_trigsimp.py
+index e688241cd5..b16933d866 100644
+--- a/sympy/simplify/tests/test_trigsimp.py
++++ b/sympy/simplify/tests/test_trigsimp.py
+@@ -1,7 +1,8 @@
+ from sympy import (
+     symbols, sin, simplify, cos, trigsimp, tan, exptrigsimp,sinh,
+     cosh, diff, cot, Subs, exp, tanh, S, integrate, I,Matrix,
+-    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational
++    Symbol, coth, pi, log, count_ops, sqrt, E, expand, Piecewise , Rational,
++    Abs
+     )
+ 
+ from sympy.core.compatibility import long
+@@ -219,6 +220,16 @@ def test_trigsimp_issue_7761():
+     assert trigsimp(cosh(pi/4)) == cosh(pi/4)
+ 
+ 
++def test_issue_18059():
++    # cos(x) + sqrt(sin(x)**2) must not be simplified as cos(x) + sin(x) for
++    # general (complex) x, since sqrt(sin(x)**2) != sin(x) (it is Abs(sin(x))
++    # only for real x).
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) == cos(x) + sqrt(sin(x)**2)
++    assert trigsimp(cos(x) + sqrt(sin(x)**2)) != cos(x) + sin(x)
++    xr = Symbol('xr', real=True)
++    assert trigsimp(cos(xr) + sqrt(sin(xr)**2)) == cos(xr) + Abs(sin(xr))
++
++
+ def test_trigsimp_noncommutative():
+     x, y = symbols('x,y')
+     A, B = symbols('A,B', commutative=False)
+2026-06-23 07:25:26,977 - INFO - Grading answer for sympy__sympy-18621...
+2026-06-23 07:25:26,983 - INFO - report: {'sympy__sympy-18621': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_issue_18618']}, 'PASS_TO_PASS': {'success': ['test_bc_matmul', 'test_bc_matadd', 'test_bc_transpose', 'test_bc_dist_diag', 'test_block_plus_ident', 'test_BlockMatrix', 'test_block_collapse_explicit_matrices', 'test_issue_17624', 'test_BlockMatrix_trace', 'test_BlockMatrix_Determinant', 'test_squareBlockMatrix', 'test_BlockDiagMatrix', 'test_blockcut', 'test_reblock_2x2', 'test_deblock'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-18621: resolved: False
+2026-06-23 07:25:26,989 - INFO - Attempting to stop container sweb.eval.sympy__sympy-18621.squad_v1...
+2026-06-23 07:25:42,662 - INFO - Attempting to remove container sweb.eval.sympy__sympy-18621.squad_v1...
+2026-06-23 07:25:42,834 - INFO - Container sweb.eval.sympy__sympy-18621.squad_v1 removed.
+2026-06-23 07:25:42,836 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-18621:latest...
+2026-06-23 07:25:43,148 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-18621:latest removed.

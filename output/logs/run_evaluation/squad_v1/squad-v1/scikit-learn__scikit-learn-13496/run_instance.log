@@ -1,0 +1,3657 @@
+2026-06-23 06:50:47,859 - INFO - Creating container for scikit-learn__scikit-learn-13496...
+2026-06-23 06:50:50,744 - INFO - Container for scikit-learn__scikit-learn-13496 created: 76634c9f234f744c33d98b02f7662ce6a42c503d29e1f6253cd2a82ed2491af7
+2026-06-23 06:50:51,300 - INFO - Container for scikit-learn__scikit-learn-13496 started: 76634c9f234f744c33d98b02f7662ce6a42c503d29e1f6253cd2a82ed2491af7
+2026-06-23 06:50:51,316 - INFO - Intermediate patch for scikit-learn__scikit-learn-13496 written to logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/patch.diff, now applying to container...
+2026-06-23 06:50:51,812 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:50:51,982 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:50:52,172 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 06:50:52,173 - INFO - >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+2026-06-23 06:50:52,220 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:50:52,224 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,226 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,227 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,228 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,229 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,230 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,231 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,233 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,234 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,236 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,237 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,238 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,241 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,244 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,245 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,246 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,246 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,247 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,248 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,249 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,250 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,251 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,252 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,253 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,254 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,255 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,264 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,269 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,273 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,275 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,276 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,278 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,280 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,285 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,288 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,291 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,291 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,292 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,293 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,294 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,294 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,295 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,296 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,296 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,298 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,306 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,307 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,309 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,314 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,317 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,317 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,320 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,320 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,323 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,324 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,330 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,334 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,381 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,392 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,396 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,397 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,398 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,399 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,402 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,403 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,406 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,407 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,414 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,422 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,440 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,441 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,448 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,451 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,457 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,459 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,463 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:50:52,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,532 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,540 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,544 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,551 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,553 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,554 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,554 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,557 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,561 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,563 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,564 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,565 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,569 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,570 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,571 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,571 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,572 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,573 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,575 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,576 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,577 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,580 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,582 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,595 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,597 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,599 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,603 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,605 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,605 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,607 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,609 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,609 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,610 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,611 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,612 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,617 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,621 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,641 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-13496: >>>>> Patch Apply Failed:
+patching file examples/ensemble/plot_isolation_forest.py
+patching file sklearn/ensemble/iforest.py
+patching file sklearn/ensemble/tests/test_iforest.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 80:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-13496/run_instance.log) for more information.
+
+2026-06-23 06:50:52,659 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-13496.squad_v1...
+2026-06-23 06:51:14,319 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-13496.squad_v1...
+2026-06-23 06:51:16,419 - INFO - Container sweb.eval.scikit-learn__scikit-learn-13496.squad_v1 removed.
+2026-06-23 06:51:16,421 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496:latest...
+2026-06-23 06:51:22,227 - INFO - Image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-13496:latest removed.

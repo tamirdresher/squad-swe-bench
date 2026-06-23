@@ -1,0 +1,136 @@
+2026-06-23 07:12:21,289 - INFO - Creating container for sympy__sympy-13043...
+2026-06-23 07:12:35,887 - INFO - Container for sympy__sympy-13043 created: 375c47dc5f5c36e87c27581605db72e72789abceaa19ce462e00d08fba892d39
+2026-06-23 07:12:36,397 - INFO - Container for sympy__sympy-13043 started: 375c47dc5f5c36e87c27581605db72e72789abceaa19ce462e00d08fba892d39
+2026-06-23 07:12:36,405 - INFO - Intermediate patch for sympy__sympy-13043 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13043/patch.diff, now applying to container...
+2026-06-23 07:12:36,676 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:12:36,760 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:12:36,854 - INFO - >>>>> Applied Patch:
+patching file sympy/integrals/intpoly.py
+patching file sympy/integrals/tests/test_intpoly.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 26 with fuzz 1.
+
+2026-06-23 07:12:37,238 - INFO - Git diff before:
+diff --git a/sympy/integrals/intpoly.py b/sympy/integrals/intpoly.py
+index fc72bd206f..52f45b3f39 100644
+--- a/sympy/integrals/intpoly.py
++++ b/sympy/integrals/intpoly.py
+@@ -546,7 +546,7 @@ def decompose(expr, separate=False):
+ 
+     Optional Parameters :
+ 
+-    separate : If True then simply return a list of the constituent monomials
++    separate : If True then simply return a set of the constituent monomials
+                If not then break up the polynomial into constituent homogeneous
+                polynomials.
+     Examples
+@@ -555,8 +555,8 @@ def decompose(expr, separate=False):
+     >>> from sympy.integrals.intpoly import decompose
+     >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5)
+     {1: x + y, 2: x**2 + x*y, 5: x**3*y**2 + y**5}
+-    >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5, True)
+-    [x, y, x**2, y**5, x*y, x**3*y**2]
++    >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5, True)  # doctest: +SKIP
++    {x, y, x**2, y**5, x*y, x**3*y**2}
+     """
+     expr = S(expr)
+     poly_dict = {}
+@@ -569,7 +569,7 @@ def decompose(expr, separate=False):
+             degrees = [(sum(degree_list(monom, *symbols)), monom)
+                        for monom in expr.args]
+             if separate:
+-                return [monom[1] for monom in degrees]
++                return {monom[1] for monom in degrees}
+             else:
+                 for monom in degrees:
+                     degree, term = monom
+@@ -593,7 +593,7 @@ def decompose(expr, separate=False):
+         poly_dict[0] = expr
+ 
+     if separate:
+-        return list(poly_dict.values())
++        return set(poly_dict.values())
+     return poly_dict
+ 
+ 
+diff --git a/sympy/integrals/tests/test_intpoly.py b/sympy/integrals/tests/test_intpoly.py
+index 1e0cc29731..93f5f01cfd 100644
+--- a/sympy/integrals/tests/test_intpoly.py
++++ b/sympy/integrals/tests/test_intpoly.py
+@@ -26,15 +26,15 @@ def test_decompose():
+     assert decompose(9*x**2 + y + 4*x + x**3 + y**2*x + 3) ==\
+         {0: 3, 1: 4*x + y, 2: 9*x**2, 3: x**3 + x*y**2}
+ 
+-    assert decompose(x, True) == [x]
+-    assert decompose(x ** 2, True) == [x ** 2]
+-    assert decompose(x * y, True) == [x * y]
+-    assert decompose(x + y, True) == [x, y]
+-    assert decompose(x ** 2 + y, True) == [y, x ** 2]
+-    assert decompose(8 * x ** 2 + 4 * y + 7, True) == [7, 4*y, 8*x**2]
+-    assert decompose(x ** 2 + 3 * y * x, True) == [x ** 2, 3 * x * y]
++    assert decompose(x, True) == {x}
++    assert decompose(x ** 2, True) == {x ** 2}
++    assert decompose(x * y, True) == {x * y}
++    assert decompose(x + y, True) == {x, y}
++    assert decompose(x ** 2 + y, True) == {y, x ** 2}
++    assert decompose(8 * x ** 2 + 4 * y + 7, True) == {7, 4*y, 8*x**2}
++    assert decompose(x ** 2 + 3 * y * x, True) == {x ** 2, 3 * x * y}
+     assert decompose(9 * x ** 2 + y + 4 * x + x ** 3 + y ** 2 * x + 3, True) == \
+-           [3, y, x**3, 4*x, 9*x**2, x*y**2]
++           {3, y, x**3, 4*x, 9*x**2, x*y**2}
+ 
+ 
+ def test_best_origin():
+2026-06-23 07:12:37,244 - INFO - Eval script for sympy__sympy-13043 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13043/eval.sh; copying to container...
+2026-06-23 07:12:41,959 - INFO - Test runtime: 4.60 seconds
+2026-06-23 07:12:41,965 - INFO - Test output for sympy__sympy-13043 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13043/test_output.txt
+2026-06-23 07:12:42,058 - INFO - Git diff after:
+diff --git a/sympy/integrals/intpoly.py b/sympy/integrals/intpoly.py
+index fc72bd206f..52f45b3f39 100644
+--- a/sympy/integrals/intpoly.py
++++ b/sympy/integrals/intpoly.py
+@@ -546,7 +546,7 @@ def decompose(expr, separate=False):
+ 
+     Optional Parameters :
+ 
+-    separate : If True then simply return a list of the constituent monomials
++    separate : If True then simply return a set of the constituent monomials
+                If not then break up the polynomial into constituent homogeneous
+                polynomials.
+     Examples
+@@ -555,8 +555,8 @@ def decompose(expr, separate=False):
+     >>> from sympy.integrals.intpoly import decompose
+     >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5)
+     {1: x + y, 2: x**2 + x*y, 5: x**3*y**2 + y**5}
+-    >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5, True)
+-    [x, y, x**2, y**5, x*y, x**3*y**2]
++    >>> decompose(x**2 + x*y + x + y + x**3*y**2 + y**5, True)  # doctest: +SKIP
++    {x, y, x**2, y**5, x*y, x**3*y**2}
+     """
+     expr = S(expr)
+     poly_dict = {}
+@@ -569,7 +569,7 @@ def decompose(expr, separate=False):
+             degrees = [(sum(degree_list(monom, *symbols)), monom)
+                        for monom in expr.args]
+             if separate:
+-                return [monom[1] for monom in degrees]
++                return {monom[1] for monom in degrees}
+             else:
+                 for monom in degrees:
+                     degree, term = monom
+@@ -593,7 +593,7 @@ def decompose(expr, separate=False):
+         poly_dict[0] = expr
+ 
+     if separate:
+-        return list(poly_dict.values())
++        return set(poly_dict.values())
+     return poly_dict
+2026-06-23 07:12:42,059 - INFO - Git diff changed after running eval script
+2026-06-23 07:12:42,059 - INFO - Grading answer for sympy__sympy-13043...
+2026-06-23 07:12:42,070 - INFO - report: {'sympy__sympy-13043': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_decompose'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_best_origin'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-13043: resolved: True
+2026-06-23 07:12:42,075 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13043.squad_v1...
+2026-06-23 07:12:57,954 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13043.squad_v1...
+2026-06-23 07:12:58,074 - INFO - Container sweb.eval.sympy__sympy-13043.squad_v1 removed.
+2026-06-23 07:12:58,074 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13043:latest...
+2026-06-23 07:12:58,320 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13043:latest removed.

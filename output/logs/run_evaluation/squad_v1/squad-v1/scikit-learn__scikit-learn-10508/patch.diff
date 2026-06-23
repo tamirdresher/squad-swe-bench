@@ -1,0 +1,46 @@
+diff --git a/sklearn/preprocessing/label.py b/sklearn/preprocessing/label.py
+index 61b8d4a21a..3151785530 100644
+--- a/sklearn/preprocessing/label.py
++++ b/sklearn/preprocessing/label.py
+@@ -126,6 +126,9 @@ class LabelEncoder(BaseEstimator, TransformerMixin):
+         """
+         check_is_fitted(self, 'classes_')
+         y = column_or_1d(y, warn=True)
++        # transform of empty array is empty array
++        if _num_samples(y) == 0:
++            return np.array([])
+ 
+         classes = np.unique(y)
+         if len(np.intersect1d(classes, self.classes_)) < len(classes):
+@@ -147,6 +150,9 @@ class LabelEncoder(BaseEstimator, TransformerMixin):
+         y : numpy array of shape [n_samples]
+         """
+         check_is_fitted(self, 'classes_')
++        # inverse transform of empty array is empty array
++        if _num_samples(y) == 0:
++            return np.array([])
+ 
+         diff = np.setdiff1d(y, np.arange(len(self.classes_)))
+         if len(diff):
+diff --git a/sklearn/preprocessing/tests/test_label.py b/sklearn/preprocessing/tests/test_label.py
+index 4f64fc6b46..f376d7b744 100644
+--- a/sklearn/preprocessing/tests/test_label.py
++++ b/sklearn/preprocessing/tests/test_label.py
+@@ -209,6 +209,17 @@ def test_label_encoder_errors():
+     assert_raise_message(ValueError, msg, le.inverse_transform, [-2, -3, -4])
+ 
+ 
++def test_label_encoder_empty_array():
++    le = LabelEncoder()
++    le.fit(np.array(["1", "2", "1", "2", "2"]))
++    # test empty transform
++    transformed = le.transform([])
++    assert_array_equal(np.array([]), transformed)
++    # test empty inverse transform
++    inverse_transformed = le.inverse_transform([])
++    assert_array_equal(np.array([]), inverse_transformed)
++
++
+ def test_sparse_output_multilabel_binarizer():
+     # test input as iterable of iterables
+     inputs = [

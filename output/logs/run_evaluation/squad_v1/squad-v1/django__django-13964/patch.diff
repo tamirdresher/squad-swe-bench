@@ -1,0 +1,65 @@
+diff --git a/django/db/models/base.py b/django/db/models/base.py
+index 2428218696..fd8e0806b1 100644
+--- a/django/db/models/base.py
++++ b/django/db/models/base.py
+@@ -933,7 +933,7 @@ class Model(metaclass=ModelBase):
+                         "%s() prohibited to prevent data loss due to unsaved "
+                         "related object '%s'." % (operation_name, field.name)
+                     )
+-                elif getattr(self, field.attname) is None:
++                elif getattr(self, field.attname) in field.empty_values:
+                     # Use pk from related object if it has been saved after
+                     # an assignment.
+                     setattr(self, field.attname, obj.pk)
+diff --git a/tests/many_to_one/models.py b/tests/many_to_one/models.py
+index e9f8fbff76..c73a844d84 100644
+--- a/tests/many_to_one/models.py
++++ b/tests/many_to_one/models.py
+@@ -81,6 +81,14 @@ class ToFieldChild(models.Model):
+     parent = models.ForeignKey(Parent, models.CASCADE, to_field='name', related_name='to_field_children')
+ 
+ 
++class StringPrimaryKeyParent(models.Model):
++    name = models.CharField(primary_key=True, max_length=20)
++
++
++class StringPrimaryKeyChild(models.Model):
++    parent = models.ForeignKey(StringPrimaryKeyParent, models.CASCADE)
++
++
+ # Multiple paths to the same model (#7110, #7125)
+ class Category(models.Model):
+     name = models.CharField(max_length=20)
+diff --git a/tests/many_to_one/tests.py b/tests/many_to_one/tests.py
+index 3c7cd0c3fa..7c7c15402c 100644
+--- a/tests/many_to_one/tests.py
++++ b/tests/many_to_one/tests.py
+@@ -8,8 +8,8 @@ from django.utils.translation import gettext_lazy
+ 
+ from .models import (
+     Article, Category, Child, ChildNullableParent, City, Country, District,
+-    First, Parent, Record, Relation, Reporter, School, Student, Third,
+-    ToFieldChild,
++    First, Parent, Record, Relation, Reporter, School, StringPrimaryKeyChild,
++    StringPrimaryKeyParent, Student, Third, ToFieldChild,
+ )
+ 
+ 
+@@ -549,6 +549,17 @@ class ManyToOneTests(TestCase):
+         self.assertEqual(child.parent, parent)
+         self.assertEqual(child.parent_id, parent.name)
+ 
++    def test_save_parent_after_assign_related_with_charfield_pk(self):
++        parent = StringPrimaryKeyParent()
++        child = StringPrimaryKeyChild(parent=parent)
++        parent.name = 'jeff'
++        parent.save()
++        child.save()
++        self.assertEqual(child.parent_id, parent.pk)
++        self.assertEqual(child.parent_id, 'jeff')
++        self.assertTrue(StringPrimaryKeyChild.objects.filter(parent=parent).exists())
++        self.assertFalse(StringPrimaryKeyChild.objects.filter(parent_id='').exists())
++
+     def test_fk_to_bigautofield(self):
+         ch = City.objects.create(name='Chicago')
+         District.objects.create(city=ch, name='Far South')

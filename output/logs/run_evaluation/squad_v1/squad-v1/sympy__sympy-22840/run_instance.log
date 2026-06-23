@@ -1,0 +1,124 @@
+2026-06-23 07:33:32,311 - INFO - Creating container for sympy__sympy-22840...
+2026-06-23 07:33:35,352 - INFO - Container for sympy__sympy-22840 created: 66b7234acaed7b43cf6bd48332b16cb9610b59076d47b1bb53c28a0d5f1d5ce4
+2026-06-23 07:33:35,770 - INFO - Container for sympy__sympy-22840 started: 66b7234acaed7b43cf6bd48332b16cb9610b59076d47b1bb53c28a0d5f1d5ce4
+2026-06-23 07:33:35,779 - INFO - Intermediate patch for sympy__sympy-22840 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22840/patch.diff, now applying to container...
+2026-06-23 07:33:36,016 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:33:36,095 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:33:36,192 - INFO - >>>>> Applied Patch:
+patching file sympy/simplify/cse_main.py
+patching file sympy/simplify/tests/test_cse.py
+patching file sympy/utilities/tests/test_codegen.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 531 with fuzz 1.
+
+2026-06-23 07:33:36,795 - INFO - Git diff before:
+diff --git a/sympy/simplify/cse_main.py b/sympy/simplify/cse_main.py
+index d649dd02a9..88e3f9335e 100644
+--- a/sympy/simplify/cse_main.py
++++ b/sympy/simplify/cse_main.py
+@@ -567,6 +567,7 @@ def tree_cse(exprs, symbols, opt_subs=None, order='canonical', ignore=()):
+         Substitutions containing any Symbol from ``ignore`` will be ignored.
+     """
+     from sympy.matrices.expressions import MatrixExpr, MatrixSymbol, MatMul, MatAdd
++    from sympy.matrices.expressions.matexpr import MatrixElement
+     from sympy.polys.rootoftools import RootOf
+ 
+     if opt_subs is None:
+@@ -586,7 +587,10 @@ def _find_repeated(expr):
+         if isinstance(expr, RootOf):
+             return
+ 
+-        if isinstance(expr, Basic) and (expr.is_Atom or expr.is_Order):
++        if isinstance(expr, Basic) and (
++                expr.is_Atom or
++                expr.is_Order or
++                isinstance(expr, (MatrixSymbol, MatrixElement))):
+             if expr.is_Symbol:
+                 excluded_symbols.add(expr)
+             return
+diff --git a/sympy/simplify/tests/test_cse.py b/sympy/simplify/tests/test_cse.py
+index eb9cc23131..ed6c97d72f 100644
+--- a/sympy/simplify/tests/test_cse.py
++++ b/sympy/simplify/tests/test_cse.py
+@@ -347,6 +347,10 @@ def test_cse_MatrixSymbol():
+     B = MatrixSymbol("B", n, n)
+     assert cse(B) == ([], [B])
+ 
++    assert cse(A[0] * A[0]) == ([], [A[0]*A[0]])
++
++    assert cse(A[0,0]*A[0,1] + A[0,0]*A[0,1]*A[0,2]) == ([(x0, A[0, 0]*A[0, 1])], [x0*A[0, 2] + x0])
++
+ def test_cse_MatrixExpr():
+     A = MatrixSymbol('A', 3, 3)
+     y = MatrixSymbol('y', 3, 1)
+diff --git a/sympy/utilities/tests/test_codegen.py b/sympy/utilities/tests/test_codegen.py
+index 9d90e3d8a4..f90d5eaa68 100644
+--- a/sympy/utilities/tests/test_codegen.py
++++ b/sympy/utilities/tests/test_codegen.py
+@@ -531,26 +531,9 @@ def test_multidim_c_argument_cse():
+         '#include "test.h"\n'
+         "#include <math.h>\n"
+         "void c(double *A, double *b, double *out) {\n"
+-        "   double x0[9];\n"
+-        "   x0[0] = A[0];\n"
+-        "   x0[1] = A[1];\n"
+-        "   x0[2] = A[2];\n"
+-        "   x0[3] = A[3];\n"
+-        "   x0[4] = A[4];\n"
+-        "   x0[5] = A[5];\n"
+-        "   x0[6] = A[6];\n"
+-        "   x0[7] = A[7];\n"
+-        "   x0[8] = A[8];\n"
+-        "   double x1[3];\n"
+-        "   x1[0] = b[0];\n"
+-        "   x1[1] = b[1];\n"
+-        "   x1[2] = b[2];\n"
+-        "   const double x2 = x1[0];\n"
+-        "   const double x3 = x1[1];\n"
+-        "   const double x4 = x1[2];\n"
+-        "   out[0] = x2*x0[0] + x3*x0[1] + x4*x0[2];\n"
+-        "   out[1] = x2*x0[3] + x3*x0[4] + x4*x0[5];\n"
+-        "   out[2] = x2*x0[6] + x3*x0[7] + x4*x0[8];\n"
++        "   out[0] = A[0]*b[0] + A[1]*b[1] + A[2]*b[2];\n"
++        "   out[1] = A[3]*b[0] + A[4]*b[1] + A[5]*b[2];\n"
++        "   out[2] = A[6]*b[0] + A[7]*b[1] + A[8]*b[2];\n"
+         "}\n"
+     )
+     assert code == expected
+2026-06-23 07:33:36,801 - INFO - Eval script for sympy__sympy-22840 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22840/eval.sh; copying to container...
+2026-06-23 07:33:55,681 - INFO - Test runtime: 18.73 seconds
+2026-06-23 07:33:55,686 - INFO - Test output for sympy__sympy-22840 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22840/test_output.txt
+2026-06-23 07:33:55,798 - INFO - Git diff after:
+diff --git a/sympy/simplify/cse_main.py b/sympy/simplify/cse_main.py
+index d649dd02a9..88e3f9335e 100644
+--- a/sympy/simplify/cse_main.py
++++ b/sympy/simplify/cse_main.py
+@@ -567,6 +567,7 @@ def tree_cse(exprs, symbols, opt_subs=None, order='canonical', ignore=()):
+         Substitutions containing any Symbol from ``ignore`` will be ignored.
+     """
+     from sympy.matrices.expressions import MatrixExpr, MatrixSymbol, MatMul, MatAdd
++    from sympy.matrices.expressions.matexpr import MatrixElement
+     from sympy.polys.rootoftools import RootOf
+ 
+     if opt_subs is None:
+@@ -586,7 +587,10 @@ def _find_repeated(expr):
+         if isinstance(expr, RootOf):
+             return
+ 
+-        if isinstance(expr, Basic) and (expr.is_Atom or expr.is_Order):
++        if isinstance(expr, Basic) and (
++                expr.is_Atom or
++                expr.is_Order or
++                isinstance(expr, (MatrixSymbol, MatrixElement))):
+             if expr.is_Symbol:
+                 excluded_symbols.add(expr)
+             return
+2026-06-23 07:33:55,799 - INFO - Git diff changed after running eval script
+2026-06-23 07:33:55,799 - INFO - Grading answer for sympy__sympy-22840...
+2026-06-23 07:33:55,806 - INFO - report: {'sympy__sympy-22840': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_cse_MatrixSymbol', 'test_multidim_c_argument_cse'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_numbered_symbols', 'test_preprocess_for_cse', 'test_postprocess_for_cse', 'test_cse_single', 'test_cse_single2', 'test_cse_not_possible', 'test_nested_substitution', 'test_subtraction_opt', 'test_multiple_expressions', 'test_bypass_non_commutatives', 'test_issue_4498', 'test_issue_4020', 'test_issue_4203', 'test_issue_6263', 'test_dont_cse_tuples', 'test_pow_invpow', 'test_postprocess', 'test_issue_4499', 'test_issue_6169', 'test_cse_Indexed', 'test_cse_MatrixExpr', 'test_Piecewise', 'test_ignore_order_terms', 'test_name_conflict', 'test_name_conflict_cust_symbols', 'test_symbols_exhausted_error', 'test_issue_7840', 'test_issue_8891', 'test_issue_11230', 'test_hollow_rejection', 'test_cse_ignore', 'test_cse_ignore_issue_15002', 'test_cse__performance', 'test_issue_12070', 'test_issue_13000', 'test_issue_18203', 'test_unevaluated_mul', 'test_cse_release_variables', 'test_cse_list', 'test_issue_18991', 'test_Routine_argument_order', 'test_empty_c_code', 'test_empty_c_code_with_comment', 'test_empty_c_header', 'test_simple_c_code', 'test_c_code_reserved_words', 'test_numbersymbol_c_code', 'test_c_code_argument_order', 'test_simple_c_header', 'test_simple_c_codegen', 'test_multiple_results_c', 'test_no_results_c', 'test_ansi_math1_codegen', 'test_ansi_math2_codegen', 'test_complicated_codegen', 'test_loops_c', 'test_dummy_loops_c', 'test_partial_loops_c', 'test_output_arg_c', 'test_output_arg_c_reserved_words', 'test_ccode_results_named_ordered', 'test_ccode_matrixsymbol_slice', 'test_ccode_cse', 'test_ccode_unused_array_arg', 'test_empty_f_code', 'test_empty_f_code_with_header', 'test_empty_f_header', 'test_simple_f_code', 'test_numbersymbol_f_code', 'test_erf_f_code', 'test_f_code_argument_order', 'test_simple_f_header', 'test_simple_f_codegen', 'test_multiple_results_f', 'test_no_results_f', 'test_intrinsic_math_codegen', 'test_intrinsic_math2_codegen', 'test_complicated_codegen_f95', 'test_loops', 'test_dummy_loops_f95', 'test_loops_InOut', 'test_partial_loops_f', 'test_output_arg_f', 'test_inline_function', 'test_f_code_call_signature_wrap', 'test_check_case', 'test_check_case_false_positive', 'test_c_fortran_omit_routine_name', 'test_fcode_matrix_output', 'test_fcode_results_named_ordered', 'test_fcode_matrixsymbol_slice', 'test_fcode_matrixsymbol_slice_autoname', 'test_global_vars', 'test_custom_codegen', 'test_c_with_printer'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-22840: resolved: True
+2026-06-23 07:33:55,813 - INFO - Attempting to stop container sweb.eval.sympy__sympy-22840.squad_v1...
+2026-06-23 07:34:12,765 - INFO - Attempting to remove container sweb.eval.sympy__sympy-22840.squad_v1...
+2026-06-23 07:34:13,025 - INFO - Container sweb.eval.sympy__sympy-22840.squad_v1 removed.
+2026-06-23 07:34:13,026 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-22840:latest...
+2026-06-23 07:34:13,362 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-22840:latest removed.

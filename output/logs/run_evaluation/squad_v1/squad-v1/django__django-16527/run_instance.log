@@ -1,0 +1,108 @@
+2026-06-23 05:28:03,617 - INFO - Creating container for django__django-16527...
+2026-06-23 05:28:27,068 - INFO - Container for django__django-16527 created: 4b24b94585c34cbd51845a10b87f4a7eafe125d2f59b872ff1108c7fd762cd7e
+2026-06-23 05:28:27,656 - INFO - Container for django__django-16527 started: 4b24b94585c34cbd51845a10b87f4a7eafe125d2f59b872ff1108c7fd762cd7e
+2026-06-23 05:28:27,673 - INFO - Intermediate patch for django__django-16527 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16527/patch.diff, now applying to container...
+2026-06-23 05:28:27,922 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:28:28,039 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:28:28,184 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/templatetags/admin_modify.py
+patching file tests/admin_views/test_templatetags.py
+patch unexpectedly ends in middle of line
+Hunk #3 succeeded at 39 with fuzz 1.
+
+2026-06-23 05:28:29,325 - INFO - Git diff before:
+diff --git a/django/contrib/admin/templatetags/admin_modify.py b/django/contrib/admin/templatetags/admin_modify.py
+index 9df4b7aadb..5b742af46a 100644
+--- a/django/contrib/admin/templatetags/admin_modify.py
++++ b/django/contrib/admin/templatetags/admin_modify.py
+@@ -100,6 +100,7 @@ def submit_row(context):
+                 and context.get("show_delete", True)
+             ),
+             "show_save_as_new": not is_popup
++            and has_add_permission
+             and has_change_permission
+             and change
+             and save_as,
+diff --git a/tests/admin_views/test_templatetags.py b/tests/admin_views/test_templatetags.py
+index a13133095b..72053e83f4 100644
+--- a/tests/admin_views/test_templatetags.py
++++ b/tests/admin_views/test_templatetags.py
+@@ -4,7 +4,8 @@ from django.contrib.admin import ModelAdmin
+ from django.contrib.admin.templatetags.admin_list import date_hierarchy
+ from django.contrib.admin.templatetags.admin_modify import submit_row
+ from django.contrib.auth.admin import UserAdmin
+-from django.contrib.auth.models import User
++from django.contrib.auth.models import Permission, User
++from django.contrib.contenttypes.models import ContentType
+ from django.test import RequestFactory, TestCase
+ from django.urls import reverse
+ 
+@@ -16,6 +17,11 @@ from .tests import AdminViewBasicTestCase
+ class AdminTemplateTagsTest(AdminViewBasicTestCase):
+     request_factory = RequestFactory()
+ 
++    @classmethod
++    def setUpTestData(cls):
++        super().setUpTestData()
++        cls.user_content_type = ContentType.objects.get_for_model(User)
++
+     def test_submit_row(self):
+         """
+         submit_row template tag should pass whole context.
+@@ -33,6 +39,31 @@ class AdminTemplateTagsTest(AdminViewBasicTestCase):
+         self.assertIs(template_context["extra"], True)
+         self.assertIs(template_context["show_save"], True)
+ 
++    def test_submit_row_save_as_new_add_permission_required(self):
++        change_user = User.objects.create_user(
++            username="change_user", password="secret", is_staff=True
++        )
++        permission = Permission.objects.get(
++            codename="change_user", content_type=self.user_content_type
++        )
++        change_user.user_permissions.add(permission)
++        request = self.request_factory.get(
++            reverse("admin:auth_user_change", args=[self.superuser.pk])
++        )
++        request.user = change_user
++        admin = UserAdmin(User, site)
++        admin.save_as = True
++        response = admin.change_view(request, str(self.superuser.pk))
++        template_context = submit_row(response.context_data)
++        # A user with only change permission (no add permission) must not see
++        # "Save as new", because it performs an add operation.
++        self.assertIs(template_context["show_save_as_new"], False)
++        # A superuser has add permission, so "Save as new" is available.
++        request.user = self.superuser
++        response = admin.change_view(request, str(self.superuser.pk))
++        template_context = submit_row(response.context_data)
++        self.assertIs(template_context["show_save_as_new"], True)
++
+     def test_override_show_save_and_add_another(self):
+         request = self.request_factory.get(
+             reverse("admin:auth_user_change", args=[self.superuser.pk]),
+2026-06-23 05:28:29,331 - INFO - Eval script for django__django-16527 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16527/eval.sh; copying to container...
+2026-06-23 05:28:37,737 - INFO - Test runtime: 8.26 seconds
+2026-06-23 05:28:37,742 - INFO - Test output for django__django-16527 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16527/test_output.txt
+2026-06-23 05:28:37,829 - INFO - Git diff after:
+diff --git a/django/contrib/admin/templatetags/admin_modify.py b/django/contrib/admin/templatetags/admin_modify.py
+index 9df4b7aadb..5b742af46a 100644
+--- a/django/contrib/admin/templatetags/admin_modify.py
++++ b/django/contrib/admin/templatetags/admin_modify.py
+@@ -100,6 +100,7 @@ def submit_row(context):
+                 and context.get("show_delete", True)
+             ),
+             "show_save_as_new": not is_popup
++            and has_add_permission
+             and has_change_permission
+             and change
+             and save_as,
+2026-06-23 05:28:37,829 - INFO - Git diff changed after running eval script
+2026-06-23 05:28:37,829 - INFO - Grading answer for django__django-16527...
+2026-06-23 05:28:37,835 - INFO - report: {'django__django-16527': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_submit_row_save_as_new_add_permission_required (admin_views.test_templatetags.AdminTemplateTagsTest.test_submit_row_save_as_new_add_permission_required)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_choice_links (admin_views.test_templatetags.DateHierarchyTests.test_choice_links)', 'test_choice_links_datetime (admin_views.test_templatetags.DateHierarchyTests.test_choice_links_datetime)', 'admin_modify template tags follow the standard search pattern', 'admin_list template tags follow the standard search pattern', 'test_override_show_save_and_add_another (admin_views.test_templatetags.AdminTemplateTagsTest.test_override_show_save_and_add_another)', 'submit_row template tag should pass whole context.'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16527: resolved: True
+2026-06-23 05:28:37,840 - INFO - Attempting to stop container sweb.eval.django__django-16527.squad_v1...
+2026-06-23 05:28:53,733 - INFO - Attempting to remove container sweb.eval.django__django-16527.squad_v1...
+2026-06-23 05:28:53,947 - INFO - Container sweb.eval.django__django-16527.squad_v1 removed.
+2026-06-23 05:28:53,947 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16527:latest...
+2026-06-23 05:28:55,271 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16527:latest removed.

@@ -1,0 +1,84 @@
+diff --git a/django/core/management/base.py b/django/core/management/base.py
+index 857a77da5a..86ee8e8cd6 100644
+--- a/django/core/management/base.py
++++ b/django/core/management/base.py
+@@ -269,10 +269,10 @@ class BaseCommand:
+         Create and return the ``ArgumentParser`` which will be used to
+         parse the arguments to this command.
+         """
++        kwargs.setdefault('formatter_class', DjangoHelpFormatter)
+         parser = CommandParser(
+             prog='%s %s' % (os.path.basename(prog_name), subcommand),
+             description=self.help or None,
+-            formatter_class=DjangoHelpFormatter,
+             missing_args_message=getattr(self, 'missing_args_message', None),
+             called_from_command_line=getattr(self, '_called_from_command_line', None),
+             **kwargs
+diff --git a/docs/howto/custom-management-commands.txt b/docs/howto/custom-management-commands.txt
+index 68b4a049e0..e6e6f9a168 100644
+--- a/docs/howto/custom-management-commands.txt
++++ b/docs/howto/custom-management-commands.txt
+@@ -270,6 +270,13 @@ the :meth:`~BaseCommand.handle` method must be implemented.
+     You can customize the instance by overriding this method and calling
+     ``super()`` with ``kwargs`` of :class:`~argparse.ArgumentParser` parameters.
+ 
++    .. versionchanged:: 4.1
++
++        ``create_parser()`` now accepts any
++        :class:`~argparse.ArgumentParser` constructor parameters via
++        ``**kwargs``, including the ability to override ``formatter_class``,
++        which defaults to ``DjangoHelpFormatter``.
++
+ .. method:: BaseCommand.add_arguments(parser)
+ 
+     Entry point to add parser arguments to handle command line arguments passed
+diff --git a/docs/releases/4.1.txt b/docs/releases/4.1.txt
+index 11d2c5ca04..1d852f782b 100644
+--- a/docs/releases/4.1.txt
++++ b/docs/releases/4.1.txt
+@@ -210,6 +210,10 @@ Management Commands
+ * :option:`makemigrations --no-input` now logs default answers and reasons why
+   migrations cannot be created.
+ 
++* The output of management command formatters can now be customized by
++  overriding ``BaseCommand.create_parser()`` and passing a different
++  ``formatter_class``.
++
+ Migrations
+ ~~~~~~~~~~
+ 
+diff --git a/tests/user_commands/tests.py b/tests/user_commands/tests.py
+index 8da4e887d3..e567abfe88 100644
+--- a/tests/user_commands/tests.py
++++ b/tests/user_commands/tests.py
+@@ -1,4 +1,5 @@
+ import os
++from argparse import RawTextHelpFormatter
+ from io import StringIO
+ from unittest import mock
+ 
+@@ -8,6 +9,7 @@ from django.apps import apps
+ from django.core import management
+ from django.core.checks import Tags
+ from django.core.management import BaseCommand, CommandError, find_commands
++from django.core.management.base import DjangoHelpFormatter
+ from django.core.management.utils import (
+     find_command, get_random_secret_key, is_ignored_path,
+     normalize_path_patterns, popen_wrapper,
+@@ -380,6 +382,16 @@ class CommandTests(SimpleTestCase):
+         parser = BaseCommand().create_parser('prog_name', 'subcommand', epilog=epilog)
+         self.assertEqual(parser.epilog, epilog)
+ 
++    def test_create_parser_formatter_class(self):
++        """BaseCommand.create_parser() formatter_class is customizable and
++        defaults to DjangoHelpFormatter."""
++        parser = BaseCommand().create_parser('prog_name', 'subcommand')
++        self.assertEqual(parser.formatter_class, DjangoHelpFormatter)
++        parser = BaseCommand().create_parser(
++            'prog_name', 'subcommand', formatter_class=RawTextHelpFormatter,
++        )
++        self.assertEqual(parser.formatter_class, RawTextHelpFormatter)
++
+     def test_outputwrapper_flush(self):
+         out = StringIO()
+         with mock.patch.object(out, 'flush') as mocked_flush:

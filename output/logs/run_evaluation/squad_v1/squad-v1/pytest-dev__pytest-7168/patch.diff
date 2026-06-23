@@ -1,0 +1,75 @@
+diff --git a/src/_pytest/_io/saferepr.py b/src/_pytest/_io/saferepr.py
+index 23af4d0bb..af94138bb 100644
+--- a/src/_pytest/_io/saferepr.py
++++ b/src/_pytest/_io/saferepr.py
+@@ -18,9 +18,27 @@ def _format_repr_exception(exc: BaseException, obj: Any) -> str:
+     except (KeyboardInterrupt, SystemExit):
+         raise
+     except BaseException as exc:
+-        exc_info = "unpresentable exception ({})".format(_try_repr_or_str(exc))
++        try:
++            exc_info = "unpresentable exception ({})".format(_try_repr_or_str(exc))
++        except (KeyboardInterrupt, SystemExit):
++            raise
++        except BaseException as exc:
++            try:
++                exc_info = _try_repr_or_str(exc)
++            except (KeyboardInterrupt, SystemExit):
++                raise
++            except BaseException:
++                exc_info = "unpresentable exception (...)"
++    try:
++        obj_class_name = type(obj).__name__
++        if not isinstance(obj_class_name, str):
++            obj_class_name = str(obj_class_name)
++    except (KeyboardInterrupt, SystemExit):
++        raise
++    except BaseException:
++        obj_class_name = "unpresentable exception (...)"
+     return "<[{} raised in repr()] {} object at 0x{:x}>".format(
+-        exc_info, obj.__class__.__name__, id(obj)
++        exc_info, obj_class_name, id(obj)
+     )
+ 
+ 
+diff --git a/testing/io/test_saferepr.py b/testing/io/test_saferepr.py
+index 06084202e..205614952 100644
+--- a/testing/io/test_saferepr.py
++++ b/testing/io/test_saferepr.py
+@@ -56,6 +56,37 @@ def test_exceptions():
+     )
+ 
+ 
++def test_exceptions_in_obj_attribute():
++    class BrokenRepr:
++        def __getattribute__(self, attr):
++            raise RuntimeError("broken getattr")
++
++        def __repr__(self):
++            raise RuntimeError("broken repr")
++
++    s = saferepr(BrokenRepr())
++    assert isinstance(s, str)
++    assert "raised in repr()" in s
++    assert "BrokenRepr object at" in s
++
++
++def test_exceptions_in_type_name():
++    class BrokenMeta(type):
++        def __getattribute__(cls, attr):
++            if attr == "__name__":
++                raise RuntimeError("broken type name")
++            return super().__getattribute__(attr)
++
++    class BrokenRepr(metaclass=BrokenMeta):
++        def __repr__(self):
++            raise RuntimeError("broken repr")
++
++    s = saferepr(BrokenRepr())
++    assert isinstance(s, str)
++    assert "raised in repr()" in s
++    assert "unpresentable exception (...) object at" in s
++
++
+ def test_baseexception():
+     """Test saferepr() with BaseExceptions, which includes pytest outcomes."""

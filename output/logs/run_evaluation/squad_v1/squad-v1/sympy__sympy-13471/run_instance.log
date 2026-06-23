@@ -1,0 +1,3377 @@
+2026-06-23 07:13:37,413 - INFO - Creating container for sympy__sympy-13471...
+2026-06-23 07:13:46,255 - INFO - Container for sympy__sympy-13471 created: 91ea21c93b054874d041b59a3fb3cdd2cd22629e8a5ea7a8ddb469e5f00193f8
+2026-06-23 07:13:46,770 - INFO - Container for sympy__sympy-13471 started: 91ea21c93b054874d041b59a3fb3cdd2cd22629e8a5ea7a8ddb469e5f00193f8
+2026-06-23 07:13:46,780 - INFO - Intermediate patch for sympy__sympy-13471 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/patch.diff, now applying to container...
+2026-06-23 07:13:47,079 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:13:47,185 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:13:47,301 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 07:13:47,302 - INFO - >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+2026-06-23 07:13:47,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:13:47,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,334 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,338 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,379 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,379 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,381 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,381 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,391 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,392 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,392 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,393 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,393 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,394 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,394 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,395 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,395 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,396 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,397 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,397 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,398 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,398 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,399 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,399 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,400 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,400 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,401 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,401 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,402 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,402 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,403 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,403 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,404 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,405 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,405 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,406 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,407 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,407 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,408 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,409 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,410 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,410 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,411 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,412 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,413 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,414 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,416 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,416 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:13:47,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,448 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,451 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,457 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,459 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,461 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,461 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,463 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,464 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,464 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,465 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,465 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,468 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,471 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,472 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,472 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,473 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,473 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,517 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,526 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,527 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-13471: >>>>> Patch Apply Failed:
+patching file sympy/core/numbers.py
+patching file sympy/core/tests/test_numbers.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 31:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-13471/run_instance.log) for more information.
+
+2026-06-23 07:13:47,531 - INFO - Attempting to stop container sweb.eval.sympy__sympy-13471.squad_v1...
+2026-06-23 07:14:23,546 - INFO - Attempting to remove container sweb.eval.sympy__sympy-13471.squad_v1...
+2026-06-23 07:14:24,090 - INFO - Container sweb.eval.sympy__sympy-13471.squad_v1 removed.
+2026-06-23 07:14:24,090 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-13471:latest...
+2026-06-23 07:14:24,438 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-13471:latest removed.

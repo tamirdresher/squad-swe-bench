@@ -1,0 +1,44 @@
+diff --git a/django/db/models/sql/compiler.py b/django/db/models/sql/compiler.py
+index 7c433b3f06..c07076d54a 100644
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -1274,6 +1274,9 @@ class SQLCompiler:
+                 if from_obj:
+                     final_field.remote_field.set_cached_value(from_obj, obj)
+ 
++            def local_setter_noop(obj, from_obj):
++                pass
++
+             def remote_setter(name, obj, from_obj):
+                 setattr(from_obj, name, obj)
+ 
+@@ -1295,7 +1298,11 @@ class SQLCompiler:
+                         "model": model,
+                         "field": final_field,
+                         "reverse": True,
+-                        "local_setter": partial(local_setter, final_field),
++                        "local_setter": (
++                            partial(local_setter, final_field)
++                            if len(joins) <= 2
++                            else local_setter_noop
++                        ),
+                         "remote_setter": partial(remote_setter, name),
+                         "from_parent": from_parent,
+                     }
+diff --git a/tests/known_related_objects/tests.py b/tests/known_related_objects/tests.py
+index 6080da3838..787350d7f3 100644
+--- a/tests/known_related_objects/tests.py
++++ b/tests/known_related_objects/tests.py
+@@ -164,3 +164,12 @@ class ExistingRelatedInstancesTests(TestCase):
+             )
+             self.assertIs(ps[0], ps[0].pool_1.poolstyle)
+             self.assertIs(ps[0], ps[0].pool_2.another_style)
++
++    def test_wrong_select_related(self):
++        with self.assertNumQueries(3):
++            p = list(
++                PoolStyle.objects.annotate(
++                    tournament_pool=FilteredRelation("pool__tournament__pool"),
++                ).select_related("tournament_pool")
++            )
++            self.assertEqual(p[0].pool.tournament, p[0].tournament_pool.tournament)

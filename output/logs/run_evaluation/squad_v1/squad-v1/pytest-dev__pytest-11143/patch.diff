@@ -1,0 +1,38 @@
+diff --git a/src/_pytest/assertion/rewrite.py b/src/_pytest/assertion/rewrite.py
+index 157903faf..6de9269e5 100644
+--- a/src/_pytest/assertion/rewrite.py
++++ b/src/_pytest/assertion/rewrite.py
+@@ -743,7 +743,7 @@ class AssertionRewriter(ast.NodeVisitor):
+ 
+     @staticmethod
+     def is_rewrite_disabled(docstring: str) -> bool:
+-        return "PYTEST_DONT_REWRITE" in docstring
++        return isinstance(docstring, str) and "PYTEST_DONT_REWRITE" in docstring
+ 
+     def variable(self) -> str:
+         """Get a new variable."""
+diff --git a/testing/test_assertrewrite.py b/testing/test_assertrewrite.py
+index d01803204..bfd55f0fc 100644
+--- a/testing/test_assertrewrite.py
++++ b/testing/test_assertrewrite.py
+@@ -141,6 +141,20 @@ class TestAssertionRewrite:
+         assert isinstance(m.body[1], ast.Assert)
+         assert m.body[1].msg is None
+ 
++    def test_rewrite_first_expression_int_constant(self) -> None:
++        # The first expression being a number (not a string) must not be
++        # mistaken for a docstring and must not crash rewriting (issue #11100).
++        s = """42\nassert 1 == 2"""
++        m = rewrite(s)
++        first = m.body[0]
++        assert isinstance(first, ast.Expr)
++        assert isinstance(first.value, ast.Constant)
++        assert first.value.value == 42
++        # The assertion was rewritten into an if-statement, so no bare
++        # assert statement remains in the module body.
++        assert any(isinstance(node, ast.If) for node in m.body)
++        assert not any(isinstance(node, ast.Assert) for node in m.body)
++
+     def test_dont_rewrite_plugin(self, pytester: Pytester) -> None:
+         contents = {
+             "conftest.py": "pytest_plugins = 'plugin'; import plugin",

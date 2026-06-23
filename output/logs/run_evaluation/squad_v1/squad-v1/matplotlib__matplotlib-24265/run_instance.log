@@ -1,0 +1,123 @@
+2026-06-23 05:55:02,641 - INFO - Creating container for matplotlib__matplotlib-24265...
+2026-06-23 05:55:28,738 - INFO - Container for matplotlib__matplotlib-24265 created: 5b4bd215cd92a9197f4166c4455f7cb057608c2a55aa81a15e9993a676f150ba
+2026-06-23 05:55:29,134 - INFO - Container for matplotlib__matplotlib-24265 started: 5b4bd215cd92a9197f4166c4455f7cb057608c2a55aa81a15e9993a676f150ba
+2026-06-23 05:55:29,141 - INFO - Intermediate patch for matplotlib__matplotlib-24265 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-24265/patch.diff, now applying to container...
+2026-06-23 05:55:29,351 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:55:29,445 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:55:29,575 - INFO - >>>>> Applied Patch:
+patching file lib/matplotlib/offsetbox.py
+Hunk #1 succeeded at 1468 (offset -37 lines).
+Hunk #2 succeeded at 1476 (offset -37 lines).
+patching file lib/matplotlib/tests/test_pickle.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 247 with fuzz 1.
+
+2026-06-23 05:55:31,149 - INFO - Git diff before:
+diff --git a/lib/matplotlib/offsetbox.py b/lib/matplotlib/offsetbox.py
+index 89bd3550f3..ea1d21436c 100644
+--- a/lib/matplotlib/offsetbox.py
++++ b/lib/matplotlib/offsetbox.py
+@@ -1468,7 +1468,6 @@ class DraggableBase:
+         if not ref_artist.pickable():
+             ref_artist.set_picker(True)
+         self.got_artist = False
+-        self.canvas = self.ref_artist.figure.canvas
+         self._use_blit = use_blit and self.canvas.supports_blit
+         self.cids = [
+             self.canvas.callbacks._connect_picklable(
+@@ -1477,6 +1476,9 @@ class DraggableBase:
+                 'button_release_event', self.on_release),
+         ]
+ 
++    # A property, not an attribute, to maintain picklability.
++    canvas = property(lambda self: self.ref_artist.figure.canvas)
++
+     def on_motion(self, evt):
+         if self._check_still_parented() and self.got_artist:
+             dx = evt.x - self.mouse_x
+diff --git a/lib/matplotlib/tests/test_pickle.py b/lib/matplotlib/tests/test_pickle.py
+index ec6bdcc2fe..4da0011a67 100644
+--- a/lib/matplotlib/tests/test_pickle.py
++++ b/lib/matplotlib/tests/test_pickle.py
+@@ -247,6 +247,21 @@ def test_inset_and_secondary():
+     pickle.loads(pickle.dumps(fig))
+ 
+ 
++def test_draggable_artists_pickle():
++    fig, ax = plt.subplots()
++    ax.plot([0, 1, 2, 3, 4], [40, 43, 45, 47, 48], label="speed")
++    leg = ax.legend()
++    leg.set_draggable(True)
++    ann = ax.annotate("x", (1, 1))
++    ann.draggable(True)
++
++    loaded = pickle.loads(pickle.dumps(fig))
++
++    loaded_ax = loaded.axes[0]
++    assert loaded_ax.get_legend().get_draggable()
++    assert loaded_ax.texts[0]._draggable is not None
++
++
+ @pytest.mark.parametrize("cmap", cm._colormaps.values())
+ def test_cmap(cmap):
+     pickle.dumps(cmap)
+2026-06-23 05:55:31,155 - INFO - Eval script for matplotlib__matplotlib-24265 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-24265/eval.sh; copying to container...
+2026-06-23 05:57:20,775 - INFO - Test runtime: 109.48 seconds
+2026-06-23 05:57:20,786 - INFO - Test output for matplotlib__matplotlib-24265 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-24265/test_output.txt
+2026-06-23 05:57:20,913 - INFO - Git diff after:
+diff --git a/lib/matplotlib/offsetbox.py b/lib/matplotlib/offsetbox.py
+index 89bd3550f3..ea1d21436c 100644
+--- a/lib/matplotlib/offsetbox.py
++++ b/lib/matplotlib/offsetbox.py
+@@ -1468,7 +1468,6 @@ class DraggableBase:
+         if not ref_artist.pickable():
+             ref_artist.set_picker(True)
+         self.got_artist = False
+-        self.canvas = self.ref_artist.figure.canvas
+         self._use_blit = use_blit and self.canvas.supports_blit
+         self.cids = [
+             self.canvas.callbacks._connect_picklable(
+@@ -1477,6 +1476,9 @@ class DraggableBase:
+                 'button_release_event', self.on_release),
+         ]
+ 
++    # A property, not an attribute, to maintain picklability.
++    canvas = property(lambda self: self.ref_artist.figure.canvas)
++
+     def on_motion(self, evt):
+         if self._check_still_parented() and self.got_artist:
+             dx = evt.x - self.mouse_x
+diff --git a/lib/matplotlib/tests/test_pickle.py b/lib/matplotlib/tests/test_pickle.py
+index ec6bdcc2fe..4da0011a67 100644
+--- a/lib/matplotlib/tests/test_pickle.py
++++ b/lib/matplotlib/tests/test_pickle.py
+@@ -247,6 +247,21 @@ def test_inset_and_secondary():
+     pickle.loads(pickle.dumps(fig))
+ 
+ 
++def test_draggable_artists_pickle():
++    fig, ax = plt.subplots()
++    ax.plot([0, 1, 2, 3, 4], [40, 43, 45, 47, 48], label="speed")
++    leg = ax.legend()
++    leg.set_draggable(True)
++    ann = ax.annotate("x", (1, 1))
++    ann.draggable(True)
++
++    loaded = pickle.loads(pickle.dumps(fig))
++
++    loaded_ax = loaded.axes[0]
++    assert loaded_ax.get_legend().get_draggable()
++    assert loaded_ax.texts[0]._draggable is not None
++
++
+ @pytest.mark.parametrize("cmap", cm._colormaps.values())
+ def test_cmap(cmap):
+     pickle.dumps(cmap)
+2026-06-23 05:57:20,915 - INFO - Grading answer for matplotlib__matplotlib-24265...
+2026-06-23 05:57:20,925 - INFO - report: {'matplotlib__matplotlib-24265': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['lib/matplotlib/tests/test_style.py::test_deprecated_seaborn_styles']}, 'PASS_TO_PASS': {'success': ['lib/matplotlib/tests/test_style.py::test_invalid_rc_warning_includes_filename', 'lib/matplotlib/tests/test_style.py::test_available', 'lib/matplotlib/tests/test_style.py::test_use', 'lib/matplotlib/tests/test_style.py::test_use_url', 'lib/matplotlib/tests/test_style.py::test_single_path', 'lib/matplotlib/tests/test_style.py::test_context', 'lib/matplotlib/tests/test_style.py::test_context_with_dict', 'lib/matplotlib/tests/test_style.py::test_context_with_dict_after_namedstyle', 'lib/matplotlib/tests/test_style.py::test_context_with_dict_before_namedstyle', 'lib/matplotlib/tests/test_style.py::test_context_with_union_of_dict_and_namedstyle', 'lib/matplotlib/tests/test_style.py::test_context_with_badparam', 'lib/matplotlib/tests/test_style.py::test_alias[mpl20]', 'lib/matplotlib/tests/test_style.py::test_alias[mpl15]', 'lib/matplotlib/tests/test_style.py::test_xkcd_no_cm', 'lib/matplotlib/tests/test_style.py::test_xkcd_cm', 'lib/matplotlib/tests/test_style.py::test_up_to_date_blacklist'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for matplotlib__matplotlib-24265: resolved: False
+2026-06-23 05:57:20,929 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-24265.squad_v1...
+2026-06-23 05:57:37,475 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-24265.squad_v1...
+2026-06-23 05:57:37,611 - INFO - Container sweb.eval.matplotlib__matplotlib-24265.squad_v1 removed.
+2026-06-23 05:57:37,612 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24265:latest...
+2026-06-23 05:57:40,522 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24265:latest removed.

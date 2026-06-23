@@ -1,0 +1,3657 @@
+2026-06-23 06:31:22,367 - INFO - Creating container for pydata__xarray-4248...
+2026-06-23 06:31:39,133 - INFO - Container for pydata__xarray-4248 created: 521592e5340ac3b40604c26f1f90e0c5fa09d3e1900ab074deb7d1e7a6d32763
+2026-06-23 06:31:39,757 - INFO - Container for pydata__xarray-4248 started: 521592e5340ac3b40604c26f1f90e0c5fa09d3e1900ab074deb7d1e7a6d32763
+2026-06-23 06:31:39,766 - INFO - Intermediate patch for pydata__xarray-4248 written to logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/patch.diff, now applying to container...
+2026-06-23 06:31:40,028 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:31:40,143 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:31:40,262 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 06:31:40,263 - INFO - >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+2026-06-23 06:31:40,299 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:31:40,300 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,301 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,303 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,305 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,306 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,306 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,309 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,309 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,310 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,311 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,312 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,313 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,314 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,315 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,315 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,316 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,316 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,318 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,319 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,321 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,323 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,323 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,324 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,324 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,327 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,327 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,329 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,330 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,330 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,334 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,336 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,336 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,336 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,338 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,379 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,379 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,381 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:31:40,424 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,425 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,426 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,426 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,428 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,429 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,429 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,431 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,434 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,434 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,436 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,440 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,440 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,441 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,442 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,442 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,445 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,448 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,451 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,457 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,459 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,461 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,463 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,465 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,468 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,468 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,471 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,472 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,473 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,485 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,485 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: pydata__xarray-4248: >>>>> Patch Apply Failed:
+patching file xarray/core/formatting.py
+patching file xarray/core/formatting_html.py
+patching file xarray/tests/test_formatting.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 137:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/pydata__xarray-4248/run_instance.log) for more information.
+
+2026-06-23 06:31:40,510 - INFO - Attempting to stop container sweb.eval.pydata__xarray-4248.squad_v1...
+2026-06-23 06:31:56,493 - INFO - Attempting to remove container sweb.eval.pydata__xarray-4248.squad_v1...
+2026-06-23 06:31:56,637 - INFO - Container sweb.eval.pydata__xarray-4248.squad_v1 removed.
+2026-06-23 06:31:56,638 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pydata_1776_xarray-4248:latest...
+2026-06-23 06:31:56,815 - INFO - Image swebench/sweb.eval.x86_64.pydata_1776_xarray-4248:latest removed.

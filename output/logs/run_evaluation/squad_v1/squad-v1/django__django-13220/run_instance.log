@@ -1,0 +1,3657 @@
+2026-06-23 04:53:59,732 - INFO - Creating container for django__django-13220...
+2026-06-23 04:54:04,031 - INFO - Container for django__django-13220 created: 9b14dcd2700938a61c258ef7c4b23f88aab48d2896f81deae1c6a1ec34e2a4eb
+2026-06-23 04:54:04,443 - INFO - Container for django__django-13220 started: 9b14dcd2700938a61c258ef7c4b23f88aab48d2896f81deae1c6a1ec34e2a4eb
+2026-06-23 04:54:04,452 - INFO - Intermediate patch for django__django-13220 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13220/patch.diff, now applying to container...
+2026-06-23 04:54:04,682 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:54:04,762 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:54:04,840 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 04:54:04,841 - INFO - >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+2026-06-23 04:54:04,855 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:54:04,856 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,856 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,857 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,857 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,858 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,858 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,859 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,859 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,860 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,860 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,861 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,861 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,862 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,862 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,863 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,863 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,863 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,864 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,864 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,865 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,865 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,866 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,866 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,867 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,867 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,868 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,868 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,869 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,869 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,869 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,870 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,870 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,871 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,871 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,872 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,872 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,872 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,873 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,873 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,874 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,874 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,874 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,875 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,875 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,876 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,876 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,877 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,878 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,878 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,879 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,879 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,880 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,880 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,881 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,881 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,882 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,882 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,883 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,883 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,884 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,884 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,885 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,885 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,886 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,886 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,887 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,887 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,888 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,888 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,889 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,889 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,890 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,891 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,891 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,892 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,892 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,893 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,894 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,894 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,895 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,895 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,896 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,896 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,897 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,897 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,899 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,900 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,900 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,901 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,902 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,902 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,903 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,904 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,904 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,904 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,905 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,906 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,906 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,907 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,907 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,908 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,908 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,909 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,909 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,910 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,910 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,911 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,911 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,912 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,913 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,913 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,914 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,915 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,915 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,916 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,916 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,916 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,917 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,917 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,918 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,918 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,919 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,919 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,920 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,920 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,921 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,921 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,922 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,922 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,923 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,923 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,924 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,924 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,924 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,925 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,925 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,926 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,926 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,927 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,927 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,946 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:54:04,947 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,948 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,949 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,949 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,950 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,950 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,951 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,952 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,952 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,953 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,953 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,954 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,954 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,955 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,955 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,956 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,956 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,957 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,957 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,958 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,958 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,959 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,960 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,960 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,961 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,961 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,962 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,962 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,963 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,963 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,964 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,965 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,966 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,966 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,967 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,967 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,968 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,968 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,969 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,969 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,970 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,970 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,971 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,971 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,972 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,972 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,973 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,973 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,974 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,974 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,975 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,976 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,976 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,977 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,977 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,978 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,978 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,979 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,979 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,980 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,980 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,981 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,981 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,982 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,982 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,983 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,983 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,984 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,984 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,985 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,985 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,986 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,986 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,987 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,987 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,988 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,988 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,988 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,989 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,989 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,990 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,990 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,991 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,991 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,992 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,992 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,993 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,993 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,994 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,994 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,995 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,995 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,996 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,996 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,997 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,997 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,998 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,998 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,999 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,999 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:04,999 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,000 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,000 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,001 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,001 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,002 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,002 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,003 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,003 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,004 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,004 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,005 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,005 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,006 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,006 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,007 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,007 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,008 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,008 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,009 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,009 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,010 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,010 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,011 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,011 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,012 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,012 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,012 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,013 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,013 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,014 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,014 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,015 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,015 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,016 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,016 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,017 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,017 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,018 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-13220: >>>>> Patch Apply Failed:
+patching file django/core/exceptions.py
+patching file docs/releases/3.2.txt
+patch: **** malformed patch at line 333:  
+
+patching file tests/test_exceptions/test_validation_error.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-13220/run_instance.log) for more information.
+
+2026-06-23 04:54:05,018 - INFO - Attempting to stop container sweb.eval.django__django-13220.squad_v1...
+2026-06-23 04:54:24,198 - INFO - Attempting to remove container sweb.eval.django__django-13220.squad_v1...
+2026-06-23 04:54:24,438 - INFO - Container sweb.eval.django__django-13220.squad_v1 removed.
+2026-06-23 04:54:24,439 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13220:latest...
+2026-06-23 04:54:26,132 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13220:latest removed.

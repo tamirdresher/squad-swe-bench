@@ -1,0 +1,3657 @@
+2026-06-23 04:35:29,733 - INFO - Creating container for django__django-11099...
+2026-06-23 04:35:37,089 - INFO - Container for django__django-11099 created: a593f4e1dd1e061c16cd926a4885434bd908bb4d316519c05214f16a1c05ea7f
+2026-06-23 04:35:37,671 - INFO - Container for django__django-11099 started: a593f4e1dd1e061c16cd926a4885434bd908bb4d316519c05214f16a1c05ea7f
+2026-06-23 04:35:37,687 - INFO - Intermediate patch for django__django-11099 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11099/patch.diff, now applying to container...
+2026-06-23 04:35:37,968 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:35:38,085 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:35:38,242 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 04:35:38,243 - INFO - >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+2026-06-23 04:35:38,284 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:35:38,285 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,286 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,292 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,304 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,307 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,308 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,310 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,311 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,312 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,312 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,313 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,316 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,317 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,319 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,320 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,321 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,322 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,323 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,325 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,326 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,327 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,328 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,329 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,329 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,330 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,331 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,332 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,333 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,334 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,335 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,336 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,337 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,338 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,338 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,339 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,340 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,341 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,342 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,343 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,344 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,345 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,346 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,347 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,348 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,349 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,350 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,351 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,352 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,353 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,354 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,355 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,356 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,357 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,358 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,359 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,360 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,361 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,362 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,363 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,364 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,365 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,366 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,367 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,368 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,369 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,370 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,371 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,372 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,373 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,374 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,375 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,376 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,377 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,378 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,379 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,380 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,381 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,382 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,383 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,384 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,385 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,386 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,387 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,388 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,389 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,390 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,411 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:35:38,412 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,412 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,413 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,413 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,414 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,414 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,415 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,416 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,416 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,417 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,418 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,419 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,420 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,421 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,422 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,422 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,422 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,423 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,424 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,425 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,425 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,425 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,426 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,427 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,428 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,428 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,429 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,429 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,430 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,430 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,431 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,432 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,432 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,433 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,434 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,434 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,435 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,436 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,436 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,437 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,438 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,439 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,440 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,441 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,441 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,442 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,442 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,443 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,444 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,445 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,445 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,446 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,447 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,448 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,448 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,449 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,450 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,451 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,451 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,452 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,453 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,454 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,455 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,456 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,457 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,457 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,458 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,459 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,459 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,460 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,461 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,461 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,462 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,463 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,463 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,464 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,464 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,465 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,465 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,466 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,467 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,468 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,468 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,469 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,470 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,471 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,471 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,471 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,472 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,473 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,473 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,474 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,475 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,476 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,477 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-11099: >>>>> Patch Apply Failed:
+patching file django/contrib/auth/validators.py
+patching file tests/auth_tests/test_validators.py
+Hunk #1 succeeded at 237 with fuzz 2.
+patch unexpectedly ends in middle of line
+Hunk #2 FAILED at 250.
+1 out of 2 hunks FAILED -- saving rejects to file tests/auth_tests/test_validators.py.rej
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-11099/run_instance.log) for more information.
+
+2026-06-23 04:35:38,480 - INFO - Attempting to stop container sweb.eval.django__django-11099.squad_v1...
+2026-06-23 04:35:54,917 - INFO - Attempting to remove container sweb.eval.django__django-11099.squad_v1...
+2026-06-23 04:35:55,104 - INFO - Container sweb.eval.django__django-11099.squad_v1 removed.
+2026-06-23 04:35:55,105 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11099:latest...
+2026-06-23 04:35:56,881 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11099:latest removed.

@@ -1,0 +1,138 @@
+diff --git a/xarray/core/formatting.py b/xarray/core/formatting.py
+index 28eaae5f..0318aefb 100644
+--- a/xarray/core/formatting.py
++++ b/xarray/core/formatting.py
+@@ -268,6 +268,20 @@ def inline_variable_array_repr(var, max_width):
+         return "..."
+ 
+ 
++def _get_units_from_attrs(var) -> str:
++    """Get the units of a variable, formatted for the one-line repr.
++
++    Returns ``", in {units}"`` when the variable has a ``units`` (or ``unit``)
++    entry in its attributes, matching the format requested in GH2773, and an
++    empty string otherwise.
++    """
++    attrs = getattr(var, "attrs", {})
++    for unit_key in ("units", "unit"):
++        if unit_key in attrs:
++            return ", in {}".format(attrs[unit_key])
++    return ""
++
++
+ def summarize_variable(
+     name: Hashable, var, col_width: int, marker: str = " ", max_width: int = None
+ ):
+@@ -278,7 +292,9 @@ def summarize_variable(
+             raise TypeError(f"`max_width` value of `{max_width}` is not a valid int")
+         else:
+             max_width = max_width_options
+-    first_col = pretty_print(f"  {marker} {name} ", col_width)
++    # show the units (if any) right after the name, e.g. "rainfall, in mm"
++    units = _get_units_from_attrs(var)
++    first_col = pretty_print(f"  {marker} {name}{units} ", col_width)
+     if var.dims:
+         dims_str = "({}) ".format(", ".join(map(str, var.dims)))
+     else:
+@@ -347,8 +363,10 @@ def _get_col_items(mapping):
+ 
+     col_items = []
+     for k, v in mapping.items():
+-        col_items.append(k)
+         var = getattr(v, "variable", v)
++        # include the units in the width so the columns stay aligned with
++        # the names rendered by ``summarize_variable``
++        col_items.append(f"{k}{_get_units_from_attrs(var)}")
+         if isinstance(var, IndexVariable):
+             level_names = var.to_index_variable().level_names
+             if level_names is not None:
+diff --git a/xarray/core/formatting_html.py b/xarray/core/formatting_html.py
+index 5521b33e..ac8974e8 100644
+--- a/xarray/core/formatting_html.py
++++ b/xarray/core/formatting_html.py
+@@ -5,7 +5,11 @@ from html import escape
+ 
+ import pkg_resources
+ 
+-from .formatting import inline_variable_array_repr, short_data_repr
++from .formatting import (
++    _get_units_from_attrs,
++    inline_variable_array_repr,
++    short_data_repr,
++)
+ 
+ STATIC_FILES = ("static/html/icons-svg-inline.html", "static/css/style.css")
+ 
+@@ -102,7 +106,8 @@ def summarize_variable(name, var, is_index=False, dtype=None, preview=None):
+ 
+     cssclass_idx = " class='xr-has-index'" if is_index else ""
+     dims_str = f"({', '.join(escape(dim) for dim in var.dims)})"
+-    name = escape(str(name))
++    # append the units (if any) after the name, e.g. "rainfall, in mm"
++    name = f"{escape(str(name))}{escape(_get_units_from_attrs(var))}"
+     dtype = dtype or escape(str(var.dtype))
+ 
+     # "unique" ids required to expand/collapse subsections
+diff --git a/xarray/tests/test_formatting.py b/xarray/tests/test_formatting.py
+index 82de8080..d58bdc55 100644
+--- a/xarray/tests/test_formatting.py
++++ b/xarray/tests/test_formatting.py
+@@ -421,3 +421,58 @@ def test_large_array_repr_length():
+ 
+     result = repr(da).splitlines()
+     assert len(result) < 50
++
++
++@pytest.mark.parametrize(
++    "attrs, expected",
++    [
++        ({}, ""),
++        ({"foo": "bar"}, ""),
++        ({"units": "m"}, ", in m"),
++        ({"units": "metres"}, ", in metres"),
++        ({"unit": "deg C"}, ", in deg C"),
++        # ``units`` wins over the ``unit`` variant
++        ({"units": "m", "unit": "cm"}, ", in m"),
++    ],
++)
++def test_get_units_from_attrs(attrs, expected):
++    var = xr.Variable("x", [0, 1, 2], attrs=attrs)
++    assert formatting._get_units_from_attrs(var) == expected
++
++
++def test_summarize_variable_with_units():
++    # a variable with units shows "name, in <units>"
++    var = xr.Variable("x", np.arange(3), attrs={"units": "metres"})
++    summary = formatting.summarize_variable("x", var, col_width=20)
++    assert "x, in metres" in summary
++
++    # a variable without units is unchanged (no ", in" suffix)
++    var_no_units = xr.Variable("x", np.arange(3))
++    summary_no_units = formatting.summarize_variable("x", var_no_units, col_width=20)
++    assert ", in" not in summary_no_units
++
++
++def test_repr_with_units():
++    ds = xr.Dataset(
++        data_vars={
++            "rainfall": ("x", np.zeros(3, dtype="float32"), {"units": "mm"}),
++            # a data variable without units is shown as before
++            "max_temp": ("x", np.zeros(3, dtype="float32")),
++        },
++        coords={"x": ("x", np.arange(3), {"units": "metres"})},
++    )
++    actual = repr(ds)
++
++    # both coordinates and data variables show their units
++    assert "x, in metres" in actual
++    assert "rainfall, in mm" in actual
++
++    # a variable without a units attribute is unchanged
++    assert "max_temp, in" not in actual
++
++    # the units are accounted for in the column width, so every variable /
++    # coordinate line still has its dimensions column aligned
++    lines = [line for line in actual.splitlines() if "(x)" in line]
++    assert len(lines) == 3
++    dim_offsets = {line.index("(x)") for line in lines}
++    assert len(dim_offsets) == 1

@@ -1,0 +1,81 @@
+diff --git a/src/_pytest/skipping.py b/src/_pytest/skipping.py
+index 7bd975e5a..591a65df9 100644
+--- a/src/_pytest/skipping.py
++++ b/src/_pytest/skipping.py
+@@ -291,7 +291,8 @@ def pytest_runtest_makereport(item: Item, call: CallInfo[None]):
+             else:
+                 rep.outcome = "passed"
+                 rep.wasxfail = xfailed.reason
+-    elif (
++
++    if (
+         item._store.get(skipped_by_mark_key, True)
+         and rep.skipped
+         and type(rep.longrepr) is tuple
+diff --git a/testing/code/test_source.py b/testing/code/test_source.py
+index 35728c334..dc9f293f4 100644
+--- a/testing/code/test_source.py
++++ b/testing/code/test_source.py
+@@ -254,6 +254,33 @@ class TestSourceParsingAndCompiling:
+         # assert source.getstatementrange(5) == (0, 7)
+         assert source.getstatementrange(6) == (6, 7)
+ 
++    def test_getstatementrange_with_decorator(self) -> None:
++        # See https://github.com/pytest-dev/pytest/issues/9255: a decorated
++        # function/class following a statement must not be considered part of
++        # that statement's range.  On Python 3.8+ the lineno of a decorated
++        # definition points at the ``def``/``class`` line instead of the first
++        # decorator, which previously caused the following ``@deco`` line to be
++        # appended to the preceding statement's displayed source.
++        source = Source(
++            """\
++            def foo():
++                x = 1
++
++                @deco
++                def bar():
++                    pass
++        """
++        )
++        # Sanity check the line layout the assertions below rely on.
++        assert source.lines[1].strip() == "x = 1"
++        assert source.lines[3].strip() == "@deco"
++        # The ``x = 1`` statement (line 1) must not extend into the decorator
++        # line (line 3); ``end`` is exclusive, so it must stop at or before it.
++        start, end = source.getstatementrange(1)
++        assert start == 1
++        assert end <= 3
++        assert "@deco" not in str(source.getstatement(1))
++
+     def test_getstatementrange_bug(self) -> None:
+         source = Source(
+             """\
+diff --git a/testing/test_skipping.py b/testing/test_skipping.py
+index 0b1c0b49b..7c62ba631 100644
+--- a/testing/test_skipping.py
++++ b/testing/test_skipping.py
+@@ -648,6 +648,24 @@ class TestSkip:
+         result = testdir.runpytest("-rs")
+         result.stdout.fnmatch_lines(["*unconditional skip*", "*1 skipped*"])
+ 
++    def test_runxfail_skip_location(self, testdir):
++        """--runxfail must not change the reported location of tests
++        skipped via @pytest.mark.skip (#7392)."""
++        testdir.makepyfile(
++            """
++            import pytest
++            @pytest.mark.skip
++            def test_skip_location() -> None:
++                assert 0
++            """
++        )
++        result = testdir.runpytest("-rs", "--runxfail")
++        result.stdout.fnmatch_lines(
++            ["*SKIPPED*test_runxfail_skip_location.py:2: unconditional skip*"]
++        )
++        result.stdout.no_fnmatch_line("*_pytest*skipping*")
++        assert "skipping.py" not in result.stdout.str()
++
+ 
+ class TestSkipif:
+     def test_skipif_conditional(self, testdir):

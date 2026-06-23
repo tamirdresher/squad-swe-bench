@@ -1,0 +1,111 @@
+diff --git a/django/db/models/query_utils.py b/django/db/models/query_utils.py
+index c2623f099f..c217018cab 100644
+--- a/django/db/models/query_utils.py
++++ b/django/db/models/query_utils.py
+@@ -5,7 +5,6 @@ Factored out from django.db.models.query to avoid making the main module very
+ large and/or so that they can be used by other modules without getting into
+ circular import difficulties.
+ """
+-import copy
+ import functools
+ import inspect
+ from collections import namedtuple
+@@ -46,10 +45,10 @@ class Q(tree.Node):
+ 
+         # If the other Q() is empty, ignore it and just use `self`.
+         if not other:
+-            return copy.deepcopy(self)
++            return self.copy()
+         # Or if this Q is empty, ignore it and just use `other`.
+         elif not self:
+-            return copy.deepcopy(other)
++            return other.copy()
+ 
+         obj = type(self)()
+         obj.connector = conn
+diff --git a/django/db/models/sql/where.py b/django/db/models/sql/where.py
+index 795eff8395..74f3256561 100644
+--- a/django/db/models/sql/where.py
++++ b/django/db/models/sql/where.py
+@@ -145,7 +145,7 @@ class WhereNode(tree.Node):
+         with empty subtree_parents). Childs must be either (Constraint, lookup,
+         value) tuples, or objects supporting .clone().
+         """
+-        clone = self.__class__._new_instance(
++        clone = self.__class__.create(
+             children=[], connector=self.connector, negated=self.negated)
+         for child in self.children:
+             if hasattr(child, 'clone'):
+diff --git a/django/utils/tree.py b/django/utils/tree.py
+index 302cd37d5f..9fefe4144d 100644
+--- a/django/utils/tree.py
++++ b/django/utils/tree.py
+@@ -27,14 +27,12 @@ class Node:
+     # Required because django.db.models.query_utils.Q. Q. __init__() is
+     # problematic, but it is a natural Node subclass in all other respects.
+     @classmethod
+-    def _new_instance(cls, children=None, connector=None, negated=False):
++    def create(cls, children=None, connector=None, negated=False):
+         """
+-        Create a new instance of this class when new Nodes (or subclasses) are
+-        needed in the internal code in this class. Normally, it just shadows
+-        __init__(). However, subclasses with an __init__ signature that aren't
+-        an extension of Node.__init__ might need to implement this method to
+-        allow a Node to create a new instance of them (if they have any extra
+-        setting up to do).
++        Create a new instance using Node() instead of __init__() as some
++        subclasses, e.g. django.db.models.query_utils.Q, may implement a custom
++        __init__() with a signature that conflicts with the one defined in
++        Node.__init__().
+         """
+         obj = Node(children, connector, negated)
+         obj.__class__ = cls
+@@ -47,6 +45,13 @@ class Node:
+     def __repr__(self):
+         return "<%s: %s>" % (self.__class__.__name__, self)
+ 
++    def __copy__(self):
++        obj = self.create(connector=self.connector, negated=self.negated)
++        obj.children = self.children  # Don't [:] as .__init__() via .create() does.
++        return obj
++
++    copy = __copy__
++
+     def __deepcopy__(self, memodict):
+         obj = Node(connector=self.connector, negated=self.negated)
+         obj.__class__ = self.__class__
+@@ -113,8 +118,7 @@ class Node:
+                 self.children.append(data)
+                 return data
+         else:
+-            obj = self._new_instance(self.children, self.connector,
+-                                     self.negated)
++            obj = self.create(self.children, self.connector, self.negated)
+             self.connector = conn_type
+             self.children = [obj, data]
+             return data
+diff --git a/tests/queries/test_q.py b/tests/queries/test_q.py
+index 9adff07ef2..6dcf36ce02 100644
+--- a/tests/queries/test_q.py
++++ b/tests/queries/test_q.py
+@@ -8,6 +8,10 @@ class QTests(SimpleTestCase):
+         self.assertEqual(q & Q(), q)
+         self.assertEqual(Q() & q, q)
+ 
++        q = Q(x__in={}.keys())
++        self.assertEqual(q & Q(), q)
++        self.assertEqual(Q() & q, q)
++
+     def test_combine_and_both_empty(self):
+         self.assertEqual(Q() & Q(), Q())
+ 
+@@ -16,6 +20,10 @@ class QTests(SimpleTestCase):
+         self.assertEqual(q | Q(), q)
+         self.assertEqual(Q() | q, q)
+ 
++        q = Q(x__in={}.keys())
++        self.assertEqual(q | Q(), q)
++        self.assertEqual(Q() | q, q)
++
+     def test_combine_or_both_empty(self):
+         self.assertEqual(Q() | Q(), Q())

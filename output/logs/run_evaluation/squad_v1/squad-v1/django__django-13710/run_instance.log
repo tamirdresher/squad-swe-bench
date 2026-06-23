@@ -1,0 +1,192 @@
+2026-06-23 05:03:47,642 - INFO - Creating container for django__django-13710...
+2026-06-23 05:03:54,288 - INFO - Container for django__django-13710 created: 295b9f05fac4f6931bbbfe417d55b0cef2e71d94d1b2e6be11513367783cf90d
+2026-06-23 05:03:54,766 - INFO - Container for django__django-13710 started: 295b9f05fac4f6931bbbfe417d55b0cef2e71d94d1b2e6be11513367783cf90d
+2026-06-23 05:03:54,774 - INFO - Intermediate patch for django__django-13710 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13710/patch.diff, now applying to container...
+2026-06-23 05:03:55,090 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:03:55,256 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:03:55,410 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/options.py
+patching file docs/ref/contrib/admin/index.txt
+patching file docs/releases/4.0.txt
+patching file tests/admin_inlines/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 1013 with fuzz 1.
+
+2026-06-23 05:03:56,518 - INFO - Git diff before:
+diff --git a/django/contrib/admin/options.py b/django/contrib/admin/options.py
+index dadd4acfa1..1e5fab917e 100644
+--- a/django/contrib/admin/options.py
++++ b/django/contrib/admin/options.py
+@@ -2037,10 +2037,13 @@ class InlineModelAdmin(BaseModelAdmin):
+         self.opts = self.model._meta
+         self.has_registered_model = admin_site.is_registered(self.model)
+         super().__init__()
++        if self.verbose_name_plural is None:
++            if self.verbose_name is None:
++                self.verbose_name_plural = self.model._meta.verbose_name_plural
++            else:
++                self.verbose_name_plural = format_lazy('{}s', self.verbose_name)
+         if self.verbose_name is None:
+             self.verbose_name = self.model._meta.verbose_name
+-        if self.verbose_name_plural is None:
+-            self.verbose_name_plural = self.model._meta.verbose_name_plural
+ 
+     @property
+     def media(self):
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index fc1eab44f1..85157c149a 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -2459,7 +2459,14 @@ The ``InlineModelAdmin`` class adds or customizes:
+ .. attribute:: InlineModelAdmin.verbose_name_plural
+ 
+     An override to the ``verbose_name_plural`` found in the model's inner
+-    ``Meta`` class.
++    ``Meta`` class. If this isn't given and the
++    :attr:`.InlineModelAdmin.verbose_name` is defined, Django will use
++    :attr:`.InlineModelAdmin.verbose_name` + ``'s'``.
++
++    .. versionchanged:: 4.0
++
++        The default value of ``verbose_name_plural`` now uses the value of
++        :attr:`.InlineModelAdmin.verbose_name` if it is defined.
+ 
+ .. attribute:: InlineModelAdmin.can_delete
+ 
+diff --git a/docs/releases/4.0.txt b/docs/releases/4.0.txt
+index 7ae566d43a..78b47bdb95 100644
+--- a/docs/releases/4.0.txt
++++ b/docs/releases/4.0.txt
+@@ -85,6 +85,9 @@ Minor features
+ * The new :attr:`.ModelAdmin.search_help_text` attribute allows specifying a
+   descriptive text for the search box.
+ 
++* The default value of :attr:`.InlineModelAdmin.verbose_name_plural` now
++  respects the :attr:`.InlineModelAdmin.verbose_name`.
++
+ :mod:`django.contrib.admindocs`
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+diff --git a/tests/admin_inlines/tests.py b/tests/admin_inlines/tests.py
+index 261c4f0148..5fd9c889d7 100644
+--- a/tests/admin_inlines/tests.py
++++ b/tests/admin_inlines/tests.py
+@@ -1013,6 +1013,52 @@ class TestVerboseNameInlineForms(TestDataMixin, TestCase):
+         self.assertContains(response, 'Add another Model with both - name')
+         self.assertNotContains(response, '<h2>Model with both - plural name</h2>')
+ 
++    def test_verbose_name_inline(self):
++        class NonVerboseProfileInline(TabularInline):
++            model = Profile
++            verbose_name = 'Non-verbose childs'
++
++        class VerboseNameProfileInline(TabularInline):
++            model = VerboseNameProfile
++            verbose_name = 'Childs with verbose name'
++
++        class VerboseNamePluralProfileInline(TabularInline):
++            model = VerboseNamePluralProfile
++            verbose_name = 'Childs with verbose name plural'
++
++        class BothVerboseNameProfileInline(TabularInline):
++            model = BothVerboseNameProfile
++            verbose_name = 'Childs with both verbose names'
++
++        modeladmin = ModelAdmin(ProfileCollection, admin_site)
++        modeladmin.inlines = [
++            NonVerboseProfileInline,
++            VerboseNameProfileInline,
++            VerboseNamePluralProfileInline,
++            BothVerboseNameProfileInline,
++        ]
++        obj = ProfileCollection.objects.create()
++        url = reverse('admin:admin_inlines_profilecollection_change', args=(obj.pk,))
++        request = self.factory.get(url)
++        request.user = self.superuser
++        response = modeladmin.changeform_view(request)
++        # Non-verbose model.
++        self.assertContains(response, '<h2>Non-verbose childss</h2>')
++        self.assertContains(response, 'Add another Non-verbose child')
++        self.assertNotContains(response, '<h2>Profiles</h2>')
++        # Model with verbose name.
++        self.assertContains(response, '<h2>Childs with verbose names</h2>')
++        self.assertContains(response, 'Add another Childs with verbose name')
++        self.assertNotContains(response, '<h2>Model with verbose name onlys</h2>')
++        # Model with verbose name plural.
++        self.assertContains(response, '<h2>Childs with verbose name plurals</h2>')
++        self.assertContains(response, 'Add another Childs with verbose name plural')
++        self.assertNotContains(response, '<h2>Model with verbose name plural only</h2>')
++        # Model with both verbose names.
++        self.assertContains(response, '<h2>Childs with both verbose namess</h2>')
++        self.assertContains(response, 'Add another Childs with both verbose names')
++        self.assertNotContains(response, '<h2>Model with both - plural name</h2>')
++
+     def test_both_verbose_names_inline(self):
+         class NonVerboseProfileInline(TabularInline):
+             model = Profile
+2026-06-23 05:03:56,524 - INFO - Eval script for django__django-13710 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13710/eval.sh; copying to container...
+2026-06-23 05:04:17,388 - INFO - Test runtime: 20.67 seconds
+2026-06-23 05:04:17,394 - INFO - Test output for django__django-13710 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13710/test_output.txt
+2026-06-23 05:04:17,510 - INFO - Git diff after:
+diff --git a/django/contrib/admin/options.py b/django/contrib/admin/options.py
+index dadd4acfa1..1e5fab917e 100644
+--- a/django/contrib/admin/options.py
++++ b/django/contrib/admin/options.py
+@@ -2037,10 +2037,13 @@ class InlineModelAdmin(BaseModelAdmin):
+         self.opts = self.model._meta
+         self.has_registered_model = admin_site.is_registered(self.model)
+         super().__init__()
++        if self.verbose_name_plural is None:
++            if self.verbose_name is None:
++                self.verbose_name_plural = self.model._meta.verbose_name_plural
++            else:
++                self.verbose_name_plural = format_lazy('{}s', self.verbose_name)
+         if self.verbose_name is None:
+             self.verbose_name = self.model._meta.verbose_name
+-        if self.verbose_name_plural is None:
+-            self.verbose_name_plural = self.model._meta.verbose_name_plural
+ 
+     @property
+     def media(self):
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index fc1eab44f1..85157c149a 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -2459,7 +2459,14 @@ The ``InlineModelAdmin`` class adds or customizes:
+ .. attribute:: InlineModelAdmin.verbose_name_plural
+ 
+     An override to the ``verbose_name_plural`` found in the model's inner
+-    ``Meta`` class.
++    ``Meta`` class. If this isn't given and the
++    :attr:`.InlineModelAdmin.verbose_name` is defined, Django will use
++    :attr:`.InlineModelAdmin.verbose_name` + ``'s'``.
++
++    .. versionchanged:: 4.0
++
++        The default value of ``verbose_name_plural`` now uses the value of
++        :attr:`.InlineModelAdmin.verbose_name` if it is defined.
+ 
+ .. attribute:: InlineModelAdmin.can_delete
+ 
+diff --git a/docs/releases/4.0.txt b/docs/releases/4.0.txt
+index 7ae566d43a..78b47bdb95 100644
+--- a/docs/releases/4.0.txt
++++ b/docs/releases/4.0.txt
+@@ -85,6 +85,9 @@ Minor features
+ * The new :attr:`.ModelAdmin.search_help_text` attribute allows specifying a
+   descriptive text for the search box.
+ 
++* The default value of :attr:`.InlineModelAdmin.verbose_name_plural` now
++  respects the :attr:`.InlineModelAdmin.verbose_name`.
++
+ :mod:`django.contrib.admindocs`
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-06-23 05:04:17,511 - INFO - Git diff changed after running eval script
+2026-06-23 05:04:17,511 - INFO - Grading answer for django__django-13710...
+2026-06-23 05:04:17,518 - INFO - report: {'django__django-13710': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_verbose_name_inline (admin_inlines.tests.TestVerboseNameInlineForms)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['Regression for #9362', 'test_deleting_inline_with_protected_delete_does_not_validate (admin_inlines.tests.TestInlineProtectedOnDelete)', 'test_all_inline_media (admin_inlines.tests.TestInlineMedia)', 'test_inline_media_only_base (admin_inlines.tests.TestInlineMedia)', 'test_inline_media_only_inline (admin_inlines.tests.TestInlineMedia)', 'test_both_verbose_names_inline (admin_inlines.tests.TestVerboseNameInlineForms)', 'test_verbose_name_plural_inline (admin_inlines.tests.TestVerboseNameInlineForms)', 'test_add_url_not_allowed (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_extra_inlines_are_not_shown (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_get_to_change_url_is_allowed (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_inline_delete_buttons_are_not_shown (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_inlines_are_rendered_as_read_only (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_main_model_is_rendered_as_read_only (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_post_to_change_url_not_allowed (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_submit_line_shows_only_close_button (admin_inlines.tests.TestReadOnlyChangeViewInlinePermissions)', 'test_inline_add_fk_add_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_add_fk_noperm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_add_m2m_add_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_add_m2m_noperm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_add_m2m_view_only_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_add_change_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_add_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_all_perms (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_change_del_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_change_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_fk_noperm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_m2m_add_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_m2m_change_perm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_m2m_noperm (admin_inlines.tests.TestInlinePermissions)', 'test_inline_change_m2m_view_only_perm (admin_inlines.tests.TestInlinePermissions)', 'Admin inline should invoke local callable when its name is listed in readonly_fields', 'can_delete should be passed to inlineformset factory.', 'An object can be created with inlines when it inherits another class.', 'test_custom_form_tabular_inline_extra_field_label (admin_inlines.tests.TestInline)', 'A model form with a form field specified (TitleForm.title1) should have', 'SomeChildModelForm.__init__() overrides the label of a form field.', 'test_custom_get_extra_form (admin_inlines.tests.TestInline)', 'test_custom_min_num (admin_inlines.tests.TestInline)', 'The "View on Site" link is correct for models with a custom primary key', "The inlines' model field help texts are displayed when using both the", 'test_inline_editable_pk (admin_inlines.tests.TestInline)', "#18263 -- Make sure hidden fields don't get a column in tabular inlines", 'test_inline_nonauto_noneditable_inherited_pk (admin_inlines.tests.TestInline)', 'test_inline_nonauto_noneditable_pk (admin_inlines.tests.TestInline)', 'test_inline_primary (admin_inlines.tests.TestInline)', 'test_inlines_plural_heading_foreign_key (admin_inlines.tests.TestInline)', 'Inlines `show_change_link` for registered models when enabled.', 'Inlines `show_change_link` disabled for unregistered models.', 'test_inlines_singular_heading_one_to_one (admin_inlines.tests.TestInline)', 'The "View on Site" link is correct for locales that use thousand', 'Autogenerated many-to-many inlines are displayed correctly (#13407)', 'min_num and extra determine number of forms.', "Admin inline `readonly_field` shouldn't invoke parent ModelAdmin callable", 'test_non_editable_custom_form_tabular_inline_extra_field_label (admin_inlines.tests.TestInline)', "Multiple inlines with related_name='+' have correct form prefixes.", 'Inlines without change permission shows field inputs on add form.', 'Bug #13174.', 'test_stacked_inline_edit_form_contains_has_original_class (admin_inlines.tests.TestInline)', 'Field names are included in the context to output a field-specific', 'Inlines `show_change_link` disabled by default.', 'Tabular inlines use ModelForm.Meta.help_texts and labels for read-only', 'non_field_errors are displayed correctly, including the correct value'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13710: resolved: True
+2026-06-23 05:04:17,524 - INFO - Attempting to stop container sweb.eval.django__django-13710.squad_v1...
+2026-06-23 05:04:35,568 - INFO - Attempting to remove container sweb.eval.django__django-13710.squad_v1...
+2026-06-23 05:04:35,792 - INFO - Container sweb.eval.django__django-13710.squad_v1 removed.
+2026-06-23 05:04:35,793 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13710:latest...
+2026-06-23 05:04:37,272 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13710:latest removed.

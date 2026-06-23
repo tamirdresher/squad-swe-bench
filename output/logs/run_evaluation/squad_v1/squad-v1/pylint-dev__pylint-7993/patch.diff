@@ -1,0 +1,41 @@
+diff --git a/pylint/reporters/text.py b/pylint/reporters/text.py
+index 29bd46798..e8584e3b3 100644
+--- a/pylint/reporters/text.py
++++ b/pylint/reporters/text.py
+@@ -175,7 +175,7 @@ class TextReporter(BaseReporter):
+         self._template = template
+ 
+         # Check to see if all parameters in the template are attributes of the Message
+-        arguments = re.findall(r"\{(.+?)(:.*)?\}", template)
++        arguments = re.findall(r"\{(\w+?)(:.*)?\}", template)
+         for argument in arguments:
+             if argument[0] not in MESSAGE_FIELDS:
+                 warnings.warn(
+diff --git a/tests/reporters/unittest_reporting.py b/tests/reporters/unittest_reporting.py
+index 37f3e5fd9..63581e5c8 100644
+--- a/tests/reporters/unittest_reporting.py
++++ b/tests/reporters/unittest_reporting.py
+@@ -113,6 +113,23 @@ def test_template_option_non_existing(linter) -> None:
+     assert out_lines[2] == "my_mod:2::()"
+ 
+ 
++def test_template_option_with_header(linter: PyLinter) -> None:
++    output = StringIO()
++    linter.reporter.out = output
++    linter.config.msg_template = '{{ "Category": "{category}" }}'
++    linter.open()
++    linter.set_current_module("my_mod")
++
++    linter.add_message("C0301", line=1, args=(1, 2))
++    linter.add_message(
++        "line-too-long", line=2, end_lineno=2, end_col_offset=4, args=(3, 4)
++    )
++
++    out_lines = output.getvalue().split("\n")
++    assert out_lines[1] == '{ "Category": "convention" }'
++    assert out_lines[2] == '{ "Category": "convention" }'
++
++
+ def test_deprecation_set_output(recwarn):
+     """TODO remove in 3.0."""
+     reporter = BaseReporter()

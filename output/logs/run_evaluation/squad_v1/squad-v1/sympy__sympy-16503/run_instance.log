@@ -1,0 +1,129 @@
+2026-06-23 07:20:24,432 - INFO - Creating container for sympy__sympy-16503...
+2026-06-23 07:20:25,767 - INFO - Container for sympy__sympy-16503 created: 977e013451578df726fafc9efc1b02ee88568e5157e612e2fedd66cc999459b5
+2026-06-23 07:20:26,146 - INFO - Container for sympy__sympy-16503 started: 977e013451578df726fafc9efc1b02ee88568e5157e612e2fedd66cc999459b5
+2026-06-23 07:20:26,154 - INFO - Intermediate patch for sympy__sympy-16503 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16503/patch.diff, now applying to container...
+2026-06-23 07:20:26,369 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:20:26,438 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:20:26,521 - INFO - >>>>> Applied Patch:
+patching file sympy/simplify/fu.py
+patching file sympy/simplify/tests/test_fu.py
+patch unexpectedly ends in middle of line
+Hunk #3 succeeded at 92 with fuzz 1.
+
+2026-06-23 07:20:26,987 - INFO - Git diff before:
+diff --git a/sympy/simplify/fu.py b/sympy/simplify/fu.py
+index cd7b3c5902..e7b5059411 100644
+--- a/sympy/simplify/fu.py
++++ b/sympy/simplify/fu.py
+@@ -501,6 +501,9 @@ def _f(rv):
+         if not (rv.is_Pow and rv.base.func == f):
+             return rv
+ 
++        if not rv.exp.is_real:
++            return rv
++
+         if (rv.exp < 0) == True:
+             return rv
+         if (rv.exp > max) == True:
+diff --git a/sympy/simplify/tests/test_fu.py b/sympy/simplify/tests/test_fu.py
+index dc90821640..1d775cbb43 100644
+--- a/sympy/simplify/tests/test_fu.py
++++ b/sympy/simplify/tests/test_fu.py
+@@ -1,6 +1,6 @@
+ from sympy import (
+     Add, Mul, S, Symbol, cos, cot, pi, I, sin, sqrt, tan, root, csc, sec,
+-    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy)
++    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy, simplify)
+ from sympy.simplify.fu import (
+     L, TR1, TR10, TR10i, TR11, TR12, TR12i, TR13, TR14, TR15, TR16,
+     TR111, TR2, TR2i, TR3, TR5, TR6, TR7, TR8, TR9, TRmorrie, _TR56 as T,
+@@ -75,6 +75,9 @@ def test__TR56():
+     assert T(sin(x)**6, sin, cos, h, 6, False) == (-cos(x)**2 + 1)**3
+     assert T(sin(x)**6, sin, cos, h, 6, True) == sin(x)**6
+     assert T(sin(x)**8, sin, cos, h, 10, True) == (-cos(x)**2 + 1)**4
++    # a non-real exponent must be left unchanged (issue: Invalid
++    # comparison of complex I)
++    assert T(sin(x)**I, sin, cos, h, 4, False) == sin(x)**I
+ 
+ 
+ def test_TR5():
+@@ -89,6 +92,15 @@ def test_TR6():
+     assert TR6(cos(x)**4) == (-sin(x)**2 + 1)**2
+ 
+ 
++def test_simplify_cos_pow_I():
++    # a non-real (complex) exponent must not raise
++    # (issue: Invalid comparison of complex I)
++    assert simplify(cos(x)**I) == cos(x)**I
++    assert simplify(sin(x)**I) == sin(x)**I
++    assert TR6(cos(x)**I) == cos(x)**I
++    assert TR5(sin(x)**I) == sin(x)**I
++
++
+ def test_TR7():
+     assert TR7(cos(x)**2) == cos(2*x)/2 + S(1)/2
+     assert TR7(cos(x)**2 + 1) == cos(2*x)/2 + S(3)/2
+2026-06-23 07:20:26,993 - INFO - Eval script for sympy__sympy-16503 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16503/eval.sh; copying to container...
+2026-06-23 07:20:39,763 - INFO - Test runtime: 12.66 seconds
+2026-06-23 07:20:39,769 - INFO - Test output for sympy__sympy-16503 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16503/test_output.txt
+2026-06-23 07:20:39,867 - INFO - Git diff after:
+diff --git a/sympy/simplify/fu.py b/sympy/simplify/fu.py
+index cd7b3c5902..e7b5059411 100644
+--- a/sympy/simplify/fu.py
++++ b/sympy/simplify/fu.py
+@@ -501,6 +501,9 @@ def _f(rv):
+         if not (rv.is_Pow and rv.base.func == f):
+             return rv
+ 
++        if not rv.exp.is_real:
++            return rv
++
+         if (rv.exp < 0) == True:
+             return rv
+         if (rv.exp > max) == True:
+diff --git a/sympy/simplify/tests/test_fu.py b/sympy/simplify/tests/test_fu.py
+index dc90821640..1d775cbb43 100644
+--- a/sympy/simplify/tests/test_fu.py
++++ b/sympy/simplify/tests/test_fu.py
+@@ -1,6 +1,6 @@
+ from sympy import (
+     Add, Mul, S, Symbol, cos, cot, pi, I, sin, sqrt, tan, root, csc, sec,
+-    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy)
++    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy, simplify)
+ from sympy.simplify.fu import (
+     L, TR1, TR10, TR10i, TR11, TR12, TR12i, TR13, TR14, TR15, TR16,
+     TR111, TR2, TR2i, TR3, TR5, TR6, TR7, TR8, TR9, TRmorrie, _TR56 as T,
+@@ -75,6 +75,9 @@ def test__TR56():
+     assert T(sin(x)**6, sin, cos, h, 6, False) == (-cos(x)**2 + 1)**3
+     assert T(sin(x)**6, sin, cos, h, 6, True) == sin(x)**6
+     assert T(sin(x)**8, sin, cos, h, 10, True) == (-cos(x)**2 + 1)**4
++    # a non-real exponent must be left unchanged (issue: Invalid
++    # comparison of complex I)
++    assert T(sin(x)**I, sin, cos, h, 4, False) == sin(x)**I
+ 
+ 
+ def test_TR5():
+@@ -89,6 +92,15 @@ def test_TR6():
+     assert TR6(cos(x)**4) == (-sin(x)**2 + 1)**2
+ 
+ 
++def test_simplify_cos_pow_I():
++    # a non-real (complex) exponent must not raise
++    # (issue: Invalid comparison of complex I)
++    assert simplify(cos(x)**I) == cos(x)**I
++    assert simplify(sin(x)**I) == sin(x)**I
++    assert TR6(cos(x)**I) == cos(x)**I
++    assert TR5(sin(x)**I) == sin(x)**I
++
++
+ def test_TR7():
+     assert TR7(cos(x)**2) == cos(2*x)/2 + S(1)/2
+     assert TR7(cos(x)**2 + 1) == cos(2*x)/2 + S(3)/2
+2026-06-23 07:20:39,868 - INFO - Grading answer for sympy__sympy-16503...
+2026-06-23 07:20:39,875 - INFO - report: {'sympy__sympy-16503': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_pretty_sum']}, 'PASS_TO_PASS': {'success': ['test_pretty_ascii_str', 'test_pretty_unicode_str', 'test_upretty_greek', 'test_upretty_multiindex', 'test_upretty_sub_super', 'test_upretty_subs_missing_in_24', 'test_missing_in_2X_issue_9047', 'test_upretty_modifiers', 'test_pretty_Cycle', 'test_pretty_basic', 'test_negative_fractions', 'test_issue_5524', 'test_pretty_ordering', 'test_EulerGamma', 'test_GoldenRatio', 'test_pretty_relational', 'test_Assignment', 'test_AugmentedAssignment', 'test_issue_7117', 'test_pretty_rational', 'test_pretty_functions', 'test_pretty_sqrt', 'test_pretty_sqrt_char_knob', 'test_pretty_sqrt_longsymbol_no_sqrt_char', 'test_pretty_KroneckerDelta', 'test_pretty_product', 'test_pretty_lambda', 'test_pretty_order', 'test_pretty_derivatives', 'test_pretty_integrals', 'test_pretty_matrix', 'test_pretty_ndim_arrays', 'test_tensor_TensorProduct', 'test_diffgeom_print_WedgeProduct', 'test_Adjoint', 'test_pretty_Trace_issue_9044', 'test_MatrixExpressions', 'test_pretty_dotproduct', 'test_pretty_piecewise', 'test_pretty_ITE', 'test_pretty_seq', 'test_any_object_in_sequence', 'test_print_builtin_set', 'test_pretty_sets', 'test_pretty_SetExpr', 'test_pretty_ImageSet', 'test_pretty_ConditionSet', 'test_pretty_ComplexRegion', 'test_pretty_Union_issue_10414', 'test_pretty_Intersection_issue_10414', 'test_ProductSet_paranthesis', 'test_ProductSet_prod_char_issue_10413', 'test_pretty_sequences', 'test_pretty_FourierSeries', 'test_pretty_FormalPowerSeries', 'test_pretty_limits', 'test_pretty_ComplexRootOf', 'test_pretty_RootSum', 'test_GroebnerBasis', 'test_pretty_Boolean', 'test_pretty_Domain', 'test_pretty_prec', 'test_pprint', 'test_pretty_class', 'test_pretty_no_wrap_line', 'test_settings', 'test_units', 'test_pretty_Subs', 'test_gammas', 'test_beta', 'test_function_subclass_different_name', 'test_SingularityFunction', 'test_deltas', 'test_hyper', 'test_meijerg', 'test_noncommutative', 'test_pretty_special_functions', 'test_pretty_geometry', 'test_expint', 'test_elliptic_functions', 'test_RandomDomain', 'test_PrettyPoly', 'test_issue_6285', 'test_issue_6359', 'test_issue_6739', 'test_complicated_symbol_unchanged', 'test_categories', 'test_PrettyModules', 'test_QuotientRing', 'test_Homomorphism', 'test_Tr', 'test_pretty_Add', 'test_issue_7179', 'test_issue_7180', 'test_pretty_Complement', 'test_pretty_SymmetricDifference', 'test_pretty_Contains', 'test_issue_4335', 'test_issue_6324', 'test_issue_7927', 'test_issue_6134', 'test_issue_9877', 'test_issue_13651', 'test_pretty_primenu', 'test_pretty_primeomega', 'test_pretty_Mod', 'test_issue_11801', 'test_pretty_UnevaluatedExpr', 'test_issue_10472', 'test_MatrixElement_printing', 'test_issue_12675', 'test_MatrixSymbol_printing', 'test_degree_printing', 'test_vector_expr_pretty_printing', 'test_pretty_print_tensor_expr', 'test_pretty_print_tensor_partial_deriv', 'test_issue_15560', 'test_print_lerchphi', 'test_issue_15583', 'test_matrixSymbolBold', 'test_center_accent'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-16503: resolved: False
+2026-06-23 07:20:39,880 - INFO - Attempting to stop container sweb.eval.sympy__sympy-16503.squad_v1...
+2026-06-23 07:20:55,814 - INFO - Attempting to remove container sweb.eval.sympy__sympy-16503.squad_v1...
+2026-06-23 07:20:55,968 - INFO - Container sweb.eval.sympy__sympy-16503.squad_v1 removed.
+2026-06-23 07:20:55,969 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-16503:latest...
+2026-06-23 07:20:56,225 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-16503:latest removed.

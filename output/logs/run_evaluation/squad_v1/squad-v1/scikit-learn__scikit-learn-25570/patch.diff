@@ -1,0 +1,107 @@
+diff --git a/sklearn/compose/_column_transformer.py b/sklearn/compose/_column_transformer.py
+index a261451177..a7babc1fa2 100644
+--- a/sklearn/compose/_column_transformer.py
++++ b/sklearn/compose/_column_transformer.py
+@@ -382,17 +382,15 @@ class ColumnTransformer(TransformerMixin, _BaseComposition):
+         for name, trans, columns in transformers:
+             if replace_strings:
+                 # replace 'passthrough' with identity transformer and
+-                # skip in case of 'drop'
+-                if trans == "passthrough":
++                # skip in case of 'drop' or empty columns
++                if trans == "drop" or _is_empty_column_selection(columns):
++                    continue
++                elif trans == "passthrough":
+                     trans = FunctionTransformer(
+                         accept_sparse=True,
+                         check_inverse=False,
+                         feature_names_out="one-to-one",
+                     ).set_output(transform=output_config["dense"])
+-                elif trans == "drop":
+-                    continue
+-                elif _is_empty_column_selection(columns):
+-                    continue
+ 
+             if column_as_strings:
+                 # Convert all columns to using their string labels
+@@ -587,6 +585,8 @@ class ColumnTransformer(TransformerMixin, _BaseComposition):
+         for name, old, column, _ in self._iter():
+             if old == "drop":
+                 trans = "drop"
++            elif _is_empty_column_selection(column):
++                trans = old
+             elif old == "passthrough":
+                 # FunctionTransformer is present in list of transformers,
+                 # so get next transformer, but save original string
+@@ -596,8 +596,6 @@ class ColumnTransformer(TransformerMixin, _BaseComposition):
+                 # The fitted FunctionTransformer is saved in another attribute,
+                 # so it can be used during transform for set_output.
+                 self._name_to_fitted_passthrough[name] = func_transformer
+-            elif _is_empty_column_selection(column):
+-                trans = old
+             else:
+                 trans = next(fitted_transformers)
+             transformers_.append((name, trans, column))
+@@ -865,9 +863,13 @@ class ColumnTransformer(TransformerMixin, _BaseComposition):
+                 transformer_names = [
+                     t[0] for t in self._iter(fitted=True, replace_strings=True)
+                 ]
+-                feature_names_outs = [X.columns for X in Xs]
++                transformer_with_feature_names_out = [
++                    (name, X.columns)
++                    for name, X in zip(transformer_names, Xs)
++                    if X.shape[1] != 0
++                ]
+                 names_out = self._add_prefix_for_feature_names_out(
+-                    list(zip(transformer_names, feature_names_outs))
++                    transformer_with_feature_names_out
+                 )
+                 output.columns = names_out
+                 return output
+diff --git a/sklearn/compose/tests/test_column_transformer.py b/sklearn/compose/tests/test_column_transformer.py
+index e18a0519de..72174f13a3 100644
+--- a/sklearn/compose/tests/test_column_transformer.py
++++ b/sklearn/compose/tests/test_column_transformer.py
+@@ -1966,6 +1966,42 @@ def test_column_transformer_set_output(verbose_feature_names_out, remainder):
+     assert_array_equal(X_trans.index, df_test.index)
+ 
+ 
++@pytest.mark.parametrize("verbose_feature_names_out", [True, False])
++def test_column_transformer_empty_columns_pandas_output(verbose_feature_names_out):
++    """Check pandas output with transformers selecting no columns."""
++    pd = pytest.importorskip("pandas")
++
++    df = pd.DataFrame(
++        [[1.0, 2.0, 3.0, 4.0], [4.0, 2.0, 2.0, 5.0]],
++        columns=["a", "b", "c", "d"],
++    )
++    ct = ColumnTransformer(
++        [
++            ("empty_passthrough", "passthrough", []),
++            ("empty_transformer", StandardScaler(), []),
++            ("scale", StandardScaler(), ["a", "b", "c"]),
++        ],
++        remainder="drop",
++        verbose_feature_names_out=verbose_feature_names_out,
++    ).set_output(transform="pandas")
++
++    fit_transformed = ct.fit_transform(df)
++    transformed = ct.transform(df)
++
++    expected_columns = ["a", "b", "c"]
++    if verbose_feature_names_out:
++        expected_columns = [f"scale__{name}" for name in expected_columns]
++    expected = pd.DataFrame(
++        [[-1.0, 0.0, 1.0], [1.0, 0.0, -1.0]],
++        columns=expected_columns,
++    )
++    for X_trans in [fit_transformed, transformed]:
++        assert isinstance(X_trans, pd.DataFrame)
++        assert_array_equal(X_trans.columns, expected.columns)
++        assert_array_equal(X_trans.index, df.index)
++        assert_allclose(X_trans.to_numpy(), expected.to_numpy())
++
++
+ @pytest.mark.parametrize("remainder", ["drop", "passthrough"])
+ @pytest.mark.parametrize("fit_transform", [True, False])
+ def test_column_transform_set_output_mixed(remainder, fit_transform):

@@ -1,0 +1,59 @@
+diff --git a/seaborn/_core/scales.py b/seaborn/_core/scales.py
+index 6c9ecbc9..3c215a60 100644
+--- a/seaborn/_core/scales.py
++++ b/seaborn/_core/scales.py
+@@ -346,7 +346,7 @@ class ContinuousBase(Scale):
+                 vmin, vmax = data.min(), data.max()
+             else:
+                 vmin, vmax = new.norm
+-            vmin, vmax = axis.convert_units((vmin, vmax))
++            vmin, vmax = map(float, axis.convert_units((vmin, vmax)))
+             a = forward(vmin)
+             b = forward(vmax) - forward(vmin)
+ 
+diff --git a/tests/_core/test_plot.py b/tests/_core/test_plot.py
+index 6862dbf8..aadac615 100644
+--- a/tests/_core/test_plot.py
++++ b/tests/_core/test_plot.py
+@@ -340,6 +340,10 @@ class TestScaling:
+             for var in "xy":
+                 assert p._scales[var].__class__.__name__ == scale_type
+ 
++    def test_boolean_color_scale(self):
++
++        Plot(["a", "b"], [1, 2], color=[True, False]).add(MockMark()).plot()
++
+     def test_inference_from_layer_data(self):
+ 
+         p = Plot().add(MockMark(), x=["a", "b", "c"]).plot()
+diff --git a/tests/_core/test_scales.py b/tests/_core/test_scales.py
+index 2d967cc2..b19be972 100644
+--- a/tests/_core/test_scales.py
++++ b/tests/_core/test_scales.py
+@@ -73,6 +73,12 @@ class TestContinuous:
+         s = Continuous()._setup(x, IntervalProperty())
+         assert_array_equal(s(x), [0, .25, 1])
+ 
++    def test_interval_boolean_data(self):
++
++        x = pd.Series([True, False], name="x")
++        s = Continuous()._setup(x, IntervalProperty())
++        assert_array_equal(s(x), [1, 0])
++
+     def test_interval_with_range(self, x):
+ 
+         s = Continuous((1, 3))._setup(x, IntervalProperty())
+@@ -96,6 +102,13 @@ class TestContinuous:
+         s = Continuous()._setup(x, Color())
+         assert_array_equal(s(x), cmap([0, .25, 1])[:, :3])  # FIXME RGBA
+ 
++    def test_color_boolean_data(self):
++
++        x = pd.Series([True, False], name="x")
++        cmap = color_palette("ch:", as_cmap=True)
++        s = Continuous()._setup(x, Color())
++        assert_array_equal(s(x), cmap([1., 0.])[:, :3])  # FIXME RGBA
++
+     def test_color_named_values(self, x):
+ 
+         cmap = color_palette("viridis", as_cmap=True)

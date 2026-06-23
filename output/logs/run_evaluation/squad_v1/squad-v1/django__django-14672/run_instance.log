@@ -1,0 +1,193 @@
+2026-06-23 05:07:01,656 - INFO - Creating container for django__django-14672...
+2026-06-23 05:07:04,781 - INFO - Container for django__django-14672 created: 7b6d8971663b6c6fcb180d5e445feb07f9f0f4829a0da5c34d91a4fd5881834d
+2026-06-23 05:07:05,528 - INFO - Container for django__django-14672 started: 7b6d8971663b6c6fcb180d5e445feb07f9f0f4829a0da5c34d91a4fd5881834d
+2026-06-23 05:07:05,539 - INFO - Intermediate patch for django__django-14672 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14672/patch.diff, now applying to container...
+2026-06-23 05:07:05,817 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:07:05,926 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:07:06,092 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/helpers.py
+Hunk #1 succeeded at 203 (offset -6 lines).
+patching file tests/admin_views/customadmin.py
+patching file tests/admin_views/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 5132 with fuzz 1.
+
+2026-06-23 05:07:07,473 - INFO - Git diff before:
+diff --git a/django/contrib/admin/helpers.py b/django/contrib/admin/helpers.py
+index 0728409046..94bee49582 100644
+--- a/django/contrib/admin/helpers.py
++++ b/django/contrib/admin/helpers.py
+@@ -203,7 +203,11 @@ class AdminReadonlyField:
+             remote_field.model._meta.model_name,
+         )
+         try:
+-            url = reverse(url_name, args=[quote(remote_obj.pk)])
++            url = reverse(
++                url_name,
++                args=[quote(remote_obj.pk)],
++                current_app=self.model_admin.admin_site.name,
++            )
+             return format_html('<a href="{}">{}</a>', url, remote_obj)
+         except NoReverseMatch:
+             return str(remote_obj)
+diff --git a/tests/admin_views/customadmin.py b/tests/admin_views/customadmin.py
+index a9d8a060b9..e70039accf 100644
+--- a/tests/admin_views/customadmin.py
++++ b/tests/admin_views/customadmin.py
+@@ -62,6 +62,8 @@ site.register(models.ChapterXtra1, base_admin.ChapterXtra1Admin)
+ site.register(User, UserLimitedAdmin)
+ site.register(models.UndeletableObject, base_admin.UndeletableObjectAdmin)
+ site.register(models.Simple, base_admin.AttributeErrorRaisingAdmin)
++site.register(models.Language, base_admin.LanguageAdmin)
++site.register(models.ReadOnlyRelatedField, base_admin.ReadOnlyRelatedFieldAdmin)
+ 
+ simple_site = Admin2(name='admin4')
+ simple_site.register(User, CustomPwdTemplateUserAdmin)
+diff --git a/tests/admin_views/tests.py b/tests/admin_views/tests.py
+index b277476296..c2a3f352b8 100644
+--- a/tests/admin_views/tests.py
++++ b/tests/admin_views/tests.py
+@@ -5132,6 +5132,48 @@ class ReadonlyTest(AdminFieldExtractionMixin, TestCase):
+         # Related ForeignKey object not registered in admin.
+         self.assertContains(response, '<div class="readonly">Chapter 1</div>', html=True)
+ 
++    def test_readonly_foreignkey_links_custom_admin_site(self):
++        """
++        ForeignKey readonly fields render links using the URL of the admin
++        site that is rendering the page (custom admin site).
++        """
++        chapter = Chapter.objects.create(
++            title='Chapter 1',
++            content='content',
++            book=Book.objects.create(name='Book 1'),
++        )
++        language = Language.objects.create(iso='_40', name='Test')
++        obj = ReadOnlyRelatedField.objects.create(
++            chapter=chapter,
++            language=language,
++            user=self.superuser,
++        )
++        response = self.client.get(
++            reverse('admin2:admin_views_readonlyrelatedfield_change', args=(obj.pk,)),
++        )
++        # Related ForeignKey object registered in the custom admin site uses
++        # the custom admin site's URL prefix, not the default one.
++        user_url = reverse('admin2:auth_user_change', args=(self.superuser.pk,))
++        self.assertContains(
++            response,
++            '<div class="readonly"><a href="%s">super</a></div>' % user_url,
++            html=True,
++        )
++        self.assertNotContains(
++            response,
++            reverse('admin:auth_user_change', args=(self.superuser.pk,)),
++        )
++        # Related ForeignKey with a string primary key.
++        language_url = reverse(
++            'admin2:admin_views_language_change',
++            args=(quote(language.pk),),
++        )
++        self.assertContains(
++            response,
++            '<div class="readonly"><a href="%s">_40</a></div>' % language_url,
++            html=True,
++        )
++
+     def test_readonly_manytomany_backwards_ref(self):
+         """
+         Regression test for #16433 - backwards references for related objects
+2026-06-23 05:07:07,479 - INFO - Eval script for django__django-14672 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14672/eval.sh; copying to container...
+2026-06-23 05:07:21,096 - INFO - Test runtime: 13.38 seconds
+2026-06-23 05:07:21,101 - INFO - Test output for django__django-14672 written to logs/run_evaluation/squad_v1/squad-v1/django__django-14672/test_output.txt
+2026-06-23 05:07:21,252 - INFO - Git diff after:
+diff --git a/django/contrib/admin/helpers.py b/django/contrib/admin/helpers.py
+index 0728409046..94bee49582 100644
+--- a/django/contrib/admin/helpers.py
++++ b/django/contrib/admin/helpers.py
+@@ -203,7 +203,11 @@ class AdminReadonlyField:
+             remote_field.model._meta.model_name,
+         )
+         try:
+-            url = reverse(url_name, args=[quote(remote_obj.pk)])
++            url = reverse(
++                url_name,
++                args=[quote(remote_obj.pk)],
++                current_app=self.model_admin.admin_site.name,
++            )
+             return format_html('<a href="{}">{}</a>', url, remote_obj)
+         except NoReverseMatch:
+             return str(remote_obj)
+diff --git a/tests/admin_views/customadmin.py b/tests/admin_views/customadmin.py
+index a9d8a060b9..e70039accf 100644
+--- a/tests/admin_views/customadmin.py
++++ b/tests/admin_views/customadmin.py
+@@ -62,6 +62,8 @@ site.register(models.ChapterXtra1, base_admin.ChapterXtra1Admin)
+ site.register(User, UserLimitedAdmin)
+ site.register(models.UndeletableObject, base_admin.UndeletableObjectAdmin)
+ site.register(models.Simple, base_admin.AttributeErrorRaisingAdmin)
++site.register(models.Language, base_admin.LanguageAdmin)
++site.register(models.ReadOnlyRelatedField, base_admin.ReadOnlyRelatedFieldAdmin)
+ 
+ simple_site = Admin2(name='admin4')
+ simple_site.register(User, CustomPwdTemplateUserAdmin)
+diff --git a/tests/admin_views/tests.py b/tests/admin_views/tests.py
+index b277476296..c2a3f352b8 100644
+--- a/tests/admin_views/tests.py
++++ b/tests/admin_views/tests.py
+@@ -5132,6 +5132,48 @@ class ReadonlyTest(AdminFieldExtractionMixin, TestCase):
+         # Related ForeignKey object not registered in admin.
+         self.assertContains(response, '<div class="readonly">Chapter 1</div>', html=True)
+ 
++    def test_readonly_foreignkey_links_custom_admin_site(self):
++        """
++        ForeignKey readonly fields render links using the URL of the admin
++        site that is rendering the page (custom admin site).
++        """
++        chapter = Chapter.objects.create(
++            title='Chapter 1',
++            content='content',
++            book=Book.objects.create(name='Book 1'),
++        )
++        language = Language.objects.create(iso='_40', name='Test')
++        obj = ReadOnlyRelatedField.objects.create(
++            chapter=chapter,
++            language=language,
++            user=self.superuser,
++        )
++        response = self.client.get(
++            reverse('admin2:admin_views_readonlyrelatedfield_change', args=(obj.pk,)),
++        )
++        # Related ForeignKey object registered in the custom admin site uses
++        # the custom admin site's URL prefix, not the default one.
++        user_url = reverse('admin2:auth_user_change', args=(self.superuser.pk,))
++        self.assertContains(
++            response,
++            '<div class="readonly"><a href="%s">super</a></div>' % user_url,
++            html=True,
++        )
++        self.assertNotContains(
++            response,
++            reverse('admin:auth_user_change', args=(self.superuser.pk,)),
++        )
++        # Related ForeignKey with a string primary key.
++        language_url = reverse(
++            'admin2:admin_views_language_change',
++            args=(quote(language.pk),),
++        )
++        self.assertContains(
++            response,
++            '<div class="readonly"><a href="%s">_40</a></div>' % language_url,
++            html=True,
++        )
++
+     def test_readonly_manytomany_backwards_ref(self):
+         """
+         Regression test for #16433 - backwards references for related objects
+2026-06-23 05:07:21,253 - INFO - Grading answer for django__django-14672...
+2026-06-23 05:07:21,264 - INFO - report: {'django__django-14672': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_multiple_autofields (invalid_models_tests.test_models.MultipleAutoFieldsTests)', 'test_db_column_clash (invalid_models_tests.test_models.FieldNamesTests)', 'test_ending_with_underscore (invalid_models_tests.test_models.FieldNamesTests)', 'test_including_separator (invalid_models_tests.test_models.FieldNamesTests)', 'test_pk (invalid_models_tests.test_models.FieldNamesTests)', 'test_check_jsonfield (invalid_models_tests.test_models.JSONFieldTests)', 'test_check_jsonfield_required_db_features (invalid_models_tests.test_models.JSONFieldTests)', 'test_ordering_pointing_to_json_field_value (invalid_models_tests.test_models.JSONFieldTests)', 'test_choices (m2m_through.tests.M2mThroughToFieldsTests)', 'test_retrieval (m2m_through.tests.M2mThroughToFieldsTests)', 'test_list_containing_non_iterable (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_non_iterable (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_non_list (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_pointing_to_fk (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_pointing_to_m2m (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_pointing_to_missing_field (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_valid_model (invalid_models_tests.test_models.UniqueTogetherTests)', 'test_list_containing_non_iterable (invalid_models_tests.test_models.IndexTogetherTests)', 'test_non_iterable (invalid_models_tests.test_models.IndexTogetherTests)', 'test_non_list (invalid_models_tests.test_models.IndexTogetherTests)', 'test_pointing_to_fk (invalid_models_tests.test_models.IndexTogetherTests)', 'test_pointing_to_m2m_field (invalid_models_tests.test_models.IndexTogetherTests)', 'test_pointing_to_missing_field (invalid_models_tests.test_models.IndexTogetherTests)', 'test_pointing_to_non_local_field (invalid_models_tests.test_models.IndexTogetherTests)', 'test_field_name_clash_with_child_accessor (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_field_name_clash_with_m2m_through (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_id_clash (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_inheritance_clash (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_multigeneration_inheritance (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_multiinheritance_clash (invalid_models_tests.test_models.ShadowingFieldsTests)', 'test_func_index (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_complex_expression_custom_lookup (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_pointing_to_fk (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_pointing_to_m2m_field (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_pointing_to_missing_field (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_pointing_to_missing_field_nested (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_pointing_to_non_local_field (invalid_models_tests.test_models.IndexesTests)', 'test_func_index_required_db_features (invalid_models_tests.test_models.IndexesTests)', 'test_index_with_condition (invalid_models_tests.test_models.IndexesTests)', 'test_index_with_condition_required_db_features (invalid_models_tests.test_models.IndexesTests)', 'test_index_with_include (invalid_models_tests.test_models.IndexesTests)', 'test_index_with_include_required_db_features (invalid_models_tests.test_models.IndexesTests)', 'test_max_name_length (invalid_models_tests.test_models.IndexesTests)', 'test_name_constraints (invalid_models_tests.test_models.IndexesTests)', 'test_pointing_to_fk (invalid_models_tests.test_models.IndexesTests)', 'test_pointing_to_m2m_field (invalid_models_tests.test_models.IndexesTests)', 'test_pointing_to_missing_field (invalid_models_tests.test_models.IndexesTests)', 'test_pointing_to_non_local_field (invalid_models_tests.test_models.IndexesTests)', 'test_add_on_symmetrical_m2m_with_intermediate_model (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_empty_qs (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_non_symmetrical_both (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_non_symmetrical_clear_first_side (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_non_symmetrical_first_side (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_non_symmetrical_second_side (m2m_through.tests.M2mThroughReferentialTests)', 'test_self_referential_symmetrical (m2m_through.tests.M2mThroughReferentialTests)', 'test_set_on_symmetrical_m2m_with_intermediate_model (m2m_through.tests.M2mThroughReferentialTests)', 'test_through_fields_self_referential (m2m_through.tests.M2mThroughReferentialTests)', 'test_just_order_with_respect_to_no_errors (invalid_models_tests.test_models.OtherModelTests)', 'test_just_ordering_no_errors (invalid_models_tests.test_models.OtherModelTests)', 'test_lazy_reference_checks (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_autogenerated_table_name_clash (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_autogenerated_table_name_clash_database_routers_installed (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_field_table_name_clash (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_field_table_name_clash_database_routers_installed (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_table_name_clash (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_table_name_clash_database_routers_installed (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_to_concrete_and_proxy_allowed (invalid_models_tests.test_models.OtherModelTests)', 'test_m2m_unmanaged_shadow_models_not_checked (invalid_models_tests.test_models.OtherModelTests)', 'test_name_beginning_with_underscore (invalid_models_tests.test_models.OtherModelTests)', 'test_name_contains_double_underscores (invalid_models_tests.test_models.OtherModelTests)', 'test_name_ending_with_underscore (invalid_models_tests.test_models.OtherModelTests)', 'test_non_valid (invalid_models_tests.test_models.OtherModelTests)', 'test_onetoone_with_explicit_parent_link_parent_model (invalid_models_tests.test_models.OtherModelTests)', 'test_onetoone_with_parent_model (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_allows_registered_lookups (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_non_iterable (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_multiple_times_to_model_fields (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_foreignkey_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_lookup_not_transform (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_missing_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_missing_foreignkey_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_missing_related_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_missing_related_model_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_non_related_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_related_model_pk (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_pointing_to_two_related_model_field (invalid_models_tests.test_models.OtherModelTests)', 'test_ordering_with_order_with_respect_to (invalid_models_tests.test_models.OtherModelTests)', 'test_property_and_related_field_accessor_clash (invalid_models_tests.test_models.OtherModelTests)', 'test_single_primary_key (invalid_models_tests.test_models.OtherModelTests)', 'test_swappable_missing_app (invalid_models_tests.test_models.OtherModelTests)', 'test_swappable_missing_app_name (invalid_models_tests.test_models.OtherModelTests)', 'test_two_m2m_through_same_model_with_different_through_fields (invalid_models_tests.test_models.OtherModelTests)', 'test_two_m2m_through_same_relationship (invalid_models_tests.test_models.OtherModelTests)', 'test_unique_primary_key (invalid_models_tests.test_models.OtherModelTests)', 'test_check_constraint_pointing_to_fk (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_joined_fields (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_joined_fields_complex_check (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_m2m_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_missing_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_non_local_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_pk (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_reverse_fk (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraint_pointing_to_reverse_o2o (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraints (invalid_models_tests.test_models.ConstraintsTests)', 'test_check_constraints_required_db_features (invalid_models_tests.test_models.ConstraintsTests)', 'test_deferrable_unique_constraint (invalid_models_tests.test_models.ConstraintsTests)', 'test_deferrable_unique_constraint_required_db_features (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_expression_custom_lookup (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_pointing_to_fk (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_pointing_to_m2m_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_pointing_to_missing_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_pointing_to_missing_field_nested (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_pointing_to_non_local_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_func_unique_constraint_required_db_features (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_condition_pointing_to_joined_fields (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_condition_pointing_to_missing_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_pointing_to_fk (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_pointing_to_m2m_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_pointing_to_missing_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_pointing_to_non_local_field (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_pointing_to_reverse_o2o (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_with_condition (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_with_condition_required_db_features (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_with_include (invalid_models_tests.test_models.ConstraintsTests)', 'test_unique_constraint_with_include_required_db_features (invalid_models_tests.test_models.ConstraintsTests)', 'test_add_on_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_add_on_m2m_with_intermediate_model_callable_through_default (m2m_through.tests.M2mThroughTests)', 'test_add_on_m2m_with_intermediate_model_value_required (m2m_through.tests.M2mThroughTests)', 'test_add_on_m2m_with_intermediate_model_value_required_fails (m2m_through.tests.M2mThroughTests)', 'test_add_on_reverse_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_clear_on_reverse_removes_all_the_m2m_relationships (m2m_through.tests.M2mThroughTests)', 'test_clear_removes_all_the_m2m_relationships (m2m_through.tests.M2mThroughTests)', 'test_create_on_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_create_on_m2m_with_intermediate_model_callable_through_default (m2m_through.tests.M2mThroughTests)', 'test_create_on_m2m_with_intermediate_model_value_required (m2m_through.tests.M2mThroughTests)', 'test_create_on_m2m_with_intermediate_model_value_required_fails (m2m_through.tests.M2mThroughTests)', 'test_create_on_reverse_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_custom_related_name_doesnt_conflict_with_fky_related_name (m2m_through.tests.M2mThroughTests)', 'test_custom_related_name_forward_empty_qs (m2m_through.tests.M2mThroughTests)', 'test_custom_related_name_forward_non_empty_qs (m2m_through.tests.M2mThroughTests)', 'test_custom_related_name_reverse_empty_qs (m2m_through.tests.M2mThroughTests)', 'test_custom_related_name_reverse_non_empty_qs (m2m_through.tests.M2mThroughTests)', 'test_filter_on_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_get_on_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_get_or_create_on_m2m_with_intermediate_model_value_required (m2m_through.tests.M2mThroughTests)', 'test_get_or_create_on_m2m_with_intermediate_model_value_required_fails (m2m_through.tests.M2mThroughTests)', 'test_order_by_relational_field_through_model (m2m_through.tests.M2mThroughTests)', 'test_query_first_model_by_intermediate_model_attribute (m2m_through.tests.M2mThroughTests)', 'test_query_model_by_attribute_name_of_related_model (m2m_through.tests.M2mThroughTests)', 'test_query_model_by_custom_related_name (m2m_through.tests.M2mThroughTests)', 'test_query_model_by_intermediate_can_return_non_unique_queryset (m2m_through.tests.M2mThroughTests)', 'test_query_model_by_related_model_name (m2m_through.tests.M2mThroughTests)', 'test_query_second_model_by_intermediate_model_attribute (m2m_through.tests.M2mThroughTests)', 'test_remove_on_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_remove_on_m2m_with_intermediate_model_multiple (m2m_through.tests.M2mThroughTests)', 'test_remove_on_reverse_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_retrieve_intermediate_items (m2m_through.tests.M2mThroughTests)', 'test_retrieve_reverse_intermediate_items (m2m_through.tests.M2mThroughTests)', 'test_reverse_inherited_m2m_with_through_fields_list_hashable (m2m_through.tests.M2mThroughTests)', 'test_set_on_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'test_set_on_m2m_with_intermediate_model_callable_through_default (m2m_through.tests.M2mThroughTests)', 'test_set_on_m2m_with_intermediate_model_value_required (m2m_through.tests.M2mThroughTests)', 'test_set_on_m2m_with_intermediate_model_value_required_fails (m2m_through.tests.M2mThroughTests)', 'test_set_on_reverse_m2m_with_intermediate_model (m2m_through.tests.M2mThroughTests)', 'Relations with intermediary tables with multiple FKs', 'test_update_or_create_on_m2m_with_intermediate_model_value_required (m2m_through.tests.M2mThroughTests)', 'test_update_or_create_on_m2m_with_intermediate_model_value_required_fails (m2m_through.tests.M2mThroughTests)']}, 'PASS_TO_PASS': {'success': [], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-14672: resolved: False
+2026-06-23 05:07:21,270 - INFO - Attempting to stop container sweb.eval.django__django-14672.squad_v1...
+2026-06-23 05:07:36,932 - INFO - Attempting to remove container sweb.eval.django__django-14672.squad_v1...
+2026-06-23 05:07:37,114 - INFO - Container sweb.eval.django__django-14672.squad_v1 removed.
+2026-06-23 05:07:37,115 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-14672:latest...
+2026-06-23 05:07:38,141 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-14672:latest removed.

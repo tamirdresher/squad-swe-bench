@@ -1,0 +1,116 @@
+diff --git a/django/utils/html.py b/django/utils/html.py
+index d0bc97be80..90518dd6cb 100644
+--- a/django/utils/html.py
++++ b/django/utils/html.py
+@@ -59,15 +59,20 @@ _json_script_escapes = {
+ }
+ 
+ 
+-def json_script(value, element_id=None):
++def json_script(value, element_id=None, encoder=None):
+     """
+     Escape all the HTML/XML special characters with their unicode escapes, so
+     value is safe to be output anywhere except for inside a tag attribute. Wrap
+     the escaped JSON in a script tag.
++
++    The JSON is encoded using the provided encoder class, which defaults to
++    DjangoJSONEncoder.
+     """
+     from django.core.serializers.json import DjangoJSONEncoder
+ 
+-    json_str = json.dumps(value, cls=DjangoJSONEncoder).translate(_json_script_escapes)
++    json_str = json.dumps(value, cls=encoder or DjangoJSONEncoder).translate(
++        _json_script_escapes
++    )
+     if element_id:
+         template = '<script id="{}" type="application/json">{}</script>'
+         args = (element_id, mark_safe(json_str))
+diff --git a/docs/ref/templates/builtins.txt b/docs/ref/templates/builtins.txt
+index c4b83a8be8..90eac733d3 100644
+--- a/docs/ref/templates/builtins.txt
++++ b/docs/ref/templates/builtins.txt
+@@ -1867,6 +1867,10 @@ This is compatible with a strict Content Security Policy that prohibits in-page
+ script execution. It also maintains a clean separation between passive data and
+ executable code.
+ 
++The underlying :func:`django.utils.html.json_script` function accepts an
++optional custom JSON ``encoder`` class. The default
++``DjangoJSONEncoder`` is used by this filter.
++
+ .. versionchanged:: 4.1
+ 
+     In older versions, the HTML "id" was a required argument.
+diff --git a/docs/ref/utils.txt b/docs/ref/utils.txt
+index 7712015929..18224b6802 100644
+--- a/docs/ref/utils.txt
++++ b/docs/ref/utils.txt
+@@ -684,6 +684,26 @@ escaping HTML.
+     Ensure the ``__str__()`` method does indeed return text that doesn't
+     require HTML escaping.
+ 
++.. function:: json_script(value, element_id=None, encoder=None)
++
++    Outputs ``value`` as JSON, wrapped in a ``<script>`` tag, ready for use
++    with JavaScript. The characters ``<``, ``>`` and ``&`` are escaped to
++    mitigate the risk of XSS attacks, so the result is safe to be output
++    anywhere except for inside a tag attribute.
++
++    ``element_id`` is the optional HTML "id" of the ``<script>`` tag.
++
++    ``encoder``, which defaults to
++    :class:`django.core.serializers.json.DjangoJSONEncoder`, is a JSON encoder
++    class that's used to serialize ``value``. See :ref:`JSON serialization
++    <serialization-formats-json>` for more details about this encoder.
++
++    See the :tfilter:`json_script` template filter for an example.
++
++    .. versionchanged:: 4.2
++
++        The ``encoder`` parameter was added.
++
+ ``django.utils.http``
+ =====================
+ 
+diff --git a/docs/releases/4.2.txt b/docs/releases/4.2.txt
+index ca1c2a0eaa..363e4ac08c 100644
+--- a/docs/releases/4.2.txt
++++ b/docs/releases/4.2.txt
+@@ -199,7 +199,8 @@ Signals
+ Templates
+ ~~~~~~~~~
+ 
+-* ...
++* The :func:`django.utils.html.json_script` function now accepts a custom
++  ``encoder`` argument for customizing the JSON encoding of values.
+ 
+ Tests
+ ~~~~~
+diff --git a/tests/utils_tests/test_html.py b/tests/utils_tests/test_html.py
+index 22a43fd4cd..c80ccfdc6b 100644
+--- a/tests/utils_tests/test_html.py
++++ b/tests/utils_tests/test_html.py
+@@ -1,6 +1,7 @@
+ import os
+ from datetime import datetime
+ 
++from django.core.serializers.json import DjangoJSONEncoder
+ from django.test import SimpleTestCase
+ from django.utils.functional import lazystr
+ from django.utils.html import (
+@@ -217,6 +218,16 @@ class TestUtilsHtml(SimpleTestCase):
+             '<script type="application/json">{"key": "value"}</script>',
+         )
+ 
++    def test_json_script_custom_encoder(self):
++        class CustomDjangoJSONEncoder(DjangoJSONEncoder):
++            def encode(self, o):
++                return '{"hello": "world"}'
++
++        self.assertHTMLEqual(
++            json_script({}, encoder=CustomDjangoJSONEncoder),
++            '<script type="application/json">{"hello": "world"}</script>',
++        )
++
+     def test_smart_urlquote(self):
+         items = (
+             ("http://Ã¶Ã¤Ã¼.com/", "http://xn--4ca9at.com/"),

@@ -1,0 +1,101 @@
+diff --git a/django/db/models/query.py b/django/db/models/query.py
+index 13d24bb871..963cfc2d56 100644
+--- a/django/db/models/query.py
++++ b/django/db/models/query.py
+@@ -5,6 +5,7 @@ The main QuerySet implementation. This provides the public API for the ORM.
+ import copy
+ import operator
+ import warnings
++from contextlib import nullcontext
+ from itertools import chain, islice
+ 
+ from asgiref.sync import sync_to_async
+@@ -793,8 +794,7 @@ class QuerySet(AltersData):
+                 )
+                 for obj_with_pk, results in zip(objs_with_pk, returned_columns):
+                     for result, field in zip(results, opts.db_returning_fields):
+-                        if field != opts.pk:
+-                            setattr(obj_with_pk, field.attname, result)
++                        setattr(obj_with_pk, field.attname, result)
+                 for obj_with_pk in objs_with_pk:
+                     obj_with_pk._state.adding = False
+                     obj_with_pk._state.db = self.db
+@@ -1824,26 +1824,32 @@ class QuerySet(AltersData):
+         max_batch_size = max(ops.bulk_batch_size(fields, objs), 1)
+         batch_size = min(batch_size, max_batch_size) if batch_size else max_batch_size
+         inserted_rows = []
+-        bulk_return = connection.features.can_return_rows_from_bulk_insert
+-        for item in [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]:
+-            if bulk_return and on_conflict is None:
++        returning_fields = (
++            self.model._meta.db_returning_fields
++            if (
++                connection.features.can_return_rows_from_bulk_insert
++                and (on_conflict is None or on_conflict == OnConflict.UPDATE)
++            )
++            else None
++        )
++        batches = [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]
++        if len(batches) > 1:
++            context = transaction.atomic(using=self.db, savepoint=False)
++        else:
++            context = nullcontext()
++        with context:
++            for item in batches:
+                 inserted_rows.extend(
+                     self._insert(
+                         item,
+                         fields=fields,
+                         using=self.db,
+-                        returning_fields=self.model._meta.db_returning_fields,
++                        on_conflict=on_conflict,
++                        update_fields=update_fields,
++                        unique_fields=unique_fields,
++                        returning_fields=returning_fields,
+                     )
+                 )
+-            else:
+-                self._insert(
+-                    item,
+-                    fields=fields,
+-                    using=self.db,
+-                    on_conflict=on_conflict,
+-                    update_fields=update_fields,
+-                    unique_fields=unique_fields,
+-                )
+         return inserted_rows
+ 
+     def _chain(self):
+diff --git a/docs/ref/models/querysets.txt b/docs/ref/models/querysets.txt
+index 57c64e32cf..ddadd14965 100644
+--- a/docs/ref/models/querysets.txt
++++ b/docs/ref/models/querysets.txt
+@@ -2339,9 +2339,11 @@ On databases that support it (all except Oracle and SQLite < 3.24), setting the
+ SQLite, in addition to ``update_fields``, a list of ``unique_fields`` that may
+ be in conflict must be provided.
+ 
+-Enabling the ``ignore_conflicts`` or ``update_conflicts`` parameter disable
+-setting the primary key on each model instance (if the database normally
+-support it).
++Enabling the ``ignore_conflicts`` parameter disables setting the primary key
++on each model instance (if the database normally supports it).
++
++Enabling the ``update_conflicts`` parameter sets the primary key on each model
++instance (if the database normally supports it).
+ 
+ .. warning::
+ 
+diff --git a/docs/releases/4.2.txt b/docs/releases/4.2.txt
+index 9710e889ca..0deecbfd2d 100644
+--- a/docs/releases/4.2.txt
++++ b/docs/releases/4.2.txt
+@@ -283,6 +283,10 @@ Models
+   :meth:`~.RelatedManager.aclear`, :meth:`~.RelatedManager.aremove`, and
+   :meth:`~.RelatedManager.aset`.
+ 
++* :meth:`.QuerySet.bulk_create` now sets the primary key on objects when the
++  ``update_conflicts`` parameter is enabled, on databases that support
++  returning rows from bulk insert (PostgreSQL, MariaDB, and SQLite 3.35+).
++
+ Requests and Responses
+ ~~~~~~~~~~~~~~~~~~~~~~

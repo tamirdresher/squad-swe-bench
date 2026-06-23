@@ -1,0 +1,3377 @@
+2026-06-23 07:20:15,002 - INFO - Creating container for sympy__sympy-16106...
+2026-06-23 07:20:16,466 - INFO - Container for sympy__sympy-16106 created: 60e73e7f7d188023806c5fc41fa5fadc45fc388b1d0cb76b571aa1e2aa1b48d0
+2026-06-23 07:20:16,936 - INFO - Container for sympy__sympy-16106 started: 60e73e7f7d188023806c5fc41fa5fadc45fc388b1d0cb76b571aa1e2aa1b48d0
+2026-06-23 07:20:16,953 - INFO - Intermediate patch for sympy__sympy-16106 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/patch.diff, now applying to container...
+2026-06-23 07:20:17,259 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:20:17,368 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:20:17,464 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 07:20:17,465 - INFO - >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+2026-06-23 07:20:17,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:20:17,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,517 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,517 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,526 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,527 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,532 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,539 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,540 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,541 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,544 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,546 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,546 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,547 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,547 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,550 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,550 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,551 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,551 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,553 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,553 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,554 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,554 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,557 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,559 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,560 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,560 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,561 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,561 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,562 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,562 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,563 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,563 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,564 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,564 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,565 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,566 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,566 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,567 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,568 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,568 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,569 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,569 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,570 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,570 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,571 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,571 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,572 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,572 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,573 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,573 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,574 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,575 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,575 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,576 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,576 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,577 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,577 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,579 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,579 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,580 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,580 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,582 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,582 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:20:17,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,617 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,621 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,621 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,623 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,623 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,625 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,641 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,655 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,656 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,656 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,659 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,660 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,660 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,661 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,661 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,662 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,662 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,663 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,663 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,664 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,664 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,665 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,665 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,666 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,666 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,667 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,667 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,668 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,668 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,669 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,669 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,670 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,670 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,671 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,671 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,672 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,672 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,673 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,673 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,674 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,674 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,675 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,675 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,676 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,676 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,677 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,677 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,678 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,678 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,679 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,679 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,679 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,680 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,680 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,681 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,681 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,682 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,683 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,684 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,684 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,685 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,685 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,686 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,689 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,691 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,692 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,692 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,693 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,693 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,694 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: sympy__sympy-16106: >>>>> Patch Apply Failed:
+patching file sympy/printing/mathml.py
+patching file sympy/printing/tests/test_mathml.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 102:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-16106/run_instance.log) for more information.
+
+2026-06-23 07:20:17,694 - INFO - Attempting to stop container sweb.eval.sympy__sympy-16106.squad_v1...
+2026-06-23 07:20:33,280 - INFO - Attempting to remove container sweb.eval.sympy__sympy-16106.squad_v1...
+2026-06-23 07:20:33,380 - INFO - Container sweb.eval.sympy__sympy-16106.squad_v1 removed.
+2026-06-23 07:20:33,381 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-16106:latest...
+2026-06-23 07:20:33,554 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-16106:latest removed.

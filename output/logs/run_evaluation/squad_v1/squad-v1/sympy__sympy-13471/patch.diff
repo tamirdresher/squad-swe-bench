@@ -1,0 +1,32 @@
+diff --git a/sympy/core/numbers.py b/sympy/core/numbers.py
+index 7bc96e68eb..68dfa237d6 100644
+--- a/sympy/core/numbers.py
++++ b/sympy/core/numbers.py
+@@ -1042,6 +1042,11 @@ def __new__(cls, num, dps=None, prec=None, precision=None):
+                 # it's a hexadecimal (coming from a pickled object)
+                 # assume that it is in standard form
+                 num = list(num)
++                # If we're loading an object pickled in Python 2 into
++                # Python 3, we may need to strip a trailing 'L' because of
++                # a shim for int on Python 2, see issue 13470.
++                if num[1].endswith('L'):
++                    num[1] = num[1][:-1]
+                 num[1] = long(num[1], 16)
+                 _mpf_ = tuple(num)
+             else:
+diff --git a/sympy/core/tests/test_numbers.py b/sympy/core/tests/test_numbers.py
+index 541840d0aa..ec69a06685 100644
+--- a/sympy/core/tests/test_numbers.py
++++ b/sympy/core/tests/test_numbers.py
+@@ -1775,3 +1775,11 @@ def check_prec_and_relerr(npval, ratval):
+ 
+     raises(TypeError, lambda: Float(np.complex64(1+2j)))
+     raises(TypeError, lambda: Float(np.complex128(1+2j)))
++
++
++def test_issue_13470():
++    # Simulate a Float unpickled from a Python 2 pickle: the mantissa hex
++    # string carries a trailing 'L' (Python 2's hex(long) suffix).
++    # Float(1.0)._mpf_ == (0, 1, 0, 1), so '1L' exercises the Py2 path.
++    x = Float((0, '1L', 0, 1), precision=53)
++    assert x == Float(1.0)

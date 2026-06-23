@@ -1,0 +1,117 @@
+diff --git a/django/db/backends/sqlite3/creation.py b/django/db/backends/sqlite3/creation.py
+index 3fcf668ced..e20ab505d3 100644
+--- a/django/db/backends/sqlite3/creation.py
++++ b/django/db/backends/sqlite3/creation.py
+@@ -95,4 +95,6 @@ class DatabaseCreation(BaseDatabaseCreation):
+         sig = [self.connection.settings_dict['NAME']]
+         if self.is_in_memory_db(test_database_name):
+             sig.append(self.connection.alias)
++        else:
++            sig.append(test_database_name)
+         return tuple(sig)
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 9344979c56..4b41906966 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -1,5 +1,6 @@
+ import itertools
+ import math
++import warnings
+ from copy import copy
+ 
+ from django.core.exceptions import EmptyResultSet
+@@ -9,6 +10,7 @@ from django.db.models.fields import (
+ )
+ from django.db.models.query_utils import RegisterLookupMixin
+ from django.utils.datastructures import OrderedSet
++from django.utils.deprecation import RemovedInDjango40Warning
+ from django.utils.functional import cached_property
+ 
+ 
+@@ -463,6 +465,17 @@ class IsNull(BuiltinLookup):
+     prepare_rhs = False
+ 
+     def as_sql(self, compiler, connection):
++        if not isinstance(self.rhs, bool):
++            # When the deprecation ends, replace with:
++            # raise ValueError(
++            #     'The QuerySet value for an isnull lookup must be True or '
++            #     'False.'
++            # )
++            warnings.warn(
++                'Using a non-boolean value for an isnull lookup is '
++                'deprecated, use True or False instead.',
++                RemovedInDjango40Warning,
++            )
+         sql, params = compiler.compile(self.lhs)
+         if self.rhs:
+             return "%s IS NULL" % sql, params
+diff --git a/docs/ref/models/querysets.txt b/docs/ref/models/querysets.txt
+index 219245576a..ef489b8467 100644
+--- a/docs/ref/models/querysets.txt
++++ b/docs/ref/models/querysets.txt
+@@ -3281,6 +3281,11 @@ SQL equivalent:
+ 
+     SELECT ... WHERE pub_date IS NULL;
+ 
++.. deprecated:: 3.1
++
++    Using non-boolean values as the right-hand side is deprecated, use ``True``
++    or ``False`` instead. In Django 4.0, the exception will be raised.
++
+ .. fieldlookup:: regex
+ 
+ ``regex``
+diff --git a/docs/releases/3.1.txt b/docs/releases/3.1.txt
+index a8aaa8e4f9..656649f914 100644
+--- a/docs/releases/3.1.txt
++++ b/docs/releases/3.1.txt
+@@ -274,6 +274,9 @@ Miscellaneous
+ * ``PASSWORD_RESET_TIMEOUT_DAYS`` setting is deprecated in favor of
+   :setting:`PASSWORD_RESET_TIMEOUT`.
+ 
++* The undocumented usage of the :lookup:`isnull` lookup with non-boolean values
++  as the right-hand side is deprecated, use ``True`` or ``False`` instead.
++
+ .. _removed-features-3.1:
+ 
+ Features removed in 3.1
+diff --git a/tests/lookup/tests.py b/tests/lookup/tests.py
+index 1958b995b2..cefc04636f 100644
+--- a/tests/lookup/tests.py
++++ b/tests/lookup/tests.py
+@@ -9,6 +9,7 @@ from django.db.models import Max
+ from django.db.models.expressions import Exists, OuterRef
+ from django.db.models.functions import Substr
+ from django.test import TestCase, skipUnlessDBFeature
++from django.utils.deprecation import RemovedInDjango40Warning
+ 
+ from .models import (
+     Article, Author, Game, IsNullWithNoneAsRHS, Player, Season, Tag,
+@@ -935,6 +936,26 @@ class LookupTests(TestCase):
+         self.assertIsInstance(query.build_lookup(['isnull_none_rhs'], field, None), IsNullWithNoneAsRHS)
+         self.assertTrue(Season.objects.filter(pk=season.pk, nulled_text_field__isnull_none_rhs=True))
+ 
++    def test_isnull_non_boolean_value(self):
++        # These tests will catch ValueError in Django 4.0 when using
++        # non-boolean values for an isnull lookup becomes forbidden.
++        # msg = (
++        #     'The QuerySet value for an isnull lookup must be True or False.'
++        # )
++        msg = (
++            'Using a non-boolean value for an isnull lookup is deprecated, '
++            'use True or False instead.'
++        )
++        tests = [
++            Author.objects.filter(alias__isnull=1),
++            Article.objects.filter(author__isnull=1),
++            Season.objects.filter(games__isnull=1),
++        ]
++        for qs in tests:
++            with self.subTest(qs=qs):
++                with self.assertWarnsMessage(RemovedInDjango40Warning, msg):
++                    qs.exists()
++
+     def test_exact_exists(self):
+         qs = Article.objects.filter(pk=OuterRef('pk'))
+         seasons = Season.objects.annotate(

@@ -1,0 +1,40 @@
+diff --git a/sympy/core/operations.py b/sympy/core/operations.py
+index 4c4a7b95f2..fe1618e8d1 100644
+--- a/sympy/core/operations.py
++++ b/sympy/core/operations.py
+@@ -332,9 +332,7 @@ def _eval_evalf(self, prec):
+                         args.append(a)
+                     else:
+                         args.append(newa)
+-                if not _aresame(tuple(args), tail_args):
+-                    tail = self.func(*args)
+-                return self.func(x, tail)
++                return self.func(x, *args)
+ 
+         # this is the same as above, but there were no pure-number args to
+         # deal with
+@@ -345,9 +343,7 @@ def _eval_evalf(self, prec):
+                 args.append(a)
+             else:
+                 args.append(newa)
+-        if not _aresame(tuple(args), self.args):
+-            return self.func(*args)
+-        return self
++        return self.func(*args)
+ 
+     @classmethod
+     def make_args(cls, expr):
+diff --git a/sympy/core/tests/test_evalf.py b/sympy/core/tests/test_evalf.py
+index b7cb7abc08..4ac3d5c471 100644
+--- a/sympy/core/tests/test_evalf.py
++++ b/sympy/core/tests/test_evalf.py
+@@ -227,6 +227,9 @@ def test_evalf_bugs():
+     assert ((oo*I).n() == S.Infinity*I)
+     assert ((oo+oo*I).n() == S.Infinity + S.Infinity*I)
+ 
++    #issue 11518
++    assert NS(2*x**2.5, 5) == '2.0000*x**2.5000'
++
+ 
+ def test_evalf_integer_parts():
+     a = floor(log(8)/log(2) - exp(-1000), evaluate=False)

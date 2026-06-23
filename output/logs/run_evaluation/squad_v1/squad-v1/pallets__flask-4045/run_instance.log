@@ -1,0 +1,154 @@
+2026-06-23 06:15:52,345 - INFO - Creating container for pallets__flask-4045...
+2026-06-23 06:15:54,135 - INFO - Container for pallets__flask-4045 created: 358f9bf03d496705c33383d16cfb9ddfeb71046032ee8478e167c691039260e8
+2026-06-23 06:15:54,678 - INFO - Container for pallets__flask-4045 started: 358f9bf03d496705c33383d16cfb9ddfeb71046032ee8478e167c691039260e8
+2026-06-23 06:15:54,794 - INFO - Intermediate patch for pallets__flask-4045 written to logs/run_evaluation/squad_v1/squad-v1/pallets__flask-4045/patch.diff, now applying to container...
+2026-06-23 06:15:55,021 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:15:55,101 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:15:55,225 - INFO - >>>>> Applied Patch:
+patching file CHANGES.rst
+patching file src/flask/blueprints.py
+patching file tests/test_basic.py
+patching file tests/test_blueprints.py
+patch unexpectedly ends in middle of line
+Hunk #3 succeeded at 294 with fuzz 2.
+
+2026-06-23 06:15:55,338 - INFO - Git diff before:
+diff --git a/CHANGES.rst b/CHANGES.rst
+index d546dcab..c2a42443 100644
+--- a/CHANGES.rst
++++ b/CHANGES.rst
+@@ -15,6 +15,9 @@ Unreleased
+ -   Fix some types that weren't available in Python 3.6.0. :issue:`4040`
+ -   Improve typing for ``send_file``, ``send_from_directory``, and
+     ``get_send_file_max_age``. :issue:`4044`, :pr:`4026`
++-   Show an error when a blueprint name contains a dot. The ``.`` has
++    special meaning, it is used to separate (nested) blueprint names and
++    the endpoint name. :issue:`4041`
+ 
+ 
+ Version 2.0.0
+diff --git a/src/flask/blueprints.py b/src/flask/blueprints.py
+index 5fb84d86..24a5f4a5 100644
+--- a/src/flask/blueprints.py
++++ b/src/flask/blueprints.py
+@@ -188,6 +188,10 @@ class Blueprint(Scaffold):
+             template_folder=template_folder,
+             root_path=root_path,
+         )
++
++        if "." in name:
++            raise ValueError("'name' may not contain a dot '.' character.")
++
+         self.name = name
+         self.url_prefix = url_prefix
+         self.subdomain = subdomain
+diff --git a/tests/test_basic.py b/tests/test_basic.py
+index d6ec3fe4..7bdeba1e 100644
+--- a/tests/test_basic.py
++++ b/tests/test_basic.py
+@@ -1631,7 +1631,7 @@ def test_url_processors(app, client):
+ 
+ 
+ def test_inject_blueprint_url_defaults(app):
+-    bp = flask.Blueprint("foo.bar.baz", __name__, template_folder="template")
++    bp = flask.Blueprint("foo", __name__, template_folder="template")
+ 
+     @bp.url_defaults
+     def bp_defaults(endpoint, values):
+@@ -1644,12 +1644,12 @@ def test_inject_blueprint_url_defaults(app):
+     app.register_blueprint(bp)
+ 
+     values = dict()
+-    app.inject_url_defaults("foo.bar.baz.view", values)
++    app.inject_url_defaults("foo.view", values)
+     expected = dict(page="login")
+     assert values == expected
+ 
+     with app.test_request_context("/somepage"):
+-        url = flask.url_for("foo.bar.baz.view")
++        url = flask.url_for("foo.view")
+     expected = "/login"
+     assert url == expected
+ 
+diff --git a/tests/test_blueprints.py b/tests/test_blueprints.py
+index b986ca02..1b7ffef5 100644
+--- a/tests/test_blueprints.py
++++ b/tests/test_blueprints.py
+@@ -254,12 +254,12 @@ def test_templates_list(test_apps):
+ 
+ 
+ def test_dotted_names(app, client):
+-    frontend = flask.Blueprint("myapp.frontend", __name__)
+-    backend = flask.Blueprint("myapp.backend", __name__)
++    frontend = flask.Blueprint("frontend", __name__)
++    backend = flask.Blueprint("backend", __name__)
+ 
+     @frontend.route("/fe")
+     def frontend_index():
+-        return flask.url_for("myapp.backend.backend_index")
++        return flask.url_for("backend.backend_index")
+ 
+     @frontend.route("/fe2")
+     def frontend_page2():
+@@ -267,7 +267,7 @@ def test_dotted_names(app, client):
+ 
+     @backend.route("/be")
+     def backend_index():
+-        return flask.url_for("myapp.frontend.frontend_index")
++        return flask.url_for("frontend.frontend_index")
+ 
+     app.register_blueprint(frontend)
+     app.register_blueprint(backend)
+@@ -294,6 +294,11 @@ def test_dotted_names_from_app(app, client):
+     assert rv.data == b"/test/"
+ 
+ 
++def test_dotted_name_not_allowed():
++    with pytest.raises(ValueError, match="may not contain a dot '.' character"):
++        flask.Blueprint("app.ui", __name__)
++
++
+ def test_empty_url_defaults(app, client):
+     bp = flask.Blueprint("bp", __name__)
+2026-06-23 06:15:55,345 - INFO - Eval script for pallets__flask-4045 written to logs/run_evaluation/squad_v1/squad-v1/pallets__flask-4045/eval.sh; copying to container...
+2026-06-23 06:16:17,186 - INFO - Test runtime: 21.70 seconds
+2026-06-23 06:16:17,200 - INFO - Test output for pallets__flask-4045 written to logs/run_evaluation/squad_v1/squad-v1/pallets__flask-4045/test_output.txt
+2026-06-23 06:16:17,318 - INFO - Git diff after:
+diff --git a/CHANGES.rst b/CHANGES.rst
+index d546dcab..c2a42443 100644
+--- a/CHANGES.rst
++++ b/CHANGES.rst
+@@ -15,6 +15,9 @@ Unreleased
+ -   Fix some types that weren't available in Python 3.6.0. :issue:`4040`
+ -   Improve typing for ``send_file``, ``send_from_directory``, and
+     ``get_send_file_max_age``. :issue:`4044`, :pr:`4026`
++-   Show an error when a blueprint name contains a dot. The ``.`` has
++    special meaning, it is used to separate (nested) blueprint names and
++    the endpoint name. :issue:`4041`
+ 
+ 
+ Version 2.0.0
+diff --git a/src/flask/blueprints.py b/src/flask/blueprints.py
+index 5fb84d86..24a5f4a5 100644
+--- a/src/flask/blueprints.py
++++ b/src/flask/blueprints.py
+@@ -188,6 +188,10 @@ class Blueprint(Scaffold):
+             template_folder=template_folder,
+             root_path=root_path,
+         )
++
++        if "." in name:
++            raise ValueError("'name' may not contain a dot '.' character.")
++
+         self.name = name
+         self.url_prefix = url_prefix
+         self.subdomain = subdomain
+2026-06-23 06:16:17,319 - INFO - Git diff changed after running eval script
+2026-06-23 06:16:17,319 - INFO - Grading answer for pallets__flask-4045...
+2026-06-23 06:16:17,382 - INFO - report: {'pallets__flask-4045': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_blueprints.py::test_dotted_name_not_allowed'], 'failure': ['tests/test_blueprints.py::test_route_decorator_custom_endpoint_with_dots']}, 'PASS_TO_PASS': {'success': ['tests/test_basic.py::test_method_route_no_methods', 'tests/test_basic.py::test_disallow_string_for_allowed_methods', 'tests/test_basic.py::test_error_handler_unknown_code', 'tests/test_basic.py::test_request_locals', 'tests/test_basic.py::test_exception_propagation', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-False-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-False-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-False-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-False-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-False-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-True-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-True-False]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-False-True]', 'tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-False-False]', 'tests/test_basic.py::test_get_method_on_g', 'tests/test_basic.py::test_g_iteration_protocol', 'tests/test_basic.py::test_run_defaults', 'tests/test_basic.py::test_run_server_port', 'tests/test_basic.py::test_run_from_config[None-None-pocoo.org:8080-pocoo.org-8080]', 'tests/test_basic.py::test_run_from_config[localhost-None-pocoo.org:8080-localhost-8080]', 'tests/test_basic.py::test_run_from_config[None-80-pocoo.org:8080-pocoo.org-80]', 'tests/test_basic.py::test_run_from_config[localhost-80-pocoo.org:8080-localhost-80]', 'tests/test_basic.py::test_run_from_config[localhost-0-localhost:8080-localhost-0]', 'tests/test_basic.py::test_run_from_config[None-None-localhost:8080-localhost-8080]', 'tests/test_basic.py::test_run_from_config[None-None-localhost:0-localhost-0]', 'tests/test_basic.py::test_app_freed_on_zero_refcount', 'tests/test_blueprints.py::test_template_filter', 'tests/test_blueprints.py::test_add_template_filter', 'tests/test_blueprints.py::test_template_filter_with_name', 'tests/test_blueprints.py::test_add_template_filter_with_name', 'tests/test_blueprints.py::test_template_test', 'tests/test_blueprints.py::test_add_template_test', 'tests/test_blueprints.py::test_template_test_with_name', 'tests/test_blueprints.py::test_add_template_test_with_name', 'tests/test_blueprints.py::test_template_global'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pallets__flask-4045: resolved: False
+2026-06-23 06:16:17,390 - INFO - Attempting to stop container sweb.eval.pallets__flask-4045.squad_v1...
+2026-06-23 06:16:39,482 - INFO - Attempting to remove container sweb.eval.pallets__flask-4045.squad_v1...
+2026-06-23 06:16:39,647 - INFO - Container sweb.eval.pallets__flask-4045.squad_v1 removed.
+2026-06-23 06:16:39,648 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest...
+2026-06-23 06:16:40,811 - INFO - Image swebench/sweb.eval.x86_64.pallets_1776_flask-4045:latest removed.

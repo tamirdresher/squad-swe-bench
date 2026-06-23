@@ -1,0 +1,1432 @@
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z '' ']'
++++ export CONDA_SHLVL=0
++++ CONDA_SHLVL=0
++++ '[' -n '' ']'
++++++ dirname /opt/miniconda3/bin/conda
+++++ dirname /opt/miniconda3/bin
++++ PATH=/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export PATH
++++ '[' -z '' ']'
++++ PS1=
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_1='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_1=/opt/miniconda3
+++ CONDA_PREFIX_1=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ cd /testbed
++ git config --global --add safe.directory /testbed
++ cd /testbed
++ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   requests/sessions.py
+	modified:   test_requests.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test_requests.py.orig
+
+no changes added to commit (use "git add" and/or "git commit -a")
++ git show
+commit 8b1e145d7b932f72e264195acddd212c693c72af
+Author: SWE-bench <setup@swebench.config>
+Date:   Wed Sep 10 14:59:33 2025 +0000
+
+    SWE-bench
++ git -c core.fileMode=false diff 091991be0da19de9108dbe5e3752917fea3d7fdc
+diff --git a/requests/sessions.py b/requests/sessions.py
+index d701ff2..adcfbac 100644
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -425,7 +425,7 @@ class Session(SessionRedirectMixin):
+             If Tuple, ('cert', 'key') pair.
+         """
+ 
+-        method = builtin_str(method)
++        method = to_native_string(method)
+ 
+         # Create the Request.
+         req = Request(
+diff --git a/test_requests.py b/test_requests.py
+index 467c5bc..34e183e 100755
+--- a/test_requests.py
++++ b/test_requests.py
+@@ -597,6 +597,29 @@ class RequestsTestCase(unittest.TestCase):
+         prep = s.prepare_request(req)
+         assert prep.url == "https://httpbin.org/"
+ 
++    def test_request_with_bytestring_method(self):
++        # Regression test for GH #2316: when a bytestring HTTP method such as
++        # b'GET' is passed (e.g. by libraries that encode all arguments to
++        # bytes), it must be converted to a native string. On Python 3,
++        # builtin_str(b'GET') produced the literal string "b'GET'", which made
++        # servers respond with 404. The prepared request must therefore carry
++        # the native string 'GET'.
++        s = requests.Session()
++        captured = []
++
++        def capture_send(request, **kwargs):
++            captured.append(request)
++            resp = requests.Response()
++            resp.status_code = 200
++            resp.request = request
++            return resp
++
++        s.send = capture_send
++        s.request(method=b'GET', url='http://example.com/')
++
++        assert len(captured) == 1
++        assert captured[0].method == 'GET'
++
+     def test_links(self):
+         r = requests.Response()
+         r.headers = {
++ source /opt/miniconda3/bin/activate
+++ _CONDA_ROOT=/opt/miniconda3
+++ . /opt/miniconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1='(testbed) '
++++ __conda_exe shell.posix activate
++++ /opt/miniconda3/bin/conda shell.posix activate
+++ ask_conda='PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ eval 'PS1='\''(base) '\''
+export PATH='\''/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3'\''
+export CONDA_SHLVL='\''3'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_PREFIX_2='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++++ PS1='(base) '
++++ export PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ PATH=/opt/miniconda3/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ export CONDA_PREFIX=/opt/miniconda3
++++ CONDA_PREFIX=/opt/miniconda3
++++ export CONDA_SHLVL=3
++++ CONDA_SHLVL=3
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ CONDA_PREFIX_2=/opt/miniconda3/envs/testbed
++++ export CONDA_EXE=/opt/miniconda3/bin/conda
++++ CONDA_EXE=/opt/miniconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
++ conda activate testbed
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate testbed
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate testbed
+++ /opt/miniconda3/bin/conda shell.posix activate testbed
++ ask_conda='PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
++ eval 'PS1='\''(testbed) '\''
+export PATH='\''/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'\''
+export CONDA_PREFIX='\''/opt/miniconda3/envs/testbed'\''
+export CONDA_SHLVL='\''4'\''
+export CONDA_DEFAULT_ENV='\''testbed'\''
+export CONDA_PROMPT_MODIFIER='\''(testbed) '\''
+export CONDA_PREFIX_3='\''/opt/miniconda3'\''
+export CONDA_EXE='\''/opt/miniconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/miniconda3/bin/python'\'''
+++ PS1='(testbed) '
+++ export PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ PATH=/opt/miniconda3/envs/testbed/bin:/opt/miniconda3/condabin:/opt/miniconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++ export CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ CONDA_PREFIX=/opt/miniconda3/envs/testbed
+++ export CONDA_SHLVL=4
+++ CONDA_SHLVL=4
+++ export CONDA_DEFAULT_ENV=testbed
+++ CONDA_DEFAULT_ENV=testbed
+++ export 'CONDA_PROMPT_MODIFIER=(testbed) '
+++ CONDA_PROMPT_MODIFIER='(testbed) '
+++ export CONDA_PREFIX_3=/opt/miniconda3
+++ CONDA_PREFIX_3=/opt/miniconda3
+++ export CONDA_EXE=/opt/miniconda3/bin/conda
+++ CONDA_EXE=/opt/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/miniconda3/bin/python
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -m pip install .
+Processing /testbed
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: requests
+  Building wheel for requests (setup.py): started
+  Building wheel for requests (setup.py): finished with status 'done'
+  Created wheel for requests: filename=requests-2.4.3-py2.py3-none-any.whl size=453221 sha256=600b6e0732611321558894ca601d4a42ac4194aec5e2c7db8a5c1e0d027b45bc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-foq4k9by/wheels/7d/66/67/70d1ee2124ccf21d601c352e25cdca10f611f7c8b3f9ffb9e4
+Successfully built requests
+Installing collected packages: requests
+  Attempting uninstall: requests
+    Found existing installation: requests 2.4.3
+    Uninstalling requests-2.4.3:
+      Successfully uninstalled requests-2.4.3
+Successfully installed requests-2.4.3
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
++ git checkout 091991be0da19de9108dbe5e3752917fea3d7fdc test_requests.py
+Updated 1 path from 980e006
++ git apply -v -
+Checking patch test_requests.py...
+Applied patch test_requests.py cleanly.
++ : '>>>>> Start Test Output'
++ pytest -rA test_requests.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.20, pytest-7.4.4, pluggy-1.0.0
+rootdir: /testbed
+collected 143 items
+
+test_requests.py ..FF....F..F........F..F.......F....................... [ 38%]
+.F.....F..F..F.......................................................... [ 88%]
+.......FF.......                                                         [100%]
+
+=================================== FAILURES ===================================
+_____________ RequestsTestCase.test_DIGESTAUTH_WRONG_HTTP_401_GET ______________
+
+self = <test_requests.RequestsTestCase testMethod=test_DIGESTAUTH_WRONG_HTTP_401_GET>
+
+    def test_DIGESTAUTH_WRONG_HTTP_401_GET(self):
+    
+        auth = HTTPDigestAuth('user', 'wrongpass')
+        url = httpbin('digest-auth', 'auth', 'user', 'pass')
+    
+        r = requests.get(url, auth=auth)
+        assert r.status_code == 401
+    
+        r = requests.get(url)
+        assert r.status_code == 401
+    
+        s = requests.session()
+        s.auth = auth
+        r = s.get(url)
+>       assert r.status_code == 401
+E       assert 503 == 401
+E        +  where 503 = <Response [503]>.status_code
+
+test_requests.py:389: AssertionError
+_______________ RequestsTestCase.test_DIGEST_AUTH_RETURNS_COOKIE _______________
+
+self = <test_requests.RequestsTestCase testMethod=test_DIGEST_AUTH_RETURNS_COOKIE>
+
+    def test_DIGEST_AUTH_RETURNS_COOKIE(self):
+        url = httpbin('digest-auth', 'auth', 'user', 'pass')
+        auth = HTTPDigestAuth('user', 'pass')
+        r = requests.get(url)
+>       assert r.cookies['fake'] == 'fake_value'
+
+test_requests.py:352: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/cookies.py:276: in __getitem__
+    return self._find_no_duplicates(name)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <RequestsCookieJar[]>, name = 'fake', domain = None, path = None
+
+    def _find_no_duplicates(self, name, domain=None, path=None):
+        """__get_item__ and get call _find_no_duplicates -- never used in Requests internally.
+        Takes as args name and optional domain and path. Returns a cookie.value.
+        Throws KeyError if cookie is not found and CookieConflictError if there are
+        multiple cookies that match name and optionally domain and path."""
+        toReturn = None
+        for cookie in iter(self):
+            if cookie.name == name:
+                if domain is None or cookie.domain == domain:
+                    if path is None or cookie.path == path:
+                        if toReturn is not None:  # if there are multiple cookies that meet passed in criteria
+                            raise CookieConflictError('There are multiple cookies with name, %r' % (name))
+                        toReturn = cookie.value  # we will eventually return this as long as no cookie conflict
+    
+        if toReturn:
+            return toReturn
+>       raise KeyError('name=%r, domain=%r, path=%r' % (name, domain, path))
+E       KeyError: "name='fake', domain=None, path=None"
+
+requests/cookies.py:331: KeyError
+___________ RequestsTestCase.test_HTTP_200_OK_GET_WITH_MIXED_PARAMS ____________
+
+self = <test_requests.RequestsTestCase testMethod=test_HTTP_200_OK_GET_WITH_MIXED_PARAMS>
+
+    def test_HTTP_200_OK_GET_WITH_MIXED_PARAMS(self):
+        heads = {'User-agent': 'Mozilla/5.0'}
+    
+        r = requests.get(httpbin('get') + '?test=true', params={'q': 'test'}, headers=heads)
+>       assert r.status_code == 200
+E       assert 503 == 200
+E        +  where 503 = <Response [503]>.status_code
+
+test_requests.py:162: AssertionError
+____________________ RequestsTestCase.test_HTTP_200_OK_PUT _____________________
+
+self = <test_requests.RequestsTestCase testMethod=test_HTTP_200_OK_PUT>
+
+    def test_HTTP_200_OK_PUT(self):
+        r = requests.put(httpbin('put'))
+>       assert r.status_code == 200
+E       assert 503 == 200
+E        +  where 503 = <Response [503]>.status_code
+
+test_requests.py:279: AssertionError
+__________________ RequestsTestCase.test_basicauth_with_netrc __________________
+
+self = <test_requests.RequestsTestCase testMethod=test_basicauth_with_netrc>
+
+    def test_basicauth_with_netrc(self):
+        auth = ('user', 'pass')
+        wrong_auth = ('wronguser', 'wrongpass')
+        url = httpbin('basic-auth', 'user', 'pass')
+    
+        def get_netrc_auth_mock(url):
+            return auth
+        requests.sessions.get_netrc_auth = get_netrc_auth_mock
+    
+        # Should use netrc and work.
+        r = requests.get(url)
+        assert r.status_code == 200
+    
+        # Given auth should override and fail.
+        r = requests.get(url, auth=wrong_auth)
+        assert r.status_code == 401
+    
+        s = requests.session()
+    
+        # Should use netrc and work.
+        r = s.get(url)
+>       assert r.status_code == 200
+E       assert 503 == 200
+E        +  where 503 = <Response [503]>.status_code
+
+test_requests.py:325: AssertionError
+________________ RequestsTestCase.test_conflicting_post_params _________________
+
+self = <test_requests.RequestsTestCase testMethod=test_conflicting_post_params>
+
+    def test_conflicting_post_params(self):
+        url = httpbin('post')
+        with open('requirements.txt') as f:
+>           pytest.raises(ValueError, "requests.post(url, data='[{\"some\": \"data\"}]', files={'some': f})")
+E           TypeError: 'requests.post(url, data=\'[{"some": "data"}]\', files={\'some\': f})' object (type: <class 'str'>) must be callable
+
+test_requests.py:439: TypeError
+________________ RequestsTestCase.test_cookie_persists_via_api _________________
+
+self = <test_requests.RequestsTestCase testMethod=test_cookie_persists_via_api>
+
+    def test_cookie_persists_via_api(self):
+        s = requests.session()
+        r = s.get(httpbin('redirect/1'), cookies={'foo': 'bar'})
+        assert 'foo' in r.request.headers['Cookie']
+>       assert 'foo' in r.history[0].request.headers['Cookie']
+E       IndexError: list index out of range
+
+test_requests.py:198: IndexError
+_________ RequestsTestCase.test_manual_redirect_with_partial_body_read _________
+
+self = <test_requests.RequestsTestCase testMethod=test_manual_redirect_with_partial_body_read>
+
+    def test_manual_redirect_with_partial_body_read(self):
+        s = requests.Session()
+        r1 = s.get(httpbin('redirect/2'), allow_redirects=False, stream=True)
+>       assert r1.is_redirect
+E       assert False
+E        +  where False = <Response [503]>.is_redirect
+
+test_requests.py:961: AssertionError
+____________ RequestsTestCase.test_params_are_merged_case_sensitive ____________
+
+self = <test_requests.RequestsTestCase testMethod=test_params_are_merged_case_sensitive>
+
+    def test_params_are_merged_case_sensitive(self):
+        s = requests.Session()
+        s.params['foo'] = 'bar'
+        r = s.get(httpbin('get'), params={'FOO': 'bar'})
+>       assert r.json()['args'] == {'foo': 'bar', 'FOO': 'bar'}
+
+test_requests.py:894: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/models.py:797: in json
+    return json.loads(self.text, **kwargs)
+/opt/miniconda3/envs/testbed/lib/python3.9/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+/opt/miniconda3/envs/testbed/lib/python3.9/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x7fc9f81ad8b0>
+s = '<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+>           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+/opt/miniconda3/envs/testbed/lib/python3.9/json/decoder.py:355: JSONDecodeError
+_________________ RequestsTestCase.test_prepared_from_session __________________
+
+self = <test_requests.RequestsTestCase testMethod=test_prepared_from_session>
+
+    def test_prepared_from_session(self):
+        class DummyAuth(requests.auth.AuthBase):
+            def __call__(self, r):
+                r.headers['Dummy-Auth-Test'] = 'dummy-auth-test-ok'
+                return r
+    
+        req = requests.Request('GET', httpbin('headers'))
+        assert not req.auth
+    
+        s = requests.Session()
+        s.auth = DummyAuth()
+    
+        prep = s.prepare_request(req)
+        resp = s.send(prep)
+    
+>       assert resp.json()['headers'][
+            'Dummy-Auth-Test'] == 'dummy-auth-test-ok'
+
+test_requests.py:591: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/models.py:797: in json
+    return json.loads(self.text, **kwargs)
+/opt/miniconda3/envs/testbed/lib/python3.9/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+/opt/miniconda3/envs/testbed/lib/python3.9/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x7fc9f81ad8b0>
+s = '<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n</body>\r\n</html>\r\n'
+idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+>           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+/opt/miniconda3/envs/testbed/lib/python3.9/json/decoder.py:355: JSONDecodeError
+___________ RequestsTestCase.test_redirect_with_wrong_gzipped_header ___________
+
+self = <requests.packages.urllib3.response.HTTPResponse object at 0x7fc9f6fb0a00>
+amt = 10240, decode_content = True, cache_content = False
+
+    def read(self, amt=None, decode_content=None, cache_content=False):
+        """
+        Similar to :meth:`httplib.HTTPResponse.read`, but with two additional
+        parameters: ``decode_content`` and ``cache_content``.
+    
+        :param amt:
+            How much of the content to read. If specified, caching is skipped
+            because it doesn't make sense to cache partial content as the full
+            response.
+    
+        :param decode_content:
+            If True, will attempt to decode the body based on the
+            'content-encoding' header.
+    
+        :param cache_content:
+            If True, will save the returned data such that the same result is
+            returned despite of the state of the underlying file object. This
+            is useful if you want the ``.data`` property to continue working
+            after having ``.read()`` the file object. (Overridden if ``amt`` is
+            set.)
+        """
+        # Note: content-encoding value should be case-insensitive, per RFC 7230
+        # Section 3.2
+        content_encoding = self.headers.get('content-encoding', '').lower()
+        if self._decoder is None:
+            if content_encoding in self.CONTENT_DECODERS:
+                self._decoder = _get_decoder(content_encoding)
+        if decode_content is None:
+            decode_content = self.decode_content
+    
+        if self._fp is None:
+            return
+    
+        flush_decoder = False
+    
+        try:
+            try:
+                if amt is None:
+                    # cStringIO doesn't like amt=None
+                    data = self._fp.read()
+                    flush_decoder = True
+                else:
+                    cache_content = False
+                    data = self._fp.read(amt)
+                    if amt != 0 and not data:  # Platform-specific: Buggy versions of Python.
+                        # Close the connection when no data is returned
+                        #
+                        # This is redundant to what httplib/http.client _should_
+                        # already do.  However, versions of python released before
+                        # December 15, 2012 (http://bugs.python.org/issue16298) do
+                        # not properly close the connection in all cases. There is
+                        # no harm in redundantly calling close.
+                        self._fp.close()
+                        flush_decoder = True
+    
+            except SocketTimeout:
+                # FIXME: Ideally we'd like to include the url in the ReadTimeoutError but
+                # there is yet no clean way to get at it from this context.
+                raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+    
+            except BaseSSLError as e:
+                # FIXME: Is there a better way to differentiate between SSLErrors?
+                if not 'read operation timed out' in str(e):  # Defensive:
+                    # This shouldn't happen but just in case we're missing an edge
+                    # case, let's avoid swallowing SSL errors.
+                    raise
+    
+                raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+    
+            except HTTPException as e:
+                # This includes IncompleteRead.
+                raise ProtocolError('Connection broken: %r' % e, e)
+    
+            self._fp_bytes_read += len(data)
+    
+            try:
+                if decode_content and self._decoder:
+>                   data = self._decoder.decompress(data)
+E                   zlib.error: Error -3 while decompressing data: incorrect header check
+
+requests/packages/urllib3/response.py:220: error
+
+During handling of the above exception, another exception occurred:
+
+    def generate():
+        try:
+            # Special case for urllib3.
+            try:
+>               for chunk in self.raw.stream(chunk_size, decode_content=True):
+
+requests/models.py:653: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/packages/urllib3/response.py:256: in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <requests.packages.urllib3.response.HTTPResponse object at 0x7fc9f6fb0a00>
+amt = 10240, decode_content = True, cache_content = False
+
+    def read(self, amt=None, decode_content=None, cache_content=False):
+        """
+        Similar to :meth:`httplib.HTTPResponse.read`, but with two additional
+        parameters: ``decode_content`` and ``cache_content``.
+    
+        :param amt:
+            How much of the content to read. If specified, caching is skipped
+            because it doesn't make sense to cache partial content as the full
+            response.
+    
+        :param decode_content:
+            If True, will attempt to decode the body based on the
+            'content-encoding' header.
+    
+        :param cache_content:
+            If True, will save the returned data such that the same result is
+            returned despite of the state of the underlying file object. This
+            is useful if you want the ``.data`` property to continue working
+            after having ``.read()`` the file object. (Overridden if ``amt`` is
+            set.)
+        """
+        # Note: content-encoding value should be case-insensitive, per RFC 7230
+        # Section 3.2
+        content_encoding = self.headers.get('content-encoding', '').lower()
+        if self._decoder is None:
+            if content_encoding in self.CONTENT_DECODERS:
+                self._decoder = _get_decoder(content_encoding)
+        if decode_content is None:
+            decode_content = self.decode_content
+    
+        if self._fp is None:
+            return
+    
+        flush_decoder = False
+    
+        try:
+            try:
+                if amt is None:
+                    # cStringIO doesn't like amt=None
+                    data = self._fp.read()
+                    flush_decoder = True
+                else:
+                    cache_content = False
+                    data = self._fp.read(amt)
+                    if amt != 0 and not data:  # Platform-specific: Buggy versions of Python.
+                        # Close the connection when no data is returned
+                        #
+                        # This is redundant to what httplib/http.client _should_
+                        # already do.  However, versions of python released before
+                        # December 15, 2012 (http://bugs.python.org/issue16298) do
+                        # not properly close the connection in all cases. There is
+                        # no harm in redundantly calling close.
+                        self._fp.close()
+                        flush_decoder = True
+    
+            except SocketTimeout:
+                # FIXME: Ideally we'd like to include the url in the ReadTimeoutError but
+                # there is yet no clean way to get at it from this context.
+                raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+    
+            except BaseSSLError as e:
+                # FIXME: Is there a better way to differentiate between SSLErrors?
+                if not 'read operation timed out' in str(e):  # Defensive:
+                    # This shouldn't happen but just in case we're missing an edge
+                    # case, let's avoid swallowing SSL errors.
+                    raise
+    
+                raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+    
+            except HTTPException as e:
+                # This includes IncompleteRead.
+                raise ProtocolError('Connection broken: %r' % e, e)
+    
+            self._fp_bytes_read += len(data)
+    
+            try:
+                if decode_content and self._decoder:
+                    data = self._decoder.decompress(data)
+            except (IOError, zlib.error) as e:
+>               raise DecodeError(
+                    "Received response with content-encoding: %s, but "
+                    "failed to decode it." % content_encoding, e)
+E                   requests.packages.urllib3.exceptions.DecodeError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+requests/packages/urllib3/response.py:222: DecodeError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_requests.RequestsTestCase testMethod=test_redirect_with_wrong_gzipped_header>
+
+    def test_redirect_with_wrong_gzipped_header(self):
+        s = requests.Session()
+        url = httpbin('redirect/1')
+        self._patch_adapter_gzipped_redirect(s, url)
+>       s.get(url)
+
+test_requests.py:995: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/sessions.py:469: in get
+    return self.request('GET', url, **kwargs)
+requests/sessions.py:457: in request
+    resp = self.send(prep, **send_kwargs)
+requests/sessions.py:606: in send
+    r.content
+requests/models.py:728: in content
+    self._content = bytes().join(self.iter_content(CONTENT_CHUNK_SIZE)) or bytes()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def generate():
+        try:
+            # Special case for urllib3.
+            try:
+                for chunk in self.raw.stream(chunk_size, decode_content=True):
+                    yield chunk
+            except ProtocolError as e:
+                raise ChunkedEncodingError(e)
+            except DecodeError as e:
+>               raise ContentDecodingError(e)
+E               requests.exceptions.ContentDecodingError: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))
+
+requests/models.py:658: ContentDecodingError
+_______________________ TestTimeout.test_connect_timeout _______________________
+
+self = <test_requests.TestTimeout object at 0x7fc9f76bb3a0>
+
+    def test_connect_timeout(self):
+        try:
+            requests.get(TARPIT, timeout=(0.1, None))
+>           assert False, "The connect() request should time out."
+E           AssertionError: The connect() request should time out.
+E           assert False
+
+test_requests.py:1380: AssertionError
+____________________ TestTimeout.test_total_timeout_connect ____________________
+
+self = <requests.packages.urllib3.connectionpool.HTTPConnectionPool object at 0x7fc9f6ee8c70>
+conn = <requests.packages.urllib3.connection.HTTPConnection object at 0x7fc9f6ee8d60>
+method = 'GET', url = '/'
+timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8fd0>
+httplib_request_kw = {'body': None, 'headers': {'User-Agent': 'python-requests/2.4.3 CPython/3.9.20 Linux/5.15.167.4-microsoft-standard-WSL...Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic dXNlcjpwYXNz'}}
+timeout_obj = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8910>
+read_timeout = 0.1
+
+    def _make_request(self, conn, method, url, timeout=_Default,
+                      **httplib_request_kw):
+        """
+        Perform a request on a given urllib connection object taken from our
+        pool.
+    
+        :param conn:
+            a connection from one of our connection pools
+    
+        :param timeout:
+            Socket timeout in seconds for the request. This can be a
+            float or integer, which will set the same timeout value for
+            the socket connect and the socket read, or an instance of
+            :class:`urllib3.util.Timeout`, which gives you more fine-grained
+            control over your timeouts.
+        """
+        self.num_requests += 1
+    
+        timeout_obj = self._get_timeout(timeout)
+        timeout_obj.start_connect()
+        conn.timeout = timeout_obj.connect_timeout
+    
+        # Trigger any extra validation we need to do.
+        self._validate_conn(conn)
+    
+        # conn.request() calls httplib.*.request, not the method in
+        # urllib3.request. It also calls makefile (recv) on the socket.
+        conn.request(method, url, **httplib_request_kw)
+    
+        # Reset the timeout for the recv() on the socket
+        read_timeout = timeout_obj.read_timeout
+    
+        # App Engine doesn't have a sock attr
+        if getattr(conn, 'sock', None):
+            # In Python 3 socket.py will catch EAGAIN and return None when you
+            # try and read into the file pointer created by http.client, which
+            # instead raises a BadStatusLine exception. Instead of catching
+            # the exception and assuming all BadStatusLine exceptions are read
+            # timeouts, check for a zero timeout before making the request.
+            if read_timeout == 0:
+                raise ReadTimeoutError(
+                    self, url, "Read timed out. (read timeout=%s)" % read_timeout)
+            if read_timeout is Timeout.DEFAULT_TIMEOUT:
+                conn.sock.settimeout(socket.getdefaulttimeout())
+            else:  # None or a value
+                conn.sock.settimeout(read_timeout)
+    
+        # Receive the response from the server
+        try:
+            try:  # Python 2.7+, use buffering of HTTP responses
+>               httplib_response = conn.getresponse(buffering=True)
+E               TypeError: getresponse() got an unexpected keyword argument 'buffering'
+
+requests/packages/urllib3/connectionpool.py:331: TypeError
+
+During handling of the above exception, another exception occurred:
+
+self = <requests.packages.urllib3.connectionpool.HTTPConnectionPool object at 0x7fc9f6ee8c70>
+conn = <requests.packages.urllib3.connection.HTTPConnection object at 0x7fc9f6ee8d60>
+method = 'GET', url = '/'
+timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8fd0>
+httplib_request_kw = {'body': None, 'headers': {'User-Agent': 'python-requests/2.4.3 CPython/3.9.20 Linux/5.15.167.4-microsoft-standard-WSL...Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic dXNlcjpwYXNz'}}
+timeout_obj = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8910>
+read_timeout = 0.1
+
+    def _make_request(self, conn, method, url, timeout=_Default,
+                      **httplib_request_kw):
+        """
+        Perform a request on a given urllib connection object taken from our
+        pool.
+    
+        :param conn:
+            a connection from one of our connection pools
+    
+        :param timeout:
+            Socket timeout in seconds for the request. This can be a
+            float or integer, which will set the same timeout value for
+            the socket connect and the socket read, or an instance of
+            :class:`urllib3.util.Timeout`, which gives you more fine-grained
+            control over your timeouts.
+        """
+        self.num_requests += 1
+    
+        timeout_obj = self._get_timeout(timeout)
+        timeout_obj.start_connect()
+        conn.timeout = timeout_obj.connect_timeout
+    
+        # Trigger any extra validation we need to do.
+        self._validate_conn(conn)
+    
+        # conn.request() calls httplib.*.request, not the method in
+        # urllib3.request. It also calls makefile (recv) on the socket.
+        conn.request(method, url, **httplib_request_kw)
+    
+        # Reset the timeout for the recv() on the socket
+        read_timeout = timeout_obj.read_timeout
+    
+        # App Engine doesn't have a sock attr
+        if getattr(conn, 'sock', None):
+            # In Python 3 socket.py will catch EAGAIN and return None when you
+            # try and read into the file pointer created by http.client, which
+            # instead raises a BadStatusLine exception. Instead of catching
+            # the exception and assuming all BadStatusLine exceptions are read
+            # timeouts, check for a zero timeout before making the request.
+            if read_timeout == 0:
+                raise ReadTimeoutError(
+                    self, url, "Read timed out. (read timeout=%s)" % read_timeout)
+            if read_timeout is Timeout.DEFAULT_TIMEOUT:
+                conn.sock.settimeout(socket.getdefaulttimeout())
+            else:  # None or a value
+                conn.sock.settimeout(read_timeout)
+    
+        # Receive the response from the server
+        try:
+            try:  # Python 2.7+, use buffering of HTTP responses
+                httplib_response = conn.getresponse(buffering=True)
+            except TypeError:  # Python 2.6 and older
+>               httplib_response = conn.getresponse()
+
+requests/packages/urllib3/connectionpool.py:333: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/miniconda3/envs/testbed/lib/python3.9/http/client.py:1377: in getresponse
+    response.begin()
+/opt/miniconda3/envs/testbed/lib/python3.9/http/client.py:320: in begin
+    version, status, reason = self._read_status()
+/opt/miniconda3/envs/testbed/lib/python3.9/http/client.py:281: in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <socket.SocketIO object at 0x7fc9f6ee83a0>
+b = <memory at 0x7fc9f7943940>
+
+    def readinto(self, b):
+        """Read up to len(b) bytes into the writable buffer *b* and return
+        the number of bytes read.  If the socket is non-blocking and no bytes
+        are available, None is returned.
+    
+        If *b* is non-empty, a 0 return value indicates that the connection
+        was shutdown at the other end.
+        """
+        self._checkClosed()
+        self._checkReadable()
+        if self._timeout_occurred:
+            raise OSError("cannot read from timed out object")
+        while True:
+            try:
+>               return self._sock.recv_into(b)
+E               socket.timeout: timed out
+
+/opt/miniconda3/envs/testbed/lib/python3.9/socket.py:716: timeout
+
+During handling of the above exception, another exception occurred:
+
+self = <requests.adapters.HTTPAdapter object at 0x7fc9f6ee85b0>
+request = <PreparedRequest [GET]>, stream = False
+timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8fd0>
+verify = True, cert = None
+proxies = {'no': '192.168.0.0/24,127.0.0.1,localhost.localdomain,172.16.1.1'}
+
+    def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
+        """Sends PreparedRequest object. Returns Response object.
+    
+        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+        :param stream: (optional) Whether to stream the request content.
+        :param timeout: (optional) How long to wait for the server to send
+            data before giving up, as a float, or a (`connect timeout, read
+            timeout <user/advanced.html#timeouts>`_) tuple.
+        :type timeout: float or tuple
+        :param verify: (optional) Whether to verify SSL certificates.
+        :param cert: (optional) Any user-provided SSL certificate to be trusted.
+        :param proxies: (optional) The proxies dictionary to apply to the request.
+        """
+    
+        conn = self.get_connection(request.url, proxies)
+    
+        self.cert_verify(conn, request.url, verify, cert)
+        url = self.request_url(request, proxies)
+        self.add_headers(request)
+    
+        chunked = not (request.body is None or 'Content-Length' in request.headers)
+    
+        if isinstance(timeout, tuple):
+            try:
+                connect, read = timeout
+                timeout = TimeoutSauce(connect=connect, read=read)
+            except ValueError as e:
+                # this may raise a string formatting error.
+                err = ("Invalid timeout {0}. Pass a (connect, read) "
+                       "timeout tuple, or a single float to set "
+                       "both timeouts to the same value".format(timeout))
+                raise ValueError(err)
+        else:
+            timeout = TimeoutSauce(connect=timeout, read=timeout)
+    
+        try:
+            if not chunked:
+>               resp = conn.urlopen(
+                    method=request.method,
+                    url=url,
+                    body=request.body,
+                    headers=request.headers,
+                    redirect=False,
+                    assert_same_host=False,
+                    preload_content=False,
+                    decode_content=False,
+                    retries=Retry(self.max_retries, read=False),
+                    timeout=timeout
+                )
+
+requests/adapters.py:352: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/packages/urllib3/connectionpool.py:558: in urlopen
+    retries = retries.increment(method, url, error=e,
+requests/packages/urllib3/util/retry.py:245: in increment
+    raise six.reraise(type(error), error, _stacktrace)
+requests/packages/urllib3/packages/six.py:310: in reraise
+    raise value
+requests/packages/urllib3/connectionpool.py:514: in urlopen
+    httplib_response = self._make_request(conn, method, url,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <requests.packages.urllib3.connectionpool.HTTPConnectionPool object at 0x7fc9f6ee8c70>
+conn = <requests.packages.urllib3.connection.HTTPConnection object at 0x7fc9f6ee8d60>
+method = 'GET', url = '/'
+timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8fd0>
+httplib_request_kw = {'body': None, 'headers': {'User-Agent': 'python-requests/2.4.3 CPython/3.9.20 Linux/5.15.167.4-microsoft-standard-WSL...Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic dXNlcjpwYXNz'}}
+timeout_obj = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8910>
+read_timeout = 0.1
+
+    def _make_request(self, conn, method, url, timeout=_Default,
+                      **httplib_request_kw):
+        """
+        Perform a request on a given urllib connection object taken from our
+        pool.
+    
+        :param conn:
+            a connection from one of our connection pools
+    
+        :param timeout:
+            Socket timeout in seconds for the request. This can be a
+            float or integer, which will set the same timeout value for
+            the socket connect and the socket read, or an instance of
+            :class:`urllib3.util.Timeout`, which gives you more fine-grained
+            control over your timeouts.
+        """
+        self.num_requests += 1
+    
+        timeout_obj = self._get_timeout(timeout)
+        timeout_obj.start_connect()
+        conn.timeout = timeout_obj.connect_timeout
+    
+        # Trigger any extra validation we need to do.
+        self._validate_conn(conn)
+    
+        # conn.request() calls httplib.*.request, not the method in
+        # urllib3.request. It also calls makefile (recv) on the socket.
+        conn.request(method, url, **httplib_request_kw)
+    
+        # Reset the timeout for the recv() on the socket
+        read_timeout = timeout_obj.read_timeout
+    
+        # App Engine doesn't have a sock attr
+        if getattr(conn, 'sock', None):
+            # In Python 3 socket.py will catch EAGAIN and return None when you
+            # try and read into the file pointer created by http.client, which
+            # instead raises a BadStatusLine exception. Instead of catching
+            # the exception and assuming all BadStatusLine exceptions are read
+            # timeouts, check for a zero timeout before making the request.
+            if read_timeout == 0:
+                raise ReadTimeoutError(
+                    self, url, "Read timed out. (read timeout=%s)" % read_timeout)
+            if read_timeout is Timeout.DEFAULT_TIMEOUT:
+                conn.sock.settimeout(socket.getdefaulttimeout())
+            else:  # None or a value
+                conn.sock.settimeout(read_timeout)
+    
+        # Receive the response from the server
+        try:
+            try:  # Python 2.7+, use buffering of HTTP responses
+                httplib_response = conn.getresponse(buffering=True)
+            except TypeError:  # Python 2.6 and older
+                httplib_response = conn.getresponse()
+        except SocketTimeout:
+>           raise ReadTimeoutError(
+                self, url, "Read timed out. (read timeout=%s)" % read_timeout)
+E           requests.packages.urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.255.255.1', port=80): Read timed out. (read timeout=0.1)
+
+requests/packages/urllib3/connectionpool.py:335: ReadTimeoutError
+
+During handling of the above exception, another exception occurred:
+
+self = <test_requests.TestTimeout object at 0x7fc9f76bb4c0>
+
+    def test_total_timeout_connect(self):
+        try:
+>           requests.get(TARPIT, timeout=(0.1, 0.1))
+
+test_requests.py:1387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+requests/api.py:60: in get
+    return request('get', url, **kwargs)
+requests/api.py:49: in request
+    return session.request(method=method, url=url, **kwargs)
+requests/sessions.py:457: in request
+    resp = self.send(prep, **send_kwargs)
+requests/sessions.py:569: in send
+    r = adapter.send(request, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <requests.adapters.HTTPAdapter object at 0x7fc9f6ee85b0>
+request = <PreparedRequest [GET]>, stream = False
+timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7fc9f6ee8fd0>
+verify = True, cert = None
+proxies = {'no': '192.168.0.0/24,127.0.0.1,localhost.localdomain,172.16.1.1'}
+
+    def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
+        """Sends PreparedRequest object. Returns Response object.
+    
+        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
+        :param stream: (optional) Whether to stream the request content.
+        :param timeout: (optional) How long to wait for the server to send
+            data before giving up, as a float, or a (`connect timeout, read
+            timeout <user/advanced.html#timeouts>`_) tuple.
+        :type timeout: float or tuple
+        :param verify: (optional) Whether to verify SSL certificates.
+        :param cert: (optional) Any user-provided SSL certificate to be trusted.
+        :param proxies: (optional) The proxies dictionary to apply to the request.
+        """
+    
+        conn = self.get_connection(request.url, proxies)
+    
+        self.cert_verify(conn, request.url, verify, cert)
+        url = self.request_url(request, proxies)
+        self.add_headers(request)
+    
+        chunked = not (request.body is None or 'Content-Length' in request.headers)
+    
+        if isinstance(timeout, tuple):
+            try:
+                connect, read = timeout
+                timeout = TimeoutSauce(connect=connect, read=read)
+            except ValueError as e:
+                # this may raise a string formatting error.
+                err = ("Invalid timeout {0}. Pass a (connect, read) "
+                       "timeout tuple, or a single float to set "
+                       "both timeouts to the same value".format(timeout))
+                raise ValueError(err)
+        else:
+            timeout = TimeoutSauce(connect=timeout, read=timeout)
+    
+        try:
+            if not chunked:
+                resp = conn.urlopen(
+                    method=request.method,
+                    url=url,
+                    body=request.body,
+                    headers=request.headers,
+                    redirect=False,
+                    assert_same_host=False,
+                    preload_content=False,
+                    decode_content=False,
+                    retries=Retry(self.max_retries, read=False),
+                    timeout=timeout
+                )
+    
+            # Send the request.
+            else:
+                if hasattr(conn, 'proxy_pool'):
+                    conn = conn.proxy_pool
+    
+                low_conn = conn._get_conn(timeout=timeout)
+    
+                try:
+                    low_conn.putrequest(request.method,
+                                        url,
+                                        skip_accept_encoding=True)
+    
+                    for header, value in request.headers.items():
+                        low_conn.putheader(header, value)
+    
+                    low_conn.endheaders()
+    
+                    for i in request.body:
+                        low_conn.send(hex(len(i))[2:].encode('utf-8'))
+                        low_conn.send(b'\r\n')
+                        low_conn.send(i)
+                        low_conn.send(b'\r\n')
+                    low_conn.send(b'0\r\n\r\n')
+    
+                    r = low_conn.getresponse()
+                    resp = HTTPResponse.from_httplib(
+                        r,
+                        pool=conn,
+                        connection=low_conn,
+                        preload_content=False,
+                        decode_content=False
+                    )
+                except:
+                    # If we hit any problems here, clean up the connection.
+                    # Then, reraise so that we can handle the actual exception.
+                    low_conn.close()
+                    raise
+                else:
+                    # All is well, return the connection to the pool.
+                    conn._put_conn(low_conn)
+    
+        except (ProtocolError, socket.error) as err:
+            raise ConnectionError(err, request=request)
+    
+        except MaxRetryError as e:
+            if isinstance(e.reason, ConnectTimeoutError):
+                raise ConnectTimeout(e, request=request)
+    
+            raise ConnectionError(e, request=request)
+    
+        except _ProxyError as e:
+            raise ProxyError(e)
+    
+        except (_SSLError, _HTTPError) as e:
+            if isinstance(e, _SSLError):
+                raise SSLError(e, request=request)
+            elif isinstance(e, ReadTimeoutError):
+>               raise ReadTimeout(e, request=request)
+E               requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.255.255.1', port=80): Read timed out. (read timeout=0.1)
+
+requests/adapters.py:422: ReadTimeout
+=============================== warnings summary ===============================
+requests/packages/urllib3/_collections.py:1
+requests/packages/urllib3/_collections.py:1
+  /testbed/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+    from collections import Mapping, MutableMapping
+
+test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
+  /testbed/requests/models.py:169: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+    if isinstance(hook, collections.Callable):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
+PASSED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE
+PASSED test_requests.py::RequestsTestCase::test_DIGEST_AUTH_SETS_SESSION_COOKIES
+PASSED test_requests.py::RequestsTestCase::test_DIGEST_HTTP_200_OK_GET
+PASSED test_requests.py::RequestsTestCase::test_DIGEST_STREAM
+PASSED test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_ALTERNATIVE
+PASSED test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_WITH_PARAMS
+PASSED test_requests.py::RequestsTestCase::test_HTTP_200_OK_HEAD
+PASSED test_requests.py::RequestsTestCase::test_HTTP_302_ALLOW_REDIRECT_GET
+PASSED test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES
+PASSED test_requests.py::RequestsTestCase::test_POSTBIN_GET_POST_FILES_WITH_DATA
+PASSED test_requests.py::RequestsTestCase::test_auth_is_retained_for_redirect_on_host
+PASSED test_requests.py::RequestsTestCase::test_auth_is_stripped_on_redirect_off_host
+PASSED test_requests.py::RequestsTestCase::test_autoset_header_values_are_native
+PASSED test_requests.py::RequestsTestCase::test_basic_auth_str_is_always_native
+PASSED test_requests.py::RequestsTestCase::test_basic_building
+PASSED test_requests.py::RequestsTestCase::test_can_send_nonstring_objects_with_files
+PASSED test_requests.py::RequestsTestCase::test_cannot_send_unprepared_requests
+PASSED test_requests.py::RequestsTestCase::test_connection_error
+PASSED test_requests.py::RequestsTestCase::test_cookie_as_dict_items
+PASSED test_requests.py::RequestsTestCase::test_cookie_as_dict_keeps_items
+PASSED test_requests.py::RequestsTestCase::test_cookie_as_dict_keeps_len
+PASSED test_requests.py::RequestsTestCase::test_cookie_as_dict_keys
+PASSED test_requests.py::RequestsTestCase::test_cookie_as_dict_values
+PASSED test_requests.py::RequestsTestCase::test_cookie_parameters
+PASSED test_requests.py::RequestsTestCase::test_cookie_quote_wrapped
+PASSED test_requests.py::RequestsTestCase::test_cookie_removed_on_expire
+PASSED test_requests.py::RequestsTestCase::test_cookie_sent_on_redirect
+PASSED test_requests.py::RequestsTestCase::test_custom_content_type
+PASSED test_requests.py::RequestsTestCase::test_decompress_gzip
+PASSED test_requests.py::RequestsTestCase::test_different_encodings_dont_break_post
+PASSED test_requests.py::RequestsTestCase::test_entry_points
+PASSED test_requests.py::RequestsTestCase::test_fixes_1329
+PASSED test_requests.py::RequestsTestCase::test_generic_cookiejar_works
+PASSED test_requests.py::RequestsTestCase::test_get_auth_from_url
+PASSED test_requests.py::RequestsTestCase::test_get_auth_from_url_encoded_hashes
+PASSED test_requests.py::RequestsTestCase::test_get_auth_from_url_encoded_spaces
+PASSED test_requests.py::RequestsTestCase::test_get_auth_from_url_not_encoded_spaces
+PASSED test_requests.py::RequestsTestCase::test_get_auth_from_url_percent_chars
+PASSED test_requests.py::RequestsTestCase::test_header_keys_are_native
+PASSED test_requests.py::RequestsTestCase::test_header_remove_is_case_insensitive
+PASSED test_requests.py::RequestsTestCase::test_headers_on_session_with_None_are_not_sent
+PASSED test_requests.py::RequestsTestCase::test_history_is_always_a_list
+PASSED test_requests.py::RequestsTestCase::test_hook_receives_request_arguments
+PASSED test_requests.py::RequestsTestCase::test_http_error
+PASSED test_requests.py::RequestsTestCase::test_invalid_url
+PASSED test_requests.py::RequestsTestCase::test_json_param_post_content_type_works
+PASSED test_requests.py::RequestsTestCase::test_links
+PASSED test_requests.py::RequestsTestCase::test_long_authinfo_in_url
+PASSED test_requests.py::RequestsTestCase::test_mixed_case_scheme_acceptable
+PASSED test_requests.py::RequestsTestCase::test_no_content_length
+PASSED test_requests.py::RequestsTestCase::test_nonhttp_schemes_dont_check_URLs
+PASSED test_requests.py::RequestsTestCase::test_param_cookiejar_works
+PASSED test_requests.py::RequestsTestCase::test_params_are_added_before_fragment
+PASSED test_requests.py::RequestsTestCase::test_path_is_not_double_encoded
+PASSED test_requests.py::RequestsTestCase::test_prepare_request_with_bytestring_url
+PASSED test_requests.py::RequestsTestCase::test_prepared_request_hook
+PASSED test_requests.py::RequestsTestCase::test_pyopenssl_redirect
+PASSED test_requests.py::RequestsTestCase::test_request_and_response_are_pickleable
+PASSED test_requests.py::RequestsTestCase::test_request_cookie_overrides_session_cookie
+PASSED test_requests.py::RequestsTestCase::test_request_cookies_not_persisted
+PASSED test_requests.py::RequestsTestCase::test_request_ok_set
+PASSED test_requests.py::RequestsTestCase::test_requests_history_is_saved
+PASSED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden
+PASSED test_requests.py::RequestsTestCase::test_response_decode_unicode
+PASSED test_requests.py::RequestsTestCase::test_response_is_iterable
+PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_overriden_by_request_hooks
+PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_used_with_no_request_hooks
+PASSED test_requests.py::RequestsTestCase::test_session_pickling
+PASSED test_requests.py::RequestsTestCase::test_set_cookie_on_301
+PASSED test_requests.py::RequestsTestCase::test_status_raising
+PASSED test_requests.py::RequestsTestCase::test_time_elapsed_blank
+PASSED test_requests.py::RequestsTestCase::test_transport_adapter_ordering
+PASSED test_requests.py::RequestsTestCase::test_unicode_get
+PASSED test_requests.py::RequestsTestCase::test_unicode_header_name
+PASSED test_requests.py::RequestsTestCase::test_unicode_method_name
+PASSED test_requests.py::RequestsTestCase::test_unicode_multipart_post
+PASSED test_requests.py::RequestsTestCase::test_unicode_multipart_post_fieldnames
+PASSED test_requests.py::RequestsTestCase::test_uppercase_scheme_redirect
+PASSED test_requests.py::RequestsTestCase::test_urlencoded_get_query_multivalued_param
+PASSED test_requests.py::RequestsTestCase::test_user_agent_transfers
+PASSED test_requests.py::TestContentEncodingDetection::test_html4_pragma
+PASSED test_requests.py::TestContentEncodingDetection::test_html_charset
+PASSED test_requests.py::TestContentEncodingDetection::test_none
+PASSED test_requests.py::TestContentEncodingDetection::test_precedence
+PASSED test_requests.py::TestContentEncodingDetection::test_xhtml_pragma
+PASSED test_requests.py::TestContentEncodingDetection::test_xml
+PASSED test_requests.py::TestCaseInsensitiveDict::test_contains
+PASSED test_requests.py::TestCaseInsensitiveDict::test_delitem
+PASSED test_requests.py::TestCaseInsensitiveDict::test_docstring_example
+PASSED test_requests.py::TestCaseInsensitiveDict::test_equality
+PASSED test_requests.py::TestCaseInsensitiveDict::test_fixes_649
+PASSED test_requests.py::TestCaseInsensitiveDict::test_get
+PASSED test_requests.py::TestCaseInsensitiveDict::test_getitem
+PASSED test_requests.py::TestCaseInsensitiveDict::test_iter
+PASSED test_requests.py::TestCaseInsensitiveDict::test_iterable_init
+PASSED test_requests.py::TestCaseInsensitiveDict::test_kwargs_init
+PASSED test_requests.py::TestCaseInsensitiveDict::test_len
+PASSED test_requests.py::TestCaseInsensitiveDict::test_lower_items
+PASSED test_requests.py::TestCaseInsensitiveDict::test_mapping_init
+PASSED test_requests.py::TestCaseInsensitiveDict::test_preserve_key_case
+PASSED test_requests.py::TestCaseInsensitiveDict::test_preserve_last_key_case
+PASSED test_requests.py::TestCaseInsensitiveDict::test_setdefault
+PASSED test_requests.py::TestCaseInsensitiveDict::test_update
+PASSED test_requests.py::TestCaseInsensitiveDict::test_update_retains_unchanged
+PASSED test_requests.py::UtilsTestCase::test_address_in_network
+PASSED test_requests.py::UtilsTestCase::test_dotted_netmask
+PASSED test_requests.py::UtilsTestCase::test_get_auth_from_url
+PASSED test_requests.py::UtilsTestCase::test_get_environ_proxies
+PASSED test_requests.py::UtilsTestCase::test_get_environ_proxies_ip_ranges
+PASSED test_requests.py::UtilsTestCase::test_is_ipv4_address
+PASSED test_requests.py::UtilsTestCase::test_is_valid_cidr
+PASSED test_requests.py::UtilsTestCase::test_super_len_io_streams
+PASSED test_requests.py::TestMorselToCookieExpires::test_expires_invalid_int
+PASSED test_requests.py::TestMorselToCookieExpires::test_expires_invalid_str
+PASSED test_requests.py::TestMorselToCookieExpires::test_expires_none
+PASSED test_requests.py::TestMorselToCookieExpires::test_expires_valid_str
+PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_invalid_str
+PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_valid_int
+PASSED test_requests.py::TestTimeout::test_stream_timeout
+PASSED test_requests.py::TestTimeout::test_invalid_timeout
+PASSED test_requests.py::TestTimeout::test_none_timeout
+PASSED test_requests.py::TestTimeout::test_read_timeout
+PASSED test_requests.py::TestTimeout::test_encoded_methods
+PASSED test_requests.py::TestRedirects::test_requests_are_updated_each_time
+PASSED test_requests.py::test_data_argument_accepts_tuples
+PASSED test_requests.py::test_prepared_request_empty_copy
+PASSED test_requests.py::test_prepared_request_no_cookies_copy
+PASSED test_requests.py::test_prepared_request_complete_copy
+PASSED test_requests.py::test_prepare_unicode_url
+FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET
+FAILED test_requests.py::RequestsTestCase::test_DIGEST_AUTH_RETURNS_COOKIE - ...
+FAILED test_requests.py::RequestsTestCase::test_HTTP_200_OK_GET_WITH_MIXED_PARAMS
+FAILED test_requests.py::RequestsTestCase::test_HTTP_200_OK_PUT - assert 503 ...
+FAILED test_requests.py::RequestsTestCase::test_basicauth_with_netrc - assert...
+FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
+FAILED test_requests.py::RequestsTestCase::test_cookie_persists_via_api - Ind...
+FAILED test_requests.py::RequestsTestCase::test_manual_redirect_with_partial_body_read
+FAILED test_requests.py::RequestsTestCase::test_params_are_merged_case_sensitive
+FAILED test_requests.py::RequestsTestCase::test_prepared_from_session - json....
+FAILED test_requests.py::RequestsTestCase::test_redirect_with_wrong_gzipped_header
+FAILED test_requests.py::TestTimeout::test_connect_timeout - AssertionError: ...
+FAILED test_requests.py::TestTimeout::test_total_timeout_connect - requests.e...
+============ 13 failed, 130 passed, 3 warnings in 620.63s (0:10:20) ============
++ : '>>>>> End Test Output'
++ git checkout 091991be0da19de9108dbe5e3752917fea3d7fdc test_requests.py
+Updated 1 path from 980e006

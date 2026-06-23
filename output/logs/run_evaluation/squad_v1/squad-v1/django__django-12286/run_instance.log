@@ -1,0 +1,3377 @@
+2026-06-23 04:45:27,865 - INFO - Creating container for django__django-12286...
+2026-06-23 04:45:58,948 - INFO - Container for django__django-12286 created: 7f3929c2b575158349aac9055ad68f6ddc3357e37ee2e61d273c7476b46b5bf7
+2026-06-23 04:45:59,556 - INFO - Container for django__django-12286 started: 7f3929c2b575158349aac9055ad68f6ddc3357e37ee2e61d273c7476b46b5bf7
+2026-06-23 04:45:59,563 - INFO - Intermediate patch for django__django-12286 written to logs/run_evaluation/squad_v1/squad-v1/django__django-12286/patch.diff, now applying to container...
+2026-06-23 04:45:59,790 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:45:59,875 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:46:00,004 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 04:46:00,005 - INFO - >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+2026-06-23 04:46:00,032 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:46:00,035 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,037 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,039 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,039 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,040 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,040 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,041 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,041 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,042 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,042 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,043 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,044 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,044 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,045 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,045 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,046 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,046 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,047 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,047 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,048 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,048 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,049 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,049 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,050 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,050 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,051 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,051 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,052 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,053 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,054 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,055 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,055 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,056 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,057 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,057 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,058 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,058 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,059 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,059 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,060 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,060 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,061 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,061 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,061 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,062 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,062 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,063 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,063 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,064 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,064 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,065 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,065 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,065 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,066 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,066 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,067 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,067 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,068 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,068 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,069 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,069 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,070 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,070 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,071 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,071 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,072 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,072 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,073 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,073 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,074 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,075 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,075 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,076 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,077 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,078 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,078 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,079 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,079 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,080 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,081 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,081 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,081 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,082 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,082 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,083 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,083 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,084 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,085 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,086 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,087 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,088 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,089 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,089 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,090 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,090 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,091 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,091 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,092 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,093 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,093 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,094 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,095 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,096 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,097 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,097 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,098 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,098 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,099 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,099 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,100 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,101 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,101 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,102 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,102 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,103 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,104 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,105 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,105 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,106 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,106 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,107 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,107 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,108 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,108 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,109 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,109 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,110 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,110 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,111 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,111 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,112 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,112 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,113 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,113 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,114 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,114 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,115 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,115 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,116 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,116 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:46:00,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,138 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,138 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,138 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,139 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,139 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,140 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,141 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,141 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,141 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,142 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,143 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,143 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,143 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,144 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,144 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,144 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,145 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,145 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,145 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,146 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,146 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,146 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,147 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,147 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,148 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,148 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,149 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,149 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,150 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,150 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,151 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,151 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,152 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,152 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,153 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,153 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,153 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,154 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,154 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,155 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,156 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,161 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,161 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,172 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,172 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,172 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: django__django-12286: >>>>> Patch Apply Failed:
+patching file django/core/checks/translation.py
+patching file tests/check_framework/test_translation.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 48:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/django__django-12286/run_instance.log) for more information.
+
+2026-06-23 04:46:00,181 - INFO - Attempting to stop container sweb.eval.django__django-12286.squad_v1...
+2026-06-23 04:46:17,147 - INFO - Attempting to remove container sweb.eval.django__django-12286.squad_v1...
+2026-06-23 04:46:17,270 - INFO - Container sweb.eval.django__django-12286.squad_v1 removed.
+2026-06-23 04:46:17,271 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-12286:latest...
+2026-06-23 04:46:18,321 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-12286:latest removed.

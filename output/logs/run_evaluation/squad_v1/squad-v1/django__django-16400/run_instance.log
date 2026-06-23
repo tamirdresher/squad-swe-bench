@@ -1,0 +1,197 @@
+2026-06-23 05:27:58,883 - INFO - Creating container for django__django-16400...
+2026-06-23 05:28:27,039 - INFO - Container for django__django-16400 created: d2d18b4b25fba5c200d848d9497f25f6ded3812221d825481233982cb3dd0af5
+2026-06-23 05:28:27,813 - INFO - Container for django__django-16400 started: d2d18b4b25fba5c200d848d9497f25f6ded3812221d825481233982cb3dd0af5
+2026-06-23 05:28:27,823 - INFO - Intermediate patch for django__django-16400 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16400/patch.diff, now applying to container...
+2026-06-23 05:28:28,097 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:28:28,206 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:28:28,317 - INFO - >>>>> Applied Patch:
+patching file django/contrib/admin/checks.py
+patching file django/contrib/auth/management/__init__.py
+patching file docs/ref/checks.txt
+patching file tests/modeladmin/test_checks.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 537 with fuzz 2.
+
+2026-06-23 05:28:29,288 - INFO - Git diff before:
+diff --git a/django/contrib/admin/checks.py b/django/contrib/admin/checks.py
+index dbbeb7fe9c..f363621a88 100644
+--- a/django/contrib/admin/checks.py
++++ b/django/contrib/admin/checks.py
+@@ -917,10 +917,13 @@ class ModelAdminChecks(BaseModelAdminChecks):
+                         id="admin.E108",
+                     )
+                 ]
+-        if isinstance(field, models.ManyToManyField):
++        if isinstance(field, models.ManyToManyField) or (
++            getattr(field, "rel", None) and field.rel.field.many_to_one
++        ):
+             return [
+                 checks.Error(
+-                    "The value of '%s' must not be a ManyToManyField." % label,
++                    f"The value of '{label}' must not be a many-to-many field or a "
++                    f"reverse foreign key.",
+                     obj=obj.__class__,
+                     id="admin.E109",
+                 )
+diff --git a/django/contrib/auth/management/__init__.py b/django/contrib/auth/management/__init__.py
+index 0b5a982617..c63a83ccf1 100644
+--- a/django/contrib/auth/management/__init__.py
++++ b/django/contrib/auth/management/__init__.py
+@@ -95,11 +95,15 @@ def create_permissions(
+         .values_list("content_type", "codename")
+     )
+ 
+-    perms = [
+-        Permission(codename=codename, name=name, content_type=ct)
+-        for ct, (codename, name) in searched_perms
+-        if (ct.pk, codename) not in all_perms
+-    ]
++    perms = []
++    for ct, (codename, name) in searched_perms:
++        if (ct.pk, codename) not in all_perms:
++            permission = Permission()
++            permission._state.db = using
++            permission.codename = codename
++            permission.name = name
++            permission.content_type = ct
++            perms.append(permission)
+     Permission.objects.using(using).bulk_create(perms)
+     if verbosity >= 2:
+         for perm in perms:
+diff --git a/docs/ref/checks.txt b/docs/ref/checks.txt
+index f85c90059d..810aee6f3b 100644
+--- a/docs/ref/checks.txt
++++ b/docs/ref/checks.txt
+@@ -698,8 +698,8 @@ with the admin site:
+ * **admin.E108**: The value of ``list_display[n]`` refers to ``<label>``,
+   which is not a callable, an attribute of ``<ModelAdmin class>``, or an
+   attribute or method on ``<model>``.
+-* **admin.E109**: The value of ``list_display[n]`` must not be a
+-  ``ManyToManyField`` field.
++* **admin.E109**: The value of ``list_display[n]`` must not be a many-to-many
++  field or a reverse foreign key.
+ * **admin.E110**: The value of ``list_display_links`` must be a list, a tuple,
+   or ``None``.
+ * **admin.E111**: The value of ``list_display_links[n]`` refers to ``<label>``,
+diff --git a/tests/modeladmin/test_checks.py b/tests/modeladmin/test_checks.py
+index e4ad0636a6..85f2eda69e 100644
+--- a/tests/modeladmin/test_checks.py
++++ b/tests/modeladmin/test_checks.py
+@@ -537,7 +537,20 @@ class ListDisplayTests(CheckTestCase):
+         self.assertIsInvalid(
+             TestModelAdmin,
+             ValidationTestModel,
+-            "The value of 'list_display[0]' must not be a ManyToManyField.",
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
++            "admin.E109",
++        )
++
++    def test_invalid_reverse_related_field(self):
++        class TestModelAdmin(ModelAdmin):
++            list_display = ["song_set"]
++
++        self.assertIsInvalid(
++            TestModelAdmin,
++            Band,
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
+             "admin.E109",
+         )
+2026-06-23 05:28:29,293 - INFO - Eval script for django__django-16400 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16400/eval.sh; copying to container...
+2026-06-23 05:28:37,273 - INFO - Test runtime: 7.80 seconds
+2026-06-23 05:28:37,278 - INFO - Test output for django__django-16400 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16400/test_output.txt
+2026-06-23 05:28:37,375 - INFO - Git diff after:
+diff --git a/django/contrib/admin/checks.py b/django/contrib/admin/checks.py
+index dbbeb7fe9c..f363621a88 100644
+--- a/django/contrib/admin/checks.py
++++ b/django/contrib/admin/checks.py
+@@ -917,10 +917,13 @@ class ModelAdminChecks(BaseModelAdminChecks):
+                         id="admin.E108",
+                     )
+                 ]
+-        if isinstance(field, models.ManyToManyField):
++        if isinstance(field, models.ManyToManyField) or (
++            getattr(field, "rel", None) and field.rel.field.many_to_one
++        ):
+             return [
+                 checks.Error(
+-                    "The value of '%s' must not be a ManyToManyField." % label,
++                    f"The value of '{label}' must not be a many-to-many field or a "
++                    f"reverse foreign key.",
+                     obj=obj.__class__,
+                     id="admin.E109",
+                 )
+diff --git a/django/contrib/auth/management/__init__.py b/django/contrib/auth/management/__init__.py
+index 0b5a982617..c63a83ccf1 100644
+--- a/django/contrib/auth/management/__init__.py
++++ b/django/contrib/auth/management/__init__.py
+@@ -95,11 +95,15 @@ def create_permissions(
+         .values_list("content_type", "codename")
+     )
+ 
+-    perms = [
+-        Permission(codename=codename, name=name, content_type=ct)
+-        for ct, (codename, name) in searched_perms
+-        if (ct.pk, codename) not in all_perms
+-    ]
++    perms = []
++    for ct, (codename, name) in searched_perms:
++        if (ct.pk, codename) not in all_perms:
++            permission = Permission()
++            permission._state.db = using
++            permission.codename = codename
++            permission.name = name
++            permission.content_type = ct
++            perms.append(permission)
+     Permission.objects.using(using).bulk_create(perms)
+     if verbosity >= 2:
+         for perm in perms:
+diff --git a/docs/ref/checks.txt b/docs/ref/checks.txt
+index f85c90059d..810aee6f3b 100644
+--- a/docs/ref/checks.txt
++++ b/docs/ref/checks.txt
+@@ -698,8 +698,8 @@ with the admin site:
+ * **admin.E108**: The value of ``list_display[n]`` refers to ``<label>``,
+   which is not a callable, an attribute of ``<ModelAdmin class>``, or an
+   attribute or method on ``<model>``.
+-* **admin.E109**: The value of ``list_display[n]`` must not be a
+-  ``ManyToManyField`` field.
++* **admin.E109**: The value of ``list_display[n]`` must not be a many-to-many
++  field or a reverse foreign key.
+ * **admin.E110**: The value of ``list_display_links`` must be a list, a tuple,
+   or ``None``.
+ * **admin.E111**: The value of ``list_display_links[n]`` refers to ``<label>``,
+diff --git a/tests/modeladmin/test_checks.py b/tests/modeladmin/test_checks.py
+index e4ad0636a6..85f2eda69e 100644
+--- a/tests/modeladmin/test_checks.py
++++ b/tests/modeladmin/test_checks.py
+@@ -537,7 +537,20 @@ class ListDisplayTests(CheckTestCase):
+         self.assertIsInvalid(
+             TestModelAdmin,
+             ValidationTestModel,
+-            "The value of 'list_display[0]' must not be a ManyToManyField.",
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
++            "admin.E109",
++        )
++
++    def test_invalid_reverse_related_field(self):
++        class TestModelAdmin(ModelAdmin):
++            list_display = ["song_set"]
++
++        self.assertIsInvalid(
++            TestModelAdmin,
++            Band,
++            "The value of 'list_display[0]' must not be a many-to-many field or a "
++            "reverse foreign key.",
+             "admin.E109",
+         )
+2026-06-23 05:28:37,375 - INFO - Grading answer for django__django-16400...
+2026-06-23 05:28:37,381 - INFO - report: {'django__django-16400': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_set_permissions_fk_to_using_parameter (auth_tests.test_management.CreatePermissionsMultipleDatabasesTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_actual_implementation (auth_tests.test_management.GetDefaultUsernameTestCase)', 'test_existing (auth_tests.test_management.GetDefaultUsernameTestCase)', 'test_i18n (auth_tests.test_management.GetDefaultUsernameTestCase)', 'test_simple (auth_tests.test_management.GetDefaultUsernameTestCase)', 'test_with_database (auth_tests.test_management.GetDefaultUsernameTestCase)', 'test_input_not_found (auth_tests.test_management.MockInputTests)', 'changepassword --database should operate on the specified DB.', "`post_migrate` handler ordering isn't guaranteed. Simulate a case", 'test_default_permissions (auth_tests.test_management.CreatePermissionsTests)', "A proxy model's permissions use its own content type rather than the", "#24075 - Permissions shouldn't be created or deleted if the ContentType", 'test_createsuperuser_command_suggested_username_with_database_option (auth_tests.test_management.MultiDBCreatesuperuserTestCase)', 'createsuperuser --database should operate on the specified DB.', 'test_get_pass (auth_tests.test_management.ChangepasswordManagementCommandTestCase)', 'test_get_pass_no_input (auth_tests.test_management.ChangepasswordManagementCommandTestCase)', 'test_nonexistent_username (auth_tests.test_management.ChangepasswordManagementCommandTestCase)', 'A CommandError should be raised if the user enters in passwords which', "The system username is used if --username isn't provided.", "Executing the changepassword management command should change joe's password", '#21627 -- Executing the changepassword management command should allow', 'A CommandError should be thrown by handle() if the user enters in', 'Check the operation of the createsuperuser management command', 'Creation fails if --username is blank.', 'test_blank_username_non_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', "createsuperuser uses a default username when one isn't provided.", 'test_email_in_username (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_environment_variable_m2m_non_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_environment_variable_non_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'Creation fails if the username already exists.', 'Creation fails if the username already exists and a custom user model', "call_command() gets username='janet' and interactive=True.", 'test_fields_with_fk (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_fk_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_fk_via_option_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_m2m (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_m2m_and_through (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_m2m_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_fields_with_m2m_interactive_blank (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_ignore_environment_variable_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_ignore_environment_variable_non_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'Creation fails if the username fails validation.', 'test_keyboard_interrupt (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_no_email_argument (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_non_ascii_verbose_name (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'You can pass a stdin object as an option and it should be', 'Creation should fail if the password fails validation.', "Password validation can be bypassed by entering 'y' at the prompt.", 'If the command is not called from a TTY, it should be skipped and a', 'A superuser can be created when a custom user model is in use', "A Custom superuser won't be created when a required field isn't provided", 'test_swappable_user_username_non_unique (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_usermodel_without_password (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_usermodel_without_password_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_fk (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_fk_environment_variable (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_fk_via_option_interactive (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_password_against_required_fields (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_password_against_required_fields_via_option (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_password_against_username (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'test_validate_username (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)', 'Creation should fail if the user enters blank passwords.', 'Creation should fail if the user enters mismatched passwords.', 'test_verbosity_zero (auth_tests.test_management.CreatesuperuserManagementCommandTestCase)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16400: resolved: True
+2026-06-23 05:28:37,385 - INFO - Attempting to stop container sweb.eval.django__django-16400.squad_v1...
+2026-06-23 05:28:53,665 - INFO - Attempting to remove container sweb.eval.django__django-16400.squad_v1...
+2026-06-23 05:28:53,825 - INFO - Container sweb.eval.django__django-16400.squad_v1 removed.
+2026-06-23 05:28:53,825 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16400:latest...
+2026-06-23 05:28:54,572 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16400:latest removed.

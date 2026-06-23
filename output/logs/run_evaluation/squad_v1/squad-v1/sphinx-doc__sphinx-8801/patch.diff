@@ -1,0 +1,123 @@
+diff --git a/CHANGES b/CHANGES
+index ebdd331ed..3fd4a72b6 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * #8727: apidoc: namespace module file is not generated if no submodules there
+ * #741: autodoc: inherited-members doesn't work for instance attributes on super
+   class
++* #8932: autodoc: An annotation only member documented in a super class is
++  treated as undocumented on the inheriting class
+ * #8592: autodoc: ``:meta public:`` does not effect to variables
+ * #8594: autodoc: empty __all__ attribute is ignored
+ * #8315: autodoc: Failed to resolve struct.Struct type annotation
+diff --git a/sphinx/ext/autodoc/importer.py b/sphinx/ext/autodoc/importer.py
+index 477aae247..b792b1a5f 100644
+--- a/sphinx/ext/autodoc/importer.py
++++ b/sphinx/ext/autodoc/importer.py
+@@ -294,24 +294,35 @@ def get_class_members(subject: Any, objpath: List[str], attrgetter: Callable
+ 
+     try:
+         for cls in getmro(subject):
++            try:
++                modname = safe_getattr(cls, '__module__')
++                qualname = safe_getattr(cls, '__qualname__')
++                analyzer = ModuleAnalyzer.for_module(modname)
++                analyzer.analyze()
++            except AttributeError:
++                qualname = None
++                analyzer = None
++            except PycodeError:
++                analyzer = None
++
+             # annotation only member (ex. attr: int)
+             for name in getannotations(cls):
+                 name = unmangle(cls, name)
+                 if name and name not in members:
+-                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls)
++                    if analyzer and (qualname, name) in analyzer.attr_docs:
++                        docstring = '\n'.join(analyzer.attr_docs[qualname, name])
++                    else:
++                        docstring = None
++
++                    members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
++                                                 docstring=docstring)
+ 
+             # append instance attributes (cf. self.attr1) if analyzer knows
+-            try:
+-                modname = safe_getattr(cls, '__module__')
+-                qualname = safe_getattr(cls, '__qualname__')
+-                analyzer = ModuleAnalyzer.for_module(modname)
+-                analyzer.analyze()
++            if analyzer:
+                 for (ns, name), docstring in analyzer.attr_docs.items():
+                     if ns == qualname and name not in members:
+                         members[name] = ObjectMember(name, INSTANCEATTR, class_=cls,
+                                                      docstring='\n'.join(docstring))
+-            except (AttributeError, PycodeError):
+-                pass
+     except AttributeError:
+         pass
+ 
+diff --git a/tests/roots/test-ext-autodoc/target/inheritance.py b/tests/roots/test-ext-autodoc/target/inheritance.py
+index ffac84bb6..c270506b0 100644
+--- a/tests/roots/test-ext-autodoc/target/inheritance.py
++++ b/tests/roots/test-ext-autodoc/target/inheritance.py
+@@ -15,3 +15,15 @@ class Derived(Base):
+     def inheritedmeth(self):
+         # no docstring here
+         pass
++
++
++class Bird:
++    """docstring of Bird."""
++
++    legs: int  #: docstring of legs
++
++
++class Penguin(Bird):
++    """docstring of Penguin."""
++
++    wings: int  #: docstring of wings
+diff --git a/tests/test_ext_autodoc.py b/tests/test_ext_autodoc.py
+index d555359cf..072b6349b 100644
+--- a/tests/test_ext_autodoc.py
++++ b/tests/test_ext_autodoc.py
+@@ -625,6 +625,37 @@ def test_autodoc_inherited_members(app):
+     ]
+ 
+ 
++@pytest.mark.sphinx('html', testroot='ext-autodoc')
++def test_autodoc_inherited_members_annotation(app):
++    # an annotation only member documented in a superclass should be picked up
++    # via :inherited-members: without requiring :undoc-members: (refs: #8932)
++    options = {"members": None,
++               "inherited-members": None}
++    actual = do_autodoc(app, 'class', 'target.inheritance.Penguin', options)
++    assert list(actual) == [
++        '',
++        '.. py:class:: Penguin()',
++        '   :module: target.inheritance',
++        '',
++        '   docstring of Penguin.',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.legs',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of legs',
++        '',
++        '',
++        '   .. py:attribute:: Penguin.wings',
++        '      :module: target.inheritance',
++        '      :type: int',
++        '',
++        '      docstring of wings',
++        '',
++    ]
++
++
+ @pytest.mark.sphinx('html', testroot='ext-autodoc')
+ def test_autodoc_inherited_members_Base(app):
+     options = {"members": None,

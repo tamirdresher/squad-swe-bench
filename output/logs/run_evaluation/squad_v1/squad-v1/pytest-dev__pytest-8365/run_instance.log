@@ -1,0 +1,92 @@
+2026-06-23 06:42:12,179 - INFO - Creating container for pytest-dev__pytest-8365...
+2026-06-23 06:42:43,741 - INFO - Container for pytest-dev__pytest-8365 created: 664491a719bcee1d3a1ac4099b2915df1cc211c8079ca585a16f95eabd44605a
+2026-06-23 06:42:44,276 - INFO - Container for pytest-dev__pytest-8365 started: 664491a719bcee1d3a1ac4099b2915df1cc211c8079ca585a16f95eabd44605a
+2026-06-23 06:42:44,289 - INFO - Intermediate patch for pytest-dev__pytest-8365 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-8365/patch.diff, now applying to container...
+2026-06-23 06:42:44,594 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:42:44,695 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:42:44,819 - INFO - >>>>> Applied Patch:
+patching file src/_pytest/tmpdir.py
+patching file testing/test_tmpdir.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 246 with fuzz 2.
+
+2026-06-23 06:42:45,040 - INFO - Git diff before:
+diff --git a/src/_pytest/tmpdir.py b/src/_pytest/tmpdir.py
+index 29c7e19d7..4a4047f48 100644
+--- a/src/_pytest/tmpdir.py
++++ b/src/_pytest/tmpdir.py
+@@ -154,9 +154,15 @@ def get_user() -> Optional[str]:
+     import getpass
+ 
+     try:
+-        return getpass.getuser()
++        username = getpass.getuser()
+     except (ImportError, KeyError):
+         return None
++    # The username may contain characters that are illegal in a directory
++    # name, e.g. a domain-qualified name such as ``contoso\john_doe`` that
++    # getpass.getuser() can return on Windows. Replace every character that
++    # is not allowed in a single path component with an underscore so the
++    # resulting ``pytest-of-<user>`` directory can be created (see #8317).
++    return re.sub(r"[^\w.]", "_", username)
+ 
+ 
+ def pytest_configure(config: Config) -> None:
+diff --git a/testing/test_tmpdir.py b/testing/test_tmpdir.py
+index d123287aa..03e068fd7 100644
+--- a/testing/test_tmpdir.py
++++ b/testing/test_tmpdir.py
+@@ -246,6 +246,20 @@ def test_get_user(monkeypatch):
+     assert get_user() is None
+ 
+ 
++def test_get_user_win_special_chars(monkeypatch):
++    """get_user() should sanitize characters that are illegal in directory
++    names from the username, e.g. a domain-qualified name such as
++    ``contoso\\john_doe`` as returned on Windows when logged in via SSH (#8317).
++    """
++    monkeypatch.setattr("getpass.getuser", lambda: 'contoso\\john_doe:*?"<>| ')
++    user = get_user()
++    assert user is not None
++    # None of the characters that are illegal in a Windows directory name
++    # (which include the path separators) must remain in the sanitized result.
++    for illegal in '\\/:*?"<>|':
++        assert illegal not in user
++
++
+ class TestNumberedDir:
+     PREFIX = "fun-"
+2026-06-23 06:42:45,046 - INFO - Eval script for pytest-dev__pytest-8365 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-8365/eval.sh; copying to container...
+2026-06-23 06:42:53,785 - INFO - Test runtime: 8.59 seconds
+2026-06-23 06:42:53,790 - INFO - Test output for pytest-dev__pytest-8365 written to logs/run_evaluation/squad_v1/squad-v1/pytest-dev__pytest-8365/test_output.txt
+2026-06-23 06:42:53,904 - INFO - Git diff after:
+diff --git a/src/_pytest/tmpdir.py b/src/_pytest/tmpdir.py
+index 29c7e19d7..4a4047f48 100644
+--- a/src/_pytest/tmpdir.py
++++ b/src/_pytest/tmpdir.py
+@@ -154,9 +154,15 @@ def get_user() -> Optional[str]:
+     import getpass
+ 
+     try:
+-        return getpass.getuser()
++        username = getpass.getuser()
+     except (ImportError, KeyError):
+         return None
++    # The username may contain characters that are illegal in a directory
++    # name, e.g. a domain-qualified name such as ``contoso\john_doe`` that
++    # getpass.getuser() can return on Windows. Replace every character that
++    # is not allowed in a single path component with an underscore so the
++    # resulting ``pytest-of-<user>`` directory can be created (see #8317).
++    return re.sub(r"[^\w.]", "_", username)
+ 
+ 
+ def pytest_configure(config: Config) -> None:
+2026-06-23 06:42:53,905 - INFO - Git diff changed after running eval script
+2026-06-23 06:42:53,905 - INFO - Grading answer for pytest-dev__pytest-8365...
+2026-06-23 06:42:53,913 - INFO - report: {'pytest-dev__pytest-8365': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['testing/test_tmpdir.py::test_tmp_path_factory_handles_invalid_dir_characters']}, 'PASS_TO_PASS': {'success': ['testing/test_tmpdir.py::TestTempdirHandler::test_mktemp', 'testing/test_tmpdir.py::TestTempdirHandler::test_tmppath_relative_basetemp_absolute', 'testing/test_tmpdir.py::test_get_user_uid_not_found', 'testing/test_tmpdir.py::TestNumberedDir::test_make', 'testing/test_tmpdir.py::TestNumberedDir::test_cleanup_lock_create', 'testing/test_tmpdir.py::TestNumberedDir::test_lock_register_cleanup_removal', 'testing/test_tmpdir.py::TestNumberedDir::test_cleanup_keep', 'testing/test_tmpdir.py::TestNumberedDir::test_cleanup_locked', 'testing/test_tmpdir.py::TestNumberedDir::test_cleanup_ignores_symlink', 'testing/test_tmpdir.py::TestNumberedDir::test_removal_accepts_lock', 'testing/test_tmpdir.py::TestRmRf::test_rm_rf', 'testing/test_tmpdir.py::TestRmRf::test_rm_rf_with_read_only_file', 'testing/test_tmpdir.py::TestRmRf::test_rm_rf_with_read_only_directory', 'testing/test_tmpdir.py::TestRmRf::test_on_rm_rf_error', 'testing/test_tmpdir.py::test_tmpdir_equals_tmp_path', 'testing/test_tmpdir.py::test_tmpdir_fixture', 'testing/test_tmpdir.py::TestConfigTmpdir::test_getbasetemp_custom_removes_old', 'testing/test_tmpdir.py::test_mktemp[mypath-True]', 'testing/test_tmpdir.py::test_mktemp[/mypath1-False]', 'testing/test_tmpdir.py::test_mktemp[./mypath1-True]', 'testing/test_tmpdir.py::test_mktemp[../mypath3-False]', 'testing/test_tmpdir.py::test_mktemp[../../mypath4-False]', 'testing/test_tmpdir.py::test_mktemp[mypath5/..-False]', 'testing/test_tmpdir.py::test_mktemp[mypath6/../mypath6-True]', 'testing/test_tmpdir.py::test_mktemp[mypath7/../mypath7/..-False]', 'testing/test_tmpdir.py::test_tmpdir_always_is_realpath', 'testing/test_tmpdir.py::test_tmp_path_always_is_realpath', 'testing/test_tmpdir.py::test_tmpdir_too_long_on_parametrization', 'testing/test_tmpdir.py::test_tmpdir_factory', 'testing/test_tmpdir.py::test_tmpdir_fallback_tox_env', 'testing/test_tmpdir.py::test_tmpdir_fallback_uid_not_found', 'testing/test_tmpdir.py::test_basetemp_with_read_only_files'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for pytest-dev__pytest-8365: resolved: False
+2026-06-23 06:42:53,919 - INFO - Attempting to stop container sweb.eval.pytest-dev__pytest-8365.squad_v1...
+2026-06-23 06:43:12,686 - INFO - Attempting to remove container sweb.eval.pytest-dev__pytest-8365.squad_v1...
+2026-06-23 06:43:12,892 - INFO - Container sweb.eval.pytest-dev__pytest-8365.squad_v1 removed.
+2026-06-23 06:43:12,895 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-8365:latest...
+2026-06-23 06:43:14,183 - INFO - Image swebench/sweb.eval.x86_64.pytest-dev_1776_pytest-8365:latest removed.

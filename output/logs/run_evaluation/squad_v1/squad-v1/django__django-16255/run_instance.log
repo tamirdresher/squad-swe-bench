@@ -1,0 +1,118 @@
+2026-06-23 05:24:39,922 - INFO - Creating container for django__django-16255...
+2026-06-23 05:24:44,075 - INFO - Container for django__django-16255 created: 11c89ec980f84143fe186ce46a9b7efe7bc1446ab686968c30776c120299f630
+2026-06-23 05:24:45,821 - INFO - Container for django__django-16255 started: 11c89ec980f84143fe186ce46a9b7efe7bc1446ab686968c30776c120299f630
+2026-06-23 05:24:45,842 - INFO - Intermediate patch for django__django-16255 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16255/patch.diff, now applying to container...
+2026-06-23 05:24:46,320 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:24:46,554 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:24:46,925 - INFO - >>>>> Applied Patch:
+patching file django/contrib/sitemaps/__init__.py
+patching file tests/sitemaps_tests/test_http.py
+patching file tests/sitemaps_tests/urls/http.py
+patch unexpectedly ends in middle of line
+Hunk #3 succeeded at 431 with fuzz 1.
+
+2026-06-23 05:24:49,209 - INFO - Git diff before:
+diff --git a/django/contrib/sitemaps/__init__.py b/django/contrib/sitemaps/__init__.py
+index 27756d9d96..b40ad806ed 100644
+--- a/django/contrib/sitemaps/__init__.py
++++ b/django/contrib/sitemaps/__init__.py
+@@ -168,7 +168,7 @@ class Sitemap:
+         if callable(self.lastmod):
+             try:
+                 return max([self.lastmod(item) for item in self.items()])
+-            except TypeError:
++            except (TypeError, ValueError):
+                 return None
+         else:
+             return self.lastmod
+diff --git a/tests/sitemaps_tests/test_http.py b/tests/sitemaps_tests/test_http.py
+index 4a269b8737..8c16f66896 100644
+--- a/tests/sitemaps_tests/test_http.py
++++ b/tests/sitemaps_tests/test_http.py
+@@ -507,6 +507,16 @@ class HTTPSitemapTests(SitemapTestsBase):
+         self.assertXMLEqual(index_response.content.decode(), expected_content_index)
+         self.assertXMLEqual(sitemap_response.content.decode(), expected_content_sitemap)
+ 
++    def test_callable_sitemod_no_items(self):
++        index_response = self.client.get("/callable-lastmod-no-items/index.xml")
++        self.assertNotIn("Last-Modified", index_response)
++        expected_content_index = """<?xml version="1.0" encoding="UTF-8"?>
++        <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
++        <sitemap><loc>http://example.com/simple/sitemap-callable-lastmod.xml</loc></sitemap>
++        </sitemapindex>
++        """
++        self.assertXMLEqual(index_response.content.decode(), expected_content_index)
++
+ 
+ # RemovedInDjango50Warning
+ class DeprecatedTests(SitemapTestsBase):
+diff --git a/tests/sitemaps_tests/urls/http.py b/tests/sitemaps_tests/urls/http.py
+index 9a468de476..75dd4834c0 100644
+--- a/tests/sitemaps_tests/urls/http.py
++++ b/tests/sitemaps_tests/urls/http.py
+@@ -114,6 +114,16 @@ class CallableLastmodFullSitemap(Sitemap):
+         return obj.lastmod
+ 
+ 
++class CallableLastmodNoItemsSitemap(Sitemap):
++    location = "/location/"
++
++    def items(self):
++        return []
++
++    def lastmod(self, obj):
++        return obj.lastmod
++
++
+ class GetLatestLastmodNoneSiteMap(Sitemap):
+     changefreq = "never"
+     priority = 0.5
+@@ -233,6 +243,10 @@ callable_lastmod_full_sitemap = {
+     "callable-lastmod": CallableLastmodFullSitemap,
+ }
+ 
++callable_lastmod_no_items_sitemap = {
++    "callable-lastmod": CallableLastmodNoItemsSitemap,
++}
++
+ urlpatterns = [
+     path("simple/index.xml", views.index, {"sitemaps": simple_sitemaps}),
+     path("simple-paged/index.xml", views.index, {"sitemaps": simple_sitemaps_paged}),
+@@ -417,6 +431,11 @@ urlpatterns = [
+         views.sitemap,
+         {"sitemaps": callable_lastmod_full_sitemap},
+     ),
++    path(
++        "callable-lastmod-no-items/index.xml",
++        views.index,
++        {"sitemaps": callable_lastmod_no_items_sitemap},
++    ),
+     path(
+         "generic-lastmod/index.xml",
+         views.index,
+2026-06-23 05:24:49,218 - INFO - Eval script for django__django-16255 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16255/eval.sh; copying to container...
+2026-06-23 05:25:11,308 - INFO - Test runtime: 21.80 seconds
+2026-06-23 05:25:11,325 - INFO - Test output for django__django-16255 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16255/test_output.txt
+2026-06-23 05:25:11,722 - INFO - Git diff after:
+diff --git a/django/contrib/sitemaps/__init__.py b/django/contrib/sitemaps/__init__.py
+index 27756d9d96..b40ad806ed 100644
+--- a/django/contrib/sitemaps/__init__.py
++++ b/django/contrib/sitemaps/__init__.py
+@@ -168,7 +168,7 @@ class Sitemap:
+         if callable(self.lastmod):
+             try:
+                 return max([self.lastmod(item) for item in self.items()])
+-            except TypeError:
++            except (TypeError, ValueError):
+                 return None
+         else:
+             return self.lastmod
+2026-06-23 05:25:11,723 - INFO - Git diff changed after running eval script
+2026-06-23 05:25:11,724 - INFO - Grading answer for django__django-16255...
+2026-06-23 05:25:11,742 - INFO - report: {'django__django-16255': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_callable_sitemod_no_items (sitemaps_tests.test_http.HTTPSitemapTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['A simple sitemap index can be rendered with a custom template', 'test_simple_sitemap_custom_index_warning (sitemaps_tests.test_http.DeprecatedTests)', 'A i18n sitemap with alternate/hreflang links can be rendered.', 'A i18n sitemap index with limited languages can be rendered.', 'A i18n sitemap index with x-default can be rendered.', 'A cached sitemap index can be rendered (#2713).', 'All items in the sitemap have `lastmod`. The `Last-Modified` header', 'Not all items have `lastmod`. Therefore the `Last-Modified` header', 'test_empty_page (sitemaps_tests.test_http.HTTPSitemapTests)', 'test_empty_sitemap (sitemaps_tests.test_http.HTTPSitemapTests)', 'The priority value should not be localized.', 'test_no_section (sitemaps_tests.test_http.HTTPSitemapTests)', 'test_page_not_int (sitemaps_tests.test_http.HTTPSitemapTests)', 'A sitemap may have multiple pages.', 'test_requestsite_sitemap (sitemaps_tests.test_http.HTTPSitemapTests)', 'A simple sitemap can be rendered with a custom template', 'A simple i18n sitemap index can be rendered, without logging variable', 'A simple sitemap can be rendered', 'A simple sitemap index can be rendered', 'A simple sitemap section can be rendered', 'sitemapindex.lastmod is included when Sitemap.lastmod is', 'sitemapindex.lastmod is omitted when Sitemap.lastmod is', "Check we get ImproperlyConfigured if we don't pass a site object to", "Check we get ImproperlyConfigured when we don't pass a site object to", 'Check to make sure that the raw item is included with each', 'Last-Modified header is set correctly', 'The Last-Modified header should be support dates (without time).', 'Last-Modified header is missing when sitemap has no lastmod', 'Last-Modified header is omitted when lastmod not on all items', 'The Last-Modified header should be converted from timezone aware dates', 'lastmod datestamp shows timezones if Sitemap.get_latest_lastmod', 'A sitemap may not be callable.', 'test_sitemap_without_entries (sitemaps_tests.test_http.HTTPSitemapTests)', 'The Last-Modified header is set to the most recent sitemap lastmod.', "The Last-Modified header is omitted when lastmod isn't found in all", 'test_x_robots_sitemap (sitemaps_tests.test_http.HTTPSitemapTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16255: resolved: True
+2026-06-23 05:25:11,763 - INFO - Attempting to stop container sweb.eval.django__django-16255.squad_v1...
+2026-06-23 05:25:30,533 - INFO - Attempting to remove container sweb.eval.django__django-16255.squad_v1...
+2026-06-23 05:25:30,824 - INFO - Container sweb.eval.django__django-16255.squad_v1 removed.
+2026-06-23 05:25:30,824 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16255:latest...
+2026-06-23 05:25:39,136 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16255:latest removed.

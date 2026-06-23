@@ -1,0 +1,35 @@
+diff --git a/django/contrib/sessions/backends/base.py b/django/contrib/sessions/backends/base.py
+index 187e14b1b7..d246e40576 100644
+--- a/django/contrib/sessions/backends/base.py
++++ b/django/contrib/sessions/backends/base.py
+@@ -132,9 +132,9 @@ class SessionBase:
+ 
+     def _legacy_decode(self, session_data):
+         # RemovedInDjango40Warning: pre-Django 3.1 format will be invalid.
+-        encoded_data = base64.b64decode(session_data.encode('ascii'))
+         try:
+             # could produce ValueError if there is no ':'
++            encoded_data = base64.b64decode(session_data.encode('ascii'))
+             hash, serialized = encoded_data.split(b':', 1)
+             expected_hash = self._hash(serialized)
+             if not constant_time_compare(hash.decode(), expected_hash):
+diff --git a/tests/sessions_tests/tests.py b/tests/sessions_tests/tests.py
+index e7615d0f11..648a8b65ea 100644
+--- a/tests/sessions_tests/tests.py
++++ b/tests/sessions_tests/tests.py
+@@ -339,6 +339,15 @@ class SessionTestsMixin:
+         # The failed decode is logged.
+         self.assertIn('corrupted', cm.output[0])
+ 
++    def test_decode_serializer_exception(self):
++        # Invalid base64 (incorrect padding) must not crash decoding; an empty
++        # session is returned instead (regression test for the crash reported
++        # in #31864: binascii.Error 'Incorrect padding').
++        invalid_value = 'abc'
++        self.assertEqual(self.session._legacy_decode(invalid_value), {})
++        # decode() falls back to _legacy_decode() and must also not crash.
++        self.assertEqual(self.session.decode(invalid_value), {})
++
+     def test_actual_expiry(self):
+         # this doesn't work with JSONSerializer (serializing timedelta)
+         with override_settings(SESSION_SERIALIZER='django.contrib.sessions.serializers.PickleSerializer'):

@@ -1,0 +1,81 @@
+2026-06-23 04:42:37,862 - INFO - Creating container for django__django-11964...
+2026-06-23 04:42:47,099 - INFO - Container for django__django-11964 created: b59a47dfa6a26bdbbfdf2c7ab772daa4efc8b20da39861788caa19bbf56d95e5
+2026-06-23 04:42:47,622 - INFO - Container for django__django-11964 started: b59a47dfa6a26bdbbfdf2c7ab772daa4efc8b20da39861788caa19bbf56d95e5
+2026-06-23 04:42:47,630 - INFO - Intermediate patch for django__django-11964 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11964/patch.diff, now applying to container...
+2026-06-23 04:42:47,875 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:42:47,960 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:42:48,114 - INFO - >>>>> Applied Patch:
+patching file django/db/models/enums.py
+patching file tests/model_enums/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 80 with fuzz 1.
+
+2026-06-23 04:42:49,319 - INFO - Git diff before:
+diff --git a/django/db/models/enums.py b/django/db/models/enums.py
+index bbe362a6ab..290935ac84 100644
+--- a/django/db/models/enums.py
++++ b/django/db/models/enums.py
+@@ -60,7 +60,13 @@ class ChoicesMeta(enum.EnumMeta):
+ 
+ class Choices(enum.Enum, metaclass=ChoicesMeta):
+     """Class for creating enumerated choices."""
+-    pass
++
++    def __str__(self):
++        """
++        Use value when cast to str, so that Choices set as model instance
++        attributes are rendered as expected.
++        """
++        return str(self.value)
+ 
+ 
+ class IntegerChoices(int, Choices):
+diff --git a/tests/model_enums/tests.py b/tests/model_enums/tests.py
+index 6b4bd6e7fd..ee92b93d0f 100644
+--- a/tests/model_enums/tests.py
++++ b/tests/model_enums/tests.py
+@@ -80,6 +80,12 @@ class ChoicesTests(SimpleTestCase):
+         self.assertIn(1, Suit)
+         self.assertNotIn(0, Suit)
+ 
++    def test_str(self):
++        for test in [Gender, Suit, YearInSchool, Vehicle]:
++            for member in test:
++                with self.subTest(member=member):
++                    self.assertEqual(str(test[member.name]), str(member.value))
++
+     def test_textchoices(self):
+         self.assertEqual(YearInSchool.choices, [
+             ('FR', 'Freshman'), ('SO', 'Sophomore'), ('JR', 'Junior'), ('SR', 'Senior'), ('GR', 'Graduate'),
+2026-06-23 04:42:50,038 - INFO - Eval script for django__django-11964 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11964/eval.sh; copying to container...
+2026-06-23 04:43:05,839 - INFO - Test runtime: 15.51 seconds
+2026-06-23 04:43:05,846 - INFO - Test output for django__django-11964 written to logs/run_evaluation/squad_v1/squad-v1/django__django-11964/test_output.txt
+2026-06-23 04:43:06,028 - INFO - Git diff after:
+diff --git a/django/db/models/enums.py b/django/db/models/enums.py
+index bbe362a6ab..290935ac84 100644
+--- a/django/db/models/enums.py
++++ b/django/db/models/enums.py
+@@ -60,7 +60,13 @@ class ChoicesMeta(enum.EnumMeta):
+ 
+ class Choices(enum.Enum, metaclass=ChoicesMeta):
+     """Class for creating enumerated choices."""
+-    pass
++
++    def __str__(self):
++        """
++        Use value when cast to str, so that Choices set as model instance
++        attributes are rendered as expected.
++        """
++        return str(self.value)
+ 
+ 
+ class IntegerChoices(int, Choices):
+2026-06-23 04:43:06,028 - INFO - Git diff changed after running eval script
+2026-06-23 04:43:06,029 - INFO - Grading answer for django__django-11964...
+2026-06-23 04:43:06,039 - INFO - report: {'django__django-11964': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_str (model_enums.tests.ChoicesTests)', 'test_textchoices (model_enums.tests.ChoicesTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_integerchoices (model_enums.tests.ChoicesTests)', 'test_integerchoices_auto_label (model_enums.tests.ChoicesTests)', 'test_integerchoices_containment (model_enums.tests.ChoicesTests)', 'test_integerchoices_empty_label (model_enums.tests.ChoicesTests)', 'test_integerchoices_functional_api (model_enums.tests.ChoicesTests)', 'test_invalid_definition (model_enums.tests.ChoicesTests)', 'test_textchoices_auto_label (model_enums.tests.ChoicesTests)', 'test_textchoices_blank_value (model_enums.tests.ChoicesTests)', 'test_textchoices_containment (model_enums.tests.ChoicesTests)', 'test_textchoices_empty_label (model_enums.tests.ChoicesTests)', 'test_textchoices_functional_api (model_enums.tests.ChoicesTests)', 'test_bool_unsupported (model_enums.tests.CustomChoicesTests)', 'test_labels_valid (model_enums.tests.CustomChoicesTests)', 'test_timezone_unsupported (model_enums.tests.CustomChoicesTests)', 'test_uuid_unsupported (model_enums.tests.CustomChoicesTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-11964: resolved: True
+2026-06-23 04:43:06,047 - INFO - Attempting to stop container sweb.eval.django__django-11964.squad_v1...
+2026-06-23 04:43:23,539 - INFO - Attempting to remove container sweb.eval.django__django-11964.squad_v1...
+2026-06-23 04:43:23,937 - INFO - Container sweb.eval.django__django-11964.squad_v1 removed.
+2026-06-23 04:43:23,937 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-11964:latest...
+2026-06-23 04:43:25,973 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-11964:latest removed.

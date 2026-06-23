@@ -1,0 +1,101 @@
+2026-06-23 07:32:42,913 - INFO - Creating container for sympy__sympy-21847...
+2026-06-23 07:32:47,997 - INFO - Container for sympy__sympy-21847 created: 6b9f62ca105cb1d25776c45847c73bee49cd3355ea599e1213ef59705db8553c
+2026-06-23 07:32:48,486 - INFO - Container for sympy__sympy-21847 started: 6b9f62ca105cb1d25776c45847c73bee49cd3355ea599e1213ef59705db8553c
+2026-06-23 07:32:48,494 - INFO - Intermediate patch for sympy__sympy-21847 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21847/patch.diff, now applying to container...
+2026-06-23 07:32:48,731 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:32:48,809 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:32:48,896 - INFO - >>>>> Applied Patch:
+patching file sympy/polys/monomials.py
+patching file sympy/polys/tests/test_monomials.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 78 with fuzz 2.
+
+2026-06-23 07:32:49,484 - INFO - Git diff before:
+diff --git a/sympy/polys/monomials.py b/sympy/polys/monomials.py
+index 0e84403307..2ff762f563 100644
+--- a/sympy/polys/monomials.py
++++ b/sympy/polys/monomials.py
+@@ -127,7 +127,7 @@ def itermonomials(variables, max_degrees, min_degrees=None):
+                 for variable in item:
+                     if variable != 1:
+                         powers[variable] += 1
+-                if max(powers.values()) >= min_degree:
++                if min_degree <= sum(powers.values()) <= max_degree:
+                     monomials_list_comm.append(Mul(*item))
+             yield from set(monomials_list_comm)
+         else:
+@@ -139,7 +139,7 @@ def itermonomials(variables, max_degrees, min_degrees=None):
+                 for variable in item:
+                     if variable != 1:
+                         powers[variable] += 1
+-                if max(powers.values()) >= min_degree:
++                if min_degree <= sum(powers.values()) <= max_degree:
+                     monomials_list_non_comm.append(Mul(*item))
+             yield from set(monomials_list_non_comm)
+     else:
+diff --git a/sympy/polys/tests/test_monomials.py b/sympy/polys/tests/test_monomials.py
+index 482cbee30d..7547729183 100644
+--- a/sympy/polys/tests/test_monomials.py
++++ b/sympy/polys/tests/test_monomials.py
+@@ -78,6 +78,27 @@ def test_monomials():
+                             x * i * j, x * j * i
+             }
+ 
++    # total_degree tests with an integer min_degree: the filter must use the
++    # TOTAL degree of the monomial, not the largest single-variable exponent.
++    # Commutative, 3 variables, exactly total degree 3 (mirrors the reported bug
++    # where only x**3, y**3, z**3 were returned).
++    assert set(itermonomials([x, y, z], 3, 3)) == \
++            {x**3, y**3, z**3,
++             x**2*y, x**2*z, x*y**2, y**2*z, x*z**2, y*z**2,
++             x*y*z}
++    # Commutative, total degree between 2 and 3 (max_degree > min_degree).
++    assert set(itermonomials([x, y, z], 3, 2)) == \
++            {x**2, y**2, z**2, x*y, x*z, y*z,
++             x**3, y**3, z**3,
++             x**2*y, x**2*z, x*y**2, y**2*z, x*z**2, y*z**2,
++             x*y*z}
++    # Non-commutative: before the fix only i**3 and j**3 survived; every word of
++    # total degree 3 must now be generated.
++    assert set(itermonomials([i, j], 3, 3)) == \
++            {i**3, j**3,
++             i**2*j, i*j*i, j*i**2,
++             i*j**2, j*i*j, j**2*i}
++
+     # degree_list tests
+     assert set(itermonomials([], [])) == {S.One}
+2026-06-23 07:32:49,491 - INFO - Eval script for sympy__sympy-21847 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21847/eval.sh; copying to container...
+2026-06-23 07:32:53,824 - INFO - Test runtime: 4.16 seconds
+2026-06-23 07:32:53,829 - INFO - Test output for sympy__sympy-21847 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21847/test_output.txt
+2026-06-23 07:32:53,911 - INFO - Git diff after:
+diff --git a/sympy/polys/monomials.py b/sympy/polys/monomials.py
+index 0e84403307..2ff762f563 100644
+--- a/sympy/polys/monomials.py
++++ b/sympy/polys/monomials.py
+@@ -127,7 +127,7 @@ def itermonomials(variables, max_degrees, min_degrees=None):
+                 for variable in item:
+                     if variable != 1:
+                         powers[variable] += 1
+-                if max(powers.values()) >= min_degree:
++                if min_degree <= sum(powers.values()) <= max_degree:
+                     monomials_list_comm.append(Mul(*item))
+             yield from set(monomials_list_comm)
+         else:
+@@ -139,7 +139,7 @@ def itermonomials(variables, max_degrees, min_degrees=None):
+                 for variable in item:
+                     if variable != 1:
+                         powers[variable] += 1
+-                if max(powers.values()) >= min_degree:
++                if min_degree <= sum(powers.values()) <= max_degree:
+                     monomials_list_non_comm.append(Mul(*item))
+             yield from set(monomials_list_non_comm)
+     else:
+2026-06-23 07:32:53,911 - INFO - Git diff changed after running eval script
+2026-06-23 07:32:53,912 - INFO - Grading answer for sympy__sympy-21847...
+2026-06-23 07:32:53,917 - INFO - report: {'sympy__sympy-21847': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_monomials'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_monomial_count', 'test_monomial_mul', 'test_monomial_div', 'test_monomial_gcd', 'test_monomial_lcm', 'test_monomial_max', 'test_monomial_pow', 'test_monomial_min', 'test_monomial_divides'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-21847: resolved: True
+2026-06-23 07:32:53,922 - INFO - Attempting to stop container sweb.eval.sympy__sympy-21847.squad_v1...
+2026-06-23 07:33:10,444 - INFO - Attempting to remove container sweb.eval.sympy__sympy-21847.squad_v1...
+2026-06-23 07:33:10,608 - INFO - Container sweb.eval.sympy__sympy-21847.squad_v1 removed.
+2026-06-23 07:33:10,609 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-21847:latest...
+2026-06-23 07:33:10,856 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-21847:latest removed.

@@ -1,0 +1,76 @@
+2026-06-23 07:33:12,455 - INFO - Creating container for sympy__sympy-22005...
+2026-06-23 07:33:13,736 - INFO - Container for sympy__sympy-22005 created: 90bd9a71df7c1b844739d57dc5b4c35aac746ced8a39d60575903817002ae78e
+2026-06-23 07:33:14,268 - INFO - Container for sympy__sympy-22005 started: 90bd9a71df7c1b844739d57dc5b4c35aac746ced8a39d60575903817002ae78e
+2026-06-23 07:33:14,278 - INFO - Intermediate patch for sympy__sympy-22005 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22005/patch.diff, now applying to container...
+2026-06-23 07:33:14,528 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:33:14,621 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:33:14,758 - INFO - >>>>> Applied Patch:
+patching file sympy/solvers/polysys.py
+patching file sympy/solvers/tests/test_polysys.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 49 with fuzz 1.
+
+2026-06-23 07:33:15,538 - INFO - Git diff before:
+diff --git a/sympy/solvers/polysys.py b/sympy/solvers/polysys.py
+index b9809fd4e9..249b43536c 100644
+--- a/sympy/solvers/polysys.py
++++ b/sympy/solvers/polysys.py
+@@ -240,6 +240,12 @@ def _solve_reduced_system(system, gens, entry=False):
+ 
+         univariate = list(filter(_is_univariate, basis))
+ 
++        if len(basis) < len(gens):
++            raise NotImplementedError(filldedent('''
++                only zero-dimensional systems supported
++                (finite number of solutions)
++                '''))
++
+         if len(univariate) == 1:
+             f = univariate.pop()
+         else:
+diff --git a/sympy/solvers/tests/test_polysys.py b/sympy/solvers/tests/test_polysys.py
+index 58419f8762..a45f7a6865 100644
+--- a/sympy/solvers/tests/test_polysys.py
++++ b/sympy/solvers/tests/test_polysys.py
+@@ -49,6 +49,11 @@ def test_solve_poly_system():
+         [z, -2*x*y**2 + x + y**2*z, y**2*(-z - 4) + 2]))
+     raises(PolynomialError, lambda: solve_poly_system([1/x], x))
+ 
++    raises(NotImplementedError, lambda: solve_poly_system(
++          [x-1,], (x, y)))
++    raises(NotImplementedError, lambda: solve_poly_system(
++          [y-1,], (x, y)))
++
+ 
+ def test_solve_biquadratic():
+     x0, y0, x1, y1, r = symbols('x0 y0 x1 y1 r')
+2026-06-23 07:33:15,544 - INFO - Eval script for sympy__sympy-22005 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22005/eval.sh; copying to container...
+2026-06-23 07:33:31,915 - INFO - Test runtime: 16.18 seconds
+2026-06-23 07:33:31,920 - INFO - Test output for sympy__sympy-22005 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-22005/test_output.txt
+2026-06-23 07:33:32,034 - INFO - Git diff after:
+diff --git a/sympy/solvers/polysys.py b/sympy/solvers/polysys.py
+index b9809fd4e9..249b43536c 100644
+--- a/sympy/solvers/polysys.py
++++ b/sympy/solvers/polysys.py
+@@ -240,6 +240,12 @@ def _solve_reduced_system(system, gens, entry=False):
+ 
+         univariate = list(filter(_is_univariate, basis))
+ 
++        if len(basis) < len(gens):
++            raise NotImplementedError(filldedent('''
++                only zero-dimensional systems supported
++                (finite number of solutions)
++                '''))
++
+         if len(univariate) == 1:
+             f = univariate.pop()
+         else:
+2026-06-23 07:33:32,035 - INFO - Git diff changed after running eval script
+2026-06-23 07:33:32,036 - INFO - Grading answer for sympy__sympy-22005...
+2026-06-23 07:33:32,042 - INFO - report: {'sympy__sympy-22005': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_solve_poly_system'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_solve_biquadratic', 'test_solve_triangulated'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-22005: resolved: True
+2026-06-23 07:33:32,048 - INFO - Attempting to stop container sweb.eval.sympy__sympy-22005.squad_v1...
+2026-06-23 07:33:47,713 - INFO - Attempting to remove container sweb.eval.sympy__sympy-22005.squad_v1...
+2026-06-23 07:33:47,866 - INFO - Container sweb.eval.sympy__sympy-22005.squad_v1 removed.
+2026-06-23 07:33:47,867 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-22005:latest...
+2026-06-23 07:33:48,062 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-22005:latest removed.

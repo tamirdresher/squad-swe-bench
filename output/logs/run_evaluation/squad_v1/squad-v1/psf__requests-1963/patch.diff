@@ -1,0 +1,84 @@
+diff --git a/requests/sessions.py b/requests/sessions.py
+index 425db22c..bf1bf37b 100644
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -180,6 +180,10 @@ class SessionRedirectMixin(object):
+ 
+             extract_cookies_to_jar(self.cookies, prepared_request, resp.raw)
+ 
++            # Update the original request after consuming so it can be re-issued
++            # if the chain continues redirecting (preserves method/body changes).
++            req = prepared_request
++
+             i += 1
+             yield resp
+ 
+diff --git a/test_requests.py b/test_requests.py
+index 17de8491..9895c047 100755
+--- a/test_requests.py
++++ b/test_requests.py
+@@ -24,6 +24,11 @@ try:
+ except ImportError:
+     import io as StringIO
+ 
++try:
++    import mock
++except ImportError:
++    from unittest import mock
++
+ HTTPBIN = os.environ.get('HTTPBIN_URL', 'http://httpbin.org/')
+ # Issue #1483: Make sure the URL always has a trailing slash
+ HTTPBIN = HTTPBIN.rstrip('/') + '/'
+@@ -690,6 +695,53 @@ class RequestsTestCase(unittest.TestCase):
+         assert next(iter(r))
+         io.close()
+ 
++    def test_307_after_303_preserves_get(self):
++        # Regression: across a 303 -> 307 redirect chain, the method picked
++        # up by the 303 (GET) must be preserved by the 307 hop, not reset to
++        # the original POST. See SessionRedirectMixin.resolve_redirects.
++        session = requests.Session()
++
++        prep = requests.Request(
++            method='POST', url='http://example.com/do_something').prepare()
++
++        class FakeRaw(object):
++            def release_conn(self):
++                pass
++
++        def make_resp(status_code, location=None):
++            resp = requests.Response()
++            resp.status_code = status_code
++            resp._content = b''
++            resp._content_consumed = True
++            resp.raw = FakeRaw()
++            resp.url = 'http://example.com/do_something'
++            headers = CaseInsensitiveDict()
++            if location is not None:
++                headers['location'] = location
++            resp.headers = headers
++            resp.request = prep
++            return resp
++
++        # The chain of responses returned by each send() call.
++        responses = [
++            make_resp(307, location='http://example.com/new_thing'),
++            make_resp(200),
++        ]
++        seen_methods = []
++
++        def fake_send(request, **kwargs):
++            seen_methods.append(request.method)
++            return responses.pop(0)
++
++        first = make_resp(303, location='http://example.com/new_thing')
++
++        with mock.patch.object(session, 'send', side_effect=fake_send):
++            list(session.resolve_redirects(first, prep))
++
++        # First hop (after 303) must be GET; second hop (after 307) must
++        # remain GET, not revert to the original POST.
++        assert seen_methods == ['GET', 'GET']
++
+     def test_request_and_response_are_pickleable(self):
+         r = requests.get(httpbin('get'))

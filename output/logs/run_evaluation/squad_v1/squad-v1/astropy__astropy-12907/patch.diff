@@ -1,0 +1,54 @@
+diff --git a/astropy/modeling/separable.py b/astropy/modeling/separable.py
+index a308e27297..45bea36085 100644
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -242,7 +242,7 @@ def _cstack(left, right):
+         cright = _coord_matrix(right, 'right', noutp)
+     else:
+         cright = np.zeros((noutp, right.shape[1]))
+-        cright[-right.shape[0]:, -right.shape[1]:] = 1
++        cright[-right.shape[0]:, -right.shape[1]:] = right
+ 
+     return np.hstack([cleft, cright])
+ 
+diff --git a/astropy/modeling/tests/test_separable.py b/astropy/modeling/tests/test_separable.py
+index 8dfe5c8626..970f8c31e5 100644
+--- a/astropy/modeling/tests/test_separable.py
++++ b/astropy/modeling/tests/test_separable.py
+@@ -28,6 +28,8 @@ p22 = models.Polynomial2D(2, name='p22')
+ p1 = models.Polynomial1D(1, name='p1')
+ 
+ 
++cm = models.Linear1D(10) & models.Linear1D(5)
++
+ compound_models = {
+     'cm1': (map3 & sh1 | rot & sh1 | sh1 & sh2 & sh1,
+             (np.array([False, False, True]),
+@@ -52,7 +54,28 @@ compound_models = {
+     'cm7': (map2 | p2 & sh1,
+             (np.array([False, True]),
+              np.array([[True, False], [False, True]]))
+-            )
++            ),
++    'cm8': (rot & cm,
++            (np.array([False, False, True, True]),
++             np.array([[True, True, False, False],
++                       [True, True, False, False],
++                       [False, False, True, False],
++                       [False, False, False, True]]))
++            ),
++    'cm9': (rot & sh1 & sh2,
++            (np.array([False, False, True, True]),
++             np.array([[True, True, False, False],
++                       [True, True, False, False],
++                       [False, False, True, False],
++                       [False, False, False, True]]))
++            ),
++    'cm10': ((rot & sh1) & sh2,
++             (np.array([False, False, True, True]),
++              np.array([[True, True, False, False],
++                        [True, True, False, False],
++                        [False, False, True, False],
++                        [False, False, False, True]]))
++             ),
+ }

@@ -1,0 +1,45 @@
+diff --git a/django/db/models/lookups.py b/django/db/models/lookups.py
+index 105dc93251..2683d8971a 100644
+--- a/django/db/models/lookups.py
++++ b/django/db/models/lookups.py
+@@ -262,9 +262,9 @@ class Exact(FieldGetDbPrepValueMixin, BuiltinLookup):
+         from django.db.models.sql.query import Query
+         if isinstance(self.rhs, Query):
+             if self.rhs.has_limit_one():
+-                # The subquery must select only the pk.
+-                self.rhs.clear_select_clause()
+-                self.rhs.add_fields(['pk'])
++                if not self.rhs.has_select_fields:
++                    self.rhs.clear_select_clause()
++                    self.rhs.add_fields(['pk'])
+             else:
+                 raise ValueError(
+                     'The QuerySet value for an exact lookup must be limited to '
+diff --git a/tests/aggregation/tests.py b/tests/aggregation/tests.py
+index 0f799c4bc3..283fbbb6a1 100644
+--- a/tests/aggregation/tests.py
++++ b/tests/aggregation/tests.py
+@@ -1139,6 +1139,23 @@ class AggregateTestCase(TestCase):
+             list(publisher_qs)
+         self.assertEqual(ctx[0]['sql'].count('SELECT'), 2)
+ 
++    def test_aggregation_exact_lookup_subquery_group_by(self):
++        # Regression test for #31150: an exact lookup whose RHS is a sliced
++        # values().annotate().values() queryset must not override the
++        # subquery's SELECT/GROUP BY clause.
++        inner = Author.objects.values('age').annotate(
++            max_id=Max('id'),
++        ).values('max_id')
++        outer = Author.objects.filter(id=inner[:1])
++        sql = str(outer.query)
++        # The subquery must keep grouping by age only; the pk used by the
++        # exact lookup must not be appended to the GROUP BY clause.
++        group_by = sql[sql.rindex('GROUP BY'):]
++        group_by = group_by[:group_by.index('LIMIT')]
++        self.assertEqual(group_by.count(','), 0)
++        # The query must execute without error.
++        list(outer)
++
+     @skipUnlessDBFeature('supports_subqueries_in_group_by')
+     def test_group_by_subquery_annotation(self):
+         """

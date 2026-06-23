@@ -1,0 +1,67 @@
+diff --git a/django/db/models/sql/query.py b/django/db/models/sql/query.py
+index 781dfd5499..772ba13419 100644
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -779,7 +779,13 @@ class Query(BaseExpression):
+         # Only include fields mentioned in the mask.
+         for field_name, field_mask in mask.items():
+             field = opts.get_field(field_name)
+-            field_select_mask = select_mask.setdefault(field, {})
++            # Retrieve the actual field associated with reverse relationships
++            # as that's what is expected in the select mask.
++            if field in opts.related_objects:
++                field_key = field.field
++            else:
++                field_key = field
++            field_select_mask = select_mask.setdefault(field_key, {})
+             if field_mask:
+                 if not field.is_relation:
+                     raise FieldError(next(iter(field_mask)))
+diff --git a/docs/releases/4.2.2.txt b/docs/releases/4.2.2.txt
+index fef5d8d364..1bada4073b 100644
+--- a/docs/releases/4.2.2.txt
++++ b/docs/releases/4.2.2.txt
+@@ -20,6 +20,9 @@ Bugfixes
+   when passing a ``ManyToManyField`` or ``GenericForeignKey`` reference. While
+   doing so is a no-op, it was allowed in older version (:ticket:`34570`).
+ 
++* Fixed a regression in Django 4.2 that caused a crash of ``QuerySet.only()``
++  when passing a reverse ``OneToOneField`` reference (:ticket:`34612`).
++
+ * Fixed a bug in Django 4.2 where :option:`makemigrations --update` didn't
+   respect the ``--name`` option (:ticket:`34568`).
+ 
+diff --git a/tests/defer_regress/tests.py b/tests/defer_regress/tests.py
+index fc2d87e12b..082869f27f 100644
+--- a/tests/defer_regress/tests.py
++++ b/tests/defer_regress/tests.py
+@@ -178,6 +178,16 @@ class DeferRegressionTest(TestCase):
+             self.assertEqual(i.one_to_one_item.name, "second")
+         with self.assertNumQueries(1):
+             self.assertEqual(i.value, 42)
++        with self.assertNumQueries(1):
++            i = Item.objects.select_related("one_to_one_item").only(
++                "name", "one_to_one_item__item"
++            )[0]
++            self.assertEqual(i.one_to_one_item.pk, o2o.pk)
++            self.assertEqual(i.name, "first")
++        with self.assertNumQueries(1):
++            self.assertEqual(i.one_to_one_item.name, "second")
++        with self.assertNumQueries(1):
++            self.assertEqual(i.value, 42)
+ 
+     def test_defer_with_select_related(self):
+         item1 = Item.objects.create(name="first", value=47)
+diff --git a/tests/select_related_onetoone/tests.py b/tests/select_related_onetoone/tests.py
+index 8bdfb83fe8..83462ed071 100644
+--- a/tests/select_related_onetoone/tests.py
++++ b/tests/select_related_onetoone/tests.py
+@@ -249,6 +249,9 @@ class ReverseSelectRelatedTestCase(TestCase):
+             self.assertEqual(p.child1.name2, "n2")
+         p = qs.get(name2="n2")
+         with self.assertNumQueries(0):
++            self.assertEqual(p.child1.value, 1)
++            self.assertEqual(p.child1.child4.value4, 4)
++        with self.assertNumQueries(2):
+             self.assertEqual(p.child1.name1, "n1")
+             self.assertEqual(p.child1.child4.name1, "n1")

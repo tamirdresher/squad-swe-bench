@@ -1,0 +1,195 @@
+2026-06-23 05:12:28,515 - INFO - Creating container for django__django-15252...
+2026-06-23 05:12:31,275 - INFO - Container for django__django-15252 created: 34b088c3e1f3a17e065b8a048de67cfee01a1b4c66656a15dc4be87d34615831
+2026-06-23 05:12:31,812 - INFO - Container for django__django-15252 started: 34b088c3e1f3a17e065b8a048de67cfee01a1b4c66656a15dc4be87d34615831
+2026-06-23 05:12:31,828 - INFO - Intermediate patch for django__django-15252 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15252/patch.diff, now applying to container...
+2026-06-23 05:12:32,368 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:12:32,679 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:12:32,969 - INFO - >>>>> Applied Patch:
+patching file django/core/management/base.py
+patching file docs/howto/custom-management-commands.txt
+patching file docs/releases/4.1.txt
+patching file tests/user_commands/tests.py
+patch unexpectedly ends in middle of line
+Hunk #3 succeeded at 382 with fuzz 1.
+
+2026-06-23 05:12:34,654 - INFO - Git diff before:
+diff --git a/django/core/management/base.py b/django/core/management/base.py
+index 857a77da5a..86ee8e8cd6 100644
+--- a/django/core/management/base.py
++++ b/django/core/management/base.py
+@@ -269,10 +269,10 @@ class BaseCommand:
+         Create and return the ``ArgumentParser`` which will be used to
+         parse the arguments to this command.
+         """
++        kwargs.setdefault('formatter_class', DjangoHelpFormatter)
+         parser = CommandParser(
+             prog='%s %s' % (os.path.basename(prog_name), subcommand),
+             description=self.help or None,
+-            formatter_class=DjangoHelpFormatter,
+             missing_args_message=getattr(self, 'missing_args_message', None),
+             called_from_command_line=getattr(self, '_called_from_command_line', None),
+             **kwargs
+diff --git a/docs/howto/custom-management-commands.txt b/docs/howto/custom-management-commands.txt
+index 68b4a049e0..e6e6f9a168 100644
+--- a/docs/howto/custom-management-commands.txt
++++ b/docs/howto/custom-management-commands.txt
+@@ -270,6 +270,13 @@ the :meth:`~BaseCommand.handle` method must be implemented.
+     You can customize the instance by overriding this method and calling
+     ``super()`` with ``kwargs`` of :class:`~argparse.ArgumentParser` parameters.
+ 
++    .. versionchanged:: 4.1
++
++        ``create_parser()`` now accepts any
++        :class:`~argparse.ArgumentParser` constructor parameters via
++        ``**kwargs``, including the ability to override ``formatter_class``,
++        which defaults to ``DjangoHelpFormatter``.
++
+ .. method:: BaseCommand.add_arguments(parser)
+ 
+     Entry point to add parser arguments to handle command line arguments passed
+diff --git a/docs/releases/4.1.txt b/docs/releases/4.1.txt
+index 11d2c5ca04..1d852f782b 100644
+--- a/docs/releases/4.1.txt
++++ b/docs/releases/4.1.txt
+@@ -210,6 +210,10 @@ Management Commands
+ * :option:`makemigrations --no-input` now logs default answers and reasons why
+   migrations cannot be created.
+ 
++* The output of management command formatters can now be customized by
++  overriding ``BaseCommand.create_parser()`` and passing a different
++  ``formatter_class``.
++
+ Migrations
+ ~~~~~~~~~~
+ 
+diff --git a/tests/user_commands/tests.py b/tests/user_commands/tests.py
+index 8da4e887d3..e567abfe88 100644
+--- a/tests/user_commands/tests.py
++++ b/tests/user_commands/tests.py
+@@ -1,4 +1,5 @@
+ import os
++from argparse import RawTextHelpFormatter
+ from io import StringIO
+ from unittest import mock
+ 
+@@ -8,6 +9,7 @@ from django.apps import apps
+ from django.core import management
+ from django.core.checks import Tags
+ from django.core.management import BaseCommand, CommandError, find_commands
++from django.core.management.base import DjangoHelpFormatter
+ from django.core.management.utils import (
+     find_command, get_random_secret_key, is_ignored_path,
+     normalize_path_patterns, popen_wrapper,
+@@ -380,6 +382,16 @@ class CommandTests(SimpleTestCase):
+         parser = BaseCommand().create_parser('prog_name', 'subcommand', epilog=epilog)
+         self.assertEqual(parser.epilog, epilog)
+ 
++    def test_create_parser_formatter_class(self):
++        """BaseCommand.create_parser() formatter_class is customizable and
++        defaults to DjangoHelpFormatter."""
++        parser = BaseCommand().create_parser('prog_name', 'subcommand')
++        self.assertEqual(parser.formatter_class, DjangoHelpFormatter)
++        parser = BaseCommand().create_parser(
++            'prog_name', 'subcommand', formatter_class=RawTextHelpFormatter,
++        )
++        self.assertEqual(parser.formatter_class, RawTextHelpFormatter)
++
+     def test_outputwrapper_flush(self):
+         out = StringIO()
+         with mock.patch.object(out, 'flush') as mocked_flush:
+2026-06-23 05:12:34,660 - INFO - Eval script for django__django-15252 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15252/eval.sh; copying to container...
+2026-06-23 05:12:53,316 - INFO - Test runtime: 18.30 seconds
+2026-06-23 05:12:53,324 - INFO - Test output for django__django-15252 written to logs/run_evaluation/squad_v1/squad-v1/django__django-15252/test_output.txt
+2026-06-23 05:12:53,471 - INFO - Git diff after:
+diff --git a/django/core/management/base.py b/django/core/management/base.py
+index 857a77da5a..86ee8e8cd6 100644
+--- a/django/core/management/base.py
++++ b/django/core/management/base.py
+@@ -269,10 +269,10 @@ class BaseCommand:
+         Create and return the ``ArgumentParser`` which will be used to
+         parse the arguments to this command.
+         """
++        kwargs.setdefault('formatter_class', DjangoHelpFormatter)
+         parser = CommandParser(
+             prog='%s %s' % (os.path.basename(prog_name), subcommand),
+             description=self.help or None,
+-            formatter_class=DjangoHelpFormatter,
+             missing_args_message=getattr(self, 'missing_args_message', None),
+             called_from_command_line=getattr(self, '_called_from_command_line', None),
+             **kwargs
+diff --git a/docs/howto/custom-management-commands.txt b/docs/howto/custom-management-commands.txt
+index 68b4a049e0..e6e6f9a168 100644
+--- a/docs/howto/custom-management-commands.txt
++++ b/docs/howto/custom-management-commands.txt
+@@ -270,6 +270,13 @@ the :meth:`~BaseCommand.handle` method must be implemented.
+     You can customize the instance by overriding this method and calling
+     ``super()`` with ``kwargs`` of :class:`~argparse.ArgumentParser` parameters.
+ 
++    .. versionchanged:: 4.1
++
++        ``create_parser()`` now accepts any
++        :class:`~argparse.ArgumentParser` constructor parameters via
++        ``**kwargs``, including the ability to override ``formatter_class``,
++        which defaults to ``DjangoHelpFormatter``.
++
+ .. method:: BaseCommand.add_arguments(parser)
+ 
+     Entry point to add parser arguments to handle command line arguments passed
+diff --git a/docs/releases/4.1.txt b/docs/releases/4.1.txt
+index 11d2c5ca04..1d852f782b 100644
+--- a/docs/releases/4.1.txt
++++ b/docs/releases/4.1.txt
+@@ -210,6 +210,10 @@ Management Commands
+ * :option:`makemigrations --no-input` now logs default answers and reasons why
+   migrations cannot be created.
+ 
++* The output of management command formatters can now be customized by
++  overriding ``BaseCommand.create_parser()`` and passing a different
++  ``formatter_class``.
++
+ Migrations
+ ~~~~~~~~~~
+ 
+diff --git a/tests/user_commands/tests.py b/tests/user_commands/tests.py
+index 8da4e887d3..e567abfe88 100644
+--- a/tests/user_commands/tests.py
++++ b/tests/user_commands/tests.py
+@@ -1,4 +1,5 @@
+ import os
++from argparse import RawTextHelpFormatter
+ from io import StringIO
+ from unittest import mock
+ 
+@@ -8,6 +9,7 @@ from django.apps import apps
+ from django.core import management
+ from django.core.checks import Tags
+ from django.core.management import BaseCommand, CommandError, find_commands
++from django.core.management.base import DjangoHelpFormatter
+ from django.core.management.utils import (
+     find_command, get_random_secret_key, is_ignored_path,
+     normalize_path_patterns, popen_wrapper,
+@@ -380,6 +382,16 @@ class CommandTests(SimpleTestCase):
+         parser = BaseCommand().create_parser('prog_name', 'subcommand', epilog=epilog)
+         self.assertEqual(parser.epilog, epilog)
+ 
++    def test_create_parser_formatter_class(self):
++        """BaseCommand.create_parser() formatter_class is customizable and
++        defaults to DjangoHelpFormatter."""
++        parser = BaseCommand().create_parser('prog_name', 'subcommand')
++        self.assertEqual(parser.formatter_class, DjangoHelpFormatter)
++        parser = BaseCommand().create_parser(
++            'prog_name', 'subcommand', formatter_class=RawTextHelpFormatter,
++        )
++        self.assertEqual(parser.formatter_class, RawTextHelpFormatter)
++
+     def test_outputwrapper_flush(self):
+         out = StringIO()
+         with mock.patch.object(out, 'flush') as mocked_flush:
+2026-06-23 05:12:53,472 - INFO - Grading answer for django__django-15252...
+2026-06-23 05:12:53,480 - INFO - report: {'django__django-15252': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_migrate_test_setting_false_ensure_schema (backends.base.test_creation.TestDbCreationTests)', 'The django_migrations table is not created if there are no migrations']}, 'PASS_TO_PASS': {'success': ['test_mark_expected_failures_and_skips (backends.base.test_creation.TestMarkTests)', 'test_custom_test_name (backends.base.test_creation.TestDbSignatureTests)', 'test_custom_test_name_with_test_prefix (backends.base.test_creation.TestDbSignatureTests)', 'test_default_name (backends.base.test_creation.TestDbSignatureTests)', 'If the current state satisfies the given target, do nothing.', 'Minimize unnecessary rollbacks in connected apps.', 'Minimize rollbacks when target has multiple in-app children.', "mark_expected_failures_and_skips() isn't called unless", 'test_migrate_test_setting_false (backends.base.test_creation.TestDbCreationTests)', 'test_migrate_test_setting_true (backends.base.test_creation.TestDbCreationTests)', 'test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString)', 'test_circular_reference_with_natural_key (backends.base.test_creation.TestDeserializeDbFromString)', 'test_self_reference (backends.base.test_creation.TestDeserializeDbFromString)', 'test_serialize_db_to_string_base_manager (backends.base.test_creation.TestDeserializeDbFromString)', 'test_alter_id_type_with_fk (migrations.test_executor.ExecutorTests)', 'Applying all replaced migrations marks replacement as applied (#24628).', 'An atomic operation is properly rolled back inside a non-atomic', 'Regression test for #22325 - references to a custom user model defined in the', 'executor.detect_soft_applied() detects ManyToManyField tables from an', "Re-planning a full migration of a fully-migrated set doesn't", 'test_migrate_backward_to_squashed_migration (migrations.test_executor.ExecutorTests)', 'A new squash migration will be marked as applied even if all its', 'test_migrate_marks_replacement_unapplied (migrations.test_executor.ExecutorTests)', 'Migrations are applied and recorded atomically.', 'Migrations are not recorded if deferred SQL application fails.', 'Although the MigrationExecutor interfaces allows for mixed migration', 'Applying a non-atomic migration works as expected.', '#24129 - Tests callback process', 'Tests running a simple set of migrations.', 'Tests running a squashed migration from zero (should ignore what it replaces)', 'Tests detection of initial migrations already having been applied.', '#26647 - Unrelated applied migrations should be part of the final', '#24123 - All models of apps being unapplied which are', '#24123 - All models of apps already applied which are'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-15252: resolved: False
+2026-06-23 05:12:53,487 - INFO - Attempting to stop container sweb.eval.django__django-15252.squad_v1...
+2026-06-23 05:13:29,434 - INFO - Attempting to remove container sweb.eval.django__django-15252.squad_v1...
+2026-06-23 05:13:32,062 - INFO - Container sweb.eval.django__django-15252.squad_v1 removed.
+2026-06-23 05:13:32,065 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-15252:latest...
+2026-06-23 05:13:38,612 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-15252:latest removed.

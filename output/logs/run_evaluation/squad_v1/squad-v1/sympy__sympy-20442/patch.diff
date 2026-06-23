@@ -1,0 +1,42 @@
+diff --git a/sympy/physics/units/tests/test_util.py b/sympy/physics/units/tests/test_util.py
+index ed2f7df27e..89c8e52698 100644
+--- a/sympy/physics/units/tests/test_util.py
++++ b/sympy/physics/units/tests/test_util.py
+@@ -58,6 +58,16 @@ def test_convert_to_quantities():
+     assert convert_to(2*kilometer/hour + 3*mile/hour, centimeter/second) == 213376*centimeter/(1125*second)
+     assert convert_to(kilometer * (mile + kilometer), meter) == 2609344 * meter ** 2
+ 
++    # ``joule*second`` has dimensions mass*length**2*time**-1 which cannot be
++    # represented as a power of ``joule`` (mass*length**2*time**-2) alone, so
++    # the expression must be returned unchanged instead of a nonsensical
++    # least-squares best fit such as 10**(2/3)*joule**(7/9).
++    assert convert_to(joule*second, joule) == joule*second
++    assert convert_to(joule*second, joule*second) == joule*second
++    assert convert_to(joule*second, kilogram*meter**2/second) == \
++        kilogram*meter**2/second
++    assert convert_to(joule*second, minute) == joule*minute/60
++
+     assert convert_to(steradian, coulomb) == steradian
+     assert convert_to(radians, degree) == 180*degree/pi
+     assert convert_to(radians, [meter, degree]) == 180*degree/pi
+diff --git a/sympy/physics/units/util.py b/sympy/physics/units/util.py
+index b03ed4cd88..379294fa8c 100644
+--- a/sympy/physics/units/util.py
++++ b/sympy/physics/units/util.py
+@@ -31,6 +31,18 @@ def _get_conversion_matrix_for_expr(expr, target_units, unit_system):
+     exprmat = Matrix([dim_dependencies.get(k, 0) for k in canon_dim_units])
+ 
+     res_exponents = camat.solve_least_squares(exprmat, method=None)
++
++    # ``solve_least_squares`` returns a best-fit approximation even when the
++    # linear system has no exact solution, i.e. when ``target_units`` cannot
++    # exactly represent the dimensions of ``expr`` (for example converting
++    # ``joule*second`` to ``joule`` alone).  Such an approximation is
++    # meaningless for unit conversion, so verify the solution is exact and bail
++    # out otherwise.  All matrix entries are integers/Rationals, so this is an
++    # exact symbolic comparison (no floating point tolerance).  Returning
++    # ``None`` makes ``convert_to`` return the original expression unchanged.
++    if camat * res_exponents != exprmat:
++        return None
++
+     return res_exponents

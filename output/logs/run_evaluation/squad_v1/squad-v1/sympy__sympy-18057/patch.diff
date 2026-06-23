@@ -1,0 +1,48 @@
+diff --git a/sympy/core/basic.py b/sympy/core/basic.py
+index 6866648d4e..009cb6ef01 100644
+--- a/sympy/core/basic.py
++++ b/sympy/core/basic.py
+@@ -503,12 +503,10 @@ def atoms(self, *types):
+         if types:
+             types = tuple(
+                 [t if isinstance(t, type) else type(t) for t in types])
++            nodes = preorder_traversal(self)
++            result = {node for node in nodes if isinstance(node, types)}
+         else:
+-            types = (Atom,)
+-        result = set()
+-        for expr in preorder_traversal(self):
+-            if isinstance(expr, types):
+-                result.add(expr)
++            result = {node for node in preorder_traversal(self) if not node.args}
+         return result
+ 
+     @property
+diff --git a/sympy/core/tests/test_basic.py b/sympy/core/tests/test_basic.py
+index 50f8f9ee7b..6cf9d3a5ea 100644
+--- a/sympy/core/tests/test_basic.py
++++ b/sympy/core/tests/test_basic.py
+@@ -137,7 +137,9 @@ def test_subs_with_unicode_symbols():
+ 
+ 
+ def test_atoms():
+-    assert b21.atoms() == set()
++    # b1 = Basic() has no .args, so it is a leaf node and is returned by atoms()
++    # b21 = Basic(b2, b1) contains b1 as a leaf
++    assert b21.atoms() == {b1}
+ 
+ 
+ def test_free_symbols_empty():
+diff --git a/sympy/matrices/common.py b/sympy/matrices/common.py
+index 5b3c244b1c..ab2e32edca 100644
+--- a/sympy/matrices/common.py
++++ b/sympy/matrices/common.py
+@@ -1174,7 +1174,7 @@ def atoms(self, *types):
+ 
+         types = tuple(t if isinstance(t, type) else type(t) for t in types)
+         if not types:
+-            types = (Atom,)
++            return self._eval_atoms()
+         return self._eval_atoms(*types)
+ 
+     @property

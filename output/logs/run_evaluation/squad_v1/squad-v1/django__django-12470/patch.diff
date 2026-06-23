@@ -1,0 +1,80 @@
+diff --git a/django/db/models/sql/compiler.py b/django/db/models/sql/compiler.py
+index 92213a4e67..09869cb65d 100644
+--- a/django/db/models/sql/compiler.py
++++ b/django/db/models/sql/compiler.py
+@@ -709,9 +709,14 @@ class SQLCompiler:
+         field, targets, alias, joins, path, opts, transform_function = self._setup_joins(pieces, opts, alias)
+ 
+         # If we get to this point and the field is a relation to another model,
+-        # append the default ordering for that model unless the attribute name
+-        # of the field is specified.
+-        if field.is_relation and opts.ordering and getattr(field, 'attname', None) != name:
++        # append the default ordering for that model unless it is the pk
++        # shortcut or the attribute name of the field that is specified.
++        if (
++            field.is_relation and
++            opts.ordering and
++            getattr(field, 'attname', None) != name and
++            name != 'pk'
++        ):
+             # Firstly, avoid infinite loops.
+             already_seen = already_seen or set()
+             join_tuple = tuple(getattr(self.query.alias_map[j], 'join_cols', None) for j in joins)
+diff --git a/tests/model_inheritance/models.py b/tests/model_inheritance/models.py
+index a4f9cfe696..cf6dbf5a04 100644
+--- a/tests/model_inheritance/models.py
++++ b/tests/model_inheritance/models.py
+@@ -194,3 +194,14 @@ class Child(Parent):
+ 
+ class GrandChild(Child):
+     pass
++
++
++class CommonAncestor(models.Model):
++    name = models.CharField(max_length=10)
++
++    class Meta:
++        ordering = ['-pk']
++
++
++class CommonChild(CommonAncestor):
++    pass
+diff --git a/tests/model_inheritance/tests.py b/tests/model_inheritance/tests.py
+index 4252f3a301..c35037417b 100644
+--- a/tests/model_inheritance/tests.py
++++ b/tests/model_inheritance/tests.py
+@@ -6,9 +6,9 @@ from django.test import SimpleTestCase, TestCase
+ from django.test.utils import CaptureQueriesContext, isolate_apps
+ 
+ from .models import (
+-    Base, Chef, CommonInfo, GrandChild, GrandParent, ItalianRestaurant,
+-    MixinModel, ParkingLot, Place, Post, Restaurant, Student, SubBase,
+-    Supplier, Title, Worker,
++    Base, Chef, CommonChild, CommonInfo, GrandChild, GrandParent,
++    ItalianRestaurant, MixinModel, ParkingLot, Place, Post, Restaurant,
++    Student, SubBase, Supplier, Title, Worker,
+ )
+ 
+ 
+@@ -98,6 +98,21 @@ class ModelInheritanceTests(TestCase):
+         )
+         self.assertEqual(Restaurant._meta.ordering, ["-rating"])
+ 
++    def test_inherited_ordering_pk_desc(self):
++        # Ordering by '-pk' in a parent model's Meta.ordering must be honored
++        # (descending) by inherited models. Regression test for the bug where
++        # the '-pk' shortcut followed the related model's Meta.ordering and the
++        # double negation flipped the direction back to ascending.
++        p1 = CommonChild.objects.create(name='a')
++        p2 = CommonChild.objects.create(name='b')
++        qs = CommonChild.objects.all()
++        sql = str(qs.query)
++        self.assertIn('ORDER BY', sql)
++        self.assertRegex(sql, r'ORDER BY .*\bDESC\b')
++        self.assertNotIn('ASC', sql)
++        # p2 has the larger pk, so descending ordering returns it first.
++        self.assertSequenceEqual(qs, [p2, p1])
++
+     def test_custompk_m2m(self):
+         b = Base.objects.create()
+         b.titles.add(Title.objects.create(title="foof"))

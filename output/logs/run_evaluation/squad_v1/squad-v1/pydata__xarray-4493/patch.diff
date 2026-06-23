@@ -1,0 +1,114 @@
+diff --git a/doc/whats-new.rst b/doc/whats-new.rst
+index 471e91a8..31009769 100644
+--- a/doc/whats-new.rst
++++ b/doc/whats-new.rst
+@@ -96,6 +96,10 @@ Bug fixes
+   :py:meth:`Dataset.to_zarr` (:issue:`4783`, :pull:`4795`).
+   By `Julien Seguinot <https://github.com/juseg>`_.
+ - Add :py:meth:`Dataset.drop_isel` and :py:meth:`DataArray.drop_isel` (:issue:`4658`, :pull:`4819`). By `Daniel Mesejo <https://github.com/mesejo>`_.
++- :py:meth:`Dataset.update` and the :py:class:`Dataset` constructor no longer
++  eagerly evaluate (compute) dask or other lazy arrays passed in the
++  ``(dims, DataArray)`` tuple form; the underlying array now stays lazy
++  (:issue:`4541`, :issue:`2389`). By `Data <https://github.com/pydata/xarray>`_.
+ 
+ Documentation
+ ~~~~~~~~~~~~~
+diff --git a/xarray/core/variable.py b/xarray/core/variable.py
+index 64c1895d..e289a08c 100644
+--- a/xarray/core/variable.py
++++ b/xarray/core/variable.py
+@@ -197,11 +197,15 @@ def as_compatible_data(data, fastpath=False):
+ 
+     Finally, wrap it up with an adapter if necessary.
+     """
++    from .dataarray import DataArray
++
+     if fastpath and getattr(data, "ndim", 0) > 0:
+         # can't use fastpath (yet) for scalars
+         return _maybe_wrap_data(data)
+ 
+-    if isinstance(data, Variable):
++    if isinstance(data, (Variable, DataArray)):
++        # unwrap to extract the underlying (possibly lazy) array, instead of
++        # falling through to np.asarray / .values which would force computation
+         return data.data
+ 
+     if isinstance(data, NON_NUMPY_SUPPORTED_ARRAY_TYPES):
+diff --git a/xarray/tests/test_dataset.py b/xarray/tests/test_dataset.py
+index db47faa8..8939005f 100644
+--- a/xarray/tests/test_dataset.py
++++ b/xarray/tests/test_dataset.py
+@@ -39,6 +39,7 @@ from . import (
+     assert_identical,
+     has_cftime,
+     has_dask,
++    raise_if_dask_computes,
+     raises_regex,
+     requires_bottleneck,
+     requires_cftime,
+@@ -3194,6 +3195,30 @@ class TestDataset:
+         actual.update(other)
+         assert_identical(expected, actual)
+ 
++    @requires_dask
++    def test_update_does_not_compute(self):
++        # GH: Dataset.update with the (dims, DataArray) tuple form must not
++        # eagerly compute chunked dask arrays
++        foo = DataArray(np.random.randn(3, 3), dims=("x", "y")).chunk()
++        ds = Dataset({"foo": foo, "bar": ("x", [1, 2, 3])})
++
++        update_dict = {"foo": (("x", "y"), ds.foo[1:, :]), "bar": ("x", ds.bar[1:])}
++        with raise_if_dask_computes():
++            ds.update(update_dict)
++        assert isinstance(ds.foo.data, da.Array)
++        assert ds.foo.chunks is not None
++
++    @requires_dask
++    def test_constructor_dataarray_does_not_compute(self):
++        # GH: constructing a Dataset from a (dims, DataArray) tuple where the
++        # DataArray wraps a chunked dask array must not trigger computation
++        x = da.random.random((10, 5), chunks=(5, 5))
++        ds = Dataset(dict(a=DataArray(x, dims=("x", "y"))))
++        assert isinstance(ds.a.data, da.Array)
++        with raise_if_dask_computes():
++            ds2 = Dataset(dict(a=(("x", "y"), ds.a)))
++        assert isinstance(ds2.a.data, da.Array)
++
+     def test_update_overwrite_coords(self):
+         data = Dataset({"a": ("x", [1, 2])}, {"b": 3})
+         data.update(Dataset(coords={"b": 4}))
+diff --git a/xarray/tests/test_variable.py b/xarray/tests/test_variable.py
+index e1ae3e1f..0dabe788 100644
+--- a/xarray/tests/test_variable.py
++++ b/xarray/tests/test_variable.py
+@@ -32,6 +32,7 @@ from . import (
+     assert_array_equal,
+     assert_equal,
+     assert_identical,
++    raise_if_dask_computes,
+     raises_regex,
+     requires_dask,
+     requires_sparse,
+@@ -2226,6 +2227,22 @@ class TestAsCompatibleData:
+         assert np.ndarray == type(actual)
+         assert np.dtype("datetime64[ns]") == actual.dtype
+ 
++    @requires_dask
++    def test_unwrap_does_not_compute(self):
++        # GH: passing a chunked Variable or DataArray to as_compatible_data
++        # (e.g. via the (dims, data) tuple form) must not trigger computation
++        import dask.array as da
++
++        from xarray import DataArray
++
++        for orig in [
++            Variable(("x", "y"), da.zeros((3, 3), chunks=(2, 2))),
++            DataArray(da.zeros((3, 3), chunks=(2, 2)), dims=("x", "y")),
++        ]:
++            with raise_if_dask_computes():
++                actual = as_compatible_data(orig)
++            assert isinstance(actual, da.Array)
++
+     def test_full_like(self):
+         # For more thorough tests, see test_variable.py
+         orig = Variable(

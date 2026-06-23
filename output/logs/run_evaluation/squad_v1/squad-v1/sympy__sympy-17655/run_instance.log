@@ -1,0 +1,222 @@
+2026-06-23 07:22:21,814 - INFO - Creating container for sympy__sympy-17655...
+2026-06-23 07:22:33,418 - INFO - Container for sympy__sympy-17655 created: 02aa111c0ca63ef66c6c09a18ca29caacc31b74ed488d68635928cc79fd34026
+2026-06-23 07:22:34,063 - INFO - Container for sympy__sympy-17655 started: 02aa111c0ca63ef66c6c09a18ca29caacc31b74ed488d68635928cc79fd34026
+2026-06-23 07:22:34,071 - INFO - Intermediate patch for sympy__sympy-17655 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17655/patch.diff, now applying to container...
+2026-06-23 07:22:34,339 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:22:34,425 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:22:34,545 - INFO - >>>>> Applied Patch:
+patching file sympy/geometry/point.py
+Hunk #1 succeeded at 32 with fuzz 2.
+Hunk #3 succeeded at 298 (offset -4 lines).
+patching file sympy/geometry/tests/test_point.py
+Hunk #1 succeeded at 250 (offset -10 lines).
+patching file sympy/ntheory/residue_ntheory.py
+Hunk #1 succeeded at 776 with fuzz 2.
+patching file sympy/ntheory/tests/test_residue.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 175 with fuzz 1 (offset 3 lines).
+
+2026-06-23 07:22:35,128 - INFO - Git diff before:
+diff --git a/sympy/geometry/point.py b/sympy/geometry/point.py
+index 7c978c47be..61da244e4f 100644
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -32,6 +32,7 @@
+ from sympy.core.numbers import Float
+ from sympy.core.evaluate import global_evaluate
+ from sympy.core.add import Add
++from sympy.core.mul import Mul
+ from sympy.utilities.iterables import uniq
+ from sympy.utilities.misc import filldedent, func_name, Undecidable
+ 
+@@ -121,9 +122,20 @@ def __new__(cls, *args, **kwargs):
+                 return coords
+ 
+         if not is_sequence(coords):
+-            raise TypeError(filldedent('''
+-                Expecting sequence of coordinates, not `{}`'''
+-                                       .format(func_name(coords))))
++            # Handle a scalar * Point expression, e.g. sympify(2.0)*Point(1, 1).
++            # SymPy's core may build this as an unevaluated Mul instead of
++            # dispatching through Point.__rmul__, leaving a non-sequence Mul
++            # object here. Treat it as the point scaled by the other factors.
++            point_factors = ([a for a in coords.args if isinstance(a, Point)]
++                             if isinstance(coords, Mul) else [])
++            if len(point_factors) == 1:
++                pt = point_factors[0]
++                scalar = Mul(*[a for a in coords.args if not isinstance(a, Point)])
++                coords = [scalar*c for c in pt.args]
++            else:
++                raise TypeError(filldedent('''
++                    Expecting sequence of coordinates, not `{}`'''
++                                           .format(func_name(coords))))
+         # A point where only `dim` is specified is initialized
+         # to zeros.
+         if len(coords) == 0 and kwargs.get('dim', None):
+@@ -286,7 +298,10 @@ def __neg__(self):
+     def __sub__(self, other):
+         """Subtract two points, or subtract a factor from this point's
+         coordinates."""
+-        return self + [-x for x in other]
++        try:
++            return self + [-x for x in other]
++        except TypeError:
++            return self + (-sympify(other))
+ 
+     @classmethod
+     def _normalize_dimension(cls, *points, **kwargs):
+diff --git a/sympy/geometry/tests/test_point.py b/sympy/geometry/tests/test_point.py
+index 475d1d403f..59e70e0ab5 100644
+--- a/sympy/geometry/tests/test_point.py
++++ b/sympy/geometry/tests/test_point.py
+@@ -250,6 +250,27 @@ def test_point3D():
+         assert p - p_4d3d == Point(1, 1, 0, 0)
+ 
+ 
++def test_point_add_scalar_multiple():
++    # Regression test for issue: point + scalar*point should work regardless
++    # of multiplication order. `sympify(2.0)*point` builds an unevaluated Mul
++    # (Float.__mul__ wins over Point.__rmul__) while `point*sympify(2.0)` goes
++    # through Point.__mul__; both must give the same result.
++    from sympy import sympify
++    p_zero = Point(0, 0)
++    p_orig = Point(1, 1)
++    assert p_zero + p_orig*sympify(2.0) == p_zero + sympify(2.0)*p_orig
++    assert p_zero + sympify(2.0)*p_orig == Point(2, 2)
++    # subtraction with a scalar multiple of a Point
++    assert p_zero - sympify(2.0)*p_orig == Point(-2, -2)
++    # symbolic scalar
++    t = Symbol('t')
++    assert p_zero + t*p_orig == Point(t, t)
++    # 3D
++    p3d_zero = Point3D(0, 0, 0)
++    p3d_one = Point3D(1, 1, 1)
++    assert p3d_zero + sympify(2.0)*p3d_one == Point3D(2, 2, 2)
++
++
+ def test_Point2D():
+ 
+     # Test Distance
+diff --git a/sympy/ntheory/residue_ntheory.py b/sympy/ntheory/residue_ntheory.py
+index a107fda691..62baecf201 100644
+--- a/sympy/ntheory/residue_ntheory.py
++++ b/sympy/ntheory/residue_ntheory.py
+@@ -776,6 +776,10 @@ def nthroot_mod(a, n, p, all_roots=False):
+     if primitive_root(p) is None:
+         raise NotImplementedError("Not Implemented for m without primitive root")
+ 
++    if a % p == 0:
++        # x**n = 0 mod p has the single root x = 0 (p is prime)
++        return [0] if all_roots else 0
++
+     if (p - 1) % n == 0:
+         return _nthroot_mod1(a, n, p, all_roots)
+     # The roots of ``x**n - a = 0 (mod p)`` are roots of
+diff --git a/sympy/ntheory/tests/test_residue.py b/sympy/ntheory/tests/test_residue.py
+index 97ec8f2c41..63f2f02f35 100644
+--- a/sympy/ntheory/tests/test_residue.py
++++ b/sympy/ntheory/tests/test_residue.py
+@@ -175,6 +175,11 @@ def test_residue():
+     assert nthroot_mod(11, 3, 109) is None
+     raises(NotImplementedError, lambda: nthroot_mod(16, 5, 36))
+     raises(NotImplementedError, lambda: nthroot_mod(9, 16, 36))
++    # issue 18874: x = 0 mod p is a root when a % p == 0
++    assert nthroot_mod(17*17, 5, 17) == 0
++    assert nthroot_mod(17*17, 5, 17, True) == [0]
++    assert nthroot_mod(0, 5, 17) == 0
++    assert nthroot_mod(0, 5, 17, True) == [0]
+ 
+     for p in primerange(5, 100):
+         qv = range(3, p, 4)
+2026-06-23 07:22:35,135 - INFO - Eval script for sympy__sympy-17655 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17655/eval.sh; copying to container...
+2026-06-23 07:22:53,318 - INFO - Test runtime: 18.06 seconds
+2026-06-23 07:22:53,323 - INFO - Test output for sympy__sympy-17655 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-17655/test_output.txt
+2026-06-23 07:22:53,423 - INFO - Git diff after:
+diff --git a/sympy/geometry/point.py b/sympy/geometry/point.py
+index 7c978c47be..61da244e4f 100644
+--- a/sympy/geometry/point.py
++++ b/sympy/geometry/point.py
+@@ -32,6 +32,7 @@
+ from sympy.core.numbers import Float
+ from sympy.core.evaluate import global_evaluate
+ from sympy.core.add import Add
++from sympy.core.mul import Mul
+ from sympy.utilities.iterables import uniq
+ from sympy.utilities.misc import filldedent, func_name, Undecidable
+ 
+@@ -121,9 +122,20 @@ def __new__(cls, *args, **kwargs):
+                 return coords
+ 
+         if not is_sequence(coords):
+-            raise TypeError(filldedent('''
+-                Expecting sequence of coordinates, not `{}`'''
+-                                       .format(func_name(coords))))
++            # Handle a scalar * Point expression, e.g. sympify(2.0)*Point(1, 1).
++            # SymPy's core may build this as an unevaluated Mul instead of
++            # dispatching through Point.__rmul__, leaving a non-sequence Mul
++            # object here. Treat it as the point scaled by the other factors.
++            point_factors = ([a for a in coords.args if isinstance(a, Point)]
++                             if isinstance(coords, Mul) else [])
++            if len(point_factors) == 1:
++                pt = point_factors[0]
++                scalar = Mul(*[a for a in coords.args if not isinstance(a, Point)])
++                coords = [scalar*c for c in pt.args]
++            else:
++                raise TypeError(filldedent('''
++                    Expecting sequence of coordinates, not `{}`'''
++                                           .format(func_name(coords))))
+         # A point where only `dim` is specified is initialized
+         # to zeros.
+         if len(coords) == 0 and kwargs.get('dim', None):
+@@ -286,7 +298,10 @@ def __neg__(self):
+     def __sub__(self, other):
+         """Subtract two points, or subtract a factor from this point's
+         coordinates."""
+-        return self + [-x for x in other]
++        try:
++            return self + [-x for x in other]
++        except TypeError:
++            return self + (-sympify(other))
+ 
+     @classmethod
+     def _normalize_dimension(cls, *points, **kwargs):
+diff --git a/sympy/ntheory/residue_ntheory.py b/sympy/ntheory/residue_ntheory.py
+index a107fda691..62baecf201 100644
+--- a/sympy/ntheory/residue_ntheory.py
++++ b/sympy/ntheory/residue_ntheory.py
+@@ -776,6 +776,10 @@ def nthroot_mod(a, n, p, all_roots=False):
+     if primitive_root(p) is None:
+         raise NotImplementedError("Not Implemented for m without primitive root")
+ 
++    if a % p == 0:
++        # x**n = 0 mod p has the single root x = 0 (p is prime)
++        return [0] if all_roots else 0
++
+     if (p - 1) % n == 0:
+         return _nthroot_mod1(a, n, p, all_roots)
+     # The roots of ``x**n - a = 0 (mod p)`` are roots of
+diff --git a/sympy/ntheory/tests/test_residue.py b/sympy/ntheory/tests/test_residue.py
+index 97ec8f2c41..63f2f02f35 100644
+--- a/sympy/ntheory/tests/test_residue.py
++++ b/sympy/ntheory/tests/test_residue.py
+@@ -175,6 +175,11 @@ def test_residue():
+     assert nthroot_mod(11, 3, 109) is None
+     raises(NotImplementedError, lambda: nthroot_mod(16, 5, 36))
+     raises(NotImplementedError, lambda: nthroot_mod(9, 16, 36))
++    # issue 18874: x = 0 mod p is a root when a % p == 0
++    assert nthroot_mod(17*17, 5, 17) == 0
++    assert nthroot_mod(17*17, 5, 17, True) == [0]
++    assert nthroot_mod(0, 5, 17) == 0
++    assert nthroot_mod(0, 5, 17, True) == [0]
+ 
+     for p in primerange(5, 100):
+         qv = range(3, p, 4)
+2026-06-23 07:22:53,423 - INFO - Git diff changed after running eval script
+2026-06-23 07:22:53,424 - INFO - Grading answer for sympy__sympy-17655...
+2026-06-23 07:22:53,429 - INFO - report: {'sympy__sympy-17655': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': False, 'tests_status': {'FAIL_TO_PASS': {'success': [], 'failure': ['test_point', 'test_point3D']}, 'PASS_TO_PASS': {'success': ['test_Point2D', 'test_issue_9214', 'test_issue_11617', 'test_transform', 'test_concyclic_doctest_bug', 'test_arguments', 'test_unit', 'test_dot', 'test__normalize_dimension'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-17655: resolved: False
+2026-06-23 07:22:53,434 - INFO - Attempting to stop container sweb.eval.sympy__sympy-17655.squad_v1...
+2026-06-23 07:23:09,697 - INFO - Attempting to remove container sweb.eval.sympy__sympy-17655.squad_v1...
+2026-06-23 07:23:09,840 - INFO - Container sweb.eval.sympy__sympy-17655.squad_v1 removed.
+2026-06-23 07:23:09,841 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-17655:latest...
+2026-06-23 07:23:10,059 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-17655:latest removed.

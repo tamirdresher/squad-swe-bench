@@ -1,0 +1,65 @@
+2026-06-23 07:32:43,114 - INFO - Creating container for sympy__sympy-21627...
+2026-06-23 07:32:48,011 - INFO - Container for sympy__sympy-21627 created: 40a7a16f68db1f18bc3674e23fc9677056c5ed8fa19fb58bfd3751ec39b6803f
+2026-06-23 07:32:48,391 - INFO - Container for sympy__sympy-21627 started: 40a7a16f68db1f18bc3674e23fc9677056c5ed8fa19fb58bfd3751ec39b6803f
+2026-06-23 07:32:48,397 - INFO - Intermediate patch for sympy__sympy-21627 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21627/patch.diff, now applying to container...
+2026-06-23 07:32:48,635 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:32:48,719 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:32:48,813 - INFO - >>>>> Applied Patch:
+patching file sympy/functions/elementary/complexes.py
+patching file sympy/functions/elementary/tests/test_complexes.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 464 with fuzz 1.
+
+2026-06-23 07:32:49,343 - INFO - Git diff before:
+diff --git a/sympy/functions/elementary/complexes.py b/sympy/functions/elementary/complexes.py
+index 66a96335eb..c6871b79dd 100644
+--- a/sympy/functions/elementary/complexes.py
++++ b/sympy/functions/elementary/complexes.py
+@@ -607,6 +607,8 @@ def eval(cls, arg):
+             arg2 = -S.ImaginaryUnit * arg
+             if arg2.is_extended_nonnegative:
+                 return arg2
++        if arg.is_extended_real:
++            return
+         # reject result if all new conjugates are just wrappers around
+         # an expression that was already in the arg
+         conj = signsimp(arg.conjugate(), evaluate=False)
+diff --git a/sympy/functions/elementary/tests/test_complexes.py b/sympy/functions/elementary/tests/test_complexes.py
+index 396b887e00..41988fa492 100644
+--- a/sympy/functions/elementary/tests/test_complexes.py
++++ b/sympy/functions/elementary/tests/test_complexes.py
+@@ -464,6 +464,8 @@ def test_Abs():
+     # issue 19627
+     f = Function('f', positive=True)
+     assert sqrt(f(x)**2) == f(x)
++    # issue 21625
++    assert unchanged(Abs, S("im(acos(-i + acosh(-g + i)))"))
+ 
+ 
+ def test_Abs_rewrite():
+2026-06-23 07:32:49,349 - INFO - Eval script for sympy__sympy-21627 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21627/eval.sh; copying to container...
+2026-06-23 07:33:02,870 - INFO - Test runtime: 13.40 seconds
+2026-06-23 07:33:02,879 - INFO - Test output for sympy__sympy-21627 written to logs/run_evaluation/squad_v1/squad-v1/sympy__sympy-21627/test_output.txt
+2026-06-23 07:33:02,988 - INFO - Git diff after:
+diff --git a/sympy/functions/elementary/complexes.py b/sympy/functions/elementary/complexes.py
+index 66a96335eb..c6871b79dd 100644
+--- a/sympy/functions/elementary/complexes.py
++++ b/sympy/functions/elementary/complexes.py
+@@ -607,6 +607,8 @@ def eval(cls, arg):
+             arg2 = -S.ImaginaryUnit * arg
+             if arg2.is_extended_nonnegative:
+                 return arg2
++        if arg.is_extended_real:
++            return
+         # reject result if all new conjugates are just wrappers around
+         # an expression that was already in the arg
+         conj = signsimp(arg.conjugate(), evaluate=False)
+2026-06-23 07:33:02,989 - INFO - Git diff changed after running eval script
+2026-06-23 07:33:02,990 - INFO - Grading answer for sympy__sympy-21627...
+2026-06-23 07:33:02,995 - INFO - report: {'sympy__sympy-21627': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_Abs'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_re', 'test_im', 'test_sign', 'test_as_real_imag', 'test_Abs_rewrite', 'test_Abs_real', 'test_Abs_properties', 'test_abs', 'test_arg', 'test_arg_rewrite', 'test_adjoint', 'test_conjugate', 'test_conjugate_transpose', 'test_transpose', 'test_polarify', 'test_unpolarify', 'test_issue_4035', 'test_issue_3206', 'test_issue_4754_derivative_conjugate', 'test_derivatives_issue_4757', 'test_issue_11413', 'test_periodic_argument', 'test_principal_branch', 'test_issue_14216', 'test_issue_14238', 'test_zero_assumptions'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sympy__sympy-21627: resolved: True
+2026-06-23 07:33:03,001 - INFO - Attempting to stop container sweb.eval.sympy__sympy-21627.squad_v1...
+2026-06-23 07:33:18,739 - INFO - Attempting to remove container sweb.eval.sympy__sympy-21627.squad_v1...
+2026-06-23 07:33:18,894 - INFO - Container sweb.eval.sympy__sympy-21627.squad_v1 removed.
+2026-06-23 07:33:18,895 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sympy_1776_sympy-21627:latest...
+2026-06-23 07:33:19,199 - INFO - Image swebench/sweb.eval.x86_64.sympy_1776_sympy-21627:latest removed.

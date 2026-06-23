@@ -1,0 +1,106 @@
+diff --git a/django/template/defaultfilters.py b/django/template/defaultfilters.py
+index 8bd865ad80..59b56500af 100644
+--- a/django/template/defaultfilters.py
++++ b/django/template/defaultfilters.py
+@@ -211,9 +211,10 @@ def make_list(value):
+ @stringfilter
+ def slugify(value):
+     """
+-    Convert to ASCII. Convert spaces to hyphens. Remove characters that aren't
+-    alphanumerics, underscores, or hyphens. Convert to lowercase. Also strip
+-    leading and trailing whitespace.
++    Convert to ASCII. Convert spaces or repeated dashes to single dashes.
++    Remove characters that aren't alphanumerics, underscores, or hyphens.
++    Convert to lowercase. Also strip leading and trailing whitespace, dashes,
++    and underscores.
+     """
+     return _slugify(value)
+ 
+diff --git a/django/utils/text.py b/django/utils/text.py
+index fb5f6298c4..4d77ce7f41 100644
+--- a/django/utils/text.py
++++ b/django/utils/text.py
+@@ -393,17 +393,18 @@ def unescape_string_literal(s):
+ @keep_lazy_text
+ def slugify(value, allow_unicode=False):
+     """
+-    Convert to ASCII if 'allow_unicode' is False. Convert spaces to hyphens.
+-    Remove characters that aren't alphanumerics, underscores, or hyphens.
+-    Convert to lowercase. Also strip leading and trailing whitespace.
++    Convert to ASCII if 'allow_unicode' is False. Convert spaces or repeated
++    dashes to single dashes. Remove characters that aren't alphanumerics,
++    underscores, or hyphens. Convert to lowercase. Also strip leading and
++    trailing whitespace, dashes, and underscores.
+     """
+     value = str(value)
+     if allow_unicode:
+         value = unicodedata.normalize('NFKC', value)
+     else:
+         value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
+-    value = re.sub(r'[^\w\s-]', '', value.lower()).strip()
+-    return re.sub(r'[-\s]+', '-', value)
++    value = re.sub(r'[^\w\s-]', '', value.lower())
++    return re.sub(r'[-\s]+', '-', value).strip('-_')
+ 
+ 
+ def camel_case_to_spaces(value):
+diff --git a/docs/ref/templates/builtins.txt b/docs/ref/templates/builtins.txt
+index a8e8ad98f8..ed7e8f3047 100644
+--- a/docs/ref/templates/builtins.txt
++++ b/docs/ref/templates/builtins.txt
+@@ -2122,9 +2122,10 @@ If ``some_list`` is ``['a', 'b', 'c']``, the output will be ``['a', 'b']``.
+ ``slugify``
+ -----------
+ 
+-Converts to ASCII. Converts spaces to hyphens. Removes characters that aren't
+-alphanumerics, underscores, or hyphens. Converts to lowercase. Also strips
+-leading and trailing whitespace.
++Converts to ASCII. Converts spaces or repeated dashes to single dashes.
++Removes characters that aren't alphanumerics, underscores, or hyphens. Converts
++to lowercase. Also strips leading and trailing whitespace, dashes, and
++underscores.
+ 
+ For example::
+ 
+diff --git a/docs/ref/utils.txt b/docs/ref/utils.txt
+index dcc354e2e2..2589cf3bc4 100644
+--- a/docs/ref/utils.txt
++++ b/docs/ref/utils.txt
+@@ -853,8 +853,8 @@ appropriate entities.
+     #. Converting to lowercase.
+     #. Removing characters that aren't alphanumerics, underscores, hyphens, or
+        whitespace.
+-    #. Removing leading and trailing whitespace.
+     #. Replacing any whitespace or repeated dashes with single dashes.
++    #. Removing leading and trailing whitespace, dashes, and underscores.
+ 
+     For example::
+ 
+diff --git a/docs/releases/3.2.txt b/docs/releases/3.2.txt
+index a869eb49cf..911a0d4043 100644
+--- a/docs/releases/3.2.txt
++++ b/docs/releases/3.2.txt
+@@ -280,6 +280,9 @@ Miscellaneous
+ * :attr:`.ModelAdmin.prepopulated_fields` no longer strips English stop words,
+   such as ``'a'`` or ``'an'``.
+ 
++* :func:`django.utils.text.slugify` now strips leading and trailing dashes and
++  underscores.
++
+ .. _deprecated-features-3.2:
+ 
+ Features deprecated in 3.2
+diff --git a/tests/utils_tests/test_text.py b/tests/utils_tests/test_text.py
+index 9dbf9367c3..5b352114de 100644
+--- a/tests/utils_tests/test_text.py
++++ b/tests/utils_tests/test_text.py
+@@ -195,6 +195,9 @@ class TestUtilsText(SimpleTestCase):
+             ('spam & Ä±Ã§Ã¼ÅŸ', 'spam-Ä±Ã§Ã¼ÅŸ', True),
+             ('foo Ä±Ã§ bar', 'foo-Ä±Ã§-bar', True),
+             ('    foo Ä±Ã§ bar', 'foo-Ä±Ã§-bar', True),
++            ('___This is a test ---', 'this-is-a-test', False),
++            ('___This is a test ___', 'this-is-a-test', False),
++            ('---This is a test ---', 'this-is-a-test', False),
+             ('ä½ å¥½', 'ä½ å¥½', True),
+             ('Ä°stanbul', 'istanbul', True),
+         )

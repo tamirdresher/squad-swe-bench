@@ -1,0 +1,92 @@
+2026-06-23 04:28:41,621 - INFO - Creating container for astropy__astropy-12907...
+2026-06-23 04:28:48,016 - INFO - Container for astropy__astropy-12907 created: fb2b89f1441d4443658de679a90b295435856ac93048680f199b5535d9315ad4
+2026-06-23 04:28:48,458 - INFO - Container for astropy__astropy-12907 started: fb2b89f1441d4443658de679a90b295435856ac93048680f199b5535d9315ad4
+2026-06-23 04:28:48,464 - INFO - Intermediate patch for astropy__astropy-12907 written to logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-12907/patch.diff, now applying to container...
+2026-06-23 04:28:48,718 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:28:48,811 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:28:48,933 - INFO - >>>>> Applied Patch:
+patching file astropy/modeling/separable.py
+patching file astropy/modeling/tests/test_separable.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 54 with fuzz 3.
+
+2026-06-23 04:28:49,466 - INFO - Git diff before:
+diff --git a/astropy/modeling/separable.py b/astropy/modeling/separable.py
+index a308e2729..45bea3608 100644
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -242,7 +242,7 @@ def _cstack(left, right):
+         cright = _coord_matrix(right, 'right', noutp)
+     else:
+         cright = np.zeros((noutp, right.shape[1]))
+-        cright[-right.shape[0]:, -right.shape[1]:] = 1
++        cright[-right.shape[0]:, -right.shape[1]:] = right
+ 
+     return np.hstack([cleft, cright])
+ 
+diff --git a/astropy/modeling/tests/test_separable.py b/astropy/modeling/tests/test_separable.py
+index 8dfe5c862..970f8c31e 100644
+--- a/astropy/modeling/tests/test_separable.py
++++ b/astropy/modeling/tests/test_separable.py
+@@ -28,6 +28,8 @@ p22 = models.Polynomial2D(2, name='p22')
+ p1 = models.Polynomial1D(1, name='p1')
+ 
+ 
++cm = models.Linear1D(10) & models.Linear1D(5)
++
+ compound_models = {
+     'cm1': (map3 & sh1 | rot & sh1 | sh1 & sh2 & sh1,
+             (np.array([False, False, True]),
+@@ -52,7 +54,28 @@ compound_models = {
+     'cm7': (map2 | p2 & sh1,
+             (np.array([False, True]),
+              np.array([[True, False], [False, True]]))
+-            )
++            ),
++    'cm8': (rot & cm,
++            (np.array([False, False, True, True]),
++             np.array([[True, True, False, False],
++                       [True, True, False, False],
++                       [False, False, True, False],
++                       [False, False, False, True]]))
++            ),
++    'cm9': (rot & sh1 & sh2,
++            (np.array([False, False, True, True]),
++             np.array([[True, True, False, False],
++                       [True, True, False, False],
++                       [False, False, True, False],
++                       [False, False, False, True]]))
++            ),
++    'cm10': ((rot & sh1) & sh2,
++             (np.array([False, False, True, True]),
++              np.array([[True, True, False, False],
++                        [True, True, False, False],
++                        [False, False, True, False],
++                        [False, False, False, True]]))
++             ),
+ }
+2026-06-23 04:28:49,471 - INFO - Eval script for astropy__astropy-12907 written to logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-12907/eval.sh; copying to container...
+2026-06-23 04:31:21,214 - INFO - Test runtime: 151.55 seconds
+2026-06-23 04:31:26,539 - INFO - Test output for astropy__astropy-12907 written to logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-12907/test_output.txt
+2026-06-23 04:31:26,685 - INFO - Git diff after:
+diff --git a/astropy/modeling/separable.py b/astropy/modeling/separable.py
+index a308e2729..45bea3608 100644
+--- a/astropy/modeling/separable.py
++++ b/astropy/modeling/separable.py
+@@ -242,7 +242,7 @@ def _cstack(left, right):
+         cright = _coord_matrix(right, 'right', noutp)
+     else:
+         cright = np.zeros((noutp, right.shape[1]))
+-        cright[-right.shape[0]:, -right.shape[1]:] = 1
++        cright[-right.shape[0]:, -right.shape[1]:] = right
+ 
+     return np.hstack([cleft, cright])
+2026-06-23 04:31:26,687 - INFO - Git diff changed after running eval script
+2026-06-23 04:31:26,687 - INFO - Grading answer for astropy__astropy-12907...
+2026-06-23 04:31:26,704 - INFO - report: {'astropy__astropy-12907': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['astropy/modeling/tests/test_separable.py::test_separable[compound_model6-result6]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]'], 'failure': []}, 'PASS_TO_PASS': {'success': ['astropy/modeling/tests/test_separable.py::test_coord_matrix', 'astropy/modeling/tests/test_separable.py::test_cdot', 'astropy/modeling/tests/test_separable.py::test_cstack', 'astropy/modeling/tests/test_separable.py::test_arith_oper', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model0-result0]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model1-result1]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model2-result2]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model3-result3]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model4-result4]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model5-result5]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model7-result7]', 'astropy/modeling/tests/test_separable.py::test_separable[compound_model8-result8]', 'astropy/modeling/tests/test_separable.py::test_custom_model_separable'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for astropy__astropy-12907: resolved: True
+2026-06-23 04:31:26,718 - INFO - Attempting to stop container sweb.eval.astropy__astropy-12907.squad_v1...
+2026-06-23 04:31:43,415 - INFO - Attempting to remove container sweb.eval.astropy__astropy-12907.squad_v1...
+2026-06-23 04:31:43,746 - INFO - Container sweb.eval.astropy__astropy-12907.squad_v1 removed.
+2026-06-23 04:31:43,747 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.astropy_1776_astropy-12907:latest...
+2026-06-23 04:31:47,701 - INFO - Image swebench/sweb.eval.x86_64.astropy_1776_astropy-12907:latest removed.

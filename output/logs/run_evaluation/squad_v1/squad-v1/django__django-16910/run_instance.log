@@ -1,0 +1,127 @@
+2026-06-23 05:31:05,255 - INFO - Creating container for django__django-16910...
+2026-06-23 05:31:09,807 - INFO - Container for django__django-16910 created: 206ff95c668a50b6570ee0ab9bfcdbda1c3fd370f59d52629ef72782f0beacf0
+2026-06-23 05:31:10,514 - INFO - Container for django__django-16910 started: 206ff95c668a50b6570ee0ab9bfcdbda1c3fd370f59d52629ef72782f0beacf0
+2026-06-23 05:31:10,524 - INFO - Intermediate patch for django__django-16910 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16910/patch.diff, now applying to container...
+2026-06-23 05:31:10,844 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:31:10,993 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:31:11,235 - INFO - >>>>> Applied Patch:
+patching file django/db/models/sql/query.py
+patching file docs/releases/4.2.2.txt
+patching file tests/defer_regress/tests.py
+patching file tests/select_related_onetoone/tests.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 249 with fuzz 2.
+
+2026-06-23 05:31:12,746 - INFO - Git diff before:
+diff --git a/django/db/models/sql/query.py b/django/db/models/sql/query.py
+index 781dfd5499..772ba13419 100644
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -779,7 +779,13 @@ class Query(BaseExpression):
+         # Only include fields mentioned in the mask.
+         for field_name, field_mask in mask.items():
+             field = opts.get_field(field_name)
+-            field_select_mask = select_mask.setdefault(field, {})
++            # Retrieve the actual field associated with reverse relationships
++            # as that's what is expected in the select mask.
++            if field in opts.related_objects:
++                field_key = field.field
++            else:
++                field_key = field
++            field_select_mask = select_mask.setdefault(field_key, {})
+             if field_mask:
+                 if not field.is_relation:
+                     raise FieldError(next(iter(field_mask)))
+diff --git a/docs/releases/4.2.2.txt b/docs/releases/4.2.2.txt
+index fef5d8d364..1bada4073b 100644
+--- a/docs/releases/4.2.2.txt
++++ b/docs/releases/4.2.2.txt
+@@ -20,6 +20,9 @@ Bugfixes
+   when passing a ``ManyToManyField`` or ``GenericForeignKey`` reference. While
+   doing so is a no-op, it was allowed in older version (:ticket:`34570`).
+ 
++* Fixed a regression in Django 4.2 that caused a crash of ``QuerySet.only()``
++  when passing a reverse ``OneToOneField`` reference (:ticket:`34612`).
++
+ * Fixed a bug in Django 4.2 where :option:`makemigrations --update` didn't
+   respect the ``--name`` option (:ticket:`34568`).
+ 
+diff --git a/tests/defer_regress/tests.py b/tests/defer_regress/tests.py
+index fc2d87e12b..082869f27f 100644
+--- a/tests/defer_regress/tests.py
++++ b/tests/defer_regress/tests.py
+@@ -178,6 +178,16 @@ class DeferRegressionTest(TestCase):
+             self.assertEqual(i.one_to_one_item.name, "second")
+         with self.assertNumQueries(1):
+             self.assertEqual(i.value, 42)
++        with self.assertNumQueries(1):
++            i = Item.objects.select_related("one_to_one_item").only(
++                "name", "one_to_one_item__item"
++            )[0]
++            self.assertEqual(i.one_to_one_item.pk, o2o.pk)
++            self.assertEqual(i.name, "first")
++        with self.assertNumQueries(1):
++            self.assertEqual(i.one_to_one_item.name, "second")
++        with self.assertNumQueries(1):
++            self.assertEqual(i.value, 42)
+ 
+     def test_defer_with_select_related(self):
+         item1 = Item.objects.create(name="first", value=47)
+diff --git a/tests/select_related_onetoone/tests.py b/tests/select_related_onetoone/tests.py
+index 8bdfb83fe8..83462ed071 100644
+--- a/tests/select_related_onetoone/tests.py
++++ b/tests/select_related_onetoone/tests.py
+@@ -249,6 +249,9 @@ class ReverseSelectRelatedTestCase(TestCase):
+             self.assertEqual(p.child1.name2, "n2")
+         p = qs.get(name2="n2")
+         with self.assertNumQueries(0):
++            self.assertEqual(p.child1.value, 1)
++            self.assertEqual(p.child1.child4.value4, 4)
++        with self.assertNumQueries(2):
+             self.assertEqual(p.child1.name1, "n1")
+             self.assertEqual(p.child1.child4.name1, "n1")
+2026-06-23 05:31:15,096 - INFO - Eval script for django__django-16910 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16910/eval.sh; copying to container...
+2026-06-23 05:31:38,155 - INFO - Test runtime: 22.89 seconds
+2026-06-23 05:31:41,031 - INFO - Test output for django__django-16910 written to logs/run_evaluation/squad_v1/squad-v1/django__django-16910/test_output.txt
+2026-06-23 05:31:41,382 - INFO - Git diff after:
+diff --git a/django/db/models/sql/query.py b/django/db/models/sql/query.py
+index 781dfd5499..772ba13419 100644
+--- a/django/db/models/sql/query.py
++++ b/django/db/models/sql/query.py
+@@ -779,7 +779,13 @@ class Query(BaseExpression):
+         # Only include fields mentioned in the mask.
+         for field_name, field_mask in mask.items():
+             field = opts.get_field(field_name)
+-            field_select_mask = select_mask.setdefault(field, {})
++            # Retrieve the actual field associated with reverse relationships
++            # as that's what is expected in the select mask.
++            if field in opts.related_objects:
++                field_key = field.field
++            else:
++                field_key = field
++            field_select_mask = select_mask.setdefault(field_key, {})
+             if field_mask:
+                 if not field.is_relation:
+                     raise FieldError(next(iter(field_mask)))
+diff --git a/docs/releases/4.2.2.txt b/docs/releases/4.2.2.txt
+index fef5d8d364..1bada4073b 100644
+--- a/docs/releases/4.2.2.txt
++++ b/docs/releases/4.2.2.txt
+@@ -20,6 +20,9 @@ Bugfixes
+   when passing a ``ManyToManyField`` or ``GenericForeignKey`` reference. While
+   doing so is a no-op, it was allowed in older version (:ticket:`34570`).
+ 
++* Fixed a regression in Django 4.2 that caused a crash of ``QuerySet.only()``
++  when passing a reverse ``OneToOneField`` reference (:ticket:`34612`).
++
+ * Fixed a bug in Django 4.2 where :option:`makemigrations --update` didn't
+   respect the ``--name`` option (:ticket:`34568`).
+2026-06-23 05:31:41,383 - INFO - Git diff changed after running eval script
+2026-06-23 05:31:41,383 - INFO - Grading answer for django__django-16910...
+2026-06-23 05:31:41,394 - INFO - report: {'django__django-16910': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_inheritance_deferred2 (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_inheritance_deferred2)', 'test_reverse_one_to_one_relations (defer_regress.tests.DeferRegressionTest.test_reverse_one_to_one_relations)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_reverse_related_validation (select_related_onetoone.tests.ReverseSelectRelatedValidationTests.test_reverse_related_validation)', 'test_reverse_related_validation_with_filtered_relation (select_related_onetoone.tests.ReverseSelectRelatedValidationTests.test_reverse_related_validation_with_filtered_relation)', 'test_delete_defered_model (defer_regress.tests.DeferDeletionSignalsTests.test_delete_defered_model)', 'test_delete_defered_proxy_model (defer_regress.tests.DeferDeletionSignalsTests.test_delete_defered_proxy_model)', 'test_back_and_forward (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_back_and_forward)', 'test_basic (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_basic)', 'test_follow_from_child_class (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_follow_from_child_class)', 'test_follow_inheritance (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_follow_inheritance)', 'test_follow_next_level (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_follow_next_level)', 'test_follow_two (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_follow_two)', 'test_follow_two_next_level (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_follow_two_next_level)', 'test_forward_and_back (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_forward_and_back)', 'test_inheritance_deferred (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_inheritance_deferred)', 'Ticket #13839: select_related() should NOT cache None', 'test_multiinheritance_two_subclasses (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_multiinheritance_two_subclasses)', 'test_multiple_subclass (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_multiple_subclass)', 'test_not_followed_by_default (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_not_followed_by_default)', 'test_nullable_relation (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_nullable_relation)', 'test_onetoone_with_subclass (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_onetoone_with_subclass)', 'test_onetoone_with_two_subclasses (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_onetoone_with_two_subclasses)', 'test_parent_only (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_parent_only)', 'test_self_relation (select_related_onetoone.tests.ReverseSelectRelatedTestCase.test_self_relation)', 'test_basic (defer_regress.tests.DeferRegressionTest.test_basic)', 'test_common_model_different_mask (defer_regress.tests.DeferRegressionTest.test_common_model_different_mask)', 'test_defer_annotate_select_related (defer_regress.tests.DeferRegressionTest.test_defer_annotate_select_related)', 'test_defer_many_to_many_ignored (defer_regress.tests.DeferRegressionTest.test_defer_many_to_many_ignored)', 'test_defer_reverse_many_to_many_ignored (defer_regress.tests.DeferRegressionTest.test_defer_reverse_many_to_many_ignored)', 'test_defer_with_select_related (defer_regress.tests.DeferRegressionTest.test_defer_with_select_related)', 'test_only_and_defer_usage_on_proxy_models (defer_regress.tests.DeferRegressionTest.test_only_and_defer_usage_on_proxy_models)', 'test_only_many_to_many_ignored (defer_regress.tests.DeferRegressionTest.test_only_many_to_many_ignored)', 'test_only_reverse_many_to_many_ignored (defer_regress.tests.DeferRegressionTest.test_only_reverse_many_to_many_ignored)', 'test_only_with_select_related (defer_regress.tests.DeferRegressionTest.test_only_with_select_related)', 'test_proxy_model_defer_with_select_related (defer_regress.tests.DeferRegressionTest.test_proxy_model_defer_with_select_related)', 'test_resolve_columns (defer_regress.tests.DeferRegressionTest.test_resolve_columns)', 'test_ticket_16409 (defer_regress.tests.DeferRegressionTest.test_ticket_16409)', 'test_ticket_23270 (defer_regress.tests.DeferRegressionTest.test_ticket_23270)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-16910: resolved: True
+2026-06-23 05:31:41,408 - INFO - Attempting to stop container sweb.eval.django__django-16910.squad_v1...
+2026-06-23 05:32:04,093 - INFO - Attempting to remove container sweb.eval.django__django-16910.squad_v1...
+2026-06-23 05:32:04,313 - INFO - Container sweb.eval.django__django-16910.squad_v1 removed.
+2026-06-23 05:32:04,314 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-16910:latest...
+2026-06-23 05:32:05,241 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-16910:latest removed.

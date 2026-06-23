@@ -1,0 +1,47 @@
+diff --git a/requests/sessions.py b/requests/sessions.py
+index d701ff2e..adcfbac7 100644
+--- a/requests/sessions.py
++++ b/requests/sessions.py
+@@ -425,7 +425,7 @@ class Session(SessionRedirectMixin):
+             If Tuple, ('cert', 'key') pair.
+         """
+ 
+-        method = builtin_str(method)
++        method = to_native_string(method)
+ 
+         # Create the Request.
+         req = Request(
+diff --git a/test_requests.py b/test_requests.py
+index 467c5bc6..34e183ec 100755
+--- a/test_requests.py
++++ b/test_requests.py
+@@ -597,6 +597,29 @@ class RequestsTestCase(unittest.TestCase):
+         prep = s.prepare_request(req)
+         assert prep.url == "https://httpbin.org/"
+ 
++    def test_request_with_bytestring_method(self):
++        # Regression test for GH #2316: when a bytestring HTTP method such as
++        # b'GET' is passed (e.g. by libraries that encode all arguments to
++        # bytes), it must be converted to a native string. On Python 3,
++        # builtin_str(b'GET') produced the literal string "b'GET'", which made
++        # servers respond with 404. The prepared request must therefore carry
++        # the native string 'GET'.
++        s = requests.Session()
++        captured = []
++
++        def capture_send(request, **kwargs):
++            captured.append(request)
++            resp = requests.Response()
++            resp.status_code = 200
++            resp.request = request
++            return resp
++
++        s.send = capture_send
++        s.request(method=b'GET', url='http://example.com/')
++
++        assert len(captured) == 1
++        assert captured[0].method == 'GET'
++
+     def test_links(self):
+         r = requests.Response()
+         r.headers = {

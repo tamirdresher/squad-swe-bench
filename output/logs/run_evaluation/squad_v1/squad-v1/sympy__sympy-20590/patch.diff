@@ -1,0 +1,46 @@
+diff --git a/sympy/core/_print_helpers.py b/sympy/core/_print_helpers.py
+index 96d7e72676..6d95d12def 100644
+--- a/sympy/core/_print_helpers.py
++++ b/sympy/core/_print_helpers.py
+@@ -17,6 +17,11 @@ class Printable:
+     This also adds support for LaTeX printing in jupyter notebooks.
+     """
+ 
++    # Since this class is used as a mixin we set empty slots. That means that
++    # instances of any subclasses that use slots will not need to have a
++    # __dict__ (e.g. Symbol whose only data is its name).
++    __slots__ = ()
++
+     # Note, we always use the default ordering (lex) in __str__ and __repr__,
+     # regardless of the global setting. See issue 5487.
+     def __str__(self):
+diff --git a/sympy/core/tests/test_symbol.py b/sympy/core/tests/test_symbol.py
+index a07a1d2f36..557093a5dc 100644
+--- a/sympy/core/tests/test_symbol.py
++++ b/sympy/core/tests/test_symbol.py
+@@ -1,5 +1,5 @@
+ from sympy import (Symbol, Wild, GreaterThan, LessThan, StrictGreaterThan,
+-    StrictLessThan, pi, I, Rational, sympify, symbols, Dummy)
++    StrictLessThan, pi, I, Rational, sympify, symbols, Dummy, Integer)
+ from sympy.core.symbol import uniquely_named_symbol, _symbol, Str
+ 
+ from sympy.testing.pytest import raises
+@@ -325,6 +325,18 @@ def sym(s):
+     raises(ValueError, lambda: symbols('::a'))
+ 
+ 
++def test_no_dict():
++    # Basic and its subclasses use __slots__ so their instances should not
++    # have a __dict__. Regression test for Symbol gaining a __dict__ when the
++    # Printable mixin was introduced without __slots__ (see issue #20567).
++    x, y = symbols('x y')
++    raises(AttributeError, lambda: Symbol('s').__dict__)
++    raises(AttributeError, lambda: Integer(1).__dict__)
++    raises(AttributeError, lambda: (x + y).__dict__)
++    raises(AttributeError, lambda: (x*y).__dict__)
++    assert Symbol('s').__slots__ == ('name',)
++
++
+ def test_symbols_become_functions_issue_3539():
+     from sympy.abc import alpha, phi, beta, t
+     raises(TypeError, lambda: beta(2))

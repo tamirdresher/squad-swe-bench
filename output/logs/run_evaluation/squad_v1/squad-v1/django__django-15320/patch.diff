@@ -1,0 +1,31 @@
+diff --git a/django/db/models/expressions.py b/django/db/models/expressions.py
+index 6f26dff0e0..81f8f79c71 100644
+--- a/django/db/models/expressions.py
++++ b/django/db/models/expressions.py
+@@ -1149,7 +1149,8 @@ class Subquery(BaseExpression, Combinable):
+ 
+     def __init__(self, queryset, output_field=None, **extra):
+         # Allow the usage of both QuerySet and sql.Query objects.
+-        self.query = getattr(queryset, 'query', queryset)
++        self.query = getattr(queryset, 'query', queryset).clone()
++        self.query.subquery = True
+         self.extra = extra
+         super().__init__(output_field)
+ 
+diff --git a/tests/expressions/tests.py b/tests/expressions/tests.py
+index 06c9ad597a..16cd1760e0 100644
+--- a/tests/expressions/tests.py
++++ b/tests/expressions/tests.py
+@@ -537,6 +537,12 @@ class BasicExpressionsTests(TestCase):
+             qs.query.annotations['small_company'],
+         )
+ 
++    def test_subquery_sql(self):
++        employees = Employee.objects.all()
++        employees_subquery = Subquery(employees)
++        self.assertIs(employees_subquery.query.subquery, True)
++        self.assertIs(employees.query.subquery, False)
++
+     def test_in_subquery(self):
+         # This is a contrived test (and you really wouldn't write this query),
+         # but it is a succinct way to test the __in=Subquery() construct.

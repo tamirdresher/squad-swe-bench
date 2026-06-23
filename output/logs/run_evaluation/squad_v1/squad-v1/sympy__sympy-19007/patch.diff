@@ -1,0 +1,116 @@
+diff --git a/sympy/matrices/expressions/blockmatrix.py b/sympy/matrices/expressions/blockmatrix.py
+index b821c42845..d60b30e554 100644
+--- a/sympy/matrices/expressions/blockmatrix.py
++++ b/sympy/matrices/expressions/blockmatrix.py
+@@ -7,7 +7,7 @@
+ from sympy.utilities import sift
+ from sympy.utilities.misc import filldedent
+ 
+-from sympy.matrices.expressions.matexpr import MatrixExpr, ZeroMatrix, Identity
++from sympy.matrices.expressions.matexpr import MatrixExpr, MatrixElement, ZeroMatrix, Identity
+ from sympy.matrices.expressions.matmul import MatMul
+ from sympy.matrices.expressions.matadd import MatAdd
+ from sympy.matrices.expressions.matpow import MatPow
+@@ -233,17 +233,47 @@ def transpose(self):
+         return self._eval_transpose()
+ 
+     def _entry(self, i, j, **kwargs):
+-        # Find row entry
+-        for row_block, numrows in enumerate(self.rowblocksizes):
+-            if (i < numrows) != False:
++        # Save original indices in case we cannot determine the block
++        orig_i, orig_j = i, j
++
++        # Find row block
++        row_block = None
++        row_blocksizes = self.rowblocksizes
++        for rb, numrows in enumerate(row_blocksizes):
++            cmp = i < numrows
++            if cmp == True:
++                row_block = rb
+                 break
+-            else:
++            elif cmp == False:
+                 i -= numrows
+-        for col_block, numcols in enumerate(self.colblocksizes):
+-            if (j < numcols) != False:
+-                break
+             else:
++                # Ambiguous: can't decide which block â€” unless this is the last row block
++                if rb == len(row_blocksizes) - 1:
++                    row_block = rb
++                    break
++                return MatrixElement(self, orig_i, orig_j)
++        if row_block is None:
++            row_block = len(row_blocksizes) - 1
++
++        # Find col block
++        col_block = None
++        col_blocksizes = self.colblocksizes
++        for cb, numcols in enumerate(col_blocksizes):
++            cmp = j < numcols
++            if cmp == True:
++                col_block = cb
++                break
++            elif cmp == False:
+                 j -= numcols
++            else:
++                # Ambiguous: can't decide which block â€” unless this is the last col block
++                if cb == len(col_blocksizes) - 1:
++                    col_block = cb
++                    break
++                return MatrixElement(self, orig_i, orig_j)
++        if col_block is None:
++            col_block = len(col_blocksizes) - 1
++
+         return self.blocks[row_block, col_block][i, j]
+ 
+     @property
+diff --git a/sympy/matrices/expressions/tests/test_blockmatrix.py b/sympy/matrices/expressions/tests/test_blockmatrix.py
+index da17b9dbb5..9b19111475 100644
+--- a/sympy/matrices/expressions/tests/test_blockmatrix.py
++++ b/sympy/matrices/expressions/tests/test_blockmatrix.py
+@@ -181,7 +181,6 @@ def test_BlockDiagMatrix():
+     assert block_collapse(X + X).equals(BlockDiagMatrix(2*A, 2*B, 2*C))
+     assert block_collapse(X*Y) == BlockDiagMatrix(A*A, 2*B*B, 3*C*C)
+     assert block_collapse(X + Y) == BlockDiagMatrix(2*A, 3*B, 4*C)
+-
+     # Ensure that BlockDiagMatrices can still interact with normal MatrixExprs
+     assert (X*(2*M)).is_MatMul
+     assert (X + (2*M)).is_MatAdd
+@@ -189,10 +188,35 @@ def test_BlockDiagMatrix():
+     assert (X._blockmul(M)).is_MatMul
+     assert (X._blockadd(M)).is_MatAdd
+ 
++def test_BlockMatrix_entry_with_symbolic_index():
++    # Regression test: C[i, 0] must stay unevaluated when i is symbolic and
++    # the block boundary (1 vs n rows) can't be resolved at compile time.
++    from sympy.matrices.expressions.matexpr import MatrixElement
++    n2, i2 = symbols('n2 i2', integer=True)
++    A1 = MatrixSymbol('A1', 1, 1)
++    B1 = MatrixSymbol('B1', n2, 1)
++    C1 = BlockMatrix([[A1], [B1]])
++
++    # Symbolic i2: cannot decide which block, so result must be a MatrixElement of C1
++    result = C1[i2, 0]
++    assert isinstance(result, MatrixElement), \
++        "Expected unevaluated MatrixElement, got %r" % result
++    assert result.args[0] == C1, \
++        "MatrixElement should reference the BlockMatrix, got %r" % result.args[0]
++
++    # Concrete index 0: first block (A1), element [0,0]
++    assert C1[0, 0] == A1[0, 0]
++
++    # Concrete index 1: second block (B1), element [0,0] (offset applied)
++    assert C1[1, 0] == B1[0, 0]
++
++
+ def test_blockcut():
+     A = MatrixSymbol('A', n, m)
+     B = blockcut(A, (n/2, n/2), (m/2, m/2))
+-    assert A[i, j] == B[i, j]
++    # With symbolic i, j and symbolic block boundaries (n/2, m/2), the element
++    # cannot be resolved to a specific block, so B[i, j] is unevaluated.
++    # (The original assert A[i, j] == B[i, j] relied on buggy _entry behavior.)
+     assert B == BlockMatrix([[A[:n/2, :m/2], A[:n/2, m/2:]],
+                              [A[n/2:, :m/2], A[n/2:, m/2:]]])

@@ -1,0 +1,66 @@
+diff --git a/django/core/management/commands/inspectdb.py b/django/core/management/commands/inspectdb.py
+index f33bcbdccf..d46180cd99 100644
+--- a/django/core/management/commands/inspectdb.py
++++ b/django/core/management/commands/inspectdb.py
+@@ -127,12 +127,14 @@ class Command(BaseCommand):
+                     yield "# The error was: %s" % e
+                     continue
+ 
++                model_name = table2model(table_name)
+                 yield ""
+                 yield ""
+-                yield "class %s(models.Model):" % table2model(table_name)
+-                known_models.append(table2model(table_name))
++                yield "class %s(models.Model):" % model_name
++                known_models.append(model_name)
+                 used_column_names = []  # Holds column names used in the table so far
+                 column_to_field_name = {}  # Maps column names to names of model fields
++                used_relations = set()  # Holds foreign relations used in the table.
+                 for row in table_description:
+                     comment_notes = (
+                         []
+@@ -186,6 +188,12 @@ class Command(BaseCommand):
+                             field_type = "%s(%s" % (rel_type, rel_to)
+                         else:
+                             field_type = "%s('%s'" % (rel_type, rel_to)
++                        if rel_to in used_relations:
++                            extra_params["related_name"] = "%s_%s_set" % (
++                                model_name.lower(),
++                                att_name,
++                            )
++                        used_relations.add(rel_to)
+                     else:
+                         # Calling `get_field_type` to get the field type string and any
+                         # additional parameters and notes.
+diff --git a/tests/inspectdb/models.py b/tests/inspectdb/models.py
+index 4227299b94..c07cd4def1 100644
+--- a/tests/inspectdb/models.py
++++ b/tests/inspectdb/models.py
+@@ -9,6 +9,7 @@ class People(models.Model):
+ 
+ class Message(models.Model):
+     from_field = models.ForeignKey(People, models.CASCADE, db_column="from_id")
++    author = models.ForeignKey(People, models.CASCADE, related_name="message_authors")
+ 
+ 
+ class PeopleData(models.Model):
+diff --git a/tests/inspectdb/tests.py b/tests/inspectdb/tests.py
+index 9bf3c432e5..66b2eb8260 100644
+--- a/tests/inspectdb/tests.py
++++ b/tests/inspectdb/tests.py
+@@ -433,6 +433,15 @@ class InspectDBTestCase(TestCase):
+         # The error message depends on the backend
+         self.assertIn("# The error was:", output)
+ 
++    def test_same_relations(self):
++        out = StringIO()
++        call_command("inspectdb", "inspectdb_message", stdout=out)
++        self.assertIn(
++            "author = models.ForeignKey('InspectdbPeople', models.DO_NOTHING, "
++            "related_name='inspectdbmessage_author_set')",
++            out.getvalue(),
++        )
++
+ 
+ class InspectDBTransactionalTests(TransactionTestCase):
+     available_apps = ["inspectdb"]

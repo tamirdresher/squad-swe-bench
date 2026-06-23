@@ -1,0 +1,104 @@
+2026-06-23 06:09:59,975 - INFO - Creating container for matplotlib__matplotlib-25498...
+2026-06-23 06:10:30,349 - INFO - Container for matplotlib__matplotlib-25498 created: 9d4be88d1bc3a66957b15c6918a404992b0f9f91584bfe9f23c72adc639e5bd4
+2026-06-23 06:10:30,916 - INFO - Container for matplotlib__matplotlib-25498 started: 9d4be88d1bc3a66957b15c6918a404992b0f9f91584bfe9f23c72adc639e5bd4
+2026-06-23 06:10:30,924 - INFO - Intermediate patch for matplotlib__matplotlib-25498 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25498/patch.diff, now applying to container...
+2026-06-23 06:10:31,225 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:10:31,341 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:10:31,465 - INFO - >>>>> Applied Patch:
+patching file lib/matplotlib/colorbar.py
+patching file lib/matplotlib/tests/test_colorbar.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 658 with fuzz 1.
+
+2026-06-23 06:10:33,473 - INFO - Git diff before:
+diff --git a/lib/matplotlib/colorbar.py b/lib/matplotlib/colorbar.py
+index d3d53e3d98..caec52570f 100644
+--- a/lib/matplotlib/colorbar.py
++++ b/lib/matplotlib/colorbar.py
+@@ -507,8 +507,12 @@ class Colorbar:
+         self.mappable = mappable
+         self.set_alpha(mappable.get_alpha())
+         self.cmap = mappable.cmap
+-        if mappable.norm != self.norm:
+-            self.norm = mappable.norm
++        if mappable.get_array() is not None:
++            with mappable.norm.callbacks.blocked():
++                mappable.autoscale_None()
++        oldnorm = self.norm
++        self.norm = mappable.norm
++        if self.norm is not oldnorm:
+             self._reset_locator_formatter_scale()
+ 
+         self._draw_all()
+diff --git a/lib/matplotlib/tests/test_colorbar.py b/lib/matplotlib/tests/test_colorbar.py
+index e39d007378..80afa1f53f 100644
+--- a/lib/matplotlib/tests/test_colorbar.py
++++ b/lib/matplotlib/tests/test_colorbar.py
+@@ -16,7 +16,7 @@ from matplotlib.colors import (
+     BoundaryNorm, LogNorm, PowerNorm, Normalize, NoNorm
+ )
+ from matplotlib.colorbar import Colorbar
+-from matplotlib.ticker import FixedLocator, LogFormatter
++from matplotlib.ticker import FixedLocator, LogFormatter, LogLocator
+ from matplotlib.testing.decorators import check_figures_equal
+ 
+ 
+@@ -658,6 +658,26 @@ def test_colorbar_scale_reset():
+     assert cbar.outline.get_edgecolor() == mcolors.to_rgba('red')
+ 
+ 
++def test_colorbar_update_normal_after_norm_change():
++    img = 10 ** np.arange(4).reshape((2, 2))
++
++    fig, ax = plt.subplots()
++    im = ax.imshow(img)
++    cbar = fig.colorbar(im, ax=ax)
++
++    assert isinstance(cbar.norm, Normalize)
++    assert cbar.ax.yaxis.get_scale() == 'linear'
++
++    im.norm = LogNorm()
++    cbar.update_normal(im)
++
++    assert cbar.norm is im.norm
++    assert isinstance(cbar.norm, LogNorm)
++    assert cbar.norm.scaled()
++    assert cbar.ax.yaxis.get_scale() == 'log'
++    assert isinstance(cbar.ax.yaxis.get_major_locator(), LogLocator)
++
++
+ def test_colorbar_get_ticks_2():
+     plt.rcParams['_internal.classic_mode'] = False
+     fig, ax = plt.subplots()
+2026-06-23 06:10:33,481 - INFO - Eval script for matplotlib__matplotlib-25498 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25498/eval.sh; copying to container...
+2026-06-23 06:13:29,164 - INFO - Test runtime: 175.49 seconds
+2026-06-23 06:13:29,170 - INFO - Test output for matplotlib__matplotlib-25498 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25498/test_output.txt
+2026-06-23 06:13:29,291 - INFO - Git diff after:
+diff --git a/lib/matplotlib/colorbar.py b/lib/matplotlib/colorbar.py
+index d3d53e3d98..caec52570f 100644
+--- a/lib/matplotlib/colorbar.py
++++ b/lib/matplotlib/colorbar.py
+@@ -507,8 +507,12 @@ class Colorbar:
+         self.mappable = mappable
+         self.set_alpha(mappable.get_alpha())
+         self.cmap = mappable.cmap
+-        if mappable.norm != self.norm:
+-            self.norm = mappable.norm
++        if mappable.get_array() is not None:
++            with mappable.norm.callbacks.blocked():
++                mappable.autoscale_None()
++        oldnorm = self.norm
++        self.norm = mappable.norm
++        if self.norm is not oldnorm:
+             self._reset_locator_formatter_scale()
+ 
+         self._draw_all()
+2026-06-23 06:13:29,292 - INFO - Git diff changed after running eval script
+2026-06-23 06:13:29,292 - INFO - Grading answer for matplotlib__matplotlib-25498...
+2026-06-23 06:13:29,299 - INFO - report: {'matplotlib__matplotlib-25498': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset'], 'failure': []}, 'PASS_TO_PASS': {'success': ['lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_shape[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_length[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[min-expected0-horizontal]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[min-expected0-vertical]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[max-expected1-horizontal]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[max-expected1-vertical]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[both-expected2-horizontal]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_inverted_axis[both-expected2-vertical]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_positioning[png-True]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_positioning[png-False]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_single_ax_panchor_false', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_single_ax_panchor_east[standard]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_single_ax_panchor_east[constrained]', 'lib/matplotlib/tests/test_colorbar.py::test_contour_colorbar[png]', 'lib/matplotlib/tests/test_colorbar.py::test_gridspec_make_colorbar[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_single_scatter[png]', 'lib/matplotlib/tests/test_colorbar.py::test_remove_from_figure[no', 'lib/matplotlib/tests/test_colorbar.py::test_remove_from_figure[with', 'lib/matplotlib/tests/test_colorbar.py::test_remove_from_figure_cl', 'lib/matplotlib/tests/test_colorbar.py::test_colorbarbase', 'lib/matplotlib/tests/test_colorbar.py::test_parentless_mappable', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_closed_patch[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_ticks', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_minorticks_on_off', 'lib/matplotlib/tests/test_colorbar.py::test_cbar_minorticks_for_rc_xyminortickvisible', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_autoticks', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_autotickslog', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_get_ticks', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_lognorm_extension[both]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_lognorm_extension[min]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_lognorm_extension[max]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_powernorm_extension', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_axes_kw', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_log_minortick_labels', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_renorm', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[%4.2e]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[{x:.2e}]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_get_ticks_2', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_inverted_ticks', 'lib/matplotlib/tests/test_colorbar.py::test_mappable_no_alpha', 'lib/matplotlib/tests/test_colorbar.py::test_mappable_2d_alpha', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_label', 'lib/matplotlib/tests/test_colorbar.py::test_keeping_xlabel[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_int[clim0]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_int[clim1]', 'lib/matplotlib/tests/test_colorbar.py::test_anchored_cbar_position_using_specgrid', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_change_lim_scale[png]', 'lib/matplotlib/tests/test_colorbar.py::test_axes_handles_same_functions[png]', 'lib/matplotlib/tests/test_colorbar.py::test_inset_colorbar_layout', 'lib/matplotlib/tests/test_colorbar.py::test_twoslope_colorbar[png]', 'lib/matplotlib/tests/test_colorbar.py::test_remove_cb_whose_mappable_has_no_figure[png]', 'lib/matplotlib/tests/test_colorbar.py::test_aspects', 'lib/matplotlib/tests/test_colorbar.py::test_proportional_colorbars[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_drawedges[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_contourf_extend_patches[png]', 'lib/matplotlib/tests/test_colorbar.py::test_negative_boundarynorm', 'lib/matplotlib/tests/test_colorbar.py::test_centerednorm', 'lib/matplotlib/tests/test_colorbar.py::test_boundaries[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_no_warning_rcparams_grid_true', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_set_formatter_locator', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_extend_alpha[png]', 'lib/matplotlib/tests/test_colorbar.py::test_offset_text_loc', 'lib/matplotlib/tests/test_colorbar.py::test_title_text_loc', 'lib/matplotlib/tests/test_colorbar.py::test_passing_location[png]', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs0-TypeError-location', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs1-TypeError-location', "lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs2-ValueError-'top'", 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs3-ValueError-invalid', 'lib/matplotlib/tests/test_colorbar.py::test_colorbar_axes_parmeters'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for matplotlib__matplotlib-25498: resolved: True
+2026-06-23 06:13:29,305 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-25498.squad_v1...
+2026-06-23 06:13:45,655 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-25498.squad_v1...
+2026-06-23 06:13:45,813 - INFO - Container sweb.eval.matplotlib__matplotlib-25498.squad_v1 removed.
+2026-06-23 06:13:45,814 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25498:latest...
+2026-06-23 06:13:48,903 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25498:latest removed.

@@ -1,0 +1,7 @@
+# SWE-bench Lite benchmark runner for Squad
+# Install: pip install -r requirements.txt
+
+datasets>=2.16.0
+swebench>=2.1.0
+pyyaml>=6.0
+rich>=13.0

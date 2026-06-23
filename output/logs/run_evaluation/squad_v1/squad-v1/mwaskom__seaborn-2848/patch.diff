@@ -1,0 +1,60 @@
+diff --git a/doc/releases/v0.12.0.txt b/doc/releases/v0.12.0.txt
+index 82881a3b..a026fb99 100644
+--- a/doc/releases/v0.12.0.txt
++++ b/doc/releases/v0.12.0.txt
+@@ -61,6 +61,8 @@ Other updates
+ 
+ - |Fix| Fixed a bug in :class:`PairGrid` where and error would be raised when defining `hue` only in the mapping methods (:pr:`2847`).
+ 
++- |Fix| Fixed a bug in :func:`scatterplot` where an error would be raised when `hue_order` was a subset of the hue levels (:pr:`2848`).
++
+ - |Fix| Subplot titles will no longer be reset when calling :meth:`FacetGrid.map` or :meth:`FacetGrid.map_dataframe` (:pr:`2705`).
+ 
+ - |Fix| In :func:`lineplot`, allowed the `dashes` keyword to set the style of a line without mapping a `style` variable (:pr:`2449`).
+diff --git a/seaborn/_oldcore.py b/seaborn/_oldcore.py
+index c9218c1f..8821a5de 100644
+--- a/seaborn/_oldcore.py
++++ b/seaborn/_oldcore.py
+@@ -149,6 +149,13 @@ class HueMapping(SemanticMapping):
+             # Use a value that's in the original data vector
+             value = self.lookup_table[key]
+         except KeyError:
++
++            if self.norm is None:
++                # Currently we only get here in scatterplot with hue_order,
++                # because scatterplot does not consider hue a grouping variable
++                # So unused hue levels are in the data, but not the lookup table
++                return (0, 0, 0, 0)
++
+             # Use the colormap to interpolate between existing datapoints
+             # (e.g. in the context of making a continuous legend)
+             try:
+diff --git a/tests/test_relational.py b/tests/test_relational.py
+index eb8d635c..f98cace2 100644
+--- a/tests/test_relational.py
++++ b/tests/test_relational.py
+@@ -9,6 +9,7 @@ from numpy.testing import assert_array_equal
+ 
+ from seaborn.external.version import Version
+ from seaborn.palettes import color_palette
++from seaborn._oldcore import categorical_order
+ 
+ from seaborn.relational import (
+     _RelationalPlotter,
+@@ -1623,6 +1624,16 @@ class TestScatterPlotter(SharedAxesLevelTests, Helpers):
+         _draw_figure(ax.figure)
+         assert_array_equal(ax.collections[0].get_facecolors(), colors)
+ 
++    def test_hue_order(self, long_df):
++
++        order = categorical_order(long_df["a"])
++        unused = order.pop()
++
++        ax = scatterplot(data=long_df, x="x", y="y", hue="a", hue_order=order)
++        points = ax.collections[0]
++        assert (points.get_facecolors()[long_df["a"] == unused] == 0).all()
++        assert [t.get_text() for t in ax.legend_.texts] == order
++
+     def test_linewidths(self, long_df):
+ 
+         f, ax = plt.subplots()

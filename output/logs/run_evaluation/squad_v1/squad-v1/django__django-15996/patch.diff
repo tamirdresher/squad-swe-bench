@@ -1,0 +1,110 @@
+diff --git a/django/db/migrations/serializer.py b/django/db/migrations/serializer.py
+index 38da1e6ecc..1e7ff90c85 100644
+--- a/django/db/migrations/serializer.py
++++ b/django/db/migrations/serializer.py
+@@ -16,7 +16,7 @@ from django.db import models
+ from django.db.migrations.operations.base import Operation
+ from django.db.migrations.utils import COMPILED_REGEX_TYPE, RegexObject
+ from django.utils.functional import LazyObject, Promise
+-from django.utils.version import get_docs_version
++from django.utils.version import PY311, get_docs_version
+ 
+ 
+ class BaseSerializer:
+@@ -125,8 +125,21 @@ class EnumSerializer(BaseSerializer):
+     def serialize(self):
+         enum_class = self.value.__class__
+         module = enum_class.__module__
++        if issubclass(enum_class, enum.Flag):
++            if PY311:
++                members = list(self.value)
++            else:
++                members, _ = enum._decompose(enum_class, self.value)
++                members = reversed(members)
++        else:
++            members = [self.value]
+         return (
+-            "%s.%s[%r]" % (module, enum_class.__qualname__, self.value.name),
++            " | ".join(
++                [
++                    f"{module}.{enum_class.__qualname__}[{item.name!r}]"
++                    for item in members
++                ]
++            ),
+             {"import %s" % module},
+         )
+ 
+diff --git a/docs/releases/4.2.txt b/docs/releases/4.2.txt
+index 0c80c5b103..45a4587096 100644
+--- a/docs/releases/4.2.txt
++++ b/docs/releases/4.2.txt
+@@ -160,7 +160,8 @@ Management Commands
+ Migrations
+ ~~~~~~~~~~
+ 
+-* ...
++* Migrations now support serialization of combinations of ``enum.Flag`` (and
++  ``enum.IntFlag``) members.
+ 
+ Models
+ ~~~~~~
+diff --git a/tests/migrations/test_writer.py b/tests/migrations/test_writer.py
+index 6ec6d938b9..b2c96792ff 100644
+--- a/tests/migrations/test_writer.py
++++ b/tests/migrations/test_writer.py
+@@ -80,6 +80,11 @@ class IntEnum(enum.IntEnum):
+     B = 2
+ 
+ 
++class IntFlagEnum(enum.IntFlag):
++    A = 1
++    B = 2
++
++
+ class OperationWriterTests(SimpleTestCase):
+     def test_empty_signature(self):
+         operation = custom_migration_operations.operations.TestOperation()
+@@ -382,6 +387,43 @@ class WriterTests(SimpleTestCase):
+             "default=migrations.test_writer.IntEnum['A'])",
+         )
+ 
++    def test_serialize_enum_flags(self):
++        self.assertSerializedResultEqual(
++            IntFlagEnum.A,
++            (
++                "migrations.test_writer.IntFlagEnum['A']",
++                {"import migrations.test_writer"},
++            ),
++        )
++        self.assertSerializedResultEqual(
++            IntFlagEnum.B,
++            (
++                "migrations.test_writer.IntFlagEnum['B']",
++                {"import migrations.test_writer"},
++            ),
++        )
++        self.assertSerializedResultEqual(
++            IntFlagEnum.A | IntFlagEnum.B,
++            (
++                "migrations.test_writer.IntFlagEnum['A'] | "
++                "migrations.test_writer.IntFlagEnum['B']",
++                {"import migrations.test_writer"},
++            ),
++        )
++        field = models.IntegerField(
++            default=IntFlagEnum.A | IntFlagEnum.B,
++            choices=[(m.value, m) for m in IntFlagEnum],
++        )
++        string = MigrationWriter.serialize(field)[0]
++        self.assertEqual(
++            string,
++            "models.IntegerField(choices=["
++            "(1, migrations.test_writer.IntFlagEnum['A']), "
++            "(2, migrations.test_writer.IntFlagEnum['B'])], "
++            "default=migrations.test_writer.IntFlagEnum['A'] | "
++            "migrations.test_writer.IntFlagEnum['B'])",
++        )
++
+     def test_serialize_choices(self):
+         class TextChoices(models.TextChoices):
+             A = "A", "A value"

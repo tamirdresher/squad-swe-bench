@@ -1,0 +1,231 @@
+2026-06-23 05:31:25,363 - INFO - Creating container for django__django-17051...
+2026-06-23 05:31:33,317 - INFO - Container for django__django-17051 created: 86470f075548f2b40c62b9d92f923eab4938728616b6956b995f6cd3c410baa9
+2026-06-23 05:31:33,887 - INFO - Container for django__django-17051 started: 86470f075548f2b40c62b9d92f923eab4938728616b6956b995f6cd3c410baa9
+2026-06-23 05:31:33,901 - INFO - Intermediate patch for django__django-17051 written to logs/run_evaluation/squad_v1/squad-v1/django__django-17051/patch.diff, now applying to container...
+2026-06-23 05:31:34,545 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:31:34,751 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:31:35,077 - INFO - >>>>> Applied Patch:
+patching file django/db/models/query.py
+Hunk #2 succeeded at 795 (offset 1 line).
+Hunk #3 succeeded at 1835 (offset 11 lines).
+patching file docs/ref/models/querysets.txt
+Hunk #1 succeeded at 2411 (offset 72 lines).
+patching file docs/releases/4.2.txt
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 308 with fuzz 2 (offset 25 lines).
+
+2026-06-23 05:31:37,194 - INFO - Git diff before:
+diff --git a/django/db/models/query.py b/django/db/models/query.py
+index 5ac2407ea3..144052d61b 100644
+--- a/django/db/models/query.py
++++ b/django/db/models/query.py
+@@ -5,6 +5,7 @@ The main QuerySet implementation. This provides the public API for the ORM.
+ import copy
+ import operator
+ import warnings
++from contextlib import nullcontext
+ from itertools import chain, islice
+ 
+ from asgiref.sync import sync_to_async
+@@ -794,8 +795,7 @@ class QuerySet(AltersData):
+                 )
+                 for obj_with_pk, results in zip(objs_with_pk, returned_columns):
+                     for result, field in zip(results, opts.db_returning_fields):
+-                        if field != opts.pk:
+-                            setattr(obj_with_pk, field.attname, result)
++                        setattr(obj_with_pk, field.attname, result)
+                 for obj_with_pk in objs_with_pk:
+                     obj_with_pk._state.adding = False
+                     obj_with_pk._state.db = self.db
+@@ -1835,26 +1835,32 @@ class QuerySet(AltersData):
+         max_batch_size = max(ops.bulk_batch_size(fields, objs), 1)
+         batch_size = min(batch_size, max_batch_size) if batch_size else max_batch_size
+         inserted_rows = []
+-        bulk_return = connection.features.can_return_rows_from_bulk_insert
+-        for item in [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]:
+-            if bulk_return and on_conflict is None:
++        returning_fields = (
++            self.model._meta.db_returning_fields
++            if (
++                connection.features.can_return_rows_from_bulk_insert
++                and (on_conflict is None or on_conflict == OnConflict.UPDATE)
++            )
++            else None
++        )
++        batches = [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]
++        if len(batches) > 1:
++            context = transaction.atomic(using=self.db, savepoint=False)
++        else:
++            context = nullcontext()
++        with context:
++            for item in batches:
+                 inserted_rows.extend(
+                     self._insert(
+                         item,
+                         fields=fields,
+                         using=self.db,
+-                        returning_fields=self.model._meta.db_returning_fields,
++                        on_conflict=on_conflict,
++                        update_fields=update_fields,
++                        unique_fields=unique_fields,
++                        returning_fields=returning_fields,
+                     )
+                 )
+-            else:
+-                self._insert(
+-                    item,
+-                    fields=fields,
+-                    using=self.db,
+-                    on_conflict=on_conflict,
+-                    update_fields=update_fields,
+-                    unique_fields=unique_fields,
+-                )
+         return inserted_rows
+ 
+     def _chain(self):
+diff --git a/docs/ref/models/querysets.txt b/docs/ref/models/querysets.txt
+index a754953264..adab820e48 100644
+--- a/docs/ref/models/querysets.txt
++++ b/docs/ref/models/querysets.txt
+@@ -2411,9 +2411,11 @@ On databases that support it (all except Oracle and SQLite < 3.24), setting the
+ SQLite, in addition to ``update_fields``, a list of ``unique_fields`` that may
+ be in conflict must be provided.
+ 
+-Enabling the ``ignore_conflicts`` or ``update_conflicts`` parameter disable
+-setting the primary key on each model instance (if the database normally
+-support it).
++Enabling the ``ignore_conflicts`` parameter disables setting the primary key
++on each model instance (if the database normally supports it).
++
++Enabling the ``update_conflicts`` parameter sets the primary key on each model
++instance (if the database normally supports it).
+ 
+ .. warning::
+ 
+diff --git a/docs/releases/4.2.txt b/docs/releases/4.2.txt
+index 7d7848708d..8d70f68235 100644
+--- a/docs/releases/4.2.txt
++++ b/docs/releases/4.2.txt
+@@ -308,6 +308,10 @@ Models
+   longer required to be set on PostgreSQL, which supports unlimited ``VARCHAR``
+   columns.
+ 
++* :meth:`.QuerySet.bulk_create` now sets the primary key on objects when the
++  ``update_conflicts`` parameter is enabled, on databases that support
++  returning rows from bulk insert (PostgreSQL, MariaDB, and SQLite 3.35+).
++
+ Requests and Responses
+ ~~~~~~~~~~~~~~~~~~~~~~
+2026-06-23 05:31:37,208 - INFO - Eval script for django__django-17051 written to logs/run_evaluation/squad_v1/squad-v1/django__django-17051/eval.sh; copying to container...
+2026-06-23 05:31:57,146 - INFO - Test runtime: 16.12 seconds
+2026-06-23 05:31:58,564 - INFO - Test output for django__django-17051 written to logs/run_evaluation/squad_v1/squad-v1/django__django-17051/test_output.txt
+2026-06-23 05:31:58,946 - INFO - Git diff after:
+diff --git a/django/db/models/query.py b/django/db/models/query.py
+index 5ac2407ea3..144052d61b 100644
+--- a/django/db/models/query.py
++++ b/django/db/models/query.py
+@@ -5,6 +5,7 @@ The main QuerySet implementation. This provides the public API for the ORM.
+ import copy
+ import operator
+ import warnings
++from contextlib import nullcontext
+ from itertools import chain, islice
+ 
+ from asgiref.sync import sync_to_async
+@@ -794,8 +795,7 @@ class QuerySet(AltersData):
+                 )
+                 for obj_with_pk, results in zip(objs_with_pk, returned_columns):
+                     for result, field in zip(results, opts.db_returning_fields):
+-                        if field != opts.pk:
+-                            setattr(obj_with_pk, field.attname, result)
++                        setattr(obj_with_pk, field.attname, result)
+                 for obj_with_pk in objs_with_pk:
+                     obj_with_pk._state.adding = False
+                     obj_with_pk._state.db = self.db
+@@ -1835,26 +1835,32 @@ class QuerySet(AltersData):
+         max_batch_size = max(ops.bulk_batch_size(fields, objs), 1)
+         batch_size = min(batch_size, max_batch_size) if batch_size else max_batch_size
+         inserted_rows = []
+-        bulk_return = connection.features.can_return_rows_from_bulk_insert
+-        for item in [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]:
+-            if bulk_return and on_conflict is None:
++        returning_fields = (
++            self.model._meta.db_returning_fields
++            if (
++                connection.features.can_return_rows_from_bulk_insert
++                and (on_conflict is None or on_conflict == OnConflict.UPDATE)
++            )
++            else None
++        )
++        batches = [objs[i : i + batch_size] for i in range(0, len(objs), batch_size)]
++        if len(batches) > 1:
++            context = transaction.atomic(using=self.db, savepoint=False)
++        else:
++            context = nullcontext()
++        with context:
++            for item in batches:
+                 inserted_rows.extend(
+                     self._insert(
+                         item,
+                         fields=fields,
+                         using=self.db,
+-                        returning_fields=self.model._meta.db_returning_fields,
++                        on_conflict=on_conflict,
++                        update_fields=update_fields,
++                        unique_fields=unique_fields,
++                        returning_fields=returning_fields,
+                     )
+                 )
+-            else:
+-                self._insert(
+-                    item,
+-                    fields=fields,
+-                    using=self.db,
+-                    on_conflict=on_conflict,
+-                    update_fields=update_fields,
+-                    unique_fields=unique_fields,
+-                )
+         return inserted_rows
+ 
+     def _chain(self):
+diff --git a/docs/ref/models/querysets.txt b/docs/ref/models/querysets.txt
+index a754953264..adab820e48 100644
+--- a/docs/ref/models/querysets.txt
++++ b/docs/ref/models/querysets.txt
+@@ -2411,9 +2411,11 @@ On databases that support it (all except Oracle and SQLite < 3.24), setting the
+ SQLite, in addition to ``update_fields``, a list of ``unique_fields`` that may
+ be in conflict must be provided.
+ 
+-Enabling the ``ignore_conflicts`` or ``update_conflicts`` parameter disable
+-setting the primary key on each model instance (if the database normally
+-support it).
++Enabling the ``ignore_conflicts`` parameter disables setting the primary key
++on each model instance (if the database normally supports it).
++
++Enabling the ``update_conflicts`` parameter sets the primary key on each model
++instance (if the database normally supports it).
+ 
+ .. warning::
+ 
+diff --git a/docs/releases/4.2.txt b/docs/releases/4.2.txt
+index 7d7848708d..8d70f68235 100644
+--- a/docs/releases/4.2.txt
++++ b/docs/releases/4.2.txt
+@@ -308,6 +308,10 @@ Models
+   longer required to be set on PostgreSQL, which supports unlimited ``VARCHAR``
+   columns.
+ 
++* :meth:`.QuerySet.bulk_create` now sets the primary key on objects when the
++  ``update_conflicts`` parameter is enabled, on databases that support
++  returning rows from bulk insert (PostgreSQL, MariaDB, and SQLite 3.35+).
++
+ Requests and Responses
+ ~~~~~~~~~~~~~~~~~~~~~~
+2026-06-23 05:31:58,946 - INFO - Grading answer for django__django-17051...
+2026-06-23 05:31:58,958 - INFO - report: {'django__django-17051': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_update_conflicts_two_fields_unique_fields_first (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_first)', 'test_update_conflicts_two_fields_unique_fields_second (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_second)', 'test_update_conflicts_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields)', 'test_update_conflicts_unique_fields_update_fields_db_column (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_update_fields_db_column)', 'test_update_conflicts_unique_two_fields_unique_fields_both (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_two_fields_unique_fields_both)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_batch_same_vals (bulk_create.tests.BulkCreateTests.test_batch_same_vals)', 'test_bulk_insert_expressions (bulk_create.tests.BulkCreateTests.test_bulk_insert_expressions)', 'test_bulk_insert_now (bulk_create.tests.BulkCreateTests.test_bulk_insert_now)', 'test_bulk_insert_nullable_fields (bulk_create.tests.BulkCreateTests.test_bulk_insert_nullable_fields)', 'test_efficiency (bulk_create.tests.BulkCreateTests.test_efficiency)', 'test_empty_model (bulk_create.tests.BulkCreateTests.test_empty_model)', 'test_explicit_batch_size (bulk_create.tests.BulkCreateTests.test_explicit_batch_size)', 'test_explicit_batch_size_efficiency (bulk_create.tests.BulkCreateTests.test_explicit_batch_size_efficiency)', 'test_explicit_batch_size_respects_max_batch_size (bulk_create.tests.BulkCreateTests.test_explicit_batch_size_respects_max_batch_size)', 'test_ignore_conflicts_ignore (bulk_create.tests.BulkCreateTests.test_ignore_conflicts_ignore)', 'test_ignore_update_conflicts_exclusive (bulk_create.tests.BulkCreateTests.test_ignore_update_conflicts_exclusive)', 'test_invalid_batch_size_exception (bulk_create.tests.BulkCreateTests.test_invalid_batch_size_exception)', 'test_large_batch (bulk_create.tests.BulkCreateTests.test_large_batch)', 'test_large_batch_efficiency (bulk_create.tests.BulkCreateTests.test_large_batch_efficiency)', 'Test inserting a large batch with objects having primary key set', 'test_large_single_field_batch (bulk_create.tests.BulkCreateTests.test_large_single_field_batch)', 'test_long_and_short_text (bulk_create.tests.BulkCreateTests.test_long_and_short_text)', 'Inserting non-ASCII values with a length in the range 2001 to 4000', 'test_multi_table_inheritance_unsupported (bulk_create.tests.BulkCreateTests.test_multi_table_inheritance_unsupported)', 'test_non_auto_increment_pk (bulk_create.tests.BulkCreateTests.test_non_auto_increment_pk)', 'test_non_auto_increment_pk_efficiency (bulk_create.tests.BulkCreateTests.test_non_auto_increment_pk_efficiency)', 'test_nullable_fk_after_parent (bulk_create.tests.BulkCreateTests.test_nullable_fk_after_parent)', 'test_nullable_fk_after_parent_bulk_create (bulk_create.tests.BulkCreateTests.test_nullable_fk_after_parent_bulk_create)', 'test_proxy_inheritance_supported (bulk_create.tests.BulkCreateTests.test_proxy_inheritance_supported)', 'test_set_pk_and_insert_single_item (bulk_create.tests.BulkCreateTests.test_set_pk_and_insert_single_item)', 'test_set_pk_and_query_efficiency (bulk_create.tests.BulkCreateTests.test_set_pk_and_query_efficiency)', 'test_set_state (bulk_create.tests.BulkCreateTests.test_set_state)', 'test_set_state_with_pk_specified (bulk_create.tests.BulkCreateTests.test_set_state_with_pk_specified)', 'test_simple (bulk_create.tests.BulkCreateTests.test_simple)', 'test_unsaved_parent (bulk_create.tests.BulkCreateTests.test_unsaved_parent)', 'test_update_conflicts_invalid_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_invalid_unique_fields)', 'test_update_conflicts_invalid_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_invalid_update_fields)', 'test_update_conflicts_no_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_no_update_fields)', 'test_update_conflicts_nonexistent_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_nonexistent_update_fields)', 'test_update_conflicts_pk_in_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_pk_in_update_fields)', 'test_update_conflicts_two_fields_unique_fields_both (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_both)', 'test_update_conflicts_unique_fields_pk (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_pk)', 'test_update_conflicts_unique_fields_required (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_required)', 'test_update_conflicts_unique_two_fields_unique_fields_one (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_two_fields_unique_fields_one)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-17051: resolved: True
+2026-06-23 05:31:58,966 - INFO - Attempting to stop container sweb.eval.django__django-17051.squad_v1...
+2026-06-23 05:32:17,627 - INFO - Attempting to remove container sweb.eval.django__django-17051.squad_v1...
+2026-06-23 05:32:18,181 - INFO - Container sweb.eval.django__django-17051.squad_v1 removed.
+2026-06-23 05:32:18,182 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-17051:latest...
+2026-06-23 05:32:24,876 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-17051:latest removed.

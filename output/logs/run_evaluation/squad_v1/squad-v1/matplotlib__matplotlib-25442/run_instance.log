@@ -1,0 +1,3377 @@
+2026-06-23 06:07:34,558 - INFO - Creating container for matplotlib__matplotlib-25442...
+2026-06-23 06:07:40,186 - INFO - Container for matplotlib__matplotlib-25442 created: b4a1ee77c18fea696955a1cf1d6146b50b5a9b4e9fcb56886473243e340f1dd8
+2026-06-23 06:07:40,820 - INFO - Container for matplotlib__matplotlib-25442 started: b4a1ee77c18fea696955a1cf1d6146b50b5a9b4e9fcb56886473243e340f1dd8
+2026-06-23 06:07:40,832 - INFO - Intermediate patch for matplotlib__matplotlib-25442 written to logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/patch.diff, now applying to container...
+2026-06-23 06:07:41,176 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 06:07:41,356 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 06:07:41,542 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 06:07:41,543 - INFO - >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+2026-06-23 06:07:41,578 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:07:41,579 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,579 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,580 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,580 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,581 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,582 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,583 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,584 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,586 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,586 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,587 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,587 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,588 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,588 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,589 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,590 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,590 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,592 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,594 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,594 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,596 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,597 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,598 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,599 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,603 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,641 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,659 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,659 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,660 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,661 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,664 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,665 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,665 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,666 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,666 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,668 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,669 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,670 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,670 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,671 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,671 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,672 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,674 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,675 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,681 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,682 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,683 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,684 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,684 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,685 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,686 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,686 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,687 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,689 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,689 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,690 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,691 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,695 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,697 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,698 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,698 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,699 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,701 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,702 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,703 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,703 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,704 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,705 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,706 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,707 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,712 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,713 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,714 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,714 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,715 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,715 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,716 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,716 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,717 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,717 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,718 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,718 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,730 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,732 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,733 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,734 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,735 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,736 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:41,736 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,808 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 06:07:43,809 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,810 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,810 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,811 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,812 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,813 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,814 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,815 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,815 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,816 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,816 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,817 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,817 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,818 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,818 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,819 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,819 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,820 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,822 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,822 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,823 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,823 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,824 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,825 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,825 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,826 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,826 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,827 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,827 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,828 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,828 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,829 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,830 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,830 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,831 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,831 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,832 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,833 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,833 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,834 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,834 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,835 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,835 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,836 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,836 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,837 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,837 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,838 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,838 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,838 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,839 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,839 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,840 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,840 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,841 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,841 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,842 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,842 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,843 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,843 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,844 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,844 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,845 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,845 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,846 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,846 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,847 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,847 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,848 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,848 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,849 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,850 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,851 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,851 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,853 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,853 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:43,854 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,915 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,927 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,928 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,930 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,931 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,934 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,939 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,945 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,949 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,954 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,962 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,968 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,976 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,978 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,981 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,983 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,984 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,984 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,987 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,989 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,989 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,990 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,992 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,996 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,998 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:49,999 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,004 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,005 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,006 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,007 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,008 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,008 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,010 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,012 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,013 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,013 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,014 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,015 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,017 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,018 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,020 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,022 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,023 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,025 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,026 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,027 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,029 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,030 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,031 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,033 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,034 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,035 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,035 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,036 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,038 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,041 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,041 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,042 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,044 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,045 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,047 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,051 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: matplotlib__matplotlib-25442: >>>>> Patch Apply Failed:
+patching file lib/matplotlib/offsetbox.py
+patch: **** malformed patch at line 64:  
+
+patching file lib/matplotlib/tests/test_offsetbox.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/matplotlib__matplotlib-25442/run_instance.log) for more information.
+
+2026-06-23 06:07:50,053 - INFO - Attempting to stop container sweb.eval.matplotlib__matplotlib-25442.squad_v1...
+2026-06-23 06:08:08,690 - INFO - Attempting to remove container sweb.eval.matplotlib__matplotlib-25442.squad_v1...
+2026-06-23 06:08:08,886 - INFO - Container sweb.eval.matplotlib__matplotlib-25442.squad_v1 removed.
+2026-06-23 06:08:08,887 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25442:latest...
+2026-06-23 06:08:13,198 - INFO - Image swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-25442:latest removed.

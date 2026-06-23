@@ -1,0 +1,34 @@
+diff --git a/sympy/functions/elementary/complexes.py b/sympy/functions/elementary/complexes.py
+index 7fda45982b..27eefa7e7e 100644
+--- a/sympy/functions/elementary/complexes.py
++++ b/sympy/functions/elementary/complexes.py
+@@ -394,6 +394,9 @@ def _eval_rewrite_as_Heaviside(self, arg, **kwargs):
+         if arg.is_extended_real:
+             return Heaviside(arg, H0=S(1)/2) * 2 - 1
+ 
++    def _eval_rewrite_as_Abs(self, arg, **kwargs):
++        return Piecewise((0, Eq(arg, 0)), (arg / Abs(arg), True))
++
+     def _eval_simplify(self, **kwargs):
+         return self.func(self.args[0].factor())  # XXX include doit?
+ 
+diff --git a/sympy/functions/elementary/tests/test_complexes.py b/sympy/functions/elementary/tests/test_complexes.py
+index adb6cf0d83..f30bf6f957 100644
+--- a/sympy/functions/elementary/tests/test_complexes.py
++++ b/sympy/functions/elementary/tests/test_complexes.py
+@@ -1,6 +1,6 @@
+ from sympy import (
+     Abs, acos, adjoint, arg, atan, atan2, conjugate, cos, DiracDelta,
+-    E, exp, expand, Expr, Function, Heaviside, I, im, log, nan, oo,
++    E, Eq, exp, expand, Expr, Function, Heaviside, I, im, log, nan, oo,
+     pi, Rational, re, S, sign, sin, sqrt, Symbol, symbols, transpose,
+     zoo, exp_polar, Piecewise, Interval, comp, Integral, Matrix,
+     ImmutableMatrix, SparseMatrix, ImmutableSparseMatrix, MatrixSymbol,
+@@ -301,6 +301,7 @@ def test_sign():
+     assert sign(y).rewrite(Piecewise) == sign(y)
+     assert sign(x).rewrite(Heaviside) == 2*Heaviside(x, H0=S(1)/2) - 1
+     assert sign(y).rewrite(Heaviside) == sign(y)
++    assert sign(x).rewrite(Abs) == Piecewise((0, Eq(x, 0)), (x/Abs(x), True))
+ 
+     # evaluate what can be evaluated
+     assert sign(exp_polar(I*pi)*pi) is S.NegativeOne

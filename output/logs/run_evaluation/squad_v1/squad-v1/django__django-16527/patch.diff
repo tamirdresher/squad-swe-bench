@@ -1,0 +1,70 @@
+diff --git a/django/contrib/admin/templatetags/admin_modify.py b/django/contrib/admin/templatetags/admin_modify.py
+index 9df4b7aadb..5b742af46a 100644
+--- a/django/contrib/admin/templatetags/admin_modify.py
++++ b/django/contrib/admin/templatetags/admin_modify.py
+@@ -100,6 +100,7 @@ def submit_row(context):
+                 and context.get("show_delete", True)
+             ),
+             "show_save_as_new": not is_popup
++            and has_add_permission
+             and has_change_permission
+             and change
+             and save_as,
+diff --git a/tests/admin_views/test_templatetags.py b/tests/admin_views/test_templatetags.py
+index a13133095b..72053e83f4 100644
+--- a/tests/admin_views/test_templatetags.py
++++ b/tests/admin_views/test_templatetags.py
+@@ -4,7 +4,8 @@ from django.contrib.admin import ModelAdmin
+ from django.contrib.admin.templatetags.admin_list import date_hierarchy
+ from django.contrib.admin.templatetags.admin_modify import submit_row
+ from django.contrib.auth.admin import UserAdmin
+-from django.contrib.auth.models import User
++from django.contrib.auth.models import Permission, User
++from django.contrib.contenttypes.models import ContentType
+ from django.test import RequestFactory, TestCase
+ from django.urls import reverse
+ 
+@@ -16,6 +17,11 @@ from .tests import AdminViewBasicTestCase
+ class AdminTemplateTagsTest(AdminViewBasicTestCase):
+     request_factory = RequestFactory()
+ 
++    @classmethod
++    def setUpTestData(cls):
++        super().setUpTestData()
++        cls.user_content_type = ContentType.objects.get_for_model(User)
++
+     def test_submit_row(self):
+         """
+         submit_row template tag should pass whole context.
+@@ -33,6 +39,31 @@ class AdminTemplateTagsTest(AdminViewBasicTestCase):
+         self.assertIs(template_context["extra"], True)
+         self.assertIs(template_context["show_save"], True)
+ 
++    def test_submit_row_save_as_new_add_permission_required(self):
++        change_user = User.objects.create_user(
++            username="change_user", password="secret", is_staff=True
++        )
++        permission = Permission.objects.get(
++            codename="change_user", content_type=self.user_content_type
++        )
++        change_user.user_permissions.add(permission)
++        request = self.request_factory.get(
++            reverse("admin:auth_user_change", args=[self.superuser.pk])
++        )
++        request.user = change_user
++        admin = UserAdmin(User, site)
++        admin.save_as = True
++        response = admin.change_view(request, str(self.superuser.pk))
++        template_context = submit_row(response.context_data)
++        # A user with only change permission (no add permission) must not see
++        # "Save as new", because it performs an add operation.
++        self.assertIs(template_context["show_save_as_new"], False)
++        # A superuser has add permission, so "Save as new" is available.
++        request.user = self.superuser
++        response = admin.change_view(request, str(self.superuser.pk))
++        template_context = submit_row(response.context_data)
++        self.assertIs(template_context["show_save_as_new"], True)
++
+     def test_override_show_save_and_add_another(self):
+         request = self.request_factory.get(
+             reverse("admin:auth_user_change", args=[self.superuser.pk]),

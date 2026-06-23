@@ -1,0 +1,103 @@
+diff --git a/lib/matplotlib/tests/test_widgets.py b/lib/matplotlib/tests/test_widgets.py
+index 2f6910f568..c70bc8f9fc 100644
+--- a/lib/matplotlib/tests/test_widgets.py
++++ b/lib/matplotlib/tests/test_widgets.py
+@@ -1328,6 +1328,42 @@ def test_range_slider(orientation):
+     assert_allclose(handle_positions(slider), (0.1, 0.34))
+ 
+ 
++@pytest.mark.parametrize("widget", ["Slider", "RangeSlider"])
++def test_slider_callback_clf_releases_grab(widget):
++    # Regression test for the bug where clearing the figure inside a Slider /
++    # RangeSlider ``on_changed`` callback (e.g. ``pyplot.clf()`` + redraw) left
++    # the canvas mouse grab pinned to the now-destroyed Axes, which blocked all
++    # further mouse input to every widget in the figure.  Removing the Axes
++    # must release the grab (see Figure.delaxes), unlike Button which already
++    # releases the grab before invoking its callback.
++    fig, ax = plt.subplots()
++
++    if widget == "Slider":
++        tool = widgets.Slider(ax, "", valmin=0.0, valmax=10.0, valinit=5.0)
++    else:
++        tool = widgets.RangeSlider(ax, "", valmin=0.0, valmax=10.0,
++                                   valinit=(1.0, 9.0))
++
++    def onchanged(val):
++        # Simulate the user callback that clears the figure and rebuilds it.
++        fig.clear()
++        fig.canvas.draw()
++
++    tool.on_changed(onchanged)
++
++    # Press on the slider axes at a value different from valinit: this grabs the
++    # mouse and fires ``on_changed`` via ``set_val``, whose callback clears the
++    # figure (removing ``ax``).
++    transform = ax.transData
++    MouseEvent(
++        "button_press_event", fig.canvas, *transform.transform((8, 0.5)), 1
++    )._process()
++
++    # The Axes that grabbed the mouse has been removed, so the grab must have
++    # been released -- otherwise no other widget could ever grab the mouse.
++    assert fig.canvas.mouse_grabber is None
++
++
+ @pytest.mark.parametrize("orientation", ["horizontal", "vertical"])
+ def test_range_slider_same_init_values(orientation):
+     if orientation == "vertical":
+diff --git a/lib/mpl_toolkits/axes_grid1/axes_grid.py b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+index 2b1b1d3200..8b947a5836 100644
+--- a/lib/mpl_toolkits/axes_grid1/axes_grid.py
++++ b/lib/mpl_toolkits/axes_grid1/axes_grid.py
+@@ -1,5 +1,6 @@
+ from numbers import Number
+ import functools
++from types import MethodType
+ 
+ import numpy as np
+ 
+@@ -7,14 +8,20 @@ from matplotlib import _api, cbook
+ from matplotlib.gridspec import SubplotSpec
+ 
+ from .axes_divider import Size, SubplotDivider, Divider
+-from .mpl_axes import Axes
++from .mpl_axes import Axes, SimpleAxisArtist
+ 
+ 
+ def _tick_only(ax, bottom_on, left_on):
+     bottom_off = not bottom_on
+     left_off = not left_on
+-    ax.axis["bottom"].toggle(ticklabels=bottom_off, label=bottom_off)
+-    ax.axis["left"].toggle(ticklabels=left_off, label=left_off)
++    if isinstance(ax.axis, MethodType):
++        bottom = SimpleAxisArtist(ax.xaxis, 1, ax.spines["bottom"])
++        left = SimpleAxisArtist(ax.yaxis, 1, ax.spines["left"])
++    else:
++        bottom = ax.axis["bottom"]
++        left = ax.axis["left"]
++    bottom.toggle(ticklabels=bottom_off, label=bottom_off)
++    left.toggle(ticklabels=left_off, label=left_off)
+ 
+ 
+ class CbarAxesBase:
+diff --git a/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py b/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
+index d1554020cd..d808fa4429 100644
+--- a/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
++++ b/lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py
+@@ -592,6 +592,16 @@ def test_axes_class_tuple():
+     gr = AxesGrid(fig, 111, nrows_ncols=(1, 1), axes_class=axes_class)
+ 
+ 
++def test_grid_axes_class_non_subscriptable_axis():
++    # GitHub issue: AxesGrid with an axes class whose ``.axis`` is a method
++    # (e.g. cartopy GeoAxes, or a plain matplotlib Axes) used to raise
++    # "TypeError: 'method' object is not subscriptable" inside _tick_only.
++    fig = plt.figure()
++    axes_class = (mpl.axes.Axes, {})
++    # Should not raise; label_mode="L" exercises _tick_only.
++    AxesGrid(fig, 111, nrows_ncols=(1, 1), axes_class=axes_class)
++
++
+ def test_grid_axes_lists():
+     """Test Grid axes_all, axes_row and axes_column relationship."""
+     fig = plt.figure()

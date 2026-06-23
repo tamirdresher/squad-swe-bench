@@ -1,0 +1,43 @@
+diff --git a/sympy/parsing/mathematica.py b/sympy/parsing/mathematica.py
+index 7ea14ce33a..3d6c983e09 100644
+--- a/sympy/parsing/mathematica.py
++++ b/sympy/parsing/mathematica.py
+@@ -586,7 +586,7 @@ def parse(self, s):
+         "##": lambda: ["SlotSequence", "1"],
+     }
+ 
+-    _literal = r"[A-Za-z][A-Za-z0-9]*"
++    _literal = r"[^\W\d_][^\W_]*"
+     _number = r"(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)"
+ 
+     _enclosure_open = ["(", "[", "[[", "{"]
+diff --git a/sympy/parsing/tests/test_mathematica.py b/sympy/parsing/tests/test_mathematica.py
+index f89b532ef1..c6b0ba5e59 100644
+--- a/sympy/parsing/tests/test_mathematica.py
++++ b/sympy/parsing/tests/test_mathematica.py
+@@ -1,4 +1,4 @@
+-from sympy import sin, Function, symbols, Dummy, Lambda, cos
++from sympy import sin, Function, symbols, Dummy, Lambda, cos, Symbol
+ from sympy.parsing.mathematica import parse_mathematica, MathematicaParser
+ from sympy.core.sympify import sympify
+ from sympy.abc import n, w, x, y, z
+@@ -82,6 +82,20 @@ def test_mathematica():
+     assert parse_mathematica("Function[{x, y}, x^2 + y^2]") == Lambda((x, y), x**2 + y**2)
+ 
+ 
++def test_mathematica_unicode_identifiers():
++    # Greek and other non-ASCII letters must be accepted as symbol names.
++    # Regression test for https://github.com/sympy/sympy/issues/XXXX
++    lam = Symbol('\u03bb')   # Î»
++    alpha = Symbol('\u03b1') # Î±
++    beta = Symbol('\u03b2')  # Î²
++
++    assert parse_mathematica('\u03bb') == lam
++    assert parse_mathematica('\u03bb + 1') == lam + 1
++    assert parse_mathematica('Sin[\u03bb]') == sin(lam)
++    assert parse_mathematica('\u03b1*\u03b2') == alpha * beta
++    assert parse_mathematica('\u03b1^2 + \u03b2^2') == alpha**2 + beta**2
++
++
+ def test_parser_mathematica_tokenizer():
+     parser = MathematicaParser()

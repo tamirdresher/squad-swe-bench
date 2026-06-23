@@ -1,0 +1,3377 @@
+2026-06-23 07:01:01,152 - INFO - Creating container for scikit-learn__scikit-learn-25747...
+2026-06-23 07:01:08,241 - INFO - Container for scikit-learn__scikit-learn-25747 created: 4566553d69ce75e4c274e7ec850b9aa4e71a68c129ce55a97b191f870be24f2e
+2026-06-23 07:01:08,782 - INFO - Container for scikit-learn__scikit-learn-25747 started: 4566553d69ce75e4c274e7ec850b9aa4e71a68c129ce55a97b191f870be24f2e
+2026-06-23 07:01:08,800 - INFO - Intermediate patch for scikit-learn__scikit-learn-25747 written to logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/patch.diff, now applying to container...
+2026-06-23 07:01:09,244 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:01:09,351 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:01:09,457 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 07:01:09,458 - INFO - >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+2026-06-23 07:01:09,478 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:01:09,479 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,480 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,481 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,482 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,483 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,484 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,485 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,485 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,486 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,487 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,488 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,489 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,490 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,491 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,492 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,493 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,494 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,495 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,496 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,497 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,498 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,499 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,500 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,501 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,502 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,503 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,504 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,505 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,506 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,507 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,508 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,509 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,510 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,511 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,512 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,513 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,514 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,515 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,516 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,517 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,518 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,519 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,520 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,521 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,522 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,523 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,524 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,525 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,526 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,527 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,527 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,528 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,529 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,530 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,531 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,532 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,533 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,534 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,535 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,536 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,537 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,538 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,539 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,539 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,540 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,540 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,541 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,541 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,542 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,543 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,544 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,545 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,546 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,547 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,548 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,549 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,550 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,551 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,551 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,552 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,553 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,553 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,554 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,555 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,556 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,557 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,557 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,558 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,559 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,559 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,560 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,560 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,560 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,561 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,586 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 07:01:09,586 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,587 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,587 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,588 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,589 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,589 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,590 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,590 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,591 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,592 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,592 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,593 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,594 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,594 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,595 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,596 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,596 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,597 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,597 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,598 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,598 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,599 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,600 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,601 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,602 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,603 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,604 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,605 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,605 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,606 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,607 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,607 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,608 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,609 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,609 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,610 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,610 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,611 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,611 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,612 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,612 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,613 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,614 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,615 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,616 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,617 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,618 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,619 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,620 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,621 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,622 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,623 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,623 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,624 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,625 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,626 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,627 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,628 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,629 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,630 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,631 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,632 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,633 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,634 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,635 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,636 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,637 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,638 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,639 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,640 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,641 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,641 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,642 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,643 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,644 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,645 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,646 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,647 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,648 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,649 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,650 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,651 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,652 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,653 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,654 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,655 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,655 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,656 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,656 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,657 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,658 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,659 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: scikit-learn__scikit-learn-25747: >>>>> Patch Apply Failed:
+patching file sklearn/utils/_set_output.py
+patch: **** malformed patch at line 70:  
+
+patching file sklearn/utils/tests/test_set_output.py
+patch unexpectedly ends in middle of line
+
+Check (logs/run_evaluation/squad_v1/squad-v1/scikit-learn__scikit-learn-25747/run_instance.log) for more information.
+
+2026-06-23 07:01:09,659 - INFO - Attempting to stop container sweb.eval.scikit-learn__scikit-learn-25747.squad_v1...
+2026-06-23 07:01:25,318 - INFO - Attempting to remove container sweb.eval.scikit-learn__scikit-learn-25747.squad_v1...
+2026-06-23 07:01:25,444 - INFO - Container sweb.eval.scikit-learn__scikit-learn-25747.squad_v1 removed.
+2026-06-23 07:01:25,444 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25747:latest...
+2026-06-23 07:01:27,536 - INFO - Image swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-25747:latest removed.

@@ -1,0 +1,110 @@
+2026-06-23 07:04:39,438 - INFO - Creating container for sphinx-doc__sphinx-8721...
+2026-06-23 07:04:40,208 - INFO - Container for sphinx-doc__sphinx-8721 created: b3bbe5f8568a4b85aa102b35acd66881c6769637c00860310abeee0246a6cd9a
+2026-06-23 07:04:40,639 - INFO - Container for sphinx-doc__sphinx-8721 started: b3bbe5f8568a4b85aa102b35acd66881c6769637c00860310abeee0246a6cd9a
+2026-06-23 07:04:40,651 - INFO - Intermediate patch for sphinx-doc__sphinx-8721 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8721/patch.diff, now applying to container...
+2026-06-23 07:04:40,924 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 07:04:41,021 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 07:04:41,196 - INFO - >>>>> Applied Patch:
+patching file CHANGES
+Hunk #1 succeeded at 70 with fuzz 3.
+patching file sphinx/ext/viewcode.py
+Hunk #1 succeeded at 182 (offset 40 lines).
+patching file tests/test_ext_viewcode.py
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 49 with fuzz 1.
+
+2026-06-23 07:04:41,628 - INFO - Git diff before:
+diff --git a/CHANGES b/CHANGES
+index bc9dfa335..31abaddbf 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * C, C++: in general fix intersphinx and role lookup types.
+ * #8683: :confval:`html_last_updated_fmt` does not support UTC offset (%z)
+ * #8683: :confval:`html_last_updated_fmt` generates wrong time zone for %Z
++* viewcode: Fix viewcode creating pages for epub even if
++  ``viewcode_enable_epub=False``
+ * #1112: ``download`` role creates duplicated copies when relative path is
+   specified
+ 
+diff --git a/sphinx/ext/viewcode.py b/sphinx/ext/viewcode.py
+index a7d52a91c..c2bcee4f5 100644
+--- a/sphinx/ext/viewcode.py
++++ b/sphinx/ext/viewcode.py
+@@ -182,6 +182,10 @@ def collect_pages(app: Sphinx) -> Generator[Tuple[str, Dict[str, Any], str], Non
+     env = app.builder.env
+     if not hasattr(env, '_viewcode_modules'):
+         return
++    if app.builder.name == "singlehtml":
++        return
++    if app.builder.name.startswith("epub") and not env.config.viewcode_enable_epub:
++        return
+     highlighter = app.builder.highlighter  # type: ignore
+     urito = app.builder.get_relative_uri
+ 
+diff --git a/tests/test_ext_viewcode.py b/tests/test_ext_viewcode.py
+index 79864095b..21002966b 100644
+--- a/tests/test_ext_viewcode.py
++++ b/tests/test_ext_viewcode.py
+@@ -49,6 +49,21 @@ def test_viewcode(app, status, warning):
+             '<span>    &quot;&quot;&quot;</span></div>\n') in result
+ 
+ 
++@pytest.mark.sphinx('epub', testroot='ext-viewcode')
++def test_viewcode_epub_default(app, status, warning):
++    app.builder.build_all()
++
++    assert not (app.outdir / '_modules/spam/mod1.xhtml').exists()
++
++
++@pytest.mark.sphinx('epub', testroot='ext-viewcode',
++                    confoverrides={'viewcode_enable_epub': True})
++def test_viewcode_epub_enabled(app, status, warning):
++    app.builder.build_all()
++
++    assert (app.outdir / '_modules/spam/mod1.xhtml').exists()
++
++
+ @pytest.mark.sphinx(testroot='ext-viewcode', tags=['test_linkcode'])
+ def test_linkcode(app, status, warning):
+     app.builder.build(['objects'])
+2026-06-23 07:04:41,634 - INFO - Eval script for sphinx-doc__sphinx-8721 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8721/eval.sh; copying to container...
+2026-06-23 07:04:48,789 - INFO - Test runtime: 6.98 seconds
+2026-06-23 07:04:48,795 - INFO - Test output for sphinx-doc__sphinx-8721 written to logs/run_evaluation/squad_v1/squad-v1/sphinx-doc__sphinx-8721/test_output.txt
+2026-06-23 07:04:48,891 - INFO - Git diff after:
+diff --git a/CHANGES b/CHANGES
+index bc9dfa335..31abaddbf 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * C, C++: in general fix intersphinx and role lookup types.
+ * #8683: :confval:`html_last_updated_fmt` does not support UTC offset (%z)
+ * #8683: :confval:`html_last_updated_fmt` generates wrong time zone for %Z
++* viewcode: Fix viewcode creating pages for epub even if
++  ``viewcode_enable_epub=False``
+ * #1112: ``download`` role creates duplicated copies when relative path is
+   specified
+ 
+diff --git a/sphinx/ext/viewcode.py b/sphinx/ext/viewcode.py
+index a7d52a91c..c2bcee4f5 100644
+--- a/sphinx/ext/viewcode.py
++++ b/sphinx/ext/viewcode.py
+@@ -182,6 +182,10 @@ def collect_pages(app: Sphinx) -> Generator[Tuple[str, Dict[str, Any], str], Non
+     env = app.builder.env
+     if not hasattr(env, '_viewcode_modules'):
+         return
++    if app.builder.name == "singlehtml":
++        return
++    if app.builder.name.startswith("epub") and not env.config.viewcode_enable_epub:
++        return
+     highlighter = app.builder.highlighter  # type: ignore
+     urito = app.builder.get_relative_uri
+2026-06-23 07:04:48,892 - INFO - Git diff changed after running eval script
+2026-06-23 07:04:48,892 - INFO - Grading answer for sphinx-doc__sphinx-8721...
+2026-06-23 07:04:48,905 - INFO - report: {'sphinx-doc__sphinx-8721': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['tests/test_ext_viewcode.py::test_viewcode_epub_default'], 'failure': []}, 'PASS_TO_PASS': {'success': ['tests/test_ext_viewcode.py::test_viewcode_epub_enabled', 'tests/test_ext_viewcode.py::test_linkcode', 'tests/test_ext_viewcode.py::test_local_source_files'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for sphinx-doc__sphinx-8721: resolved: True
+2026-06-23 07:04:48,910 - INFO - Attempting to stop container sweb.eval.sphinx-doc__sphinx-8721.squad_v1...
+2026-06-23 07:05:05,940 - INFO - Attempting to remove container sweb.eval.sphinx-doc__sphinx-8721.squad_v1...
+2026-06-23 07:05:07,486 - INFO - Container sweb.eval.sphinx-doc__sphinx-8721.squad_v1 removed.
+2026-06-23 07:05:07,487 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8721:latest...
+2026-06-23 07:05:12,689 - INFO - Image swebench/sweb.eval.x86_64.sphinx-doc_1776_sphinx-8721:latest removed.

@@ -1,0 +1,60 @@
+diff --git a/CHANGES b/CHANGES
+index 2aea31967..027828023 100644
+--- a/CHANGES
++++ b/CHANGES
+@@ -70,6 +70,8 @@ Bugs fixed
+ * #8131: linkcheck: Use GET when HEAD requests cause Too Many Redirects, to
+   accommodate infinite redirect loops on HEAD
+ * #8437: Makefile: ``make clean`` with empty BUILDDIR is dangerous
++* #8499: std domain: Allow ``option`` directive to have arbitrary string as
++  its argument
+ 
+ Testing
+ --------
+diff --git a/sphinx/domains/std.py b/sphinx/domains/std.py
+index c87217c56..ef99d4f51 100644
+--- a/sphinx/domains/std.py
++++ b/sphinx/domains/std.py
+@@ -191,12 +191,9 @@ class Cmdoption(ObjectDescription):
+             potential_option = potential_option.strip()
+             m = option_desc_re.match(potential_option)
+             if not m:
+-                logger.warning(__('Malformed option description %r, should '
+-                                  'look like "opt", "-opt args", "--opt args", '
+-                                  '"/opt args" or "+opt args"'), potential_option,
+-                               location=signode)
+-                continue
+-            optname, args = m.groups()
++                optname, args = potential_option, ''
++            else:
++                optname, args = m.groups()
+             if count:
+                 signode += addnodes.desc_addname(', ', ', ')
+             signode += addnodes.desc_name(optname, optname)
+diff --git a/tests/test_domain_std.py b/tests/test_domain_std.py
+index 7ee1d6c07..011de3056 100644
+--- a/tests/test_domain_std.py
++++ b/tests/test_domain_std.py
+@@ -327,6 +327,22 @@ def test_multiple_cmdoptions(app):
+     assert domain.progoptions[('cmd', '--output')] == ('index', 'cmdoption-cmd-o')
+ 
+ 
++def test_cmdoption_starting_with_bracket(app):
++    text = (".. program:: cmd\n"
++            "\n"
++            ".. option:: [enable=]PATTERN\n")
++    domain = app.env.get_domain('std')
++    doctree = restructuredtext.parse(app, text)
++    assert_node(doctree, (addnodes.index,
++                          [desc, ([desc_signature, ([desc_name, "[enable=]PATTERN"],
++                                                    [desc_addname, ()])],
++                                  [desc_content, ()])]))
++    assert_node(doctree[0], addnodes.index,
++                entries=[('pair', 'cmd command line option; [enable=]PATTERN',
++                          'cmdoption-cmd-arg-enable-PATTERN', '', None)])
++    assert ('cmd', '[enable=]PATTERN') in domain.progoptions
++
++
+ @pytest.mark.skipif(docutils.__version_info__ < (0, 13),
+                     reason='docutils-0.13 or above is required')
+ @pytest.mark.sphinx(testroot='productionlist')

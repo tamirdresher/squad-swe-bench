@@ -1,0 +1,111 @@
+diff --git a/django/contrib/admin/options.py b/django/contrib/admin/options.py
+index dadd4acfa1..1e5fab917e 100644
+--- a/django/contrib/admin/options.py
++++ b/django/contrib/admin/options.py
+@@ -2037,10 +2037,13 @@ class InlineModelAdmin(BaseModelAdmin):
+         self.opts = self.model._meta
+         self.has_registered_model = admin_site.is_registered(self.model)
+         super().__init__()
++        if self.verbose_name_plural is None:
++            if self.verbose_name is None:
++                self.verbose_name_plural = self.model._meta.verbose_name_plural
++            else:
++                self.verbose_name_plural = format_lazy('{}s', self.verbose_name)
+         if self.verbose_name is None:
+             self.verbose_name = self.model._meta.verbose_name
+-        if self.verbose_name_plural is None:
+-            self.verbose_name_plural = self.model._meta.verbose_name_plural
+ 
+     @property
+     def media(self):
+diff --git a/docs/ref/contrib/admin/index.txt b/docs/ref/contrib/admin/index.txt
+index fc1eab44f1..85157c149a 100644
+--- a/docs/ref/contrib/admin/index.txt
++++ b/docs/ref/contrib/admin/index.txt
+@@ -2459,7 +2459,14 @@ The ``InlineModelAdmin`` class adds or customizes:
+ .. attribute:: InlineModelAdmin.verbose_name_plural
+ 
+     An override to the ``verbose_name_plural`` found in the model's inner
+-    ``Meta`` class.
++    ``Meta`` class. If this isn't given and the
++    :attr:`.InlineModelAdmin.verbose_name` is defined, Django will use
++    :attr:`.InlineModelAdmin.verbose_name` + ``'s'``.
++
++    .. versionchanged:: 4.0
++
++        The default value of ``verbose_name_plural`` now uses the value of
++        :attr:`.InlineModelAdmin.verbose_name` if it is defined.
+ 
+ .. attribute:: InlineModelAdmin.can_delete
+ 
+diff --git a/docs/releases/4.0.txt b/docs/releases/4.0.txt
+index 7ae566d43a..78b47bdb95 100644
+--- a/docs/releases/4.0.txt
++++ b/docs/releases/4.0.txt
+@@ -85,6 +85,9 @@ Minor features
+ * The new :attr:`.ModelAdmin.search_help_text` attribute allows specifying a
+   descriptive text for the search box.
+ 
++* The default value of :attr:`.InlineModelAdmin.verbose_name_plural` now
++  respects the :attr:`.InlineModelAdmin.verbose_name`.
++
+ :mod:`django.contrib.admindocs`
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+diff --git a/tests/admin_inlines/tests.py b/tests/admin_inlines/tests.py
+index 261c4f0148..5fd9c889d7 100644
+--- a/tests/admin_inlines/tests.py
++++ b/tests/admin_inlines/tests.py
+@@ -1013,6 +1013,52 @@ class TestVerboseNameInlineForms(TestDataMixin, TestCase):
+         self.assertContains(response, 'Add another Model with both - name')
+         self.assertNotContains(response, '<h2>Model with both - plural name</h2>')
+ 
++    def test_verbose_name_inline(self):
++        class NonVerboseProfileInline(TabularInline):
++            model = Profile
++            verbose_name = 'Non-verbose childs'
++
++        class VerboseNameProfileInline(TabularInline):
++            model = VerboseNameProfile
++            verbose_name = 'Childs with verbose name'
++
++        class VerboseNamePluralProfileInline(TabularInline):
++            model = VerboseNamePluralProfile
++            verbose_name = 'Childs with verbose name plural'
++
++        class BothVerboseNameProfileInline(TabularInline):
++            model = BothVerboseNameProfile
++            verbose_name = 'Childs with both verbose names'
++
++        modeladmin = ModelAdmin(ProfileCollection, admin_site)
++        modeladmin.inlines = [
++            NonVerboseProfileInline,
++            VerboseNameProfileInline,
++            VerboseNamePluralProfileInline,
++            BothVerboseNameProfileInline,
++        ]
++        obj = ProfileCollection.objects.create()
++        url = reverse('admin:admin_inlines_profilecollection_change', args=(obj.pk,))
++        request = self.factory.get(url)
++        request.user = self.superuser
++        response = modeladmin.changeform_view(request)
++        # Non-verbose model.
++        self.assertContains(response, '<h2>Non-verbose childss</h2>')
++        self.assertContains(response, 'Add another Non-verbose child')
++        self.assertNotContains(response, '<h2>Profiles</h2>')
++        # Model with verbose name.
++        self.assertContains(response, '<h2>Childs with verbose names</h2>')
++        self.assertContains(response, 'Add another Childs with verbose name')
++        self.assertNotContains(response, '<h2>Model with verbose name onlys</h2>')
++        # Model with verbose name plural.
++        self.assertContains(response, '<h2>Childs with verbose name plurals</h2>')
++        self.assertContains(response, 'Add another Childs with verbose name plural')
++        self.assertNotContains(response, '<h2>Model with verbose name plural only</h2>')
++        # Model with both verbose names.
++        self.assertContains(response, '<h2>Childs with both verbose namess</h2>')
++        self.assertContains(response, 'Add another Childs with both verbose names')
++        self.assertNotContains(response, '<h2>Model with both - plural name</h2>')
++
+     def test_both_verbose_names_inline(self):
+         class NonVerboseProfileInline(TabularInline):
+             model = Profile

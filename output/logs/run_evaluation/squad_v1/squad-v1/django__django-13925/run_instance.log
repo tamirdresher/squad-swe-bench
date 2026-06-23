@@ -1,0 +1,118 @@
+2026-06-23 05:03:15,803 - INFO - Creating container for django__django-13925...
+2026-06-23 05:03:54,179 - INFO - Container for django__django-13925 created: d096b620aa19137c1d24294fefe71af936aab00dcbdb91e8124cebfba5e7214a
+2026-06-23 05:03:54,692 - INFO - Container for django__django-13925 started: d096b620aa19137c1d24294fefe71af936aab00dcbdb91e8124cebfba5e7214a
+2026-06-23 05:03:54,699 - INFO - Intermediate patch for django__django-13925 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13925/patch.diff, now applying to container...
+2026-06-23 05:03:54,960 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 05:03:55,071 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 05:03:55,275 - INFO - >>>>> Applied Patch:
+patching file django/db/models/base.py
+patching file tests/check_framework/test_model_checks.py
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 437 with fuzz 1.
+
+2026-06-23 05:03:56,467 - INFO - Git diff before:
+diff --git a/django/db/models/base.py b/django/db/models/base.py
+index 4038859cfa..036f6a91f0 100644
+--- a/django/db/models/base.py
++++ b/django/db/models/base.py
+@@ -1298,7 +1298,13 @@ class Model(metaclass=ModelBase):
+     @classmethod
+     def _check_default_pk(cls):
+         if (
++            not cls._meta.abstract and
+             cls._meta.pk.auto_created and
++            # Inherited PKs are checked in parent models.
++            not (
++                isinstance(cls._meta.pk, OneToOneField) and
++                cls._meta.pk.remote_field.parent_link
++            ) and
+             not settings.is_overridden('DEFAULT_AUTO_FIELD') and
+             not cls._meta.app_config._is_default_auto_field_overridden
+         ):
+diff --git a/tests/check_framework/test_model_checks.py b/tests/check_framework/test_model_checks.py
+index d4342ada07..06140d6e9c 100644
+--- a/tests/check_framework/test_model_checks.py
++++ b/tests/check_framework/test_model_checks.py
+@@ -395,6 +395,35 @@ class ModelDefaultAutoFieldTests(SimpleTestCase):
+             ),
+         ])
+ 
++    def test_auto_created_pk_parent_link(self):
++        class Parent(models.Model):
++            pass
++
++        class Child(Parent):
++            pass
++
++        self.assertEqual(checks.run_checks(app_configs=self.apps.get_app_configs()), [
++            Warning(
++                "Auto-created primary key used when not defining a primary "
++                "key type, by default 'django.db.models.AutoField'.",
++                hint=(
++                    "Configure the DEFAULT_AUTO_FIELD setting or the "
++                    "CheckDefaultPKConfig.default_auto_field attribute to "
++                    "point to a subclass of AutoField, e.g. "
++                    "'django.db.models.BigAutoField'."
++                ),
++                obj=Parent,
++                id='models.W042',
++            ),
++        ])
++
++    def test_auto_created_pk_abstract_model(self):
++        class Model(models.Model):
++            class Meta:
++                abstract = True
++
++        self.assertEqual(Model._check_default_pk(), [])
++
+     @override_settings(DEFAULT_AUTO_FIELD='django.db.models.BigAutoField')
+     def test_default_auto_field_setting(self):
+         class Model(models.Model):
+@@ -408,6 +437,15 @@ class ModelDefaultAutoFieldTests(SimpleTestCase):
+ 
+         self.assertEqual(checks.run_checks(app_configs=self.apps.get_app_configs()), [])
+ 
++    def test_explicit_pk_parent_link(self):
++        class Parent(models.Model):
++            id = models.AutoField(primary_key=True)
++
++        class Child(Parent):
++            pass
++
++        self.assertEqual(checks.run_checks(app_configs=self.apps.get_app_configs()), [])
++
+     @isolate_apps('check_framework.apps.CheckPKConfig', kwarg_name='apps')
+     def test_app_default_auto_field(self, apps):
+         class ModelWithPkViaAppConfig(models.Model):
+2026-06-23 05:03:56,471 - INFO - Eval script for django__django-13925 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13925/eval.sh; copying to container...
+2026-06-23 05:04:04,684 - INFO - Test runtime: 8.05 seconds
+2026-06-23 05:04:04,691 - INFO - Test output for django__django-13925 written to logs/run_evaluation/squad_v1/squad-v1/django__django-13925/test_output.txt
+2026-06-23 05:04:04,841 - INFO - Git diff after:
+diff --git a/django/db/models/base.py b/django/db/models/base.py
+index 4038859cfa..036f6a91f0 100644
+--- a/django/db/models/base.py
++++ b/django/db/models/base.py
+@@ -1298,7 +1298,13 @@ class Model(metaclass=ModelBase):
+     @classmethod
+     def _check_default_pk(cls):
+         if (
++            not cls._meta.abstract and
+             cls._meta.pk.auto_created and
++            # Inherited PKs are checked in parent models.
++            not (
++                isinstance(cls._meta.pk, OneToOneField) and
++                cls._meta.pk.remote_field.parent_link
++            ) and
+             not settings.is_overridden('DEFAULT_AUTO_FIELD') and
+             not cls._meta.app_config._is_default_auto_field_overridden
+         ):
+2026-06-23 05:04:04,843 - INFO - Git diff changed after running eval script
+2026-06-23 05:04:04,844 - INFO - Grading answer for django__django-13925...
+2026-06-23 05:04:04,851 - INFO - report: {'django__django-13925': {'patch_is_None': False, 'patch_exists': True, 'patch_successfully_applied': True, 'resolved': True, 'tests_status': {'FAIL_TO_PASS': {'success': ['test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_explicit_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)'], 'failure': []}, 'PASS_TO_PASS': {'success': ['test_app_default_auto_field (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_auto_created_inherited_parent_link (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_auto_created_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_default_auto_field_setting (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_explicit_inherited_parent_link (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_explicit_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)', 'test_collision_abstract_model (check_framework.test_model_checks.IndexNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.IndexNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests)', 'test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests)', 'test_collision_across_apps (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_across_apps_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_collision_in_same_app_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_proxy_models (check_framework.test_model_checks.DuplicateDBTableTests)', 'test_no_collision_for_unmanaged_models (check_framework.test_model_checks.DuplicateDBTableTests)'], 'failure': []}, 'FAIL_TO_FAIL': {'success': [], 'failure': []}, 'PASS_TO_FAIL': {'success': [], 'failure': []}}}}
+Result for django__django-13925: resolved: True
+2026-06-23 05:04:04,860 - INFO - Attempting to stop container sweb.eval.django__django-13925.squad_v1...
+2026-06-23 05:04:20,555 - INFO - Attempting to remove container sweb.eval.django__django-13925.squad_v1...
+2026-06-23 05:04:20,736 - INFO - Container sweb.eval.django__django-13925.squad_v1 removed.
+2026-06-23 05:04:20,736 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.django_1776_django-13925:latest...
+2026-06-23 05:04:21,934 - INFO - Image swebench/sweb.eval.x86_64.django_1776_django-13925:latest removed.

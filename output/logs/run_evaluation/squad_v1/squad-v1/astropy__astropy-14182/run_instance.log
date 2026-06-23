@@ -1,0 +1,3075 @@
+2026-06-23 04:28:41,616 - INFO - Creating container for astropy__astropy-14182...
+2026-06-23 04:28:48,014 - INFO - Container for astropy__astropy-14182 created: 5eec8a55980ea5fd01dff93cb22153d37376011062b48379220314d103df453e
+2026-06-23 04:28:48,585 - INFO - Container for astropy__astropy-14182 started: 5eec8a55980ea5fd01dff93cb22153d37376011062b48379220314d103df453e
+2026-06-23 04:28:48,598 - INFO - Intermediate patch for astropy__astropy-14182 written to logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/patch.diff, now applying to container...
+2026-06-23 04:28:48,852 - INFO - Failed to apply patch to container: git apply --verbose
+2026-06-23 04:28:48,956 - INFO - Failed to apply patch to container: git apply --verbose --reject
+2026-06-23 04:28:49,047 - INFO - Failed to apply patch to container: patch --batch --fuzz=5 -p1 -i
+2026-06-23 04:28:49,048 - INFO - >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+2026-06-23 04:28:49,069 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:28:49,070 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,071 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,071 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,072 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,072 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,073 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,073 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,074 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,074 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,075 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,076 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,076 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,077 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,077 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,078 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,078 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,078 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,079 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,079 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,080 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,080 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,081 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,081 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,082 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,083 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,083 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,084 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,084 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,085 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,085 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,086 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,086 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,087 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,087 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,088 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,088 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,089 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,089 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,090 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,090 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,091 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,091 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,092 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,092 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,092 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,093 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,093 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,094 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,094 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,095 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,095 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,096 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,096 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,097 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,097 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,098 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,098 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,099 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,099 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,099 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,100 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,100 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,101 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,101 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,102 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,102 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,102 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,103 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,103 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,104 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,104 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,105 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,105 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,106 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,106 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,107 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,107 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,108 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,108 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,109 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,109 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,110 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,110 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,110 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,111 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,111 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,112 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,112 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,113 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,113 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,114 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,114 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,115 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,115 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,116 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,116 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,117 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,117 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,118 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,118 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,119 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,119 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,120 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,120 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,121 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,121 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,122 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,122 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,123 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,123 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,124 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,125 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,125 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,126 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,126 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,127 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,127 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,128 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,128 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,128 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,129 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,129 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,130 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,131 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,131 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,132 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,132 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,133 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,133 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,134 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,135 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,136 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,137 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: <exception str() failed>
+
+2026-06-23 04:28:49,157 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,158 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,159 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,160 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,162 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,163 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,164 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,164 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,165 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,166 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,167 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,168 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,169 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,170 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,171 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,172 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,172 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,173 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,174 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,175 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,176 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,177 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,178 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,179 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,180 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,181 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,182 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,183 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,183 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,184 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,184 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,185 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,185 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,186 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,187 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,188 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,189 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,190 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,190 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,190 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,191 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,192 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,193 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,193 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,194 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,194 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,195 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,196 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,197 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,197 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,198 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,199 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,200 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,201 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,201 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,202 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,202 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,203 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,204 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,205 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,206 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,206 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,207 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,207 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,208 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,209 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,210 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,210 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,210 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,211 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,212 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,212 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,213 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,214 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,214 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,215 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,215 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,215 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,216 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,216 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,217 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,217 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,218 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,218 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,219 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,219 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,219 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,220 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,220 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,221 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,221 - INFO - Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/swebench/harness/run_evaluation.py", line 182, in run_instance
+    raise EvaluationError(
+swebench.harness.utils.EvaluationError: astropy__astropy-14182: >>>>> Patch Apply Failed:
+patching file astropy/io/ascii/rst.py
+patch unexpectedly ends in middle of line
+patch: **** malformed patch at line 66:  
+
+
+Check (logs/run_evaluation/squad_v1/squad-v1/astropy__astropy-14182/run_instance.log) for more information.
+
+2026-06-23 04:28:49,222 - INFO - Attempting to stop container sweb.eval.astropy__astropy-14182.squad_v1...
+2026-06-23 04:29:05,714 - INFO - Attempting to remove container sweb.eval.astropy__astropy-14182.squad_v1...
+2026-06-23 04:29:05,768 - INFO - Container sweb.eval.astropy__astropy-14182.squad_v1 removed.
+2026-06-23 04:29:05,769 - INFO - Attempting to remove image swebench/sweb.eval.x86_64.astropy_1776_astropy-14182:latest...
+2026-06-23 04:29:06,075 - INFO - Image swebench/sweb.eval.x86_64.astropy_1776_astropy-14182:latest removed.

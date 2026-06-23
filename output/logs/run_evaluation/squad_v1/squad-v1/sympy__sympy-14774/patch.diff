@@ -1,0 +1,67 @@
+diff --git a/sympy/core/numbers.py b/sympy/core/numbers.py
+index c6cfc127e1..1f2da6a915 100644
+--- a/sympy/core/numbers.py
++++ b/sympy/core/numbers.py
+@@ -1678,11 +1678,7 @@ def _eval_power(self, expt):
+                 if (ne is S.One):
+                     return Rational(self.q, self.p)
+                 if self.is_negative:
+-                    if expt.q != 1:
+-                        return -(S.NegativeOne)**((expt.p % expt.q) /
+-                               S(expt.q))*Rational(self.q, -self.p)**ne
+-                    else:
+-                        return S.NegativeOne**ne*Rational(self.q, -self.p)**ne
++                    return S.NegativeOne**expt*Rational(self.q, -self.p)**ne
+                 else:
+                     return Rational(self.q, self.p)**ne
+             if expt is S.Infinity:  # -oo already caught by test for negative
+@@ -2223,11 +2219,7 @@ def _eval_power(self, expt):
+             # invert base and change sign on exponent
+             ne = -expt
+             if self.is_negative:
+-                if expt.q != 1:
+-                    return -(S.NegativeOne)**((expt.p % expt.q) /
+-                            S(expt.q))*Rational(1, -self)**ne
+-                else:
+-                    return (S.NegativeOne)**ne*Rational(1, -self)**ne
++                return S.NegativeOne**expt*Rational(1, -self)**ne
+             else:
+                 return Rational(1, self.p)**ne
+         # see if base is a perfect root, sqrt(4) --> 2
+diff --git a/sympy/printing/latex.py b/sympy/printing/latex.py
+index 9edbaadc30..18fd1749d6 100644
+--- a/sympy/printing/latex.py
++++ b/sympy/printing/latex.py
+@@ -733,7 +733,7 @@ def _print_Function(self, expr, exp=None):
+                 len(args) == 1 and \
+                 not self._needs_function_brackets(expr.args[0])
+ 
+-            inv_trig_table = ["asin", "acos", "atan", "acot"]
++            inv_trig_table = ["asin", "acos", "atan", "acsc", "asec", "acot"]
+ 
+             # If the function is an inverse trig function, handle the style
+             if func in inv_trig_table:
+diff --git a/sympy/printing/tests/test_latex.py b/sympy/printing/tests/test_latex.py
+index c2284afafc..2e52a37ebe 100644
+--- a/sympy/printing/tests/test_latex.py
++++ b/sympy/printing/tests/test_latex.py
+@@ -6,7 +6,7 @@
+     Lambda, LaplaceTransform, Limit, Matrix, Max, MellinTransform, Min, Mul,
+     Order, Piecewise, Poly, ring, field, ZZ, Pow, Product, Range, Rational,
+     RisingFactorial, rootof, RootSum, S, Shi, Si, SineTransform, Subs,
+-    Sum, Symbol, ImageSet, Tuple, Union, Ynm, Znm, arg, asin, Mod,
++    Sum, Symbol, ImageSet, Tuple, Union, Ynm, Znm, arg, asin, acsc, asec, Mod,
+     assoc_laguerre, assoc_legendre, binomial, catalan, ceiling, Complement,
+     chebyshevt, chebyshevu, conjugate, cot, coth, diff, dirichlet_eta, euler,
+     exp, expint, factorial, factorial2, floor, gamma, gegenbauer, hermite,
+@@ -291,6 +291,11 @@ def test_latex_functions():
+                  fold_func_brackets=True) == \
+         r"\sin^{-1} {x^{2}}"
+ 
++    assert latex(acsc(x), inv_trig_style="full") == \
++        r"\operatorname{arccsc}{\left (x \right )}"
++    assert latex(asec(x), inv_trig_style="full") == \
++        r"\operatorname{arcsec}{\left (x \right )}"
++
+     assert latex(factorial(k)) == r"k!"
+     assert latex(factorial(-k)) == r"\left(- k\right)!"

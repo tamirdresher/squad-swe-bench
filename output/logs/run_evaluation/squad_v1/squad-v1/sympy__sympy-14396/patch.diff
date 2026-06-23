@@ -1,0 +1,124 @@
+diff --git a/sympy/polys/domains/complexfield.py b/sympy/polys/domains/complexfield.py
+index b2769acd31..6b9c998e08 100644
+--- a/sympy/polys/domains/complexfield.py
++++ b/sympy/polys/domains/complexfield.py
+@@ -103,6 +103,22 @@ def get_exact(self):
+         """Returns an exact domain associated with ``self``. """
+         raise DomainError("there is no exact domain associated with %s" % self)
+ 
++    def is_negative(self, element):
++        """Returns ``False`` for any ``ComplexElement``. """
++        return False
++
++    def is_positive(self, element):
++        """Returns ``False`` for any ``ComplexElement``. """
++        return False
++
++    def is_nonnegative(self, element):
++        """Returns ``False`` for any ``ComplexElement``. """
++        return False
++
++    def is_nonpositive(self, element):
++        """Returns ``False`` for any ``ComplexElement``. """
++        return False
++
+     def gcd(self, a, b):
+         """Returns GCD of ``a`` and ``b``. """
+         return self.one
+diff --git a/sympy/polys/polyoptions.py b/sympy/polys/polyoptions.py
+index 6e504a3057..01495f4369 100644
+--- a/sympy/polys/polyoptions.py
++++ b/sympy/polys/polyoptions.py
+@@ -405,8 +405,8 @@ class Domain(with_metaclass(OptionType, Option)):
+     _re_realfield = re.compile(r"^(R|RR)(_(\d+))?$")
+     _re_complexfield = re.compile(r"^(C|CC)(_(\d+))?$")
+     _re_finitefield = re.compile(r"^(FF|GF)\((\d+)\)$")
+-    _re_polynomial = re.compile(r"^(Z|ZZ|Q|QQ)\[(.+)\]$")
+-    _re_fraction = re.compile(r"^(Z|ZZ|Q|QQ)\((.+)\)$")
++    _re_polynomial = re.compile(r"^(Z|ZZ|Q|QQ|R|RR|C|CC)\[(.+)\]$")
++    _re_fraction = re.compile(r"^(Z|ZZ|Q|QQ|R|RR|C|CC)\((.+)\)$")
+     _re_algebraic = re.compile(r"^(Q|QQ)\<(.+)\>$")
+ 
+     @classmethod
+@@ -459,8 +459,12 @@ def preprocess(cls, domain):
+ 
+                 if ground in ['Z', 'ZZ']:
+                     return sympy.polys.domains.ZZ.poly_ring(*gens)
+-                else:
++                elif ground in ['Q', 'QQ']:
+                     return sympy.polys.domains.QQ.poly_ring(*gens)
++                elif ground in ['R', 'RR']:
++                    return sympy.polys.domains.RR.poly_ring(*gens)
++                else:
++                    return sympy.polys.domains.CC.poly_ring(*gens)
+ 
+             r = cls._re_fraction.match(domain)
+ 
+@@ -471,8 +475,12 @@ def preprocess(cls, domain):
+ 
+                 if ground in ['Z', 'ZZ']:
+                     return sympy.polys.domains.ZZ.frac_field(*gens)
+-                else:
++                elif ground in ['Q', 'QQ']:
+                     return sympy.polys.domains.QQ.frac_field(*gens)
++                elif ground in ['R', 'RR']:
++                    return sympy.polys.domains.RR.frac_field(*gens)
++                else:
++                    return sympy.polys.domains.CC.frac_field(*gens)
+ 
+             r = cls._re_algebraic.match(domain)
+ 
+@@ -480,7 +488,13 @@ def preprocess(cls, domain):
+                 gens = list(map(sympify, r.groups()[1].split(',')))
+                 return sympy.polys.domains.QQ.algebraic_field(*gens)
+ 
+-        raise OptionError('expected a valid domain specification, got %s' % domain)
++        raise OptionError('expected a valid domain specification, got %s. '
++                          'A valid domain specification is a domain object, '
++                          'or one of the strings ZZ, QQ, RR, CC, EX, '
++                          'a finite field such as FF(7) or GF(7), '
++                          'a polynomial ring such as ZZ[x] or QQ[x,y], '
++                          'a fraction field such as ZZ(x) or QQ(x,y), '
++                          'or an algebraic field such as QQ<sqrt(2)>.' % domain)
+ 
+     @classmethod
+     def postprocess(cls, options):
+diff --git a/sympy/polys/tests/test_polyoptions.py b/sympy/polys/tests/test_polyoptions.py
+index cbc9681747..b35346b37f 100644
+--- a/sympy/polys/tests/test_polyoptions.py
++++ b/sympy/polys/tests/test_polyoptions.py
+@@ -6,7 +6,7 @@
+     Frac, Formal, Polys, Include, All, Gen, Symbols, Method)
+ 
+ from sympy.polys.orderings import lex
+-from sympy.polys.domains import FF, GF, ZZ, QQ, EX
++from sympy.polys.domains import FF, GF, ZZ, QQ, RR, CC, EX
+ 
+ from sympy.polys.polyerrors import OptionError, GeneratorsError
+ 
+@@ -200,6 +200,26 @@ def test_Domain_preprocess():
+     assert Domain.preprocess('ZZ(x,y)') == ZZ.frac_field(x, y)
+     assert Domain.preprocess('QQ(x,y)') == QQ.frac_field(x, y)
+ 
++    assert Domain.preprocess('R[x]') == RR[x]
++    assert Domain.preprocess('RR[x]') == RR[x]
++    assert Domain.preprocess('C[x]') == CC[x]
++    assert Domain.preprocess('CC[x]') == CC[x]
++
++    assert Domain.preprocess('R[x,y]') == RR[x, y]
++    assert Domain.preprocess('RR[x,y]') == RR[x, y]
++    assert Domain.preprocess('C[x,y]') == CC[x, y]
++    assert Domain.preprocess('CC[x,y]') == CC[x, y]
++
++    assert Domain.preprocess('R(x)') == RR.frac_field(x)
++    assert Domain.preprocess('RR(x)') == RR.frac_field(x)
++    assert Domain.preprocess('C(x)') == CC.frac_field(x)
++    assert Domain.preprocess('CC(x)') == CC.frac_field(x)
++
++    assert Domain.preprocess('R(x,y)') == RR.frac_field(x, y)
++    assert Domain.preprocess('RR(x,y)') == RR.frac_field(x, y)
++    assert Domain.preprocess('C(x,y)') == CC.frac_field(x, y)
++    assert Domain.preprocess('CC(x,y)') == CC.frac_field(x, y)
++
+     assert Domain.preprocess('Q<I>') == QQ.algebraic_field(I)
+     assert Domain.preprocess('QQ<I>') == QQ.algebraic_field(I)

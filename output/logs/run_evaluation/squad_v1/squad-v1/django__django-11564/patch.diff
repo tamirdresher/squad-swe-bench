@@ -1,0 +1,88 @@
+diff --git a/django/conf/__init__.py b/django/conf/__init__.py
+index b32e56184d..e6dbfed259 100644
+--- a/django/conf/__init__.py
++++ b/django/conf/__init__.py
+@@ -109,6 +109,20 @@ class LazySettings(LazyObject):
+             setattr(holder, name, value)
+         self._wrapped = holder
+ 
++    @staticmethod
++    def _add_script_prefix(value):
++        """
++        Add SCRIPT_NAME prefix to relative paths.
++
++        Useful when the app is being served at a subpath and manually prefixing
++        subpath to STATIC_URL and MEDIA_URL in settings is inconvenient.
++        """
++        # Don't apply prefix to absolute paths and URLs.
++        if value.startswith(('http://', 'https://', '/')):
++            return value
++        from django.urls import get_script_prefix
++        return '%s%s' % (get_script_prefix(), value)
++
+     @property
+     def configured(self):
+         """Return True if the settings have already been configured."""
+@@ -128,6 +142,14 @@ class LazySettings(LazyObject):
+             )
+         return self.__getattr__('PASSWORD_RESET_TIMEOUT_DAYS')
+ 
++    @property
++    def STATIC_URL(self):
++        return self._add_script_prefix(self.__getattr__('STATIC_URL'))
++
++    @property
++    def MEDIA_URL(self):
++        return self._add_script_prefix(self.__getattr__('MEDIA_URL'))
++
+ 
+ class Settings:
+     def __init__(self, settings_module):
+diff --git a/docs/ref/settings.txt b/docs/ref/settings.txt
+index 00538ccbf7..4405d152b2 100644
+--- a/docs/ref/settings.txt
++++ b/docs/ref/settings.txt
+@@ -1989,6 +1989,13 @@ Example: ``"http://media.example.com/"``
+     :setting:`MEDIA_URL` and :setting:`STATIC_URL` must have different
+     values. See :setting:`MEDIA_ROOT` for more details.
+ 
++.. note::
++
++    If :setting:`MEDIA_URL` is a relative path, then it will be prefixed by the
++    server-provided value of ``SCRIPT_NAME`` (or ``/`` if not set). This makes
++    it easier to serve a Django application in a subpath without adding an
++    extra configuration to the settings.
++
+ .. setting:: MIDDLEWARE
+ 
+ ``MIDDLEWARE``
+@@ -3306,6 +3313,13 @@ You may need to :ref:`configure these files to be served in development
+ <serving-static-files-in-development>` and will definitely need to do so
+ :doc:`in production </howto/static-files/deployment>`.
+ 
++.. note::
++
++    If :setting:`STATIC_URL` is a relative path, then it will be prefixed by
++    the server-provided value of ``SCRIPT_NAME`` (or ``/`` if not set). This
++    makes it easier to serve a Django application in a subpath without adding
++    an extra configuration to the settings.
++
+ .. setting:: STATICFILES_DIRS
+ 
+ ``STATICFILES_DIRS``
+diff --git a/docs/releases/3.1.txt b/docs/releases/3.1.txt
+index 3a9381626b..da954bab56 100644
+--- a/docs/releases/3.1.txt
++++ b/docs/releases/3.1.txt
+@@ -233,6 +233,11 @@ Miscellaneous
+ * The compatibility imports of ``Context``, ``ContextPopException``, and
+   ``RequestContext`` in ``django.template.base`` are removed.
+ 
++* The :setting:`STATIC_URL` and :setting:`MEDIA_URL` settings set to relative
++  paths are now prefixed by the server-provided value of ``SCRIPT_NAME`` (or
++  ``/`` if not set). This change should not affect settings set to valid URLs
++  or absolute paths.
++
+ .. _deprecated-features-3.1:
+ 
+ Features deprecated in 3.1

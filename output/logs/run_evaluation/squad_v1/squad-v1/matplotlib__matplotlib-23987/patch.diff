@@ -1,0 +1,47 @@
+diff --git a/lib/matplotlib/figure.py b/lib/matplotlib/figure.py
+index 5bbb786984..91ea8309b2 100644
+--- a/lib/matplotlib/figure.py
++++ b/lib/matplotlib/figure.py
+@@ -2422,11 +2422,17 @@ class Figure(FigureBase):
+                     "The Figure parameters 'tight_layout' and "
+                     "'constrained_layout' cannot be used together. Please use "
+                     "'layout' parameter")
+-            self.set_layout_engine(layout='tight')
++            if tight_layout or isinstance(tight_layout, dict):
++                self.set_layout_engine(layout='tight')
++            else:
++                self.set_layout_engine(layout='none')
+             if isinstance(tight_layout, dict):
+                 self.get_layout_engine().set(**tight_layout)
+         elif constrained_layout is not None:
+-            self.set_layout_engine(layout='constrained')
++            if constrained_layout or isinstance(constrained_layout, dict):
++                self.set_layout_engine(layout='constrained')
++            else:
++                self.set_layout_engine(layout='none')
+             if isinstance(constrained_layout, dict):
+                 self.get_layout_engine().set(**constrained_layout)
+         else:
+diff --git a/lib/matplotlib/tests/test_figure.py b/lib/matplotlib/tests/test_figure.py
+index 48b4a880e0..0d1a5a0418 100644
+--- a/lib/matplotlib/tests/test_figure.py
++++ b/lib/matplotlib/tests/test_figure.py
+@@ -598,6 +598,18 @@ def test_invalid_layouts():
+         fig.set_layout_engine("constrained")
+ 
+ 
++@pytest.mark.parametrize("layout_kw", [
++    {"constrained_layout": False},
++    {"tight_layout": False},
++])
++def test_subplots_adjust_with_layout_false(layout_kw):
++    fig, axs = plt.subplots(1, 2, **layout_kw)
++    assert fig.get_layout_engine() is None
++    with warnings.catch_warnings():
++        warnings.simplefilter("error", UserWarning)
++        fig.subplots_adjust(wspace=0)
++
++
+ @check_figures_equal(extensions=["png", "pdf"])
+ def test_add_artist(fig_test, fig_ref):
+     fig_test.dpi = 100

@@ -1,0 +1,52 @@
+diff --git a/sympy/simplify/fu.py b/sympy/simplify/fu.py
+index ad1130ef96..1e21801cec 100644
+--- a/sympy/simplify/fu.py
++++ b/sympy/simplify/fu.py
+@@ -501,6 +501,9 @@ def _f(rv):
+         if not (rv.is_Pow and rv.base.func == f):
+             return rv
+ 
++        if not rv.exp.is_real:
++            return rv
++
+         if (rv.exp < 0) == True:
+             return rv
+         if (rv.exp > max) == True:
+diff --git a/sympy/simplify/tests/test_fu.py b/sympy/simplify/tests/test_fu.py
+index 54be6e1dca..4886765075 100644
+--- a/sympy/simplify/tests/test_fu.py
++++ b/sympy/simplify/tests/test_fu.py
+@@ -1,6 +1,6 @@
+ from sympy import (
+     Add, Mul, S, Symbol, cos, cot, pi, I, sin, sqrt, tan, root, csc, sec,
+-    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy)
++    powsimp, symbols, sinh, cosh, tanh, coth, sech, csch, Dummy, simplify)
+ from sympy.simplify.fu import (
+     L, TR1, TR10, TR10i, TR11, TR12, TR12i, TR13, TR14, TR15, TR16,
+     TR111, TR2, TR2i, TR3, TR5, TR6, TR7, TR8, TR9, TRmorrie, _TR56 as T,
+@@ -75,6 +75,9 @@ def test__TR56():
+     assert T(sin(x)**6, sin, cos, h, 6, False) == (-cos(x)**2 + 1)**3
+     assert T(sin(x)**6, sin, cos, h, 6, True) == sin(x)**6
+     assert T(sin(x)**8, sin, cos, h, 10, True) == (-cos(x)**2 + 1)**4
++    # a non-real exponent must be left unchanged (issue: Invalid
++    # comparison of complex I)
++    assert T(sin(x)**I, sin, cos, h, 4, False) == sin(x)**I
+ 
+ 
+ def test_TR5():
+@@ -89,6 +92,15 @@ def test_TR6():
+     assert TR6(cos(x)**4) == (-sin(x)**2 + 1)**2
+ 
+ 
++def test_simplify_cos_pow_I():
++    # a non-real (complex) exponent must not raise
++    # (issue: Invalid comparison of complex I)
++    assert simplify(cos(x)**I) == cos(x)**I
++    assert simplify(sin(x)**I) == sin(x)**I
++    assert TR6(cos(x)**I) == cos(x)**I
++    assert TR5(sin(x)**I) == sin(x)**I
++
++
+ def test_TR7():
+     assert TR7(cos(x)**2) == cos(2*x)/2 + S(1)/2
+     assert TR7(cos(x)**2 + 1) == cos(2*x)/2 + S(3)/2
