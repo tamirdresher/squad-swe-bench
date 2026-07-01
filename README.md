@@ -1,6 +1,6 @@
 # Squad — SWE-bench Lite Results
 
-**198 / 300 resolved (66.0%)** — #1 on the [SWE-bench Lite leaderboard](https://www.swebench.com/index.html)
+**198 / 300 resolved (66.0%)** — #1 on the [SWE-bench Lite leaderboard](https://www.swebench.com/index.html) at time of submission (June 2026; verify current standings, as newer entries may have landed since)
 
 ## Results
 
@@ -10,7 +10,14 @@
 | Patches generated | 280 / 300 (93.3%) |
 | Patch apply errors | 38 (12.7%) |
 | Unresolved (tests fail) | 44 (14.7%) |
-| No generation | 20 (6.7%) |
+| No generation (empty patch) | 20 (6.7%) |
+
+### Reliability & pass@1 semantics (disclosure)
+
+- **Strict pass@1, no retries.** `attempts: 1` in [metadata.yaml](submission/20250623_squad_v0.9.6_gpt4o/metadata.yaml). Each of the 300 instances was attempted **exactly once**. No task was re-run after a failure, so there are **no "passed only after retry"** cases — the 66.0% is a single-shot number.
+- **"No generation" (20) = empty patch.** The agent ran but emitted no diff (it concluded without editing, or the 30-min/task wall-clock elapsed before a patch was written). These 20 are counted as **unresolved**, not excluded.
+- **`max continuations = 50` is within a single attempt**, not cross-task retries. It caps how many autopilot turns one task may take before the runner stops it; it does not grant a second independent attempt.
+- **On "timeouts":** the only runner-level cutoff is the 1800s/task wall-clock. Do **not** confuse this with the word `timeout` appearing thousands of times inside the harnessed projects' own test suites (e.g. Django/astropy test names and decorators) — those are test-code artifacts in the per-instance logs, not runner timeouts. The canonical outcome breakdown is the table above (198 + 38 + 44 + 20 = 300).
 
 ### Leaderboard Context (June 2026)
 
@@ -47,6 +54,13 @@ Learn more: [bradygaster.github.io/squad](https://bradygaster.github.io/squad/)
 - **Pass@1** — Each instance attempted exactly once
 - **No test knowledge** — No PASS_TO_PASS, FAIL_TO_PASS, or hints_text
 - **No web browsing** — Agents work only on local repo + issue description
+
+### New benchmark configs
+
+- `config_verified_50.yaml` — SWE-bench Verified test split, first 50 instances, real Squad (`--agent squad`)
+- `config_verified_50_baseline.yaml` — same 50-task setup, same model, plain Copilot CLI (no Squad agent/scaffold)
+
+The runner now passes `--model` explicitly and vendors the required Squad agent definitions under `.github/agents/` so benchmark runs exercise the real local Squad coordinator plus specialists.
 
 ## Repository Structure
 
