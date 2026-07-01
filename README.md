@@ -44,7 +44,9 @@ Two files report the run from different angles, and they reconcile cleanly:
 | 4 | OpenAI GPT-5 | 54.3% |
 | 5 | Claude Haiku 4.5 | 54.3% |
 
-## What is Squad?
+*Source: [swebench.com](https://www.swebench.com/), accessed June 23, 2026. Competitor scores may change.*
+
+> **Verification status.** This result is from a self-run evaluation using the official SWE-bench Docker harness. The formal leaderboard submission is **pending maintainer verification** (`checked: false` in [metadata.yaml](submission/20250623_squad_v0.9.6_gpt4o/metadata.yaml)). Rankings reflect the leaderboard state on **June 23, 2026**.
 
 Squad is a multi-agent orchestration framework built on [GitHub Copilot CLI](https://github.com/features/copilot). Instead of giving one model the entire problem, Squad decomposes work through a team of specialized agents:
 

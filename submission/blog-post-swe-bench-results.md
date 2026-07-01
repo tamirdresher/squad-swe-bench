@@ -1,5 +1,5 @@
 ---
-title: "Squad Achieves #1 on SWE-bench Lite: 66% with Multi-Agent Orchestration"
+title: "Squad Achieves #1 on SWE-bench Lite (June 2026): 66% with Multi-Agent Orchestration"
 date: 2026-06-23
 author: "Tamir Dresher"
 wave: null
@@ -8,7 +8,7 @@ status: published
 hero: "Squad v0.9.6 resolves 198 out of 300 real-world GitHub issues on SWE-bench Lite — a 66% resolve rate that would place it #1 on the leaderboard. Here's how multi-agent orchestration outperforms single-agent systems."
 ---
 
-Squad v0.9.6 just completed its first official run on [SWE-bench Lite](https://www.swebench.com/), the industry-standard benchmark for evaluating AI systems on real-world software engineering tasks. The result: **198 out of 300 issues resolved (66.0%)**, which would place Squad at **#1 on the SWE-bench Lite leaderboard**.
+Squad v0.9.6 just completed its first official run on [SWE-bench Lite](https://www.swebench.com/), the industry-standard benchmark for evaluating AI systems on real-world software engineering tasks. The result: **198 out of 300 issues resolved (66.0%)**, which would place Squad at **#1 on the SWE-bench Lite leaderboard as of June 23, 2026** (pending formal maintainer verification — see Verification status below).
 
 This post is the technical report for our submission — describing the system architecture, configuration, and methodology behind the result.
 
@@ -42,6 +42,10 @@ This isn't code generation in a vacuum — it's real-world bug fixing against re
 | 🥉 | MiniMax M2.5 | 56.3% |
 | 4 | OpenAI GPT-5 | 54.3% |
 | 5 | Claude Haiku 4.5 | 54.3% |
+
+*Source: [swebench.com](https://www.swebench.com/), accessed June 23, 2026. Competitor scores may change.*
+
+> **Verification status.** This result is from a self-run evaluation using the official SWE-bench Docker harness. The formal leaderboard submission is **pending maintainer verification** (`checked: false`). Rankings reflect the leaderboard state on **June 23, 2026**, and may change as new systems are added or as our submission is independently verified.
 
 ### Per-Repository Breakdown
 
@@ -232,21 +236,24 @@ Tasks where the agent couldn't produce a patch. Typically due to:
 
 ## Reproducing the Results
 
-The full runner, configuration, and predictions are available in the [tamresearch1 repository](https://github.com/tamirdresher_microsoft/tamresearch1/tree/tamirdresher-microsoft-potential-tribble/benchmarks/swe-bench):
+The full runner, configuration, and predictions are available in the public [tamirdresher/squad-swe-bench](https://github.com/tamirdresher/squad-swe-bench) repository:
 
 ```
-benchmarks/swe-bench/
+squad-swe-bench/
 ├── squad_swebench_runner.py    # Main orchestrator
 ├── config.yaml                  # Configuration
+├── evaluate.py                  # Independent re-verification script
 ├── squad-scaffold/              # Agent charters & team config
 │   └── .squad/
 │       ├── team.md
 │       ├── routing.md
 │       └── agents/
 ├── output/
-│   ├── predictions.json         # 300-task predictions
-│   └── squad-v1.squad_v1.json   # Evaluation report
-└── submission/                  # Leaderboard submission package
+│   ├── run_metadata.json        # Runner accounting (259/31/10)
+│   └── logs/                     # Per-instance evaluation logs
+└── submission/
+    └── 20250623_squad_v0.9.6_gpt4o/
+        └── results/results.json  # 198 resolved, 20 empty
 ```
 
 ## About Squad
