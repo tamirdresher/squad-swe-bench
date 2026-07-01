@@ -12,12 +12,27 @@
 | Unresolved (tests fail) | 44 (14.7%) |
 | No generation (empty patch) | 20 (6.7%) |
 
-### Reliability & pass@1 semantics (disclosure)
+### Run accounting & pass@1 semantics (disclosure)
 
-- **Strict pass@1, no retries.** `attempts: 1` in [metadata.yaml](submission/20250623_squad_v0.9.6_gpt4o/metadata.yaml). Each of the 300 instances was attempted **exactly once**. No task was re-run after a failure, so there are **no "passed only after retry"** cases — the 66.0% is a single-shot number.
-- **"No generation" (20) = empty patch.** The agent ran but emitted no diff (it concluded without editing, or the 30-min/task wall-clock elapsed before a patch was written). These 20 are counted as **unresolved**, not excluded.
-- **`max continuations = 50` is within a single attempt**, not cross-task retries. It caps how many autopilot turns one task may take before the runner stops it; it does not grant a second independent attempt.
-- **On "timeouts":** the only runner-level cutoff is the 1800s/task wall-clock. Do **not** confuse this with the word `timeout` appearing thousands of times inside the harnessed projects' own test suites (e.g. Django/astropy test names and decorators) — those are test-code artifacts in the per-instance logs, not runner timeouts. The canonical outcome breakdown is the table above (198 + 38 + 44 + 20 = 300).
+Two files report the run from different angles, and they reconcile cleanly:
+
+**Runner view** — [`output/run_metadata.json`](output/run_metadata.json):
+
+| Field | Value | Meaning |
+|-------|-------|---------|
+| completed | 300 | every instance was attempted |
+| success | 259 | agent process finished before the 1800s/task wall-clock |
+| timeout | 31 | agent process was killed at the 1800s wall-clock |
+| error | 10 | runner-level error |
+| | | 259 + 31 + 10 = 300 |
+
+**Evaluator view** — [`results.json`](submission/20250623_squad_v0.9.6_gpt4o/results/results.json): 280 patches generated, 20 empty, 198 resolved.
+
+**Reconciling 259 (success) vs 280 (patches generated):** `run_metadata.json` records **259 runs that completed before the wall-clock timeout**. The 21-task gap (280 − 259) comes from **timeout cases where a non-empty diff had already been written before the runner killed the process** — the evaluator still counted those as generated patches. The remaining 20 tasks (10 timeouts + 10 errors) wrote no diff and are the "no generation / empty patch" set. So: 259 clean + 21 late-but-non-empty = 280 generated; 300 − 280 = 20 empty.
+
+- **Strict pass@1, no retries.** `attempts: 1` in [metadata.yaml](submission/20250623_squad_v0.9.6_gpt4o/metadata.yaml). Each instance was attempted **exactly once**; no task was re-run after a failure, so there are **no "passed only after retry"** cases — 66.0% is a single-shot number.
+- **`max continuations = 50` is within a single attempt**, not a second independent try. It caps autopilot turns per task before the runner stops it.
+- **Empty patches (20) are counted as unresolved**, not excluded.
 
 ### Leaderboard Context (June 2026)
 
