@@ -2,7 +2,7 @@ info:
   logo: https://github.com/tamirdresher_microsoft/tamresearch1/raw/main/.squad/logo.png
   name: Squad v0.9.6 (Multi-Agent Orchestration)
   site: https://github.com/tamirdresher_microsoft/tamresearch1
-  report: TBD
+  report: https://github.com/tamirdresher/squad-swe-bench/blob/main/submission/blog-post-swe-bench-results.md
   authors: Tamir Dresher (Microsoft)
 tags:
   checked: false

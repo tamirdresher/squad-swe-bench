@@ -134,7 +134,7 @@ total_runtime: ~21 hours
 - **Model: gpt-4o** — Used for all agents (coordinator, lead, and code expert). No model mixing.
 - **Autopilot mode** — Agents work without human intervention. The `--yolo` flag prevents confirmation prompts.
 - **50 continuation limit** — Prevents infinite loops. Most tasks complete in 10-20 continuations.
-- **30-minute timeout** — Generous but bounded. Of the 20 tasks that produced no patch, most were timeout-related.
+- **30-minute timeout** — Generous but bounded. Of the 20 tasks that produced no patch, exactly half (10) were timeout-without-output cases; the other 10 were runner errors.
 - **4 parallel workers** — Processes 4 issues concurrently. Each worker gets its own git worktree.
 
 ## Methodology
@@ -198,13 +198,6 @@ We performed a 12-point integrity check on the results:
 
 ## Error Analysis
 
-### Timeout Cases (20/300, 6.7%)
-
-The 20 "no generation" instances are primarily tasks that exceeded the 30-minute timeout. These typically involved:
-- Very large codebases requiring extensive navigation
-- Complex multi-file changes where the agent explored many approaches
-- Issues requiring deep domain knowledge the model lacked
-
 ### Patch Apply Errors (38/300, 12.7%)
 
 Generated diffs that couldn't cleanly apply to the target commit. Common causes:
@@ -221,10 +214,9 @@ Patches that applied cleanly but didn't fix the issue. These represent cases whe
 
 ### No Generation (20/300, 6.7%)
 
-Tasks where the agent couldn't produce a patch. Typically due to:
-- Timeout before reaching implementation
-- Agent getting stuck in analysis loops
-- Issues in domains where the model had insufficient training
+20 tasks produced no patch: **10 runner errors** and **10 timeout-without-output** cases. The
+other 21 timeouts produced non-empty diffs and are counted in the 280 generated patches (so a
+timeout did not necessarily mean an empty submission).
 
 ## What's Next
 
